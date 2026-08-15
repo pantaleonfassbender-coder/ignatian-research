@@ -1,0 +1,1038 @@
+[
+ {
+  "term": "consolation",
+  "latin": "consolación",
+  "definition": "A technical name for a describable interior state rather than a mood: any motion by which the soul is inflamed toward its Creator, any growth in faith, hope and charity, and any tears whose term is love rather than self-pity. Ignatius defines it ostensively, by direction and effect, precisely so that a retreatant can report it and a director can weigh it as evidence.",
+  "trajectory": "The retreat manual first makes it a datum the director must extract, then defines it formally among the rules for discerning spirits; the early directory converts that definition into a spoken checklist. In the Diary the word stops being a category and becomes a daily measurement entered beside each Mass. Apart from the Formula, where consoling the faithful names a ministry, the Constitutions retain it in one startlingly administrative register: reports circulated between provinces so that regions draw mutual consolation and edification. In the correspondence it reverts to pastoral currency, something Ignatius undertakes to supply by letter.",
+  "loci": [
+   {
+    "cite": "SpEx [6]",
+    "note": "Director must question a retreatant who reports no motions, making consolation an item of routine interrogation."
+   },
+   {
+    "cite": "SpEx [316]",
+    "note": "The formal definition: interior motion inflaming the soul toward the Creator, with tears and increase of the theological virtues."
+   },
+   {
+    "cite": "Dir. [11]",
+    "note": "Ignatius has the director enumerate the components of consolation: peace, joy, hope, faith, love, tears, elevation of mind."
+   },
+   {
+    "cite": "Diary [13]",
+    "note": "Devotion, interior peace and tranquillity of soul issue in a felt assent that the election was rightly made."
+   },
+   {
+    "cite": "Const [673]",
+    "note": "Superiors are to arrange the flow of news between regions so that each draws consolation and edification from the others."
+   },
+   {
+    "cite": "Letters, no. V",
+    "note": "Consolation described to Teresa Rejadella as the lesson God grants, dissolving disturbance and drawing the soul wholly to love."
+   }
+  ],
+  "related": [
+   "desolation",
+   "consolation without preceding cause",
+   "tears",
+   "devotion"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "desolation",
+  "latin": "desolación",
+  "definition": "The systematic contrary of consolation: darkness, turmoil, attraction toward low things, dryness and a sense of separation from the Creator, together with the thoughts that arise from that state. Ignatius treats it not as punishment but as a diagnostic condition with rules attached, chief among them the prohibition on altering any prior decision while it lasts.",
+  "trajectory": "In the Exercises desolation is given a definition, a causal analysis and a procedural rule, and it is paired with consolation as one half of a binary the director must monitor. The directory reduces the pair to a formula of opposites the director recites. The Diary, by contrast, records desolation mostly as absence, a blank entry noting neither tears nor consolation; the Autobiography narrates it retrospectively as an experience Ignatius could not yet name at Manresa. The Constitutions abandon the word entirely: what was a discernible state becomes, in law, mere unsuitability.",
+  "loci": [
+   {
+    "cite": "SpEx [317]",
+    "note": "Definition by contrariety: darkness, turmoil, low inclinations, dryness, and the thoughts that spring from them."
+   },
+   {
+    "cite": "SpEx [318]",
+    "note": "The governing rule: never change a prior decision in desolation, since the evil spirit is then the counsellor."
+   },
+   {
+    "cite": "SpEx [322]",
+    "note": "Three causes assigned, including negligence, testing, and instruction in the gratuity of consolation."
+   },
+   {
+    "cite": "Dir. [12]",
+    "note": "Desolation defined term by term as the inversion of each component of consolation, and ascribed to the evil spirit."
+   },
+   {
+    "cite": "Diary [198]",
+    "note": "A whole day entered as neither consolation nor desolation and no tears: desolation as measurable absence."
+   },
+   {
+    "cite": "Autobiog. [21]",
+    "note": "The alternation of sadness and its opposite at Loyola, before Ignatius possessed any vocabulary for it."
+   }
+  ],
+  "related": [
+   "consolation",
+   "motion",
+   "enemy of human nature",
+   "discernment of spirits"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "consolation without preceding cause",
+  "latin": "consolación sin causa precedente",
+  "definition": "Consolation arriving with no prior act of intellect or will to account for it. Ignatius reserves its causation to God alone, since only the Creator may enter and leave the soul directly. The claim is narrow and technical: it grants certainty to the moment itself while explicitly withholding certainty from the reasoning that follows in its wake.",
+  "trajectory": "This is the most precisely bounded term in the whole corpus, and it exists almost entirely inside the second-week rules, where it supplies the theoretical warrant for the first time of election. Ignatius immediately qualifies it: the following period, still warm with the aftereffects, is exposed to our own habits and to suggestion, and must be examined separately. The Diary shows the distinction in operation, recording confirmation that persists even when the consolations themselves do not. Neither the Constitutions nor the letters retain it; it is untransferable to law.",
+  "loci": [
+   {
+    "cite": "SpEx [330]",
+    "note": "Only God can cause consolation with no preceding cause, since only the Creator enters and departs from the soul directly."
+   },
+   {
+    "cite": "SpEx [331]",
+    "note": "Where a cause precedes, good and evil angel alike can console, for contrary ends: the source of the deception problem."
+   },
+   {
+    "cite": "SpEx [336]",
+    "note": "The crucial qualification: the time after the consolation, though still warm, is open to error and must be sifted."
+   },
+   {
+    "cite": "SpEx [175]",
+    "note": "The first time of election, where God moves the will without room for doubt, presupposes this uncaused motion."
+   },
+   {
+    "cite": "Diary [67]",
+    "note": "Ignatius records what looks like confirmation of his decision even though no consolation attended it on that point."
+   }
+  ],
+  "related": [
+   "consolation",
+   "election",
+   "times for making an election",
+   "angel of light"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "discernment of spirits",
+  "latin": "discreción de espíritus",
+  "definition": "The trained capacity to perceive interior motions, attribute them to their source, and act accordingly: receive the good, reject the bad. Ignatius presents it as a skill acquired by practice rather than a charism, resting on a threefold analysis of thoughts as one's own, from the good spirit, or from the evil, and codified in two graded sets of rules.",
+  "trajectory": "The Exercises supply the analytic grid and two rule-sets calibrated to different stages, and make the resulting competence a precondition for the second time of election. The directories place it in the director's hands as a diagnostic routine. The Diary is the only place where we watch the practice itself, unrhetorical and day by day. The Constitutions, in their modern complementary layer, promote it from a retreat skill to a structural principle of the order, prescribed within formation and extended to communal apostolic deliberation, so that the private grammar becomes an instrument of corporate government.",
+  "loci": [
+   {
+    "cite": "SpEx [313]",
+    "note": "The title of the rules: perceiving and understanding motions in the soul so as to receive or reject them."
+   },
+   {
+    "cite": "SpEx [32]",
+    "note": "The threefold source of thoughts, one's own and two from outside, which underwrites the whole analysis."
+   },
+   {
+    "cite": "SpEx [176]",
+    "note": "Discernment named as the epistemic basis of the second time of election, alongside experience of consolations."
+   },
+   {
+    "cite": "Dir. [18]",
+    "note": "Where God does not move the exercitant directly, the director works the second mode, reading vocation from motions."
+   },
+   {
+    "cite": "Const [340]",
+    "note": "Formation is to bring members to a true discernment of spirits, with an approved spiritual director."
+   },
+   {
+    "cite": "Const [550]",
+    "note": "Apostolic discernment, personal and communal, declared central to the way of proceeding and rooted in the Exercises."
+   }
+  ],
+  "related": [
+   "consolation",
+   "desolation",
+   "motion",
+   "election"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "motion",
+  "latin": "moción",
+  "definition": "Any interior stirring, impulse or agitation experienced as arriving rather than as produced: the raw material on which discernment operates. Ignatius keeps the term deliberately neutral as to source, which is what makes it usable; the sorting into good and evil spirit is a second operation performed on data already registered as motion.",
+  "trajectory": "The word does the load-bearing work in the Exercises, appearing in the title of the rules and in the instruction that a retreatant who reports no motions is being questioned wrongly. Munitiz's Diary renders the same vocabulary as impulse, and there Ignatius logs motions with a precision no manual could impose, sometimes several within a single Mass. The Constitutions preserve one striking survival: divine motion becomes a technical cause standing behind vocation, something with which admissions policy is required to cooperate rather than to manufacture.",
+  "loci": [
+   {
+    "cite": "SpEx [313]",
+    "note": "Motions caused in the soul are named as the object of the rules, prior to any judgement about their source."
+   },
+   {
+    "cite": "SpEx [6]",
+    "note": "Absence of motion is treated as a symptom to be investigated, not as a neutral result."
+   },
+   {
+    "cite": "SpEx [227]",
+    "note": "Interior motions and relish are the marks a retreatant is told to notice and dwell on when reviewing the day."
+   },
+   {
+    "cite": "Diary [17]",
+    "note": "A fresh interior impulse of devotion and tears recorded as a distinct event within the day's sequence."
+   },
+   {
+    "cite": "Dir. [5]",
+    "note": "The director's standing question covers whatever the exercitant has experienced since their last conversation."
+   },
+   {
+    "cite": "Const [144]",
+    "note": "Admissions must cooperate with divine motion and vocation, not merely recruit: motion as a cause in law."
+   }
+  ],
+  "related": [
+   "discernment of spirits",
+   "consolation",
+   "devotion"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "enemy of human nature",
+  "latin": "el enemigo de natura humana",
+  "definition": "Ignatius's preferred designation for the tempter, chosen over more mythological names because it specifies a function rather than a person. The enemy is characterised operationally, by tactics: probing for the weakest virtue, insisting on secrecy, and collapsing on exposure. The three similes of the manual are effectively a field guide to an adversary defined by method.",
+  "trajectory": "In the Exercises the phrase is a fixed formula and carries the analytic weight of the first-week rules, including the meditation on Two Standards. The letters show it already in service in 1524, offered to a lay correspondent as a portable explanatory device for ordinary discouragement. In the Constitutions the personal adversary all but disappears; where he survives, in the chapter on poverty, he has been rewritten as an institutional threat, working by reinterpretation and innovation against a founder's first spirit. Temptation has become a problem of legal drift.",
+  "loci": [
+   {
+    "cite": "SpEx [10]",
+    "note": "Temptation under the appearance of good is assigned to the enemy and dated to the illuminative stage."
+   },
+   {
+    "cite": "SpEx [325]",
+    "note": "The simile of the woman: the enemy weakens under a firm front and grows fierce when the will falters."
+   },
+   {
+    "cite": "SpEx [326]",
+    "note": "The simile of the false lover: secrecy is his condition, disclosure to the director his defeat."
+   },
+   {
+    "cite": "SpEx [327]",
+    "note": "The simile of the commander: he probes every virtue and attacks where the defence is thinnest."
+   },
+   {
+    "cite": "Const [553]",
+    "note": "Rewritten as the enemy of the human race who erodes poverty by interpretations departing from the founders' spirit."
+   },
+   {
+    "cite": "Letters, no. I",
+    "note": "Offered to Inés Pascual as an everyday explanation of obstacles and unceasing temptation."
+   }
+  ],
+  "related": [
+   "angel of light",
+   "desolation",
+   "scruple",
+   "account of conscience"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "angel of light",
+  "latin": "ángel de luz",
+  "definition": "The technical name for the enemy's advanced tactic: entry under a genuinely good appearance, moving with the devout soul along its own path and then diverting it. The doctrine forces attention away from the content of a suggestion and onto the whole trajectory of a train of thought, whose beginning, middle and end must all tend to the good.",
+  "trajectory": "The Exercises reserve this for the second week, when gross temptation has ceased to work and only counterfeit good remains; the director is told to withhold these rules until the retreatant is actually being tempted this way. The letter to Teresa Rejadella shows the same analysis in vernacular pastoral form, with the enemy arriving under cover of joy. In the instructions for Trent the Latin tag appears in the margin of a working memorandum, evidence that Ignatius carried the category into diplomatic practice, where an argument's good appearance was a professional hazard.",
+  "loci": [
+   {
+    "cite": "SpEx [332]",
+    "note": "The evil angel takes the appearance of light, entering by the soul's own way and leaving by his."
+   },
+   {
+    "cite": "SpEx [333]",
+    "note": "The remedy: examine the entire sequence of thoughts, since a good beginning may end in something less good."
+   },
+   {
+    "cite": "SpEx [10]",
+    "note": "The rules are to be withheld until the director sees the retreatant actually tempted under a good appearance."
+   },
+   {
+    "cite": "Letters, no. V",
+    "note": "The enemy comes under cover of joy and a good appearance, inflating what was truly received from God."
+   },
+   {
+    "cite": "Letters, no. XIII",
+    "note": "The marginal tag on the appearance of good marks a working category in a diplomatic instruction."
+   }
+  ],
+  "related": [
+   "enemy of human nature",
+   "discernment of spirits",
+   "consolation without preceding cause",
+   "scruple"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "scruple",
+  "latin": "escrúpulo",
+  "definition": "Ignatius distinguishes two things the word covers: a self-generated judgement that freely builds sin out of what is not sinful, and the genuine article, an oscillating doubt that is a temptation of the enemy. The first he holds to be simply erroneous; the second he treats as diagnostically useful, a temporary purgative for a conscience still too coarse.",
+  "trajectory": "The treatment sits outside the four weeks, in a set of notes appended to the manual, and it is unmistakably autobiographical: the Autobiography records months of torment at Manresa, cured neither by written general confession nor by penance. The transposition into the Constitutions is exact and cold. Scruple becomes a liability to be managed: a candidate is asked in advance whether he will submit his scruples to another's judgement, and vows are dispensed in a manner calculated to leave none behind. The pathology has been converted into an administrative risk.",
+  "loci": [
+   {
+    "cite": "SpEx [346]",
+    "note": "The improper sense: a scruple freely built by one's own judgement out of what carries no sin."
+   },
+   {
+    "cite": "SpEx [347]",
+    "note": "The proper sense: oscillating doubt, identified as a temptation brought on by the enemy."
+   },
+   {
+    "cite": "SpEx [348]",
+    "note": "The first kind is to be abhorred as erroneous, the second may profit a soul for a time."
+   },
+   {
+    "cite": "Autobiog. [22]",
+    "note": "Scruples at Manresa persisting despite a carefully written general confession at Montserrat."
+   },
+   {
+    "cite": "Autobiog. [25]",
+    "note": "Obedience to a confessor yields two days' relief before the cycle of remembered sin resumes."
+   },
+   {
+    "cite": "Const [48]",
+    "note": "The candidate is asked whether he will submit scruples and difficulties to the judgement of another."
+   }
+  ],
+  "related": [
+   "enemy of human nature",
+   "account of conscience",
+   "examen",
+   "desolation"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "election",
+  "latin": "elección",
+  "definition": "Not choice in general but a bounded procedure: a decision about a state of life or an equivalent matter, made under specified conditions, on matter already indifferent or good, with the intention purified beforehand and the result offered for confirmation. Ignatius supplies three admissible occasions and two reasoned methods for the last of them.",
+  "trajectory": "The Exercises build the whole second week toward it and hedge it with preconditions. The Diary is the only surviving record of Ignatius performing his own, over forty days, on the question of fixed revenues, complete with written lists of reasons. The Constitutions then perform the decisive migration: the election of a superior general is legislated with the same architecture, an assembly may proceed at once if the Holy Spirit moves them unanimously, otherwise a deliberative procedure of prayer, silence and written votes applies. The private discipline has become constitutional law.",
+  "loci": [
+   {
+    "cite": "SpEx [169]",
+    "note": "The eye of intention must be single: the end governs the means, and the procedure begins with purification."
+   },
+   {
+    "cite": "SpEx [170]",
+    "note": "Only matter that is indifferent or good, and lawful within the Church, may be submitted to election."
+   },
+   {
+    "cite": "SpEx [175]",
+    "note": "The first of the three admissible occasions, where God moves the will beyond doubt."
+   },
+   {
+    "cite": "Dir. [22]",
+    "note": "Ignatius sets out the ordered questions: counsels or commandments, inside or outside religion, which institute, when and how."
+   },
+   {
+    "cite": "Diary [15]",
+    "note": "Ignatius takes out his written lists of reasons and works through them under prayer before deciding."
+   },
+   {
+    "cite": "Const [701]",
+    "note": "Where the assembly is not moved as one, a legislated procedure of private prayer, silence and voting is imposed."
+   }
+  ],
+  "related": [
+   "times for making an election",
+   "indifference",
+   "confirmation",
+   "discernment of spirits"
+  ],
+  "field": "election"
+ },
+ {
+  "term": "times for making an election",
+  "latin": "tres tiempos de elección",
+  "definition": "Ignatius's typology of the three occasions on which a sound election may be made: irresistible divine motion; sufficient light gathered from consolations, desolations and discernment; and a period of tranquillity in which the natural faculties operate freely. The scheme is a ranking of epistemic conditions, not of piety, and it dictates which method the director may use.",
+  "trajectory": "In the manual the three times are stated compactly and then equipped with two methods for the third. The directory turns them into a decision tree for the director, who is to try each in order and move on when no basis is found. The Constitutions reproduce the same tripartition in the law on electing a general: proceeding at once when all are moved as by inspiration corresponds to the first time, while the enclosed regime of prayer, silence and written ballots is the third time given juridical form. The typology has become procedure.",
+  "loci": [
+   {
+    "cite": "SpEx [175]",
+    "note": "First time: God moves and draws the will so that the devout person acts without doubting."
+   },
+   {
+    "cite": "SpEx [176]",
+    "note": "Second time: light sufficient for decision drawn from experience of consolations, desolations and discernment."
+   },
+   {
+    "cite": "SpEx [177]",
+    "note": "Third time: tranquillity, when no spirits are agitating the soul and the natural faculties work freely."
+   },
+   {
+    "cite": "Dir. [10]",
+    "note": "If the first time yields no basis, the director is to pass to the second: the typology used as a sequence."
+   },
+   {
+    "cite": "Dir. [18]",
+    "note": "The second time is worked by examining, when in consolation, the direction in which one is inclined."
+   },
+   {
+    "cite": "Const [700]",
+    "note": "Unanimous movement by the Holy Spirit dispenses the congregation from further procedure: the first time in law."
+   }
+  ],
+  "related": [
+   "election",
+   "consolation without preceding cause",
+   "discernment of spirits",
+   "indifference"
+  ],
+  "field": "election"
+ },
+ {
+  "term": "indifference",
+  "latin": "indiferencia",
+  "definition": "A trained equilibrium of the will with respect to means, not apathy about ends. One is to be poised between health and sickness, wealth and poverty, honour and dishonour, so far as these lie within free choice, so that nothing but the end itself inclines the choice. It is the enabling condition of a valid election, not a virtue pursued for itself.",
+  "trajectory": "The Principle and Foundation makes it foundational and the introduction to the election makes it a precondition, with an ascetical remedy prescribed where the will is already leaning. The directory hardens this into a threshold: a person who has not reached the second degree is simply not to be brought to the elections. The Constitutions then perform an unexpected substantivisation. Indifference becomes a canonical status: a candidate may be received as an indifferent, examined by a proper form, and must leave that state before the end of the novitiate. A disposition has become a grade.",
+  "loci": [
+   {
+    "cite": "SpEx [23]",
+    "note": "Indifference to all created things named as the condition for using or leaving them by reference to the end."
+   },
+   {
+    "cite": "SpEx [179]",
+    "note": "The exercitant must find himself indifferent, without disordered affection, before weighing the alternatives."
+   },
+   {
+    "cite": "SpEx [170]",
+    "note": "The matter itself must be indifferent or good, so that indifference qualifies both agent and object."
+   },
+   {
+    "cite": "Dir. [17]",
+    "note": "Anyone not standing in this indifference is unfit for the elections and is to be occupied otherwise."
+   },
+   {
+    "cite": "Const [9]",
+    "note": "Candidates enter indifferent as to grade, leaving the determination to the superior's judgement."
+   },
+   {
+    "cite": "Const [130]",
+    "note": "A distinct examen is prescribed for one still indifferent, so that both parties proceed with clarity."
+   }
+  ],
+  "related": [
+   "election",
+   "times for making an election",
+   "abnegation",
+   "obedience"
+  ],
+  "field": "election"
+ },
+ {
+  "term": "confirmation",
+  "latin": "confirmación",
+  "definition": "The seal sought after a decision rather than the ground on which it is taken: the election, once made, is offered to God so that it may be received and ratified if it serves. Ignatius does not treat confirmation as new information; it is an act of submission whose felt correlate may be consolation, tears, or nothing at all.",
+  "trajectory": "The manual gives it one line at the close of the first method of election. The Diary makes it the governing preoccupation of forty days, and there Ignatius disciplines himself sharply: he records confirmation that seems given even where no consolation attends the point, and rebukes his own wish to set the time at which it should arrive. The Constitutions retain the word in a wholly juridical sense, where a general confirms or removes a local superior and the appointment of a rector belongs to him. Ratification has migrated from God to office.",
+  "loci": [
+   {
+    "cite": "SpEx [183]",
+    "note": "The decision made, one goes to prayer and offers it so that God may receive and confirm it if it serves."
+   },
+   {
+    "cite": "Diary [14]",
+    "note": "A strange interior manner of experience is recorded as confirming Ignatius in his election."
+   },
+   {
+    "cite": "Diary [67]",
+    "note": "Confirmation appears to be given even though no consolation attends that particular point."
+   },
+   {
+    "cite": "Diary [152]",
+    "note": "Firmness and confirmation on the matter, with delight and a great sense of security in the soul."
+   },
+   {
+    "cite": "Const [490]",
+    "note": "The choice of a rector may be delegated, but confirmation of the appointment always belongs to the general."
+   },
+   {
+    "cite": "Const [759]",
+    "note": "The general retains the power to confirm or remove local superiors appointed under delegated authority."
+   }
+  ],
+  "related": [
+   "election",
+   "consolation",
+   "tears",
+   "poverty"
+  ],
+  "field": "election"
+ },
+ {
+  "term": "tears",
+  "latin": "lágrimas",
+  "definition": "For Ignatius a specific and gradable phenomenon, not a generic sign of fervour. Tears qualify as consolation only when they move the soul toward love of its Lord, whether over sin, over the Passion, or over matters ordered to service. Their absence is equally significant, and their pursuit for their own sake is treated as a disorder.",
+  "trajectory": "The Exercises ask for them as a grace and, notably, prescribe changes of penance when they fail to come. The Diary turns them into an instrument of measurement: Ignatius marks each day with letters distinguishing tears before, during and after Mass, so that the record becomes quantitative. He then interrogates the practice itself, praying that tears be withheld if reverence would be better served, which is discernment applied to its own favourite evidence. Neither the Constitutions nor the letters retain it as a technical term; it does not survive translation into law.",
+  "loci": [
+   {
+    "cite": "SpEx [87]",
+    "note": "Tears over one's own sins or over the Passion listed among the specific graces one may ask."
+   },
+   {
+    "cite": "SpEx [89]",
+    "note": "When tears and consolation are not found, changes in penance are prescribed as an experimental remedy."
+   },
+   {
+    "cite": "SpEx [316]",
+    "note": "Tears count as consolation only when they carry the soul toward love of its Lord."
+   },
+   {
+    "cite": "Diary [4]",
+    "note": "Tears so abundant that his eyes ached, recorded with the day's other measurements."
+   },
+   {
+    "cite": "Diary [165]",
+    "note": "The daily entry carries letter marks distinguishing tears before, during and after Mass."
+   },
+   {
+    "cite": "Diary [159]",
+    "note": "Ignatius prays that tears be withheld if reverence and submission would serve God equally."
+   }
+  ],
+  "related": [
+   "consolation",
+   "devotion",
+   "loquela",
+   "visitation"
+  ],
+  "field": "affectivity"
+ },
+ {
+  "term": "devotion",
+  "latin": "devoción",
+  "definition": "Readiness and warmth of will in the things of God, an affective facility rather than a set of practices. Ignatius insists it is not within our power to produce it, which is precisely why it can function as evidence. In administrative contexts the word slides toward a person's individual bent or attraction, and it is there that it acquires a legal qualifier.",
+  "trajectory": "The manual assigns devotion firmly to grace, refusing any technique that would guarantee it. The Diary makes it the most frequent single entry, often paired with tears and graded by intensity, the closest thing in the corpus to a continuous affective log. The Autobiography traces one such disposition, toward the Trinity, back to a formative moment. The Constitutions convert it into an administrative variable: prayers may be added according to each one's devotion, subject to superiors, while indiscreet devotions leading to illusion become an explicit ground of exclusion.",
+  "loci": [
+   {
+    "cite": "SpEx [322]",
+    "note": "Great devotion, intense love and tears are declared gifts we cannot bring on or retain by ourselves."
+   },
+   {
+    "cite": "Diary [1]",
+    "note": "The first entry pairs great devotion at Mass with tears and an inclination toward complete poverty."
+   },
+   {
+    "cite": "Diary [4]",
+    "note": "Devotion recorded before, during and after Mass, graded and tied to the day's decisions."
+   },
+   {
+    "cite": "Autobiog. [28]",
+    "note": "An enlightenment about the Trinity leaves a lifelong devotion in prayer to the Trinity."
+   },
+   {
+    "cite": "Const [182]",
+    "note": "Indiscreet devotions leading to illusions and serious error are listed among impediments."
+   },
+   {
+    "cite": "Const [342]",
+    "note": "Prayers may be added according to each one's devotion, but under the order and judgement of superiors."
+   }
+  ],
+  "related": [
+   "consolation",
+   "tears",
+   "reverence",
+   "discreet charity"
+  ],
+  "field": "affectivity"
+ },
+ {
+  "term": "loquela",
+  "latin": "loquela",
+  "definition": "A term Ignatius uses for an interior speech or utterance encountered in prayer, distinguished into internal and external and attended by a tonal or musical quality. He never defines it, and the notes to Munitiz's edition concede that its reference cannot be fixed with certainty; it is the clearest case in the corpus of a private technical word.",
+  "trajectory": "It belongs to the Diary alone and to a narrow band of days there. Its interest is methodological rather than lexical: having received something with no name in his own manual, Ignatius immediately subjects it to the ordinary rules, doubting whether the delight it gives comes from an evil spirit and noticing that he may be relishing the sound rather than the meaning. The absence of the word from the Exercises, the Constitutions, the directories and the letters marks the boundary of what Ignatius was willing to make transmissible.",
+  "loci": [
+   {
+    "cite": "Diary [221]",
+    "note": "The internal loquela of the Mass appears alongside continuous tears in the day's record."
+   },
+   {
+    "cite": "Diary [224]",
+    "note": "Ignatius likens what he hears to the loquela or music of heaven, with rising devotion."
+   },
+   {
+    "cite": "Diary [227]",
+    "note": "A day of no tears and some loquela: the phenomenon graded like every other datum."
+   },
+   {
+    "cite": "Diary [234]",
+    "note": "He suspects the pleasure may come from an evil spirit, and that he relishes the tone rather than the sense."
+   }
+  ],
+  "related": [
+   "tears",
+   "visitation",
+   "devotion",
+   "discernment of spirits"
+  ],
+  "field": "affectivity"
+ },
+ {
+  "term": "visitation",
+  "latin": "visitación",
+  "definition": "In Ignatius's interior vocabulary a visit of God to the soul, an episode with a beginning and an end, often with a specified object such as the Trinity or one of the Persons, and distinguishable from the tears that may accompany it. The word carries a strong sense of gratuity: one waits for it and does not appoint its time.",
+  "trajectory": "The Diary is saturated with the term and uses it with unusual precision, noting the object of each visitation and, more remarkably, correcting the wish to determine when one should come. The letters preserve a milder pastoral use. The Constitutions then annex the same word for a wholly different act: the canonical visitation, in which a provincial or major superior inspects a house, inquires how members make the Exercises, and sounds opinion about consultors. Between the Diary and Part IX the visitor has changed from God to a superior with a timetable.",
+  "loci": [
+   {
+    "cite": "Diary [105]",
+    "note": "An intense visitation and love described as surpassing others, with the Trinity as its object."
+   },
+   {
+    "cite": "Diary [110]",
+    "note": "All the visitations of the day are noted as having the Trinity for their object, without distinct Persons."
+   },
+   {
+    "cite": "Diary [184]",
+    "note": "Ignatius resolves to be equally content when not visited, disowning any claim on the experience."
+   },
+   {
+    "cite": "Const [594]",
+    "note": "At the annual visitation provincials are to inquire how members are making the Spiritual Exercises."
+   },
+   {
+    "cite": "Const [718]",
+    "note": "The major superior uses his visitation of houses to sound the community about consultors."
+   },
+   {
+    "cite": "Letters, no. X",
+    "note": "The visitation of God described to the citizens of Azpeitia as grace accompanying a stay among them."
+   }
+  ],
+  "related": [
+   "consolation",
+   "tears",
+   "loquela",
+   "reverence"
+  ],
+  "field": "affectivity"
+ },
+ {
+  "term": "reverence",
+  "latin": "acatamiento",
+  "definition": "A posture of submission before the divine majesty, felt rather than merely performed, which Ignatius distinguishes from fear. In the Diary it names a specific interior register that he comes to prefer to tears; in the Constitutions it names an owed disposition toward superiors, to be shown interiorly and exteriorly because Christ is regarded in them.",
+  "trajectory": "The Principle and Foundation places reverence among the three ends for which human beings are created. The Diary then makes it the outcome of a genuine reversal: Ignatius asks for submission and reverence in place of tears and visitations, and distinguishes the reverence of one who loves from that of one who fears. The Constitutions transpose the same word onto persons, requiring interior reverence toward superiors, and extend it even to the collateral associate, who owes reverence to a man he does not obey. The affective term has become a rule of comportment.",
+  "loci": [
+   {
+    "cite": "SpEx [23]",
+    "note": "Reverence stands with praise and service among the three ends for which human beings are created."
+   },
+   {
+    "cite": "Diary [156]",
+    "note": "Reflection on how much reverence and submission are owed when pronouncing the name of God at Mass."
+   },
+   {
+    "cite": "Diary [159]",
+    "note": "He asks for submission, reverence and humility, and asks that tears be withheld if that serves better."
+   },
+   {
+    "cite": "Diary [178]",
+    "note": "The distinction drawn: reverence should be that of one who loves, not of one who fears."
+   },
+   {
+    "cite": "Const [551]",
+    "note": "Interior reverence toward superiors is urged, Christ being considered and reverenced in them."
+   },
+   {
+    "cite": "Const [661]",
+    "note": "The collateral associate, though not under obedience, owes interior and exterior reverence to the one he assists."
+   }
+  ],
+  "related": [
+   "devotion",
+   "visitation",
+   "obedience",
+   "the greater glory of God"
+  ],
+  "field": "affectivity"
+ },
+ {
+  "term": "discreet charity",
+  "latin": "discreta caritas",
+  "definition": "Charity operating with judgement: the faculty by which a superior weighs persons, times, places and circumstances instead of applying a rule uniformly. Ignatius uses it as the standing substitute for detailed legislation, and its negative form, indiscreet charity, names the failure of nerve that keeps an unsuitable man out of misplaced kindness.",
+  "trajectory": "The seed is in the Exercises, where the whole retreat must be adapted to the age, education and capacity of the exercitant. The Constitutions raise the same instinct into a formal source of law: dismissal, correction, penances and the recovery of departed members are all referred to the discreet charity of the superior rather than to a tariff. The letter to the community at Coimbra supplies the corresponding ascetical doctrine, where excess of fervour is diagnosed as a sickness and discretion is urged as the mean between tepidity and indiscreet zeal.",
+  "loci": [
+   {
+    "cite": "SpEx [18]",
+    "note": "The Exercises must be adapted to the age, education and capacity of the one receiving them."
+   },
+   {
+    "cite": "Const [209]",
+    "note": "The discreet charity of the superior must weigh before God the causes sufficient for dismissal."
+   },
+   {
+    "cite": "Const [217]",
+    "note": "Retaining an unsuitable man out of indiscreet charity is judged worse than a decent dismissal."
+   },
+   {
+    "cite": "Const [269]",
+    "note": "Corrections and penances are left to the discreet charity of the superior, measured by persons and edification."
+   },
+   {
+    "cite": "Const [237]",
+    "note": "Well-ordered and discreet charity governs the measures taken to win back those who have left."
+   },
+   {
+    "cite": "Letters, no. XXIV",
+    "note": "Excessive fervour treated as a spiritual sickness; discretion urged as the mean, under obedience."
+   }
+  ],
+  "related": [
+   "the more universal good",
+   "obedience",
+   "way of proceeding",
+   "devotion"
+  ],
+  "field": "government"
+ },
+ {
+  "term": "the more universal good",
+  "latin": "el bien más universal",
+  "definition": "The comparative criterion by which Ignatius ranks competing claims: other things being equal, prefer what benefits more people, more durably, or more at the root. It is a rule for allocating scarce persons rather than a general theory of the good, and it operates alongside urgency of need and probable fruit.",
+  "trajectory": "The term is essentially absent from the Exercises, where the object of choice is a single life. It enters with government. Part VII builds an entire calculus on it for sending members: greater need, greater fruit, wider influence, the more universal good preferred to the particular. Elsewhere the same criterion governs dismissal, the disposal of a candidate's goods and the very existence of an office charged with the universal good. It appears in the correspondence in a plainer administrative form, as a duty to report anything the Holy See could use for a country's common good.",
+  "loci": [
+   {
+    "cite": "Const [622]",
+    "note": "Choosing where to send members is regulated by the greater service of God and the more universal good."
+   },
+   {
+    "cite": "Const [623]",
+    "note": "The same rule is applied to selecting undertakings, with motives for preferring one place over another."
+   },
+   {
+    "cite": "Const [258]",
+    "note": "A candidate does better to desire the more universal good of the whole than to favour one place."
+   },
+   {
+    "cite": "Const [204]",
+    "note": "Dismissal is justified where a man's remaining does not serve the universal good."
+   },
+   {
+    "cite": "Const [719]",
+    "note": "Some office must exist whose proper duty is to attend to the universal good of the whole body."
+   },
+   {
+    "cite": "Letters, no. XIV",
+    "note": "The legates are told to report any means the Holy See could use to promote a country's common good."
+   }
+  ],
+  "related": [
+   "the greater glory of God",
+   "discreet charity",
+   "way of proceeding",
+   "instrument"
+  ],
+  "field": "government"
+ },
+ {
+  "term": "account of conscience",
+  "latin": "cuenta de conciencia",
+  "definition": "The obligatory disclosure by a member of his interior and exterior state to his superior, so that the superior may direct and deploy him. Ignatius grounds it in utility rather than in penance, and the modern complementary layer of the Constitutions is careful to distinguish it from sacramental confession while keeping its substance.",
+  "trajectory": "Its root lies in the Exercises, where the director is to be faithfully informed of the retreatant's agitations without prying into sins, and in the rule that the enemy's suggestions lose their force on disclosure. The Constitutions convert a therapeutic transparency into a duty of office: the candidate must manifest his conscience before or shortly after entering, superiors must have a complete understanding of subjects, nothing interior or exterior is to be hidden, and the account is required again before final vows. Openness has become the precondition of missioning.",
+  "loci": [
+   {
+    "cite": "SpEx [17]",
+    "note": "The director is to be faithfully informed of the exercitant's agitations, without asking about personal sins."
+   },
+   {
+    "cite": "SpEx [326]",
+    "note": "Disclosure to the director defeats the enemy, whose tactic depends on being kept secret."
+   },
+   {
+    "cite": "Const [91]",
+    "note": "Superiors must have a complete understanding of subjects so that they may direct and govern them better."
+   },
+   {
+    "cite": "Const [93]",
+    "note": "The candidate is obliged to manifest his conscience with humility and transparency, concealing nothing."
+   },
+   {
+    "cite": "Const [551]",
+    "note": "Nothing interior or exterior is to be kept hidden from superiors, who are to be informed about everything."
+   },
+   {
+    "cite": "Const [524]",
+    "note": "An account of conscience is prescribed some thirty days before final vows."
+   }
+  ],
+  "related": [
+   "obedience",
+   "way of proceeding",
+   "examen",
+   "scruple"
+  ],
+  "field": "government"
+ },
+ {
+  "term": "obedience",
+  "latin": "obediencia",
+  "definition": "For Ignatius a threefold operation ascending from execution to will to judgement, the last being the hardest and the one he insists on. The formula about renouncing contrary judgement is bounded by an explicit limit, namely matters in which no sin can be discerned, and by the parallel duty of representation through the account of conscience.",
+  "trajectory": "The Exercises touch it only obliquely, in the rules on ecclesial attitude and in the praise of the vows. The letters show Ignatius teaching it pastorally, recommending that the desire for mortification be spent on subduing one's own will and judgement rather than on the body. The Constitutions raise it to the constitutive virtue of the body: conformity of will and judgement in Part III, blind obedience in Part VI, and, in the modern layer, the vow presented as what makes the Society a fit instrument of Christ. Union is achieved chiefly through this bond.",
+  "loci": [
+   {
+    "cite": "SpEx [353]",
+    "note": "Personal judgement is to be set aside in favour of readiness to obey the hierarchical Church."
+   },
+   {
+    "cite": "Const [284]",
+    "note": "Interior resignation and abnegation of one's own will and judgement, conformed to the superior's."
+   },
+   {
+    "cite": "Const [547]",
+    "note": "The demand of blind obedience, expressly limited to matters in which no species of sin can be judged."
+   },
+   {
+    "cite": "Const [550]",
+    "note": "Through the vow of obedience the Society is said to become a fitter instrument of Christ in the Church."
+   },
+   {
+    "cite": "Const [659]",
+    "note": "Union is produced chiefly by the bond of obedience, and the more prominent must set the example."
+   },
+   {
+    "cite": "Letters, no. XXIV",
+    "note": "Desire for mortification is redirected to curbing one's own will and judgement under obedience."
+   }
+  ],
+  "related": [
+   "account of conscience",
+   "abnegation",
+   "instrument",
+   "way of proceeding"
+  ],
+  "field": "government"
+ },
+ {
+  "term": "way of proceeding",
+  "latin": "nuestro modo de proceder",
+  "definition": "The Society's characteristic style of acting, invoked as a normative standard when no rule covers a case. It is deliberately unformalised, comprising mobility, gratuity of ministry, adaptation to persons and circumstances, and the readiness to be sent. Ignatius treats it as something learned by imitation and long association rather than defined.",
+  "trajectory": "The Exercises use the phrase only technically, of the order of an exercise. In the Constitutions it becomes a legal touchstone: readiness for missions is glossed by it, incapacity for its labours becomes a ground of dismissal, and agreements that compromise gratuitous ministry are said to impair it. Superiors are required to know it thoroughly. The instructions for Trent show the same thing before it was codified, as a set of habits about conversation, deliberation and pace, and the letters to the legates in Ireland make adaptation to temperament an explicit technique.",
+  "loci": [
+   {
+    "cite": "Const [92]",
+    "note": "Readiness to travel anywhere on order is glossed as belonging to our profession and way of proceeding."
+   },
+   {
+    "cite": "Const [216]",
+    "note": "Inability to bear the labour required by this way of proceeding is made a ground of dismissal."
+   },
+   {
+    "cite": "Const [398]",
+    "note": "Agreements that compromise giving freely what was freely received are said to impair its sincerity."
+   },
+   {
+    "cite": "Const [718]",
+    "note": "A superior is required to know the way of proceeding thoroughly before he commands."
+   },
+   {
+    "cite": "Letters, no. XX",
+    "note": "The Trent memorandum sets out habits of speech, deliberation and pace as a working style."
+   },
+   {
+    "cite": "Letters, no. XIII",
+    "note": "Legates are told to gauge temperament and conform themselves to it before dealing with authorities."
+   }
+  ],
+  "related": [
+   "discreet charity",
+   "the more universal good",
+   "obedience",
+   "instrument"
+  ],
+  "field": "government"
+ },
+ {
+  "term": "the greater glory of God",
+  "latin": "a mayor gloria de Dios",
+  "definition": "A comparative rather than a superlative: the criterion is not what is glorious but what is more so, which makes it a device for choosing between two lawful options. Its grammatical form matters, since the entire architecture of election, missioning and government depends on there being a comparative always available.",
+  "trajectory": "The Principle and Foundation states the end absolutely; the oblation of the Kingdom already qualifies the offer by the greater service. The directory extends the comparative to the counsels over the commandments. In the Constitutions the phrase becomes the most frequent formula in the text, attached to admission, dispensation, appointment and the sending of men, functioning as a general clause that licenses discretionary judgement wherever the law stops. The Trent instructions show it doing the same work in a mission brief, named as the principal object of the whole undertaking.",
+  "loci": [
+   {
+    "cite": "SpEx [23]",
+    "note": "The end is stated absolutely: to praise, reverence and serve God, and so to be saved."
+   },
+   {
+    "cite": "SpEx [98]",
+    "note": "The oblation is offered only on condition that it be for God's greater service and praise."
+   },
+   {
+    "cite": "Dir. [8]",
+    "note": "The director disposes the exercitant to prefer the counsels if this serves God's greater service."
+   },
+   {
+    "cite": "Const [93]",
+    "note": "Manifestation of conscience is required of whoever wishes to remain in the Society for God's greater glory."
+   },
+   {
+    "cite": "Const [622]",
+    "note": "Sending men is governed by the greater service of God taken together with the more universal good."
+   },
+   {
+    "cite": "Letters, no. XX",
+    "note": "The greater glory of God is named as the principal object of the journey to Trent."
+   }
+  ],
+  "related": [
+   "the more universal good",
+   "instrument",
+   "poverty",
+   "election"
+  ],
+  "field": "mission"
+ },
+ {
+  "term": "instrument",
+  "latin": "instrumentum",
+  "definition": "The governing metaphor for the apostolic worker: a tool joined to God's hand, whose effectiveness depends first on the union that makes it wieldable and only secondarily on natural equipment. Ignatius keeps a strict order of priority between the two, and the modern layer applies the figure to the corporate body as well as to the individual.",
+  "trajectory": "The word is marginal in the Exercises and decisive in the Constitutions, where Part X states the principle twice, in Part VI and again at the close: interior means join the instrument to God, exterior means fit it to deal with people, and the former are more effective. The letters show the same idiom in use decades earlier, addressed to Polanco and to the community at Coimbra as an incentive. The complementary norms extend it corporately, so that the vow of obedience is what makes the Society itself a fitter instrument.",
+  "loci": [
+   {
+    "cite": "Const [602]",
+    "note": "The means uniting the human instrument to God are declared more effective than those fitting it to people."
+   },
+   {
+    "cite": "Const [813]",
+    "note": "The same principle is restated in Part X as the foundation of the whole body's preservation."
+   },
+   {
+    "cite": "Const [814]",
+    "note": "Natural means equipping the instrument are admitted, provided they are acquired and used for the divine end."
+   },
+   {
+    "cite": "Const [550]",
+    "note": "The Society as a body is said to become a fitter instrument of Christ through the vow of obedience."
+   },
+   {
+    "cite": "Letters, no. XXIII",
+    "note": "Polanco is told that God will work much through him, taking him as a faithful instrument."
+   },
+   {
+    "cite": "Letters, no. XXIV",
+    "note": "The Coimbra community is urged to make themselves effective instruments of divine grace."
+   }
+  ],
+  "related": [
+   "obedience",
+   "the greater glory of God",
+   "the more universal good",
+   "way of proceeding"
+  ],
+  "field": "mission"
+ },
+ {
+  "term": "abnegation",
+  "latin": "abnegación",
+  "definition": "The dismantling of self-love, self-will and self-judgement, treated by Ignatius as a measurable achievement rather than a mood, and tested by assigned humiliations. It is the condition of everything else in his system: without it neither indifference nor obedience nor study can be securely built.",
+  "trajectory": "The word is almost absent from the Exercises, whose functional equivalent is the third way of being humble. It is in the Constitutions that abnegation becomes a technical term of formation, with an entire pedagogy attached: lowly household tasks as trials, the demand that a novice's chief endeavour be his own greater abnegation, interior resignation of will and judgement, and the requirement that this foundation be visible before studies begin. The Diary shows the same term doing work in Ignatius's private reasoning about poverty, where abnegation is the effect he expects institutional poverty to produce.",
+  "loci": [
+   {
+    "cite": "SpEx [167]",
+    "note": "The third way of being humble chooses poverty and contempt with Christ over wealth and honour."
+   },
+   {
+    "cite": "Const [83]",
+    "note": "Trials of humility and abnegation are assigned through kitchen work and other lowly household services."
+   },
+   {
+    "cite": "Const [103]",
+    "note": "A candidate's chief endeavour is to be his own greater abnegation and continual mortification."
+   },
+   {
+    "cite": "Const [284]",
+    "note": "Genuine resignation and abnegation of one's own will and judgement, conformed to the superior's."
+   },
+   {
+    "cite": "Const [307]",
+    "note": "The foundation of abnegation must be seen in place before the edifice of learning is raised."
+   },
+   {
+    "cite": "Diary [490]",
+    "note": "In the reasons on poverty, ownership is said to make it harder to win others to poverty and self-abnegation."
+   }
+  ],
+  "related": [
+   "obedience",
+   "indifference",
+   "poverty",
+   "examen"
+  ],
+  "field": "asceticism"
+ },
+ {
+  "term": "poverty",
+  "latin": "pobreza",
+  "definition": "Distinguished by Ignatius into actual and spiritual, and treated in the Second Week as the first term of a strategic sequence running from poverty through contempt to humility. In the Constitutions it becomes a structural provision about revenue: churches and houses accepted for ministry may hold no fixed income under the Society's administration.",
+  "trajectory": "The Exercises make poverty an object of desire and of offering, and the Two Standards give it a tactical rationale. The Diary preserves the only surviving record of Ignatius deciding a concrete question of poverty, over forty days, with written reasons for and against fixed revenues, culminating in an offering of complete poverty made in tears. The Constitutions then enact the outcome as law and defend it with the language of the discernment rules, casting the enemy as the agent who erodes the wall of poverty by reinterpretation. Private election has become legislation.",
+  "loci": [
+   {
+    "cite": "SpEx [98]",
+    "note": "The oblation embraces poverty both actual and spiritual, if the divine Majesty chooses to receive it."
+   },
+   {
+    "cite": "SpEx [146]",
+    "note": "The Two Standards set poverty first in the sequence leading through contempt to humility."
+   },
+   {
+    "cite": "SpEx [167]",
+    "note": "Poverty with Christ poor is chosen over wealth in the third way of being humble."
+   },
+   {
+    "cite": "Diary [16]",
+    "note": "The offering of complete poverty made on his knees, with sobs, after the reasons were laid aside."
+   },
+   {
+    "cite": "Const [553]",
+    "note": "Poverty as the wall of the institute, which the enemy erodes by interpretations and innovations."
+   },
+   {
+    "cite": "Const [555]",
+    "note": "Houses and churches accepted for ministry may hold no fixed revenue under the Society's administration."
+   }
+  ],
+  "related": [
+   "abnegation",
+   "election",
+   "confirmation",
+   "the greater glory of God"
+  ],
+  "field": "asceticism"
+ },
+ {
+  "term": "examen",
+  "latin": "examen",
+  "definition": "Two distinct instruments share the name: the particular examen, which targets a single fault with a timed regime and a written tally, and the general examen, a five-point review of thoughts, words and deeds. Both are technologies of self-observation designed to generate reportable data rather than diffuse remorse.",
+  "trajectory": "The Exercises give both in operational detail, with the particular examen accompanied by ruled lines for counting. The directory places them at the very beginning, before the first exercise. In the Constitutions the daily examination is fixed into the rhythm of life, twice each day alongside Mass and confession, and it survives in the modern layer as the basis of apostolic discernment. Meanwhile the word undergoes a second career: the General Examen becomes the name of an entire legal document, the interrogation of candidates, with distinct forms for coadjutors, scholastics and indifferents.",
+  "loci": [
+   {
+    "cite": "SpEx [24]",
+    "note": "The particular examination: three times in the day and two examinations, aimed at one fault."
+   },
+   {
+    "cite": "SpEx [32]",
+    "note": "The general examination opens by distinguishing three kinds of thoughts within the self."
+   },
+   {
+    "cite": "SpEx [43]",
+    "note": "The five-point method: thanks, grace to know sins, review hour by hour, pardon, and amendment."
+   },
+   {
+    "cite": "Const [261]",
+    "note": "Daily examination of conscience is fixed alongside confession and communion at set intervals."
+   },
+   {
+    "cite": "Const [342]",
+    "note": "Conscience is to be examined twice each day within the hour allotted to prayer and the Hours."
+   },
+   {
+    "cite": "Const [103]",
+    "note": "The word migrates to the legal document: a more particularised examen for the educated and coadjutors."
+   }
+  ],
+  "related": [
+   "account of conscience",
+   "abnegation",
+   "scruple",
+   "discernment of spirits"
+  ],
+  "field": "asceticism"
+ }
+]

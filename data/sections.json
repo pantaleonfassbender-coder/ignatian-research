@@ -1,0 +1,274 @@
+[
+  {
+    "id": "spex",
+    "name": "Introductory Explanations",
+    "von": 1,
+    "bis": 20,
+    "summary": "Twenty numbered notes addressed to the director rather than to the person making the retreat. They define what an exercise is, insist that material be handed over sparingly so that the exercitant does the discovering, fix the daily rhythm and the length of the full course at about thirty days, and provide reduced forms for people who cannot withdraw from their affairs. The last note describes the ideal conditions of seclusion and the reasons for it.",
+    "watch_for": "Number fifteen forbids the director to lean either way about the exercitant's future state; number eighteen requires the whole course to be scaled to the person. Together they govern everything that follows."
+  },
+  {
+    "id": "spex",
+    "name": "Presupposition",
+    "von": 21,
+    "bis": 22,
+    "summary": "Two short numbers standing between the explanatory notes and the retreat proper. The first is the book's own title, stating the aim as self-mastery and the ordering of a life, with the express proviso that no choice be settled under the pressure of a disordered attachment. The second lays down a rule of interpretation: each party should assume the other means well, ask what was meant before condemning, and correct only with affection.",
+    "watch_for": "The title supplies the closest thing to a statement of purpose the book contains. The Presupposition governs conversation between director and exercitant specifically, though it is frequently quoted as a general maxim."
+  },
+  {
+    "id": "spex",
+    "name": "First Week",
+    "von": 23,
+    "bis": 90,
+    "summary": "Opens with the Principle and Foundation, then supplies the particular and general examinations of conscience, a method for general confession, and five meditations: on the sin of the angels and of Adam, on personal sin, a repetition, a summary drawing on the senses, and hell. Additional directives regulate posture, light, food and penance. The grace sought is shame and sorrow, and the register is affective rather than argumentative.",
+    "watch_for": "The Foundation is doctrinal, the remainder of the Week is not. The meditations are scored for repetition and intensification, so readers who look for a developing argument will misread the structure."
+  },
+  {
+    "id": "spex",
+    "name": "Second Week",
+    "von": 91,
+    "bis": 189,
+    "summary": "The longest division. The Call of the King opens it; contemplations then follow the incarnation, nativity and hidden life, interrupted by three set pieces, the Two Standards, the Three Classes of Persons and the Three Kinds of Humility, which test whether the exercitant is genuinely free. Material on the election follows: what may be chosen, three times suitable for choosing, two methods for reasoning it out, and a procedure for reforming a life already fixed.",
+    "watch_for": "Narrative contemplation and decision machinery are interleaved deliberately, not accidentally. The closing provision for people whose state of life cannot change addresses a large part of the historical readership."
+  },
+  {
+    "id": "spex",
+    "name": "Third Week",
+    "von": 190,
+    "bis": 217,
+    "summary": "Contemplations on the passion from the last supper to the burial, distributed over several days with repetitions and applications of the senses. Notes then explain how to accompany Christ suffering, and the Week closes with seven rules on eating and drinking. The grace asked for is sorrow with Christ rather than sorrow for one's own sins, a deliberate change of object from the First Week.",
+    "watch_for": "The rules on food are part of the Week's discipline of moderation, not an appendix. Note also the instruction to let the imagination dwell on what is not narrated as much as on what is."
+  },
+  {
+    "id": "spex",
+    "name": "Fourth Week",
+    "von": 218,
+    "bis": 237,
+    "summary": "Contemplations on the resurrection appearances, beginning with an appearance to Mary that the gospels do not record. Notes adjust the discipline: penance is relaxed, light and pleasant surroundings are permitted, and the grace sought is joy. The division ends with the Contemplation to Attain Love, whose four points move from gifts received to God present and labouring in creatures, with an offering of liberty, memory, understanding and will.",
+    "watch_for": "Whether the final contemplation belongs inside the Fourth Week or stands outside the four Weeks has been argued for centuries, and the text itself gives no ruling."
+  },
+  {
+    "id": "spex",
+    "name": "Three Methods of Praying",
+    "von": 238,
+    "bis": 260,
+    "summary": "Three procedures offered as supplementary matter. The first works through the commandments, the capital sins, the faculties of the soul and the bodily senses, examining oneself against each in turn. The second dwells on a single word of a familiar prayer for as long as meaning continues to be found in it. The third times the words of a prayer to the rhythm of the breath.",
+    "watch_for": "These were the portable part of the book, given to people who could not withdraw at all. The early directories repeatedly pair them with the First Week as a complete package for ordinary lay use."
+  },
+  {
+    "id": "spex",
+    "name": "Mysteries of the Life of Christ",
+    "von": 261,
+    "bis": 312,
+    "summary": "A file of gospel episodes from the annunciation to the ascension, each reduced to a heading, a scriptural reference and roughly three points. There is no commentary and virtually no exhortation. The material supplies the contemplations of the Second, Third and Fourth Weeks, and the director draws on it to sketch an outline for the exercitant before each period of prayer rather than to be read continuously.",
+    "watch_for": "Words in quotation marks are gospel text and the rest is Ignatius's own summary, a distinction stated at the head of the section. Several closing entries record appearances not found in the gospels at all."
+  },
+  {
+    "id": "spex",
+    "name": "Rules for the Discernment of Spirits",
+    "von": 313,
+    "bis": 336,
+    "summary": "Two distinct sets. Fourteen rules suited to the First Week describe how good and evil spirits work on people moving toward or away from serious sin, define consolation and desolation, and prescribe conduct under desolation: change nothing, press harder in prayer, expect the trial to end. Eight further rules suited to the Second Week address subtler deception, where the enemy enters under the appearance of good and reveals himself only later.",
+    "watch_for": "The two sets assume different subjects and are not cumulative. The rule forbidding change during desolation and the analysis of consolation without preceding cause carry most of the later commentary."
+  },
+  {
+    "id": "spex",
+    "name": "Rules for Giving Alms",
+    "von": 337,
+    "bis": 344,
+    "summary": "Eight rules for anyone charged with distributing goods, written with holders of ecclesiastical office and administrators of charity in view. They transfer the logic of the election to money: examine the motive, imagine advising a stranger in the same position, consider how one would wish to have decided at the hour of death and at the judgment. The last rule favours reducing one's own establishment.",
+    "watch_for": "A short section that matters out of proportion to its length, because it shows the election method applied to an ordinary administrative decision rather than to a choice of state of life."
+  },
+  {
+    "id": "spex",
+    "name": "Notes on Scruples",
+    "von": 345,
+    "bis": 351,
+    "summary": "Six notes distinguishing a genuine judgment of conscience from the scrupulous kind that manufactures sin out of nothing. Ignatius describes how the enemy exploits delicate and lax temperaments in opposite directions, recommends that the scrupulous person deliberately act against the scruple, and advises the director to push each temperament toward the extreme opposite to its own inclination in order to reach a mean.",
+    "watch_for": "Written out of experience: the memoir records months of exactly this affliction at Manresa. The notes are diagnostic rather than devotional and were used by early directors as a practical instrument."
+  },
+  {
+    "id": "spex",
+    "name": "Rules for Thinking with the Church",
+    "von": 352,
+    "bis": 370,
+    "summary": "Eighteen rules on ecclesial judgment, defending practices then under attack, among them confession, religious vows, relics, images, fasts and indulgences, and commending scholastic theology alongside the positive doctors. Several rules counsel restraint in preaching about predestination, grace and faith, on the ground that unguarded talk harms ordinary hearers. The series closes by commending both love and fear of God.",
+    "watch_for": "The rule about calling white black if the hierarchical Church so determines is the most quoted and most decontextualized sentence in the whole corpus. Read the entire series and its polemical setting before citing it."
+  },
+  {
+    "id": "const",
+    "name": "General Examen",
+    "von": 1,
+    "bis": 133,
+    "summary": "A document put into candidates' hands before entry rather than a law binding members. It sets out the Society's origin and papal approvals, its grades of membership and manner of life, the impediments that bar admission outright, and the questions each applicant must answer about family, debts, health, prior obligations and willingness to be tested. Toward the end it asks whether he desires abasement and misjudgment with Christ.",
+    "watch_for": "Informative in intention but partly normative in effect, which later required a general congregation to determine which parts still bind. The Norms printed alongside mark where that determination fell."
+  },
+  {
+    "id": "const",
+    "name": "Part I",
+    "von": 134,
+    "bis": 203,
+    "summary": "Preceded by the Preamble, which subordinates every written constitution to the interior law of charity and then argues that written constitutions are nevertheless necessary. Part I proper treats admission: who holds authority to admit, what qualities of mind, body and disposition are wanted, which impediments exclude absolutely and which may be dispensed, and how candidates are received, informed and tested during the first probation.",
+    "watch_for": "The Preamble is an interpretive key rather than legislation, and is regularly cited on its own. Note the working distinction between absolute impediments and those the general may dispense."
+  },
+  {
+    "id": "const",
+    "name": "Part II",
+    "von": 204,
+    "bis": 242,
+    "summary": "Dismissal: who holds the authority, on what grounds, with how much deliberation and discretion, and how the person dismissed is to be treated, provided for and sent away. The chapters distinguish degrees of gravity and the different grades of membership, require that the decision be taken calmly and with counsel, and end with provisions for readmitting someone who left or was dismissed and later returns.",
+    "watch_for": "As much space goes to the manner of dismissal and to the future of the person dismissed as to the grounds for it. Note the care taken over both parties' reputations."
+  },
+  {
+    "id": "const",
+    "name": "Part III",
+    "von": 243,
+    "bis": 306,
+    "summary": "Opens with a preamble on why those already admitted must be preserved and advanced, then treats care of the soul: obedience, prayer, mortification, the sacraments, guarding against illusion and temptation, and dealings with people outside the house. Care of the body follows in comparable detail, covering diet, sleep, clothing, medical treatment and manual work. The Part closes with the ordering of the house and its domestic offices.",
+    "watch_for": "That bodily care receives as much space as prayer is itself a statement of principle. The treatment of obedience here anticipates, in milder terms, the far harder chapter in Part VI."
+  },
+  {
+    "id": "const",
+    "name": "Part IV",
+    "von": 307,
+    "bis": 509,
+    "summary": "The longest Part. Its preamble grounds the whole enterprise in helping souls, which makes learning instrumental. Chapters follow on accepting and administering college foundations, what the scholastics study and in what order, how teachers and rectors are to proceed, discipline and examinations, and the removal of students from studies. The later chapters extend the same treatment to universities: disciplines taught, the offices of rector and chancellor, degrees, and the government of students.",
+    "watch_for": "Historically the most consequential Part, since it committed the order to schooling. Read the preamble before the administrative chapters, or the detail reads as mere institutional housekeeping."
+  },
+  {
+    "id": "const",
+    "name": "Part V",
+    "von": 510,
+    "bis": 546,
+    "summary": "Incorporation into the body of the Society: who may be admitted to profession or as a formed coadjutor, how long and how thoroughly they must first have been tested, and what qualities of life, learning and disposition each grade requires. The Part then supplies the formulas of profession and of the simple vows, with directions on how, before whom and with what record the vows are pronounced and renewed.",
+    "watch_for": "The distinctions between professed, coadjutors and approved scholastics settled here govern much of Parts VI to IX, including who may be called to a general congregation."
+  },
+  {
+    "id": "const",
+    "name": "Part VI",
+    "von": 547,
+    "bis": 602,
+    "summary": "The personal life of those already incorporated. Obedience comes first and at length, in execution, will and understanding. Poverty follows, together with the promise not to relax it, while chastity is dispatched in a sentence as needing no interpretation. Prayer and penance are left largely to the discretion of superiors rather than fixed by rule. The Part closes with the ordinary ministries of preaching, confession, teaching and works of mercy.",
+    "watch_for": "The images of the lifeless body and the old man's staff stand in the opening chapter and were seized on by later polemic. Note how little is legislated about prayer."
+  },
+  {
+    "id": "const",
+    "name": "Part VII",
+    "von": 603,
+    "bis": 654,
+    "summary": "Mission: how members are sent, whether by the pope under the fourth vow or by superiors, and on what basis. The declarations weigh greater need, likely fruit, indebtedness, the durability of results and the preference for the more universal good. Further chapters cover travel and conduct on mission, ministry from fixed residences, the treatment of those already sent, and the domestic offices left to house rules.",
+    "watch_for": "The criteria for choosing where and to what to send people are cast as declarations rather than constitutions, yet they are the nearest thing in the corpus to an explicit method of apostolic priority."
+  },
+  {
+    "id": "const",
+    "name": "Part VIII",
+    "von": 655,
+    "bis": 718,
+    "summary": "How members dispersed across the world are held together with their head and with one another: removing causes of division, subordination through superiors, uniformity in doctrine and manner of proceeding, and a regular exchange of letters and reports between regions. The second half legislates for general congregations, covering when they are convoked, who attends, how the general is elected and how business is transacted and promulgated.",
+    "watch_for": "The correspondence system prescribed here is the practical origin of the surviving Jesuit archive. Note that union is treated as an administrative problem to be engineered, not only as a spiritual disposition."
+  },
+  {
+    "id": "const",
+    "name": "Part IX",
+    "von": 719,
+    "bis": 811,
+    "summary": "The head and the government descending from him. It argues why a single general is needed and why for life, lists the qualities desired in him with union to God placed first, and defines and limits his authority over persons, admissions, property and the Constitutions themselves. Later chapters cover the assistants and the admonitor who help and check him, his removal or substitution, and finally his proper function and the aids given him.",
+    "watch_for": "The qualities are ordered deliberately, spiritual before administrative. The closing chapters make plain that the general is to govern rather than exercise the ordinary ministries himself."
+  },
+  {
+    "id": "const",
+    "name": "Part X",
+    "von": 812,
+    "bis": 827,
+    "summary": "Short and hortatory rather than regulative. It denies that the order was founded, or can be kept up, by human contrivance, and ranks the means that unite a person with God above those that equip him for dealing with other people. Practical counsels follow: strict avoidance of any appearance of avarice, restraint in the numbers admitted, a middle course between rigour and laxity, goodwill toward outsiders, and care for the health of members and of their houses.",
+    "watch_for": "The Part deliberately closes the legislation on the same note as the Preamble opened it, subordinating the whole apparatus to something the apparatus cannot itself produce."
+  },
+  {
+    "id": "auto",
+    "name": "One",
+    "von": 1,
+    "bis": 12,
+    "summary": "The wound at Pamplona in 1521, the repeated and voluntarily chosen surgeries, and the long convalescence at Loyola. For want of the chivalric romances he wanted, he is given a life of Christ and a legendary of the saints, and begins alternating daydreams of knightly service with thoughts of imitating Francis and Dominic. He notices that the two leave him in different states afterwards, and forms a plan for Jerusalem and penance.",
+    "watch_for": "He speaks of himself throughout as the pilgrim, in the third person. The observation about the differing aftereffects of thoughts is told as an accidental discovery, not as a method."
+  },
+  {
+    "id": "auto",
+    "name": "Two",
+    "von": 13,
+    "bis": 20,
+    "summary": "Departure from Loyola, a vigil at Aranzazu, then the night before the altar at Montserrat, a written general confession lasting three days, and the exchange of his clothes for a beggar's. He settles at Manresa, begging daily, fasting severely, letting hair and nails grow, praying seven hours a day. A bright serpentine object appears repeatedly and consoles him. The chapter ends with a sustained temptation about enduring such a life for decades.",
+    "watch_for": "The chivalric idiom persists deliberately, a vigil of arms and a change of livery, and the narrative does not disown it. The stay at Manresa begins here rather than in the chapter named for it."
+  },
+  {
+    "id": "auto",
+    "name": "Three",
+    "von": 21,
+    "bis": 37,
+    "summary": "The densest stretch. Violent alternations between dryness and consolation, then months of scruples so severe that he contemplates ending his life, broken only when he resolves to abandon confessing the past altogether. A series of enlightenments follows, on the Trinity, on creation, on the presence in the Eucharist, and beside the river Cardoner. He then recognizes the beautiful recurring vision as diabolical and drives it off.",
+    "watch_for": "The Cardoner passage reports no vision and no statable content, only clarity, and the schoolmaster image a little earlier explains how he understood the whole sequence as instruction rather than reward."
+  },
+  {
+    "id": "auto",
+    "name": "Four",
+    "von": 38,
+    "bis": 50,
+    "summary": "Barcelona to Gaeta, Rome, Venice and by ship to Jaffa, begging his way and refusing to secure his passage in the ordinary manner. Great consolation at the first sight of Jerusalem, then the Franciscan guardian's refusal to let him stay, backed by a threat of excommunication. He submits, but slips away alone to look once more at the Mount of Olives. The return brings him to Venice in January 1524.",
+    "watch_for": "The refusal is the hinge of the whole narrative, and the text records no lament, moving directly to the conclusion that he must study in order to help souls."
+  },
+  {
+    "id": "auto",
+    "name": "Five",
+    "von": 51,
+    "bis": 55,
+    "summary": "Overland from Venice to Genoa through country held by French and imperial armies, with an arrest and interrogation on the way, then by sea to Barcelona. He begins two years of grammar there under a schoolmaster. Spiritual thoughts crowd in whenever he tries to study; he eventually concludes that they are a temptation and promises the master he will see the course through.",
+    "watch_for": "The clearest case in the memoir of consolation being identified as an obstacle. It should be read directly against the rules on discernment and against the parallel episode in Paris."
+  },
+  {
+    "id": "auto",
+    "name": "Six",
+    "von": 56,
+    "bis": 62,
+    "summary": "Arts at Alcala while begging and lodging at a hospice, wearing a distinctive rough habit, teaching Christian doctrine and speaking with people about spiritual matters. Inquisitors arrive from Toledo and leave the inquiry to the vicar Figueroa. After further investigations he is jailed for forty-two days, seventeen of them without being told why, and continues teaching and giving the Exercises inside.",
+    "watch_for": "Three separate proceedings are compressed here. The sentence that closes the chapter regulates dress and forbids speaking about matters of faith for four years, without finding any error."
+  },
+  {
+    "id": "auto",
+    "name": "Seven",
+    "von": 63,
+    "bis": 72,
+    "summary": "He appeals to the archbishop of Toledo, then moves to Salamanca, where Dominicans question him closely about what he says of virtues and vices and about his lack of learning. He and a companion are chained together in an upper room for twenty-two days. Four judges examine him on the Exercises and on doctrine. The verdict finds no error but restricts what he may say about mortal and venial sin.",
+    "watch_for": "The interrogation states the whole conflict plainly: an unlearned layman claiming to speak about the interior life. The judges had already read the Exercises before questioning him."
+  },
+  {
+    "id": "auto",
+    "name": "Eight",
+    "von": 73,
+    "bis": 85,
+    "summary": "Paris from early 1528: humanities at Montaigu, begging journeys to Flanders and once to England for support, and the arts course under Juan Pena. Spiritual thoughts again interrupt study, and again he binds himself to complete the course. A complaint reaches the inquisitor over his influence on other students. He gathers the companions, gives them the Exercises, takes his degree, and is sent home ill.",
+    "watch_for": "Study and recruitment compete throughout, and he resolves the tension by postponing the latter. The Paris temptation repeats the Barcelona pattern and is handled in exactly the same way."
+  },
+  {
+    "id": "auto",
+    "name": "Nine",
+    "von": 86,
+    "bis": 90,
+    "summary": "Return to Guipuzcoa for his health and to settle the companions' family business. He refuses the family house, lodges at a hospice, begs his food, teaches children daily and preaches on feast days. He presses the local authorities into several concrete reforms, including regular provision for the poor and the ringing of the Angelus. He then travels through the companions' home towns, accepting nothing.",
+    "watch_for": "The only sustained picture of him as a public figure in his own country, and the closest narrative parallel to the letter he later addressed to the citizens of Azpeitia."
+  },
+  {
+    "id": "auto",
+    "name": "Ten",
+    "von": 91,
+    "bis": 97,
+    "summary": "By sea to Genoa, then Bologna and Venice, where he studies privately, endures another accusation and is vindicated at trial. The nine companions arrive early in 1537; they disperse to hospitals, obtain ordination, and wait a year for a passage to Jerusalem that never comes. He spends time at Vicenza and defers his first Mass. The group decides for Rome, and on the road he is visited by God.",
+    "watch_for": "The failure to find a ship is what turns the group toward Rome and papal disposal, and the text presents it as circumstance rather than design. The vision near La Storta is reported with marked reserve."
+  },
+  {
+    "id": "auto",
+    "name": "Eleven",
+    "von": 98,
+    "bis": 101,
+    "summary": "The shortest and least tidy chapter. He gives the Exercises to Doctor Ortiz at Monte Cassino, returns to Rome and helps souls there, then faces renewed attacks that end in a judicial vindication. The narrative breaks off, and da Camara, writing in his own voice, records questioning him about how the Exercises and the Constitutions were actually composed.",
+    "watch_for": "The closing numbers are interview notes, not dictated narrative, and constitute the most direct testimony available on the making of the two central texts. Note the refusal to hand over the drafts."
+  }
+]

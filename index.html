@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ignatiana · A Research Apparatus for the Writings of Ignatius of Loyola</title>
+<meta name="description" content="A scholarly apparatus for the Ignatian corpus: canonical citation index, concordance, discernment lexicon, correspondence network, linguistic profiles, and a citation-bound dialogue with the texts. The 1914 Letters are included in full; in-copyright translations unlock from your own copy.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='25' font-size='24'>✠</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/overview">
+    <span class="mark">✠</span>
+    <span class="brandtext">
+      <strong>Ignatiana</strong>
+      <em>A research apparatus for the writings of Ignatius of Loyola</em>
+    </span>
+  </a>
+  <nav id="nav">
+    <a href="#/overview" data-v="overview">Overview</a>
+    <a href="#/works" data-v="works">Works</a>
+    <a href="#/letters" data-v="letters">Letters</a>
+    <a href="#/concordance" data-v="concordance">Concordance</a>
+    <a href="#/lexicon" data-v="lexicon">Lexicon</a>
+    <a href="#/atlas" data-v="atlas">Atlas</a>
+    <a href="#/register" data-v="register">Register</a>
+    <a href="#/language" data-v="language">Language</a>
+    <a href="#/glossary" data-v="glossary">Glossary</a>
+    <a href="#/dialogue" data-v="dialogue">Dialogue</a>
+  </nav>
+  <button id="unlockBtn" class="unlock" title="Load your own copies">
+    <span id="unlockDot" class="dot"></span><span id="unlockLabel">1 of 6 open</span>
+  </button>
+</header>
+
+<main id="view"></main>
+
+<footer>
+  <p><a href="#/method">Method, sources and limits →</a></p>
+  <p><strong>Rights.</strong> The writings of Ignatius of Loyola (1491–1556) are long out of copyright; the modern
+  <em>translations</em> are not. This site therefore ships the full text of one work only — <em>Letters and
+  Instructions</em>, vol. I, translated by D. F. O'Leary (1914), which is in the public domain. For the five
+  in-copyright translations it ships no running text at all, but only derived data: canonical citation anchors,
+  counts, registers and networks, together with editorial matter written for this site. Their full-text functions
+  operate solely on a copy you load into your own browser, which is never uploaded.</p>
+  <p>Editions used: <em>The Spiritual Exercises of Saint Ignatius</em>, trans. George E. Ganss, S.J. (St. Louis:
+  The Institute of Jesuit Sources, 1992) · <em>The Constitutions of the Society of Jesus and Their Complementary
+  Norms</em>, gen. ed. John W. Padberg, S.J. (IJS, 1996) · <em>A Pilgrim's Testament</em>, trans. Parmananda R.
+  Divarkar, S.J. (IJS, 1995) · <em>Íñigo: Discernment Log-Book. The Spiritual Diary of Saint Ignatius Loyola</em>,
+  ed. and trans. Joseph A. Munitiz, S.J. (London: Inigo Enterprises, 1987) · <em>On Giving the Spiritual
+  Exercises</em>, trans. Martin E. Palmer, S.J. (IJS, 1996) · <em>Letters and Instructions of St. Ignatius
+  Loyola</em>, vol. I, trans. D. F. O'Leary, ed. A. Goodier, S.J. (St. Louis and London: B. Herder / Manresa
+  Press, 1914). All rights in the modern translations rest with their publishers and translators.</p>
+</footer>
+
+<div id="unlockModal" class="modal" hidden>
+  <div class="modalbox">
+    <button class="closex" id="closeUnlock">×</button>
+    <h2>Open the in-copyright works</h2>
+    <p>Full-text functions for the five modern translations run <strong>entirely in your browser</strong>.
+    Drop in a PDF and this page will identify which work it is, read its text layer, and store it in your own
+    device storage. Nothing is uploaded; only the passages you actively query in the dialogue leave your machine.</p>
+    <label class="drop" id="drop">
+      <input type="file" id="pdfInput" accept="application/pdf" multiple hidden>
+      <span class="dropicon">⇪</span>
+      <span>Drop one or more PDFs here, or click to choose</span>
+      <small>The work is recognised from its title page and extent; where that is not conclusive you are asked which work it is</small>
+    </label>
+    <div id="unlockProgress" hidden>
+      <div class="bar"><div id="barFill"></div></div>
+      <p id="progressText" class="mono"></p>
+    </div>
+    <div id="unlockState" class="statebox"></div>
+    <h3 style="margin-top:1.4rem;font-size:1rem">Status</h3>
+    <p class="fine" style="margin:.2rem 0 0">Each work can also be opened from a named file directly, which
+    overrides the recognition, and removed again if the wrong volume was filed under it.</p>
+    <table id="unlockTable" class="unlocktbl"></table>
+    <div class="modalfoot">
+      <button id="forgetBtn" class="ghost">Clear all stored text</button>
+      <span class="fine">Opening a work enables concordance, canonical citation of hits, and the evidence mode of the dialogue.</span>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

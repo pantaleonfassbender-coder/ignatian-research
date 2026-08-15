@@ -1,0 +1,384 @@
+[
+ {
+  "term": "professed",
+  "definition": "A member incorporated in the highest grade, bound by solemn vows and, in the fullest form, by the fourth vow to the pope concerning missions. The Constitutions reserve to the professed of four vows the right to vote in electing a general, making the grade a constitutional as well as a spiritual category.",
+  "loci": [
+   "Const [6]",
+   "Const [511]",
+   "Const [699]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "scholastic",
+  "definition": "A member received for studies who has pronounced the first vows but is not yet definitively incorporated. Ignatius legislates a distinct examen for scholastics and a further period of testing after studies are complete, so that the grade functions as a long, revocable probation rather than a settled state.",
+  "loci": [
+   "Const [9]",
+   "Const [120]",
+   "Const [511]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "spiritual coadjutor",
+  "definition": "A priest incorporated by public but non-solemn vows, assisting the Society in spiritual ministries without the fourth vow or the vote reserved to the professed. A distinct and more particularised examen is prescribed for this grade, and movement out of it is expressly forbidden to the individual's own initiative.",
+  "loci": [
+   "Const [9]",
+   "Const [103]",
+   "Const [116]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "temporal coadjutor",
+  "definition": "A non-ordained member, later called a brother, incorporated to assist the Society in material and domestic matters. The Constitutions ask whether he will be content in low and humble offices, and forbid him to seek passage to another grade, treating stability in the first vocation as the governing principle.",
+  "loci": [
+   "Const [9]",
+   "Const [114]",
+   "Const [117]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "grade",
+  "definition": "The Society's term for the distinct categories of membership: professed, formed coadjutor, approved scholastic, novice. Grades carry different vows, different rights and different examens; the distribution of persons among them belongs to the superior, and candidates are told to enter indifferent about which they receive.",
+  "loci": [
+   "Const [9]",
+   "Const [511]",
+   "Const [116]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "general congregation",
+  "definition": "The Society's supreme assembly, convoked chiefly to elect a general or to treat matters concerning the whole body. The Constitutions regulate who assembles, where and when, and prescribe a mode of decision by discussion and, failing agreement, by definitors chosen as arbiters.",
+  "loci": [
+   "Const [677]",
+   "Const [683]",
+   "Const [715]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "fourth vow",
+  "definition": "The professed vow to the pope concerning missions, over and above poverty, chastity and obedience. Ignatius insists its entire purport concerns being sent, not general submission, and that its intent was dispersal throughout the world rather than attachment to any particular place.",
+  "loci": [
+   "Const [6]",
+   "Const [529]",
+   "Const [603]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "Formula of the Institute",
+  "definition": "The short papal-approved text defining the Society's purpose and basic structure, issued in 1540 and revised in 1550, which the Constitutions exist to implement. Its prescriptions on gratuitous ministry, the vow to the pope and the authority to make constitutions are presupposed throughout the legal text.",
+  "loci": [
+   "Const [1]",
+   "Const [6]",
+   "Const [134]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "first probation",
+  "definition": "The initial period, of roughly twelve to twenty days, during which a candidate is kept apart from the community while the examen is administered and he decides whether to proceed. It is the point at which the manifestation of conscience is first required.",
+  "loci": [
+   "Const [21]",
+   "Const [93]",
+   "Const [190]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "novitiate",
+  "definition": "The two-year period of testing and formation preceding first vows, marked by the six principal experiments and by close observation on both sides. The Constitutions treat it as reciprocal: the candidate is being tested, and the Society is being made known to him.",
+  "loci": [
+   "Const [64]",
+   "Const [71]",
+   "Const [190]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "tertianship",
+  "definition": "The final probation after studies, in which a man returns to the spiritual formation he had as a novice before definitive incorporation. The Constitutions describe it as a schooling of the heart, aimed at humility, abnegation and surrender of one's own will and judgement.",
+  "loci": [
+   "Const [514]",
+   "Const [516]",
+   "Const [524]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "superior general",
+  "definition": "The head of the whole body, elected for life by the professed of four vows, charged with what pertains to the universal good. He appoints provincials and rectors, may confirm or remove local superiors, and may revoke, extend or restrict delegated authority.",
+  "loci": [
+   "Const [719]",
+   "Const [757]",
+   "Const [759]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "provincial",
+  "definition": "The superior of a province, normally appointed by the general for three years, who exercises delegated authority over houses and colleges. Much of the Society's routine oversight runs through him, notably the annual visitation and the reporting of information upward.",
+  "loci": [
+   "Const [757]",
+   "Const [594]",
+   "Const [718]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "collateral associate",
+  "definition": "An officer given to a superior or to a man sent on a charge, to assist and advise without holding authority over him. The Constitutions specify the delicate arrangement: the collateral is not under obedience to the one he assists, yet owes him interior and exterior reverence.",
+  "loci": [
+   "Const [492]",
+   "Const [659]",
+   "Const [661]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "definitors",
+  "definition": "Four members chosen by majority vote from a congregation when discussion fails to produce agreement, and authorised by the rest as arbiters to settle the question with the general. The device converts deadlock into decision without a further round of voting by the whole assembly.",
+  "loci": [
+   "Const [715]",
+   "Const [718]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "active and passive voice",
+  "definition": "The canonical distinction between the right to elect and the right to be elected. The Constitutions restrict both, in the election of a general, to the professed of four vows, and prescribe deprivation of both as the penalty for anyone found to have canvassed for the office.",
+  "loci": [
+   "Const [683]",
+   "Const [695]",
+   "Const [699]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "experiments",
+  "definition": "The six principal probationary trials required of candidates, including the Spiritual Exercises, service in hospitals, pilgrimage without money and lowly household tasks. Superiors may advance, postpone, adapt or substitute them according to persons, times and places.",
+  "loci": [
+   "Const [64]",
+   "Const [71]",
+   "Const [98]"
+  ],
+  "field": "institution"
+ },
+ {
+  "term": "annotation",
+  "definition": "One of the twenty introductory explanations that open the Exercises, addressed largely to the director rather than to the retreatant. They govern adaptation, the withholding of the discernment rules, the director's neutrality, and the abridged forms of the retreat for the occupied.",
+  "loci": [
+   "SpEx [1]",
+   "SpEx [15]",
+   "SpEx [18]",
+   "SpEx [19]"
+  ],
+  "field": "prayer"
+ },
+ {
+  "term": "Presupposition",
+  "definition": "The short rule of interpretative charity placed between the annotations and the First Week: each party should be readier to put a good construction on the other's statement than to condemn it, and should ask how it was meant before correcting it with love.",
+  "loci": [
+   "SpEx [22]"
+  ],
+  "field": "prayer"
+ },
+ {
+  "term": "Principle and Foundation",
+  "definition": "The compressed statement of end and means placed before the First Week: human beings are created to praise, reverence and serve God, other things are given as help toward that end, and therefore indifference is required with respect to everything left to free choice.",
+  "loci": [
+   "SpEx [23]"
+  ],
+  "field": "prayer"
+ },
+ {
+  "term": "composition of place",
+  "definition": "The first or second prelude of most exercises, in which the imagination constructs the scene, whether a physical setting such as the road to Bethlehem or a non-spatial one such as the soul imprisoned in the body. It fixes attention before the points begin.",
+  "loci": [
+   "SpEx [47]",
+   "SpEx [91]",
+   "SpEx [103]",
+   "SpEx [112]"
+  ],
+  "field": "prayer"
+ },
+ {
+  "term": "colloquy",
+  "definition": "The concluding conversation of an exercise, made as one friend speaks to another or a servant to a master, in which the exercitant begs, accuses himself or shares his affairs. Ignatius prescribes triple colloquies to Our Lady, the Son and the Father at key moments.",
+  "loci": [
+   "SpEx [53]",
+   "SpEx [54]",
+   "SpEx [63]"
+  ],
+  "field": "prayer"
+ },
+ {
+  "term": "repetition",
+  "definition": "The return to material already contemplated, dwelling only on the points where greater consolation, desolation or spiritual relish was felt. Ignatius explains the term explicitly: the intellect, aided by memory, works without digression on what has already been given.",
+  "loci": [
+   "SpEx [62]",
+   "SpEx [64]",
+   "SpEx [118]"
+  ],
+  "field": "prayer"
+ },
+ {
+  "term": "application of the senses",
+  "definition": "The fifth exercise of a day in the Second Week and after, in which the five interior senses are brought to bear on matter already contemplated: seeing the persons, hearing their words, smelling, tasting and touching. It is placed last in the day's sequence.",
+  "loci": [
+   "SpEx [121]",
+   "SpEx [129]",
+   "SpEx [204]"
+  ],
+  "field": "prayer"
+ },
+ {
+  "term": "Additional Directives",
+  "definition": "The ten practical rules governing bodily posture, light, food, sleep and penance during the retreat, given with the First Week and modified in the later Weeks. The daily examen covers negligence in observing them as well as in the exercises themselves.",
+  "loci": [
+   "SpEx [73]",
+   "SpEx [88]",
+   "SpEx [130]"
+  ],
+  "field": "asceticism"
+ },
+ {
+  "term": "agere contra",
+  "definition": "The principle of acting against a disordered inclination by deliberately pursuing its opposite, so that the Creator may work more freely in the creature. Ignatius applies it to prolonging prayer in desolation and, in the notes on scruples, to proceeding contrary to the enemy's direction.",
+  "loci": [
+   "SpEx [13]",
+   "SpEx [16]",
+   "SpEx [350]"
+  ],
+  "field": "asceticism"
+ },
+ {
+  "term": "Two Standards",
+  "definition": "The Fourth Day meditation contrasting the strategy of Lucifer, who proceeds from riches through honour to pride, with that of Christ, who proceeds from poverty through contempt to humility. It supplies the tactical rationale for the choices offered in the election.",
+  "loci": [
+   "SpEx [136]",
+   "SpEx [139]",
+   "SpEx [146]"
+  ],
+  "field": "discernment"
+ },
+ {
+  "term": "Three Classes of Persons",
+  "definition": "The meditation on three typical dispositions toward a disordered attachment, from the one who never takes the means to the one who wills to keep or reject as God moves him. The Latin renderings turned the Spanish binario into class, and the name stuck.",
+  "loci": [
+   "SpEx [149]",
+   "SpEx [153]",
+   "SpEx [155]"
+  ],
+  "field": "election"
+ },
+ {
+  "term": "Three Ways of Being Humble",
+  "definition": "The graded dispositions proposed before the deliberations of the election: obedience to God's law under any inducement, indifference between opposites, and finally the desire to choose poverty and contempt with Christ. The third is presented as the most perfect.",
+  "loci": [
+   "SpEx [164]",
+   "SpEx [165]",
+   "SpEx [167]"
+  ],
+  "field": "asceticism"
+ },
+ {
+  "term": "Contemplation to Attain Love",
+  "definition": "The closing exercise, prefaced by two observations, that love shows itself in deeds and consists in mutual sharing. It asks for interior knowledge of the benefits received so that gratitude may issue in love and service in all things.",
+  "loci": [
+   "SpEx [230]",
+   "SpEx [233]"
+  ],
+  "field": "prayer"
+ },
+ {
+  "term": "general confession",
+  "definition": "A confession covering one's whole past life, recommended though not required during the retreat because of the greater sorrow, self-knowledge and resolve it produces. The directories place it early in the sequence, after the First Week exercises have begun to work.",
+  "loci": [
+   "SpEx [44]",
+   "Const [98]"
+  ],
+  "field": "asceticism"
+ },
+ {
+  "term": "Autograph",
+  "definition": "The Spanish text of the Exercises, designated A, preserved in the copy Ignatius kept until his death and bearing his own corrections. Most scholars treat it as the best witness to his thought, and modern translations, including Ganss's, are made chiefly from it.",
+  "loci": [
+   "SpEx [149]",
+   "SpEx [164]"
+  ],
+  "field": "philology"
+ },
+ {
+  "term": "Versio Prima",
+  "definition": "The earliest Latin translation of the Exercises, designated P1, probably made by Ignatius himself in Paris in the 1530s and surviving in later copies. It preserves readings such as the literal rendering of binario that the later Latin text abandoned.",
+  "loci": [
+   "SpEx [149]",
+   "SpEx [153]"
+  ],
+  "field": "philology"
+ },
+ {
+  "term": "Versio Vulgata",
+  "definition": "The stylistically classical Latin version, designated V, prepared from the Autograph and presented for papal approval in 1548. It supplies several familiar titles and expansions absent from the Spanish, and Ignatius's continued use of it lends those readings interpretative weight.",
+  "loci": [
+   "SpEx [91]",
+   "SpEx [149]",
+   "SpEx [164]"
+  ],
+  "field": "philology"
+ },
+ {
+  "term": "textus receptus",
+  "definition": "The text that circulated as standard irrespective of its critical value. For the Exercises the Vulgata played this role from 1548, since the Spanish was not printed until 1615; the early directories and commentaries therefore reflect its vocabulary rather than the Autograph's.",
+  "loci": [
+   "SpEx [149]",
+   "SpEx [164]"
+  ],
+  "field": "philology"
+ },
+ {
+  "term": "Monumenta Historica Societatis Iesu",
+  "definition": "The critical series in which the primary Jesuit sources are edited, including the three chief texts of the Exercises in parallel columns, the Constitutions, and the Diary. Modern English translations of these works are made from its volumes and cite them for variants.",
+  "loci": [
+   "SpEx [1]",
+   "Const [1]",
+   "Diary [1]"
+  ],
+  "field": "philology"
+ },
+ {
+  "term": "Complementary Norms",
+  "definition": "The body of legislation drawn from later general congregations which the 1996 edition prints alongside the Constitutions. Reading the volume requires distinguishing the bracketed paragraphs of Ignatius from the numbered norms and from editorial notes recording what has been abolished, modified or clarified.",
+  "loci": [
+   "Const [134]",
+   "Const [550]",
+   "Const [594]"
+  ],
+  "field": "philology"
+ },
+ {
+  "term": "Declaration",
+  "definition": "A lettered explanatory paragraph attached by Ignatius to a constitution, clarifying or qualifying its application. Declarations are printed after the constitution they serve and carry the same authority, so that the legal sense of a text often lies in its declaration rather than its main clause.",
+  "loci": [
+   "Const [162]",
+   "Const [605]",
+   "Const [661]"
+  ],
+  "field": "philology"
+ },
+ {
+  "term": "directory",
+  "definition": "A set of practical instructions on giving the Exercises. The earliest, attested as copied from a sheet in Ignatius's own hand, is a numbered series of terse rules; later documents gather his dictated remarks and the practice of those who gave the Exercises under his supervision.",
+  "loci": [
+   "Dir. [1]",
+   "Dir. [16]",
+   "Dir. [23]"
+  ],
+  "field": "philology"
+ }
+]

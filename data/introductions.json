@@ -1,0 +1,262 @@
+[
+  {
+    "id": "spex",
+    "orientation": "The Spiritual Exercises is a working handbook rather than a treatise, and it was never meant to be read straight through by the person making a retreat. Ignatius assembled it out of his own prayer and self-scrutiny after 1522 and kept revising it for some twenty years while guiding others, first as an unlicensed layman under repeated investigation, later as founder of a religious order. Most of its contents are apparatus: instructions to the director, meditation outlines, timetables, notes on posture, penance and diet, and sets of rules for interpreting inner states. Its four Weeks trace a graded movement from disordered attachment, through contemplation of the life, passion and resurrection of Christ, toward a decision about how to live. Researchers consult it as the founding document of Ignatian practice, as unusually concrete evidence for sixteenth-century devotional method, and as the source of a technical vocabulary that later Jesuit writing simply assumes.",
+    "textual_history": "Composition began at Manresa in 1522 and continued to roughly 1541, with corrections added until Ignatius died. Three early witnesses matter: the Spanish Autograph, a copy made about 1544 carrying thirty-two corrections in his hand; the Versio Prima, a scholastic Latin rendering probably his own, made in Paris; and the Versio Vulgata, the polished Latin submitted for papal approval in 1548. Ganss translates chiefly from Dalmases's critical edition of the Autograph, consulting the Latin where the Spanish is opaque. His extensive endnotes and appendices are interpretation, not text, and should be cited separately.",
+    "how_to_read": "The numbers {1} to {370} are Codina's editorial divisions of 1928, not Ignatius's; Ganss adds verse numbers inside them. Read the Introductory Explanations first, since they set the terms for everything after, and note especially the instruction that the director lean neither way about the outcome. The Weeks are stages, not calendar weeks, and stretch or contract with the person. The rule-sets printed at the end are working instruments assumed throughout, not appendices.",
+    "key_passages": [
+      {
+        "cite": "SpEx {1}",
+        "label": "The First Annotation",
+        "why": "Defines the term itself by analogy with physical exercise and states the double aim: ridding the soul of disordered attachments and then seeking God's will for the ordering of a life. Every later instruction presupposes this definition."
+      },
+      {
+        "cite": "SpEx {23}",
+        "label": "Principle and Foundation",
+        "why": "Seven compressed sentences on the purpose of human life, the instrumental status of everything else, and the resulting requirement of indifference. It functions as the premise from which the elections later argue."
+      },
+      {
+        "cite": "SpEx {91}",
+        "label": "The Call of the King",
+        "why": "Opens the Second Week with a chivalric parable applied to Christ, introducing the language of labour, following and offering that shapes the rest of the retreat and much subsequent Jesuit rhetoric."
+      },
+      {
+        "cite": "SpEx {136}",
+        "label": "Meditation on Two Standards",
+        "why": "Sets the strategies of Lucifer and Christ against each other as a sequence of riches, honour and pride against poverty, contempt and humility. It supplies the diagnostic frame for the election."
+      },
+      {
+        "cite": "SpEx {175}",
+        "label": "Three Times for Making an Election",
+        "why": "Distinguishes decision by irresistible divine motion, by weighing consolation and desolation, and by reasoning in tranquillity. This threefold scheme is the technical core of Ignatian decision-making."
+      },
+      {
+        "cite": "SpEx {230}",
+        "label": "Contemplation to Attain Love",
+        "why": "The closing exercise, moving from gifts received to God present and labouring in all creatures, and containing the offering of liberty, memory, understanding and will that later devotion detached and used alone."
+      },
+      {
+        "cite": "SpEx {313}",
+        "label": "Rules for the Discernment of Spirits, First Week",
+        "why": "Opens the fourteen rules that define consolation and desolation and prescribe conduct under each. Their vocabulary underlies the Diary, the directories and virtually all later Ignatian analysis of interior states."
+      }
+    ],
+    "difficulty": 3,
+    "genre": "manual"
+  },
+  {
+    "id": "const",
+    "orientation": "The Constitutions are the working law of the Society of Jesus, drafted by Ignatius with his secretary Juan de Polanco between about 1547 and 1556 and approved by the first general congregation after his death. They are legislation of an unusual kind: prescriptions alternate with Declarations that explain, soften or qualify them, and the whole is prefaced by a statement that written rules matter less than the interior law of charity. Ten Parts follow the life of a member from admission through formation, incorporation, personal discipline, mission and government to the preservation of the whole body. A General Examen for candidates stands before them. Readers come to this text for the institutional translation of the Exercises, for the earliest sustained Catholic legislation on schooling, and for the machinery of obedience, correspondence and central government that made a dispersed order governable.",
+    "textual_history": "Ignatius worked from a Spanish text revised repeatedly to 1556; a Latin version followed, and general congregations later appended interpretive notes without altering the Ignatian wording. The present volume translates the official Latin of 1995, which prints the Constitutions with their Declarations and, alongside them, the Complementary Norms consolidating the legislation of recent general congregations. The base English rendering of the Constitutions is George Ganss's of 1970, corrected and revised for this edition under John Padberg's general editorship; the Norms were newly translated. Footnotes marking abrogation or modification are editorial apparatus, not Ignatian text.",
+    "how_to_read": "Two texts share every page, and they must not be conflated: bracketed numbers are the sixteenth-century Constitutions, plain numbers are the modern Complementary Norms. Within the Constitutions, lettered paragraphs are Declarations attached to the numbered prescriptions. Read each Part's opening paragraph first, since it states the purpose the detail serves. Cross-references in brackets are internal and dense. Editorial footnotes recording what a general congregation has abolished or clarified should be checked before citing any norm as current.",
+    "key_passages": [
+      {
+        "cite": "Const [3]",
+        "label": "The End of the Society",
+        "why": "Names the purpose in a single sentence: members are to work at their own perfection and, by the same grace, labour strenuously to help other people toward theirs. Later provisions are justified by reference back to it."
+      },
+      {
+        "cite": "Const [101]",
+        "label": "The Livery of Christ",
+        "why": "The Examen's question on desiring what the world shuns, including insults and being taken for a fool. It ties admission directly to the Second Week material and shows the Exercises operating as an entrance criterion."
+      },
+      {
+        "cite": "Const [134]",
+        "label": "Preamble to the Constitutions",
+        "why": "Subordinates all written law to the interior law of charity, then argues that constitutions are nonetheless necessary. Standing before Part I as preamble to the whole body of law, it is quoted in nearly every modern discussion."
+      },
+      {
+        "cite": "Const [307]",
+        "label": "Preamble to Part IV",
+        "why": "Explains why an order of preachers took on colleges: learning and skill in using it are instrumental to helping souls. This paragraph underwrites the educational commitment that shaped the Society's institutional history."
+      },
+      {
+        "cite": "Const [547]",
+        "label": "On Obedience",
+        "why": "The chapter that asks for conformity of will and judgment and offers the images of the lifeless body and the old man's staff. It is the most cited and most polemicized passage in the corpus."
+      },
+      {
+        "cite": "Const [622]",
+        "label": "Criteria for Choosing Missions",
+        "why": "A Declaration weighing greater need, greater expected fruit and the more universal good when deciding where members are sent. It is the closest thing in the corpus to an explicit method of apostolic priority."
+      },
+      {
+        "cite": "Const [813]",
+        "label": "The Means That Unite the Instrument with God",
+        "why": "Ranks interior means above human ones for preserving the Society, closing the legislation on the same note as the Preamble and framing the whole as instrumental to a purpose it cannot itself secure."
+      }
+    ],
+    "difficulty": 4,
+    "genre": "legislation"
+  },
+  {
+    "id": "auto",
+    "orientation": "This is not an autobiography in the ordinary sense but a memoir extracted under pressure and taken down by someone else. Between 1553 and 1555 Ignatius yielded to repeated urging, chiefly from Jerome Nadal, and told his story in irregular sittings to Luis Goncalves da Camara, who listened, made notes afterwards from memory and later dictated a fuller text. The narrative covers only the years from the wound at Pamplona in 1521 to arrival in Rome and the founding years, and it stops abruptly. Ignatius speaks of himself throughout in the third person as the pilgrim. The result is uneven, sometimes trivial, frequently reticent about exactly what a reader would most want explained. Its value lies in being the only sustained first-person account of the experiences that produced the Exercises, and in its testimony about how those experiences were later understood.",
+    "textual_history": "Da Camara wrote partly in Spanish and, once he had left Rome for Genoa, in Italian, finishing in December 1555. An early Latin version by Anibal du Coudret circulated little, and the text itself was not properly published until the twentieth century, so the events were known long before the document was. Divarkar's 1995 translation retains the traditional chapter divisions and the standard paragraph numbers, adds sentence numbering, and prints da Camara's marginal comments as part of the text. Nadal's foreword and da Camara's preface stand outside the numbered narrative.",
+    "how_to_read": "The numbers run from [1] to [101] across eleven chapters that are editorial, not authorial. Read the preface first: it explains why the narrative is fragmentary and why long gaps separate the sittings. The third-person voice is Ignatius's own convention. Dates and figures are frequently approximate, and da Camara occasionally interjects. The last three numbers are his interview notes rather than dictated narrative and should be handled as a distinct source.",
+    "key_passages": [
+      {
+        "cite": "Autobiog. [8]",
+        "label": "The Different Aftereffects of Thoughts",
+        "why": "The convalescent notices that worldly daydreams leave him dry while thoughts of imitating the saints leave him content. Presented as an accidental discovery, it is the seed of the whole later theory of discernment."
+      },
+      {
+        "cite": "Autobiog. [17]",
+        "label": "The Vigil at Montserrat",
+        "why": "The written general confession lasting three days, the night before the altar, and the exchange of clothes with a beggar. Chivalric ritual is deliberately repurposed, and the memoir does not apologize for it."
+      },
+      {
+        "cite": "Autobiog. [23]",
+        "label": "The Crisis of Scruples at Manresa",
+        "why": "Months of torment that no confessor could relieve, resolved only when he decides to abandon the past entirely. The episode stands behind the Notes on Scruples in the Exercises."
+      },
+      {
+        "cite": "Autobiog. [30]",
+        "label": "The Illumination beside the Cardoner",
+        "why": "He reports no vision and no statable content, only an enlightenment that made everything seem new and outweighed everything else in his life. The most discussed paragraph in the corpus."
+      },
+      {
+        "cite": "Autobiog. [45]",
+        "label": "Jerusalem and the Refusal to Let Him Stay",
+        "why": "Consolation at the sight of the city, then the guardian's refusal under threat of excommunication. His obedience and immediate turn toward study mark the pivot of the whole narrative."
+      },
+      {
+        "cite": "Autobiog. [96]",
+        "label": "The Vision near La Storta",
+        "why": "On the road to Rome he sees that the Father places him with the Son. Brief, guarded, and decisive for the group's self-understanding as companions of Jesus."
+      },
+      {
+        "cite": "Autobiog. [99]",
+        "label": "How the Exercises Were Composed",
+        "why": "Da Camara asks directly and records the answer: the material accumulated piecemeal from what Ignatius observed in himself and judged useful to others. The best evidence available on the book's genesis."
+      }
+    ],
+    "difficulty": 2,
+    "genre": "memoir"
+  },
+  {
+    "id": "diary",
+    "orientation": "The Spiritual Diary is the surviving portion of a private record Ignatius kept in Rome between February 1544 and February 1545, while drafting the Constitutions and deciding whether the professed houses might hold any fixed income. It is the only substantial text he wrote for no reader but himself, and it reads accordingly: abbreviations, private sigla, tallies of tears, sentences that break off. The first stretch documents a formal election carried out over forty days, with written arguments for and against poverty and daily notes on what he felt while offering each option. The second is looser, tracking a year of daily Mass and the recurring phenomenon he calls loquela. Scholars use it as the closest available approach to Ignatian discernment in operation rather than in prescription, and as a check on the more schematic account in the Exercises.",
+    "textual_history": "Two small autograph gatherings survive: the first covering forty days from February to March 1544 and closed off deliberately, the second running to February 1545 and breaking off because later pages were destroyed. Both are almost certainly a fragment of something larger. The manuscript is one of the very few Ignatian texts entirely in his own hand and without a secretary. Munitiz translates from the critical text, supplying pointed brackets for words needed to make sense, notes on cancelled readings, and the sheet of arguments for and against income that belongs with the first gathering.",
+    "how_to_read": "Expect no argument and little explanation; entries are notes to self. The numbering is editorial and continuous across both gatherings. Read the appended arguments for and against income before the daily entries, since the first forty days are unintelligible without knowing what was being decided. Marks and abbreviations record when and how often tears came. Ignatius's own day-numbering contains errors, which the notes flag rather than silently correct.",
+    "key_passages": [
+      {
+        "cite": "Diary {1}",
+        "label": "The First Entry",
+        "why": "Two lines for 2 February 1544 recording devotion, tears and an inclination toward complete poverty. It establishes at once the terse format and the question that governs the first forty days."
+      },
+      {
+        "cite": "Diary {8}",
+        "label": "Brought before the Father",
+        "why": "After offering the option toward which his will most inclined, he describes approaching the Father through the mediation of Mother and Son, with his hair rising and a burning through his body. The Diary's most physical entry."
+      },
+      {
+        "cite": "Diary {34}",
+        "label": "The Election Made",
+        "why": "With tranquillity he makes the choice and the offering, having concluded that the remaining arguments were knots contrived by the enemy. This is the decision the whole first gathering was tracking."
+      },
+      {
+        "cite": "Diary {154}",
+        "label": "Opening of the Second Gathering",
+        "why": "Headed as points in the Constitutions, it marks the shift from a single decision to a year of daily observation, and shows that the record accompanied legislative work rather than replacing it."
+      },
+      {
+        "cite": "Diary {222}",
+        "label": "The Loquela",
+        "why": "Describes an interior and exterior loquela accompanied by harmony and unusually gentle tears. The phenomenon has no clear precedent in his other writings and has generated a large interpretive literature."
+      },
+      {
+        "cite": "Diary {234}",
+        "label": "Doubts about the Loquela",
+        "why": "He suspects that pleasure in the mere sound, without attention to the meaning, may not come from God. A rare instance of the rules for discernment being applied to his own most valued experience."
+      }
+    ],
+    "difficulty": 5,
+    "genre": "journal"
+  },
+  {
+    "id": "dir",
+    "orientation": "These six short documents record how Ignatius wanted the Exercises given, as distinct from what the book of the Exercises says. They comprise his own sheet of notes on directing, five reminders dictated to Polanco, an early systematic directory drafted with Polanco and Nadal, a fuller summary written down by Juan Alfonso de Vitoria after directing a retreat under his supervision in Rome, extracts from letters sent on his instructions in his last years, and passages from Goncalves da Camara's household log. Together they form the earliest layer of a directory tradition that culminated in the Official Directory of 1599. They matter because they show the Exercises as an administered practice: who should be admitted to them, in what form, how much should be given at once, and when a director should stop.",
+    "textual_history": "None of the six is a finished treatise; they are notes, dictations and excerpts, preserved in copies of varying authority, some in Spanish, one in Latin, one partly Portuguese. The autograph directory survives only in copies attested as taken from a sheet in Ignatius's hand. Palmer's 1996 translation renders the opening section of his edition of the early manuscript directories and the Official Directory of 1599, and prints the editorial headnotes that establish each document's provenance. Those headnotes, and the numbered paragraphs, are editorial.",
+    "how_to_read": "Each document restarts its numbering at one, so a reference is useless without the document number. Read the headnotes: authority varies sharply between a sheet copied from Ignatius's own hand and a subordinate's later recollection. The documents disagree with one another and occasionally with the Exercises, most visibly on whether the First Week exercises are given all at once. Treat the disagreements as evidence of practice rather than as errors to be reconciled.",
+    "key_passages": [
+      {
+        "cite": "Dir., Doc. 1 [15]",
+        "label": "The Director Should Not Read from the Book",
+        "why": "He is to study the matter beforehand and speak it, leaving only brief written points. The instruction explains why the Exercises reads as a handbook for a speaker rather than a text for a reader."
+      },
+      {
+        "cite": "Dir., Doc. 1 [17]",
+        "label": "Prerequisite for the Elections",
+        "why": "Nobody is to enter the elections without total resignation of will, and anyone short of the second degree of humility should be occupied otherwise. It makes indifference an admission requirement, not an aspiration."
+      },
+      {
+        "cite": "Dir., Doc. 2 [1]",
+        "label": "Letting the Exercitant Order His Own Meals",
+        "why": "The exercitant orders his own meals in advance and is given exactly what he asked for. Ignatius reportedly counted this among the most helpful provisions, which is instructive about how he understood self-regulation."
+      },
+      {
+        "cite": "Dir., Doc. 3 [12]",
+        "label": "When to Stop Giving the Exercises",
+        "why": "If someone will not follow the director and insists on proceeding by his own judgment, the Exercises are to be discontinued. The clearest statement of the director's authority in the early layer."
+      },
+      {
+        "cite": "Dir., Doc. 4 [1]",
+        "label": "Qualifications for the Enclosed Exercises",
+        "why": "Five conditions for admitting someone to the full form in seclusion, including that he be free to decide his own life and not so attached to anything that equilibrium is unreachable. Rationing the full course is the practical assumption throughout."
+      },
+      {
+        "cite": "Dir., Doc. 5 [5]",
+        "label": "The Exercises as the Society's Own Instrument",
+        "why": "A letter written on his instructions explains the insistence: this means is peculiarly the Society's, has drawn most of its good members, and is to be reported on weekly like school enrolments."
+      },
+      {
+        "cite": "Dir., Doc. 6 [5]",
+        "label": "Early Rigour and Later Moderation",
+        "why": "Ignatius recalls that the first exercitants went days without food and says he would no longer permit it. Direct evidence that the practice was consciously moderated within his own lifetime."
+      }
+    ],
+    "difficulty": 3,
+    "genre": "instruction"
+  },
+  {
+    "id": "letters",
+    "orientation": "Ignatius was an enormous correspondent; by his own account he dispatched some two hundred and fifty letters in a single month of 1542, and the surviving corpus runs to thousands. This volume is a selection of twenty-four, covering 1524 to 1547, chosen by its editors for what they reveal of the writer's interior life rather than for administrative importance. It ranges from short notes to Barcelona benefactresses through counsel to a Catalan nun troubled by false humility and fear, a proposal for poor relief addressed to his home town, detailed operating instructions for two men sent to Ireland and for the theologians at Trent, to a long letter on fervour and its excesses sent to the students at Coimbra. The letters show him negotiating, consoling, organizing and instructing, often in the same paragraph.",
+    "textual_history": "The letters were written mostly in Spanish, sometimes with Latin tags, and were first gathered and published in the modern critical series only shortly before this volume appeared. O'Leary's 1914 translation is a selection, not an edition, made from that recent collection; the editors state that they included every letter they judged spiritual in a broad sense and omitted routine business. They deliberately preserved Ignatius's involved syntax and his Latin phrases. Historical notes are gathered at the back. Being from 1914, the text is public domain, but its Victorian register should not be mistaken for Ignatian style.",
+    "how_to_read": "The letters are numbered I to XXIV in order of date and are cited here by that number. Several are instructions to groups rather than personal letters, and these read as administrative documents. Dates and places printed with the headings are sometimes uncertain, as the volume itself indicates. Read the counsel letters against the Rules for Discernment, which they apply informally, and read the instructions against the Constitutions, which later codified much of what they improvise.",
+    "key_passages": [
+      {
+        "cite": "Letters, no. 5",
+        "label": "To Teresa Rejadella, June 1536",
+        "why": "Diagnoses two deceptions in a correspondent: a false humility and an excessive fear of God. The most sustained piece of written spiritual direction in the volume and a working application of the discernment rules."
+      },
+      {
+        "cite": "Letters, no. 10",
+        "label": "To the Citizens of Azpeitia, 1540",
+        "why": "Writes to his home town endorsing an organized scheme of poor relief, arguing from interior peace to love of neighbour. Shows the founder engaged in concrete social arrangements rather than counsel alone."
+      },
+      {
+        "cite": "Letters, no. 12",
+        "label": "To Broet and Salmeron, September 1541",
+        "why": "Operating instructions for the first mission sent under the papacy's commission, including a pledge of mutual secrecy and detailed protocol for approaching cardinals and the pope. Governance in its earliest improvised form."
+      },
+      {
+        "cite": "Letters, no. 17",
+        "label": "To a Man Tempted, November 1544",
+        "why": "Refuses two courses the correspondent proposed, prescribes a year of trial in his own lodging with study, confession and wholesome company, and closes by observing that one patch of ground is much like another, native or foreign."
+      },
+      {
+        "cite": "Letters, no. 20",
+        "label": "Instructions for the Society at Trent, 1546",
+        "why": "Rules for conduct at the council: speak slowly, listen, avoid making enemies of either party, and pair theological work with hospital visiting, teaching children and giving the First Week."
+      },
+      {
+        "cite": "Letters, no. 24",
+        "label": "To the Fathers and Brothers at Coimbra, May 1547",
+        "why": "The longest letter here. It urges fervour and then, at length, warns against its excess, arguing for a mean governed by discretion and obedience. Widely read as his considered statement on moderation."
+      }
+    ],
+    "difficulty": 3,
+    "genre": "correspondence"
+  }
+]
