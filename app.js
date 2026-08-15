@@ -1069,7 +1069,7 @@ function viewImprint() {
       <p class="readable">
         Dr. Pantaleon Fassbender<br>
         16751 NE 5th Street<br>
-        <!-- ZIP ERGÄNZEN -->Williston, FL<br>
+        Williston, FL 32696<br>
         United States
       </p>
       <p class="readable">Email: <a href="mailto:pantaleonfassbender@gmail.com">pantaleonfassbender@gmail.com</a></p>
