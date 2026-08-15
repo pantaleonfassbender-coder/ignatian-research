@@ -40,6 +40,7 @@ const ROUTES = {
   concordance: viewConcordance, lexicon: viewLexicon, atlas: viewAtlas,
   register: viewRegister, language: viewLanguage, glossary: viewGlossary,
   method: viewMethod, dialogue: a => renderDialogue(view, a),
+  privacy: viewPrivacy, imprint: viewImprint,
 };
 function route() {
   const h = (location.hash || "#/overview").slice(2).split("/");
@@ -904,6 +905,203 @@ function viewMethod() {
         <li>The itinerary follows the memoir's own account, which is a narrative composed thirty years after
           the events and shaped for a purpose; it is not a reconstruction from archival sources.</li>
       </ul>
+    </div>
+  </div>`));
+}
+
+/* ============================================================ PRIVACY */
+function viewPrivacy() {
+  view.append(el(`<div>
+    <div class="viewhead"><span class="tag">Privacy</span>
+      <h1>Privacy notice</h1>
+      <p class="lede">What this site does with data, stated at the level of detail at which it is
+      actually true. Every claim below describes code you can read in this page's source.</p></div>
+
+    <div class="panel"><h2>Who is responsible</h2>
+      <p class="readable">This site is operated by a private individual from the United States; the
+      details are in the <a href="#/imprint">legal notice</a>. It is a personal research project,
+      not operated on behalf of any institution, employer, publisher or religious order, and no data
+      from it is passed to one.</p>
+      <p class="readable">Because the site is reachable from the European Economic Area, this notice is
+      written to satisfy the General Data Protection Regulation as well as United States law. Where the
+      GDPR applies to a reader, the operator is the controller within the meaning of Article 4(7).</p>
+    </div>
+
+    <div class="panel"><h2>What this site is, technically</h2>
+      <p class="readable">A set of static files with one server function. There are no user accounts, no
+      login, no contact form and no newsletter. The site sets <strong>no cookies whatsoever</strong> and
+      uses no analytics, tag manager, advertising, A/B-testing or session-recording service. It loads
+      <strong>nothing from third-party servers</strong>: the two libraries it uses — pdf.js for reading
+      PDFs and jsPDF for exporting them — are served from this site itself, as are all fonts and data
+      files. Opening any page of this site therefore contacts exactly one host: the one in your address
+      bar.</p>
+    </div>
+
+    <div class="panel"><h2>Server logs</h2>
+      <p class="readable">The site is hosted by Netlify. Like any web server, Netlify's infrastructure
+      records the requests it serves — typically IP address, timestamp, the URL requested, HTTP status,
+      the amount of data transferred, and the browser's user-agent and referrer strings. This is technically
+      unavoidable in delivering a website and is the only server-side collection that takes place. It is
+      used to operate and secure the service, not to build profiles, and the operator of this site does not
+      analyse it. Where the GDPR applies, the legal basis is Article 6(1)(f): the legitimate interest in
+      delivering a functioning, secure website. Retention follows Netlify's own periods.</p>
+      <p class="readable">The site is operated and hosted in the United States. For readers in the European
+      Economic Area this means their request data are processed outside the EEA, by the operator and by
+      Netlify Inc. as hosting provider.</p>
+    </div>
+
+    <div class="panel"><h2>Text stored on your own device</h2>
+      <p class="readable">Five of the six translations are in copyright and are not shipped with this site.
+      Their full-text functions work only on a copy you open yourself. When you do, the following happens
+      entirely inside your browser: pdf.js reads the file's text layer, the site identifies which of the six
+      works it is, and it stores the extracted text — together with the file name and the time you opened it
+      — in your browser's own <strong>IndexedDB</strong> database, named <span class="mono">ignatiana</span>.</p>
+      <p class="readable">Three things follow, and they are worth being exact about. The PDF itself is never
+      uploaded, and neither is the extracted text: it is written to your device, not to any server. But this
+      storage is <strong>persistent</strong> — it survives closing the tab, closing the browser and restarting
+      the computer, and it will still be there on your next visit. And it is stored unencrypted, like all
+      browser storage, so on a shared or public machine another person with access to that browser profile
+      could read it.</p>
+      <p class="readable">You can delete it at any time. Open the button in the top right: the status table
+      offers <em>Remove</em> for a single work, and <em>Clear all stored text</em> empties the database
+      entirely. Clearing site data for this domain in your browser settings has the same effect. Nothing on
+      the server is affected, because nothing was ever there.</p>
+    </div>
+
+    <div class="panel"><h2>The dialogue module — what actually leaves your device</h2>
+      <p class="readable">Everything else on this site runs locally. The dialogue is the one function that
+      sends data outward, and it does so only when you submit a question. What is sent is precisely this:</p>
+      <ul style="color:var(--fg2);font-size:.93rem">
+        <li>your question, truncated at 4,000 characters;</li>
+        <li>at most twenty passages retrieved for that question, each truncated at 2,600 characters,
+          together with their citation labels and edition details;</li>
+        <li>at most the last six turns of the current dialogue, each truncated at 1,600 characters, so that
+          follow-up questions make sense.</li>
+      </ul>
+      <p class="readable">The whole book is never transmitted, and no work is transmitted merely because you
+      have opened it — only the passages the retrieval step selects for the question in front of you. Where
+      those passages come from a copy you opened yourself, text from your own file does leave your device at
+      that moment. That is inherent to asking a question about it, and it is worth knowing before you ask.</p>
+      <p class="readable">The request goes to Anthropic's language model through Netlify's AI Gateway, which
+      means two recipients: Netlify Inc. and Anthropic PBC, both in the United States. The answer is returned
+      to your browser and is not written to any storage by this site — the server function keeps no log, no
+      database and no copy, and its responses carry
+      <span class="mono">cache-control: no-store</span>. Where the GDPR applies, the legal basis is
+      Article 6(1)(b) and (f): performing the function you asked for. If you would rather send nothing at all,
+      use the concordance, lexicon and citation tools instead — they never leave your browser.</p>
+      <p class="readable">Do not paste personal information, confidential material or anything concerning
+      identifiable third parties into the question field. Nothing in this site's design requires it, and the
+      operator has no way to retrieve or delete it once sent.</p>
+    </div>
+
+    <div class="panel"><h2>What this site does not do</h2>
+      <ul style="color:var(--fg2);font-size:.93rem">
+        <li>No cookies, no local or session storage, no fingerprinting, no pixels, no beacons.</li>
+        <li>No analytics of any kind, first-party or third-party.</li>
+        <li>No profiles, no automated decision-making, no advertising.</li>
+        <li>No sale of personal information, and no sharing of it for cross-context behavioural advertising.</li>
+        <li>No third-party requests at all — nothing is loaded from any other host.</li>
+      </ul>
+    </div>
+
+    <div class="panel"><h2>Rights of readers in the European Economic Area</h2>
+      <p class="readable">Where the GDPR applies, you have the right of access (Art. 15), rectification
+      (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20), and the
+      right to object to processing based on legitimate interests (Art. 21). Requests go to the address in the
+      <a href="#/imprint">legal notice</a>. You also have the right to lodge a complaint with a supervisory
+      authority under Article 77.</p>
+      <p class="readable">In practice the answer to most such requests is short, because there is little to
+      answer with: apart from the server logs described above, this site holds nothing about you. The text
+      from your own copy is under your control, on your own device, and is deleted with one button.</p>
+      <p class="readable">No representative in the Union has been designated under Article 27. The operator
+      relies on the exemption in Article 27(2)(a): the processing here is occasional, involves no large-scale
+      processing of special categories of data, and is unlikely to result in a risk to the rights and freedoms
+      of natural persons. If that assessment ever ceases to hold, a representative will be designated and named
+      here.</p>
+    </div>
+
+    <div class="panel"><h2>Notice for California residents</h2>
+      <p class="readable">This section is provided under the California Online Privacy Protection Act
+      (CalOPPA, Cal. Bus. &amp; Prof. Code §§ 22575–22579).</p>
+      <p class="readable"><strong>Categories of personally identifiable information collected.</strong>
+      Internet or other network activity information, in the form of the server request logs described above
+      (including IP address, browser type and pages requested). No name, postal address, email address,
+      telephone number, social security number or physical characteristics are collected, because the site
+      has no field in which to enter them. Text you submit in the dialogue is transmitted to the model
+      provider to produce an answer and is not retained by this site.</p>
+      <p class="readable"><strong>Third parties with whom information is shared.</strong> The hosting
+      provider (Netlify Inc.) and, for dialogue requests only, the model provider (Anthropic PBC). No
+      information is sold, rented or shared for marketing purposes.</p>
+      <p class="readable"><strong>Review and change of information.</strong> The site maintains no user
+      accounts or stored profiles, so there is no record to review or amend. Text held on your own device can
+      be deleted at any time with <em>Remove</em> or <em>Clear all stored text</em>.</p>
+      <p class="readable"><strong>Do Not Track.</strong> This site does not track its visitors over time or
+      across third-party websites, and it therefore does not change its behaviour in response to a Do Not
+      Track signal — there is no tracking to switch off. No third parties collect personally identifiable
+      information about visitors' online activities on this site, because no third-party content is loaded
+      at all.</p>
+      <p class="readable"><strong>Changes to this notice.</strong> Material changes will be posted on this
+      page with a revised effective date below. The site has no mailing list through which to notify you
+      individually.</p>
+    </div>
+
+    <div class="panel"><h2>Children</h2>
+      <p class="readable">This is a scholarly research instrument addressed to adult readers. It is not
+      directed to children, and it knowingly collects no information from them.</p>
+    </div>
+
+    <div class="panel"><h2>Changes</h2>
+      <p class="readable">Effective 15 August 2026. Where this notice and the site's behaviour ever diverge,
+      the notice is wrong and will be corrected — the description is meant to follow the code, not the other
+      way round.</p>
+    </div>
+  </div>`));
+}
+
+/* ============================================================ IMPRINT */
+function viewImprint() {
+  view.append(el(`<div>
+    <div class="viewhead"><span class="tag">Legal notice</span>
+      <h1>Legal notice</h1>
+      <p class="lede">Who operates this site, and how to reach them.</p></div>
+
+    <div class="panel"><h2>Operator</h2>
+      <p class="readable">
+        Dr. Pantaleon Fassbender<br>
+        16751 NE 5th Street<br>
+        <!-- ZIP ERGÄNZEN -->Williston, FL<br>
+        United States
+      </p>
+      <p class="readable">Email: <a href="mailto:pantaleonfassbender@gmail.com">pantaleonfassbender@gmail.com</a></p>
+      <p class="readable">This site is a personal research project, operated and hosted in the United States
+      by a private individual, and not on behalf of any institution, employer, publisher or religious order.
+      There is no company behind it, and it carries no advertising and no sponsorship.</p>
+      <p class="readable">Responsible for the content of this site: Dr. Pantaleon Fassbender, at the address
+      above. How data are handled is set out separately in the <a href="#/privacy">privacy notice</a>.</p>
+    </div>
+
+    <div class="panel"><h2>Rights in the texts</h2>
+      <p class="readable">The writings of Ignatius of Loyola are long out of copyright. The modern
+      translations are not, and this site ships the running text of one public-domain edition only; for the
+      rest it holds derived data and editorial matter written for this site. The full account is in
+      <a href="#/method">Method, sources and limits</a>. All rights in the modern translations rest with
+      their publishers and translators. If you hold rights in one of these editions and consider anything
+      here to exceed what derived data and scholarly citation permit, write to the address above and it will
+      be dealt with promptly.</p>
+    </div>
+
+    <div class="panel"><h2>Liability for links</h2>
+      <p class="readable">This site links to a small number of external resources. Their content is the
+      responsibility of their respective operators. They were checked when the link was set; continuous
+      monitoring without concrete evidence of a problem is not practicable, and any link will be removed
+      promptly if such evidence appears.</p>
+    </div>
+
+    <div class="panel"><h2>No warranty</h2>
+      <p class="readable">This is a research instrument offered free of charge and without warranty of any
+      kind. Its measures, registers and generated answers can be wrong; the limits are set out at length under
+      <a href="#/method">Method, sources and limits</a>, and they are part of the tool rather than a
+      disclaimer appended to it. Verify anything you intend to publish against the printed editions.</p>
     </div>
   </div>`));
 }
