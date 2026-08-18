@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Ignatiana: A Research Apparatus for the Writings of Ignatius of Loyola"
+message: "If you use this apparatus, please cite it as below — and cite the printed edition for any passage you quote."
+type: software
+authors:
+  - family-names: Fassbender
+    given-names: Pantaleon
+    orcid: "https://orcid.org/0000-0002-6683-3617"
+repository-code: "https://github.com/pantaleonfassbender-coder/ignatian-research"
+url: "https://ignatian-research.netlify.app/"
+abstract: >-
+  A static research apparatus for the six principal works of Ignatius of Loyola:
+  a canonical paragraph-level citation index of 1,887 anchors, a concordance
+  operating on the reader's own copies, the twenty-four public-domain letters of
+  1524-1547 in full, a discernment lexicon, registers of persons and places, and
+  a citation-bound dialogue with the corpus. No text of the in-copyright
+  translations is distributed.
+keywords:
+  - Ignatius of Loyola
+  - Jesuit studies
+  - Spiritual Exercises
+  - digital humanities
+  - concordance
+  - citation index
