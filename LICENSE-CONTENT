@@ -1,0 +1,36 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Pantaleon Fassbender
+
+The editorial texts of this repository are licensed under the Creative Commons
+Attribution 4.0 International License.
+
+  Human-readable summary:  https://creativecommons.org/licenses/by/4.0/
+  Full legal code:         https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the licence, and
+indicate if changes were made.
+
+Attribution should read:
+
+  Pantaleon Fassbender, "Ignatiana: A Research Apparatus for the Writings of
+  Ignatius of Loyola", https://ignatian-research.netlify.app/, CC BY 4.0.
+
+WHICH TEXTS
+
+The editorial matter written for this apparatus: the orientations and textual
+histories, the glossary, the discernment lexicon, the internal divisions and
+key-passage notes, together with the prose of the site's own pages (method,
+overview, and the notes displayed with each work) and of README.md.
+
+Concretely: data/introductions.json, data/glossary.json, data/lexicon.json,
+data/sections.json, and the editorial prose embedded in app.js and index.html.
+
+WHAT IT DOES NOT COVER
+
+Nothing here licenses the works being described. The five modern translations
+indexed by this apparatus remain in copyright and belong to their publishers
+and translators; no part of their text is contained in this repository. The
+1914 translation in data/letters.json is in the public domain and is not the
+licensor's to license. See LICENSES.md.

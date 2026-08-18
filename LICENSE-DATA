@@ -1,0 +1,38 @@
+CC0 1.0 Universal — Public Domain Dedication
+
+To the extent possible under law, Pantaleon Fassbender has waived all copyright
+and related or neighbouring rights to the derived datasets of this repository.
+
+  Summary:     https://creativecommons.org/publicdomain/zero/1.0/
+  Legal code:  https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+WHY
+
+These files are compilations of facts, not works of authorship. The anchor
+table states, for each canonical paragraph number, the page of a given printed
+edition on which it begins. That is a correspondence between two published
+numbering systems: laborious to establish, but discovered rather than invented,
+and in most jurisdictions not protected at all. Declaring it free removes the
+doubt — and a citation index is of little use if others cannot build on it.
+
+WHICH FILES
+
+  data/anchors.json      canonical paragraph anchors with PDF and printed page
+  data/works.json        bibliographic metadata and per-work measures
+  data/corpus.json       corpus totals
+  data/terms.json        term distributions
+  data/keyness.json      log-likelihood profiles
+  data/network.json      co-occurrence edges
+  data/persons.json      name register
+  data/places.json       place register
+  data/itinerary.json    the route as given in the memoir
+  data/discernment.json  term-family distributions
+
+Attribution is not required, and is appreciated.
+
+WHAT IT DOES NOT COVER
+
+data/letters.json is the 1914 O'Leary translation, which is in the public
+domain in its own right and is not the licensor's to dedicate. The editorial
+texts are licensed separately (LICENSE-CONTENT), the code separately (LICENSE),
+and vendor/ carries its own upstream licences. See LICENSES.md.

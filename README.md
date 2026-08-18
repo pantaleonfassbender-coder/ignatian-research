@@ -164,14 +164,26 @@ netlify/functions/    the dialogue function
 
 ## Reuse
 
-**No licence is currently declared**, which under default copyright means: you may read this and fork it
-on GitHub, but no reuse rights are granted. If you would like to use the anchor table, the registers or
-the code in your own work, write and ask — the answer is likely yes, and a licence will follow.
+Four kinds of material, licensed separately, because one blanket licence would
+misdescribe at least two of them. The mapping is in **[LICENSES.md](LICENSES.md)**;
+in short:
 
-Note that the derived data describes third-party copyrighted editions. Factual concordances between
-paragraph numbers and pagination are not themselves expressive works, but the editorial matter
-(`introductions.json`, `glossary.json`, `lexicon.json`, `sections.json`) is original writing and belongs
-to the author of this site.
+- **Code** — [MIT](LICENSE).
+- **Editorial texts** (introductions, glossary, discernment lexicon, section
+  notes, this README) — [CC BY 4.0](LICENSE-CONTENT).
+- **Derived datasets**, the anchor table above all — [CC0 1.0](LICENSE-DATA),
+  a public-domain dedication. A concordance between canonical paragraph numbers
+  and printed pagination is a compilation of facts: laborious to establish,
+  discovered rather than invented. It is released free because a citation index
+  that others cannot build on is of little use.
+- **`data/letters.json`** is the 1914 O'Leary translation. It is in the public
+  domain in its own right, and no licence here applies to it — it was never the
+  author's to license.
+- **`vendor/`** carries the upstream licences of pdf.js (Apache-2.0) and jsPDF
+  (MIT).
+
+None of this grants any right in the five in-copyright translations the
+apparatus describes. No part of their text is in this repository.
 
 ## Citing the apparatus
 
