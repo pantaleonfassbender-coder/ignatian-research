@@ -4,7 +4,7 @@ Live: **<https://ignatian-research.netlify.app/>**
 
 Six texts as one working corpus: the *Spiritual Exercises*, the *Constitutions* with their
 *Complementary Norms*, the dictated memoir known as *A Pilgrim's Testament*, the *Spiritual Diary*, the
-early *Directives on giving the Exercises*, and the letters of 1524–1547. The apparatus indexes them by
+*Official Directory of 1599* on giving the Exercises, and the letters of 1524–1547. The apparatus indexes them by
 their canonical numbering, traces the vocabulary that migrates between them, and lets you put a question
 to the corpus with the evidence attached.
 
@@ -21,13 +21,17 @@ of copyright. The **translations** that make them readable are not.
 | Work | Translation | Rights | In this repository |
 |---|---|---|---|
 | *Letters and Instructions*, vol. I | D. F. O'Leary, 1914 | public domain | **full text included** (24 letters) |
+| *The Official Directory of 1599* | Latin: *Monumenta Ignatiana*, 1919 · English: unofficial working translation made for this repository | Latin public domain (US, pre-1930); translation dedicated CC0 | **full bilingual text included** (287 paragraphs) |
 | *The Spiritual Exercises* | George E. Ganss, 1992 | in copyright | derived data only |
 | *Constitutions & Complementary Norms* | ed. John W. Padberg, 1996 | in copyright | derived data only |
 | *A Pilgrim's Testament* | Parmananda R. Divarkar, 1995 | in copyright | derived data only |
 | *The Spiritual Diary* | Joseph A. Munitiz, 1987 | in copyright | derived data only |
-| *Directives on the Exercises* | Martin E. Palmer, 1996 | in copyright | derived data only |
 
-For the five in-copyright translations this repository carries **no running text at all**: only
+The Directory's English side deserves a plain label: it is a machine-generated working translation,
+made directly from the 1919 Latin and consulting no copyrighted translation. It is honest, consistent in
+its key terms, and without any ecclesiastical or scholarly authority — cite the Latin.
+
+For the four in-copyright translations this repository carries **no running text at all**: only
 paragraph-level citation anchors, counts, co-occurrence edges, name registers, and editorial matter
 written for this site. All rights in those translations rest with their publishers and translators —
 principally the Institute of Jesuit Sources and Inigo Enterprises.
@@ -108,8 +112,9 @@ overrides recognition, and removed again individually. Where a page count diverg
 edition the panel says so, rather than letting a divergent printing be silently mis-cited.
 
 Editions the anchors were built against: Ganss (IJS, 1992); Padberg (IJS, 1996); Divarkar (IJS, 1995);
-Munitiz, *Íñigo: Discernment Log-Book* (Inigo Enterprises, 1987); Palmer (IJS, 1996); O'Leary, ed. Goodier
-(B. Herder / Manresa Press, 1914). A different printing will still search; its pages will not line up.
+Munitiz, *Íñigo: Discernment Log-Book* (Inigo Enterprises, 1987); O'Leary, ed. Goodier
+(B. Herder / Manresa Press, 1914). The Directory of 1599 needs no anchors: its bilingual text is shipped
+paragraph by paragraph from *Monumenta Ignatiana*, series secunda (Madrid, 1919), pp. 1138–1178. A different printing will still search; its pages will not line up.
 
 ---
 
@@ -179,10 +184,16 @@ in short:
 - **`data/letters.json`** is the 1914 O'Leary translation. It is in the public
   domain in its own right, and no licence here applies to it — it was never the
   author's to license.
+- **`data/directorium.json`** is two things at once. Its Latin is the 1599
+  Directory as printed in the Madrid 1919 *Monumenta Ignatiana*, public domain
+  in the United States; a faithful transcription adds nothing licensable. Its
+  English is the working translation made for this repository, and whatever
+  rights that could attract are dedicated to the public domain under
+  [CC0 1.0](LICENSE-DATA), so that nobody ever has to ask.
 - **`vendor/`** carries the upstream licences of pdf.js (Apache-2.0) and jsPDF
   (MIT).
 
-None of this grants any right in the five in-copyright translations the
+None of this grants any right in the four in-copyright translations the
 apparatus describes. No part of their text is in this repository.
 
 ## Citing the apparatus

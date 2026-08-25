@@ -11,6 +11,7 @@ people entirely.
 | **Editorial texts** | `data/introductions.json`, `data/glossary.json`, `data/lexicon.json`, `data/sections.json`, `README.md`, and the editorial prose inside `app.js` and `index.html` | [CC BY 4.0](LICENSE-CONTENT) |
 | **Derived datasets** | `data/anchors.json`, `works.json`, `corpus.json`, `terms.json`, `keyness.json`, `network.json`, `persons.json`, `places.json`, `itinerary.json`, `discernment.json` | [CC0 1.0](LICENSE-DATA) — public domain dedication |
 | **Public-domain source text** | `data/letters.json` | Public domain in its own right — see below |
+| **Bilingual edition of the 1599 Directory** | `data/directorium.json` | Latin: public domain (US, pre-1930 publication); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
 | **Third-party libraries** | `vendor/` | Upstream licences — see below |
 
 ## The two categories that are not the author's to license
@@ -23,6 +24,16 @@ it was never the author's to grant. Use it as you would any public-domain text.
 Note that it is an optical scan whose errors are left visible rather than
 silently emended — the reasoning is on the site's method page.
 
+**`data/directorium.json`** holds the Official Directory of 1599 twice over.
+The Latin follows the printing in *Monumenta Ignatiana*, series secunda (Madrid,
+1919, pp. 1138–1178), a pre-1930 publication in the United States public domain;
+a faithful transcription of a public-domain text adds nothing licensable. The
+English beside it is an unofficial machine-generated working translation made
+for this repository directly from that Latin, consulting no copyrighted
+translation; whatever rights it could attract are dedicated to the public domain
+under CC0 1.0. It carries no ecclesiastical or scholarly authority — anyone
+citing the Directory should cite the Latin.
+
 **`vendor/`** holds unmodified third-party builds:
 
 - `pdf.min.mjs`, `pdf.worker.min.mjs` — pdf.js 4.6.82, Mozilla, Apache License 2.0
@@ -34,11 +45,13 @@ by anything declared here.
 
 ## What none of this licenses
 
-**The five in-copyright translations.** The Spiritual Exercises (trans. Ganss,
+**The four in-copyright translations.** The Spiritual Exercises (trans. Ganss,
 IJS 1992), the Constitutions and Complementary Norms (ed. Padberg, IJS 1996),
-A Pilgrim's Testament (trans. Divarkar, IJS 1995), the Spiritual Diary (ed. and
-trans. Munitiz, Inigo Enterprises 1987) and the Directives (trans. Palmer, IJS
-1996) remain the property of their publishers and translators.
+A Pilgrim's Testament (trans. Divarkar, IJS 1995) and the Spiritual Diary (ed.
+and trans. Munitiz, Inigo Enterprises 1987) remain the property of their
+publishers and translators. The same holds for Martin E. Palmer's *On Giving
+the Spiritual Exercises* (IJS, 1996): no part of it is in this repository, and
+the Directory translation here was made without consulting it.
 
 **No part of their text is in this repository.** What is here describes them —
 page correspondences, counts, registers — and describing a book grants no rights

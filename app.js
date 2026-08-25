@@ -24,11 +24,11 @@ export const workOf = id => (D.works || []).find(w => w.id === id) || {};
 async function boot() {
   const names = ["works", "corpus", "anchors", "letters", "terms", "keyness", "network",
     "discernment", "persons", "places", "itinerary", "introductions", "sections",
-    "lexicon", "glossary"];
+    "lexicon", "glossary", "directorium"];
   const res = await Promise.all(names.map(n => fetch(`data/${n}.json`).then(r => r.json())));
   names.forEach((n, i) => D[n] = res[i]);
   D.introOf = {}; D.introductions.forEach(x => D.introOf[x.id] = x);
-  try { await C.restore(D.works, D.anchors, D.letters); }
+  try { await C.restore(D.works, D.anchors, D.letters, D.directorium); }
   catch (e) { console.warn("restore failed", e); }
   refreshUnlockBadge();
   window.addEventListener("hashchange", route);
@@ -37,6 +37,7 @@ async function boot() {
 
 const ROUTES = {
   overview: viewOverview, works: viewWorks, letters: viewLetters,
+  directorium: viewDirectorium,
   concordance: viewConcordance, lexicon: viewLexicon, atlas: viewAtlas,
   register: viewRegister, language: viewLanguage, glossary: viewGlossary,
   method: viewMethod, dialogue: a => renderDialogue(view, a),
@@ -78,9 +79,9 @@ function viewOverview() {
       <span class="tag">Research apparatus</span>
       <h1>The writings of Ignatius of Loyola</h1>
       <p class="lede">Six texts, one working corpus: a retreat manual, a body of law, a dictated memoir,
-      a private journal of discernment, a set of instructions for directors, and twenty-four letters.
-      This apparatus indexes them by their canonical numbering, traces the vocabulary that migrates
-      between them, and lets you put questions to the corpus with the evidence attached.</p>
+      a private journal of discernment, the Society's official directory of 1599 for giving the Exercises,
+      and twenty-four letters. This apparatus indexes them by their canonical numbering, traces the
+      vocabulary that migrates between them, and lets you put questions to the corpus with the evidence attached.</p>
     </div>
 
     <div class="grid g4" style="margin-bottom:1.6rem">
@@ -95,16 +96,18 @@ function viewOverview() {
     <div class="grid g2" style="margin-bottom:2rem">
       <div class="card">
         <span class="tag">What is here without anything further</span>
-        <h3>The Letters, in full</h3>
-        <p style="font-size:.92rem;color:var(--fg2)">O'Leary's 1914 translation is in the public domain, so all
-        twenty-four letters of 1524–1547 are included complete: readable, searchable, quotable, and part of
-        every cross-corpus function on this site.</p>
-        <p><a class="btn" href="#/letters">Read the letters →</a></p>
+        <h3>The Letters and the Directory of 1599, in full</h3>
+        <p style="font-size:.92rem;color:var(--fg2)">O'Leary's 1914 translation of the letters is in the public
+        domain, so all twenty-four letters of 1524–1547 are included complete. The Official Directory of 1599
+        is here in its full Latin text (Monumenta Ignatiana, 1919) with this site's own English working
+        translation alongside — readable, searchable, quotable, and part of every cross-corpus function.</p>
+        <p><a class="btn" href="#/letters">Read the letters →</a>
+           <a class="btn" href="#/directorium">Read the Directory →</a></p>
       </div>
       <div class="card" id="unlockCard">
         <span class="tag">What needs your own copy</span>
-        <h3>The five modern translations</h3>
-        <p style="font-size:.92rem;color:var(--fg2)">Ganss, Padberg, Divarkar, Munitiz and Palmer are under
+        <h3>The four modern translations</h3>
+        <p style="font-size:.92rem;color:var(--fg2)">Ganss, Padberg, Divarkar and Munitiz are under
         copyright. Their structure, statistics and citation anchors are here; their running text is not.
         Open them from a PDF you own and the concordance, canonical citation of hits and the evidence mode
         of the dialogue extend across the whole corpus.</p>
@@ -207,7 +210,9 @@ function viewWorks(args) {
       <h3>${esc(w.titel)}</h3>
       <div>${rightsBadge(w)} <span class="chip">${esc(intro.genre || "")}</span>
         <span class="chip">difficulty ${"●".repeat(intro.difficulty || 0)}${"○".repeat(5 - (intro.difficulty || 0))}</span></div>
-      <p class="fine" style="margin:0">trans. ${esc(w.uebersetzer)}, ${w.jahr} · ${esc(w.verlag)}</p>
+      <p class="fine" style="margin:0">${w.id === "dir"
+        ? "Latin: Monumenta Ignatiana, 1919 · English: unofficial working translation made for this site"
+        : `trans. ${esc(w.uebersetzer)}, ${w.jahr} · ${esc(w.verlag)}`}</p>
       <p style="font-size:.9rem;color:var(--fg2);margin:.3rem 0 0">${esc(short(intro.orientation || w.beschreibung, 230))}</p>
     </div>`);
     card.onclick = () => location.hash = `#/works/${w.id}`;
@@ -228,7 +233,10 @@ function workDetail(id) {
     <div class="viewhead">
       <span class="tag" style="color:${wc(id)}">${esc(intro.genre || "")} · written ${esc(w.entstehung)}</span>
       <h1>${esc(w.titel)}</h1>
-      <p class="fine">Translated by ${esc(w.uebersetzer)} · ${esc(w.verlag)}, ${w.jahr} ·
+      <p class="fine">${w.id === "dir"
+        ? `Latin text from <em>Monumenta Ignatiana</em>, ser. II (Madrid, 1919) · English: unofficial
+           machine-generated working translation made for this site, ${w.jahr}`
+        : `Translated by ${esc(w.uebersetzer)} · ${esc(w.verlag)}, ${w.jahr}`} ·
         cited as <span class="mono">${esc(w.zitierweise)}</span> · ${rightsBadge(w)}</p>
     </div>
 
@@ -260,7 +268,7 @@ function workDetail(id) {
           <tr><td>Sentences</td><td class="num">${nf(w.saetze)}</td></tr>
           <tr><td>Mean sentence length</td><td class="num">${w.satzlaenge} words</td></tr>
           <tr><td>Mean word length</td><td class="num">${w.wortlaenge} characters</td></tr>
-          <tr><td>Noun rate</td><td class="num">${w.nominalquote} %</td></tr>
+          <tr><td>Noun rate</td><td class="num">${w.nominalquote != null ? `${w.nominalquote} %` : "—"}</td></tr>
           <tr><td>Type–token ratio</td><td class="num">${w.ttr}</td></tr>
           <tr><td>Readability (LIX)</td><td class="num">${w.lix}</td></tr>
           <tr><td>Canonical anchors</td><td class="num">${w.anker ? `${nf(w.anker)} of ${nf(w.maxn)}` : "—"}</td></tr>
@@ -294,6 +302,10 @@ function workDetail(id) {
   if (id === "letters") {
     ft.append(el(`<p>The letters are public domain and included in full.
       <a class="btn" href="#/letters">Open the reader →</a></p>`));
+  } else if (id === "dir") {
+    ft.append(el(`<p>The Latin text is public domain and included in full, with an unofficial English
+      working translation alongside.
+      <a class="btn" href="#/directorium">Open the bilingual reader →</a></p>`));
   } else if (!C.isOpen(id)) {
     ft.append(lockedBox(`${w.titel} is under copyright in this translation. Open your own PDF to search it, read hits in context and cite them by ${w.zitierweise}.`));
   } else {
@@ -397,6 +409,107 @@ function letterDetail(n) {
   </div>`));
 }
 
+/* ========================================================= DIRECTORIUM */
+/* Bilingual reader for the Official Directory of 1599: Latin from the 1919
+   Monumenta Ignatiana edition, English this site's own working translation.
+   The language choice persists across visits. */
+const dirLang = {
+  get: () => localStorage.getItem("dirLang") || "both",
+  set: v => localStorage.setItem("dirLang", v),
+};
+function dirParts() {
+  const d = D.directorium;
+  return [...d.vorspann, ...d.kapitel].map(c => ({
+    id: c.id, label: c.label, titel_la: c.la_titel, titel_en: c.en_titel, paras: c.paras,
+    zk: c.id === "praef" ? "Praef." : c.id === "prooem" ? "Prooem." : c.label.replace("Cap.", "c."),
+  }));
+}
+function dirLangBar(cur) {
+  return `<div class="toolbar" id="dirlang" style="margin:.4rem 0 1rem">
+    ${[["la", "Latin"], ["en", "English"], ["both", "Latin · English"]].map(([v, t]) =>
+      `<button class="chip ${cur === v ? "on" : ""}" data-l="${v}">${t}</button>`).join("")}
+    <span class="fine" style="align-self:center">The English side is an unofficial machine-generated
+      working translation, not an approved text.</span>
+  </div>`;
+}
+function bindDirLang(box, rerender) {
+  box.querySelectorAll("#dirlang [data-l]").forEach(b => b.onclick = () => {
+    dirLang.set(b.dataset.l); rerender();
+  });
+}
+function viewDirectorium(args) {
+  if (args && args[0]) return dirChapter(args[0]);
+  const d = D.directorium, parts = dirParts(), lang = dirLang.get();
+  view.append(el(`<div>
+    <div class="viewhead">
+      <span class="tag" style="color:${wc("dir")}">Official Directory · Florence, 1599 · public-domain Latin</span>
+      <h1>Directorium Exercitiorum Spiritualium</h1>
+      <p class="lede">The Society's official manual on giving the Exercises, promulgated by Claudio
+      Acquaviva on 1 October 1599 after four decades of drafts and consultation. Forty chapters walk the
+      director from the choice of exercitants through each Week to the election and the return to ordinary
+      life. The Latin text follows the Monumenta Ignatiana edition of 1919 (pp. 1138–1178), which prints
+      the Florence printing of 1599; the English side is this site's own unofficial working translation,
+      made directly from the Latin.</p>
+    </div>
+    ${dirLangBar(lang)}
+    <div class="grid g2" id="dirtoc"></div>
+    <p class="fine" style="margin-top:1.2rem">Cited as <span class="mono">Dir. 1599, c. N [n]</span>, the
+    bracketed number being the printed margin number of the paragraph. Editorial notes mark where the OCR
+    of the 1919 volume was emended against the sense; the 1919 apparatus (variants of the Naples manuscript)
+    is not reproduced.</p>
+  </div>`));
+  const toc = view.querySelector("#dirtoc");
+  for (const p of parts) {
+    const card = el(`<div class="workcard" style="border-left:3px solid ${wc("dir")}">
+      <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">${esc(p.label)}</span>
+        <span class="fine">${p.paras.length} ¶</span></div>
+      <h3 style="margin:.3rem 0 .15rem;font-size:1.02rem">${esc(p.titel_la)}</h3>
+      <p class="fine" style="margin:0">${esc(p.titel_en)}</p>
+    </div>`);
+    card.onclick = () => location.hash = `#/directorium/${p.id}`;
+    toc.append(card);
+  }
+  bindDirLang(view, () => route());
+}
+function dirChapter(id) {
+  const parts = dirParts();
+  const i = parts.findIndex(p => p.id === id);
+  if (i < 0) { location.hash = "#/directorium"; return; }
+  const p = parts[i], lang = dirLang.get();
+  const prev = parts[(i - 1 + parts.length) % parts.length];
+  const next = parts[(i + 1) % parts.length];
+  const para = q => {
+    const rub = q.rub ? `<p class="fine" style="margin:0 0 .2rem;color:var(--acc2)">${esc(q.rub)}</p>` : "";
+    const note = q.note ? `<p class="fine" style="margin:.3rem 0 0;color:var(--fg3)">Note: ${esc(q.note)}</p>` : "";
+    const la = `<p class="readable" style="margin:0"><em>${esc(q.la)}</em></p>`;
+    const en = `<p class="readable" style="margin:0">${esc(q.en)}</p>`;
+    const body = lang === "la" ? la : lang === "en" ? en :
+      `<div class="grid g2" style="gap:1rem">${la}${en}</div>`;
+    return `<div style="border-left:2px solid ${wc("dir")};padding-left:.9rem;margin-bottom:1.3rem">
+      <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">${esc(p.zk)} [${q.n}]</span></div>
+      ${rub}${body}${note}</div>`;
+  };
+  view.append(el(`<div>
+    <p class="fine"><a href="#/directorium">← All chapters</a> ·
+      <a href="#/directorium/${prev.id}">${esc(prev.label)}</a> ·
+      <a href="#/directorium/${next.id}">${esc(next.label)}</a> ·
+      <a href="#/works/dir">About this text</a></p>
+    <div class="viewhead">
+      <span class="tag" style="color:${wc("dir")}">${esc(p.label)} · Directorium of 1599</span>
+      <h1 style="font-size:1.5rem">${esc(p.titel_la)}</h1>
+      <p class="fine">${esc(p.titel_en)} · ${p.paras.length} paragraphs ·
+        cited as <span class="mono">Dir. 1599, ${esc(p.zk)} [n]</span></p>
+    </div>
+    ${dirLangBar(lang)}
+    <div id="dirbody"></div>
+    <p class="fine">Latin: Monumenta Ignatiana, ser. II (Madrid, 1919), public domain; u/v normalised,
+    obvious OCR errors emended against the sense, marginal rubrics retained. English: unofficial
+    machine-generated working translation made for this site — cite the Latin for scholarly use.</p>
+  </div>`));
+  view.querySelector("#dirbody").innerHTML = p.paras.map(para).join("");
+  bindDirLang(view, () => route());
+}
+
 /* ========================================================= CONCORDANCE */
 function viewConcordance() {
   const pre = new URLSearchParams((location.hash.split("?")[1] || "")).get("q") || "";
@@ -405,7 +518,8 @@ function viewConcordance() {
       <span class="tag">Cross-corpus concordance</span>
       <h1>Concordance</h1>
       <p class="lede">Keyword in context across every work currently available, each hit resolved to its
-      canonical citation. The Letters are always searchable; the other five join the search as you open them.</p>
+      canonical citation. The Letters and the Directory of 1599 are always searchable; the other four join
+      the search as you open them.</p>
     </div>
     <div class="toolbar">
       <input class="grow" id="q" type="search" placeholder="Search word or phrase …" value="${esc(pre)}">
@@ -841,12 +955,16 @@ function viewMethod() {
 
     <div class="panel"><h2>Rights, and what follows from them</h2>
       <p class="readable">Ignatius died in 1556 and his writings are long out of copyright. The English
-      translations that make them readable are not. Of the six editions used here, one — O'Leary's 1914
-      <em>Letters and Instructions</em> — has fallen into the public domain and is therefore included complete.
-      The other five are living scholarly translations under copyright, and this site ships none of their
-      running text: only page-level citation anchors, aggregate counts, co-occurrence edges, name registers,
-      and editorial matter written for this site. Their full-text functions run against a copy the reader
-      supplies, which is read in the browser and stored on the reader's own device.</p>
+      translations that make them readable are mostly not. Of the six works here, two ship complete.
+      O'Leary's 1914 <em>Letters and Instructions</em> has fallen into the public domain. The Official
+      Directory of 1599 is included in its original Latin, taken from the Madrid 1919 volume of the
+      Monumenta Ignatiana, which as a pre-1930 publication is in the United States public domain; the
+      English text beside it is an unofficial machine-generated working translation made for this site
+      directly from that Latin, consulting no copyrighted translation. The other four are living scholarly
+      translations under copyright, and this site ships none of their running text: only page-level citation
+      anchors, aggregate counts, co-occurrence edges, name registers, and editorial matter written for this
+      site. Their full-text functions run against a copy the reader supplies, which is read in the browser
+      and stored on the reader's own device.</p>
     </div>
 
     <div class="panel"><h2>Extraction and segmentation</h2>
@@ -859,6 +977,14 @@ function viewMethod() {
       re-extraction in raw mode reduces this to a residue of legitimate abbreviations. The Munitiz Diary
       encodes the digraphs <span class="mono">tt</span> and <span class="mono">ft</span> through substitute
       glyphs, which are restored before analysis.</p>
+      <p class="readable">The Directory of 1599 went a different route. Its Latin was reconstructed from the
+      Internet Archive's OCR of the Madrid 1919 Monumenta Ignatiana volume (pp. 1138–1178): the forty chapter
+      headings and marginal paragraph numbers were used to segment the text, u/v spelling was normalised to
+      the classical convention, obvious OCR errors were emended against the sense, and the 1919 editors'
+      apparatus of variants was dropped. The English side was then machine-translated chapter by chapter from
+      that Latin and is labelled throughout as an unofficial working translation. Its linguistic profile is
+      computed with the same simple counts as the rest, except that part-of-speech measures are not reported
+      for it.</p>
     </div>
 
     <div class="panel"><h2>Canonical anchors</h2>
@@ -874,7 +1000,9 @@ function viewMethod() {
       </table>
       <p class="fine" style="margin-top:.7rem">A search hit is reported at the nearest preceding anchor on
       its page. That is the honest resolution: it locates the passage at paragraph granularity without
-      pretending to a precision the page-level index does not have.</p>
+      pretending to a precision the page-level index does not have. The Directory of 1599 is the exception:
+      its text is shipped paragraph by paragraph, so every hit in it is exact to the chapter and margin
+      number.</p>
     </div>
 
     <div class="panel"><h2>Measures</h2>
@@ -902,6 +1030,10 @@ function viewMethod() {
           separated out as an independent citation series here.</li>
         <li>Type–token ratio is length-dependent and should not be compared across works of very different
           extent without correction.</li>
+        <li>The English of the Directory of 1599 is a machine-generated working translation. It has been
+          made directly from the Latin and reviewed for consistency of key terms, but it carries no
+          ecclesiastical or scholarly authority; anyone citing the Directory should cite the Latin. The
+          underlying Latin itself is an OCR reconstruction and may retain undetected transcription errors.</li>
         <li>The itinerary follows the memoir's own account, which is a narrative composed thirty years after
           the events and shaped for a purpose; it is not a reconstruction from archival sources.</li>
       </ul>
@@ -951,9 +1083,9 @@ function viewPrivacy() {
     </div>
 
     <div class="panel"><h2>Text stored on your own device</h2>
-      <p class="readable">Five of the six translations are in copyright and are not shipped with this site.
+      <p class="readable">Four of the six translations are in copyright and are not shipped with this site.
       Their full-text functions work only on a copy you open yourself. When you do, the following happens
-      entirely inside your browser: pdf.js reads the file's text layer, the site identifies which of the six
+      entirely inside your browser: pdf.js reads the file's text layer, the site identifies which of the
       works it is, and it stores the extracted text — together with the file name and the time you opened it
       — in your browser's own <strong>IndexedDB</strong> database, named <span class="mono">ignatiana</span>.</p>
       <p class="readable">Three things follow, and they are worth being exact about. The PDF itself is never
@@ -1179,7 +1311,7 @@ async function handleFiles(files, zielId = null) {
         // Nothing won clearly. Rather than file the book under whichever title
         // happened to score first, ask.
         offen.push({ name: file.name, pages, ranked: urteil.ranked });
-        done.push(`<span style="color:var(--warn)">${esc(file.name)}: the title page does not identify one of the six works beyond doubt. Choose below — the file has been read already.</span>`);
+        done.push(`<span style="color:var(--warn)">${esc(file.name)}: the title page does not identify one of the four locked works beyond doubt. Choose below — the file has been read already.</span>`);
       }
     } catch (e) {
       done.push(`<span style="color:var(--warn)">${esc(file.name)}: ${esc(e.message || String(e))}</span>`);
@@ -1276,7 +1408,7 @@ function refreshUnlockCard() {
   box.innerHTML = (open.length
     ? `<p class="fine" style="color:var(--ok)">✓ open: ${open.map(w => esc(w.kurz)).join(", ")}
        — ${nf(corpus._chunks.length)} passages indexed.</p>`
-    : `<p class="fine">None of the five opened yet.</p>`) +
+    : `<p class="fine">None of the four opened yet.</p>`) +
     (fraglich.length
       ? `<p class="fine" style="color:var(--warn)">${fraglich.map(w =>
           `${esc(w.kurz)} holds ${nf(corpus.works[w.id].meta.n)} pages against the ${nf(w.pdf_seiten)} of the reference edition (${esc(corpus.works[w.id].meta.quelle)})`).join("; ")}

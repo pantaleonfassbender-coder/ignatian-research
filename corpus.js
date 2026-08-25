@@ -1,10 +1,13 @@
 /* corpus.js — local full-text layer for the Ignatian corpus.
 
-   The public-domain Letters (O'Leary 1914) ship with this site and are always
-   available. The five in-copyright translations are opened from the user's own
-   PDFs: pdf.js reads them in the browser, the text is kept in IndexedDB, and
-   nothing is uploaded. Canonical citation anchors are shipped as derived data
-   and apply directly, because the page indices refer to the same editions. */
+   Two works ship with this site and are always available: the public-domain
+   Letters (O'Leary 1914) and the Official Directory of 1599, whose Latin text
+   is public domain (Monumenta Ignatiana, Madrid 1919) and whose English side
+   is this site's own working translation. The four in-copyright translations
+   are opened from the user's own PDFs: pdf.js reads them in the browser, the
+   text is kept in IndexedDB, and nothing is uploaded. Canonical citation
+   anchors are shipped as derived data and apply directly, because the page
+   indices refer to the same editions. */
 
 const DB = "ignatiana", STORE = "text";
 
@@ -13,6 +16,9 @@ export const corpus = {
   meta: null,       // works.json
   anchors: null,    // anchors.json
   letters: null,    // letters.json (public domain, always present)
+  directorium: null,// directorium.json (own bilingual edition, always present)
+  _dirPages: null,  // flattened paragraph texts of the Directory
+  _dirCites: null,  // parallel citation labels
   _idx: {},         // id -> Map token -> [pageIdx]
   _chunks: [],      // retrieval units across everything available
   _bm25: null,
@@ -65,8 +71,8 @@ export function tokens(s) {
 /* ------------------------------------------------------- identification */
 /* Every volume in this corpus speaks of the others. The Constitutions cite the
    Exercises on their first pages; Ganss's name stands in the front matter of
-   three of the six editions, because the 1996 Constitutions print his
-   translation; Palmer's directories are a book *about* the Exercises. Counting
+   three of the editions, because the 1996 Constitutions print his
+   translation. Counting
    one or two shared phrases therefore cannot separate them, and where two works
    scored alike the earliest key won by accident of object order — which is how
    Padberg's Constitutions and Munitiz's Diary were read into the Exercises' slot
@@ -105,13 +111,6 @@ const CUES = {
     marken: [/deliberation\s+on\s+poverty/i, /i[nñ]igo\b/i, /loquela/i],
     gegen: [/complementary\s+norms/i, /pilgrim'?s\s+testament/i, /manuscript\s+director/i,
       /letters\s+and\s+instructions/i],
-  },
-  dir: {
-    titel: [/on\s+giving\s+the\s+spiritual\s+exercises/i, /manuscript\s+director(?:ies|y)/i,
-      /official\s+directory/i, /directives\s+concerning/i],
-    namen: [/palmer/i],
-    marken: [/directory\s+of\s+1599/i, /polanco/i, /early\s+jesuit/i],
-    gegen: [/complementary\s+norms/i, /log-?\s?book/i, /pilgrim'?s\s+testament/i, /letters\s+and\s+instructions/i],
   },
   letters: {
     titel: [/letters\s+and\s+instructions/i],
@@ -208,30 +207,52 @@ export async function forgetAll() {
   corpus.works = {};
   reindex();
 }
-export async function restore(meta, anchors, letters) {
+export async function restore(meta, anchors, letters, directorium) {
   corpus.meta = meta; corpus.anchors = anchors; corpus.letters = letters;
+  corpus.directorium = directorium || null;
+  if (directorium) buildDirectorium(directorium);
   for (const k of await dbKeys()) {
+    // The Directory of 1599 now ships with the site; a Palmer PDF stored under
+    // "dir" by an earlier version of this page would shadow it, so it is dropped.
+    if (k === "dir") { await dbDel(k); continue; }
     const rec = await dbGet(k);
     if (rec && rec.pages) corpus.works[k] = rec;
   }
   reindex();
 }
 
+/** Flatten the bilingual Directory into paragraph "pages" for the index, with a
+    parallel list of canonical citation labels (chapter and margin number). */
+function buildDirectorium(d) {
+  const pages = [], cites = [];
+  const add = (label, paras) => {
+    for (const p of paras) {
+      pages.push(`${p.la} ${p.en}`);
+      cites.push({ label: `Dir. 1599, ${label} [${p.n}]`, n: p.n });
+    }
+  };
+  (d.vorspann || []).forEach((v, i) => add(i === 0 ? "Praef." : "Prooem.", v.paras));
+  (d.kapitel || []).forEach(c => add(c.label.replace("Cap.", "c."), c.paras));
+  corpus._dirPages = pages;
+  corpus._dirCites = cites;
+}
+
 export const workMeta = id => (corpus.meta || []).find(w => w.id === id);
-export const isOpen = id => id === "letters" || !!corpus.works[id];
+export const isOpen = id => id === "letters" || (id === "dir" && !!corpus._dirPages) || !!corpus.works[id];
 export const openIds = () => (corpus.meta || []).filter(w => isOpen(w.id)).map(w => w.id);
 
 /* --------------------------------------------------------- page access */
 /** True when a PDF page belongs to Ignatius's text rather than to the
     translator's introduction, endnotes or index. */
 export function inBody(id, p) {
-  if (id === "letters") return true;
+  if (id === "letters" || id === "dir") return true;
   const w = workMeta(id);
   if (!w || w.body_von == null) return true;
   return p >= w.body_von && p <= w.body_bis;
 }
 
 export function pagesOf(id) {
+  if (id === "dir") return corpus._dirPages;   // shipped bilingual paragraphs
   if (corpus.works[id]) return corpus.works[id].pages;
   if (id === "letters" && corpus.letters) {
     // the public-domain letters are held as discrete letters, not pages
@@ -245,6 +266,10 @@ export function citeFor(id, page) {
   if (id === "letters") {
     const l = corpus.letters[page];
     return l ? { label: `Letters, no. ${l.roman}`, n: l.n, seite: l.seite_von } : null;
+  }
+  if (id === "dir") {
+    const c = (corpus._dirCites || [])[page];
+    return c ? { label: c.label, n: c.n, seite: null, exact: true } : null;
   }
   const rows = (corpus.anchors || {})[id];
   if (!rows || !rows.length) return null;
