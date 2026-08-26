@@ -17,8 +17,11 @@ export const corpus = {
   anchors: null,    // anchors.json
   letters: null,    // letters.json (public domain, always present)
   directorium: null,// directorium.json (own bilingual edition, always present)
+  exercitia: null,  // exercitia.json (trilingual PD edition of the Exercises)
   _dirPages: null,  // flattened paragraph texts of the Directory
   _dirCites: null,  // parallel citation labels
+  _exxPages: null,  // flattened paragraph texts of the Exercises edition
+  _exxCites: null,  // parallel Exx [n] citation labels
   _idx: {},         // id -> Map token -> [pageIdx]
   _chunks: [],      // retrieval units across everything available
   _bm25: null,
@@ -207,10 +210,12 @@ export async function forgetAll() {
   corpus.works = {};
   reindex();
 }
-export async function restore(meta, anchors, letters, directorium) {
+export async function restore(meta, anchors, letters, directorium, exercitia) {
   corpus.meta = meta; corpus.anchors = anchors; corpus.letters = letters;
   corpus.directorium = directorium || null;
   if (directorium) buildDirectorium(directorium);
+  corpus.exercitia = exercitia || null;
+  if (exercitia) buildExercitia(exercitia);
   for (const k of await dbKeys()) {
     // The Directory of 1599 now ships with the site; a Palmer PDF stored under
     // "dir" by an earlier version of this page would shadow it, so it is dropped.
@@ -237,8 +242,24 @@ function buildDirectorium(d) {
   corpus._dirCites = cites;
 }
 
+/** Flatten the trilingual Exercises edition into per-paragraph "pages".
+    Each page carries all three texts, so a search hits Spanish, Latin and
+    English alike; the citation is the canonical Exx number, exact. */
+function buildExercitia(d) {
+  const pages = [], cites = [];
+  for (const s of d.sections || []) {
+    for (const u of s.units) {
+      pages.push(`${u.es} ${u.la} ${u.en}`);
+      cites.push({ label: `SpEx [${u.n}]`, n: u.n });
+    }
+  }
+  corpus._exxPages = pages;
+  corpus._exxCites = cites;
+}
+
 export const workMeta = id => (corpus.meta || []).find(w => w.id === id);
-export const isOpen = id => id === "letters" || (id === "dir" && !!corpus._dirPages) || !!corpus.works[id];
+export const isOpen = id => id === "letters" || (id === "dir" && !!corpus._dirPages) ||
+  (id === "spex" && !!corpus._exxPages) || !!corpus.works[id];
 export const openIds = () => (corpus.meta || []).filter(w => isOpen(w.id)).map(w => w.id);
 
 /* --------------------------------------------------------- page access */
@@ -246,6 +267,9 @@ export const openIds = () => (corpus.meta || []).filter(w => isOpen(w.id)).map(w
     translator's introduction, endnotes or index. */
 export function inBody(id, p) {
   if (id === "letters" || id === "dir") return true;
+  // when the Exercises run on the shipped trilingual edition rather than an
+  // unlocked Ganss PDF, every "page" is a canonical paragraph — all body
+  if (id === "spex" && !corpus.works.spex) return true;
   const w = workMeta(id);
   if (!w || w.body_von == null) return true;
   return p >= w.body_von && p <= w.body_bis;
@@ -254,6 +278,9 @@ export function inBody(id, p) {
 export function pagesOf(id) {
   if (id === "dir") return corpus._dirPages;   // shipped bilingual paragraphs
   if (corpus.works[id]) return corpus.works[id].pages;
+  // the Exercises fall back to the shipped trilingual edition until the
+  // reader opens Ganss's own translation, which then takes precedence
+  if (id === "spex") return corpus._exxPages;
   if (id === "letters" && corpus.letters) {
     // the public-domain letters are held as discrete letters, not pages
     return corpus.letters.map(l => l.text);
@@ -269,6 +296,10 @@ export function citeFor(id, page) {
   }
   if (id === "dir") {
     const c = (corpus._dirCites || [])[page];
+    return c ? { label: c.label, n: c.n, seite: null, exact: true } : null;
+  }
+  if (id === "spex" && !corpus.works.spex) {
+    const c = (corpus._exxCites || [])[page];
     return c ? { label: c.label, n: c.n, seite: null, exact: true } : null;
   }
   const rows = (corpus.anchors || {})[id];

@@ -12,6 +12,7 @@ people entirely.
 | **Derived datasets** | `data/anchors.json`, `works.json`, `corpus.json`, `terms.json`, `keyness.json`, `network.json`, `persons.json`, `places.json`, `itinerary.json`, `discernment.json` | [CC0 1.0](LICENSE-DATA) — public domain dedication |
 | **Public-domain source text** | `data/letters.json` | Public domain in its own right — see below |
 | **Bilingual edition of the 1599 Directory** | `data/directorium.json` | Latin: public domain (US, pre-1930 publication); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
+| **Trilingual edition of the Exercises** | `data/exercitia.json` | Spanish, Latin and English texts: public domain (US, pre-1930 publications); editorial segmentation and numbering: [CC0 1.0](LICENSE-DATA) |
 | **Third-party libraries** | `vendor/` | Upstream licences — see below |
 
 ## The two categories that are not the author's to license
@@ -33,6 +34,14 @@ for this repository directly from that Latin, consulting no copyrighted
 translation; whatever rights it could attract are dedicated to the public domain
 under CC0 1.0. It carries no ecclesiastical or scholarly authority — anyone
 citing the Directory should cite the Latin.
+
+**`data/exercitia.json`** holds the book of the Exercises three times over:
+the Spanish Autograph and the Latin Vulgata of 1548 as printed in the Madrid
+1919 *Monumenta Ignatiana* (a pre-1930 publication, US public domain), and
+Elder Mullan's English translation (New York, 1914, US public domain). Faithful
+transcription of public-domain texts adds nothing licensable; the editorial
+segmentation into the canonical [1]–[370] paragraphs is dedicated to the public
+domain under CC0 1.0.
 
 **`vendor/`** holds unmodified third-party builds:
 

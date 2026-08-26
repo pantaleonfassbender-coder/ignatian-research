@@ -22,10 +22,17 @@ of copyright. The **translations** that make them readable are not.
 |---|---|---|---|
 | *Letters and Instructions*, vol. I | D. F. O'Leary, 1914 | public domain | **full text included** (24 letters) |
 | *The Official Directory of 1599* | Latin: *Monumenta Ignatiana*, 1919 · English: unofficial working translation made for this repository | Latin public domain (US, pre-1930); translation dedicated CC0 | **full bilingual text included** (287 paragraphs) |
+| *The Spiritual Exercises* (parallel edition) | Spanish Autograph & Vulgata 1548: *Monumenta Ignatiana*, 1919 · English: Elder Mullan, 1914 | all three public domain (US) | **full trilingual text included** (370 paragraphs, Exx [1]–[370]) |
 | *The Spiritual Exercises* | George E. Ganss, 1992 | in copyright | derived data only |
 | *Constitutions & Complementary Norms* | ed. John W. Padberg, 1996 | in copyright | derived data only |
 | *A Pilgrim's Testament* | Parmananda R. Divarkar, 1995 | in copyright | derived data only |
 | *The Spiritual Diary* | Joseph A. Munitiz, 1987 | in copyright | derived data only |
+
+The trilingual Exercises edition does not replace Ganss: his 1992 translation remains a locked,
+unlockable work, and while it is not opened the concordance searches the public-domain edition instead,
+every hit exact to its Exx [n]. The [1]–[370] grid itself is editorial — it was introduced in 1928 and
+appears in none of the public-domain printings, so it was assigned here to the older texts and validated
+for completeness (370 of 370, no gaps, all three languages).
 
 The Directory's English side deserves a plain label: it is a machine-generated working translation,
 made directly from the 1919 Latin and consulting no copyrighted translation. It is honest, consistent in
@@ -113,8 +120,8 @@ edition the panel says so, rather than letting a divergent printing be silently 
 
 Editions the anchors were built against: Ganss (IJS, 1992); Padberg (IJS, 1996); Divarkar (IJS, 1995);
 Munitiz, *Íñigo: Discernment Log-Book* (Inigo Enterprises, 1987); O'Leary, ed. Goodier
-(B. Herder / Manresa Press, 1914). The Directory of 1599 needs no anchors: its bilingual text is shipped
-paragraph by paragraph from *Monumenta Ignatiana*, series secunda (Madrid, 1919), pp. 1138–1178. A different printing will still search; its pages will not line up.
+(B. Herder / Manresa Press, 1914). The Directory of 1599 and the trilingual Exercises edition need no anchors: their texts are shipped
+paragraph by paragraph from *Monumenta Ignatiana*, series secunda (Madrid, 1919), and from Mullan (1914). A different printing will still search; its pages will not line up.
 
 ---
 
@@ -184,6 +191,11 @@ in short:
 - **`data/letters.json`** is the 1914 O'Leary translation. It is in the public
   domain in its own right, and no licence here applies to it — it was never the
   author's to license.
+- **`data/exercitia.json`** holds three public-domain texts — the Spanish
+  Autograph and the Vulgata as printed in the Madrid 1919 *Monumenta
+  Ignatiana*, and Mullan's 1914 translation — plus this repository's editorial
+  work of segmentation and numbering, which is dedicated to the public domain
+  under [CC0 1.0](LICENSE-DATA) like the other derived data.
 - **`data/directorium.json`** is two things at once. Its Latin is the 1599
   Directory as printed in the Madrid 1919 *Monumenta Ignatiana*, public domain
   in the United States; a faithful transcription adds nothing licensable. Its

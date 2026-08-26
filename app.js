@@ -24,11 +24,11 @@ export const workOf = id => (D.works || []).find(w => w.id === id) || {};
 async function boot() {
   const names = ["works", "corpus", "anchors", "letters", "terms", "keyness", "network",
     "discernment", "persons", "places", "itinerary", "introductions", "sections",
-    "lexicon", "glossary", "directorium"];
+    "lexicon", "glossary", "directorium", "exercitia"];
   const res = await Promise.all(names.map(n => fetch(`data/${n}.json`).then(r => r.json())));
   names.forEach((n, i) => D[n] = res[i]);
   D.introOf = {}; D.introductions.forEach(x => D.introOf[x.id] = x);
-  try { await C.restore(D.works, D.anchors, D.letters, D.directorium); }
+  try { await C.restore(D.works, D.anchors, D.letters, D.directorium, D.exercitia); }
   catch (e) { console.warn("restore failed", e); }
   refreshUnlockBadge();
   window.addEventListener("hashchange", route);
@@ -37,7 +37,7 @@ async function boot() {
 
 const ROUTES = {
   overview: viewOverview, works: viewWorks, letters: viewLetters,
-  directorium: viewDirectorium,
+  directorium: viewDirectorium, exercitia: viewExercitia,
   concordance: viewConcordance, lexicon: viewLexicon, atlas: viewAtlas,
   register: viewRegister, language: viewLanguage, glossary: viewGlossary,
   method: viewMethod, dialogue: a => renderDialogue(view, a),
@@ -96,13 +96,15 @@ function viewOverview() {
     <div class="grid g2" style="margin-bottom:2rem">
       <div class="card">
         <span class="tag">What is here without anything further</span>
-        <h3>The Letters and the Directory of 1599, in full</h3>
-        <p style="font-size:.92rem;color:var(--fg2)">O'Leary's 1914 translation of the letters is in the public
-        domain, so all twenty-four letters of 1524–1547 are included complete. The Official Directory of 1599
-        is here in its full Latin text (Monumenta Ignatiana, 1919) with this site's own English working
-        translation alongside — readable, searchable, quotable, and part of every cross-corpus function.</p>
-        <p><a class="btn" href="#/letters">Read the letters →</a>
-           <a class="btn" href="#/directorium">Read the Directory →</a></p>
+        <h3>The Exercises, the Letters and the Directory of 1599, in full</h3>
+        <p style="font-size:.92rem;color:var(--fg2)">The book of the Exercises ships in a public-domain
+        parallel edition — Spanish Autograph, Vulgata of 1548 and Mullan's 1914 English, on the canonical
+        [1]–[370] grid. O'Leary's 1914 letters and the Official Directory of 1599 (Latin with this site's
+        own working translation) are likewise complete: readable, searchable, quotable, and part of every
+        cross-corpus function.</p>
+        <p><a class="btn" href="#/exercitia">Exercises →</a>
+           <a class="btn" href="#/letters">Letters →</a>
+           <a class="btn" href="#/directorium">Directory →</a></p>
       </div>
       <div class="card" id="unlockCard">
         <span class="tag">What needs your own copy</span>
@@ -309,6 +311,14 @@ function workDetail(id) {
   } else if (!C.isOpen(id)) {
     ft.append(lockedBox(`${w.titel} is under copyright in this translation. Open your own PDF to search it, read hits in context and cite them by ${w.zitierweise}.`));
   } else {
+    if (id === "spex" && !corpus.works.spex) {
+      ft.append(el(`<p>Ganss's translation is under copyright, but the Exercises themselves ship with this
+        site in a public-domain parallel edition — Spanish Autograph, Vulgata of 1548 and Mullan's 1914
+        English — searchable below and readable in full.
+        <a class="btn" href="#/exercitia">Open the trilingual reader →</a></p>
+        <p class="fine">The search below runs over that edition, with every hit exact to its Exx [n].
+        Open Ganss's PDF from your own copy and the search switches to his translation.</p>`));
+    }
     ft.append(el(`<div><div class="toolbar" style="margin-bottom:.7rem">
       <input class="grow" id="fq" type="search" placeholder="Search within this work …"></div>
       <div id="fres"><p class="fine">Type at least three characters.</p></div></div>`));
@@ -510,6 +520,100 @@ function dirChapter(id) {
   bindDirLang(view, () => route());
 }
 
+/* =========================================================== EXERCITIA */
+/* Trilingual reader for the Spiritual Exercises: Spanish Autograph and
+   Vulgata of 1548 from the 1919 Monumenta Ignatiana, Mullan's 1914 English.
+   All three are public domain; the [1]-[370] grid is editorial. */
+const exxLang = {
+  get: () => localStorage.getItem("exxLang") || "all",
+  set: v => localStorage.setItem("exxLang", v),
+};
+function exxLangBar(cur) {
+  return `<div class="toolbar" id="exxlang" style="margin:.4rem 0 1rem">
+    ${[["es", "Español (Autograph)"], ["la", "Latina (Vulgata 1548)"],
+       ["en", "English (Mullan 1914)"], ["all", "All three"]].map(([v, t]) =>
+      `<button class="chip ${cur === v ? "on" : ""}" data-l="${v}">${t}</button>`).join("")}
+  </div>`;
+}
+function bindExxLang(box, rerender) {
+  box.querySelectorAll("#exxlang [data-l]").forEach(b => b.onclick = () => {
+    exxLang.set(b.dataset.l); rerender();
+  });
+}
+function viewExercitia(args) {
+  if (args && args[0]) return exxSection(args[0]);
+  const lang = exxLang.get();
+  view.append(el(`<div>
+    <div class="viewhead">
+      <span class="tag" style="color:${wc("spex")}">Public-domain parallel edition · Exx [1]–[370]</span>
+      <h1>Exercitia spiritualia</h1>
+      <p class="lede">The book of the Exercises in three public-domain texts side by side: the Spanish
+      Autograph and the Latin Vulgata approved in 1548, both from the Monumenta Ignatiana edition of 1919,
+      and Elder Mullan's literal English translation of 1914. Every paragraph carries the canonical
+      number [1]–[370] by which all scholarship cites the Exercises — a grid introduced editorially in
+      1928 and assigned here to the older texts. Ganss's 1992 translation remains a separate,
+      <a href="#/works/spex">unlockable work</a>.</p>
+    </div>
+    ${exxLangBar(lang)}
+    <div class="grid g2" id="exxtoc"></div>
+    <p class="fine" style="margin-top:1.2rem">Cited as <span class="mono">SpEx [n]</span>. The Spanish
+    keeps the sixteenth-century orthography of the Autograph as the 1919 edition prints it; the Latin is
+    normalised in u/v; obvious OCR errors are emended against the sense, and the 1919 apparatus is not
+    reproduced.</p>
+  </div>`));
+  const toc = view.querySelector("#exxtoc");
+  for (const s of D.exercitia.sections) {
+    const card = el(`<div class="workcard" style="border-left:3px solid ${wc("spex")}">
+      <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">[${s.von}–${s.bis}]</span>
+        <span class="fine">${s.units.length} ¶</span></div>
+      <h3 style="margin:.3rem 0 .15rem;font-size:1.02rem">${esc(s.titel_en)}</h3>
+      <p class="fine" style="margin:0">${esc(s.titel_es)}</p>
+    </div>`);
+    card.onclick = () => location.hash = `#/exercitia/${s.id}`;
+    toc.append(card);
+  }
+  bindExxLang(view, () => route());
+}
+function exxSection(id) {
+  const parts = D.exercitia.sections;
+  const i = parts.findIndex(s => s.id === id);
+  if (i < 0) { location.hash = "#/exercitia"; return; }
+  const s = parts[i], lang = exxLang.get();
+  const prev = parts[(i - 1 + parts.length) % parts.length];
+  const next = parts[(i + 1) % parts.length];
+  const cols = { es: "Autographum", la: "Vulgata 1548", en: "Mullan 1914" };
+  const para = u => {
+    const label = u.label_en || u.label_es ?
+      `<p class="fine" style="margin:0 0 .2rem;color:var(--acc2)">${esc(u.label_en || u.label_es)}</p>` : "";
+    const note = u.note ? `<p class="fine" style="margin:.3rem 0 0;color:var(--fg3)">Note: ${esc(u.note)}</p>` : "";
+    const one = k => `<p class="readable" style="margin:0${k === "la" ? ";font-style:italic" : ""}">${esc(u[k])}</p>`;
+    const body = lang === "all"
+      ? `<div class="grid g3" style="gap:1rem">${one("es")}${one("la")}${one("en")}</div>`
+      : one(lang);
+    return `<div style="border-left:2px solid ${wc("spex")};padding-left:.9rem;margin-bottom:1.3rem">
+      <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">SpEx [${u.n}]</span></div>
+      ${label}${body}${note}</div>`;
+  };
+  view.append(el(`<div>
+    <p class="fine"><a href="#/exercitia">← All sections</a> ·
+      <a href="#/exercitia/${prev.id}">[${prev.von}–${prev.bis}]</a> ·
+      <a href="#/exercitia/${next.id}">[${next.von}–${next.bis}]</a> ·
+      <a href="#/works/spex">About the Exercises</a></p>
+    <div class="viewhead">
+      <span class="tag" style="color:${wc("spex")}">Exx [${s.von}]–[${s.bis}]</span>
+      <h1 style="font-size:1.5rem">${esc(s.titel_en)}</h1>
+      <p class="fine">${esc(s.titel_es)} · ${esc(s.titel_la)} · ${s.units.length} paragraphs</p>
+    </div>
+    ${exxLangBar(lang)}
+    <div id="exxbody"></div>
+    <p class="fine">Spanish and Latin: Monumenta Ignatiana, ser. II (Madrid, 1919), public domain.
+    English: Elder Mullan, S.J. (New York, 1914), public domain. The [n] numbers are the canonical
+    editorial grid of 1928, assigned here to these older texts.</p>
+  </div>`));
+  view.querySelector("#exxbody").innerHTML = s.units.map(para).join("");
+  bindExxLang(view, () => route());
+}
+
 /* ========================================================= CONCORDANCE */
 function viewConcordance() {
   const pre = new URLSearchParams((location.hash.split("?")[1] || "")).get("q") || "";
@@ -518,8 +622,8 @@ function viewConcordance() {
       <span class="tag">Cross-corpus concordance</span>
       <h1>Concordance</h1>
       <p class="lede">Keyword in context across every work currently available, each hit resolved to its
-      canonical citation. The Letters and the Directory of 1599 are always searchable; the other four join
-      the search as you open them.</p>
+      canonical citation. The Exercises, the Letters and the Directory of 1599 are always searchable; the
+      remaining works join the search as you open them.</p>
     </div>
     <div class="toolbar">
       <input class="grow" id="q" type="search" placeholder="Search word or phrase …" value="${esc(pre)}">
@@ -955,16 +1059,18 @@ function viewMethod() {
 
     <div class="panel"><h2>Rights, and what follows from them</h2>
       <p class="readable">Ignatius died in 1556 and his writings are long out of copyright. The English
-      translations that make them readable are mostly not. Of the six works here, two ship complete.
-      O'Leary's 1914 <em>Letters and Instructions</em> has fallen into the public domain. The Official
+      translations that make them readable are mostly not. Three texts ship complete. O'Leary's 1914
+      <em>Letters and Instructions</em> has fallen into the public domain. The Official
       Directory of 1599 is included in its original Latin, taken from the Madrid 1919 volume of the
       Monumenta Ignatiana, which as a pre-1930 publication is in the United States public domain; the
       English text beside it is an unofficial machine-generated working translation made for this site
-      directly from that Latin, consulting no copyrighted translation. The other four are living scholarly
-      translations under copyright, and this site ships none of their running text: only page-level citation
-      anchors, aggregate counts, co-occurrence edges, name registers, and editorial matter written for this
-      site. Their full-text functions run against a copy the reader supplies, which is read in the browser
-      and stored on the reader's own device.</p>
+      directly from that Latin, consulting no copyrighted translation. And the book of the Exercises itself
+      ships in a public-domain parallel edition: the Spanish Autograph and the Latin Vulgata of 1548 from
+      the same 1919 volume, with Elder Mullan's literal English translation of 1914 beside them. The four
+      living scholarly translations remain under copyright, and this site ships none of their
+      running text: only page-level citation anchors, aggregate counts, co-occurrence edges, name registers,
+      and editorial matter written for this site. Their full-text functions run against a copy the reader
+      supplies, which is read in the browser and stored on the reader's own device.</p>
     </div>
 
     <div class="panel"><h2>Extraction and segmentation</h2>
@@ -985,6 +1091,15 @@ function viewMethod() {
       that Latin and is labelled throughout as an unofficial working translation. Its linguistic profile is
       computed with the same simple counts as the rest, except that part-of-speech measures are not reported
       for it.</p>
+      <p class="readable">The trilingual Exercises edition comes from the same 1919 volume, whose front part
+      prints four texts in parallel columns — Spanish Autograph and Vulgata on the left-hand pages, Versio
+      prima and Roothaan's version on the right. The OCR text layer interleaves those columns unreliably, so
+      the columns were cut geometrically from the PDF instead: for each left-hand page the gutter was located
+      as the widest whitespace gap, each column extracted separately, and the two streams segmented
+      editorially into the canonical [1]–[370] paragraphs — a numeration introduced in 1928 and absent from
+      every public-domain printing. Mullan's English (1914) was taken from the proofed Christian Classics
+      Ethereal Library transcription and checked against the printed edition. The result was validated for
+      completeness: 370 of 370 paragraphs present in all three languages, with no gaps or duplicates.</p>
     </div>
 
     <div class="panel"><h2>Canonical anchors</h2>
@@ -1034,6 +1149,12 @@ function viewMethod() {
           made directly from the Latin and reviewed for consistency of key terms, but it carries no
           ecclesiastical or scholarly authority; anyone citing the Directory should cite the Latin. The
           underlying Latin itself is an OCR reconstruction and may retain undetected transcription errors.</li>
+        <li>The Spanish and Latin of the trilingual Exercises edition are likewise OCR reconstructions of the
+          1919 printing and may retain undetected errors, particularly where a line-end syllable crossed the
+          column gutter. The [1]–[370] numbers were assigned editorially to texts that never carried them;
+          section boundaries follow the standard modern editions, but a divergence at the level of a single
+          paragraph split cannot be ruled out. When the Exercises are searched without Ganss's PDF opened,
+          the hits come from this parallel edition, not from his translation.</li>
         <li>The itinerary follows the memoir's own account, which is a narrative composed thirty years after
           the events and shaped for a purpose; it is not a reconstruction from archival sources.</li>
       </ul>
@@ -1368,11 +1489,14 @@ function drawUnlockTable() {
     const quelle = rec
       ? `${nf(rec.meta.n)} pp. · ${esc(rec.meta.quelle)}${rec.meta.seitenOk ? ""
           : `<div class="fine" style="color:var(--warn)">expects ${nf(w.pdf_seiten)} pp. — check that this is the right volume</div>`}`
-      : w.rechte === "public-domain" ? "shipped with this site" : `expects ${nf(w.pdf_seiten)} pp.`;
+      : w.rechte === "public-domain" ? "shipped with this site"
+      : w.id === "spex" ? `public-domain parallel edition shipped; open Ganss's PDF (${nf(w.pdf_seiten)} pp.) to search his translation`
+      : `expects ${nf(w.pdf_seiten)} pp.`;
     return `<tr><td style="color:${wc(w.id)}">■</td>
       <td>${esc(w.titel)}<div class="fine">${esc(w.uebersetzer)}, ${w.jahr}</div></td>
       <td>${w.rechte === "public-domain" ? '<span class="rights pd">included</span>'
-        : open ? '<span class="rights open">open</span>' : '<span class="rights cr">locked</span>'}</td>
+        : rec ? '<span class="rights open">open</span>'
+        : open ? '<span class="rights pd">edition included</span>' : '<span class="rights cr">locked</span>'}</td>
       <td class="fine">${quelle}</td>
       <td class="rowact">${w.rechte === "public-domain" ? "" :
         `<label class="mini">${rec ? "Replace" : "Choose file"}
