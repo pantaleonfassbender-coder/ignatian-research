@@ -1,12 +1,15 @@
-# Ignatiana — a research apparatus for the writings of Ignatius of Loyola
+# Ignatiana — a research apparatus for Ignatian spirituality
 
 Live: **<https://ignatian-research.netlify.app/>**
 
-Six texts as one working corpus: the *Spiritual Exercises*, the *Constitutions* with their
-*Complementary Norms*, the dictated memoir known as *A Pilgrim's Testament*, the *Spiritual Diary*, the
-*Official Directory of 1599* on giving the Exercises, and the letters of 1524–1547. The apparatus indexes them by
-their canonical numbering, traces the vocabulary that migrates between them, and lets you put a question
-to the corpus with the evidence attached.
+Seven texts as one working corpus. At the centre, the writings of Ignatius of Loyola himself: the
+*Spiritual Exercises*, the *Constitutions* with their *Complementary Norms*, the dictated memoir known
+as *A Pilgrim's Testament*, the *Spiritual Diary*, and the letters of 1524–1547. Around them, the texts
+in which his spirituality became the practice of an order: the *Official Directory of 1599* on giving
+the Exercises, and the *Memoriale* of Blessed Peter Faber — the first companion, whom Ignatius judged
+the finest giver of the Exercises — discernment kept as a daily journal from 1542 to 1546. The apparatus
+indexes them by their canonical numbering, traces the vocabulary that migrates between them, and lets
+you put a question to the corpus with the evidence attached.
 
 It is a working instrument, not a publication. It was built for one reader's use and is opened here in
 case it is useful to others; the limits are stated at length rather than buried.
@@ -15,8 +18,9 @@ case it is useful to others; the limits are stated at length rather than buried.
 
 ## The rights position, first
 
-This is the constraint everything else follows from. Ignatius died in 1556 and his writings are long out
-of copyright. The **translations** that make them readable are not.
+This is the constraint everything else follows from. Ignatius died in 1556, Favre in 1546, and the
+writings of the early Society are long out of copyright. The **translations** that make them readable
+are mostly not.
 
 | Work | Translation | Rights | In this repository |
 |---|---|---|---|
@@ -69,7 +73,7 @@ that a concordance hit reads `SpEx [23]` or `Const [134]` rather than a page num
 Coverage by work: Exercises 369 of 370, Constitutions 812 of 827, Pilgrim's Testament 101 of 101, Diary
 486 of 490, and 119 across the six directory documents.
 
-**A concordance across all six works at once**, with keyword in context, hit distribution per work, and a
+**A concordance across all seven works at once**, with keyword in context, hit distribution per work, and a
 canonical citation on every line — once you have opened your own copies.
 
 **The 1914 letters in full**, searchable and quotable without any copy of your own, with recipient, place
@@ -95,7 +99,7 @@ About 500 kB of JSON, all of it derived or editorial.
 
 | File | Contents |
 |---|---|
-| `works.json` | the six works: translator, rights, citation form, body range, sections, linguistic measures |
+| `works.json` | the seven works: translator, rights, citation form, body range, sections, linguistic measures |
 | `anchors.json` | 1,887 canonical paragraph anchors, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
 | `introductions.json`, `sections.json` | editorial orientation, textual history, key passages, internal divisions |
@@ -233,7 +237,7 @@ apparatus describes. No part of their text is in this repository.
 
 ## Citing the apparatus
 
-> Pantaleon Fassbender, *Ignatiana: A Research Apparatus for the Writings of Ignatius of Loyola*,
+> Pantaleon Fassbender, *Ignatiana: A Research Apparatus for Ignatian Spirituality*,
 > <https://ignatian-research.netlify.app/> (accessed …).
 
 See `CITATION.cff` for a machine-readable form. When citing a passage found through the concordance,

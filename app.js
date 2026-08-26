@@ -78,11 +78,14 @@ function viewOverview() {
   view.append(el(`<div>
     <div class="viewhead">
       <span class="tag">Research apparatus</span>
-      <h1>The writings of Ignatius of Loyola</h1>
-      <p class="lede">Six texts, one working corpus: a retreat manual, a body of law, a dictated memoir,
-      a private journal of discernment, the Society's official directory of 1599 for giving the Exercises,
-      and twenty-four letters. This apparatus indexes them by their canonical numbering, traces the
-      vocabulary that migrates between them, and lets you put questions to the corpus with the evidence attached.</p>
+      <h1>Ignatius of Loyola and the spirituality he set in motion</h1>
+      <p class="lede">Seven texts, one working corpus. At its centre stand the writings of Ignatius
+      himself — the retreat manual, the body of law, the dictated memoir, the private journal of
+      discernment, the letters. Around them, the texts in which his spirituality became the practice
+      of an order: the Society's official Directory of 1599 on giving the Exercises, and the Memoriale
+      of Pierre Favre, the first companion, discernment kept as a daily journal. The apparatus indexes
+      them by their canonical numbering, traces the vocabulary that migrates between them, and lets
+      you put questions to the corpus with the evidence attached.</p>
     </div>
 
     <div class="grid g4" style="margin-bottom:1.6rem">
@@ -97,15 +100,17 @@ function viewOverview() {
     <div class="grid g2" style="margin-bottom:2rem">
       <div class="card">
         <span class="tag">What is here without anything further</span>
-        <h3>The Exercises, the Letters and the Directory of 1599, in full</h3>
+        <h3>Four texts in full: Exercises, Letters, Directory, Memoriale</h3>
         <p style="font-size:.92rem;color:var(--fg2)">The book of the Exercises ships in a public-domain
         parallel edition — Spanish Autograph, Vulgata of 1548 and Mullan's 1914 English, on the canonical
-        [1]–[370] grid. O'Leary's 1914 letters and the Official Directory of 1599 (Latin with this site's
-        own working translation) are likewise complete: readable, searchable, quotable, and part of every
-        cross-corpus function.</p>
+        [1]–[370] grid, with Longridge's 1919 commentary as a switchable layer. O'Leary's 1914 letters,
+        the Official Directory of 1599 (Latin with Longridge's translation or this site's own), and
+        Favre's Memoriale of 1542–1546 (Latin of the 1873 editio princeps with a working translation)
+        are likewise complete: readable, searchable, quotable, and part of every cross-corpus function.</p>
         <p><a class="btn" href="#/exercitia">Exercises →</a>
            <a class="btn" href="#/letters">Letters →</a>
-           <a class="btn" href="#/directorium">Directory →</a></p>
+           <a class="btn" href="#/directorium">Directory →</a>
+           <a class="btn" href="#/memoriale">Memoriale →</a></p>
       </div>
       <div class="card" id="unlockCard">
         <span class="tag">What needs your own copy</span>
@@ -200,11 +205,12 @@ function viewWorks(args) {
   if (args && args[0]) return workDetail(args[0]);
   view.append(el(`<div>
     <div class="viewhead">
-      <span class="tag">Six works</span>
+      <span class="tag">Seven works</span>
       <h1>The corpus, work by work</h1>
-      <p class="lede">Each entry gives an orientation, a note on the textual history and the translation used,
-      practical advice on navigating the numbering, the passages that carry the most weight, and the internal
-      divisions of the text.</p>
+      <p class="lede">Five works from Ignatius's own hand or dictation, and two from the spirituality he
+      set in motion: the Society's official Directory and Favre's journal. Each entry gives an orientation,
+      a note on the textual history and the translation used, practical advice on navigating the numbering,
+      the passages that carry the most weight, and the internal divisions of the text.</p>
     </div><div class="grid g2" id="wl"></div></div>`));
   const wl = view.querySelector("#wl");
   for (const w of D.works) {
@@ -1281,8 +1287,9 @@ function viewMethod() {
       <p class="lede">What was computed, from what, with which tools, and where the results do not carry.</p></div>
 
     <div class="panel"><h2>Rights, and what follows from them</h2>
-      <p class="readable">Ignatius died in 1556 and his writings are long out of copyright. The English
-      translations that make them readable are mostly not. Three texts ship complete. O'Leary's 1914
+      <p class="readable">Ignatius died in 1556, Favre in 1546, and their writings — with the early
+      Society's — are long out of copyright. The English
+      translations that make them readable are mostly not. Four texts ship complete. O'Leary's 1914
       <em>Letters and Instructions</em> has fallen into the public domain. The Official
       Directory of 1599 is included in its original Latin, taken from the Madrid 1919 volume of the
       Monumenta Ignatiana, which as a pre-1930 publication is in the United States public domain; the
@@ -1292,7 +1299,10 @@ function viewMethod() {
       translation. The book of the Exercises itself
       ships in a public-domain parallel edition: the Spanish Autograph and the Latin Vulgata of 1548 from
       the same 1919 volume, with Elder Mullan's literal English translation of 1914 beside them, and
-      Longridge's commentary of 1919 with his seventeen Additional Notes as a switchable layer. The four
+      Longridge's commentary of 1919 with his seventeen Additional Notes as a switchable layer. And
+      Favre's Memoriale, with its appendix of letters, is included in the Latin of the editio princeps
+      (Paris, 1873 — likewise United States public domain by age), again with an unofficial working
+      translation made for this site. The four
       living scholarly translations remain under copyright, and this site ships none of their
       running text: only page-level citation anchors, aggregate counts, co-occurrence edges, name registers,
       and editorial matter written for this site. Their full-text functions run against a copy the reader
@@ -1660,8 +1670,9 @@ function viewImprint() {
     </div>
 
     <div class="panel"><h2>Rights in the texts</h2>
-      <p class="readable">The writings of Ignatius of Loyola are long out of copyright. The modern
-      translations are not, and this site ships the running text of one public-domain edition only; for the
+      <p class="readable">The writings of Ignatius of Loyola and of the early Society are long out of
+      copyright. The modern
+      translations are mostly not, and this site ships running text from public-domain editions only; for the
       rest it holds derived data and editorial matter written for this site. The full account is in
       <a href="#/method">Method, sources and limits</a>. All rights in the modern translations rest with
       their publishers and translators. If you hold rights in one of these editions and consider anything
