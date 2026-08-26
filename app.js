@@ -41,7 +41,7 @@ const ROUTES = {
   concordance: viewConcordance, lexicon: viewLexicon, atlas: viewAtlas,
   register: viewRegister, language: viewLanguage, glossary: viewGlossary,
   method: viewMethod, dialogue: a => renderDialogue(view, a),
-  privacy: viewPrivacy, imprint: viewImprint,
+  privacy: viewPrivacy, imprint: viewImprint, author: viewAuthor,
 };
 function route() {
   const h = (location.hash || "#/overview").slice(2).split("/");
@@ -1288,6 +1288,74 @@ function viewMethod() {
       </ul>
     </div>
   </div>`));
+}
+
+/* ============================================================= AUTHOR */
+/* The author's own page: professional profile and an interpretive essay.
+   Deliberately separate from the documentary apparatus — nothing here feeds
+   the concordance, the statistics or the dialogue. */
+function viewAuthor() {
+  const ready = ensureLG("pilgrim_profile", () => route());
+  const links = [
+    ["Portfolio & Resource Hub", "https://leo-fassbender.netlify.app/"],
+    ["LinkedIn", "https://www.linkedin.com/in/drpantaleonfassbender"],
+    ["ORCID 0000-0002-6683-3617", "https://orcid.org/0000-0002-6683-3617"],
+    ["GitHub", "https://github.com/pantaleonfassbender-coder"],
+    ["YouTube", "https://www.youtube.com/@LeoFassb/featured"],
+  ];
+  view.append(el(`<div>
+    <div class="viewhead">
+      <span class="tag">About the author · not part of the apparatus</span>
+      <h1>Dr. Pantaleon Fassbender</h1>
+      <p class="lede">This page is deliberately separate from the research apparatus. The apparatus
+      confines itself to sources, derived data and stated method; what follows here is the author's
+      own — his professional profile, and an interpretive essay that reads the Ignatian sources
+      through the lens of his discipline. Nothing on this page feeds the concordance, the statistics
+      or the dialogue.</p>
+    </div>
+
+    <div class="panel"><span class="tag">Professional profile</span>
+      <p class="readable">Psychologist and leadership-development professional: teaching, research and
+      consulting at the intersection of personnel psychology, leadership, ethics and — most recently —
+      the psychology of artificial-intelligence systems. This apparatus is one instrument in a wider
+      portfolio of research tools and publications, collected on the portfolio site below.</p>
+      <p style="margin:.7rem 0 0">${links.map(([t, u]) =>
+        `<a class="chip" href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" ")}</p>
+    </div>
+
+    <div class="panel"><span class="tag">Essay · August 2026</span>
+      <h2 style="margin:.4rem 0 .2rem">The Pilgrim's Profile</h2>
+      <p class="fine" style="margin:0 0 .8rem">An Evidence-Based Psychological Portrait of Ignatius of
+      Loyola and Its Lessons for Modern Leadership Practice ·
+      <a href="docs/Fassbender-2026-The-Pilgrims-Profile.docx">download the manuscript (.docx)</a></p>
+      <p class="fine" style="margin:0 0 1rem;color:var(--fg3)">Unlike the editions elsewhere on this
+      site, this essay is interpretation: a Big Five reading of the Ignatian record, built "at a
+      distance" and argued with its limits on the table. It cites the modern scholarly translations by
+      chapter and paragraph; the apparatus's own public-domain editions of the same sources are at
+      <a href="#/exercitia">Exercitia</a> and <a href="#/directorium">Directory 1599</a>.</p>
+      <div id="essay">${ready ? "" : `<p class="fine">Loading the essay …</p>`}</div>
+    </div>
+  </div>`));
+  if (ready) renderEssay(view.querySelector("#essay"));
+}
+function renderEssay(box) {
+  const e = D.pilgrim_profile;
+  if (!e) return;
+  const table = c => `<div style="overflow-x:auto;margin:.8rem 0"><p class="fine" style="margin:0 0 .3rem"><strong>${esc(c.caption)}</strong></p>
+    <table style="font-size:.85rem;min-width:640px"><tr>${c.header.map(h => `<th style="text-align:left;padding:.3rem .6rem .3rem 0;color:var(--acc2)">${esc(h)}</th>`).join("")}</tr>
+    ${c.rows.map(r => `<tr>${r.map(x => `<td style="vertical-align:top;padding:.3rem .6rem .3rem 0">${esc(x)}</td>`).join("")}</tr>`).join("")}</table>
+    ${c.note ? `<p class="fine" style="margin:.3rem 0 0">${esc(c.note)}</p>` : ""}</div>`;
+  box.innerHTML = e.sections.map(s =>
+    (s.level === 1
+      ? `<h3 style="margin:1.4rem 0 .5rem;font-size:1.15rem">${esc(s.titel)}</h3>`
+      : `<h4 style="margin:1.1rem 0 .4rem;font-size:1rem;color:var(--acc2)">${esc(s.titel)}</h4>`)
+    + s.inhalt.map(c => c.t === "table" ? table(c)
+        : `<p class="readable" style="margin:.5rem 0;font-size:.95rem">${esc(c.s)}</p>`).join("")
+  ).join("")
+  + `<details style="margin-top:1.4rem"><summary style="cursor:pointer"><strong>References (${e.references.length})</strong></summary>
+     ${e.references.map(r => `<p class="fine" style="margin:.4rem 0;padding-left:1.4rem;text-indent:-1.4rem">${esc(r)}</p>`).join("")}</details>`
+  + `<p class="fine" style="margin-top:1.2rem">${esc(e.copyright)} The essay is the author's own work and,
+     unlike the editions and derived data of this site, is not released under an open licence.</p>`;
 }
 
 /* ============================================================ PRIVACY */

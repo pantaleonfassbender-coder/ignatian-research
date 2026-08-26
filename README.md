@@ -214,6 +214,10 @@ in short:
   Longridge's 1919 commentary, Additional Notes and Directory translation —
   public domain by age; the editorial keying to the [1]–[370] grid and the
   paragraph alignment are dedicated CC0 like the rest of the derived data.
+- **`data/pilgrim_profile.json`** and **`docs/`** carry the author's essay
+  *The Pilgrim's Profile* (2026), presented on the site's separate author page
+  (`#/author`). It is interpretation, not edition, and is © the author, all
+  rights reserved — deliberately outside the open licences of this repository.
 - **`vendor/`** carries the upstream licences of pdf.js (Apache-2.0) and jsPDF
   (MIT).
 

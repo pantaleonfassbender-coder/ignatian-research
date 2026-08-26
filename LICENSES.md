@@ -14,6 +14,7 @@ people entirely.
 | **Bilingual edition of the 1599 Directory** | `data/directorium.json` | Latin: public domain (US, pre-1930 publication); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
 | **Trilingual edition of the Exercises** | `data/exercitia.json` | Spanish, Latin and English texts: public domain (US, pre-1930 publications); editorial segmentation and numbering: [CC0 1.0](LICENSE-DATA) |
 | **Longridge 1919 texts** | `data/longridge_exx.json`, `data/longridge_dir.json` | Longridge's translation, commentary and notes: public domain (US, pre-1930 publication); editorial block assignment to the [1]–[370] grid: [CC0 1.0](LICENSE-DATA) — see below |
+| **The author's essay** | `data/pilgrim_profile.json`, `docs/Fassbender-2026-The-Pilgrims-Profile.docx` | © 2026 Dr. Pantaleon Fassbender, **all rights reserved** — deliberately excluded from the open licences above |
 | **Third-party libraries** | `vendor/` | Upstream licences — see below |
 
 ## The two categories that are not the author's to license
