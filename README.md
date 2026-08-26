@@ -21,8 +21,9 @@ of copyright. The **translations** that make them readable are not.
 | Work | Translation | Rights | In this repository |
 |---|---|---|---|
 | *Letters and Instructions*, vol. I | D. F. O'Leary, 1914 | public domain | **full text included** (24 letters) |
-| *The Official Directory of 1599* | Latin: *Monumenta Ignatiana*, 1919 · English: unofficial working translation made for this repository | Latin public domain (US, pre-1930); translation dedicated CC0 | **full bilingual text included** (287 paragraphs) |
+| *The Official Directory of 1599* | Latin: *Monumenta Ignatiana*, 1919 · English: W. H. Longridge, 1919, or unofficial working translation made for this repository | all public domain (US, pre-1930); working translation dedicated CC0 | **full bilingual text included** (287 paragraphs; Longridge for 285 of them) |
 | *The Spiritual Exercises* (parallel edition) | Spanish Autograph & Vulgata 1548: *Monumenta Ignatiana*, 1919 · English: Elder Mullan, 1914 | all three public domain (US) | **full trilingual text included** (370 paragraphs, Exx [1]–[370]) |
+| *The Spiritual Exercises* — commentary | W. H. Longridge, SSJE, 1919, with his seventeen Additional Notes | public domain (US, pre-1930) | **included as a switchable layer** of the trilingual reader |
 | *The Spiritual Exercises* | George E. Ganss, 1992 | in copyright | derived data only |
 | *Constitutions & Complementary Norms* | ed. John W. Padberg, 1996 | in copyright | derived data only |
 | *A Pilgrim's Testament* | Parmananda R. Divarkar, 1995 | in copyright | derived data only |
@@ -34,9 +35,16 @@ every hit exact to its Exx [n]. The [1]–[370] grid itself is editorial — it 
 appears in none of the public-domain printings, so it was assigned here to the older texts and validated
 for completeness (370 of 370, no gaps, all three languages).
 
-The Directory's English side deserves a plain label: it is a machine-generated working translation,
-made directly from the 1919 Latin and consulting no copyrighted translation. It is honest, consistent in
-its key terms, and without any ecclesiastical or scholarly authority — cite the Latin.
+The Directory's English side offers two texts. The default is W. H. Longridge's translation of 1919
+(London: Robert Scott) — a human, public-domain translation whose chapter and paragraph numbering
+matches the Latin throughout (he omits only the title page and the Florentine censor's note at the end
+of chapter XL). The alternative deserves a plain label: a machine-generated working translation, made
+directly from the 1919 Latin and consulting no copyrighted translation — honest, consistent in its key
+terms, and without any ecclesiastical or scholarly authority. In either case, cite the Latin.
+
+From the same 1919 Longridge volume, his running commentary on the Exercises — segmented into blocks
+and keyed editorially to the [1]–[370] grid — and his seventeen Additional Notes are included as a
+switchable layer of the trilingual reader (`data/longridge_exx.json`, loaded on demand).
 
 For the four in-copyright translations this repository carries **no running text at all**: only
 paragraph-level citation anchors, counts, co-occurrence edges, name registers, and editorial matter
@@ -202,6 +210,10 @@ in short:
   English is the working translation made for this repository, and whatever
   rights that could attract are dedicated to the public domain under
   [CC0 1.0](LICENSE-DATA), so that nobody ever has to ask.
+- **`data/longridge_exx.json`** and **`data/longridge_dir.json`** carry
+  Longridge's 1919 commentary, Additional Notes and Directory translation —
+  public domain by age; the editorial keying to the [1]–[370] grid and the
+  paragraph alignment are dedicated CC0 like the rest of the derived data.
 - **`vendor/`** carries the upstream licences of pdf.js (Apache-2.0) and jsPDF
   (MIT).
 

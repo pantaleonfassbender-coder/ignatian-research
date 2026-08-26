@@ -213,7 +213,7 @@ function viewWorks(args) {
       <div>${rightsBadge(w)} <span class="chip">${esc(intro.genre || "")}</span>
         <span class="chip">difficulty ${"●".repeat(intro.difficulty || 0)}${"○".repeat(5 - (intro.difficulty || 0))}</span></div>
       <p class="fine" style="margin:0">${w.id === "dir"
-        ? "Latin: Monumenta Ignatiana, 1919 · English: unofficial working translation made for this site"
+        ? "Latin: Monumenta Ignatiana, 1919 · English: Longridge 1919 or this site's working translation"
         : `trans. ${esc(w.uebersetzer)}, ${w.jahr} · ${esc(w.verlag)}`}</p>
       <p style="font-size:.9rem;color:var(--fg2);margin:.3rem 0 0">${esc(short(intro.orientation || w.beschreibung, 230))}</p>
     </div>`);
@@ -236,8 +236,9 @@ function workDetail(id) {
       <span class="tag" style="color:${wc(id)}">${esc(intro.genre || "")} · written ${esc(w.entstehung)}</span>
       <h1>${esc(w.titel)}</h1>
       <p class="fine">${w.id === "dir"
-        ? `Latin text from <em>Monumenta Ignatiana</em>, ser. II (Madrid, 1919) · English: unofficial
-           machine-generated working translation made for this site, ${w.jahr}`
+        ? `Latin text from <em>Monumenta Ignatiana</em>, ser. II (Madrid, 1919) · English: W. H.
+           Longridge's public-domain translation of 1919, or this site's unofficial machine-generated
+           working translation`
         : `Translated by ${esc(w.uebersetzer)} · ${esc(w.verlag)}, ${w.jahr}`} ·
         cited as <span class="mono">${esc(w.zitierweise)}</span> · ${rightsBadge(w)}</p>
     </div>
@@ -305,8 +306,9 @@ function workDetail(id) {
     ft.append(el(`<p>The letters are public domain and included in full.
       <a class="btn" href="#/letters">Open the reader →</a></p>`));
   } else if (id === "dir") {
-    ft.append(el(`<p>The Latin text is public domain and included in full, with an unofficial English
-      working translation alongside.
+    ft.append(el(`<p>The Latin text is public domain and included in full. The English side of the
+      reader offers W. H. Longridge's translation of 1919 (public domain) or this site's unofficial
+      working translation.
       <a class="btn" href="#/directorium">Open the bilingual reader →</a></p>`));
   } else if (!C.isOpen(id)) {
     ft.append(lockedBox(`${w.titel} is under copyright in this translation. Open your own PDF to search it, read hits in context and cite them by ${w.zitierweise}.`));
@@ -314,7 +316,8 @@ function workDetail(id) {
     if (id === "spex" && !corpus.works.spex) {
       ft.append(el(`<p>Ganss's translation is under copyright, but the Exercises themselves ship with this
         site in a public-domain parallel edition — Spanish Autograph, Vulgata of 1548 and Mullan's 1914
-        English — searchable below and readable in full.
+        English — searchable below and readable in full, with W. H. Longridge's 1919 commentary as a
+        switchable layer.
         <a class="btn" href="#/exercitia">Open the trilingual reader →</a></p>
         <p class="fine">The search below runs over that edition, with every hit exact to its Exx [n].
         Open Ganss's PDF from your own copy and the search switches to his translation.</p>`));
@@ -421,12 +424,40 @@ function letterDetail(n) {
 
 /* ========================================================= DIRECTORIUM */
 /* Bilingual reader for the Official Directory of 1599: Latin from the 1919
-   Monumenta Ignatiana edition, English this site's own working translation.
-   The language choice persists across visits. */
+   Monumenta Ignatiana edition; the English side is either W. H. Longridge's
+   1919 translation (public domain, loaded on demand) or this site's own
+   machine working translation. Choices persist across visits. */
 const dirLang = {
   get: () => localStorage.getItem("dirLang") || "both",
   set: v => localStorage.setItem("dirLang", v),
 };
+const dirEnSrc = {
+  get: () => localStorage.getItem("dirEnSrc") || "longridge",
+  set: v => localStorage.setItem("dirEnSrc", v),
+};
+/* Lazy loader for the two Longridge 1919 data files. Returns true if the
+   file is already in memory; otherwise starts the fetch and calls cb() when
+   the data has arrived, so the view can re-render itself. */
+const lgPending = {};
+export function ensureLG(name, cb) {
+  if (D[name]) return true;
+  if (!lgPending[name]) {
+    lgPending[name] = fetch(`data/${name}.json`).then(r => r.json())
+      .then(j => { D[name] = j; delete lgPending[name]; })
+      .catch(e => { console.warn(`${name} failed`, e); delete lgPending[name]; });
+  }
+  lgPending[name] && lgPending[name].then(() => { if (D[name]) cb(); });
+  return false;
+}
+/* Longridge's English for one Directory paragraph, or null where his book
+   has none (the title page, and the censor's note at the end of ch. XL). */
+function lgDirText(cid, n) {
+  const g = D.longridge_dir;
+  if (!g) return null;
+  const box = cid === "praef" ? { paras: g.praef }
+    : cid === "prooem" ? g.prooem : g.kapitel[cid];
+  return box && box.paras ? box.paras[String(n)] || null : null;
+}
 function dirParts() {
   const d = D.directorium;
   return [...d.vorspann, ...d.kapitel].map(c => ({
@@ -435,16 +466,27 @@ function dirParts() {
   }));
 }
 function dirLangBar(cur) {
-  return `<div class="toolbar" id="dirlang" style="margin:.4rem 0 1rem">
+  const src = dirEnSrc.get();
+  const hint = src === "longridge"
+    ? `The English side is W. H. Longridge's translation of 1919 (public domain).`
+    : `The English side is an unofficial machine-generated working translation, not an approved text.`;
+  return `<div class="toolbar" id="dirlang" style="margin:.4rem 0 .4rem">
     ${[["la", "Latin"], ["en", "English"], ["both", "Latin · English"]].map(([v, t]) =>
       `<button class="chip ${cur === v ? "on" : ""}" data-l="${v}">${t}</button>`).join("")}
-    <span class="fine" style="align-self:center">The English side is an unofficial machine-generated
-      working translation, not an approved text.</span>
+    <span class="fine" style="align-self:center">${hint}</span>
+  </div>
+  <div class="toolbar" id="dirsrc" style="margin:0 0 1rem">
+    <span class="fine" style="align-self:center">English text:</span>
+    ${[["longridge", "Longridge 1919"], ["machine", "Working translation"]].map(([v, t]) =>
+      `<button class="chip ${src === v ? "on" : ""}" data-s="${v}">${t}</button>`).join("")}
   </div>`;
 }
 function bindDirLang(box, rerender) {
   box.querySelectorAll("#dirlang [data-l]").forEach(b => b.onclick = () => {
     dirLang.set(b.dataset.l); rerender();
+  });
+  box.querySelectorAll("#dirsrc [data-s]").forEach(b => b.onclick = () => {
+    dirEnSrc.set(b.dataset.s); rerender();
   });
 }
 function viewDirectorium(args) {
@@ -458,8 +500,9 @@ function viewDirectorium(args) {
       Acquaviva on 1 October 1599 after four decades of drafts and consultation. Forty chapters walk the
       director from the choice of exercitants through each Week to the election and the return to ordinary
       life. The Latin text follows the Monumenta Ignatiana edition of 1919 (pp. 1138–1178), which prints
-      the Florence printing of 1599; the English side is this site's own unofficial working translation,
-      made directly from the Latin.</p>
+      the Florence printing of 1599; the English side is, at your choice, W. H. Longridge's translation
+      of 1919 (public domain) or this site's own unofficial working translation made directly from the
+      Latin.</p>
     </div>
     ${dirLangBar(lang)}
     <div class="grid g2" id="dirtoc"></div>
@@ -485,19 +528,31 @@ function dirChapter(id) {
   const parts = dirParts();
   const i = parts.findIndex(p => p.id === id);
   if (i < 0) { location.hash = "#/directorium"; return; }
-  const p = parts[i], lang = dirLang.get();
+  const p = parts[i], lang = dirLang.get(), src = dirEnSrc.get();
   const prev = parts[(i - 1 + parts.length) % parts.length];
   const next = parts[(i + 1) % parts.length];
+  const wantLG = src === "longridge" && lang !== "la";
+  const lgReady = !wantLG || ensureLG("longridge_dir", () => route());
   const para = q => {
     const rub = q.rub ? `<p class="fine" style="margin:0 0 .2rem;color:var(--acc2)">${esc(q.rub)}</p>` : "";
     const note = q.note ? `<p class="fine" style="margin:.3rem 0 0;color:var(--fg3)">Note: ${esc(q.note)}</p>` : "";
+    let enText = q.en, enMark = "";
+    if (wantLG && lgReady) {
+      const lg = lgDirText(p.id, q.n);
+      if (lg) enText = lg;
+      else enMark = `<p class="fine" style="margin:.2rem 0 0;color:var(--fg3)">Not in Longridge's
+        translation — the working translation stands in.</p>`;
+    } else if (wantLG) {
+      enMark = `<p class="fine" style="margin:.2rem 0 0;color:var(--fg3)">Loading Longridge 1919 …
+        the working translation is shown meanwhile.</p>`;
+    }
     const la = `<p class="readable" style="margin:0"><em>${esc(q.la)}</em></p>`;
-    const en = `<p class="readable" style="margin:0">${esc(q.en)}</p>`;
+    const en = `<p class="readable" style="margin:0">${esc(enText)}</p>`;
     const body = lang === "la" ? la : lang === "en" ? en :
       `<div class="grid g2" style="gap:1rem">${la}${en}</div>`;
     return `<div style="border-left:2px solid ${wc("dir")};padding-left:.9rem;margin-bottom:1.3rem">
       <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">${esc(p.zk)} [${q.n}]</span></div>
-      ${rub}${body}${note}</div>`;
+      ${rub}${body}${enMark}${note}</div>`;
   };
   view.append(el(`<div>
     <p class="fine"><a href="#/directorium">← All chapters</a> ·
@@ -512,11 +567,18 @@ function dirChapter(id) {
     </div>
     ${dirLangBar(lang)}
     <div id="dirbody"></div>
-    <p class="fine">Latin: Monumenta Ignatiana, ser. II (Madrid, 1919), public domain; u/v normalised,
-    obvious OCR errors emended against the sense, marginal rubrics retained. English: unofficial
-    machine-generated working translation made for this site — cite the Latin for scholarly use.</p>
+    <p class="fine" id="dirfoot"></p>
   </div>`));
   view.querySelector("#dirbody").innerHTML = p.paras.map(para).join("");
+  const foot = view.querySelector("#dirfoot");
+  if (foot) foot.innerHTML = src === "longridge"
+    ? `Latin: Monumenta Ignatiana, ser. II (Madrid, 1919), public domain; u/v normalised, obvious OCR
+       errors emended against the sense, marginal rubrics retained. English: W. H. Longridge, SSJE
+       (London, 1919), public domain; reconstructed from OCR, his page-foot references omitted. His
+       chapter numbering and paragraph numbers match the Latin throughout.`
+    : `Latin: Monumenta Ignatiana, ser. II (Madrid, 1919), public domain; u/v normalised, obvious OCR
+       errors emended against the sense, marginal rubrics retained. English: unofficial
+       machine-generated working translation made for this site — cite the Latin for scholarly use.`;
   bindDirLang(view, () => route());
 }
 
@@ -528,17 +590,46 @@ const exxLang = {
   get: () => localStorage.getItem("exxLang") || "all",
   set: v => localStorage.setItem("exxLang", v),
 };
+const exxComm = {
+  get: () => localStorage.getItem("exxComm") === "1",
+  set: v => localStorage.setItem("exxComm", v ? "1" : "0"),
+};
 function exxLangBar(cur) {
   return `<div class="toolbar" id="exxlang" style="margin:.4rem 0 1rem">
     ${[["es", "Español (Autograph)"], ["la", "Latina (Vulgata 1548)"],
        ["en", "English (Mullan 1914)"], ["all", "All three"]].map(([v, t]) =>
       `<button class="chip ${cur === v ? "on" : ""}" data-l="${v}">${t}</button>`).join("")}
+    <button class="chip ${exxComm.get() ? "on" : ""}" id="commtoggle">Longridge 1919 commentary</button>
   </div>`;
 }
 function bindExxLang(box, rerender) {
   box.querySelectorAll("#exxlang [data-l]").forEach(b => b.onclick = () => {
     exxLang.set(b.dataset.l); rerender();
   });
+  const ct = box.querySelector("#commtoggle");
+  if (ct) ct.onclick = () => { exxComm.set(!exxComm.get()); rerender(); };
+}
+/* One Longridge commentary block as a collapsible card. His numbered notes
+   open with "(n)" and are set off; the remaining paragraphs are his own
+   translation of the passage (with the inline note markers as printed)
+   and connecting commentary. */
+function lgBlock(b, open) {
+  const paras = b.paras.map(p => p.t === "note"
+    ? `<p class="readable" style="margin:.5rem 0;padding-left:.9rem;border-left:2px solid var(--acc2);font-size:.92rem">${esc(p.s)}</p>`
+    : `<p class="readable" style="margin:.5rem 0;font-size:.92rem;color:var(--fg2)">${esc(p.s)}</p>`).join("");
+  return `<details class="card" ${open ? "open" : ""} style="margin:0 0 1.3rem;border-left:3px solid var(--acc2)">
+    <summary style="cursor:pointer"><span class="cite">Longridge on [${b.von}${b.bis !== b.von ? `–${b.bis}` : ""}]</span>
+      <strong style="font-size:.95rem"> ${esc(b.label)}</strong></summary>
+    ${paras}</details>`;
+}
+function lgNote(nt) {
+  const paras = nt.paras.map(s =>
+    `<p class="readable" style="margin:.5rem 0;font-size:.92rem;color:var(--fg2)">${esc(s)}</p>`).join("");
+  return `<details class="card" style="margin:0 0 1rem;border-left:3px solid var(--acc2)">
+    <summary style="cursor:pointer"><span class="cite">Additional Note ${esc(nt.id)}</span>
+      <strong style="font-size:.95rem"> ${esc(nt.titel)}</strong>
+      <span class="fine"> · on [${nt.von}${nt.bis !== nt.von ? `–${nt.bis}` : ""}]</span></summary>
+    ${paras}</details>`;
 }
 function viewExercitia(args) {
   if (args && args[0]) return exxSection(args[0]);
@@ -551,8 +642,9 @@ function viewExercitia(args) {
       Autograph and the Latin Vulgata approved in 1548, both from the Monumenta Ignatiana edition of 1919,
       and Elder Mullan's literal English translation of 1914. Every paragraph carries the canonical
       number [1]–[370] by which all scholarship cites the Exercises — a grid introduced editorially in
-      1928 and assigned here to the older texts. Ganss's 1992 translation remains a separate,
-      <a href="#/works/spex">unlockable work</a>.</p>
+      1928 and assigned here to the older texts. A switchable layer adds W. H. Longridge's commentary
+      of 1919, with his seventeen Additional Notes, block by block along the same grid. Ganss's 1992
+      translation remains a separate, <a href="#/works/spex">unlockable work</a>.</p>
     </div>
     ${exxLangBar(lang)}
     <div class="grid g2" id="exxtoc"></div>
@@ -581,6 +673,13 @@ function exxSection(id) {
   const s = parts[i], lang = exxLang.get();
   const prev = parts[(i - 1 + parts.length) % parts.length];
   const next = parts[(i + 1) % parts.length];
+  const comm = exxComm.get();
+  const lgReady = !comm || ensureLG("longridge_exx", () => route());
+  const blocks = comm && lgReady && D.longridge_exx ? (D.longridge_exx.sections[s.id] || []) : [];
+  const notes = comm && lgReady && D.longridge_exx
+    ? D.longridge_exx.notes.filter(n => n.section === s.id) : [];
+  const byBis = {};
+  for (const b of blocks) (byBis[b.bis] = byBis[b.bis] || []).push(b);
   const cols = { es: "Autographum", la: "Vulgata 1548", en: "Mullan 1914" };
   const para = u => {
     const label = u.label_en || u.label_es ?
@@ -590,9 +689,10 @@ function exxSection(id) {
     const body = lang === "all"
       ? `<div class="grid g3" style="gap:1rem">${one("es")}${one("la")}${one("en")}</div>`
       : one(lang);
+    const after = (byBis[u.n] || []).map(b => lgBlock(b, false)).join("");
     return `<div style="border-left:2px solid ${wc("spex")};padding-left:.9rem;margin-bottom:1.3rem">
       <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">SpEx [${u.n}]</span></div>
-      ${label}${body}${note}</div>`;
+      ${label}${body}${note}</div>${after}`;
   };
   view.append(el(`<div>
     <p class="fine"><a href="#/exercitia">← All sections</a> ·
@@ -606,11 +706,21 @@ function exxSection(id) {
     </div>
     ${exxLangBar(lang)}
     <div id="exxbody"></div>
+    <div id="exxnotes"></div>
     <p class="fine">Spanish and Latin: Monumenta Ignatiana, ser. II (Madrid, 1919), public domain.
     English: Elder Mullan, S.J. (New York, 1914), public domain. The [n] numbers are the canonical
-    editorial grid of 1928, assigned here to these older texts.</p>
+    editorial grid of 1928, assigned here to these older texts.${comm ? ` Commentary layer:
+    W. H. Longridge, SSJE (London, 1919), public domain; the assignment of his blocks to the [n] grid
+    is editorial, since his book predates the 1928 numbering.` : ""}</p>
   </div>`));
-  view.querySelector("#exxbody").innerHTML = s.units.map(para).join("");
+  const used = new Set(s.units.map(u => u.n));
+  const leftover = blocks.filter(b => !used.has(b.bis)).map(b => lgBlock(b, false)).join("");
+  view.querySelector("#exxbody").innerHTML =
+    (comm && !lgReady ? `<p class="fine">Loading the Longridge 1919 commentary layer …</p>` : "")
+    + s.units.map(para).join("") + leftover;
+  if (notes.length) view.querySelector("#exxnotes").innerHTML =
+    `<h3 style="margin:1.4rem 0 .6rem">Longridge's Additional Notes for this section</h3>`
+    + notes.map(lgNote).join("");
   bindExxLang(view, () => route());
 }
 
@@ -1063,10 +1173,13 @@ function viewMethod() {
       <em>Letters and Instructions</em> has fallen into the public domain. The Official
       Directory of 1599 is included in its original Latin, taken from the Madrid 1919 volume of the
       Monumenta Ignatiana, which as a pre-1930 publication is in the United States public domain; the
-      English text beside it is an unofficial machine-generated working translation made for this site
-      directly from that Latin, consulting no copyrighted translation. And the book of the Exercises itself
+      English side of its reader offers W. H. Longridge's translation of 1919 — published in London in
+      1919 and therefore likewise in the United States public domain — or an unofficial machine-generated
+      working translation made for this site directly from that Latin, consulting no copyrighted
+      translation. The book of the Exercises itself
       ships in a public-domain parallel edition: the Spanish Autograph and the Latin Vulgata of 1548 from
-      the same 1919 volume, with Elder Mullan's literal English translation of 1914 beside them. The four
+      the same 1919 volume, with Elder Mullan's literal English translation of 1914 beside them, and
+      Longridge's commentary of 1919 with his seventeen Additional Notes as a switchable layer. The four
       living scholarly translations remain under copyright, and this site ships none of their
       running text: only page-level citation anchors, aggregate counts, co-occurrence edges, name registers,
       and editorial matter written for this site. Their full-text functions run against a copy the reader
@@ -1100,6 +1213,15 @@ function viewMethod() {
       every public-domain printing. Mullan's English (1914) was taken from the proofed Christian Classics
       Ethereal Library transcription and checked against the printed edition. The result was validated for
       completeness: 370 of 370 paragraphs present in all three languages, with no gaps or duplicates.</p>
+      <p class="readable">The Longridge material was reconstructed from the Internet Archive's OCR of the
+      1919 London printing. His Directory translation keeps the Latin's chapter and paragraph numbering,
+      which allowed a paragraph-by-paragraph alignment against this site's Latin text: all 272 translated
+      paragraphs and the twelve of the introduction were matched and verified (Longridge omits the Florentine
+      censor's note that closes chapter XL). His commentary on the Exercises was segmented into blocks at his
+      own headings and assigned editorially to ranges of the [1]–[370] grid, which his book — published nine
+      years before that numeration — does not carry. In his book the text of the Exercises is printed in
+      italics and the commentary in roman type; OCR loses that distinction, so the reader marks as notes only
+      the paragraphs that open with his bracketed note numbers. His page-foot references are omitted.</p>
     </div>
 
     <div class="panel"><h2>Canonical anchors</h2>
@@ -1145,10 +1267,16 @@ function viewMethod() {
           separated out as an independent citation series here.</li>
         <li>Type–token ratio is length-dependent and should not be compared across works of very different
           extent without correction.</li>
-        <li>The English of the Directory of 1599 is a machine-generated working translation. It has been
+        <li>The working English of the Directory of 1599 is a machine-generated translation. It has been
           made directly from the Latin and reviewed for consistency of key terms, but it carries no
           ecclesiastical or scholarly authority; anyone citing the Directory should cite the Latin. The
           underlying Latin itself is an OCR reconstruction and may retain undetected transcription errors.</li>
+        <li>The Longridge texts are OCR reconstructions of the 1919 printing and may retain transcription
+          errors, especially in his quotations of Spanish and Latin. The assignment of his commentary blocks
+          and Additional Notes to ranges of the [1]–[370] grid is editorial; within a block, the boundary
+          between his translation of the text and his connecting commentary is typographic in the original
+          and could not be recovered mechanically. Neither his commentary nor his translations are part of
+          the concordance index.</li>
         <li>The Spanish and Latin of the trilingual Exercises edition are likewise OCR reconstructions of the
           1919 printing and may retain undetected errors, particularly where a line-end syllable crossed the
           column gutter. The [1]–[370] numbers were assigned editorially to texts that never carried them;

@@ -13,6 +13,7 @@ people entirely.
 | **Public-domain source text** | `data/letters.json` | Public domain in its own right — see below |
 | **Bilingual edition of the 1599 Directory** | `data/directorium.json` | Latin: public domain (US, pre-1930 publication); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
 | **Trilingual edition of the Exercises** | `data/exercitia.json` | Spanish, Latin and English texts: public domain (US, pre-1930 publications); editorial segmentation and numbering: [CC0 1.0](LICENSE-DATA) |
+| **Longridge 1919 texts** | `data/longridge_exx.json`, `data/longridge_dir.json` | Longridge's translation, commentary and notes: public domain (US, pre-1930 publication); editorial block assignment to the [1]–[370] grid: [CC0 1.0](LICENSE-DATA) — see below |
 | **Third-party libraries** | `vendor/` | Upstream licences — see below |
 
 ## The two categories that are not the author's to license
@@ -42,6 +43,18 @@ Elder Mullan's English translation (New York, 1914, US public domain). Faithful
 transcription of public-domain texts adds nothing licensable; the editorial
 segmentation into the canonical [1]–[370] paragraphs is dedicated to the public
 domain under CC0 1.0.
+
+**`data/longridge_exx.json`** and **`data/longridge_dir.json`** hold, in OCR
+reconstruction, W. H. Longridge's *The Spiritual Exercises of Saint Ignatius of
+Loyola. Translated from the Spanish with a Commentary and a Translation of the
+Directorium in Exercitia* (London: Robert Scott, 1919): his commentary on the
+Exercises with the seventeen Additional Notes, and his English translation of
+the Official Directory of 1599. As a pre-1930 publication the book is in the
+United States public domain; a faithful transcription adds nothing licensable.
+The editorial work done here — segmentation of the commentary into blocks, their
+assignment to ranges of the canonical [1]–[370] grid (which the 1919 book does
+not carry), and the paragraph alignment of the Directory translation against the
+Latin — is dedicated to the public domain under CC0 1.0.
 
 **`vendor/`** holds unmodified third-party builds:
 
