@@ -1315,9 +1315,9 @@ function viewAuthor() {
     </div>
 
     <div class="panel"><span class="tag">Professional profile</span>
-      <p class="readable">Psychologist and leadership-development professional: teaching, research and
-      consulting at the intersection of personnel psychology, leadership, ethics and — most recently —
-      the psychology of artificial-intelligence systems. This apparatus is one instrument in a wider
+      <p class="readable">Dr. theol.; psychologist and leadership-development professional: teaching,
+      research and consulting at the intersection of personnel psychology, leadership, ethics and —
+      most recently — the psychology of artificial-intelligence systems. This apparatus is one instrument in a wider
       portfolio of research tools and publications, collected on the portfolio site below.</p>
       <p style="margin:.7rem 0 0">${links.map(([t, u]) =>
         `<a class="chip" href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" ")}</p>
