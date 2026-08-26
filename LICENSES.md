@@ -14,6 +14,7 @@ people entirely.
 | **Bilingual edition of the 1599 Directory** | `data/directorium.json` | Latin: public domain (US, pre-1930 publication); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
 | **Trilingual edition of the Exercises** | `data/exercitia.json` | Spanish, Latin and English texts: public domain (US, pre-1930 publications); editorial segmentation and numbering: [CC0 1.0](LICENSE-DATA) |
 | **Longridge 1919 texts** | `data/longridge_exx.json`, `data/longridge_dir.json` | Longridge's translation, commentary and notes: public domain (US, pre-1930 publication); editorial block assignment to the [1]–[370] grid: [CC0 1.0](LICENSE-DATA) — see below |
+| **Bilingual edition of Favre's Memoriale** | `data/memoriale.json` | Latin: public domain (US, 1873 publication); English working translation and editorial paragraph numbering: [CC0 1.0](LICENSE-DATA) — see below |
 | **The author's essay** | `data/pilgrim_profile.json`, `docs/Fassbender-2026-The-Pilgrims-Profile.docx` | © 2026 Dr. Pantaleon Fassbender, **all rights reserved** — deliberately excluded from the open licences above |
 | **Third-party libraries** | `vendor/` | Upstream licences — see below |
 
@@ -44,6 +45,18 @@ Elder Mullan's English translation (New York, 1914, US public domain). Faithful
 transcription of public-domain texts adds nothing licensable; the editorial
 segmentation into the canonical [1]–[370] paragraphs is dedicated to the public
 domain under CC0 1.0.
+
+**`data/memoriale.json`** holds the Memoriale of Blessed Peter Faber, with the
+appendix of letters and counsels, as printed in the editio princeps, ed. Marcel
+Bouix SJ (Paris: Gauthier-Villars, 1873) — an 1873 publication in the United
+States public domain; a faithful transcription adds nothing licensable. Favre's
+autograph is lost; the 1873 print gives the Latin version transmitted within
+the Society of Jesus. The English beside it is an unofficial machine-generated
+working translation made for this repository directly from that Latin, and the
+paragraph numbering is this repository's own (the canonical MF numbering
+belongs to the 1914 critical edition, which prints a different text); both are
+dedicated to the public domain under CC0 1.0. The translation carries no
+ecclesiastical or scholarly authority — cite the Latin.
 
 **`data/longridge_exx.json`** and **`data/longridge_dir.json`** hold, in OCR
 reconstruction, W. H. Longridge's *The Spiritual Exercises of Saint Ignatius of

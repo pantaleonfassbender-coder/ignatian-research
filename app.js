@@ -15,7 +15,7 @@ const el = h => { const t = document.createElement("template"); t.innerHTML = h.
 
 export const WORKCOLOR = {
   spex: "#c9a227", const: "#9db8a4", auto: "#c07a5a",
-  diary: "#a89bc4", dir: "#7fa9c9", letters: "#c9968f",
+  diary: "#a89bc4", dir: "#7fa9c9", letters: "#c9968f", fabri: "#8fae87",
 };
 export const wc = id => WORKCOLOR[id] || "#8a7d6a";
 export const workOf = id => (D.works || []).find(w => w.id === id) || {};
@@ -24,11 +24,11 @@ export const workOf = id => (D.works || []).find(w => w.id === id) || {};
 async function boot() {
   const names = ["works", "corpus", "anchors", "letters", "terms", "keyness", "network",
     "discernment", "persons", "places", "itinerary", "introductions", "sections",
-    "lexicon", "glossary", "directorium", "exercitia"];
+    "lexicon", "glossary", "directorium", "exercitia", "memoriale"];
   const res = await Promise.all(names.map(n => fetch(`data/${n}.json`).then(r => r.json())));
   names.forEach((n, i) => D[n] = res[i]);
   D.introOf = {}; D.introductions.forEach(x => D.introOf[x.id] = x);
-  try { await C.restore(D.works, D.anchors, D.letters, D.directorium, D.exercitia); }
+  try { await C.restore(D.works, D.anchors, D.letters, D.directorium, D.exercitia, D.memoriale); }
   catch (e) { console.warn("restore failed", e); }
   refreshUnlockBadge();
   window.addEventListener("hashchange", route);
@@ -42,6 +42,7 @@ const ROUTES = {
   register: viewRegister, language: viewLanguage, glossary: viewGlossary,
   method: viewMethod, dialogue: a => renderDialogue(view, a),
   privacy: viewPrivacy, imprint: viewImprint, author: viewAuthor,
+  memoriale: viewMemoriale,
 };
 function route() {
   const h = (location.hash || "#/overview").slice(2).split("/");
@@ -85,7 +86,7 @@ function viewOverview() {
     </div>
 
     <div class="grid g4" style="margin-bottom:1.6rem">
-      <div class="kpi"><b>6</b><span>works</span></div>
+      <div class="kpi"><b>${k.werke}</b><span>works</span></div>
       <div class="kpi"><b>${nf(k.pdf_seiten)}</b><span>pages</span></div>
       <div class="kpi"><b>${nf(k.anker)}</b><span>canonical anchors</span></div>
       <div class="kpi"><b>${nf(k.tokens)}</b><span>analysed tokens</span></div>
@@ -214,6 +215,8 @@ function viewWorks(args) {
         <span class="chip">difficulty ${"●".repeat(intro.difficulty || 0)}${"○".repeat(5 - (intro.difficulty || 0))}</span></div>
       <p class="fine" style="margin:0">${w.id === "dir"
         ? "Latin: Monumenta Ignatiana, 1919 · English: Longridge 1919 or this site's working translation"
+        : w.id === "fabri"
+        ? "Latin: editio princeps (Bouix), 1873 · English: this site's working translation"
         : `trans. ${esc(w.uebersetzer)}, ${w.jahr} · ${esc(w.verlag)}`}</p>
       <p style="font-size:.9rem;color:var(--fg2);margin:.3rem 0 0">${esc(short(intro.orientation || w.beschreibung, 230))}</p>
     </div>`);
@@ -239,6 +242,9 @@ function workDetail(id) {
         ? `Latin text from <em>Monumenta Ignatiana</em>, ser. II (Madrid, 1919) · English: W. H.
            Longridge's public-domain translation of 1919, or this site's unofficial machine-generated
            working translation`
+        : w.id === "fabri"
+        ? `Latin text from the editio princeps, ed. M. Bouix (Paris, 1873) · English: this site's
+           unofficial machine-generated working translation`
         : `Translated by ${esc(w.uebersetzer)} · ${esc(w.verlag)}, ${w.jahr}`} ·
         cited as <span class="mono">${esc(w.zitierweise)}</span> · ${rightsBadge(w)}</p>
     </div>
@@ -313,6 +319,12 @@ function workDetail(id) {
   } else if (!C.isOpen(id)) {
     ft.append(lockedBox(`${w.titel} is under copyright in this translation. Open your own PDF to search it, read hits in context and cite them by ${w.zitierweise}.`));
   } else {
+    if (id === "fabri") {
+      ft.append(el(`<p>The Latin of the editio princeps (1873) is public domain and included in full,
+        with an unofficial English working translation alongside; the appendix carries nine letters
+        and counsels from the same volume. Searchable below, every hit exact to its Mem. [n].
+        <a class="btn" href="#/memoriale">Open the bilingual reader →</a></p>`));
+    }
     if (id === "spex" && !corpus.works.spex) {
       ft.append(el(`<p>Ganss's translation is under copyright, but the Exercises themselves ship with this
         site in a public-domain parallel edition — Spanish Autograph, Vulgata of 1548 and Mullan's 1914
@@ -724,6 +736,107 @@ function exxSection(id) {
   bindExxLang(view, () => route());
 }
 
+/* =========================================================== MEMORIALE */
+/* Bilingual reader for Favre's Memoriale (ed. Bouix, Paris 1873): Latin
+   with this site's own working translation, plus the appendix of letters
+   and counsels from the same volume. */
+const memLang = {
+  get: () => localStorage.getItem("memLang") || "both",
+  set: v => localStorage.setItem("memLang", v),
+};
+function memLangBar(cur) {
+  return `<div class="toolbar" id="memlang" style="margin:.4rem 0 1rem">
+    ${[["la", "Latin"], ["en", "English"], ["both", "Latin · English"]].map(([v, t]) =>
+      `<button class="chip ${cur === v ? "on" : ""}" data-l="${v}">${t}</button>`).join("")}
+    <span class="fine" style="align-self:center">The English side is an unofficial machine-generated
+      working translation, not an approved text.</span>
+  </div>`;
+}
+function bindMemLang(box, rerender) {
+  box.querySelectorAll("#memlang [data-l]").forEach(b => b.onclick = () => {
+    memLang.set(b.dataset.l); rerender();
+  });
+}
+function memParts() {
+  const m = D.memoriale;
+  return [...m.sections.map(s => ({ ...s, teil: "mem" })),
+          ...m.appendix.map(a => ({ ...a, teil: "app" }))];
+}
+function viewMemoriale(args) {
+  if (args && args[0]) return memSection(args[0]);
+  const m = D.memoriale, lang = memLang.get();
+  view.append(el(`<div>
+    <div class="viewhead">
+      <span class="tag" style="color:${wc("fabri")}">Pierre Favre · editio princeps 1873 · public-domain Latin</span>
+      <h1>Memoriale Beati Petri Fabri</h1>
+      <p class="lede">The spiritual journal of Pierre Favre (1506–1546), the first companion whom
+      Ignatius judged the finest giver of the Exercises: discernment practised day by day, from Speyer
+      in June 1542 to Madrid in 1546. A retrospect of his life opens it, a thinning record of his last
+      years closes it, and the appendix carries nine letters and counsels from the same volume —
+      including his advice on dealing with the heretics of the age. The Latin follows the first public
+      edition (Bouix, Paris 1873); the English side is this site's own unofficial working translation.</p>
+    </div>
+    ${memLangBar(lang)}
+    <h3 style="margin:.4rem 0 .6rem">The Memoriale</h3>
+    <div class="grid g2" id="memtoc"></div>
+    <h3 style="margin:1.4rem 0 .6rem">Appendix: letters and counsels</h3>
+    <div class="grid g2" id="apptoc"></div>
+    <p class="fine" style="margin-top:1.2rem">Cited as <span class="mono">Mem. [n]</span> (appendix:
+    <span class="mono">Mem. App. [n]</span>). The paragraph numbers are this site's own, assigned to
+    the 1873 text; Favre's autograph is lost, and the canonical MF numbering of the 1914 critical
+    edition could not be reproduced from it — see the method page.</p>
+  </div>`));
+  const toc = view.querySelector("#memtoc"), atoc = view.querySelector("#apptoc");
+  for (const p of memParts()) {
+    const card = el(`<div class="workcard" style="border-left:3px solid ${wc("fabri")}">
+      <div style="display:flex;gap:.6rem;align-items:baseline">
+        <span class="cite">[${p.units[0].n}–${p.units[p.units.length - 1].n}]</span>
+        <span class="fine">${p.units.length} ¶</span></div>
+      <h3 style="margin:.3rem 0 .15rem;font-size:1.02rem">${esc(p.titel)}</h3>
+    </div>`);
+    card.onclick = () => location.hash = `#/memoriale/${p.id}`;
+    (p.teil === "mem" ? toc : atoc).append(card);
+  }
+  bindMemLang(view, () => route());
+}
+function memSection(id) {
+  const parts = memParts();
+  const i = parts.findIndex(p => p.id === id);
+  if (i < 0) { location.hash = "#/memoriale"; return; }
+  const p = parts[i], lang = memLang.get();
+  const prev = parts[(i - 1 + parts.length) % parts.length];
+  const next = parts[(i + 1) % parts.length];
+  const zk = p.teil === "app" ? "Mem. App." : "Mem.";
+  const para = u => {
+    const la = `<p class="readable" style="margin:0"><em>${esc(u.la)}</em></p>`;
+    const en = `<p class="readable" style="margin:0">${esc(u.en)}</p>`;
+    const body = lang === "la" ? la : lang === "en" ? en :
+      `<div class="grid g2" style="gap:1rem">${la}${en}</div>`;
+    return `<div style="border-left:2px solid ${wc("fabri")};padding-left:.9rem;margin-bottom:1.3rem">
+      <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">${zk} [${u.n}]</span></div>
+      ${body}</div>`;
+  };
+  view.append(el(`<div>
+    <p class="fine"><a href="#/memoriale">← All sections</a> ·
+      <a href="#/memoriale/${prev.id}">${esc(short(prev.titel, 28))}</a> ·
+      <a href="#/memoriale/${next.id}">${esc(short(next.titel, 28))}</a> ·
+      <a href="#/works/fabri">About this text</a></p>
+    <div class="viewhead">
+      <span class="tag" style="color:${wc("fabri")}">${p.teil === "app" ? "Appendix · " : ""}Memoriale B. Petri Fabri</span>
+      <h1 style="font-size:1.5rem">${esc(p.titel)}</h1>
+      <p class="fine">${p.arg ? esc(p.arg) + " · " : ""}${p.units.length} paragraphs ·
+        cited as <span class="mono">${zk} [n]</span></p>
+    </div>
+    ${memLangBar(lang)}
+    <div id="membody"></div>
+    <p class="fine">Latin: editio princeps, ed. M. Bouix (Paris, 1873), public domain; æ/œ written out,
+    obvious OCR errors emended against the sense, Bouix's page-foot notes omitted. English: unofficial
+    machine-generated working translation made for this site — cite the Latin for scholarly use.</p>
+  </div>`));
+  view.querySelector("#membody").innerHTML = p.units.map(para).join("");
+  bindMemLang(view, () => route());
+}
+
 /* ========================================================= CONCORDANCE */
 function viewConcordance() {
   const pre = new URLSearchParams((location.hash.split("?")[1] || "")).get("q") || "";
@@ -732,8 +845,8 @@ function viewConcordance() {
       <span class="tag">Cross-corpus concordance</span>
       <h1>Concordance</h1>
       <p class="lede">Keyword in context across every work currently available, each hit resolved to its
-      canonical citation. The Exercises, the Letters and the Directory of 1599 are always searchable; the
-      remaining works join the search as you open them.</p>
+      canonical citation. The Exercises, the Letters, the Directory of 1599 and Favre's Memoriale are
+      always searchable; the remaining works join the search as you open them.</p>
     </div>
     <div class="toolbar">
       <input class="grow" id="q" type="search" placeholder="Search word or phrase …" value="${esc(pre)}">
@@ -1222,6 +1335,15 @@ function viewMethod() {
       years before that numeration — does not carry. In his book the text of the Exercises is printed in
       italics and the commentary in roman type; OCR loses that distinction, so the reader marks as notes only
       the paragraphs that open with his bracketed note numbers. His page-foot references are omitted.</p>
+      <p class="readable">Favre's Memoriale was reconstructed from the Internet Archive's OCR of the
+      editio princeps (Bouix, Paris 1873): pages were re-assembled from the running heads (which carry
+      the year and month, and so supplied the date grouping of the reader), page-foot notes were
+      separated from the text stream, paragraphs broken across page boundaries were rejoined, and the
+      whole segmented into 409 numbered paragraphs — a numbering that is this site's own, since the
+      autograph is lost and the canonical MF numbering belongs to the 1914 critical edition, which
+      prints a different (largely Spanish) text. The appendix of the 1873 volume, nine letters and
+      counsels, was segmented into its individual pieces, several of which the volume runs together.
+      The English is again a machine working translation made directly from the Latin.</p>
     </div>
 
     <div class="panel"><h2>Canonical anchors</h2>
@@ -1277,6 +1399,14 @@ function viewMethod() {
           between his translation of the text and his connecting commentary is typographic in the original
           and could not be recovered mechanically. Neither his commentary nor his translations are part of
           the concordance index.</li>
+        <li>The Memoriale's Latin is itself a transmitted version: Favre wrote mostly in Spanish, the
+          autograph is lost, and the 1873 edition prints the Latin text that circulated within the Society,
+          as edited by Bouix. Its paragraph numbers here are this site's own and do not correspond to the
+          canonical MF numbering of the 1914 critical edition; the assignment of entries to month sections
+          follows the running heads of the 1873 printing and can blur at month boundaries. The English is a
+          machine working translation with no scholarly authority — cite the Latin. The Memoriale's
+          linguistic profile is computed with simple counts only, like the Directory's; it is outside the
+          spaCy pipeline, so it contributes no lemmas to the lexicon, keyness or network views.</li>
         <li>The Spanish and Latin of the trilingual Exercises edition are likewise OCR reconstructions of the
           1919 printing and may retain undetected errors, particularly where a line-end syllable crossed the
           column gutter. The [1]–[370] numbers were assigned editorially to texts that never carried them;
@@ -1713,7 +1843,7 @@ function refreshUnlockBadge() {
   const n = C.openIds().length;
   const b = document.getElementById("unlockBtn");
   b.classList.toggle("on", n > 1);
-  document.getElementById("unlockLabel").textContent = `${n} of 6 open`;
+  document.getElementById("unlockLabel").textContent = `${n} of ${(D.works || []).length || 7} open`;
 }
 function refreshUnlockCard() {
   const box = document.getElementById("unlockCardState");

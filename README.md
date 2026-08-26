@@ -24,6 +24,7 @@ of copyright. The **translations** that make them readable are not.
 | *The Official Directory of 1599* | Latin: *Monumenta Ignatiana*, 1919 · English: W. H. Longridge, 1919, or unofficial working translation made for this repository | all public domain (US, pre-1930); working translation dedicated CC0 | **full bilingual text included** (287 paragraphs; Longridge for 285 of them) |
 | *The Spiritual Exercises* (parallel edition) | Spanish Autograph & Vulgata 1548: *Monumenta Ignatiana*, 1919 · English: Elder Mullan, 1914 | all three public domain (US) | **full trilingual text included** (370 paragraphs, Exx [1]–[370]) |
 | *The Spiritual Exercises* — commentary | W. H. Longridge, SSJE, 1919, with his seventeen Additional Notes | public domain (US, pre-1930) | **included as a switchable layer** of the trilingual reader |
+| *Memoriale* of Bl. Peter Faber | Latin: editio princeps (Bouix, Paris 1873) · English: unofficial working translation made for this repository | Latin public domain (US, 1873); translation and numbering dedicated CC0 | **full bilingual text included** (409 paragraphs, with the appendix of nine letters and counsels) |
 | *The Spiritual Exercises* | George E. Ganss, 1992 | in copyright | derived data only |
 | *Constitutions & Complementary Norms* | ed. John W. Padberg, 1996 | in copyright | derived data only |
 | *A Pilgrim's Testament* | Parmananda R. Divarkar, 1995 | in copyright | derived data only |
@@ -210,6 +211,12 @@ in short:
   English is the working translation made for this repository, and whatever
   rights that could attract are dedicated to the public domain under
   [CC0 1.0](LICENSE-DATA), so that nobody ever has to ask.
+- **`data/memoriale.json`** holds Favre's Memoriale as printed in 1873, public
+  domain by age; the working translation and this repository's paragraph
+  numbering are dedicated CC0. The provenance caveat is stated in the file
+  itself and on the method page: the autograph is lost, the 1873 Latin is the
+  Society's transmitted version, and the canonical MF numbers of the 1914
+  critical edition could not be reproduced.
 - **`data/longridge_exx.json`** and **`data/longridge_dir.json`** carry
   Longridge's 1919 commentary, Additional Notes and Directory translation —
   public domain by age; the editorial keying to the [1]–[370] grid and the

@@ -225,6 +225,41 @@
   "genre": "instruction"
  },
  {
+  "id": "fabri",
+  "orientation": "The Memoriale is the working journal of a discerning heart. Pierre Favre — the Savoyard shepherd boy who shared a room in Paris with Ignatius and Francis Xavier, the first priest of the Society, and the man Ignatius judged the finest giver of the Exercises — began it at Speyer in June 1542 as a deliberate discipline: to note, day by day, the movements of devotion, desolation and desire that passed through him, so that nothing God gave should be lost. What follows is neither autobiography nor treatise but discernment practised in ink: several hundred dated entries in which the rules of the Exercises are not expounded but used. Around the journal the 1873 volume preserves a retrospect of his life from 1506 (the Prooemium), a thinning record of his last years (the Epilogus), and an appendix of letters and counsels — including his celebrated instruction on how to deal with the heretics of the age: win the heart before arguing with the head.",
+  "textual_history": "Favre dictated nothing and published nothing; the Memoriale was private. His autograph — largely Spanish, with Latin stretches — is lost. What circulated in the Society was a Latin version, reproduced by autographic printing for internal use (a printing is recorded for 1853, from a manuscript whose language is not identified). Marcel Bouix SJ made this transmitted Latin public for the first time in 1873, shortly after Favre's beatification, emending corrupt passages and latinizing a handful of embedded Spanish words. The critical text of the original appeared only in the Monumenta Historica Societatis Iesu (Fabri Monumenta, Madrid 1914), with the paragraph numbering (MF 1–443) that scholarship now cites. This edition rests on the 1873 print, and its paragraph numbers are its own.",
+  "how_to_read": "Read it in small doses, as it was written. The month sections can be entered anywhere: each entry is self-contained, usually keyed to the saint or feast of the day. Watch the recurring machinery — the 'accustomed rounds' of the litanies and the mysteries of Christ, the petitions sorted by the three divine Persons, the guardian angels, the souls in purgatory — and notice how often an entry pivots on a correction: a desire examined, found subtly self-seeking, and reordered. The Prooemium is the best short life of Favre in existence; the appendix letters show the same interior method turned outward into pastoral advice.",
+  "key_passages": [
+   {
+    "cite": "Mem. [9]",
+    "label": "Ignatius Takes the Room-mate in Hand",
+    "why": "The scruple-ridden student and the older pilgrim: how Ignatius waited years before giving Favre the Exercises — patience later codified in the Directory."
+   },
+   {
+    "cite": "Mem. [23]",
+    "label": "The Profession Formula of 1541",
+    "why": "Favre's own vow text, written at Regensburg, the earliest solemn profession of the Society outside Rome — quoted verbatim in the journal."
+   },
+   {
+    "cite": "Mem. [25]",
+    "label": "Praying for Luther and the Turk",
+    "why": "Seven names on a prayer list — pope, emperor, Henry VIII, Luther, the Turk, Bucer, Melanchthon — the journal's most quoted line on charity across confessional lines."
+   },
+   {
+    "cite": "Mem. [241]",
+    "label": "Reading the Two Spirits",
+    "why": "A compact statement of discernment in practice: which spirit to keep, which to expel, and why even the deceiver's words can teach caution."
+   },
+   {
+    "cite": "Mem. App. [382–388]",
+    "label": "How to Deal with Heretics",
+    "why": "The letter to Laínez: love first, common ground first, morals before doctrine — sixteenth-century controversy pastoral care at its most humane."
+   }
+  ],
+  "difficulty": 3,
+  "genre": "journal"
+ },
+ {
   "id": "letters",
   "orientation": "Ignatius was an enormous correspondent; by his own account he dispatched some two hundred and fifty letters in a single month of 1542, and the surviving corpus runs to thousands. This volume is a selection of twenty-four, covering 1524 to 1547, chosen by its editors for what they reveal of the writer's interior life rather than for administrative importance. It ranges from short notes to Barcelona benefactresses through counsel to a Catalan nun troubled by false humility and fear, a proposal for poor relief addressed to his home town, detailed operating instructions for two men sent to Ireland and for the theologians at Trent, to a long letter on fervour and its excesses sent to the students at Coimbra. The letters show him negotiating, consoling, organizing and instructing, often in the same paragraph.",
   "textual_history": "The letters were written mostly in Spanish, sometimes with Latin tags, and were first gathered and published in the modern critical series only shortly before this volume appeared. O'Leary's 1914 translation is a selection, not an edition, made from that recent collection; the editors state that they included every letter they judged spiritual in a broad sense and omitted routine business. They deliberately preserved Ignatius's involved syntax and his Latin phrases. Historical notes are gathered at the back. Being from 1914, the text is public domain, but its Victorian register should not be mistaken for Ignatian style.",

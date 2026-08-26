@@ -21,6 +21,8 @@ export const corpus = {
   _dirPages: null,  // flattened paragraph texts of the Directory
   _dirCites: null,  // parallel citation labels
   _exxPages: null,  // flattened paragraph texts of the Exercises edition
+  _favPages: null,  // flattened paragraph texts of Favre's Memoriale
+  _favCites: null,
   _exxCites: null,  // parallel Exx [n] citation labels
   _idx: {},         // id -> Map token -> [pageIdx]
   _chunks: [],      // retrieval units across everything available
@@ -210,12 +212,14 @@ export async function forgetAll() {
   corpus.works = {};
   reindex();
 }
-export async function restore(meta, anchors, letters, directorium, exercitia) {
+export async function restore(meta, anchors, letters, directorium, exercitia, memoriale) {
   corpus.meta = meta; corpus.anchors = anchors; corpus.letters = letters;
   corpus.directorium = directorium || null;
   if (directorium) buildDirectorium(directorium);
   corpus.exercitia = exercitia || null;
   if (exercitia) buildExercitia(exercitia);
+  corpus.memoriale = memoriale || null;
+  if (memoriale) buildMemoriale(memoriale);
   for (const k of await dbKeys()) {
     // The Directory of 1599 now ships with the site; a Palmer PDF stored under
     // "dir" by an earlier version of this page would shadow it, so it is dropped.
@@ -257,16 +261,37 @@ function buildExercitia(d) {
   corpus._exxCites = cites;
 }
 
+/** Flatten Favre's bilingual Memoriale into paragraph "pages"; appendix
+    pieces are cited as Mem. App. [n], the journal itself as Mem. [n]. */
+function buildMemoriale(m) {
+  const pages = [], cites = [];
+  for (const s of m.sections || []) {
+    for (const u of s.units) {
+      pages.push(`${u.la} ${u.en}`);
+      cites.push({ label: `Mem. [${u.n}]`, n: u.n });
+    }
+  }
+  for (const a of m.appendix || []) {
+    for (const u of a.units) {
+      pages.push(`${u.la} ${u.en}`);
+      cites.push({ label: `Mem. App. [${u.n}]`, n: u.n });
+    }
+  }
+  corpus._favPages = pages;
+  corpus._favCites = cites;
+}
+
 export const workMeta = id => (corpus.meta || []).find(w => w.id === id);
 export const isOpen = id => id === "letters" || (id === "dir" && !!corpus._dirPages) ||
-  (id === "spex" && !!corpus._exxPages) || !!corpus.works[id];
+  (id === "spex" && !!corpus._exxPages) || (id === "fabri" && !!corpus._favPages) ||
+  !!corpus.works[id];
 export const openIds = () => (corpus.meta || []).filter(w => isOpen(w.id)).map(w => w.id);
 
 /* --------------------------------------------------------- page access */
 /** True when a PDF page belongs to Ignatius's text rather than to the
     translator's introduction, endnotes or index. */
 export function inBody(id, p) {
-  if (id === "letters" || id === "dir") return true;
+  if (id === "letters" || id === "dir" || id === "fabri") return true;
   // when the Exercises run on the shipped trilingual edition rather than an
   // unlocked Ganss PDF, every "page" is a canonical paragraph — all body
   if (id === "spex" && !corpus.works.spex) return true;
@@ -277,6 +302,7 @@ export function inBody(id, p) {
 
 export function pagesOf(id) {
   if (id === "dir") return corpus._dirPages;   // shipped bilingual paragraphs
+  if (id === "fabri") return corpus._favPages;
   if (corpus.works[id]) return corpus.works[id].pages;
   // the Exercises fall back to the shipped trilingual edition until the
   // reader opens Ganss's own translation, which then takes precedence
@@ -296,6 +322,10 @@ export function citeFor(id, page) {
   }
   if (id === "dir") {
     const c = (corpus._dirCites || [])[page];
+    return c ? { label: c.label, n: c.n, seite: null, exact: true } : null;
+  }
+  if (id === "fabri") {
+    const c = (corpus._favCites || [])[page];
     return c ? { label: c.label, n: c.n, seite: null, exact: true } : null;
   }
   if (id === "spex" && !corpus.works.spex) {
