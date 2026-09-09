@@ -1,0 +1,1091 @@
+{
+ "id": "pascal",
+ "autor": "Blaise Pascal",
+ "titel": "Lettres provinciales — Letters V, VII and X (1656–1657)",
+ "jahr": 1656,
+ "lang": "en",
+ "zitierweise": "Prov. V [k] · Prov. VII [k] · Prov. X [k]",
+ "quelle": "The Provincial Letters of Blaise Pascal, a new translation by the Rev. Thomas M'Crie (New York: Robert Carter & Brothers, 1856), via the Project Gutenberg transcription #73959. Public domain. The French original is cited from the Vallée transcription on the French Wikisource (seventeenth-century orthography preserved there); it is not yet carried in this module.",
+ "hinweis": "Three letters complete, chosen for the counter-voice they state: probabilism (V), the direction of the intention (VII), and devotion made easy (X). Paragraph numbers are editorial, per letter; M'Crie's footnote markers are removed and his notes not reproduced. English only for now — the bilingualisation against the French, whose paragraphing is much coarser, is a planned enhancement. Not yet part of the concordance index (like the Longridge layers); the reader's search does not cover it either.",
+ "sections": [
+  {
+   "id": "l5",
+   "titel": "Letter V — The doctrine of probable opinions",
+   "blurb": "Design of the Jesuits in establishing a new system of morals; two sorts of casuists among them; the doctrine of probabilism explained; a multitude of modern authors substituted for the holy fathers; Escobar.",
+   "zk": "Prov. V",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "en": "PARIS, March 20, 1656."
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "en": "SIR,—According to my promise, I now send you the first outlines of the morals taught by those good fathers the Jesuits—“those men distinguished for learning and sagacity, who are all under the guidance of divine wisdom—a surer guide than all philosophy.” You imagine, perhaps, that I am in jest, but I am perfectly serious; or rather, they are so when they speak thus of themselves in their book entitled “The Image of the First Century.” I am only copying their own words, and may now give you the rest of the eulogy: “They are a society of men, or rather let us call them angels, predicted by Isaiah in these words, ‘Go, ye swift and ready angels.’” The prediction is as clear as day, is it not? “They have the spirit of eagles; they are a flock of phœnixes (a late author having demonstrated that there are a great many of these birds); they have changed the face of Christendom!” Of course, we must believe all this, since they have said it; and in one sense you will find the account amply verified by the sequel of this communication, in which I propose to treat of their maxims."
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "en": "Determined to obtain the best possible information, I did not trust to the representations of our friend the Jansenist, but sought an interview with some of themselves. I found, however, that he told me nothing but the bare truth, and I am persuaded he is an honest man. Of this you may judge from the following account of these conferences."
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "en": "In the conversation I had with the Jansenist, he told me so many strange things about these fathers, that I could with difficulty believe them, till he pointed them out to me in their writings; after which he left me nothing more to say in their defence, than that these might be the sentiments of some individuals only, which it was not fair to impute to the whole fraternity. And, indeed, I assured him that I knew some of them who were as severe as those whom he quoted to me were lax. This led him to explain to me the spirit of the Society, which is not known to every one; and you will perhaps have no objections to learn something about it."
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "en": "“You imagine,” he began, “that it would tell considerably in their favor to show that some of their fathers are as friendly to Evangelical maxims as others are opposed to them; and you would conclude from that circumstance, that these loose opinions do not belong to the whole Society. That I grant you; for had such been the case, they would not have suffered persons among them holding sentiments so diametrically opposed to licentiousness. But as it is equally true that there are among them those who hold these licentious doctrines, you are bound also to conclude that the Spirit of the Society is not that of Christian severity; for had such been the case, they would not have suffered persons among them holding sentiments so diametrically opposed to that severity.”"
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "en": "“And what, then,” I asked, “can be the design of the whole as a body? Perhaps they have no fixed principle, and every one is left to speak out at random whatever he thinks.”"
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "en": "“That cannot be,” returned my friend; “such an immense body could not subsist in such a hap-hazard sort of way, or without a soul to govern and regulate its movements; besides, it is one of their express regulations, that none shall print a page without the approval of their superiors.”"
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "en": "“But,” said I, “how can these same superiors give their consent to maxims so contradictory?”"
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "en": "“That is what you have yet to learn,” he replied. “Know, then, that their object is not the corruption of manners—that is not their design. But as little is it their sole aim to reform them—that would be bad policy. Their idea is briefly this: They have such a good opinion of themselves as to believe that it is useful, and in some sort essentially necessary to the good of religion, that their influence should extend everywhere, and that they should govern all consciences. And the Evangelical or severe maxims being best fitted for managing some sorts of people, they avail themselves of these when they find them favorable to their purpose. But as these maxims do not suit the views of the great bulk of people, they wave them in the case of such persons, in order to keep on good terms with all the world. Accordingly, having to deal with persons of all classes and of all different nations, they find it necessary to have casuists cut out to match this diversity."
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "en": "“On this principle, you will easily see that if they had none but the looser sort of casuists, they would defeat their main design, which is to embrace all; for those that are truly pious are fond of a stricter discipline. But as there are not many of that stamp, they do not require many severe directors to guide them. They have a few for the select few; while whole multitudes of lax casuists are provided for the multitudes that prefer laxity."
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "en": "“It is in virtue of this ‘obliging and accommodating’ conduct, as Father Petau calls it, that they may be said to stretch out a helping hand to all mankind. Should any person present himself before them, for example, fully resolved to make restitution of some ill-gotten gains, do not suppose that they would dissuade him from it. By no means; on the contrary, they will applaud and confirm him in such a holy resolution. But suppose another should come who wishes to be absolved without restitution, and it will be a particularly hard case indeed, if they cannot furnish him with means of evading the duty, of one kind or another, the lawfulness of which they will be ready to guarantee."
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "en": "“By this policy they keep all their friends, and defend themselves against all their foes; for, when charged with extreme laxity, they have nothing more to do than produce their austere directors, with some books which they have written on the severity of the Christian code of morals; and simple people, or those who never look below the surface of things, are quite satisfied with these proofs of the falsity of the accusation."
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "en": "“Thus are they prepared for all sorts of persons, and so ready are they to suit the supply to the demand, that when they happen to be in any part of the world where the doctrine of a crucified God is accounted foolishness, they suppress the offence of the cross, and preach only a glorious and not a suffering Jesus Christ. This plan they followed in the Indies and in China, where they permitted Christians to practise idolatry itself, with the aid of the following ingenious contrivance:—they made their converts conceal under their clothes an image of Jesus Christ, to which they taught them to transfer mentally those adorations which they rendered ostensibly to the idol Cachinchoam and Keum-fucum. This charge is brought against them by Gravina, a Dominican, and is fully established by the Spanish memorial presented to Philip IV., king of Spain, by the Cordeliers of the Philippine Islands, quoted by Thomas Hurtado, in his ‘Martyrdom of the Faith,’ page 427. To such a length did this practice go, that the Congregation De Propaganda were obliged expressly to forbid the Jesuits, on pain of excommunication, to permit the worship of idols on any pretext whatever, or to conceal the mystery of the cross from their catechumens; strictly enjoining them to admit none to baptism who were not thus instructed, and ordering them to expose the image of the crucifix in their churches:—all which is amply detailed in the decree of that Congregation, dated the 9th of July, 1646, and signed by Cardinal Capponi."
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "en": "“Such is the manner in which they have spread themselves over the whole earth, aided by the doctrine of probable opinions, which is at once the source and the basis of all this licentiousness. You must get some of themselves to explain this doctrine to you. They make no secret of it, any more than of what you have already learned; with this difference only, that they conceal their carnal and worldly policy under the garb of divine and Christian prudence; as if the faith, and tradition its ally, were not always one and the same at all times and in all places; as if it were the part of the rule to bend in conformity to the subject which it was meant to regulate; and as if souls, to be purified from their pollutions, had only to corrupt the law of the Lord, in place of ‘the law of the Lord, which is clean and pure, converting the soul which lieth in sin,’ and bringing it into conformity with its salutary lessons!"
+    },
+    {
+     "n": 15,
+     "k": 15,
+     "en": "“Go and see some of these worthy fathers, I beseech you, and I am confident that you will soon discover, in the laxity of their moral system, the explanation of their doctrine about grace. You will then see the Christian virtues exhibited in such a strange aspect, so completely stripped of the charity which is the life and soul of them—you will see so many crimes palliated and irregularities tolerated, that you will no longer be surprised at their maintaining that ‘all men have always enough of grace’ to lead a pious life, in the sense in which they understand piety. Their morality being entirely Pagan, nature is quite competent to its observance. When we maintain the necessity of efficacious grace, we assign it another sort of virtue for its object. Its office is not to cure one vice by means of another; it is not merely to induce men to practise the external duties of religion: it aims at a virtue higher than that propounded by Pharisees, or the greatest sages of Heathenism. The law and reason are ‘sufficient graces’ for these purposes. But to disenthral the soul from the love of the world—to tear it from what it holds most dear—to make it die to itself—to lift it up and bind it wholly, only, and forever, to God—can be the work of none but an all-powerful hand. And it would be as absurd to affirm that we have the full power of achieving such objects, as it would be to allege that those virtues, devoid of the love of God, which these fathers confound with the virtues of Christianity, are beyond our power.”"
+    },
+    {
+     "n": 16,
+     "k": 16,
+     "en": "Such was the strain of my friend’s discourse, which was delivered with much feeling; for he takes these sad disorders very much to heart. For my own part, I began to entertain a high admiration of these fathers, simply on account of the ingenuity of their policy; and following his advice, I waited on a good casuist of the Society, one of my old acquaintances, with whom I now resolved purposely to renew my former intimacy. Having my instructions how to manage them, I had no great difficulty in getting him afloat. Retaining his old attachment, he received me immediately with a profusion of kindness; and after talking over some indifferent matters, I took occasion from the present season, to learn something from him about fasting, and thus slip insensibly into the main subject. I told him, therefore, that I had difficulty in supporting the fast. He exhorted me to do violence to my inclinations; but as I continued to murmur, he took pity on me, and began to search out some ground for a dispensation. In fact he suggested a number of excuses for me, none of which happened to suit my case, till at length he bethought himself of asking me, whether I did not find it difficult to sleep without taking supper? “Yes, my good father,” said I; “and for that reason I am obliged often to take a refreshment at mid-day, and supper at night.”"
+    },
+    {
+     "n": 17,
+     "k": 17,
+     "en": "“I am extremely happy,” he replied, “to have found out a way of relieving you without sin: go in peace—you are under no obligation to fast. However, I would not have you depend on my word: step this way to the library.”"
+    },
+    {
+     "n": 18,
+     "k": 18,
+     "en": "On going thither with him he took up a book, exclaiming, with great rapture, “Here is the authority for you: and, by my conscience, such an authority! It is ESCOBAR!”"
+    },
+    {
+     "n": 19,
+     "k": 19,
+     "en": "“Who is Escobar?” I inquired."
+    },
+    {
+     "n": 20,
+     "k": 20,
+     "en": "“What! not know Escobar?” cried the monk; “the member of our Society who compiled this Moral Theology from twenty-four of our fathers, and on this founds an analogy, in his preface, between his book and ‘that in the Apocalypse which was sealed with seven seals,’ and states that ‘Jesus presents it thus sealed to the four living creatures, Suarez, Vasquez, Molina, and Valencia, in presence of the four-and-twenty Jesuits who represent the four-and-twenty elders?’”"
+    },
+    {
+     "n": 21,
+     "k": 21,
+     "en": "He read me, in fact, the whole of that allegory, which he pronounced to be admirably appropriate, and which conveyed to my mind a sublime idea of the excellence of the work. At length, having sought out the passage on fasting, “O here it is!” he said; “treatise 1, example 13, no. 67: ‘If a man cannot sleep without taking supper, is he bound to fast? Answer: By no means!’ Will that not satisfy you?”"
+    },
+    {
+     "n": 22,
+     "k": 22,
+     "en": "“Not exactly,” replied I; “for I might sustain the fast by taking my refreshment in the morning, and supping at night.”"
+    },
+    {
+     "n": 23,
+     "k": 23,
+     "en": "“Listen, then, to what follows; they have provided for all that: ‘And what is to be said, if the person might make a shift with a refreshment in the morning and supping at night?’”"
+    },
+    {
+     "n": 24,
+     "k": 24,
+     "en": "“That’s my case exactly.”"
+    },
+    {
+     "n": 25,
+     "k": 25,
+     "en": "“‘Answer: Still he is not obliged to fast; because no person is obliged to change the order of his meals.’”"
+    },
+    {
+     "n": 26,
+     "k": 26,
+     "en": "“A most excellent reason!” I exclaimed."
+    },
+    {
+     "n": 27,
+     "k": 27,
+     "en": "“But tell me, pray,” continued the monk, “do you take much wine?”"
+    },
+    {
+     "n": 28,
+     "k": 28,
+     "en": "“No, my dear father,” I answered; “I cannot endure it.”"
+    },
+    {
+     "n": 29,
+     "k": 29,
+     "en": "“I merely put the question,” returned he, “to apprize you that you might, without breaking the fast, take a glass or so in the morning, or whenever you felt inclined for a drop; and that is always something in the way of supporting nature. Here is the decision at the same place, no. 57: ‘May one, without breaking the fast, drink wine at any hour he pleases, and even in a large quantity? Yes, he may: and a dram of hippocrass too.’ I had no recollection of the hippocrass,” said the monk; “I must take a note of that in my memorandum-book.”"
+    },
+    {
+     "n": 30,
+     "k": 30,
+     "en": "“He must be a nice man, this Escobar,” observed I."
+    },
+    {
+     "n": 31,
+     "k": 31,
+     "en": "“Oh! everybody likes him,” rejoined the father; “he has such delightful questions! Only observe this one in the same place, no. 38: ‘If a man doubt whether he is twenty-one years old, is he obliged to fast? No. But suppose I were to be twenty-one to-night an hour after midnight, and to-morrow were the fast, would I be obliged to fast to-morrow? No; for you were at liberty to eat as much as you pleased for an hour after midnight, not being till then fully twenty-one; and therefore having a right to break the fast-day, you are not obliged to keep it.’”"
+    },
+    {
+     "n": 32,
+     "k": 32,
+     "en": "“Well, that is vastly entertaining!” cried I."
+    },
+    {
+     "n": 33,
+     "k": 33,
+     "en": "“Oh,” rejoined the father, “it is impossible to tear one’s self away from the book: I spend whole days and nights in reading it; in fact, I do nothing else.”"
+    },
+    {
+     "n": 34,
+     "k": 34,
+     "en": "The worthy monk, perceiving that I was interested, was quite delighted, and went on with his quotations. “Now,” said he, “for a taste of Filiutius, one of the four-and-twenty Jesuits: ‘Is a man who has exhausted himself any way—by profligacy, for example—obliged to fast? By no means. But if he has exhausted himself expressly to procure a dispensation from fasting, will he be held obliged? He will not, even though he should have had that design.’ There now! would you have believed that?”"
+    },
+    {
+     "n": 35,
+     "k": 35,
+     "en": "“Indeed, good father, I do not believe it yet,” said I. “What! is it no sin for a man not to fast when he has it in his power? And is it allowable to court occasions of committing sin, or rather, are we not bound to shun them? That would be easy enough, surely.”"
+    },
+    {
+     "n": 36,
+     "k": 36,
+     "en": "“Not always so,” he replied; “that is just as it may happen.”"
+    },
+    {
+     "n": 37,
+     "k": 37,
+     "en": "“Happen, how?” cried I."
+    },
+    {
+     "n": 38,
+     "k": 38,
+     "en": "“Oho!” rejoined the monk, “so you think that if a person experience some inconvenience in avoiding the occasions of sin, he is still bound to do so? Not so thinks Father Bauny. ‘Absolution,’ says he, ‘is not to be refused to such as continue in the proximate occasions of sin, if they are so situated that they cannot give them up without becoming the common talk of the world, or subjecting themselves to personal inconvenience.’”"
+    },
+    {
+     "n": 39,
+     "k": 39,
+     "en": "“I am glad to hear it, father,” I remarked; “and now that we are not obliged to avoid the occasions of sin, nothing more remains but to say that we may deliberately court them.”"
+    },
+    {
+     "n": 40,
+     "k": 40,
+     "en": "“Even that is occasionally permitted,” added he; “the celebrated casuist Basil Ponce has said so, and Father Bauny quotes his sentiment with approbation, in his Treatise on Penance, as follows: ‘We may seek an occasion of sin directly and designedly—primo et per se—when our own or our neighbor’s spiritual or temporal advantage induces us to do so.’”"
+    },
+    {
+     "n": 41,
+     "k": 41,
+     "en": "“Truly,” said I, “it appears to be all a dream to me, when I hear grave divines talking in this manner! Come now, my dear father, tell me conscientiously, do you hold such a sentiment as that?”"
+    },
+    {
+     "n": 42,
+     "k": 42,
+     "en": "“No, indeed,” said he, “I do not.”"
+    },
+    {
+     "n": 43,
+     "k": 43,
+     "en": "“You are speaking, then, against your conscience,” continued I."
+    },
+    {
+     "n": 44,
+     "k": 44,
+     "en": "“Not at all,” he replied; “I was speaking on that point not according to my own conscience, but according to that of Ponce and Father Bauny, and them you may follow with the utmost safety, for I assure you that they are able men.”"
+    },
+    {
+     "n": 45,
+     "k": 45,
+     "en": "“What, father! because they have put down these three lines in their books, will it therefore become allowable to court the occasions of sin? I always thought that we were bound to take the Scripture and the tradition of the Church as our only rule, and not your casuists.”"
+    },
+    {
+     "n": 46,
+     "k": 46,
+     "en": "“Goodness!” cried the monk, “I declare you put me in mind of these Jansenists. Think you that Father Bauny and Basil Ponce are not able to render their opinion probable?”"
+    },
+    {
+     "n": 47,
+     "k": 47,
+     "en": "“Probable won’t do for me,” said I; “I must have certainty.”"
+    },
+    {
+     "n": 48,
+     "k": 48,
+     "en": "“I can easily see,” replied the good father, “that you know nothing about our doctrine of probable opinions. If you did, you would speak in another strain. Ah! my dear sir, I must really give you some instructions on this point; without knowing this, positively you can understand nothing at all. It is the foundation—the very A, B, C, of our whole moral philosophy.”"
+    },
+    {
+     "n": 49,
+     "k": 49,
+     "en": "Glad to see him come to the point to which I had been drawing him on, I expressed my satisfaction, and requested him to explain what was meant by a probable opinion?"
+    },
+    {
+     "n": 50,
+     "k": 50,
+     "en": "“That,” he replied, “our authors will answer better than I can do. The generality of them, and, among others, our four-and-twenty elders, describe it thus: ‘An opinion is called probable, when it is founded upon reasons of some consideration. Hence it may sometimes happen that a single very grave doctor may render an opinion probable.’ The reason is added: ‘For a man particularly given to study would not adhere to an opinion unless he was drawn to it by a good and sufficient reason.’”"
+    },
+    {
+     "n": 51,
+     "k": 51,
+     "en": "“So it would appear,” I observed, with a smile, “that a single doctor may turn consciences round about and upside down as he pleases, and yet always land them in a safe position.”"
+    },
+    {
+     "n": 52,
+     "k": 52,
+     "en": "“You must not laugh at it, sir,” returned the monk; “nor need you attempt to combat the doctrine. The Jansenists tried this; but they might have saved themselves the trouble—it is too firmly established. Hear Sanchez, one of the most famous of our fathers: ‘You may doubt, perhaps, whether the authority of a single good and learned doctor renders an opinion probable. I answer, that it does; and this is confirmed by Angelus, Sylvester Navarre, Emanuel Sa, &c. It is proved thus: A probable opinion is one that has a considerable foundation. Now the authority of a learned and pious man is entitled to very great consideration; because (mark the reason), if the testimony of such a man has great influence in convincing us that such and such an event occurred, say at Rome, for example, why should it not have the same weight in the case of a question in morals?’”"
+    },
+    {
+     "n": 53,
+     "k": 53,
+     "en": "“An odd comparison this,” interrupted I, “between the concerns of the world and those of conscience!”"
+    },
+    {
+     "n": 54,
+     "k": 54,
+     "en": "“Have a little patience,” rejoined the monk; “Sanchez answers that in the very next sentence: ‘Nor can I assent to the qualification made here by some writers, namely, that the authority of such a doctor, though sufficient in matters of human right, is not so in those of divine right. It is of vast weight in both cases.’”"
+    },
+    {
+     "n": 55,
+     "k": 55,
+     "en": "“Well, father,” said I, frankly, “I really cannot admire that rule. Who can assure me, considering the freedom your doctors claim to examine everything by reason, that what appears safe to one may seem so to all the rest? The diversity of judgments is so great”—"
+    },
+    {
+     "n": 56,
+     "k": 56,
+     "en": "“You don’t understand it,” said he, interrupting me; “no doubt they are often of different sentiments, but what signifies that?—each renders his own opinion probable and safe. We all know well enough that they are far from being of the same mind; what is more, there is hardly an instance in which they ever agree. There are very few questions, indeed, in which you do not find the one saying Yes, and the other saying No. Still, in all these cases, each of the contrary opinions is probable. And hence Diana says on a certain subject: ‘Ponce and Sanchez hold opposite views of it; but, as they are both learned men, each renders his own opinion probable.’”"
+    },
+    {
+     "n": 57,
+     "k": 57,
+     "en": "“But, father,” I remarked, “a person must be sadly embarrassed in choosing between them!”—“Not at all,” he rejoined; “he has only to follow the opinion which suits him best.”—“What! if the other is more probable?” “It does not signify.”—“And if the other is the safer?” “It does not signify,” repeated the monk; “this is made quite plain by Emanuel Sa, of our Society, in his Aphorisms: ‘A person may do what he considers allowable according to a probable opinion, though the contrary may be the safer one. The opinion of a single grave doctor is all that is requisite.’”"
+    },
+    {
+     "n": 58,
+     "k": 58,
+     "en": "“And if an opinion be at once the less probable and the less safe, is it allowable to follow it,” I asked, “even in the way of rejecting one which we believe to be more probable and safe?”"
+    },
+    {
+     "n": 59,
+     "k": 59,
+     "en": "“Once more, I say Yes,” replied the monk. “Hear what Filiutius, that great Jesuit of Rome, says: ‘It is allowable to follow the less probable opinion, even though it be the less safe one. That is the common judgment of modern authors.’ Is not that quite clear?”"
+    },
+    {
+     "n": 60,
+     "k": 60,
+     "en": "“Well, reverend father,” said I, “you have given us elbow-room, at all events! Thanks to your probable opinions, we have got liberty of conscience with a witness! And are you casuists allowed the same latitude in giving your responses?”"
+    },
+    {
+     "n": 61,
+     "k": 61,
+     "en": "“O yes,” said he, “we answer just as we please; or rather, I should say, just as it may please those who ask our advice. Here are our rules, taken from Fathers Layman, Vasquez, Sanchez, and the four-and-twenty worthies, in the words of Layman: ‘A doctor, on being consulted, may give an advice, not only probable according to his own opinion, but contrary to his opinion, provided this judgment happens to be more favorable or more agreeable to the person that consults him—si forte hæc favorabilior seu exoptatior sit. Nay, I go further, and say, that there would be nothing unreasonable in his giving those who consult him a judgment held to be probable by some learned person, even though he should be satisfied in his own mind that it is absolutely false.’”"
+    },
+    {
+     "n": 62,
+     "k": 62,
+     "en": "“Well, seriously, father,” I said, “your doctrine is a most uncommonly comfortable one! Only think of being allowed to answer Yes or No, just as you please! It is impossible to prize such a privilege too highly. I see now the advantage of the contrary opinions of your doctors. One of them always serves your turn, and the other never gives you any annoyance. If you do not find your account on the one side, you fall back on the other, and always land in perfect safety.”"
+    },
+    {
+     "n": 63,
+     "k": 63,
+     "en": "“That is quite true,” he replied; “and accordingly, we may always say with Diana, on his finding that Father Bauny was on his side, while Father Lugo was against him: Sæpe premente deo, fert deus alter opem.”"
+    },
+    {
+     "n": 64,
+     "k": 64,
+     "en": "“I understand you,” resumed I; “but a practical difficulty has just occurred to me, which is this, that supposing a person to have consulted one of your doctors, and obtained from him a pretty liberal opinion, there is some danger of his getting into a scrape by meeting a confessor who takes a different view of the matter, and refuses him absolution unless he recant the sentiment of the casuist. Have you not provided for such a case as that, father?”"
+    },
+    {
+     "n": 65,
+     "k": 65,
+     "en": "“Can you doubt it?” he replied. “We have bound them, sir, to absolve their penitents who act according to probable opinions, under the pain of mortal sin, to secure their compliance. ‘When the penitent,’ says Father Bauny, ‘follows a probable opinion, the confessor is bound to absolve him, though his opinion should differ from that of his penitent.’”"
+    },
+    {
+     "n": 66,
+     "k": 66,
+     "en": "“But he does not say it would be a mortal sin not to absolve him,” said I."
+    },
+    {
+     "n": 67,
+     "k": 67,
+     "en": "“How hasty you are!” rejoined the monk; “listen to what follows; he has expressly decided that, ‘to refuse absolution to a penitent who acts according to a probable opinion, is a sin which is in its nature mortal.’ And to settle that point, he cites the most illustrious of our fathers—Suarez, Vasquez, and Sanchez.”"
+    },
+    {
+     "n": 68,
+     "k": 68,
+     "en": "“My dear sir,” said I, “that is a most prudent regulation. I see nothing to fear now. No confessor can dare to be refractory after this. Indeed, I was not aware that you had the power of issuing your orders on pain of damnation. I thought that your skill had been confined to the taking away of sins; I had no idea that it extended to the introduction of new ones. But from what I now see, you are omnipotent.”"
+    },
+    {
+     "n": 69,
+     "k": 69,
+     "en": "“That is not a correct way of speaking,” rejoined the father. “We do not introduce sins; we only pay attention to them. I have had occasion to remark, two or three times during our conversation, that you are no great scholastic.”"
+    },
+    {
+     "n": 70,
+     "k": 70,
+     "en": "“Be that as it may, father, you have at least answered my difficulty. But I have another to suggest. How do you manage when the Fathers of the Church happen to differ from any of your casuists?”"
+    },
+    {
+     "n": 71,
+     "k": 71,
+     "en": "“You really know very little of the subject,” he replied. “The Fathers were good enough for the morality of their own times; but they lived too far back for that of the present age, which is no longer regulated by them, but by the modern casuists. On this Father Cellot, following the famous Reginald, remarks: ‘In questions of morals, the modern casuists are to be preferred to the ancient fathers, though those lived nearer to the times of the apostles.’ And following out this maxim, Diana thus decides: ‘Are beneficiaries bound to restore their revenue when guilty of mal-appropriation of it? The ancients would say Yes, but the moderns say No; let us, therefore, adhere to the latter opinion, which relieves from the obligation of restitution.’”"
+    },
+    {
+     "n": 72,
+     "k": 72,
+     "en": "“Delightful words these, and most comfortable they must be to a great many people!” I observed."
+    },
+    {
+     "n": 73,
+     "k": 73,
+     "en": "“We leave the fathers,” resumed the monk, “to those who deal with positive divinity. As for us, who are the directors of conscience, we read very little of them, and quote only the modern casuists. There is Diana, for instance, a most voluminous writer; he has prefixed to his works a list of his authorities, which amount to two hundred and ninety-six, and the most ancient of them is only about eighty years old.”"
+    },
+    {
+     "n": 74,
+     "k": 74,
+     "en": "“It would appear, then,” I remarked, “that all these have come into the world since the date of your Society?”"
+    },
+    {
+     "n": 75,
+     "k": 75,
+     "en": "“Thereabouts,” he replied."
+    },
+    {
+     "n": 76,
+     "k": 76,
+     "en": "“That is to say, dear father, on your advent, St. Augustine, St. Chrysostom, St. Ambrose, St. Jerome, and all the rest, in so far as morals are concerned, disappeared from the stage. Would you be so kind as let me know the names, at least, of those modern authors who have succeeded them?”"
+    },
+    {
+     "n": 77,
+     "k": 77,
+     "en": "“A most able and renowned class of men they are,” replied the monk. “Their names are, Villabolos, Conink, Llamas, Achokier, Dealkozer, Dellacrux, Veracruz, Ugolin, Tambourin, Fernandez, Martinez, Suarez, Henriquez, Vasquez, Lopez, Gomez, Sanchez, De Vechis, De Grassis, De Grassalis, De Pitigianis, De Graphœis, Squilanti, Bizozeri, Barcola, De Bobadilla, Simancha, Perez de Lara, Aldretta, Lorca, De Scarcia, Quaranta, Scophra, Pedezza, Cabrezza, Bisbe, Dias, De Clavasis, Villagut, Adam à Manden, Iribarne, Binsfeld, Volfangi à Vorberg, Vosthery, Strevesdorf.”"
+    },
+    {
+     "n": 78,
+     "k": 78,
+     "en": "“O my dear father!” cried I, quite alarmed, “were all these people Christians?”"
+    },
+    {
+     "n": 79,
+     "k": 79,
+     "en": "“How! Christians!” returned the casuist; “did I not tell you that these are the only writers by whom we now govern Christendom?”"
+    },
+    {
+     "n": 80,
+     "k": 80,
+     "en": "Deeply affected as I was by this announcement, I concealed my emotion from the monk, and only asked him if all these authors were Jesuits?"
+    },
+    {
+     "n": 81,
+     "k": 81,
+     "en": "“No,” said he; “but that is of little consequence; they have said a number of good things for all that. It is true the greater part of these same good things are extracted or copied from our authors, but we do not stand on ceremony with them on that score, more especially as they are in the constant habit of quoting our authors with applause. When Diana, for example, who does not belong to our Society, speaks of Vasquez, he calls him ‘that phœnix of genius;’ and he declares more than once, ‘that Vasquez alone is to him worth all the rest of men put together’—instar omnium. Accordingly, our fathers often make use of this good Diana; and if you understand our doctrine of probability, you will see that this is no small help in its way. In fact, we are anxious that others besides the Jesuits would render their opinions probable, to prevent people from ascribing them all to us; for you will observe, that when any author, whoever he may be, advances a probable opinion, we are entitled, by the doctrine of probability, to adopt it if we please; and yet, if the author do not belong to our fraternity, we are not responsible for its soundness.”"
+    },
+    {
+     "n": 82,
+     "k": 82,
+     "en": "“I understand all that,” said I. “It is easy to see that all are welcome that come your way, except the ancient fathers; you are masters of the field, and have only to walk the course. But I foresee three or four serious difficulties and powerful barriers which will oppose your career.”"
+    },
+    {
+     "n": 83,
+     "k": 83,
+     "en": "“And what are these?” cried the monk, looking quite alarmed."
+    },
+    {
+     "n": 84,
+     "k": 84,
+     "en": "“They are, the Holy Scriptures,” I replied, “the popes, and the councils, whom you cannot gainsay, and who are all in the way of the Gospel.”"
+    },
+    {
+     "n": 85,
+     "k": 85,
+     "en": "“Is that all!” he exclaimed; “I declare you put me in a fright. Do you imagine that we would overlook such an obvious scruple as that, or that we have not provided against it? A good idea, forsooth, to suppose that we would contradict Scripture, popes, and councils! I must convince you of your mistake; for I should be sorry you should go away with an impression that we are deficient in our respect to these authorities. You have doubtless taken up this notion from some of the opinions of our fathers, which are apparently at variance with their decisions, though in reality they are not. But to illustrate the harmony between them would require more leisure than we have at present; and as I would not like you to retain a bad impression of us, if you agree to meet with me to-morrow, I shall clear it all up then.”"
+    },
+    {
+     "n": 86,
+     "k": 86,
+     "en": "Thus ended our interview, and thus shall end my present communication, which has been long enough, besides, for one letter. I am sure you will be satisfied with it, in the prospect of what is forthcoming.—I am, &c."
+    }
+   ]
+  },
+  {
+   "id": "l7",
+   "titel": "Letter VII — Directing the intention",
+   "blurb": "The method of directing the intention adopted by the casuists; permission to kill in defence of honour and property, extended even to priests and monks.",
+   "zk": "Prov. VII",
+   "units": [
+    {
+     "n": 87,
+     "k": 1,
+     "en": "PARIS, April 25, 1656."
+    },
+    {
+     "n": 88,
+     "k": 2,
+     "en": "SIR,—Having succeeded in pacifying the good father, who had been rather disconcerted by the story of John d’Alba, he resumed the conversation, on my assuring him that I would avoid all such interruptions in future, and spoke of the maxims of his casuists with regard to gentlemen, nearly in the following terms:—"
+    },
+    {
+     "n": 89,
+     "k": 3,
+     "en": "“You know,” he said, “that the ruling passion of persons in that rank of life is ‘the point of honor,’ which is perpetually driving them into acts of violence apparently quite at variance with Christian piety; so that, in fact, they would be almost all of them excluded from our confessionals, had not our fathers relaxed a little from the strictness of religion, to accommodate themselves to the weakness of humanity. Anxious to keep on good terms both with the Gospel, by doing their duty to God, and with the men of the world, by showing charity to their neighbor, they needed all the wisdom they possessed to devise expedients for so nicely adjusting matters as to permit these gentlemen to adopt the methods usually resorted to for vindicating their honor, without wounding their consciences, and thus reconcile two things apparently so opposite to each other as piety and the point of honor. But, sir, in proportion to the utility of the design was the difficulty of the execution. You cannot fail, I should think, to realize the magnitude and arduousness of such an enterprize?”"
+    },
+    {
+     "n": 90,
+     "k": 4,
+     "en": "“It astonishes me, certainly,” said I, rather coldly."
+    },
+    {
+     "n": 91,
+     "k": 5,
+     "en": "“It astonishes you, forsooth!” cried the monk. “I can well believe that; many besides you might be astonished at it. Why, don’t you know that, on the one hand, the Gospel commands us ‘not to render evil for evil, but to leave vengeance to God;’ and that, on the other hand, the laws of the world forbid our enduring an affront without demanding satisfaction from the offender, and that often at the expense of his life? You have never, I am sure, met with anything, to all appearance, more diametrically opposed than these two codes of morals; and yet, when told that our fathers have reconciled them, you have nothing more to say than simply that this astonishes you!”"
+    },
+    {
+     "n": 92,
+     "k": 6,
+     "en": "“I did not sufficiently explain myself, father. I should certainly have considered the thing perfectly impracticable, if I had not known, from what I have seen of your fathers, that they are capable of doing with ease what is impossible to other men. This led me to anticipate that they must have discovered some method for meeting the difficulty—a method which I admire even before knowing it, and which I pray you to explain to me.”"
+    },
+    {
+     "n": 93,
+     "k": 7,
+     "en": "“Since that is your view of the matter,” replied the monk, “I cannot refuse you. Know, then, that this marvellous principle is our grand method of directing the intention—the importance of which, in our moral system, is such, that I might almost venture to compare it with the doctrine of probability. You have had some glimpses of it in passing, from certain maxims which I mentioned to you. For example, when I was showing you how servants might execute certain troublesome jobs with a safe conscience, did you not remark that it was simply by diverting their intention from the evil to which they were accessary, to the profit which they might reap from the transaction? Now that is what we call directing the intention. You saw, too, that were it not for a similar divergence of the mind, those who give money for benefices might be downright simoniacs. But I will now show you this grand method in all its glory, as it applies to the subject of homicide—a crime which it justifies in a thousand instances; in order that, from this startling result, you may form an idea of all that it is calculated to effect.”"
+    },
+    {
+     "n": 94,
+     "k": 8,
+     "en": "“I foresee already,” said I, “that, according to this mode, everything will be permitted; it will stick at nothing.”"
+    },
+    {
+     "n": 95,
+     "k": 9,
+     "en": "“You always fly from the one extreme to the other,” replied the monk: “prithee avoid that habit. For just to show you that we are far from permitting everything, let me tell you that we never suffer such a thing as a formal intention to sin, with the sole design of sinning; and if any person whatever should persist in having no other end but evil in the evil that he does, we break with him at once: such conduct is diabolical. This holds true, without exception of age, sex, or rank. But when the person is not of such a wretched disposition as this, we try to put in practice our method of directing the intention, which simply consists in his proposing to himself, as the end of his actions, some allowable object. Not that we do not endeavor, as far as we can, to dissuade men from doing things forbidden; but when we cannot prevent the action, we at least purify the motive, and thus correct the viciousness of the mean by the goodness of the end. Such is the way in which our fathers have contrived to permit those acts of violence to which men usually resort in vindication of their honor. They have no more to do than to turn off their intention from the desire of vengeance, which is criminal, and direct it to a desire to defend their honor, which, according to us, is quite warrantable. And in this way our doctors discharge all their duty towards God and towards man. By permitting the action, they gratify the world; and by purifying the intention, they give satisfaction to the Gospel. This is a secret, sir, which was entirely unknown to the ancients; the world is indebted for the discovery entirely to our doctors. You understand it now, I hope?”"
+    },
+    {
+     "n": 96,
+     "k": 10,
+     "en": "“Perfectly well,” was my reply. “To men you grant the outward material effect of the action; and to God you give the inward and spiritual movement of the intention; and by this equitable partition, you form an alliance between the laws of God and the laws of men. But, my dear sir, to be frank with you, I can hardly trust your premises, and I suspect that your authors will tell another tale.”"
+    },
+    {
+     "n": 97,
+     "k": 11,
+     "en": "“You do me injustice,” rejoined the monk; “I advance nothing but what I am ready to prove, and that by such a rich array of passages, that altogether their number, their authority, and their reasonings, will fill you with admiration. To show you, for example, the alliance which our fathers have formed between the maxims of the Gospel and those of the world, by thus regulating the intention, let me refer you to Reginald: ‘Private persons are forbidden to avenge themselves; for St. Paul says to the Romans (ch. 12th), ‘Recompense to no man evil for evil;’ and Ecclesiasticus says (ch. 28th), ‘He that taketh vengeance shall draw on himself the vengeance of God, and his sins will not be forgotten.’ Besides all that is said in the Gospel about forgiving offences, as in the 6th and 18th chapters of St. Matthew.’”"
+    },
+    {
+     "n": 98,
+     "k": 12,
+     "en": "“Well, father, if after that he says anything contrary to the Scripture, it will not be from lack of scriptural knowledge, at any rate. Pray, how does he conclude?”"
+    },
+    {
+     "n": 99,
+     "k": 13,
+     "en": "“You shall hear,” he said. “From all this it appears that a military man may demand satisfaction on the spot from the person who has injured him—not, indeed, with the intention of rendering evil for evil, but with that of preserving his honor—‘non ut malum pro malo reddat, sed ut conservet honorem.’ See you how carefully they guard against the intention of rendering evil for evil, because the Scripture condemns it? This is what they will tolerate on no account. Thus Lessius observes, that ‘if a man has received a blow on the face, he must on no account have an intention to avenge himself; but he may lawfully have an intention to avert infamy, and may, with that view, repel the insult immediately, even at the point of the sword—etiam cum gladio!’ So far are we from permitting any one to cherish the design of taking vengeance on his enemies, that our fathers will not allow any even to wish their death—by a movement of hatred. ‘If your enemy is disposed to injure you,’ says Escobar, ‘you have no right to wish his death, by a movement of hatred; though you may, with a view to save yourself from harm.’ So legitimate, indeed, is this wish, with such an intention, that our great Hurtado de Mendoza says, that ‘we may pray God to visit with speedy death those who are bent on persecuting us, if there is no other way of escaping from it.’”"
+    },
+    {
+     "n": 100,
+     "k": 14,
+     "en": "“May it please your reverence,” said I, “the Church has forgotten to insert a petition to that effect among her prayers.”"
+    },
+    {
+     "n": 101,
+     "k": 15,
+     "en": "“They have not put in everything into the prayers that one may lawfully ask of God,” answered the monk. “Besides, in the present case the thing was impossible, for this same opinion is of more recent standing than the Breviary. You are not a good chronologist, friend. But, not to wander from the point, let me request your attention to the following passage, cited by Diana from Gaspar Hurtado, one of Escobar’s four-and-twenty fathers: ‘An incumbent may, without any mortal sin, desire the decease of a life-renter on his benefice, and a son that of his father, and rejoice when it happens; provided always it is for the sake of the profit that is to accrue from the event, and not from personal aversion.’”"
+    },
+    {
+     "n": 102,
+     "k": 16,
+     "en": "“Good!” cried I. “That is certainly a very happy hit; and I can easily see that the doctrine admits of a wide application. But yet there are certain cases, the solution of which, though of great importance for gentlemen, might present still greater difficulties.”"
+    },
+    {
+     "n": 103,
+     "k": 17,
+     "en": "“Propose them, if you please, that we may see,” said the monk."
+    },
+    {
+     "n": 104,
+     "k": 18,
+     "en": "“Show me, with all your directing of the intention,” returned I, “that it is allowable to fight a duel.”"
+    },
+    {
+     "n": 105,
+     "k": 19,
+     "en": "“Our great Hurtado de Mendoza,” said the father, “will satisfy you on that point in a twinkling. ‘If a gentleman,’ says he, in a passage cited by Diana, ‘who is challenged to fight a duel, is well known to have no religion, and if the vices to which he is openly and unscrupulously addicted are such as would lead people to conclude, in the event of his refusing to fight, that he is actuated, not by the fear of God, but by cowardice, and induce them to say of him that he was a hen, and not a man—gallina, et non vir; in that case he may, to save his honor, appear at the appointed spot—not, indeed, with the express intention of fighting a duel, but merely with that of defending himself, should the person who challenged him come there unjustly to attack him. His action in this case, viewed by itself, will be perfectly indifferent; for what moral evil is there in one stepping into a field, taking a stroll in expectation of meeting a person, and defending one’s self in the event of being attacked? And thus the gentleman is guilty of no sin whatever; for in fact it cannot be called accepting a challenge at all, his intention being directed to other circumstances, and the acceptance of a challenge consisting in an express intention to fight, which we are supposing the gentleman never had.’”"
+    },
+    {
+     "n": 106,
+     "k": 20,
+     "en": "“You have not kept your word with me, sir,” said I. “This is not, properly speaking, to permit duelling; on the contrary, the casuist is so persuaded that this practice is forbidden, that, in licensing the action in question, he carefully avoids calling it a duel.”"
+    },
+    {
+     "n": 107,
+     "k": 21,
+     "en": "“Ah!” cried the monk, “you begin to get knowing on my hand, I am glad to see. I might reply, that the author I have quoted grants all that duellists are disposed to ask. But since you must have a categorical answer, I shall allow our Father Layman to give it for me. He permits duelling in so many words, provided that, in accepting the challenge, the person directs his intention solely to the preservation of his honor or his property: ‘If a soldier or a courtier is in such a predicament that he must lose either his honor or his fortune unless he accepts a challenge, I see nothing to hinder him from doing so in self-defence.’ The same thing is said by Peter Hurtado, as quoted by our famous Escobar; his words are: ‘One may fight a duel even to defend one’s property, should that be necessary; because every man has a right to defend his property, though at the expense of his enemy’s life!’”"
+    },
+    {
+     "n": 108,
+     "k": 22,
+     "en": "I was struck, on hearing these passages, with the reflection that while the piety of the king appears in his exerting all his power to prohibit and abolish the practice of duelling in the State, the piety of the Jesuits is shown in their employing all their ingenuity to tolerate and sanction it in the Church. But the good father was in such an excellent key for talking, that it would have been cruel to have interrupted him; so he went on with his discourse."
+    },
+    {
+     "n": 109,
+     "k": 23,
+     "en": "“In short,” said he, “Sanchez (mark, now, what great names I am quoting to you!) Sanchez, sir, goes a step further; for he shows how, simply by managing the intention rightly, a person may not only receive a challenge, but give one. And our Escobar follows him.”"
+    },
+    {
+     "n": 110,
+     "k": 24,
+     "en": "“Prove that, father,” said I, “and I shall give up the point: but I will not believe that he has written it, unless I see it in print.”"
+    },
+    {
+     "n": 111,
+     "k": 25,
+     "en": "“Read it yourself, then,” he replied: and, to be sure, I read the following extract from the Moral Theology of Sanchez: “It is perfectly reasonable to hold that a man may fight a duel to save his life, his honor, or any considerable portion of his property, when it is apparent that there is a design to deprive him of these unjustly, by law-suits and chicanery, and when there is no other way of preserving them. Navarre justly observes, that in such cases, it is lawful either to accept or to send a challenge—licet acceptare et offerre duellum. The same author adds, that there is nothing to prevent one from despatching one’s adversary in a private way. Indeed, in the circumstances referred to, it is advisable to avoid employing the method of the duel, if it is possible to settle the affair by privately killing our enemy; for, by this means, we escape at once from exposing our life in the combat, and from participating in the sin which our opponent would have committed by fighting the duel!”"
+    },
+    {
+     "n": 112,
+     "k": 26,
+     "en": "“A most pious assassination!” said I. “Still, however, pious though it be, it is assassination, if a man is permitted to kill his enemy in a treacherous manner.”"
+    },
+    {
+     "n": 113,
+     "k": 27,
+     "en": "“Did I say that he might kill him treacherously?” cried the monk. “God forbid! I said he might kill him privately, and you conclude that he may kill him treacherously, as if that were the same thing! Attend, sir, to Escobar’s definition before allowing yourself to speak again on this subject: ‘We call it killing in treachery, when the person who is slain had no reason to suspect such a fate. He, therefore, that slays his enemy cannot be said to kill him in treachery, even although the blow should be given insidiously and behind his back—licet per insidias aut a tergo percutiat.’ And again: ‘He that kills his enemy, with whom he was reconciled under a promise of never again attempting his life, cannot be absolutely said to kill in treachery, unless there was between them all the stricter friendship—arctior amicitia.’ You see now, you do not even understand what the terms signify, and yet you pretend to talk like a doctor.”"
+    },
+    {
+     "n": 114,
+     "k": 28,
+     "en": "“I grant you this is something quite new to me,” I replied; “and I should gather from that definition that few, if any, were ever killed in treachery; for people seldom take it into their heads to assassinate any but their enemies. Be this as it may, however, it seems that, according to Sanchez, a man may freely slay (I do not say treacherously, but only insidiously, and behind his back) a calumniator, for example, who prosecutes us at law?”"
+    },
+    {
+     "n": 115,
+     "k": 29,
+     "en": "“Certainly he may,” returned the monk, “always, however, in the way of giving a right direction to the intention: you constantly forget the main point. Molina supports the same doctrine; and what is more, our learned brother Reginald maintains that we may despatch the false witnesses whom he summons against us. And, to crown the whole, according to our great and famous fathers Tanner and Emanuel Sa, it is lawful to kill both the false witnesses and the judge himself, if he has had any collusion with them. Here are Tanner’s very words: ‘Sotus and Lessius think that it is not lawful to kill the false witnesses and the magistrate who conspire together to put an innocent person to death; but Emanuel Sa and other authors with good reason impugn that sentiment, at least so far as the conscience is concerned.’ And he goes on to show that it is quite lawful to kill both the witnesses and the judge.”"
+    },
+    {
+     "n": 116,
+     "k": 30,
+     "en": "“Well, father,” said I, “I think I now understand pretty well your principle regarding the direction of the intention; but I should like to know something of its consequences, and all the cases in which this method of yours arms a man with the power of life and death. Let us go over them again, for fear of mistake, for equivocation here might be attended with dangerous results. Killing is a matter which requires to be well-timed, and to be backed with a good probable opinion. You have assured me, then, that by giving a proper turn to the intention, it is lawful, according to your fathers, for the preservation of one’s honor, or even property, to accept a challenge to a duel, to give one sometimes, to kill in a private way a false accuser, and his witnesses along with him, and even the judge who has been bribed to favor them; and you have also told me that he who has got a blow, may, without avenging himself, retaliate with the sword. But you have not told me, father, to what length he may go.”"
+    },
+    {
+     "n": 117,
+     "k": 31,
+     "en": "“He can hardly mistake there,” replied the father, “for he may go all the length of killing his man. This is satisfactorily proved by the learned Henriquez, and others of our fathers quoted by Escobar, as follows: ‘It is perfectly right to kill a person who has given us a box on the ear, although he should run away, provided it is not done through hatred or revenge, and there is no danger of giving occasion thereby to murders of a gross kind and hurtful to society. And the reason is, that it is as lawful to pursue the thief that has stolen our honor, as him that has run away with our property. For, although your honor cannot be said to be in the hands of your enemy in the same sense as your goods and chattels are in the hands of the thief, still it may be recovered in the same way—by showing proofs of greatness and authority, and thus acquiring the esteem of men. And, in point of fact, is it not certain that the man who has received a buffet on the ear is held to be under disgrace, until he has wiped off the insult with the blood of his enemy?’”"
+    },
+    {
+     "n": 118,
+     "k": 32,
+     "en": "I was so shocked on hearing this, that it was with great difficulty I could contain myself; but, in my anxiety to hear the rest, I allowed him to proceed."
+    },
+    {
+     "n": 119,
+     "k": 33,
+     "en": "“Nay,” he continued, “it is allowable to prevent a buffet, by killing him that meant to give it, if there be no other way to escape the insult. This opinion is quite common with our fathers. For example, Azor, one of the four-and-twenty elders, proposing the question, ‘Is it lawful for a man of honor to kill another who threatens to give him a slap on the face, or strike him with a stick?’ replies, ‘Some say he may not; alleging that the life of our neighbor is more precious than our honor, and that it would be an act of cruelty to kill a man merely to avoid a blow. Others, however, think that it is allowable; and I certainly consider it probable, when there is no other way of warding off the insult; for, otherwise, the honor of the innocent would be constantly exposed to the malice of the insolent.’ The same opinion is given by our great Filiutius; by Father Hereau, in his Treatise on Homicide; by Hurtado de Mendoza, in his Disputations; by Becan, in his Summary; by our Fathers Flahaut and Lecourt, in those writings which the university, in their third petition, quoted at length, in order to bring them into disgrace (though in this they failed); and by Escobar. In short, this opinion is so general, that Lessius lays it down as a point which no casuist has contested; he quotes a great many that uphold, and none that deny it; and particularly Peter Navarre, who, speaking of affronts in general (and there is none more provoking than a box on the ear), declares that ‘by the universal consent of the casuists, it is lawful to kill the calumniator, if there be no other way of averting the affront—ex sententia omnium, licet contumeliosum occidere, si aliter ea injuria arceri nequit.’ Do you wish any more authorities?” asked the monk."
+    },
+    {
+     "n": 120,
+     "k": 34,
+     "en": "I declared I was much obliged to him; I had heard rather more than enough of them already. But just to see how far this damnable doctrine would go, I said, “But, father, may not one be allowed to kill for something still less? Might not a person so direct his intention as lawfully to kill another for telling a lie, for example?”"
+    },
+    {
+     "n": 121,
+     "k": 35,
+     "en": "“He may,” returned the monk; “and according to Father Baldelle, quoted by Escobar, ‘you may lawfully take the life of another for saying, You have told a lie; if there is no other way of shutting his mouth.’ The same thing may be done in the case of slanders. Our Fathers Lessius and Hereau agree in the following sentiments: ‘If you attempt to ruin my character by telling stories against me in the presence of men of honor, and I have no other way of preventing this than by putting you to death, may I be permitted to do so? According to the modern authors, I may, and that even though I have been really guilty of the crime which you divulge, provided it is a secret one, which you could not establish by legal evidence. And I prove it thus: If you mean to rob me of my honor by giving me a box on the ear, I may prevent it by force of arms; and the same mode of defence is lawful when you would do me the same injury with the tongue. Besides, we may lawfully obviate affronts, and therefore slanders. In fine, honor is dearer than life; and as it is lawful to kill in defence of life, it must be so to kill in defence of honor.’ There, you see, are arguments in due form; this is demonstration, sir—not mere discussion. And, to conclude, this great man Lessius shows, in the same place, that it is lawful to kill even for a simple gesture, or a sign of contempt. ‘A man’s honor,’ he remarks, ‘may be attacked or filched away in various ways—in all which vindication appears very reasonable; as, for instance, when one offers to strike us with a stick, or give us a slap on the face, or affront us either by words or signs—sive per signa.’”"
+    },
+    {
+     "n": 122,
+     "k": 36,
+     "en": "“Well, father,” said I, “it must be owned that you have made every possible provision to secure the safety of reputation; but it strikes me that human life is greatly in danger, if any one may be conscientiously put to death simply for a defamatory speech or a saucy gesture.”"
+    },
+    {
+     "n": 123,
+     "k": 37,
+     "en": "“That is true,” he replied; “but as our fathers are very circumspect, they have thought it proper to forbid putting this doctrine into practice on such trifling occasions. They say, at least, ‘that it ought hardly to be reduced to practice—practicè vix probari potest.’ And they have a good reason for that, as you shall see.”"
+    },
+    {
+     "n": 124,
+     "k": 38,
+     "en": "“Oh! I know what it will be,” interrupted I; “because the law of God forbids us to kill, of course.”"
+    },
+    {
+     "n": 125,
+     "k": 39,
+     "en": "“They do not exactly take that ground,” said the father; “as a matter of conscience, and viewing the thing abstractly, they hold it allowable.”"
+    },
+    {
+     "n": 126,
+     "k": 40,
+     "en": "“And why, then, do they forbid it?”"
+    },
+    {
+     "n": 127,
+     "k": 41,
+     "en": "“I shall tell you that, sir. It is because, were we to kill all the defamers among us, we should very shortly depopulate the country. ‘Although,’ says Reginald, ‘the opinion that we may kill a man for calumny is not without its probability in theory, the contrary one ought to be followed in practice; for, in our mode of defending ourselves, we should always avoid doing injury to the commonwealth; and it is evident that by killing people in this way there would be too many murders.’ ‘We should be on our guard,’ says Lessius, ‘lest the practice of this maxim prove hurtful to the State; for in this case it ought not to be permitted—tunc enim non est permittendus.’”"
+    },
+    {
+     "n": 128,
+     "k": 42,
+     "en": "“What, father! is it forbidden only as a point of policy, and not of religion? Few people, I am afraid, will pay any regard to such a prohibition, particularly when in a passion. Very probably they might think they were doing no harm to the State, by ridding it of an unworthy member.”"
+    },
+    {
+     "n": 129,
+     "k": 43,
+     "en": "“And accordingly,” replied the monk, “our Filiutius has fortified that argument with another, which is of no slender importance, namely, ‘that for killing people after this manner, one might be punished in a court of justice.’”"
+    },
+    {
+     "n": 130,
+     "k": 44,
+     "en": "“There now, father; I told you before, that you will never be able to do anything worth the while, unless you get the magistrates to go along with you.”"
+    },
+    {
+     "n": 131,
+     "k": 45,
+     "en": "“The magistrates,” said the father, “as they do not penetrate into the conscience, judge merely of the outside of the action, while we look principally to the intention; and hence it occasionally happens that our maxims are a little different from theirs.”"
+    },
+    {
+     "n": 132,
+     "k": 46,
+     "en": "“Be that as it may, father; from yours, at least, one thing may be fairly inferred—that, by taking care not to injure the commonwealth, we may kill defamers with a safe conscience, provided we can do it with a sound skin. But, sir, after having seen so well to the protection of honor, have you done nothing for property? I am aware it is of inferior importance, but that does not signify; I should think one might direct one’s intention to kill for its preservation also.”"
+    },
+    {
+     "n": 133,
+     "k": 47,
+     "en": "“Yes,” replied the monk; “and I gave you a hint to that effect already, which may have suggested the idea to you. All our casuists agree in that opinion; and they even extend the permission to those cases ‘where no further violence is apprehended from those that steal our property; as, for example, where the thief runs away.’ Azor, one of our Society, proves that point.”"
+    },
+    {
+     "n": 134,
+     "k": 48,
+     "en": "“But, sir, how much must the article be worth, to justify our proceeding to that extremity?”"
+    },
+    {
+     "n": 135,
+     "k": 49,
+     "en": "“According to Reginald and Tanner, ‘the article must be of great value in the estimation of a judicious man.’ And so think Layman and Filiutius.”"
+    },
+    {
+     "n": 136,
+     "k": 50,
+     "en": "“But, father, that is saying nothing to the purpose; where am I to find ‘a judicious man’ (a rare person to meet with at any time), in order to make this estimation? Why do they not settle upon an exact sum at once?”"
+    },
+    {
+     "n": 137,
+     "k": 51,
+     "en": "“Ay, indeed!” retorted the monk; “and was it so easy, think you, to adjust the comparative value between the life of a man, and a Christian man, too, and money? It is here I would have you feel the need of our casuists. Show me any of your ancient fathers who will tell for how much money we may be allowed to kill a man. What will they say, but ‘Non occides—Thou shalt not kill?’”"
+    },
+    {
+     "n": 138,
+     "k": 52,
+     "en": "“And who, then, has ventured to fix that sum?” I inquired."
+    },
+    {
+     "n": 139,
+     "k": 53,
+     "en": "“Our great and incomparable Molina,” he replied—“the glory of our Society—who has, in his inimitable wisdom, estimated the life of a man ‘at six or seven ducats; for which sum he assures us it is warrantable to kill a thief, even though he should run off;’ and he adds, ‘that he would not venture to condemn that man as guilty of any sin who should kill another for taking away an article worth a crown, or even less—unius aurei, vel minoris adhuc valoris;’ which has led Escobar to lay it down as a general rule, ‘that a man may be killed quite regularly, according to Molina, for the value of a crown-piece.’”"
+    },
+    {
+     "n": 140,
+     "k": 54,
+     "en": "“O father!” cried I, “where can Molina have got all this wisdom to enable him to determine a matter of such importance, without any aid from Scripture, the councils, or the fathers? It is quite evident that he has obtained an illumination peculiar to himself, and is far beyond St. Augustine in the matter of homicide, as well as of grace. Well, now, I suppose I may consider myself master of this chapter of morals; and I see perfectly that, with the exception of ecclesiastics, nobody need refrain from killing those who injure them in their property or reputation.”"
+    },
+    {
+     "n": 141,
+     "k": 55,
+     "en": "“What say you?” exclaimed the monk. “Do you then suppose that it would be reasonable that those who ought of all men to be most respected, should alone be exposed to the insolence of the wicked? Our fathers have provided against that disorder; for Tanner declares that ‘Churchmen, and even monks, are permitted to kill, for the purpose of defending not only their lives, but their property, and that of their community.’ Molina, Escobar, Becan, Reginald, Layman, Lessius, and others, hold the same language. Nay, according to our celebrated Father Lamy, priests and monks may lawfully prevent those who would injure them by calumnies from carrying their ill designs into effect, by putting them to death. Care, however, must be always taken to direct the intention properly. His words are: ‘An ecclesiastic or a monk may warrantably kill a defamer who threatens to publish the scandalous crimes of his community, or his own crimes, when there is no other way of stopping him; if, for instance, he is prepared to circulate his defamations unless promptly despatched. For, in these circumstances, as the monk would be allowed to kill one who threatened to take his life, he is also warranted to kill him who would deprive him of his reputation or his property, in the same way as the men of the world.’”"
+    },
+    {
+     "n": 142,
+     "k": 56,
+     "en": "“I was not aware of that,” said I; “in fact, I have been accustomed simply enough to believe the very reverse, without reflecting on the matter, in consequence of having heard that the Church had such an abhorrence of bloodshed as not even to permit ecclesiastical judges to attend in criminal cases.”"
+    },
+    {
+     "n": 143,
+     "k": 57,
+     "en": "“Never mind that,” he replied; “our Father Lamy has completely proved the doctrine I have laid down, although, with a humility which sits uncommonly well on so great a man, he submits it to the judgment of his judicious readers. Caramuel, too, our famous champion, quoting it in his Fundamental Theology, p. 543, thinks it so certain, that he declares the contrary opinion to be destitute of probability, and draws some admirable conclusions from it, such as the following, which he calls ‘the conclusion of conclusions—conclusionum conclusio:’ ‘That a priest not only may kill a slanderer, but there are certain circumstances in which it may be his duty to do so—etiam aliquando debet occidere.’ He examines a great many new questions on this principle, such as the following, for instance: ‘May the Jesuits kill the Jansenists?’”"
+    },
+    {
+     "n": 144,
+     "k": 58,
+     "en": "“A curious point of divinity that, father!” cried I. “I hold the Jansenists to be as good as dead men, according to Father Lamy’s doctrine.”"
+    },
+    {
+     "n": 145,
+     "k": 59,
+     "en": "“There now, you are in the wrong,” said the monk: “Caramuel infers the very reverse from the same principles.”"
+    },
+    {
+     "n": 146,
+     "k": 60,
+     "en": "“And how so, father?”"
+    },
+    {
+     "n": 147,
+     "k": 61,
+     "en": "“Because,” he replied, “it is not in the power of the Jansenists to injure our reputation. ‘The Jansenists,’ says he, ‘call the Jesuits Pelagians; may they not be killed for that? No; inasmuch as the Jansenists can no more obscure the glory of the Society than an owl can eclipse that of the sun; on the contrary, they have, though against their intention, enhanced it—occidi non possunt, quia nocere non potuerunt.’”"
+    },
+    {
+     "n": 148,
+     "k": 62,
+     "en": "“Ha, father! do the lives of the Jansenists, then, depend on the contingency of their injuring your reputation? If so, I reckon them far from being in a safe position; for supposing it should be thought in the slightest degree probable that they might do you some mischief, why, they are killable at once! You have only to draw up a syllogism in due form, and, with a direction of the intention, you may despatch your man at once with a safe conscience. Thrice happy must those hot spirits be who cannot bear with injuries, to be instructed in this doctrine! But woe to the poor people who have offended them! Indeed, father, it would be better to have to do with persons who have no religion at all, than with those who have been taught on this system. For, after all, the intention of the wounder conveys no comfort to the wounded. The poor man sees nothing of that secret direction of which you speak; he is only sensible of the direction of the blow that is dealt him. And I am by no means sure but a person would feel much less sorry to see himself brutally killed by an infuriated villain, than to find himself conscientiously stilettoed by a devotee. To be plain with you, father, I am somewhat staggered at all this; and these questions of Father Lamy and Caramuel do not please me at all.”"
+    },
+    {
+     "n": 149,
+     "k": 63,
+     "en": "“How so?” cried the monk. “Are you a Jansenist?”"
+    },
+    {
+     "n": 150,
+     "k": 64,
+     "en": "“I have another reason for it,” I replied. “You must know I am in the habit of writing from time to time, to a friend of mine in the country, all that I can learn of the maxims of your doctors. Now, although I do no more than simply report and faithfully quote their own words, yet I am apprehensive lest my letter should fall into the hands of some stray genius, who may take into his head that I have done you injury, and may draw some mischievous conclusion from your premises.”"
+    },
+    {
+     "n": 151,
+     "k": 65,
+     "en": "“Away!” cried the monk; “no fear of danger from that quarter, I’ll give you my word for it. Know that what our fathers have themselves printed, with the approbation of our superiors, it cannot be wrong to read nor dangerous to publish.”"
+    },
+    {
+     "n": 152,
+     "k": 66,
+     "en": "I write you, therefore, on the faith of this worthy father’s word of honor. But, in the mean time, I must stop for want of paper—not of passages; for I have got as many more in reserve, and good ones too, as would require volumes to contain them.—I am, &c."
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "titel": "Letter X — Devotion made easy",
+   "blurb": "Palliatives applied to the sacrament of penance: maxims on confession, satisfaction, absolution, proximate occasions of sin, and the love of God.",
+   "zk": "Prov. X",
+   "units": [
+    {
+     "n": 153,
+     "k": 1,
+     "en": "PARIS, August 2, 1656."
+    },
+    {
+     "n": 154,
+     "k": 2,
+     "en": "SIR,—I have not come yet to the policy of the Society, but shall first introduce you to one of its leading principles. I refer to the palliatives which they have applied to confession, and which are unquestionably the best of all the schemes they have fallen upon to “attract all and repel none.” It is absolutely necessary to know something of this before going any further; and, accordingly, the monk judged it expedient to give me some instructions on the point, nearly as follows:—"
+    },
+    {
+     "n": 155,
+     "k": 3,
+     "en": "“From what I have already stated,” he observed, “you may judge of the success with which our doctors have labored to discover, in their wisdom, that a great many things, formerly regarded as forbidden, are innocent and allowable; but as there are some sins for which one can find no excuse, and for which there is no remedy but confession, it became necessary to alleviate, by the methods I am now going to mention, the difficulties attending that practice. Thus, having shown you, in our previous conversations, how we relieve people from troublesome scruples of conscience, by showing them that what they believed to be sinful was indeed quite innocent, I proceed now to illustrate our convenient plan for expiating what is really sinful, which is effected by making confession as easy a process as it was formerly a painful one.”"
+    },
+    {
+     "n": 156,
+     "k": 4,
+     "en": "“And how do you manage that, father?”"
+    },
+    {
+     "n": 157,
+     "k": 5,
+     "en": "“Why,” said he, “it is by those admirable subtleties which are peculiar to our Company, and have been styled by our fathers in Flanders, in “The Image of the First Century,” ‘the pious finesse, the holy artifice of devotion—piam et religiosam calliditatem, et pietatis solertiam.’ By the aid of these inventions, as they remark in the same place, ‘crimes may be expiated now-a-days alacrius—with more zeal and alacrity than they were committed in former days, and a great many people may be washed from their stains almost as cleverly as they contracted them—plurimi vix citius maculas contrahunt quam eluunt.’”"
+    },
+    {
+     "n": 158,
+     "k": 6,
+     "en": "“Pray, then, father, do teach me some of these most salutary lessons of finesse.”"
+    },
+    {
+     "n": 159,
+     "k": 7,
+     "en": "“We have a good number of them,” answered the monk; “for there are a great many irksome things about confession, and for each of these we have devised a palliative. The chief difficulties connected with this ordinance are the shame of confessing certain sins, the trouble of specifying the circumstances of others, the penance exacted for them, the resolution against relapsing into them, the avoidance of the proximate occasions of sins, and the regret for having committed them. I hope to convince you to-day, that it is now possible to get over all this with hardly any trouble at all; such is the care we have taken to allay the bitterness and nauseousness of this very necessary medicine. For, to begin with the difficulty of confessing certain sins, you are aware it is of importance often to keep in the good graces of one’s confessor; now, must it not be extremely convenient to be permitted, as you are by our doctors, particularly Escobar and Suarez, ‘to have two confessors, one for the mortal sins and another for the venial, in order to maintain a fair character with your ordinary confessor—uti bonam famam apud ordinarium tueatur—provided you do not take occasion from thence to indulge in mortal sin?’ This is followed by another ingenious contrivance for confessing a sin, even to the ordinary confessor, without his perceiving that it was committed since the last confession, which is, ‘to make a general confession, and huddle this last sin in a lump among the rest which we confess.’ And I am sure you will own that the following decision of Father Bauny goes far to alleviate the shame which one must feel in confessing his relapses, namely, ‘that, except in certain cases, which rarely occur, the confessor is not entitled to ask his penitent if the sin of which he accuses himself is an habitual one, nor is the latter obliged to answer such a question; because the confessor has no right to subject his penitent to the shame of disclosing his frequent relapses.’”"
+    },
+    {
+     "n": 160,
+     "k": 8,
+     "en": "“Indeed, father! I might as well say that a physician has no right to ask his patient if it is long since he had the fever. Do not sins assume quite a different aspect according to circumstances? and should it not be the object of a genuine penitent to discover the whole state of his conscience to his confessor, with the same sincerity and openheartedness as if he were speaking to Jesus Christ himself, whose place the priest occupies? If so, how far is he from realizing such a disposition, who, by concealing the frequency of his relapses, conceals the aggravations of his offence!”"
+    },
+    {
+     "n": 161,
+     "k": 9,
+     "en": "I saw that this puzzled the worthy monk, for he attempted to elude rather than resolve the difficulty, by turning my attention to another of their rules, which only goes to establish a fresh abuse, instead of justifying in the least the decision of Father Bauny; a decision which, in my opinion, is one of the most pernicious of their maxims, and calculated to encourage profligate men to continue in their evil habits."
+    },
+    {
+     "n": 162,
+     "k": 10,
+     "en": "“I grant you,” replied the father, “that habit aggravates the malignity of a sin, but it does not alter its nature; and that is the reason why we do not insist on people confessing it, according to the rule laid down by our fathers, and quoted by Escobar, ‘that one is only obliged to confess the circumstances that alter the species of the sin, and not those that aggravate it.’ Proceeding on this rule, Father Granados says, ‘that if one has eaten flesh in Lent, all he needs to do is to confess that he has broken the fast, without specifying whether it was by eating flesh, or by taking two fish meals.’ And, according to Reginald, ‘a sorcerer who has employed the diabolical art is not obliged to reveal that circumstance; it is enough to say that he has dealt in magic, without expressing whether it was by palmistry or by a paction with the devil.’ Fagundez, again, has decided that ‘rape is not a circumstance which one is bound to reveal, if the woman give her consent.’ All this is quoted by Escobar, with many other very curious decisions as to these circumstances, which you may consult at your leisure.”"
+    },
+    {
+     "n": 163,
+     "k": 11,
+     "en": "“These ‘artifices of devotion’ are vastly convenient in their way,” I observed."
+    },
+    {
+     "n": 164,
+     "k": 12,
+     "en": "“And yet,” said the father, “notwithstanding all that, they would go for nothing, sir, unless we had proceeded to mollify penance, which, more than anything else, deters people from confession. Now, however, the most squeamish have nothing to dread from it, after what we have advanced in our theses of the College of Clermont, where we hold that ‘if the confessor imposes a suitable penance, and the penitent be unwilling to submit himself to it, the latter may go home, waiving both the penance and the absolution.’ Or, as Escobar says, in giving the Practice of our Society, ‘if the penitent declare his willingness to have his penance remitted to the next world, and to suffer in purgatory all the pains due to him, the confessor may, for the honor of the sacrament, impose a very light penance on him, particularly if he has reason to believe that his penitent would object to a heavier one.’”"
+    },
+    {
+     "n": 165,
+     "k": 13,
+     "en": "“I really think,” said I, “that, if that is the case, we ought no longer to call confession the sacrament of penance.”"
+    },
+    {
+     "n": 166,
+     "k": 14,
+     "en": "“You are wrong,” he replied; “for we always administer something in the way of penance, for the form’s sake.”"
+    },
+    {
+     "n": 167,
+     "k": 15,
+     "en": "“But, father, do you suppose that a man is worthy of receiving absolution, when he will submit to nothing painful to expiate his offences? And, in these circumstances, ought you not to retain rather than remit their sins? Are you not aware of the extent of your ministry, and that you have the power of binding and loosing? Do you imagine that you are at liberty to give absolution indifferently to all who ask it, and without ascertaining beforehand if Jesus Christ looses in heaven those whom you loose on earth?”"
+    },
+    {
+     "n": 168,
+     "k": 16,
+     "en": "“What!” cried the father, “do you suppose that we do not know that ‘the confessor (as one remarks) ought to sit in judgment on the disposition of his penitent, both because he is bound not to dispense the sacraments to the unworthy, Jesus Christ having enjoined him to be a faithful steward, and not give that which is holy unto dogs; and because he is a judge, and it is the duty of a judge to give righteous judgment, by loosing the worthy and binding the unworthy, and he ought not to absolve those whom Jesus Christ condemns.’”"
+    },
+    {
+     "n": 169,
+     "k": 17,
+     "en": "“Whose words are these, father?”"
+    },
+    {
+     "n": 170,
+     "k": 18,
+     "en": "“They are the words of our father Filiutius,” he replied."
+    },
+    {
+     "n": 171,
+     "k": 19,
+     "en": "“You astonish me,” said I; “I took them to be a quotation from one of the fathers of the Church. At all events, sir, that passage ought to make an impression on the confessors, and render them very circumspect in the dispensation of this sacrament, to ascertain whether the regret of their penitents is sufficient, and whether their promises of future amendment are worthy of credit.”"
+    },
+    {
+     "n": 172,
+     "k": 20,
+     "en": "“That is not such a difficult matter,” replied the father; “Filiutius had more sense than to leave confessors in that dilemma, and accordingly he suggests an easy way of getting out of it, in the words immediately following: ‘The confessor may easily set his mind at rest as to the disposition of his penitent; for, if he fail to give sufficient evidence of sorrow, the confessor has only to ask him if he does not detest the sin in his heart, and if he answers that he does, he is bound to believe it. The same thing may be said of resolutions as to the future, unless the case involves an obligation to restitution, or to avoid some proximate occasion of sin.’”"
+    },
+    {
+     "n": 173,
+     "k": 21,
+     "en": "“As to that passage, father, I can easily believe that it is Filiutius’ own.”"
+    },
+    {
+     "n": 174,
+     "k": 22,
+     "en": "“You are mistaken though,” said the father, “for he has extracted it, word for word, from Suarez.”"
+    },
+    {
+     "n": 175,
+     "k": 23,
+     "en": "“But, father, that last passage from Filiutius overturns what he had laid down in the former. For confessors can no longer be said to sit as judges on the disposition of their penitents, if they are bound to take it simply upon their word, in the absence of all satisfying signs of contrition. Are the professions made on such occasions so infallible, that no other sign is needed? I question much if experience has taught your fathers, that all who make fair promises are remarkable for keeping them; I am mistaken if they have not often found the reverse.”"
+    },
+    {
+     "n": 176,
+     "k": 24,
+     "en": "“No matter,” replied the monk; “confessors are bound to believe them for all that; for Father Bauny, who has probed this question to the bottom, has concluded ‘that at whatever time those who have fallen into frequent relapses, without giving evidence of amendment, present themselves before a confessor, expressing their regret for the past, and a good purpose for the future, he is bound to believe them on their simple averment, although there may be reason to presume that such resolution only came from the teeth outwards. Nay,’ says he, ‘though they should indulge subsequently to greater excess than ever in the same delinquencies, still, in my opinion, they may receive absolution.’ There now! that, I am sure, should silence you.”"
+    },
+    {
+     "n": 177,
+     "k": 25,
+     "en": "“But, father,” said I, “you impose a great hardship, I think, on the confessors, by thus obliging them to believe the very reverse of what they see.”"
+    },
+    {
+     "n": 178,
+     "k": 26,
+     "en": "“You don’t understand it,” returned he; “all that is meant is, that they are obliged to act and absolve as if they believed that their penitents would be true to their engagements, though, in point of fact, they believe no such thing. This is explained, immediately afterwards, by Suarez and Filiutius. After having said that ‘the priest is bound to believe the penitent on his word,’ they add, ‘It is not necessary that the confessor should be convinced that the good resolution of his penitent will be carried into effect, nor even that he should judge it probable; it is enough that he thinks the person has at the time the design in general, though he may very shortly after relapse. Such is the doctrine of all our authors—ita docent omnes autores.’ Will you presume to doubt what has been taught by our authors?”"
+    },
+    {
+     "n": 179,
+     "k": 27,
+     "en": "“But, sir, what then becomes of what Father Petau himself is obliged to own, in the preface to his Public Penance, ‘that the holy fathers, doctors, and councils of the Church agree in holding it as a settled point, that the penance preparatory to the eucharist must be genuine, constant, resolute, and not languid and sluggish, or subject to after-thoughts and relapses?’”"
+    },
+    {
+     "n": 180,
+     "k": 28,
+     "en": "“Don’t you observe,” replied the monk, “that Father Petau is speaking of the ancient Church? But all that is now so little in season, to use a common saying of our doctors, that, according to Father Bauny, the reverse is the only true view of the matter. ‘There are some,’ says he, ‘who maintain that absolution ought to be refused to those who fall frequently into the same sins, more especially if, after being often absolved, they evince no signs of amendment; and others hold the opposite view. But the only true opinion is, that they ought not to be refused absolution; and though they should be nothing the better of all the advice given them, though they should have broken all their promises to lead new lives, and been at no trouble to purify themselves, still it is of no consequence; whatever may be said to the contrary, the true opinion which ought to be followed is, that even in all these cases, they ought to be absolved.’ And again: ‘Absolution ought neither to be denied nor delayed in the case of those who live in habitual sins against the law of God, of nature, and of the Church, although there should be no apparent prospect of future amendment—etsi emendationis futuræ nulla spes appareat.’”"
+    },
+    {
+     "n": 181,
+     "k": 29,
+     "en": "“But, father, this certainty of always getting absolution may induce sinners—”"
+    },
+    {
+     "n": 182,
+     "k": 30,
+     "en": "“I know what you mean,” interrupted the Jesuit: “but listen to Father Bauny, q. 15: ‘Absolution may be given even to him who candidly avows that the hope of being absolved induced him to sin with more freedom than he would otherwise have done.’ And Father Caussin, defending this proposition, says, ‘that were this not true, confession would be interdicted to the greater part of mankind; and the only resource left for poor sinners would be a branch and a rope!’”"
+    },
+    {
+     "n": 183,
+     "k": 31,
+     "en": "“O father, how these maxims of yours will draw people to your confessionals!”"
+    },
+    {
+     "n": 184,
+     "k": 32,
+     "en": "“Yes,” he replied, “you would hardly believe what numbers are in the habit of frequenting them; ‘we are absolutely oppressed and overwhelmed, so to speak, under the crowd of our penitents—penitentium numero obruimur’—as is said in ‘The Image of the First Century.’”"
+    },
+    {
+     "n": 185,
+     "k": 33,
+     "en": "“I could suggest a very simple method,” said I, “to escape from this inconvenient pressure. You have only to oblige sinners to avoid the proximate occasions of sin; that single expedient would afford you relief at once.”"
+    },
+    {
+     "n": 186,
+     "k": 34,
+     "en": "“We have no wish for such a relief,” rejoined the monk; “quite the reverse; for, as is observed in the same book, ‘the great end of our Society is to labor to establish the virtues, to wage war on the vices, and to save a great number of souls.’ Now, as there are very few souls inclined to quit the proximate occasions of sin, we have been obliged to define what a proximate occasion is. ‘That cannot be called a proximate occasion,’ says Escobar, ‘where one sins but rarely, or on a sudden transport—say three or four times a year;’ or, as Father Bauny has it, ‘once or twice in a month.’ Again, asks this author, ‘what is to be done in the case of masters and servants, or cousins, who, living under the same roof, are by this occasion tempted to sin?’”"
+    },
+    {
+     "n": 187,
+     "k": 35,
+     "en": "“They ought to be separated,” said I."
+    },
+    {
+     "n": 188,
+     "k": 36,
+     "en": "“That is what he says, too, ‘if their relapses be very frequent: but if the parties offend rarely, and cannot be separated without trouble and loss, they may, according to Suarez and other authors, be absolved, provided they promise to sin no more, and are truly sorry for what is past.’”"
+    },
+    {
+     "n": 189,
+     "k": 37,
+     "en": "This required no explanation, for he had already informed me with what sort of evidence of contrition the confessor was bound to rest satisfied."
+    },
+    {
+     "n": 190,
+     "k": 38,
+     "en": "“And Father Bauny,” continued the monk, “permits those who are involved in the proximate occasions of sin, ‘to remain as they are, when they cannot avoid them without becoming the common talk of the world, or subjecting themselves to inconvenience.’ ‘A priest,’ he remarks in another work, ‘may and ought to absolve a woman who is guilty of living with a paramour, if she cannot put him away honorably, or has some reason for keeping him—si non potest honeste ejicere, aut habeat aliquam causam retinendi—provided she promises to act more virtuously for the future.’”"
+    },
+    {
+     "n": 191,
+     "k": 39,
+     "en": "“Well, father,” cried I, “you have certainly succeeded in relaxing the obligation of avoiding the occasions of sin to a very comfortable extent, by dispensing with the duty as soon as it becomes inconvenient; but I should think your fathers will at least allow it to be binding when there is no difficulty in the way of its performance?”"
+    },
+    {
+     "n": 192,
+     "k": 40,
+     "en": "“Yes,” said the father, “though even then the rule is not without exceptions. For Father Bauny says, in the same place, ‘that any one may frequent profligate houses, with the view of converting their unfortunate inmates, though the probability should be that he fall into sin, having often experienced before that he has yielded to their fascinations. Some doctors do not approve of this opinion, and hold that no man may voluntarily put his salvation in peril to succor his neighbor; yet I decidedly embrace the opinion which they controvert.’”"
+    },
+    {
+     "n": 193,
+     "k": 41,
+     "en": "“A novel sort of preachers these, father! But where does Father Bauny find any ground for investing them with such a mission?”"
+    },
+    {
+     "n": 194,
+     "k": 42,
+     "en": "“It is upon one of his own principles,” he replied, “which he announces in the same place after Basil Ponce. I mentioned it to you before, and I presume you have not forgotten it. It is, ‘that one may seek an occasion of sin, directly and expressly—primo et per se—to promote the temporal or spiritual good of himself or his neighbor.’”"
+    },
+    {
+     "n": 195,
+     "k": 43,
+     "en": "On hearing these passages, I felt so horrified that I was on the point of breaking out; but, being resolved to hear him to an end, I restrained myself, and merely inquired: “How, father, does this doctrine comport with that of the Gospel, which binds us to ‘pluck out the right eye,’ and ‘cut off the right hand,’ when they ‘offend,’ or prove prejudicial to salvation? And how can you suppose that the man who wilfully indulges in the occasions of sins, sincerely hates sin? Is it not evident, on the contrary, that he has never been properly touched with a sense of it, and that he has not yet experienced that genuine conversion of heart, which makes a man love God as much as he formerly loved the creature?”"
+    },
+    {
+     "n": 196,
+     "k": 44,
+     "en": "“Indeed!” cried he, “do you call that genuine contrition? It seems you do not know that, as Father Pintereau says, ‘all our fathers teach, with one accord, that it is an error, and almost a heresy, to hold that contrition is necessary; or that attrition alone, induced by the sole motive, the fear of the pains of hell, which excludes a disposition to offend, is not sufficient with the sacrament?’”"
+    },
+    {
+     "n": 197,
+     "k": 45,
+     "en": "“What, father! do you mean to say that it is almost an article of faith, that attrition, induced merely by fear of punishment, is sufficient with the sacrament? That idea, I think, is peculiar to your fathers; for those other doctors who hold that attrition is sufficient along with the sacrament, always take care to show that it must be accompanied with some love to God at least. It appears to me, moreover, that even your own authors did not always consider this doctrine of yours so certain. Your Father Suarez, for instance, speaks of it thus: ‘Although it is a probable opinion that attrition is sufficient with the sacrament, yet it is not certain, and it may be false—non est certa, et potest esse falsa. And if it is false, attrition is not sufficient to save a man; and he that dies knowingly in this state, wilfully exposes himself to the grave peril of eternal damnation. For this opinion is neither very ancient nor very common—nec valde antiqua, nec multum communis.’ Sanchez was not more prepared to hold it as infallible, when he said in his Summary, that ‘the sick man and his confessor, who content themselves at the hour of death with attrition and the sacrament, are both chargeable with mortal sin, on account of the great risk of damnation to which the penitent would be exposed, if the opinion that attrition is sufficient with the sacrament should not turn out to be true.’ Comitolus, too, says that ‘we should not be too sure that attrition suffices with the sacrament.’”"
+    },
+    {
+     "n": 198,
+     "k": 46,
+     "en": "Here the worthy father interrupted me. “What!” he cried, “you read our authors then, it seems? That is all very well; but it would be still better were you never to read them without the precaution of having one of us beside you. Do you not see, now, that, from having read them alone, you have concluded, in your simplicity, that these passages bear hard on those who have more lately supported our doctrine of attrition? whereas it might be shown that nothing could set them off to greater advantage. Only think what a triumph it is for our fathers of the present day to have succeeded in disseminating their opinion in such short time, and to such an extent that, with the exception of theologians, nobody almost would ever suppose but that our modern views on this subject had been the uniform belief of the faithful in all ages! So that, in fact, when you have shown, from our fathers themselves, that, a few years ago, ‘this opinion was not certain,’ you have only succeeded in giving our modern authors the whole merit of its establishment!"
+    },
+    {
+     "n": 199,
+     "k": 47,
+     "en": "“Accordingly,” he continued, “our cordial friend Diana, to gratify us, no doubt, has recounted the various steps by which the opinion reached its present position. ‘In former days, the ancient schoolmen maintained that contrition was necessary as soon as one had committed a mortal sin; since then, however, it has been thought that it is not binding except on festival days; afterwards, only when some great calamity threatened the people: others, again, that it ought not to be long delayed at the approach of death. But our fathers, Hurtado and Vasquez, have ably refuted all these opinions, and established that one is not bound to contrition unless he cannot be absolved in any other way, or at the point of death!’ But, to continue the wonderful progress of this doctrine, I might add, what our fathers, Fagundez, Granados, and Escobar, have decided, ‘that contrition is not necessary even at death; because,’ say they, ‘if attrition with the sacrament did not suffice at death, it would follow that attrition would not be sufficient with the sacrament.’ And the learned Hurtado, cited by Diana and Escobar, goes still further; for he asks, ‘Is that sorrow for sin which flows solely from apprehension of its temporal consequences, such as having lost health or money, sufficient? We must distinguish. If the evil is not regarded as sent by the hand of God, such a sorrow does not suffice; but if the evil is viewed as sent by God, as, in fact, all evil, says Diana, except sin, comes from him, that kind of sorrow is sufficient.’ Our Father Lamy holds the same doctrine.”"
+    },
+    {
+     "n": 200,
+     "k": 48,
+     "en": "“You surprise me, father; for I see nothing in all that attrition of which you speak but what is natural; and in this way a sinner may render himself worthy of absolution without supernatural grace at all. Now everybody knows that this is a heresy condemned by the Council.”"
+    },
+    {
+     "n": 201,
+     "k": 49,
+     "en": "“I should have thought with you,” he replied; “and yet it seems this must not be the case, for the fathers of our College of Clermont have maintained (in their Theses of the 23rd May and 6th June 1644) ‘that attrition may be holy and sufficient for the sacrament, although it may not be supernatural:’ and (in that of August 1643) ‘that attrition, though merely natural, is sufficient for the sacrament, provided it is honest.’ I do not see what more could be said on the subject, unless we choose to subjoin an inference, which may be easily drawn from these principles, namely, that contrition, so far from being necessary to the sacrament, is rather prejudicial to it, inasmuch as, by washing away sins of itself, it would leave nothing for the sacrament to do at all. That is, indeed, exactly what the celebrated Jesuit Father Valencia remarks. (Tom. iv., disp. 7, q. 8, p. 4.) ‘Contrition,’ says he, ‘is by no means necessary in order to obtain the principal benefit of the sacrament; on the contrary, it is rather an obstacle in the way of it—imo obstat potius quominus effectus sequatur.’ Nobody could well desire more to be said in commendation of attrition.”"
+    },
+    {
+     "n": 202,
+     "k": 50,
+     "en": "“I believe that, father,” said I; “but you must allow me to tell you my opinion, and to show you to what a dreadful length this doctrine leads. When you say that ‘attrition, induced by the mere dread of punishment,’ is sufficient, with the sacrament, to justify sinners, does it not follow that a person may always expiate his sins in this way, and thus be saved without ever having loved God all his lifetime? Would your fathers venture to hold that?”"
+    },
+    {
+     "n": 203,
+     "k": 51,
+     "en": "“I perceive,” replied the monk, “from the strain of your remarks, that you need some information on the doctrine of our fathers regarding the love of God. This is the last feature of their morality, and the most important of all. You must have learned something of it from the passages about contrition which I have quoted to you. But here are others still more definite on the point of love to God—Don’t interrupt me, now; for it is of importance to notice the connection. Attend to Escobar, who reports the different opinions of our authors, in his ‘Practice of the Love of God according to our Society.’ The question is: ‘When is one obliged to have an actual affection for God?’ Suarez says, it is enough if one loves him before being articulo mortis—at the point of death—without determining the exact time. Vasquez, that it is sufficient even at the very point of death. Others, when one has received baptism. Others, again, when one is bound to exercise contrition. And others, on festival days. But our father, Castro Palao, combats all these opinions, and with good reason—merito. Hurtado de Mendoza insists that we are obliged to love God once a-year; and that we ought to regard it as a great favor that we are not bound to do it oftener. But our Father Coninck thinks that we are bound to it only once in three or four years; Henriquez, once in five years; and Filiutius says that it is probable that we are not strictly bound to it even once in five years. How often, then, do you ask? Why, he refers it to the judgment of the judicious.”"
+    },
+    {
+     "n": 204,
+     "k": 52,
+     "en": "I took no notice of all this badinage, in which the ingenuity of man seems to be sporting, in the height of insolence, with the love of God."
+    },
+    {
+     "n": 205,
+     "k": 53,
+     "en": "“But,” pursued the monk, “our Father Antony Sirmond surpasses all on this point, in his admirable book, ‘The Defence of Virtue,’ where, as he tells the reader, ‘he speaks French in France,’ as follows: ‘St. Thomas says that we are obliged to love God as soon as we come to the use of reason: that is rather too soon! Scotus says, every Sunday: pray, for what reason? Others say, when we are sorely tempted: yes, if there be no other way of escaping the temptation. Scotus says, when we have received a benefit from God: good, in the way of thanking him for it. Others say, at death: rather late! As little do I think it binding at the reception of any sacrament: attrition in such cases is quite enough, along with confession, if convenient. Suarez says that it is binding at some time or another; but at what time?—he leaves you to judge of that for yourself—he does not know; and what that doctor did not know I know not who should know.’ In short, he concludes that we are not strictly bound to more than to keep the other commandments, without any affection for God, and without giving him our hearts, provided that we do not hate him. To prove this is the sole object of his second treatise. You will find it in every page; more especially where he says: ‘God, in commanding us to love him, is satisfied with our obeying him in his other commandments. If God had said, Whatever obedience thou yieldest me, if thy heart is not given to me, I will destroy thee!—would such a motive, think you, be well fitted to promote the end which God must, and only can, have in view? Hence it is said that we shall love God by doing his will, as if we loved him with affection, as if the motive in this case was real charity. If that is really our motive, so much the better; if not, still we are strictly fulfilling the commandment of love, by having its works, so that (such is the goodness of God!) we are commanded, not so much to love him, as not to hate him.’"
+    },
+    {
+     "n": 206,
+     "k": 54,
+     "en": "“Such is the way in which our doctors have discharged men from the ‘painful’ obligation of actually loving God. And this doctrine is so advantageous, that our Fathers Annat, Pintereau, Le Moine, and Antony Sirmond himself, have strenuously defended it when it has been attacked. You have only to consult their answers to the ‘Moral Theology.’ That of Father Pintereau, in particular, will enable you to form some idea of the value of this dispensation, from the price which he tells us that it cost, which is no less than the blood of Jesus Christ. This crowns the whole. It appears, that this dispensation from the ‘painful’ obligation to love God, is the privilege of the Evangelical law, in opposition to the Judaical. ‘It was reasonable,’ he says, ‘that, under the law of grace in the New Testament, God should relieve us from that troublesome and arduous obligation which existed under the law of bondage, to exercise an act of perfect contrition, in order to be justified; and that the place of this should be supplied by the sacraments, instituted in aid of an easier disposition. Otherwise, indeed, Christians, who are the children, would have no greater facility in gaining the good graces of their Father than the Jews, who were the slaves, had in obtaining the mercy of their Lord and Master.’”"
+    },
+    {
+     "n": 207,
+     "k": 55,
+     "en": "“O father!” cried I; “no patience can stand this any longer. It is impossible to listen without horror to the sentiments you have now been sporting.”"
+    },
+    {
+     "n": 208,
+     "k": 56,
+     "en": "“They are not my sentiments,” said the monk."
+    },
+    {
+     "n": 209,
+     "k": 57,
+     "en": "“I grant it, sir,” said I; “but you feel no aversion to them; and, so far from detesting the authors of these maxims, you hold them in esteem. Are you not afraid that your consent may involve you in a participation of their guilt? and are you not aware that St. Paul judges worthy of death, not only the authors of evil things, but also ‘those who have pleasure in them that do them?’ Was it not enough to have permitted men to indulge in so many forbidden things, under the covert of your palliations? Was it necessary to go still further, and hold out a bribe to them to commit even those crimes which you found it impossible to excuse, by offering them an easy and certain absolution; and for this purpose nullifying the power of the priests, and obliging them, more as slaves than as judges, to absolve the most inveterate sinners—without any amendment of life—without any sign of contrition except promises a hundred times broken—without penance ‘unless they choose to accept of it’—and without abandoning the occasions of their vices, ‘if they should thereby be put to any inconvenience?’"
+    },
+    {
+     "n": 210,
+     "k": 58,
+     "en": "“But your doctors have gone even beyond this; and the license which they have assumed to tamper with the most holy rules of Christian conduct amount to a total subversion of the law of God. They violate ‘the great commandment on which hang all the law and the prophets;’ they strike at the very heart of piety; they rob it of the spirit that giveth life; they hold that to love God is not necessary to salvation; and go so far as to maintain that ‘this dispensation from loving God is the privilege which Jesus Christ has introduced into the world!’ This, sir, is the very climax of impiety. The price of the blood of Jesus Christ paid to obtain us a dispensation from loving him! Before the incarnation, it seems men were obliged to love God: but since ‘God has so loved the world as to give his only-begotten Son,’ the world, redeemed by him, is released from loving him! Strange divinity of our days—to dare to take off the ‘anathema’ which St. Paul denounces on those ‘that love not the Lord Jesus!’ To cancel the sentence of St. John: ‘He that loveth not, abideth in death!’ and that of Jesus Christ himself: ‘He that loveth me not keepeth not my precepts!’ and thus to render those worthy of enjoying God through eternity who never loved God all their life! Behold the Mystery of Iniquity fulfilled! Open your eyes at length, my dear father, and if the other aberrations of your casuists have made no impression on you, let these last, by their very extravagance, compel you to abandon them. This is what I desire from the bottom of my heart, for your own sake and for the sake of your doctors; and my prayer to God is, that he would vouchsafe to convince them how false the light must be that has guided them to such precipices; and that he would fill their hearts with that love of himself from which they have dared to give man a dispensation!”"
+    },
+    {
+     "n": 211,
+     "k": 59,
+     "en": "After some remarks of this nature, I took my leave of the monk, and I see no great likelihood of my repeating my visits to him. This, however, need not occasion you any regret; for, should it be necessary to continue these communications on their maxims, I have studied their books sufficiently to tell you as much of their morality, and more, perhaps, of their policy, than he could have done himself.—I am, &c."
+    }
+   ]
+  }
+ ]
+}

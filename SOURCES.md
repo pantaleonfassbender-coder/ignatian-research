@@ -32,6 +32,13 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: *Memoriale Beati Petri Fabri*, ed. M. Bouix (Paris, 1873) — the editio princeps — Internet Archive scan — <https://archive.org/details/memorialebeatipe0000sign>
 - English: working translation made for this site (CC0).
 
+## The counter-voices
+
+### Pascal, Lettres provinciales — Letters V, VII, X · `data/pascal.json`
+
+- English: *The Provincial Letters of Blaise Pascal*, trans. Thomas M'Crie (New York: Robert Carter & Brothers, 1856), via Project Gutenberg #73959 — <https://www.gutenberg.org/ebooks/73959>
+- French original (named, not yet carried): the Vallée transcription, *Les Provinciales (Vallée)*, on the French Wikisource — <https://fr.wikisource.org/wiki/Les_Provinciales_(Vall%C3%A9e)>
+
 ---
 
 Programme entries (Nadal, Rodríguez, Caussade, Xavier, the Jesuit Relations, Ricci/Trigault,

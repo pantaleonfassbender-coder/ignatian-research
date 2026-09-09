@@ -52,6 +52,31 @@ ids = [x['id'] for x in works] + [x['id'] for x in prog]
 if len(ids) != len(set(ids)):
     errors.append('duplicate ids across works.json and programme.json')
 
+# 2b. shipped programme modules: data file loads and is well-formed
+for p in prog:
+    if p.get('status') != 'shipped':
+        continue
+    if not p.get('datei') or not p.get('zk'):
+        errors.append(f"programme {p['id']}: shipped but datei/zk missing"); continue
+    try:
+        t = json.load(io.open(f"data/{p['datei']}.json", encoding='utf-8'))
+    except Exception as e:
+        errors.append(f"programme {p['id']}: data file unreadable: {e}"); continue
+    for f in ('titel', 'zitierweise', 'quelle', 'sections'):
+        if not t.get(f):
+            errors.append(f"programme {p['id']}: module field {f} missing")
+    tn = 0
+    for s in t.get('sections', []):
+        if not s.get('units'):
+            errors.append(f"programme {p['id']}/{s.get('id')}: no units")
+        for k, u in enumerate(s.get('units', []), start=1):
+            tn += 1
+            if u.get('k') != k:
+                warns.append(f"programme {p['id']}/{s['id']}: k mismatch at n={u.get('n')}")
+            if not (u.get('en') or u.get('orig')):
+                errors.append(f"programme {p['id']}/{s['id']}: empty unit {u.get('n')}")
+    print(f"programme module {p['id']}: {tn} units ok")
+
 # 3. open editions
 exx = json.load(io.open('data/exercitia.json', encoding='utf-8'))
 ns = [u['n'] for s in exx['sections'] for u in s['units']]

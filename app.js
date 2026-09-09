@@ -42,7 +42,7 @@ const ROUTES = {
   register: viewRegister, language: viewLanguage, glossary: viewGlossary,
   method: viewMethod, dialogue: a => renderDialogue(view, a),
   privacy: viewPrivacy, imprint: viewImprint, author: viewAuthor,
-  memoriale: viewMemoriale, paths: viewPaths, coda: viewCoda,
+  memoriale: viewMemoriale, paths: viewPaths, coda: viewCoda, text: viewText,
 };
 
 /* The five lines of the corpus. The apparatus confines itself to the old
@@ -256,13 +256,16 @@ function viewWorks(args) {
       grid.append(card);
     }
     for (const p of planned) {
-      grid.append(el(`<div class="workcard" style="border-left:3px solid var(--fg3);opacity:.6">
+      const shippedProg = p.status === "shipped" && p.datei;
+      const card = el(`<div class="workcard" style="border-left:3px solid ${shippedProg ? "var(--acc2)" : "var(--fg3)"};${shippedProg ? "" : "opacity:.6"}">
         <h3 style="font-size:1.02rem">${esc(p.titel)}</h3>
-        <div><span class="chip">planned</span></div>
+        <div>${shippedProg ? `<span class="rights pd">public domain</span> <span class="chip">reader</span>` : `<span class="chip">planned</span>`}</div>
         <p class="fine" style="margin:0">${esc(p.autor)} · ${esc(p.jahr)}</p>
         <p style="font-size:.88rem;color:var(--fg2);margin:.3rem 0 0">${esc(p.warum)}</p>
         <p class="fine" style="margin:.35rem 0 0">${esc(p.quelle)}</p>
-      </div>`));
+      </div>`);
+      if (shippedProg) card.onclick = () => location.hash = `#/text/${p.id}`;
+      grid.append(card);
     }
     box.append(sec);
   }
@@ -1638,6 +1641,92 @@ function viewCoda() {
       fact plainly stated.</p>
     </div>
   </div>`));
+}
+
+/* ================================================================ TEXT */
+/* Generic reader for programme modules (data file named in programme.json).
+   Sections with optional blurbs; units {n, k, en, orig?, label?, note?};
+   a language bar appears only when a module carries an original text. */
+const textLang = {
+  get: () => localStorage.getItem("textLang") || "both",
+  set: v => localStorage.setItem("textLang", v),
+};
+function progOf(id) { return (D.programme || []).find(p => p.id === id); }
+function viewText(args) {
+  const id = args && args[0];
+  const p = progOf(id);
+  if (!p || p.status !== "shipped" || !p.datei) { location.hash = "#/works"; return; }
+  const ready = ensureLG(p.datei, () => route());
+  if (!ready) {
+    view.append(el(`<p class="fine">Loading ${esc(p.titel)} …</p>`));
+    return;
+  }
+  const t = D[p.datei];
+  if (args[1]) return textSection(p, t, args[1]);
+  view.append(el(`<div>
+    <div class="viewhead">
+      <span class="tag">${esc(p.autor)} · ${esc(p.jahr)} · public domain</span>
+      <h1>${esc(t.titel)}</h1>
+      <p class="lede">${esc(p.warum)}</p>
+    </div>
+    <div class="grid g2" id="ttoc"></div>
+    <p class="fine" style="margin-top:1.2rem">Cited as <span class="mono">${esc(t.zitierweise)}</span>.
+      ${esc(t.quelle)} ${esc(t.hinweis || "")}</p>
+  </div>`));
+  const toc = view.querySelector("#ttoc");
+  for (const s of t.sections) {
+    const card = el(`<div class="workcard" style="border-left:3px solid var(--acc2)">
+      <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">${esc(s.zk || t.zitierweise)}</span>
+        <span class="fine">${s.units.length} ¶</span></div>
+      <h3 style="margin:.3rem 0 .15rem;font-size:1.02rem">${esc(s.titel)}</h3>
+      ${s.blurb ? `<p class="fine" style="margin:0">${esc(s.blurb)}</p>` : ""}
+    </div>`);
+    card.onclick = () => location.hash = `#/text/${id}/${s.id}`;
+    toc.append(card);
+  }
+}
+function textSection(p, t, sid) {
+  const parts = t.sections;
+  const i = parts.findIndex(s => s.id === sid);
+  if (i < 0) { location.hash = `#/text/${p.id}`; return; }
+  const s = parts[i], lang = textLang.get();
+  const prev = parts[(i - 1 + parts.length) % parts.length];
+  const next = parts[(i + 1) % parts.length];
+  const bilingual = s.units.some(u => u.orig);
+  const para = u => {
+    const label = u.label ? `<p class="fine" style="margin:0 0 .2rem;color:var(--acc2)">${esc(u.label)}</p>` : "";
+    const note = u.note ? `<p class="fine" style="margin:.3rem 0 0;color:var(--fg3)">Note: ${esc(u.note)}</p>` : "";
+    const orig = u.orig ? `<p class="readable" style="margin:0"><em>${esc(u.orig)}</em></p>` : "";
+    const en = u.en ? `<p class="readable" style="margin:0">${esc(u.en)}</p>` : "";
+    const body = !bilingual ? (en || orig)
+      : lang === "orig" ? (orig || en)
+      : lang === "en" ? (en || orig)
+      : `<div class="grid g2" style="gap:1rem">${orig}${en}</div>`;
+    return `<div style="border-left:2px solid var(--acc2);padding-left:.9rem;margin-bottom:1.3rem">
+      <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">${esc(s.zk || "")} [${u.k}]</span></div>
+      ${label}${body}${note}</div>`;
+  };
+  const bar = bilingual ? `<div class="toolbar" id="tlang" style="margin:.4rem 0 1rem">
+    ${[["orig", "Original"], ["en", "English"], ["both", "Original · English"]].map(([v, l]) =>
+      `<button class="chip ${lang === v ? "on" : ""}" data-l="${v}">${l}</button>`).join("")}</div>` : "";
+  view.append(el(`<div>
+    <p class="fine"><a href="#/text/${p.id}">← All sections</a> ·
+      <a href="#/text/${p.id}/${prev.id}">${esc(short(prev.titel, 26))}</a> ·
+      <a href="#/text/${p.id}/${next.id}">${esc(short(next.titel, 26))}</a></p>
+    <div class="viewhead">
+      <span class="tag">${esc(p.autor)} · ${esc(t.titel)}</span>
+      <h1 style="font-size:1.5rem">${esc(s.titel)}</h1>
+      <p class="fine">${s.blurb ? esc(s.blurb) + " · " : ""}${s.units.length} paragraphs ·
+        cited as <span class="mono">${esc(s.zk || t.zitierweise)} [k]</span></p>
+    </div>
+    ${bar}
+    <div id="tbody"></div>
+    <p class="fine">${esc(t.quelle)} ${esc(t.hinweis || "")}</p>
+  </div>`));
+  view.querySelector("#tbody").innerHTML = s.units.map(para).join("");
+  view.querySelectorAll("#tlang [data-l]").forEach(b => b.onclick = () => {
+    textLang.set(b.dataset.l); route();
+  });
 }
 
 /* ============================================================= AUTHOR */

@@ -46,6 +46,15 @@ transcription of public-domain texts adds nothing licensable; the editorial
 segmentation into the canonical [1]–[370] paragraphs is dedicated to the public
 domain under CC0 1.0.
 
+**`data/pascal.json`** holds Letters V, VII and X of Pascal's *Lettres
+provinciales* (1656–1657) complete, in the Rev. Thomas M'Crie's English
+translation of 1856 (New York: Robert Carter & Brothers), via the Project
+Gutenberg transcription #73959 — an 1856 publication in the United States
+public domain; M'Crie's footnote markers are removed and his notes are not
+reproduced. The editorial paragraph numbering is dedicated to the public
+domain under CC0 1.0. The French original (public domain) is named as source
+but not yet carried.
+
 **`data/memoriale.json`** holds the Memoriale of Blessed Peter Faber, with the
 appendix of letters and counsels, as printed in the editio princeps, ed. Marcel
 Bouix SJ (Paris: Gauthier-Villars, 1873) — an 1873 publication in the United
