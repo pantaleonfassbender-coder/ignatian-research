@@ -9,16 +9,26 @@ authors:
 repository-code: "https://github.com/pantaleonfassbender-coder/ignatian-research"
 url: "https://ignatian-research.netlify.app/"
 abstract: >-
-  A static research apparatus for the six principal works of Ignatius of Loyola:
-  a canonical paragraph-level citation index of 1,887 anchors, a concordance
-  operating on the reader's own copies, the twenty-four public-domain letters of
-  1524-1547 in full, a discernment lexicon, registers of persons and places, and
-  a citation-bound dialogue with the corpus. No text of the in-copyright
-  translations is distributed.
+  A research apparatus for Ignatian spirituality, confined to the old Society
+  (1540-1773) and organised in five lines: the founder's own writings (the
+  Exercises in a trilingual public-domain parallel edition, the letters of
+  1524-1547 in full); the school of discernment (the Official Directory of
+  1599, bilingual, and Favre's Memoriale, bilingual); the Society in the
+  world; Friedrich Spee; and the counter-voices. With a canonical
+  paragraph-level citation index, a cross-corpus concordance, a concept
+  atlas, curated reading paths, a discernment lexicon, registers of persons
+  and places, and a citation-bound dialogue with the corpus. Four modern
+  translations remain in copyright: their structure and anchors are part of
+  the apparatus, but no text of them is distributed - a reader opens them
+  from a copy they own.
 keywords:
   - Ignatius of Loyola
   - Jesuit studies
   - Spiritual Exercises
+  - discernment of spirits
   - digital humanities
   - concordance
   - citation index
+license: MIT
+version: 1.0.0
+date-released: 2026-09-09

@@ -24,7 +24,7 @@ export const workOf = id => (D.works || []).find(w => w.id === id) || {};
 async function boot() {
   const names = ["works", "corpus", "anchors", "letters", "terms", "keyness", "network",
     "discernment", "persons", "places", "itinerary", "introductions", "sections",
-    "lexicon", "glossary", "directorium", "exercitia", "memoriale"];
+    "lexicon", "glossary", "directorium", "exercitia", "memoriale", "programme"];
   const res = await Promise.all(names.map(n => fetch(`data/${n}.json`).then(r => r.json())));
   names.forEach((n, i) => D[n] = res[i]);
   D.introOf = {}; D.introductions.forEach(x => D.introOf[x.id] = x);
@@ -42,8 +42,18 @@ const ROUTES = {
   register: viewRegister, language: viewLanguage, glossary: viewGlossary,
   method: viewMethod, dialogue: a => renderDialogue(view, a),
   privacy: viewPrivacy, imprint: viewImprint, author: viewAuthor,
-  memoriale: viewMemoriale,
+  memoriale: viewMemoriale, paths: viewPaths, coda: viewCoda,
 };
+
+/* The five lines of the corpus. The apparatus confines itself to the old
+   Society (1540–1773); the reasons are owned in the coda. */
+const LINIEN = [
+  ["kern", "The founder", "Ignatius's own hand and dictation: the retreat manual, the body of law, the dictated memoir, the private journal of discernment, the letters."],
+  ["schule", "The school of discernment", "How the Exercises became the practice of an order: the official Directory, Favre's journal — and, in the programme, Nadal's exhortations, Rodríguez's curriculum, and the Abandon attributed to Caussade."],
+  ["welt", "The Society in the world", "Mission, observation and self-presentation before 1773: Xavier's letters, the Relations from New France, Ricci at the court of China, Acosta's New World, and the centenary emblem book of 1640."],
+  ["spee", "Friedrich Spee", "A line of one voice: conscience from inside the order — the Cautio Criminalis against the witch trials, and the same conscience singing in the Trutznachtigall."],
+  ["kritik", "The counter-voices", "Forgery, polemic, suppression: the Monita secreta, Pascal's Provinciales, and the brief of 1773 with which the corpus will close."],
+];
 function route() {
   const h = (location.hash || "#/overview").slice(2).split("/");
   const name = h[0] || "overview";
@@ -86,6 +96,10 @@ function viewOverview() {
       of Pierre Favre, the first companion, discernment kept as a daily journal. The apparatus indexes
       them by their canonical numbering, traces the vocabulary that migrates between them, and lets
       you put questions to the corpus with the evidence attached.</p>
+      <p class="fine">New here? Take one of the <a href="#/paths">reading paths</a> — four guided
+      routes with a guiding question per station. The corpus is organised in
+      <a href="#/works">five lines</a> and confines itself to the old Society (1540–1773); its
+      boundaries, and the way it was made, are owned in the <a href="#/coda">coda</a>.</p>
     </div>
 
     <div class="grid g4" style="margin-bottom:1.6rem">
@@ -205,29 +219,52 @@ function viewWorks(args) {
   if (args && args[0]) return workDetail(args[0]);
   view.append(el(`<div>
     <div class="viewhead">
-      <span class="tag">Seven works</span>
-      <h1>The corpus, work by work</h1>
-      <p class="lede">Five works from Ignatius's own hand or dictation, and two from the spirituality he
-      set in motion: the Society's official Directory and Favre's journal. Each entry gives an orientation,
-      a note on the textual history and the translation used, practical advice on navigating the numbering,
-      the passages that carry the most weight, and the internal divisions of the text.</p>
-    </div><div class="grid g2" id="wl"></div></div>`));
-  const wl = view.querySelector("#wl");
-  for (const w of D.works) {
-    const intro = D.introOf[w.id] || {};
-    const card = el(`<div class="workcard" style="border-left:3px solid ${wc(w.id)}">
-      <h3>${esc(w.titel)}</h3>
-      <div>${rightsBadge(w)} <span class="chip">${esc(intro.genre || "")}</span>
-        <span class="chip">difficulty ${"●".repeat(intro.difficulty || 0)}${"○".repeat(5 - (intro.difficulty || 0))}</span></div>
-      <p class="fine" style="margin:0">${w.id === "dir"
-        ? "Latin: Monumenta Ignatiana, 1919 · English: Longridge 1919 or this site's working translation"
-        : w.id === "fabri"
-        ? "Latin: editio princeps (Bouix), 1873 · English: this site's working translation"
-        : `trans. ${esc(w.uebersetzer)}, ${w.jahr} · ${esc(w.verlag)}`}</p>
-      <p style="font-size:.9rem;color:var(--fg2);margin:.3rem 0 0">${esc(short(intro.orientation || w.beschreibung, 230))}</p>
-    </div>`);
-    card.onclick = () => location.hash = `#/works/${w.id}`;
-    wl.append(card);
+      <span class="tag">Five lines</span>
+      <h1>The corpus, line by line</h1>
+      <p class="lede">Seven works shipped, and a stated programme around them, in five lines: the
+      founder's own writings; the school of discernment they set in motion; the Society in the world
+      before 1773; Friedrich Spee, a line of one voice; and the counter-voices, from forgery to the
+      brief of suppression. Each shipped entry gives an orientation, the textual history, advice on
+      the numbering, and the passages that carry weight; the programme entries name their sources and
+      wait their turn. The corpus confines itself to the old Society (1540–1773) — the reasons are
+      owned in the <a href="#/coda">coda</a>.</p>
+    </div><div id="lines"></div></div>`));
+  const box = view.querySelector("#lines");
+  for (const [key, name, lede] of LINIEN) {
+    const shipped = D.works.filter(w => w.linie === key);
+    const planned = (D.programme || []).filter(p => p.linie === key);
+    if (!shipped.length && !planned.length) continue;
+    const sec = el(`<div style="margin-bottom:2rem">
+      <h2 style="margin:0 0 .2rem">${esc(name)}</h2>
+      <p class="fine" style="margin:0 0 .8rem;max-width:60rem">${esc(lede)}</p>
+      <div class="grid g2" data-line="${key}"></div></div>`);
+    const grid = sec.querySelector(`[data-line="${key}"]`);
+    for (const w of shipped) {
+      const intro = D.introOf[w.id] || {};
+      const card = el(`<div class="workcard" style="border-left:3px solid ${wc(w.id)}">
+        <h3>${esc(w.titel)}</h3>
+        <div>${rightsBadge(w)} <span class="chip">${esc(intro.genre || "")}</span>
+          <span class="chip">difficulty ${"●".repeat(intro.difficulty || 0)}${"○".repeat(5 - (intro.difficulty || 0))}</span></div>
+        <p class="fine" style="margin:0">${w.id === "dir"
+          ? "Latin: Monumenta Ignatiana, 1919 · English: Longridge 1919 or this site's working translation"
+          : w.id === "fabri"
+          ? "Latin: editio princeps (Bouix), 1873 · English: this site's working translation"
+          : `trans. ${esc(w.uebersetzer)}, ${w.jahr} · ${esc(w.verlag)}`}</p>
+        <p style="font-size:.9rem;color:var(--fg2);margin:.3rem 0 0">${esc(short(intro.orientation || w.beschreibung, 230))}</p>
+      </div>`);
+      card.onclick = () => location.hash = `#/works/${w.id}`;
+      grid.append(card);
+    }
+    for (const p of planned) {
+      grid.append(el(`<div class="workcard" style="border-left:3px solid var(--fg3);opacity:.6">
+        <h3 style="font-size:1.02rem">${esc(p.titel)}</h3>
+        <div><span class="chip">planned</span></div>
+        <p class="fine" style="margin:0">${esc(p.autor)} · ${esc(p.jahr)}</p>
+        <p style="font-size:.88rem;color:var(--fg2);margin:.3rem 0 0">${esc(p.warum)}</p>
+        <p class="fine" style="margin:.35rem 0 0">${esc(p.quelle)}</p>
+      </div>`));
+    }
+    box.append(sec);
   }
 }
 
@@ -991,7 +1028,8 @@ function viewAtlas() {
       <h1>What stands next to what</h1>
       <p class="lede">Two terms are joined when they occur in the same sentence more often than chance
       allows. Colour marks the work in which a term has its centre of gravity, so the seams between the
-      retreat manual, the journal and the law become visible as regions of the graph.</p>
+      retreat manual, the journal and the law become visible as regions of the graph. Scroll or
+      double-click to zoom into the dense centre — more labels appear as you go — and drag to pan.</p>
     </div>
     <div class="chartbox">
       <div class="toolbar" style="margin-bottom:.6rem">
@@ -1001,6 +1039,9 @@ function viewAtlas() {
           <option value="160">dense (160 terms)</option>
           <option value="999">everything</option></select></label>
         <button id="reheat" class="ghost">re-arrange</button>
+        <button id="zin" class="ghost" title="Zoom in">+</button>
+        <button id="zout" class="ghost" title="Zoom out">−</button>
+        <button id="zreset" class="ghost" title="Reset view">Reset</button>
       </div>
       <canvas id="net" style="width:100%;height:560px"></canvas>
       <div class="legend" id="leg"></div>
@@ -1042,6 +1083,9 @@ function viewAtlas() {
   }
   view.querySelector("#dens").onchange = build;
   view.querySelector("#reheat").onclick = () => net && net.reheat();
+  view.querySelector("#zin").onclick = () => net && net.zoomBy(1.4);
+  view.querySelector("#zout").onclick = () => net && net.zoomBy(1 / 1.4);
+  view.querySelector("#zreset").onclick = () => net && net.resetView();
   build();
   view.querySelectorAll("[data-n]").forEach(b => b.onclick = () => { net.select(b.dataset.n); showNode(b.dataset.n); });
 
@@ -1426,6 +1470,172 @@ function viewMethod() {
         <li>The itinerary follows the memoir's own account, which is a narrative composed thirty years after
           the events and shaped for a purpose; it is not a reconstruction from archival sources.</li>
       </ul>
+    </div>
+  </div>`));
+}
+
+/* =============================================================== PATHS */
+/* Curated reading paths through the shipped works: a stated order, a reason
+   per station, a guiding question. Editorial matter, CC BY 4.0. */
+const PATHS = [
+  {
+    id: "weeks", level: "Introductory", titel: "The Four Weeks",
+    frage: "The Exercises read as what they are: a course with a shape. Six stations trace the arc from the instructions for use to the Contemplation to Attain Love.",
+    stationen: [
+      { href: "#/exercitia/ann", cite: "SpEx [1–20]", autor: "Annotations",
+        warum: "The book explains how it wants to be used before it says anything else: twenty notes for the one who gives the Exercises.",
+        leitfrage: "Who is this book actually written for — the exercitant, or the director?" },
+      { href: "#/exercitia/tit", cite: "SpEx [21–23]", autor: "Principle and Foundation",
+        warum: "The whole course in one paragraph: created for a purpose, everything else a means — and indifference as the working posture.",
+        leitfrage: "What must be true of a person for [23] to be liberating rather than crushing?" },
+      { href: "#/exercitia/exx", cite: "SpEx [45–72]", autor: "The First Week",
+        warum: "The five exercises on sin: memory, understanding and will turned on one's own history.",
+        leitfrage: "Why does the course begin with disorder rather than with God?" },
+      { href: "#/exercitia/king", cite: "SpEx [91–100]", autor: "The Call of the King",
+        warum: "The hinge between the Weeks: a parable of election that turns examination into offering.",
+        leitfrage: "What changes in the exercitant between [98] and everything before it?" },
+      { href: "#/exercitia/w3", cite: "SpEx [190–217]", autor: "The Third Week",
+        warum: "Accompaniment into the Passion — the choice made in Week Two is tested against its cost.",
+        leitfrage: "What is asked for here that was not asked for in the First Week?" },
+      { href: "#/exercitia/w4", cite: "SpEx [218–237]", autor: "The Fourth Week and the Contemplatio",
+        warum: "Joy as an exercise, and the closing contemplation: love shown in deeds, all things as gifts.",
+        leitfrage: "How does [230–237] transform the indifference of [23] into something warmer?" },
+    ],
+  },
+  {
+    id: "discernment", level: "Introductory", titel: "The discernment of spirits",
+    frage: "The corpus's central skill, followed from the rules to their practice: reading the motions of the soul, in the manual, the manual's manual, a letter, and a journal.",
+    stationen: [
+      { href: "#/exercitia/disc", cite: "SpEx [313–336]", autor: "The two sets of rules",
+        warum: "The rules themselves: for the First Week, the coarse motions; for the Second, the subtle ones — including consolation without preceding cause.",
+        leitfrage: "Why do the rules come in two sets — what changes in the enemy's tactics?" },
+      { href: "#/directorium/c26", cite: "Dir. 1599, c. XXVI", autor: "The three times of election",
+        warum: "The order's official reading: when the motions themselves may decide, and when reason must.",
+        leitfrage: "What does the Directory add to [175–178] — and what does it tame?" },
+      { href: "#/letters/5", cite: "Letter V", autor: "To Teresa Rejadella (1536)",
+        warum: "Discernment taught by post, years before the Society existed: the enemy's tactics explained to a nun in Barcelona — the rules of [313ff] in pastoral prose.",
+        leitfrage: "Which of the printed rules can you find here, stated informally?" },
+      { href: "#/memoriale/m154206", cite: "Mem. — June 1542", autor: "Favre's journal",
+        warum: "The skill as daily practice: the first companion writing down the motions of a single month.",
+        leitfrage: "What does discernment look like when nothing dramatic is happening?" },
+    ],
+  },
+  {
+    id: "election", level: "Intermediate", titel: "The election",
+    frage: "The decision at the centre of the course: how a choice of life is prepared, made, and confirmed. Its natural terminus — the deliberation on poverty in the Spiritual Diary — is a locked work; the path names it and stops at the open texts.",
+    stationen: [
+      { href: "#/exercitia/states", cite: "SpEx [135–168]", autor: "Two Standards, Three Classes, Three Kinds of Humility",
+        warum: "The imagination is prepared before the will chooses: allegiance, honesty about evasion, and the scale of attachment.",
+        leitfrage: "Why does Ignatius insert these meditations before the election instead of arguments?" },
+      { href: "#/exercitia/elec", cite: "SpEx [169–189]", autor: "On the election",
+        warum: "The procedure itself: what may be chosen, the three times, the two methods for the third.",
+        leitfrage: "What does [175]'s 'first time' concede about the limits of method?" },
+      { href: "#/directorium/c22", cite: "Dir. 1599, cc. XXII–XXXII", autor: "The Directory on the election",
+        warum: "Eleven chapters of official commentary — the order's forty-year experience of what goes wrong.",
+        leitfrage: "Where does the Directory grow cautious that the Exercises are bold?" },
+      { href: "#/directorium/c32", cite: "Dir. 1599, c. XXXII", autor: "After the election",
+        warum: "Confirmation as its own phase: the choice is carried back into prayer.",
+        leitfrage: "What would count as disconfirmation — and does the text allow for it?" },
+    ],
+  },
+  {
+    id: "governs", level: "Introductory", titel: "Ignatius governs by letter",
+    frage: "The founder as superior: four letters that show the Exercises' vocabulary at work in instruction, consolation and diplomacy.",
+    stationen: [
+      { href: "#/letters/12", cite: "Letter XII", autor: "Instruction for the legates to Ireland (1541)",
+        warum: "The famous rules of dealing: adapt to the other, enter through their door and come out through yours.",
+        leitfrage: "Where does adaptability end and dissimulation begin — on the letter's own terms?" },
+      { href: "#/letters/18", cite: "Letter XVIII", autor: "To the Jesuits banished from Cologne (1544)",
+        warum: "Consolation under expulsion: the First Week's grammar applied to an institutional wound.",
+        leitfrage: "How is this consolation different from mere encouragement?" },
+      { href: "#/letters/20", cite: "Letter XX", autor: "To the Society at Trent (1546)",
+        warum: "How to behave at a council: modesty as strategy, the care of souls beside the debates.",
+        leitfrage: "What does the letter assume about how influence actually works?" },
+      { href: "#/letters/24", cite: "Letter XXIV", autor: "To the fathers and brothers at Coimbra (1547)",
+        warum: "The long instruction on zeal and its moderation — governance as spiritual direction at scale.",
+        leitfrage: "Which discernment rules reappear here as community medicine?" },
+    ],
+  },
+];
+
+function viewPaths() {
+  view.append(el(`<div>
+    <div class="viewhead"><span class="tag">Guided routes</span>
+      <h1>Reading paths</h1>
+      <p class="lede">Four curated ways through the shipped corpus — each with a stated order, a
+      reason for every station, and a guiding question to carry into the text. Every station opens
+      a reader; the <a href="#/concordance">concordance</a> and the <a href="#/dialogue">dialogue</a>
+      are the companions to take along. A fifth, iconographic path — through the emblems of the
+      <em>Imago primi saeculi</em> of 1640 — is planned and will join when that module ships.</p></div>
+    <div id="plist"></div>
+  </div>`));
+  const list = view.querySelector("#plist");
+  for (const p of PATHS) {
+    list.append(el(`<div class="panel">
+      <span class="tag">${esc(p.level)} · ${p.stationen.length} stations</span>
+      <h2 style="margin:.3rem 0 .3rem">${esc(p.titel)}</h2>
+      <p class="readable" style="color:var(--fg2)">${esc(p.frage)}</p>
+      <ol style="margin:.8rem 0 0;padding-left:1.2rem">
+        ${p.stationen.map(s => `<li style="margin-bottom:.9rem">
+          <a href="${s.href}" style="font-family:var(--serif);font-size:1.02rem">${esc(s.autor)}</a>
+          <span class="cite" style="margin-left:.5rem">${esc(s.cite)}</span>
+          <div style="color:var(--fg2);font-size:.88rem;margin-top:.15rem">${esc(s.warum)}</div>
+          <div class="fine" style="margin-top:.15rem"><strong style="color:var(--acc2)">Guiding question:</strong>
+            ${esc(s.leitfrage)}</div>
+        </li>`).join("")}
+      </ol>
+    </div>`));
+  }
+}
+
+/* ================================================================ CODA */
+/* Editorial closing note: the threshold of 1773, the hybrid boundary, and
+   the making of the apparatus. Editorial matter, CC BY 4.0. */
+function viewCoda() {
+  view.append(el(`<div>
+    <div class="viewhead"><span class="tag">Editorial</span>
+      <h1>Before the threshold</h1>
+      <p class="lede">A coda on where this apparatus ends, what it cannot carry — and how it was
+      made.</p></div>
+
+    <div class="panel"><h2>The threshold of 1773</h2>
+      <p class="readable">This corpus confines itself, deliberately, to the old Society: from the
+      first companions to the brief <em>Dominus ac Redemptor</em> of 21 July 1773, with which
+      Clement XIV dissolved the order — the text with which the programme intends to close. The
+      boundary is historical, not accidental: the Society of 1540–1773 is a completed object, the
+      world in which the Exercises found their first practice, their official Directory, their
+      missions and their enemies. What lies beyond is named here rather than carried: the brief of
+      restoration, <em>Sollicitudo omnium ecclesiarum</em> (1814); the restored Society's poet,
+      Gerard Manley Hopkins (†1889, first published 1918); and the twentieth century's Ignatian
+      minds — Erich Przywara, whose <em>Deus semper maior</em> remains in United States copyright
+      into the 2030s, Karl Rahner, Pierre Teilhard de Chardin. An apparatus owns its absences; these
+      lie on the far side of a threshold this one has chosen not to cross.</p>
+    </div>
+
+    <div class="panel"><h2>The hybrid boundary, owned</h2>
+      <p class="readable">A second boundary runs through the shelf itself. Four modern translations
+      — Ganss's Exercises and Constitutions, Padberg, Divarkar, Munitiz — are under copyright:
+      their structure, statistics and canonical anchors are part of every function of this site,
+      but their running text is not shipped and never will be; a reader opens them from a copy they
+      own, on their own device, and nothing of that text leaves it. This is the apparatus's second
+      rights-fact, stated as plainly as the first: what the public domain provides is carried whole
+      — the trilingual Exercises, the letters of 1524–1547, the Directory of 1599, Favre's
+      Memoriale — and what it does not provide is bounded, not paraphrased. Rickaby's commentary of
+      1915 was considered for the Longridge layer's place and set aside; the choice is on record.</p>
+    </div>
+
+    <div class="panel"><h2>The making, on record</h2>
+      <p class="readable">One disclosure belongs here, because it concerns the whole and not a
+      module: this apparatus was built in sustained working sessions with a large language model —
+      Anthropic's Claude, the same family of models that answers in the
+      <a href="#/dialogue">dialogue</a> — under an editor who takes responsibility for every
+      selection, every emendation, and every working translation, all of which are marked as
+      unofficial where they occur. The working diary of the construction is public: the
+      <a href="https://github.com/pantaleonfassbender-coder/ignatian-research/commits/main">commit
+      history of the repository</a> records, stage by stage, what was built, corrected, and
+      reconsidered — including what was dropped. A corpus about the discernment of spirits,
+      assembled partly by a machine whose motions must themselves be tested, owes its readers this
+      fact plainly stated.</p>
     </div>
   </div>`));
 }

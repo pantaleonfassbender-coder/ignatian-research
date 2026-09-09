@@ -98,7 +98,8 @@
   "ttr": 0.0705,
   "nominalquote": 16.45,
   "lix": 37.4,
-  "hapax": 884
+  "hapax": 884,
+  "linie": "kern"
  },
  {
   "id": "const",
@@ -193,7 +194,8 @@
   "ttr": 0.0295,
   "nominalquote": 17.95,
   "lix": 44.8,
-  "hapax": 1387
+  "hapax": 1387,
+  "linie": "kern"
  },
  {
   "id": "auto",
@@ -288,7 +290,8 @@
   "ttr": 0.0851,
   "nominalquote": 14.18,
   "lix": 41.8,
-  "hapax": 1014
+  "hapax": 1014,
+  "linie": "kern"
  },
  {
   "id": "diary",
@@ -316,7 +319,8 @@
   "ttr": 0.069,
   "nominalquote": 15.89,
   "lix": 35.0,
-  "hapax": 794
+  "hapax": 794,
+  "linie": "kern"
  },
  {
   "id": "dir",
@@ -343,7 +347,8 @@
   "ttr": 0.0976,
   "nominalquote": null,
   "lix": 61.7,
-  "hapax": 1286
+  "hapax": 1286,
+  "linie": "schule"
  },
  {
   "id": "fabri",
@@ -370,7 +375,8 @@
   "ttr": 0.204,
   "nominalquote": null,
   "lix": 67.1,
-  "hapax": 7854
+  "hapax": 7854,
+  "linie": "schule"
  },
  {
   "id": "letters",
@@ -398,6 +404,7 @@
   "ttr": 0.0952,
   "nominalquote": 15.8,
   "lix": 48.0,
-  "hapax": 1639
+  "hapax": 1639,
+  "linie": "kern"
  }
 ]

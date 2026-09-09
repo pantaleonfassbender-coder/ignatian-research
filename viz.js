@@ -202,7 +202,7 @@ export function network(cv, data, opts = {}) {
       const on = focus && (e.s === focus || e.t === focus);
       c.globalAlpha = focus ? (on ? .8 : .04) : Math.min(.5, .14 + (e.f / maxE) * .8);
       c.strokeStyle = on ? "#c9a227" : "#5d5241";
-      c.lineWidth = on ? 1.5 : Math.max(.5, (e.f / maxE) * 2.4);
+      c.lineWidth = (on ? 1.5 : Math.max(.5, (e.f / maxE) * 2.4)) / t.k;
       c.beginPath(); c.moveTo(e.a.x, e.a.y); c.lineTo(e.b.x, e.b.y); c.stroke();
     }
     c.globalAlpha = 1;
@@ -211,8 +211,12 @@ export function network(cv, data, opts = {}) {
       c.globalAlpha = dim ? .16 : 1;
       c.beginPath(); c.arc(n.x, n.y, n.r, 0, 7);
       c.fillStyle = col(n.teil); c.fill();
-      if (n.id === focus) { c.strokeStyle = "#fff"; c.lineWidth = 1.6; c.stroke(); }
+      if (n.id === focus) { c.strokeStyle = "#fff"; c.lineWidth = 1.6 / t.k; c.stroke(); }
     }
+    c.globalAlpha = 1; c.restore();
+    /* labels in screen space: crisp and constant-size at every zoom, with the
+       label budget growing as the view magnifies, so zooming into the dense
+       centre progressively reveals the smaller terms */
     c.font = "11.5px -apple-system,Segoe UI,Roboto,sans-serif";
     c.textAlign = "center"; c.textBaseline = "bottom";
     const labelled = focus
@@ -220,20 +224,22 @@ export function network(cv, data, opts = {}) {
       : nodes.slice().sort((a, b) => b.f - a.f);
     const placed = [];
     let shown = 0;
-    const cap = focus ? 40 : (opts.labelCap || 40);
+    const cap = focus ? 60 : Math.round((opts.labelCap || 40) * t.k * t.k);
     for (const n of labelled) {
       if (shown >= cap) break;
+      const sx = n.x * t.k + t.x, sy = n.y * t.k + t.y, sr = n.r * t.k;
+      if (sx < -40 || sx > w + 40 || sy < -20 || sy > h + 20) continue;
       const tw = c.measureText(n.id).width;
-      const box = { x0: n.x - tw / 2 - 3, x1: n.x + tw / 2 + 3, y0: n.y - n.r - 15, y1: n.y - n.r - 1 };
+      const box = { x0: sx - tw / 2 - 3, x1: sx + tw / 2 + 3, y0: sy - sr - 15, y1: sy - sr - 1 };
       if (placed.some(p => !(box.x1 < p.x0 || box.x0 > p.x1 || box.y1 < p.y0 || box.y0 > p.y1))) continue;
       placed.push(box); shown++;
       c.globalAlpha = 1;
       c.fillStyle = "rgba(16,14,12,.80)";
       c.fillRect(box.x0, box.y0, box.x1 - box.x0, box.y1 - box.y0);
       c.fillStyle = n.id === focus ? "#fff" : "#ded3c2";
-      c.fillText(n.id, n.x, n.y - n.r - 3);
+      c.fillText(n.id, sx, sy - sr - 3);
     }
-    c.globalAlpha = 1; c.restore();
+    c.globalAlpha = 1;
   }
 
   function loop() { if (!run) return; if (alpha > 0.012) step(); draw(); requestAnimationFrame(loop); }
@@ -250,31 +256,53 @@ export function network(cv, data, opts = {}) {
     }
     return best;
   }
-  cv.onmousemove = ev => { const n = pick(ev); const id = n ? n.id : null; if (id !== hover) { hover = id; cv.style.cursor = id ? "pointer" : "default"; if (alpha <= .012) draw(); } };
+  cv.onmousemove = ev => { const n = pick(ev); const id = n ? n.id : null; if (id !== hover) { hover = id; cv.style.cursor = id ? "pointer" : "grab"; if (alpha <= .012) draw(); } };
   cv.onmouseleave = () => { hover = null; if (alpha <= .012) draw(); };
-  cv.onclick = ev => { const n = pick(ev); sel = n ? (sel === n.id ? null : n.id) : null; if (opts.onSelect) opts.onSelect(sel, n); if (alpha <= .012) draw(); };
+  let suppressClick = false;
+  cv.onclick = ev => {
+    if (suppressClick) { suppressClick = false; return; }
+    const n = pick(ev); sel = n ? (sel === n.id ? null : n.id) : null;
+    if (opts.onSelect) opts.onSelect(sel, n); if (alpha <= .012) draw();
+  };
+  function zoomAt(mx, my, f) {
+    const t = state.transform;
+    const k = Math.max(.4, Math.min(8, t.k * f));
+    t.x = mx - (mx - t.x) * (k / t.k); t.y = my - (my - t.y) * (k / t.k); t.k = k;
+    if (alpha <= .012) draw();
+  }
   cv.onwheel = ev => {
     ev.preventDefault();
     const rect = cv.getBoundingClientRect();
-    const mx = ev.clientX - rect.left, my = ev.clientY - rect.top;
-    const t = state.transform, f = ev.deltaY < 0 ? 1.12 : 1 / 1.12;
-    const k = Math.max(.4, Math.min(4, t.k * f));
-    t.x = mx - (mx - t.x) * (k / t.k); t.y = my - (my - t.y) * (k / t.k); t.k = k;
-    if (alpha <= .012) draw();
+    zoomAt(ev.clientX - rect.left, ev.clientY - rect.top, ev.deltaY < 0 ? 1.12 : 1 / 1.12);
+  };
+  cv.ondblclick = ev => {
+    ev.preventDefault();
+    const rect = cv.getBoundingClientRect();
+    zoomAt(ev.clientX - rect.left, ev.clientY - rect.top, 1.7);
   };
   let drag = null;
-  cv.onmousedown = ev => { drag = { x: ev.clientX, y: ev.clientY, tx: state.transform.x, ty: state.transform.y }; };
-  window.addEventListener("mouseup", () => drag = null);
-  window.addEventListener("mousemove", ev => {
+  cv.onmousedown = ev => { drag = { x: ev.clientX, y: ev.clientY, tx: state.transform.x, ty: state.transform.y, moved: false }; };
+  const onUp = () => { if (drag && drag.moved) suppressClick = true; drag = null; };
+  const onMove = ev => {
     if (!drag) return;
+    if (Math.abs(ev.clientX - drag.x) + Math.abs(ev.clientY - drag.y) > 4) drag.moved = true;
+    if (!drag.moved) return;
     state.transform.x = drag.tx + ev.clientX - drag.x;
     state.transform.y = drag.ty + ev.clientY - drag.y;
     if (alpha <= .012) draw();
-  });
+  };
+  window.addEventListener("mouseup", onUp);
+  window.addEventListener("mousemove", onMove);
 
   return {
     select(id) { sel = id; if (alpha <= .012) draw(); },
-    stop() { run = false; },
+    stop() {
+      run = false;
+      window.removeEventListener("mouseup", onUp);
+      window.removeEventListener("mousemove", onMove);
+    },
     reheat() { alpha = 1; temp = Math.min(w, h) / 9; },
+    zoomBy(f) { zoomAt(w / 2, h / 2, f); },
+    resetView() { state.transform = { k: 1, x: 0, y: 0 }; if (alpha <= .012) draw(); },
   };
 }
