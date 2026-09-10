@@ -1401,6 +1401,21 @@ function viewMethod() {
       prints a different (largely Spanish) text. The appendix of the 1873 volume, nine letters and
       counsels, was segmented into its individual pieces, several of which the volume runs together.
       The English is again a machine working translation made directly from the Latin.</p>
+      <p class="readable">The programme modules — the texts around the core corpus, opened from the works
+      view — follow the same rules with one difference: they carry their source's own citation grid where
+      one exists, and this site's own paragraph numbers where none does. Pascal's three Provincial Letters
+      come from the Project Gutenberg transcription of M'Crie's 1856 translation, cut at the printed
+      signatures, with the translator's notes omitted. The Monita secreta is carried from Brownlee's 1857
+      facing-page printing, whose chapter-and-article numbering aligns Latin and English for free; seventeen
+      article boundaries damaged in the OCR were repaired against the page images, and a handful of articles
+      lost at page breaks re-transcribed from them by hand. The brief of 1773 follows Theiner's 1852 edition
+      with its paragraph numbers 1–41; its English is a working translation made for this site, since no
+      full public-domain English translation of the brief exists. Xavier's four letters are cut from
+      Coleridge's 1872 biography at their printed openings and datelines, his commentary and footnotes
+      dropped — in the second volume by font size, which separates the letter text cleanly from the
+      small-type notes. The Imago pilot reverses the usual direction: there the images are the text, the
+      plates cropped from the 1640 scan and the epigrams transcribed by eye, distich by distich. None of
+      these modules feeds the concordance, the statistics or the dialogue; each says so in its own footer.</p>
     </div>
 
     <div class="panel"><h2>Canonical anchors</h2>
@@ -1695,6 +1710,11 @@ function textSection(p, t, sid) {
   const bilingual = s.units.some(u => u.orig);
   const para = u => {
     const label = u.label ? `<p class="fine" style="margin:0 0 .2rem;color:var(--acc2)">${esc(u.label)}</p>` : "";
+    const img = u.img ? `<figure style="margin:0 0 .9rem">
+        <img src="${esc(u.img)}" alt="${esc(u.alt || u.label || "")}" loading="lazy"
+          style="max-width:min(100%,520px);border-radius:6px;display:block;background:#fff">
+        ${u.alt ? `<figcaption class="fine" style="margin-top:.35rem;color:var(--fg3)">${esc(u.alt)}</figcaption>` : ""}
+      </figure>` : "";
     const note = u.note ? `<p class="fine" style="margin:.3rem 0 0;color:var(--fg3)">Note: ${esc(u.note)}</p>` : "";
     const orig = u.orig ? `<p class="readable" style="margin:0"><em>${esc(u.orig)}</em></p>` : "";
     const en = u.en ? `<p class="readable" style="margin:0">${esc(u.en)}</p>` : "";
@@ -1704,7 +1724,7 @@ function textSection(p, t, sid) {
       : `<div class="grid g2" style="gap:1rem">${orig}${en}</div>`;
     return `<div style="border-left:2px solid var(--acc2);padding-left:.9rem;margin-bottom:1.3rem">
       <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">${esc(s.zk || "")} [${u.k}]</span></div>
-      ${label}${body}${note}</div>`;
+      ${label}${img}${body}${note}</div>`;
   };
   const bar = bilingual ? `<div class="toolbar" id="tlang" style="margin:.4rem 0 1rem">
     ${[["orig", "Original"], ["en", "English"], ["both", "Original · English"]].map(([v, l]) =>

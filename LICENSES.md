@@ -15,6 +15,8 @@ people entirely.
 | **Trilingual edition of the Exercises** | `data/exercitia.json` | Spanish, Latin and English texts: public domain (US, pre-1930 publications); editorial segmentation and numbering: [CC0 1.0](LICENSE-DATA) |
 | **Longridge 1919 texts** | `data/longridge_exx.json`, `data/longridge_dir.json` | Longridge's translation, commentary and notes: public domain (US, pre-1930 publication); editorial block assignment to the [1]–[370] grid: [CC0 1.0](LICENSE-DATA) — see below |
 | **Bilingual edition of Favre's Memoriale** | `data/memoriale.json` | Latin: public domain (US, 1873 publication); English working translation and editorial paragraph numbering: [CC0 1.0](LICENSE-DATA) — see below |
+| **Xavier letters (Coleridge 1872)** | `data/xavier.json` | Public domain (US, 1872 publication); selection and paragraph numbering: [CC0 1.0](LICENSE-DATA) — see below |
+| **Imago primi saeculi pilot** | `data/imago.json`, `assets/imago/*` | Engravings and Latin: public domain (1640 printing; faithful reproduction of a public-domain 2-D work adds nothing licensable); transcription, working translations and descriptions: [CC0 1.0](LICENSE-DATA) |
 | **Bilingual edition of the Monita secreta** | `data/monita.json` | Latin and English: public domain (US, 1857 publication); editorial repair and alignment: [CC0 1.0](LICENSE-DATA) — see below |
 | **Bilingual edition of the brief of 1773** | `data/dominus.json` | Latin: public domain (brief of 1773, edition of 1852); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
 | **The author's essay** | `data/pilgrim_profile.json`, `docs/Fassbender-2026-The-Pilgrims-Profile.docx` | © 2026 Dr. Pantaleon Fassbender, **all rights reserved** — deliberately excluded from the open licences above |
@@ -56,6 +58,17 @@ public domain; M'Crie's footnote markers are removed and his notes are not
 reproduced. The editorial paragraph numbering is dedicated to the public
 domain under CC0 1.0. The French original (public domain) is named as source
 but not yet carried.
+
+**`data/xavier.json`** holds four letters of St. Francis Xavier complete, in
+the English of H. J. Coleridge SJ, *The Life and Letters of St. Francis
+Xavier*, 2 vols. (London: Burns and Oates, 1872) — an 1872 publication in the
+United States public domain; a faithful transcription adds nothing licensable.
+Coleridge quotes the letters inside a running biography; the cutting of each
+letter at its printed opening and dateline, the rejoining of the Kagoshima
+letter's two installments, and the paragraph numbering are dedicated to the
+public domain under CC0 1.0. Coleridge translated freely from the Latin of
+older editions; anyone citing Xavier critically should cite the *Monumenta
+Xaveriana*.
 
 **`data/monita.json`** holds the *Monita secreta* — the anti-Jesuit forgery of
 1614, carried by this apparatus as the debate it forced, not as truth — in the

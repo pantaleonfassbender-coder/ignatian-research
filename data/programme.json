@@ -32,12 +32,14 @@
  {
   "id": "xavier",
   "linie": "welt",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Francis Xavier",
-  "jahr": "1542–1552",
+  "jahr": "1543–1552",
   "titel": "Letters from India and Japan (selections)",
   "warum": "The Exercises carried to the other side of the world within a decade of their approval.",
-  "quelle": "H. J. Coleridge, The Life and Letters of St. Francis Xavier (1872), public domain; Monumenta Xaveriana (1899–1912) for the originals."
+  "quelle": "English: H. J. Coleridge, The Life and Letters of St. Francis Xavier, 2 vols. (London 1872; Internet Archive lifelettersofstf01cole / lifelettersofstf02cole, public domain). Four letters carried complete — Cochin 1543, Kagoshima 1549, to Ignatius 1552, Sancian 1552 — cut at their printed openings and datelines, Coleridge's commentary and footnotes omitted. Latin originals: Monumenta Xaveriana (1899–1912), not yet carried.",
+  "datei": "xavier",
+  "zk": "FX"
  },
  {
   "id": "relations",
@@ -72,12 +74,14 @@
  {
   "id": "imago",
   "linie": "welt",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Imago primi saeculi Societatis Iesu",
   "jahr": "1640",
   "titel": "The Society's centenary emblem book (selected emblems, with images)",
   "warum": "The order's self-image at one hundred — engraving, epigram and boast in one volume; the very book its critics mocked. Basis of the planned iconographic path.",
-  "quelle": "Antwerp: Plantin-Moretus 1640; engravings and Latin public domain, images from a public-domain scan, epigrams with working translations."
+  "quelle": "Antwerp: Plantin-Moretus 1640; Internet Archive scan imagoprimisaecul00boll, public domain. Pilot shipped: the engraved title and two emblems (Vnus non sufficit orbis, p. 326; Nouum mutor in alitem, p. 200) as page images with the epigrams transcribed distich by distich and working translations. The remaining ~124 emblems wait their turn.",
+  "datei": "imago",
+  "zk": "Imago"
  },
  {
   "id": "spee_cautio",

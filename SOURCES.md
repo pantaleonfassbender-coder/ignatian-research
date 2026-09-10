@@ -32,6 +32,17 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: *Memoriale Beati Petri Fabri*, ed. M. Bouix (Paris, 1873) — the editio princeps — Internet Archive scan — <https://archive.org/details/memorialebeatipe0000sign>
 - English: working translation made for this site (CC0).
 
+## The Society in the world
+
+### Francis Xavier, Letters from India and Japan (selections) · `data/xavier.json`
+
+- English: H. J. Coleridge, S.J., *The Life and Letters of St. Francis Xavier*, 2 vols. (London: Burns and Oates, 1872), which quotes the letters complete inside a running biography — <https://archive.org/details/lifelettersofstf01cole> and <https://archive.org/details/lifelettersofstf02cole>. Four letters are carried, cut at their printed openings and datelines; Coleridge's commentary and footnotes are omitted.
+- Latin and Spanish originals (named, not yet carried): *Monumenta Xaveriana*, 2 vols. (Madrid, 1899–1912).
+
+### Imago primi saeculi — iconographic pilot · `data/imago.json` · `assets/imago/`
+
+- *Imago primi saeculi Societatis Iesu a Provincia Flandro-Belgica eiusdem Societatis repraesentata* (Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640), Internet Archive scan — <https://archive.org/details/imagoprimisaecul00boll>. The three images in `assets/imago/` are rendered and cropped from this scan (leaves 8, 213, 339 of the PDF; printed pages: engraved title, 200, 326); the Latin lemmas and epigrams are transcribed by eye from the same page images; the English is a working translation made for this site (CC0).
+
 ## The counter-voices
 
 ### Pascal, Lettres provinciales — Letters V, VII, X · `data/pascal.json`
