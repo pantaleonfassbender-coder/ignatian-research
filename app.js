@@ -334,8 +334,7 @@ function viewWorks(args) {
       const intro = D.introOf[w.id] || {};
       const card = el(`<div class="workcard" style="border-left:3px solid ${wc(w.id)}">
         <h3>${esc(w.titel)}</h3>
-        <div>${rightsBadge(w)} <span class="chip">${esc(intro.genre || "")}</span>
-          <span class="chip">difficulty ${"●".repeat(intro.difficulty || 0)}${"○".repeat(5 - (intro.difficulty || 0))}</span></div>
+        <div>${rightsBadge(w)} <span class="chip">${esc(intro.genre || "")}</span></div>
         <p class="fine" style="margin:0">${w.id === "dir"
           ? "Latin: Monumenta Ignatiana, 1919 · English: Longridge 1919 or this site's working translation"
           : w.id === "fabri"
