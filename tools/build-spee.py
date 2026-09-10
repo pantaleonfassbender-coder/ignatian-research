@@ -1,0 +1,578 @@
+# -*- coding: utf-8 -*-
+# Build data/spee.json — Friedrich Spee, Cautio Criminalis (selections):
+# the Spee line's first shipped module.
+#
+# Latin transcribed BY EYE from the page images of the first printing,
+# Rinteln 1631 (Internet Archive
+# per_witchcraft-in-europe-and-america_spee-friedrich-von_1631_911, public
+# domain; the book appeared anonymously). The OCR of the italic type is
+# unusable and served only for navigation. Transcription conventions: long s
+# normalised to s, the ae/oe ligatures to ae/oe, u/v as printed; printer's
+# abbreviations silently expanded (q; -> que, nasal strokes -> m/n, & kept).
+# Two dubia are carried complete: Dubium I (pp. 1-2), the opening question,
+# and Dubium LI (pp. 378-392), the numbered summa of the trials as actually
+# conducted — the most quoted pages Spee wrote. The English is this site's
+# unofficial working translation, made directly from the Latin (CC0);
+# Marcus Hellyer's translation of 2003 remains in copyright and was not
+# consulted.
+#
+# Usage: python tools/build-spee.py
+import io, json, os
+
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def units(rows):
+    out = []
+    for k, r in enumerate(rows, start=1):
+        u = {'n': k, 'k': k}
+        u.update(r)
+        out.append(u)
+    return out
+
+DUB1 = units([
+ {'label': 'The question (p. 1)',
+  'orig': 'DVBIVM I. An Sagae, striges seu malefici revera existant?',
+  'en': 'Doubt I. Whether witches, night-hags or workers of harm really exist?'},
+ {'orig': ('RESPONDEO. Etsi scio nonnullos in dubio posuisse, etiam Catholicos & doctos quos '
+           'nominare non attinet: etsi etiam quidam non temere suspicari sibi videntur, fuisse '
+           'aliquando in Ecclesia ea tempora in quibus de corporalibus Sagarum conventibus creditum '
+           'non fuit: Etsi denique ipse ego dum cum variis ejus criminis reis in carceribus egi '
+           'frequentius ac attentius, ne dicam, curiosius, ita non semel animum involvi, ut quid '
+           'tandem hujus rei crederem pene ignoraverim, nihilominus ubi summam tandem colligo '
+           'perplexarum cogitationum, id omnino tenendum existimo, revera in mundo maleficos '
+           'aliquos esse, nec id sine temeritate, ac praepostero judicii nota negari posse.'),
+  'en': ('I ANSWER. Though I know that some have left the matter in doubt, Catholics and learned '
+         'men among them whom there is no need to name; though some, not without grounds, think '
+         'they detect that there were once times in the Church when the bodily gatherings of '
+         'witches were not believed in; and though I myself, while I dealt in the prisons with '
+         'various persons accused of this crime — often, attentively, not to say curiously — was '
+         'more than once so entangled in my own mind that I hardly knew what, in the end, I '
+         'believed about the matter: nevertheless, when at last I gather up the sum of my '
+         'perplexed reflections, I hold that this must be maintained without reserve — that there '
+         'really are some workers of harm in the world, and that this cannot be denied without '
+         'rashness and the mark of a distorted judgement.')},
+ {'orig': ('Videantur auctores, qui argumentum hoc profitentur, Remigius, Delrius, Bodinus, & alii: '
+           'nostri instituti non est hic morari.'),
+  'en': ('Let the authors who make a profession of this argument be consulted — Remigius, Delrio, '
+         'Bodin and others: it is not the purpose of this work to linger here.')},
+ {'orig': ('Tot autem esse & eas omnes, quae hactenus in favillas evolarunt: neque credo vel ego, '
+           'vel multi quoque mecum pii viri, neque adeo ut credam facile persuadebit, quisquis '
+           'mecum non impetu & clamore vel authoritate pertendere, sed judicio & ratione rem '
+           'examinare volet.'),
+  'en': ('But that there are so many of them — that all those were witches who up to now have gone '
+         'up in ashes — that neither I believe, nor many devout men with me; nor will anyone '
+         'easily persuade me to believe it who is willing to examine the matter with me by '
+         'judgement and reason, rather than to press it by impetus and clamour or by authority.')},
+ {'orig': ('Id quod lectorem meum velle, per eam charitatem, quam legifer noster Christus '
+           'vehementer voluit inter asseclas suos accendi, maximopere precor. Si quis Zelum habet, '
+           '& frendet in magiae crimen, comprimat se tantisper, & addat Zelo scientiam ac '
+           'considerationem, quam fortasse non habet.'),
+  'en': ('And that my reader should be willing to do this I beg most earnestly, by that charity '
+         'which Christ our lawgiver so vehemently wished to be kindled among his followers. If '
+         'anyone has zeal, and gnashes his teeth at the crime of magic, let him restrain himself '
+         'for a while, and add to his zeal the knowledge and the consideration which perhaps he '
+         'does not have.')},
+ {'orig': ('Non omnis impetus a virtute est, nam & quidam a natura solum. Virtus moderata & '
+           'modesta est, atque amat instrui, nec ideo minor esse timet, cum fit instructior. Quod '
+           'si impetu ruimus, & quia scire omnia apprehendimus, detrectamus discere, quid est mirum '
+           'si nos veritas in multis fugit?'),
+  'en': ('Not every impulse comes from virtue; some come from nature alone. Virtue is moderate and '
+         'modest, and loves to be taught, nor does it fear to be the less for becoming better '
+         'instructed. But if we rush on by impulse, and refuse to learn because we take ourselves '
+         'to know everything, what wonder if the truth escapes us in many things?')},
+ {'label': 'The invitation (p. 2)',
+  'orig': ('Age lector, & seposito praejudicio modeste sequere quo te manu mea pedetentim ducam: '
+           'non pigebit multa lente & morose considerasse.'),
+  'en': ('Come then, reader: set prejudice aside and follow modestly where I shall lead you, step '
+         'by step, by my hand — you will not regret having considered many things slowly and '
+         'scrupulously.')},
+])
+
+DUB51 = units([
+ {'label': 'The question (p. 378)',
+  'orig': ('DVBIVM LI. Quae brevis sit summa & methodus processuum contra sagas hodie apud multos '
+           'in usu, digna quam Germania consideret.'),
+  'en': ('Doubt LI. A brief summary and method of the trials against witches as today in use among '
+         'many — worth Germany’s consideration.')},
+ {'orig': ('RESPONDEO. Poterat hanc summam lector quivis ex tractatu hoc ipse apud se colligere: '
+           'sed quod mihi id fuit factu facilius, eam hic apponam, omissis tamen multis quae '
+           'commode inseri non poterant: de quibus consulantur hactenus dicta, uti & de his quae '
+           'hic posita sunt si diductius lubet singula cognoscere. Itaque summa haec est.'),
+  'en': ('I ANSWER. Any reader could have gathered this summary for himself out of the treatise; '
+         'but since it was easier for me to do, I set it down here — omitting, however, much that '
+         'could not conveniently be inserted: for which let what has been said so far be '
+         'consulted, as also for the points set down here, if one wishes to examine them one by '
+         'one at greater length. The sum, then, is this.')},
+ {'orig': ('1. Incredibilis vulgi apud Germanos, & maxime (quod pudet dicere) Catholicos '
+           'superstitio, invidia, calumniae, detractiones, susurrationes & similia, quae nec '
+           'Magistratus punit, nec concionatores arguunt, suspicionem magiae primum excitant. '
+           'Omnes divinae punitiones quas in sacris literis Deus minatus est, a sagis sunt. Nihil '
+           'jam amplius Deus facit aut natura, sed sagae omnia.'),
+  'en': ('1. An incredible superstition of the common people among the Germans — and, shameful to '
+         'say, most of all among Catholics — envy, calumnies, backbitings, whisperings and the '
+         'like, which neither the magistrate punishes nor the preachers rebuke, first arouse the '
+         'suspicion of magic. Every divine punishment that God threatened in Holy Scripture now '
+         'comes from witches. God and nature no longer do anything: the witches do everything.')},
+ {'orig': ('2. Unde impetu omnes clamant ut igitur inquirat Magistratus in sagas, quas non nisi '
+           'ipsi suis linguis tot fecerunt.'),
+  'en': ('2. Hence all cry out impetuously that the magistrate should therefore hunt the witches — '
+         'whom only they themselves, with their own tongues, have made so many.')},
+ {'orig': ('3. Mandant ergo Principes suis Judicibus & Consiliariis ut incipiant in sagas '
+           'procedere.'),
+  'en': ('3. So the princes command their judges and counsellors to begin proceedings against the '
+         'witches.')},
+ {'orig': ('4. Nesciunt hi primum unde ordiantur, cum indicia seu probationes non habeant: nec '
+           'temere tamen hic quicquam moliendum esse a conscientia sua satis audiant.'),
+  'en': ('4. These at first do not know where to begin, since they have no indications or proofs; '
+         'and from their conscience they hear clearly enough that nothing here should be attempted '
+         'rashly.')},
+ {'orig': ('5. Monentur interim bis terve ut procedant. Clamat vulgus moram hanc non carere '
+           'suspicione. Et paene idem sibi, a nescio quibus informati, Principes persuadent.'),
+  'en': ('5. Meanwhile they are admonished twice or three times to proceed. The crowd cries that '
+         'this delay is not free of suspicion. And the princes, informed by I know not whom, '
+         'nearly persuade themselves of the same.')},
+ {'orig': ('6. Hos autem offendere & non subito obsequi in Germania grave est: plerique omnes, '
+           'etiam viri spirituales nimium probant, quaecunque modo Principibus placuerunt: nec '
+           'advertunt a quibus hi saepe instigentur quantumvis optimi natura sua sint.'),
+  'en': ('6. But to offend these, and not to comply at once, is a serious thing in Germany: almost '
+         'everyone, even spiritual men, approves only too readily whatever has pleased the '
+         'princes; nor do they notice by whom the princes — however excellent by nature — are '
+         'often instigated.')},
+ {'orig': ('7. Tandem igitur voluntati eorum Judices cedunt, atque aliqua demum via processibus '
+           'initium inveniunt.'),
+  'en': ('7. At last, then, the judges yield to their will, and finally find some way to set the '
+         'trials in motion.')},
+ {'orig': ('8. Aut si illi adhuc haerent, & horrent tangere rem periculosam, mittitur Inquisitor '
+           'ad id singulariter deputatus, qui si quid secum trahat imperitiae & impetus, ut fieri '
+           'in humanis rebus solet, id in hac materia colorem ac nomen mutat, & non nisi mera '
+           'justitia ac zelus est; quem utique spes lucri non imminuit, praesertim in homine '
+           'tenuiore & avido habendi cum familia plena prolibus est, & in singula reorum urendorum '
+           'capita aliquot dalerorum stipendium constitutum est, praeter accidentarias collectas & '
+           'contributiones, quas liberrime a paganis exigere Inquisitoribus permissum est ut '
+           'supra.'),
+  'en': ('8. Or if they still hesitate, and shrink from touching so dangerous a business, an '
+         'inquisitor is sent, specially deputed for it — who, if he brings along some inexperience '
+         'and impetuosity of his own, as happens in human affairs, finds that in this matter it '
+         'changes colour and name and becomes nothing but pure justice and zeal; nor is that zeal '
+         'lessened by the hope of gain, above all in a man of slender means and eager to have, '
+         'with a family full of children, when a stipend of several thalers has been fixed for '
+         'every head of the accused that is burned — besides the incidental collections and '
+         'contributions which the inquisitors are permitted, most freely, to exact from the '
+         'villagers, as above.')},
+ {'orig': ('9. Tum si dictum aliquod Energumeni aut si malignus & spurius horum temporum rumor '
+           '(non enim unquam probata fama) in pauperculam aliquam & vilem Gajam gravius incubuit; '
+           'ea prima est.'),
+  'en': ('9. Then, if some utterance of a demoniac, or some malicious bastard rumour of these '
+         'times (for the report is never a proven one) has settled heavily on some poor and lowly '
+         'Gaia — she is the first.')},
+ {'orig': ('10. Ac ne tamen ex solo hoc rumore sine aliis indiciis, ut vocant, processum esse '
+           'videatur, ecce subito in promptu est indicium aliquod per hoc dilemma: vel enim Gaja '
+           'ea malae & improbae vitae fuit, vel bonae ac probae. Si malae; indicium id, ajunt, '
+           'magnum est: nam a malitia ad malitiam praesumptio est. Si autem bonae; & hoc quoque '
+           'indicium non minus est: nam sic, ajunt, tegere se sagae solent, & vel maxime videri '
+           'probae velle.'),
+  'en': ('10. And lest it seem that proceedings rest on this rumour alone, without other '
+         '"indications", as they call them — behold, an indication is instantly at hand through '
+         'this dilemma: either Gaia has led a bad and wicked life, or a good and upright one. If '
+         'bad, the indication, they say, is strong: for from malice to malice the presumption '
+         'runs. If good, the indication is no less: for just so, they say, do witches habitually '
+         'disguise themselves, wishing above all to seem upright.')},
+ {'orig': ('11. Rapi igitur Gaja in carcerem jubetur: & ecce novum iterum indicium per hoc '
+           'dilemma: Vel enim timere se tunc ostendit, vel non ostendit. Si ostendit (quippe cum '
+           'audierit quam gravibus tormentis in hac materia uti soleant) jam hoc indicium est: nam '
+           'conscientia accusat, ajunt: si non ostendit (quippe cum innocentiae confidat) jam id '
+           'quoque indicium est: nam hoc denique propriissimum esse sagis ajunt, innocentissimas '
+           'jactare se, frontemque porrigere.'),
+  'en': ('11. Gaia is therefore ordered to be carried off to prison — and behold, again a new '
+         'indication, through this dilemma: either she then shows fear, or she does not. If she '
+         'shows it (having heard, of course, what grave torments they use in this matter), that is '
+         'an indication: for conscience, they say, accuses her. If she does not show it (trusting, '
+         'of course, in her innocence), that too is an indication: for nothing, they say, is more '
+         'proper to witches than to boast themselves most innocent and to put on a bold front.')},
+ {'orig': ('12. Ne non vero adhuc plura in eam indicia supperant, habet Inquisitor homines suos, '
+           'saepe improbos & infames, qui in omnem retro vitam inquirant, in qua sane fieri non '
+           'potest quin occurrat quippiam seu dictum sive factum, quod abjecta in malum hominum '
+           'interpretatio in magiae culpam facile detorqueat & obvertat.'),
+  'en': ('12. And lest further indications against her be wanting, the inquisitor has his own '
+         'men — often wicked and infamous — to inquire into her whole past life; in which it '
+         'cannot possibly happen that nothing turns up, said or done, which a low interpretation, '
+         'bent on evil, can easily twist and turn into the guilt of magic.')},
+ {'orig': ('13. Sed & si qui tum ei male hactenus voluerunt, pulcherrimam nocendi opportunitatem '
+           'nacti, afferunt quod, quale lubet, facile reperiunt: clamaturque passim, gravari eam '
+           'magnis indiciis.'),
+  'en': ('13. And any who have so far wished her ill, having found the fairest opportunity of '
+         'harming her, bring forward whatever they please — they find it easily; and it is cried '
+         'on every side that she is weighed down by grave indications.')},
+ {'orig': ('14. Atque ideo quamprimum ad quaestiones abripitur nisi eadem adhuc die qua capta est '
+           'jam tum abrepta sit: ut saepe contingit.'),
+  'en': ('14. And therefore she is hurried off to the torture at the first moment — unless, as '
+         'often happens, she was hurried there on the very day she was taken.')},
+ {'orig': ('15. Neque enim advocatus & integerrima sui defensio quibusvis conceditur cum clament '
+           'Exceptum crimen esse, cumque qui defendere & advocare velit in suspicionem criminis '
+           'vocetur: uti & omnes illi qui in his causis quicquam loqui velint & Judices movere ut '
+           'cauti sint: nam mox nominant sagarum patronos: Sic omnibus occlusa ora sunt & obtusi '
+           'calami, ne loquantur aut scribant.'),
+  'en': ('15. For an advocate and a full defence are not granted to everyone, since they cry that '
+         'this is an excepted crime; and whoever would defend and plead is himself drawn into '
+         'suspicion of the crime — as are all who would say anything in these causes and move the '
+         'judges to caution: for at once they are called patrons of the witches. Thus all mouths '
+         'are stopped and all pens blunted, that none may speak or write.')},
+ {'orig': ('16. Plerumque tamen ne non aliquis saltem defensioni locus Gajae datus videatur: '
+           'sistitur primum in specie ac indicia ei primum praeleguntur & examinantur, si tamen '
+           'examinantur.'),
+  'en': ('16. Usually, however — lest it seem that no room at all was given to Gaia’s '
+         'defence — she is first produced for form’s sake, and the indications are first read '
+         'out to her and examined. If, that is, they are examined.')},
+ {'orig': ('17. Quae etsi tunc illa purgat, & ad singula accurate satisfacit, id non attenditur '
+           'nec notatur, vim suam & valorem omnia retinent quantumvis optima responsione '
+           'detrahatur: jubetur tantum reduci in vincula, ut consideret attentius an obstinata '
+           'velit persistere: jam tum enim quia purgat sese, obstinata est.'),
+  'en': ('17. And though she then clears them, and answers each point exactly, this is neither '
+         'attended to nor recorded; the indications keep all their force and value, however '
+         'excellent the answer that undoes them. She is merely ordered back into her chains, to '
+         'consider more attentively whether she means to persist in obstinacy: for by now, '
+         'because she clears herself, she is obstinate.')},
+ {'orig': ('18. Ubi consideravit: rursum alio die sistitur, & praelegitur ei decretum torturae: '
+           'quasi nihil jam ante ad objecta responderit, nec quicquam eliserit.'),
+  'en': ('18. When she has considered, she is produced again another day, and the decree of '
+         'torture is read out to her — as though she had answered nothing before, and had '
+         'demolished none of the charges.')},
+ {'orig': ('19. Prius tamen quam torqueatur, seducitur a lictore & ne contra dolorem muniat se '
+           'magicis quisquiliis, ea quaeruntur toto corpore detonso, atque etiam ea parte qua '
+           'sexum monstrat petulanter excussa; licet nihil tale hactenus unquam reperiatur.'),
+  'en': ('19. Before she is tortured, however, she is taken aside by the executioner, and — lest '
+         'she fortify herself against the pain with magical trumperies — her whole body is shaved '
+         'and searched for them, even that part which shows her sex being wantonly examined; '
+         'though nothing of the kind has ever yet been found.')},
+ {'orig': ('20. Quidni vero mulieri id fiat? cum & consecratis quoque Sacerdotibus? idque etiam ab '
+           'Inquisitoribus & Officialibus. Ecclesiasticis Principum Ecclesiasticorum neque enim '
+           'non bruta fulmina apud Judices Germanos habentur, quae in Bulla Coenae eos petunt, qui '
+           'sine speciali & specifica Apostolicae sedis licentia in Clericos procedunt. Quod ne '
+           'Principes ipsi pientissimi atque in Romanam sedem observantissimi intelligant, ac '
+           'proinde trepidum processibus adducant, Inquisitores cavent.'),
+  'en': ('20. And why should this not be done to a woman, when it is done even to consecrated '
+         'priests — and that by the inquisitors and officials of ecclesiastical princes? For '
+         'among German judges those thunderbolts count as harmless which, in the Bull of the '
+         'Supper, strike those who proceed against clerics without special and specific licence '
+         'of the Apostolic See. And the inquisitors take care that the princes themselves — most '
+         'pious, and most observant toward the Roman See — should not understand this, and so '
+         'bring hesitation into the trials.')},
+ {'orig': ('21. Tum ubi sic excussa & detonsa Gaja est, torquetur ut veritatem ediserat, id est, '
+           'ut sese simpliciter ream pronunciet: quicquid aliud dictura est veritas non erit, nec '
+           'esse potest.'),
+  'en': ('21. Then, when Gaia has been thus searched and shaved, she is tortured so that she may '
+         'declare the truth — that is, so that she may simply pronounce herself guilty: whatever '
+         'else she may be going to say will not be the truth, and cannot be.')},
+ {'orig': ('22. Torquetur tamen tortura primi generis, id est leviore: quod ita intellige, ut '
+           'licet gravissima quidem ea sit, tamen respectu aliarum sequentium lenior sit. Unde si '
+           'fatetur, ajunt & spargunt fassam esse sine tortura.'),
+  'en': ('22. She is tortured, however, with torture of the first degree — that is, the lighter '
+         'kind: understand it thus, that though it is in truth most grave, it is milder in '
+         'comparison with those that follow. Whence, if she confesses, they say and spread abroad '
+         'that she confessed without torture.')},
+ {'orig': ('23. Quis autem Principum aliorumque qui haec audit, non existimet certissimo '
+           'nocentem esse quae sic ultro sine tortura se ream fassa sit?'),
+  'en': ('23. And what prince, or anyone else who hears this, would not conclude her most '
+         'certainly guilty, who thus of her own accord, without torture, confessed herself '
+         'culpable?')},
+ {'orig': ('24. Sine scrupulo igitur ullo post hanc confessionem plectitur: plectenda interim '
+           'nihilominus etsi confessa non esset: nam ubi modo torturae datum initium est, jam '
+           'jacta alea est, evadere non potest, mori debet.'),
+  'en': ('24. Without any scruple, then, after this confession she is executed. She would '
+         'nevertheless have been executed even had she not confessed: for once a beginning has '
+         'been made with the torture, the die is already cast — she cannot escape; she must '
+         'die.')},
+ {'orig': ('25. Itaque vel fatetur, vel non fatetur: aeque quicquid fiat actum est. Si fatetur, '
+           'res clara est, nam, ut dixi & liquet, plectitur: Revocatio omnis frustra est, ut supra '
+           'ostendimus. Si non fatetur, repetitur tortura bis, ter, quater: licent omnia quae hic '
+           'lubet: neque enim temporis, nec acerbitatis, nec repetitionis poenarum in excepto '
+           'crimine est ratio: nihil hic peccare se putant judices quod in conscientiae forum '
+           'adducendum sit.'),
+  'en': ('25. So she confesses, or she does not confess: either way it is all over with her. If '
+         'she confesses, the case is clear — for, as I said and as is plain, she is executed; '
+         'every recantation is in vain, as we showed above. If she does not confess, the torture '
+         'is repeated — twice, three times, four times: in an excepted crime everything that '
+         'pleases is permitted; there is no rule of time, of severity, of repetition of torments. '
+         'The judges think that in this they commit no sin that need be brought before the court '
+         'of conscience.')},
+ {'orig': ('26. Tum si Gaja aliquoties torta nondum silentium abrumpit; si vultu connititur, '
+           'adversus poenas, si patitur deliquium &c. clamant eam ridere & dormire tormentis, uti '
+           'maleficio taciturnitatis, ac tanto jam nocentiorem esse; quam proinde vel vivam uri '
+           'deceat: quod & nuper nonnullis factum quae fateri aliquoties tortae noluissent.'),
+  'en': ('26. Then, if Gaia after several torturings still does not break silence; if she braces '
+         'her face against the torments; if she falls into a faint — they cry that she is '
+         'laughing at the tortures, that she sleeps through them, that she uses the sorcery of '
+         'silence, and is by so much the more guilty; and that it is therefore fitting she be '
+         'burned alive: which was in fact lately done to several who, though tortured repeatedly, '
+         'would not confess.')},
+ {'orig': ('27. Atque id tunc vocant etiam confessarii, etiam religiosi obstinatam & '
+           'impoenitentem decessisse; noluisse converti, nec deserere concubinum suum; sed servare '
+           'ei fidem voluisse.'),
+  'en': ('27. And then even the confessors, even the religious, call this dying obstinate and '
+         'impenitent: she would not be converted, would not forsake her demon-lover, but chose to '
+         'keep faith with him.')},
+ {'orig': ('28. Quod si autem contingat quampiam ex tot tormentis animam deponere, ajunt ei a '
+           'Daemone elisam cervicem esse: atque id probant argumento quodam invincibili, quo si '
+           'uti velis neminem non omnium hominum sic a Daemone elidi confeceris, ut supra.'),
+  'en': ('28. But if it happens that some woman gives up her soul under so many torments, they '
+         'say the Demon broke her neck: and they prove it by a certain invincible argument — by '
+         'which, if you cared to use it, you could establish that every human being without '
+         'exception is throttled so by the Demon, as above.')},
+ {'orig': '29. Quare merito scilicet cadaver a lictore educitur & humatur sub furca.',
+  'en': ('29. Wherefore, deservedly of course, her corpse is dragged out by the executioner and '
+         'buried beneath the gallows.')},
+ {'orig': ('30. Quod si autem nec Gaja moritur, nec scrupulosi quidam ulterius torquere audent '
+           'sine novis indiciis, nec inconfessam exurere, retinetur in carcere, atque arctioribus '
+           'vinculis accipitur, ibi vel ad annum integrum maceranda dum subigatur.'),
+  'en': ('30. If, however, Gaia neither dies, nor certain scrupulous men dare torture her further '
+         'without new indications, nor burn her unconfessed — she is kept in prison and loaded '
+         'with harsher chains, there to be worn down, even for a whole year, until she is '
+         'subdued.')},
+ {'orig': ('31. Neque enim per torturas purgare se unquam potest & aspersum semel crimen abluere, '
+           'ut volebant jura. Dedecus id esset Inquisitoribus semel captam sic emittere: Nocens '
+           'esse debet per fas nefas, quam illi modo semel vinculis amplexi sunt.'),
+  'en': ('31. For she can never clear herself by the tortures, and wash off the crime once '
+         'sprinkled on her, as the laws intended. It would be a disgrace to the inquisitors to '
+         'release a woman once taken: guilty she must be, by fair means or foul, once they have '
+         'so much as clasped her in their chains.')},
+ {'orig': ('32. Interim & tum, & jam ante submittuntur Sacerdotes imperiti, impetuosi, lictoribus '
+           'ipsis importuniores: horum officium est eo usque miseram omnibus modis divexare dum se '
+           'tandem sive sit seu non sit ream fateatur: ni id faciat salvari simpliciter non posse '
+           'clamant, nec sacramentis muniri.'),
+  'en': ('32. Meanwhile — then, and already before — priests are sent in to her, unskilled and '
+         'impetuous, more troublesome than the executioners themselves: their office is to harry '
+         'the wretched woman by every means until at last she confesses herself guilty, whether '
+         'she is or is not; if she will not, they cry that she simply cannot be saved, nor '
+         'fortified with the sacraments.')},
+ {'orig': ('33. Ne vero Sacerdotes sedatiores, doctioresque & qui faeni aliquid in cornu ac in '
+           'corde salis gestent, admittantur, expressissima cautio est. Uti & ne quisquam alius '
+           'ad custodias accedat qui advocare aut principes erudire possit. Nihil enim quidam '
+           'aeque formidant, quam ne quo modo tale quippiam se forte prodat, quo captarum '
+           'innocentia in lucem prosiliat. Itaque cujusmodi generis viris non modo orbis terrarum '
+           'juventute, sed & ipsi Principes conscientiam suam fidant, hos quidem eorundem '
+           'Principum Inquisitores eo habent loco, ut non modo a conscientiis reorum quantumvis '
+           'expetiti sint eos removeant, sed & jactitare ad nobilium mensas nuper ausi sint a '
+           'patria merito exigendos esse tanquam Justitiae turbatores.'),
+  'en': ('33. But that the calmer and more learned priests — those who carry some hay on their '
+         'horn and some salt in their heart — should not be admitted, there is a most express '
+         'precaution; as also that no one else should approach the cells who might plead for '
+         'them or enlighten the princes. For nothing do certain men dread so much as that '
+         'something might somehow come to light by which the innocence of the captured women '
+         'would leap into view. And so the men to whom not only the youth of the whole world but '
+         'the princes themselves entrust their consciences — these the same princes’ '
+         'inquisitors hold in such regard that they not only remove them from the consciences of '
+         'the accused, however much they are asked for, but have lately dared to boast at the '
+         'tables of the nobility that such men deserve to be driven from the country as '
+         'disturbers of Justice.')},
+ {'orig': ('34. Interea vero dum Gaja sic ut dixi adhuc in carcere attinetur, & a quibus minime '
+           'debebat divexatur, non desunt Judicibus accuratis pulcherrima inventa quibus non modo '
+           'nova indicia contra Gajam reperiant, sed quibus etiam in faciem eam sic convincant (si '
+           'Diis placet) ut Judicio Academicorum Doctorum tum saltem viva exurenda esse '
+           'pronuncietur: uti superius ostensum est.'),
+  'en': ('34. Meanwhile, while Gaia, as I said, is still held in prison and harried by those who '
+         'least of all should harry her, the exact judges are not without the prettiest devices, '
+         'by which they not only find new indications against her, but even convict her to her '
+         'face — so please the gods — in such a manner that by the judgement of academic doctors '
+         'she is pronounced fit to be burned alive at the least: as was shown above.')},
+ {'orig': ('35. Quidam tamen ex abundanti & exorcisari Gajam jubent & in alium transferri locum, '
+           'ac sic iterum torqueri: si hac forte mutatione loci & expiatione maleficium '
+           'taciturnitatis possit discuti: Ac si ne ita quidem proficitur tum demum vivam flammis '
+           'immittunt. Scire cupiam me Deos amet si & fassa & inconfessa perit, quis hic tandem '
+           'quantumvis innocenti evadendi sit modus? Miseram te nimis quid sperasti? quid non '
+           'primo in carcerem accessu ream te fecisti? Age stulta mulier & vesana quid toties vis '
+           'mori cum possis semel? Sequere consilium, & ante omnem poenam dic te ream, & morere; '
+           'non evades: nam haec denique zeli Germaniae catastrophe est.'),
+  'en': ('35. Some, however, for good measure order Gaia to be exorcised and transferred to '
+         'another place, and there tortured again — in case the sorcery of silence might be '
+         'shaken off by this change of place and expiation; and if not even so is anything '
+         'gained, then at last they commit her living to the flames. Now, so help me God, I '
+         'should like to know — since she perishes confessed and unconfessed alike — what way of '
+         'escape there finally is for anyone, however innocent? O wretched woman, what did you '
+         'hope for? Why did you not declare yourself guilty on your first entry into the prison? '
+         'Come, foolish, senseless woman — why will you die so many times, when you might die '
+         'once? Follow my counsel: before any torment, call yourself guilty and die. You will '
+         'not escape: for this, in the end, is the catastrophe to which German zeal comes.')},
+ {'orig': ('36. Itaque si se quaepiam vi dolorum falso semel ream fecit, dici vix potest quae '
+           'miseria sit. Nam & medium nullum suppetit apud plerosque quo evadat, & alias quoque '
+           'reas facere cogetur quas nescit, quasque non infrequenter Quaesitores in os indunt, '
+           'aut lictor suggerit, aut quas jam ante infames, aut deletas aut semel captas & '
+           'dimissas audiverunt: quae cum rursum alias, & illae quoque alias indicare debeant, & '
+           'sic deinceps: quis non videt in infinitum iri oportere?'),
+  'en': ('36. And so, if any woman by the force of the pains has once falsely made herself '
+         'guilty, it can scarcely be said what misery follows. For with most judges there is no '
+         'middle way left by which she might escape; and she is forced to accuse others as '
+         'guilty, women she does not know — names which not seldom the interrogators put into '
+         'her mouth, or the executioner suggests, or which she has heard of as already infamous, '
+         'or destroyed, or once taken and released. And since these must in their turn denounce '
+         'others, and those again others, and so on: who does not see that it must go on to '
+         'infinity?')},
+ {'orig': ('37. Quare & ipsi Judices vel abrumpere processus, & damnare artem suam debent, vel & '
+           'suos denique, & semet, atque omnes exurere: Nam ad omnes tandem falsissimae '
+           'denunciationes excurrent, &, si modo tormenta succedant, fontes ostendent.'),
+  'en': ('37. Wherefore the judges themselves must either break off the trials and condemn their '
+         'own art, or else burn — in the end — their own people, themselves, and everyone: for '
+         'the utterly false denunciations run out at last to reach everyone; and, provided only '
+         'the torments continue, they will disclose their sources.')},
+ {'orig': ('38. Unde & ii denique involvuntur, qui initio vel maxime clamabant, ut incendia '
+           'constanter alerentur: Neque enim praevidebant imprudentes ad se quoque ordinem '
+           'necessario perventurum. Et hi quidem justo Judicio DEI: quippe qui pestilentibus suis '
+           'linguis cum tot nobis maleficos creassent, tot innocentes ignibus addixerunt.'),
+  'en': ('38. Whence at last those very men are entangled who at the beginning cried loudest '
+         'that the fires must be steadily fed: for in their imprudence they did not foresee that '
+         'their own turn must necessarily come. And this indeed by the just judgement of GOD: '
+         'seeing that with their pestilent tongues they had created so many witches for us, and '
+         'consigned so many innocents to the flames.')},
+ {'orig': ('39. Sed jam multi prudentiores atque eruditiores id cernere paulatim incipiunt, & '
+           'quasi ex gravi somno excitati aperire oculos, ac lentius cautiusque saevire.'),
+  'en': ('39. But by now many of the more prudent and more learned are gradually beginning to '
+         'discern this, and — as if roused from a heavy sleep — to open their eyes, and to rage '
+         'more slowly and more cautiously.')},
+ {'orig': ('40. Neque est quod negent Judices se ex solis denunciationibus ad tormenta procedere: '
+           'nam ostendi supra vere procedere, ac proinde fallere optimos suos Principes cum '
+           'negant. Nam & fama quam fere cum denunciationibus conjungunt invalida est semper '
+           'atque nulla, cum legitime nunquam probetur: Et de Stigmatis quae nugantur, miror '
+           'nondum annotatum a sagacibus esse, fallacias fere esse lictorum.'),
+  'en': ('40. Nor let the judges deny that they proceed to the torments on denunciations alone: '
+         'for I showed above that they truly do, and therefore deceive their own excellent '
+         'princes when they deny it. For the "reputation" which they commonly join to the '
+         'denunciations is always weak and null, since it is never lawfully proved; and as for '
+         'the nonsense they talk about the Devil’s marks, I marvel that the sharp-witted '
+         'have not yet noted that these are mostly the executioners’ tricks.')},
+ {'orig': ('41. Interim vero dum sic fervent processus, & quae torquentur aliae alias strenue '
+           'denunciant acerbissimis cruciatibus coactae; mox foras manat qui nam hi & isti sic '
+           'denunciati sint: Nam haec ratio secreti est eorum qui quaestionibus intersunt: Et id '
+           'non sine suo fructu, cum hinc subito contra denunciatos indicia captare possint per '
+           'hoc dilemma: Nam si qui audiunt se delatos esse ut sane audiunt: vel tum illi fuga se '
+           'subducunt ne capiantur, vel constantes in loco manent: si fugam arripiunt, jam hoc '
+           'ajunt ingens culpae & metuentis conscientiae indicium est: Si manent autem, & hoc '
+           'indicium est: quia daemon, ajunt, eos detinet ne abire possint; ut nuper non semel '
+           'cum gemitu audire debui.'),
+  'en': ('41. Meanwhile, as the trials thus seethe, and the women under torture, forced by the '
+         'bitterest torments, briskly denounce one another, it soon leaks abroad who these and '
+         'those are that have been so denounced — for such is the secrecy kept by those who '
+         'attend the interrogations. And this not without its profit, since from it they can at '
+         'once snatch indications against the denounced, through this dilemma: if any hear that '
+         'they have been informed against — and hear it they do — either they withdraw '
+         'themselves by flight lest they be taken, or they stay steadfastly where they are. If '
+         'they take flight, that, they say, is a huge indication of guilt and of a fearful '
+         'conscience; if they stay, that too is an indication — for the demon, they say, holds '
+         'them fast so that they cannot leave: as I have lately, more than once, had to hear '
+         'with a groan.')},
+ {'orig': ('42. Praeterea si quis adit Quaesitores & an verum sit quod audit interrogat, quo '
+           'mature defendat sese, & via juris venienti incommodo occurrat, jam id quoque pro '
+           'indicio est, quasi conscientia & culpa eum moveant, contra quem nihil tamen ab '
+           'Inquisitoribus sit adhuc motum.'),
+  'en': ('42. Moreover, if anyone goes to the interrogators and asks whether what he hears is '
+         'true — so that he may defend himself in good time, and meet the coming trouble by way '
+         'of law — that also counts as an indication: as though conscience and guilt were moving '
+         'a man against whom, as yet, nothing at all has been moved by the inquisitors.')},
+ {'orig': ('43. Sed & quicquid agat conciliat sibi famam; quae post annum unum & alterum sat '
+           'adulta, ad torturam sufficiat cum denunciationibus conjuncta, licet ipsa haec ex '
+           'denunciationibus primum contracta sit: nam & haec exempla vidi.'),
+  'en': ('43. Indeed, whatever he does gathers him a "reputation"; which after a year or two, '
+         'grown up enough, suffices for torture when joined to the denunciations — although this '
+         'very reputation was first contracted from the denunciations: for I have seen examples '
+         'of this too.')},
+ {'orig': ('44. Similiter eis evenit quoscunque calumniam aliquam a malevolo quopiam pati '
+           'contigerit: Nam vel defendunt se judicio, vel non defendunt: Si non defendunt, '
+           'indicium id culpae est quod tacent: Si defendunt autem, jam latius spargitur calumnia, '
+           '& suspiciones ac prurigo vestigandi commoventur, quae ante ignorabat, didicitque mox '
+           'fama quae deinde nunquam obruatur.'),
+  'en': ('44. The like befalls all those who happen to suffer some calumny from any ill-wisher: '
+         'for either they defend themselves at law, or they do not. If they do not, their '
+         'silence is an indication of guilt; if they do, the calumny is spread the wider, '
+         'suspicions and the itch of investigation are stirred which before knew nothing, and '
+         'soon a reputation is learned which thereafter can never be buried.')},
+ {'orig': ('45. Itaque nihil pronius factu est, quam ut hos quoque facillime nominare eae soleant '
+           'quae interea torquentur & nominare aliquas coguntur.'),
+  'en': ('45. And so nothing is easier than that these men too should be named, most readily, by '
+         'the women who meanwhile are being tortured and forced to name someone.')},
+ {'orig': ('46. Unde & COROLLARIUM quoddam consequitur rubrica enotandum: quod si modo processus '
+           'constanter urgeantur neminem hoc tempore cujuscunque sexus, fortunarum, conditionis & '
+           'dignitatis fuerit sat esse tutum, qui modo aliquem sit nactus hostem & detractorem a '
+           'quo in Magiae suspicionem & famam pertrahatur.'),
+  'en': ('46. From which there follows a COROLLARY, worth noting in red: that if only the trials '
+         'are constantly pressed on, no one in this age — of whatever sex, fortune, condition or '
+         'dignity — is safe enough, provided only he has acquired some enemy and detractor to '
+         'drag him into the suspicion and reputation of magic.')},
+ {'label': 'The close (pp. 391–392)',
+  'orig': ('Ut sane quocunque me obvertam miserrima horum temporum sit ratio nisi aliter '
+           'provideatur. Dixi supra, & verbo repeto, non posse pestem hanc, quaecunque est, '
+           'incendiis aboleri: sed aliter tamen efficacissime posse vix pauco sanguine effuso. '
+           'Sed quis nosse volet? Plura dicere conantem obruit, ut accurate & ad unguem summam '
+           'hanc perficere non possim, nec, quod alias non inutile futurum erat, versionem '
+           'Germanicam meditari: Erunt fortasse qui id patriae suae & innocentum amori dabunt, ut '
+           'accuratius perficiant. Id ego denique eruditos omnes, & pios, ac prudentes, '
+           'moderatosque rerum moderatores (nam caeteros non moror) per omnipotentis Judicis '
+           'tribunal obtestor, ut quae scripsimus tractatu hoc, non parum sedulo evolvant, & '
+           'expendant: In magno periculo salutis versantur Magistratus omnes & Principes nisi '
+           'attentissimi esse velint. Non mirentur si quid acriter subinde & animose eos admoneo: '
+           'neque enim inter eos me esse deceat quos appellat Propheta canes mutos non valentes '
+           'latrare. Attendant sibi & universo gregi, quem de manu eorum olim DEUS accuratissime '
+           'requiret.'),
+  'en': ('So that truly, wherever I turn, the state of these times is most wretched, unless '
+         'provision is made otherwise. I said above, and I repeat in a word: this plague, '
+         'whatever it is, cannot be abolished by fires; but it can be, otherwise, most '
+         'effectually — with scarcely a little blood shed. But who will care to know how? '
+         'Something overwhelms me as I try to say more, so that I cannot finish this summary '
+         'exactly and to the nail, nor — what would otherwise have been useful — think out a '
+         'German translation. Perhaps there will be those who, for the love of their country and '
+         'of the innocent, will finish it more exactly. This, finally, I implore of all learned, '
+         'devout, prudent and moderate governors of affairs (for I do not linger over the rest), '
+         'before the tribunal of the almighty Judge: that they unroll and weigh, with no little '
+         'diligence, what we have written in this treatise. All magistrates and princes stand in '
+         'great peril of their salvation unless they choose to be most attentive. Let them not '
+         'wonder if from time to time I admonish them sharply and with spirit: for it would not '
+         'become me to be among those whom the Prophet calls dumb dogs that cannot bark. Let them '
+         'look to themselves, and to the whole flock, which GOD will one day require from their '
+         'hands with the utmost exactness.')},
+])
+
+out = {
+ 'id': 'spee',
+ 'autor': 'Friedrich Spee',
+ 'titel': 'Cautio Criminalis (selections) — the case against the witch trials',
+ 'jahr': 1631,
+ 'lang': 'la',
+ 'zitierweise': 'CC D. I / D. LI [k]',
+ 'quelle': ("Latin transcribed by eye from the page images of the first printing: "
+            "[Friedrich Spee,] Cautio Criminalis, seu de processibus contra sagas liber "
+            "(Rinteln: Petrus Lucius, 1631), published anonymously; Internet Archive scan "
+            "per_witchcraft-in-europe-and-america_spee-friedrich-von_1631_911, public "
+            "domain. Long s and the ligatures are normalised, printer's abbreviations "
+            "silently expanded, u/v as printed. The English is this site's unofficial "
+            "working translation, made directly from the Latin (CC0); the modern "
+            "translation by Marcus Hellyer (2003) remains in copyright and was not "
+            "consulted."),
+ 'hinweis': ("The Spee line's first module: two dubia carried complete — the opening "
+             "question of the book, and Dubium LI, the numbered summa of the trials as "
+             "actually conducted, the most quoted pages Spee wrote, ending with his wish "
+             "for the German translation he could not make. A selection, not an edition: "
+             "the Cautio has fifty-one dubia; the torture dubia and the Trutznachtigall "
+             "poems (from the print of 1649/1654) are the module's named next steps. "
+             "Paragraph numbers follow the print's own numbering in Dubium LI and are "
+             "this site's own in Dubium I. Part of the concordance and the "
+             "citation-bound dialogue; not part of the linguistic statistics, which "
+             "describe the core corpus only."),
+ 'sections': [
+  {'id': 'dub1', 'zk': 'CC D. I',
+   'titel': 'Dubium I — Whether witches really exist? (pp. 1–2)',
+   'blurb': ('The book opens by conceding the premise: yes, some workers of harm exist. '
+             'Everything that follows turns the concession against the trials — with the '
+             'invitation that gives the method: set prejudice aside, and follow slowly.'),
+   'units': DUB1},
+  {'id': 'dub51', 'zk': 'CC D. LI',
+   'titel': 'Dubium LI — The summa of the trials (pp. 378–392)',
+   'blurb': ('The famous ending: the whole machinery of a witch trial laid out in '
+             'forty-six numbered steps, each closing every exit — the double binds (10, '
+             '11, 41, 44), the die cast at the first torture (24), the address to the '
+             'condemned woman (35), the chain that must reach everyone (36–38), and the '
+             'corollary worth noting in red (46).'),
+   'units': DUB51},
+ ],
+}
+
+path = os.path.join(REPO, 'data', 'spee.json')
+json.dump(out, io.open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print('wrote', path, '-', sum(len(s['units']) for s in out['sections']), 'units:',
+      {s['zk']: len(s['units']) for s in out['sections']})

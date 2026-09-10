@@ -88,12 +88,15 @@
  {
   "id": "spee_cautio",
   "linie": "spee",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Friedrich Spee",
-  "jahr": "1631",
+  "jahr": 1631,
   "titel": "Cautio Criminalis (selections)",
   "warum": "Conscience from inside the order against the witch trials: the confessor of the condemned turns witness against the procedure.",
-  "quelle": "Rinteln 1631, Latin public domain; English would be this site's working translation (Hellyer 2003 in copyright)."
+  "quelle": "Latin transcribed by eye from the page images of the anonymous first printing (Rinteln: Petrus Lucius, 1631; Internet Archive per_witchcraft-in-europe-and-america_spee-friedrich-von_1631_911, public domain). Shipped complete: Dubium I (the opening question) and Dubium LI (the numbered summa of the trials, pp. 378–392), with this site's working translation (CC0). The torture dubia are the named next step.",
+  "datei": "spee",
+  "zk": "CC",
+  "kurz": "Spee"
  },
  {
   "id": "spee_trutz",

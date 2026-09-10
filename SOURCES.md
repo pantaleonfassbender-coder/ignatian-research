@@ -44,6 +44,13 @@ and therefore have no source entry here; their editions are named on the method 
 - *Imago primi saeculi Societatis Iesu a Provincia Flandro-Belgica eiusdem Societatis repraesentata* (Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640), Internet Archive scan — <https://archive.org/details/imagoprimisaecul00boll>. The Latin plates in `assets/imago/` are rendered and cropped from this scan (PDF leaves 8, 212, 213, 339, 465, 472, 578, 730, 734, 954; printed pages: engraved title, 199, 200, 326, 452, 459, 565, 717, 721, 941); the Latin lemmas and epigrams are transcribed by eye from the same page images; the English is a working translation made for this site (CC0).
 - *Af-Beeldinghe van d'eerste eeuwe der Societeyt Iesu* (Antwerp: Plantin press of Balthasar Moretus, 1640) — the Dutch counterpart, same plates, vernacular verses by Adriaen Poirters, S.J.; Internet Archive scan — <https://archive.org/details/afbeeldinghevand00boll>. The `nl-*.jpg` pages in `assets/imago/` are rendered from this scan (PDF leaf = printed page + 11); the Dutch headings and rhymed lemma-glosses, and one full stanza of Poirters's verse, are transcribed by eye.
 
+## Friedrich Spee
+
+### Cautio Criminalis (selections) · `data/spee.json`
+
+- Latin: [Friedrich Spee,] *Cautio Criminalis, seu de processibus contra sagas liber* (Rinteln: Petrus Lucius, 1631; published anonymously), Internet Archive scan — <https://archive.org/details/per_witchcraft-in-europe-and-america_spee-friedrich-von_1631_911>. Dubium I (pp. 1–2) and Dubium LI (pp. 378–392) carried complete, transcribed by eye from the page images (the OCR of the italic type served only for navigation); long s and ligatures normalised, printer's abbreviations silently expanded.
+- English: unofficial working translation made for this site directly from the Latin (CC0); Marcus Hellyer's translation of 2003 remains in copyright and was not consulted.
+
 ## The counter-voices
 
 ### Pascal, Lettres provinciales — Letters V, VII, X · `data/pascal.json`
