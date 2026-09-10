@@ -1,7 +1,7 @@
 /* dialogue.js — citation-bound questioning of the corpus. */
 import * as C from "./corpus.js";
 import { corpus } from "./corpus.js";
-import { D, esc, nf, short, lockedBox, citeChip, wc, workOf, debounce } from "./app.js";
+import { D, esc, nf, short, lockedBox, citeChip, wc, workOf, debounce, searchProg } from "./app.js";
 
 const session = [];
 
@@ -63,7 +63,7 @@ export function renderDialogue(view, args) {
 
   function drawScope() {
     scope.innerHTML = "";
-    for (const w of D.works) {
+    for (const w of [...D.works, ...searchProg()]) {
       const open = C.isOpen(w.id);
       const b = document.createElement("button");
       b.className = "chip" + (open && chosen.has(w.id) ? " on" : "");

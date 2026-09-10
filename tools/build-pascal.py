@@ -75,8 +75,7 @@ out = {
              "Paragraph numbers are editorial, per letter; M'Crie's footnote markers are "
              "removed and his notes not reproduced. English only for now — the "
              "bilingualisation against the French, whose paragraphing is much coarser, is a "
-             "planned enhancement. Not yet part of the concordance index (like the "
-             "Longridge layers); the reader's search does not cover it either."),
+             "planned enhancement. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only."),
  'sections': [],
 }
 

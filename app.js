@@ -17,8 +17,15 @@ export const WORKCOLOR = {
   spex: "#c9a227", const: "#9db8a4", auto: "#c07a5a",
   diary: "#a89bc4", dir: "#7fa9c9", letters: "#c9968f", fabri: "#8fae87",
 };
-export const wc = id => WORKCOLOR[id] || "#8a7d6a";
-export const workOf = id => (D.works || []).find(w => w.id === id) || {};
+export const wc = id => WORKCOLOR[id] || PROGCOLOR[id] || "#8a7d6a";
+export const workOf = id => (D.works || []).find(w => w.id === id) ||
+  searchProg().find(p => p.id === id) || {};
+/** Shipped programme modules, as searchable pseudo-works beside D.works. */
+export const searchProg = () => (D.programme || [])
+  .filter(p => p.status === "shipped" && p.datei)
+  .map(p => ({ id: p.id, kurz: p.kurz || p.zk || p.id, zk: p.zk, titel: p.titel }));
+const PROGCOLOR = { pascal: "#b0687a", monita: "#9a6a9a", dominus: "#7a6a56",
+  xavier: "#5a8a8a", imago: "#a08a50", spee: "#6a8a5f" };
 
 /* --------------------------------------------------------------- boot */
 async function boot() {
@@ -28,7 +35,18 @@ async function boot() {
   const res = await Promise.all(names.map(n => fetch(`data/${n}.json`).then(r => r.json())));
   names.forEach((n, i) => D[n] = res[i]);
   D.introOf = {}; D.introductions.forEach(x => D.introOf[x.id] = x);
-  try { await C.restore(D.works, D.anchors, D.letters, D.directorium, D.exercitia, D.memoriale); }
+  // shipped programme modules join the concordance and the dialogue: their
+  // data files load here and are handed to the corpus layer for indexing
+  const shipped = (D.programme || []).filter(p => p.status === "shipped" && p.datei);
+  const progData = await Promise.all(shipped.map(p =>
+    fetch(`data/${p.datei}.json`).then(r => r.json()).then(data => {
+      D[p.datei] = data;             // the generic reader reuses the same load
+      return { reg: p, data };
+    }).catch(() => null)));
+  try {
+    await C.restore(D.works, D.anchors, D.letters, D.directorium, D.exercitia,
+                    D.memoriale, progData.filter(Boolean));
+  }
   catch (e) { console.warn("restore failed", e); }
   refreshUnlockBadge();
   window.addEventListener("hashchange", route);
@@ -66,7 +84,9 @@ function route() {
 /* ------------------------------------------------------------- pieces */
 export function citeChip(cite, work) {
   if (!cite) return "";
-  return `<a class="cite" href="#/works/${work}" title="${esc(workOf(work).titel || "")}">${esc(cite.label)}${cite.seite ? `, p. ${cite.seite}` : ""}</a>`;
+  const prog = (D.programme || []).some(p => p.id === work && p.status === "shipped");
+  const href = prog ? `#/text/${work}` : `#/works/${work}`;
+  return `<a class="cite" href="${href}" title="${esc(workOf(work).titel || "")}">${esc(cite.label)}${cite.seite ? `, p. ${cite.seite}` : ""}</a>`;
 }
 function rightsBadge(w) {
   if (w.rechte === "public-domain") return `<span class="rights pd">public domain</span>`;
@@ -961,9 +981,10 @@ function viewConcordance() {
     <div class="viewhead">
       <span class="tag">Cross-corpus concordance</span>
       <h1>Concordance</h1>
-      <p class="lede">Keyword in context across every work currently available, each hit resolved to its
-      canonical citation. The Exercises, the Letters, the Directory of 1599 and Favre's Memoriale are
-      always searchable; the remaining works join the search as you open them.</p>
+      <p class="lede">Keyword in context across every text currently available, each hit resolved to its
+      canonical citation. The Exercises, the Letters, the Directory of 1599, Favre's Memoriale and all
+      shipped programme modules — from Pascal to the brief of 1773 and the Imago's emblems — are always
+      searchable; the four locked works join the search as you open them.</p>
     </div>
     <div class="toolbar">
       <input class="grow" id="q" type="search" placeholder="Search word or phrase …" value="${esc(pre)}">
@@ -979,7 +1000,8 @@ function viewConcordance() {
 
   const wf = view.querySelector("#wfilter");
   const sel = new Set(C.openIds());
-  for (const w of D.works) {
+  const SEARCHABLE = [...D.works, ...searchProg()];
+  for (const w of SEARCHABLE) {
     const on = C.isOpen(w.id);
     const b = el(`<button class="chip ${on && sel.has(w.id) ? "on" : ""}" data-w="${w.id}"
       ${on ? "" : "disabled title='not open on this device'"}>${esc(w.kurz)}</button>`);
@@ -1003,9 +1025,9 @@ function viewConcordance() {
     const coll = C.collocates(q, 5, 22);
     out.append(el(`<div class="grid g2" style="margin-bottom:1.1rem">
       <div class="card"><span class="tag">Distribution</span>
-        <table style="font-size:.85rem;margin-top:.5rem">${D.works.map(w => `<tr>
+        <table style="font-size:.85rem;margin-top:.5rem">${SEARCHABLE.map(w => `<tr>
           <td><span style="color:${wc(w.id)}">■</span> ${esc(w.kurz)}</td>
-          <td class="num">${counts[w.id] === null ? '<span class="fine">locked</span>' : nf(counts[w.id])}</td>
+          <td class="num">${counts[w.id] === null || counts[w.id] === undefined ? '<span class="fine">locked</span>' : nf(counts[w.id])}</td>
           <td style="width:52%"><div style="height:8px;border-radius:4px;background:var(--panel2)">
             <div style="height:8px;border-radius:4px;background:${wc(w.id)};width:${
               counts[w.id] ? Math.round(100 * counts[w.id] / Math.max(1, ...Object.values(counts).filter(Boolean))) : 0}%"></div>
@@ -1487,8 +1509,10 @@ function viewMethod() {
       small-type notes. The Imago module reverses the usual direction: there the images are the text, the
       plates cropped from the 1640 scan and the epigrams transcribed by eye, distich by distich; each
       emblem closes with its page from the Dutch Af-Beeldinghe of the same year and press, whose headings
-      and rhymed lemma-glosses are transcribed the same way. None of
-      these modules feeds the concordance, the statistics or the dialogue; each says so in its own footer.</p>
+      and rhymed lemma-glosses are transcribed the same way. Every shipped programme module is part of
+      the concordance and of the citation-bound dialogue, paragraph-exact on its own citation grid; none
+      is part of the linguistic statistics, which describe the core corpus only — each module's footer
+      says so.</p>
     </div>
 
     <div class="panel"><h2>Canonical anchors</h2>

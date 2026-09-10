@@ -309,7 +309,7 @@ out = {
              "chapter and article numbering of the 1857 printing is kept as the citation "
              "grid; running heads are removed, hyphenation joined, and the systematic "
              "ligature losses of the OCR (ae) repaired, residual errors emended against "
-             "the sense. Not yet part of the concordance index."),
+             "the sense. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only."),
  'sections': sections,
 }
 

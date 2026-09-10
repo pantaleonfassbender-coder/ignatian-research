@@ -198,7 +198,7 @@ out = {
              "deliberately, here. The English is this site's unofficial machine-generated "
              "working translation, made directly from the Latin; no full public-domain "
              "English translation was located, and none was consulted — cite the Latin. "
-             "Not yet part of the concordance index."),
+             "Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only."),
  'sections': [{
    'id': 'brief', 'zk': 'DaR',
    'titel': 'The brief, in Theiner’s numbering',

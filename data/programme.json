@@ -39,7 +39,8 @@
   "warum": "The Exercises carried to the other side of the world within a decade of their approval.",
   "quelle": "English: H. J. Coleridge, The Life and Letters of St. Francis Xavier, 2 vols. (London 1872; Internet Archive lifelettersofstf01cole / lifelettersofstf02cole, public domain). Four letters carried complete — Cochin 1543, Kagoshima 1549, to Ignatius 1552, Sancian 1552 — cut at their printed openings and datelines, Coleridge's commentary and footnotes omitted. Latin originals: Monumenta Xaveriana (1899–1912), not yet carried.",
   "datei": "xavier",
-  "zk": "FX"
+  "zk": "FX",
+  "kurz": "Xavier"
  },
  {
   "id": "relations",
@@ -81,7 +82,8 @@
   "warum": "The order's self-image at one hundred — engraving, epigram and boast in one volume; the very book its critics mocked. Basis of the planned iconographic path.",
   "quelle": "Antwerp: Plantin-Moretus 1640; Internet Archive scans imagoprimisaecul00boll (Latin) and afbeeldinghevand00boll (the Dutch Af-Beeldinghe, verses by Adriaen Poirters), both public domain. Shipped: the engraved title and nine emblems — one from each of the six books plus three deepenings — as page images with the epigrams transcribed distich by distich, working translations, and each emblem's Dutch mirror page with Poirters's rhymed gloss. The volume's remaining ~115 emblems wait their turn; the iconographic reading path runs through the spine of seven.",
   "datei": "imago",
-  "zk": "Imago"
+  "zk": "Imago",
+  "kurz": "Imago"
  },
  {
   "id": "spee_cautio",
@@ -113,7 +115,8 @@
   "warum": "A forgery that forced a debate — carried as the debate, not as truth: the apparatus's Turk, with the refutations beside it.",
   "quelle": "Kraków 1614 (Zahorowski). Carried from the bilingual printing of 1857: W. C. Brownlee, Secret Instructions of the Jesuits (New York, American and Foreign Christian Union; Internet Archive instructiosecret00browrich, public domain) — Latin and English on facing pages, chapter and article numbering as the alignment grid; OCR repaired against the page images, all 145 articles bilingual.",
   "datei": "monita",
-  "zk": "MS"
+  "zk": "MS",
+  "kurz": "Monita"
  },
  {
   "id": "pascal",
@@ -125,7 +128,8 @@
   "warum": "The most brilliant attack the Society ever received: casuistry examined by a genius with a grudge and a printing press.",
   "quelle": "M'Crie's translation of 1856 (Robert Carter & Brothers), via Project Gutenberg #73959, public domain; Letters V, VII and X complete. French original: the Vallée transcription on fr.wikisource — not yet carried.",
   "datei": "pascal",
-  "zk": "Prov."
+  "zk": "Prov.",
+  "kurz": "Pascal"
  },
  {
   "id": "dominus",
@@ -137,6 +141,7 @@
   "warum": "The corpus's intended closing text: the document that dissolved the old Society. The apparatus ends, deliberately, in 1773.",
   "quelle": "Latin after Augustin Theiner, Clementis XIV. Pont. Max. Epistolae et Brevia (Paris, 1852), doc. CCCXVII, whose paragraph numbering (1–41) is carried as the citation grid; Internet Archive clementisxivpon00clemgoog, public domain, OCR emended against the page images. English: this site's unofficial working translation, made directly from the Latin — no full public-domain English translation exists (Nicolini 1854 translates only the restoration brief of 1814).",
   "datei": "dominus",
-  "zk": "DaR"
+  "zk": "DaR",
+  "kurz": "DaR"
  }
 ]

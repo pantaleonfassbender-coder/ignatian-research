@@ -466,8 +466,7 @@ out = {
              "of the same year, with Poirters's rhymed vernacular gloss. The "
              "Latin volume holds over 120 emblems in all; this selection is a "
              "spine, not a survey, and each emblem was chosen for what it "
-             "touches elsewhere in the corpus. Not part of the concordance "
-             "index."),
+             "touches elsewhere in the corpus. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only."),
  'sections': [
   {'id': 'title', 'zk': 'Imago T',
    'titel': 'The engraved title (1640)',

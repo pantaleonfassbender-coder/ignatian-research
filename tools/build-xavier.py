@@ -239,7 +239,7 @@ out = {
              "hundred and forty, chosen as the classic anthology pieces of the "
              "mission to the East — Comorin, Japan, the report to Ignatius, "
              "and the last letter from Sancian. Paragraph numbers are this "
-             "site's own, per letter. Not yet part of the concordance index."),
+             "site's own, per letter. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only."),
  'sections': SECTIONS,
 }
 

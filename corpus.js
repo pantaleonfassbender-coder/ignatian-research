@@ -24,10 +24,15 @@ export const corpus = {
   _favPages: null,  // flattened paragraph texts of Favre's Memoriale
   _favCites: null,
   _exxCites: null,  // parallel Exx [n] citation labels
+  prog: {},         // shipped programme modules: id -> {pages:[], cites:[]}
+  progMeta: [],     // their meta rows: {id, kurz, zk, titel}
   _idx: {},         // id -> Map token -> [pageIdx]
   _chunks: [],      // retrieval units across everything available
   _bm25: null,
 };
+
+/** Core works plus every shipped programme module — the index walks this. */
+const allMeta = () => [...(corpus.meta || []), ...corpus.progMeta];
 
 /* ---------------------------------------------------------- IndexedDB */
 function idb() {
@@ -212,7 +217,7 @@ export async function forgetAll() {
   corpus.works = {};
   reindex();
 }
-export async function restore(meta, anchors, letters, directorium, exercitia, memoriale) {
+export async function restore(meta, anchors, letters, directorium, exercitia, memoriale, programme) {
   corpus.meta = meta; corpus.anchors = anchors; corpus.letters = letters;
   corpus.directorium = directorium || null;
   if (directorium) buildDirectorium(directorium);
@@ -220,6 +225,7 @@ export async function restore(meta, anchors, letters, directorium, exercitia, me
   if (exercitia) buildExercitia(exercitia);
   corpus.memoriale = memoriale || null;
   if (memoriale) buildMemoriale(memoriale);
+  if (programme) buildProgramme(programme);
   for (const k of await dbKeys()) {
     // The Directory of 1599 now ships with the site; a Palmer PDF stored under
     // "dir" by an earlier version of this page would shadow it, so it is dropped.
@@ -281,16 +287,40 @@ function buildMemoriale(m) {
   corpus._favCites = cites;
 }
 
-export const workMeta = id => (corpus.meta || []).find(w => w.id === id);
+/** Flatten every shipped programme module into paragraph "pages" with exact
+    citation labels (section zk + [k]). The list arrives from the boot: one
+    {reg, data} pair per shipped entry of programme.json, so any module that
+    ships joins the concordance and the dialogue without further code. */
+function buildProgramme(list) {
+  corpus.prog = {}; corpus.progMeta = [];
+  for (const { reg, data } of list || []) {
+    if (!reg || !data) continue;
+    const pages = [], cites = [];
+    for (const s of data.sections || []) {
+      for (const u of s.units || []) {
+        const txt = [u.orig, u.en].filter(Boolean).join(" ");
+        pages.push(txt);
+        cites.push({ label: `${s.zk || data.zitierweise || reg.zk} [${u.k}]`, n: u.k });
+      }
+    }
+    if (!pages.length) continue;
+    corpus.prog[reg.id] = { pages, cites };
+    corpus.progMeta.push({ id: reg.id, kurz: reg.kurz || reg.zk || reg.id,
+                           zk: reg.zk, titel: data.titel || reg.titel });
+  }
+}
+
+export const workMeta = id => allMeta().find(w => w.id === id);
 export const isOpen = id => id === "letters" || (id === "dir" && !!corpus._dirPages) ||
   (id === "spex" && !!corpus._exxPages) || (id === "fabri" && !!corpus._favPages) ||
-  !!corpus.works[id];
-export const openIds = () => (corpus.meta || []).filter(w => isOpen(w.id)).map(w => w.id);
+  !!corpus.prog[id] || !!corpus.works[id];
+export const openIds = () => allMeta().filter(w => isOpen(w.id)).map(w => w.id);
 
 /* --------------------------------------------------------- page access */
 /** True when a PDF page belongs to Ignatius's text rather than to the
     translator's introduction, endnotes or index. */
 export function inBody(id, p) {
+  if (corpus.prog[id]) return true;   // programme modules ship body-only
   if (id === "letters" || id === "dir" || id === "fabri") return true;
   // when the Exercises run on the shipped trilingual edition rather than an
   // unlocked Ganss PDF, every "page" is a canonical paragraph — all body
@@ -301,6 +331,7 @@ export function inBody(id, p) {
 }
 
 export function pagesOf(id) {
+  if (corpus.prog[id]) return corpus.prog[id].pages;
   if (id === "dir") return corpus._dirPages;   // shipped bilingual paragraphs
   if (id === "fabri") return corpus._favPages;
   if (corpus.works[id]) return corpus.works[id].pages;
@@ -316,6 +347,10 @@ export function pagesOf(id) {
 
 /* ------------------------------------------------- canonical citation */
 export function citeFor(id, page) {
+  if (corpus.prog[id]) {
+    const c = corpus.prog[id].cites[page];
+    return c ? { label: c.label, n: c.n, seite: null, exact: true } : null;
+  }
   if (id === "letters") {
     const l = corpus.letters[page];
     return l ? { label: `Letters, no. ${l.roman}`, n: l.n, seite: l.seite_von } : null;
@@ -353,7 +388,7 @@ export function citeFor(id, page) {
 export function reindex() {
   corpus._idx = {};
   corpus._chunks = [];
-  for (const w of corpus.meta || []) {
+  for (const w of allMeta()) {
     const pages = pagesOf(w.id);
     if (!pages) continue;
     const inv = new Map();
@@ -415,7 +450,7 @@ export function kwic(q, { win = 54, limit = 500, works = null } = {}) {
   if (!terms.length) return [];
   const rx = new RegExp("(" + q.trim().split(/\s+/).map(esc).join("\\s+") + ")", "gi");
   const out = [];
-  for (const w of corpus.meta || []) {
+  for (const w of allMeta()) {
     if (works && !works.includes(w.id)) continue;
     const pages = pagesOf(w.id);
     if (!pages) continue;
@@ -441,7 +476,7 @@ export function kwic(q, { win = 54, limit = 500, works = null } = {}) {
 export function hitCounts(q) {
   const terms = tokens(q).filter(t => t.length > 2);
   const res = {};
-  for (const w of corpus.meta || []) {
+  for (const w of allMeta()) {
     const pages = pagesOf(w.id);
     if (!pages) { res[w.id] = null; continue; }
     const rx = new RegExp(q.trim().split(/\s+/).map(esc).join("\\s+"), "gi");
@@ -458,7 +493,7 @@ export function collocates(q, span = 5, top = 28) {
   const key = q.toLowerCase().trim();
   const terms = tokens(q).filter(t => t.length > 2);
   const cnt = new Map();
-  for (const w of corpus.meta || []) {
+  for (const w of allMeta()) {
     const pages = pagesOf(w.id);
     if (!pages) continue;
     for (const p of pagesWith(w.id, terms)) {
