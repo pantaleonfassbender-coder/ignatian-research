@@ -41,7 +41,8 @@ and therefore have no source entry here; their editions are named on the method 
 
 ### Imago primi saeculi — iconographic pilot · `data/imago.json` · `assets/imago/`
 
-- *Imago primi saeculi Societatis Iesu a Provincia Flandro-Belgica eiusdem Societatis repraesentata* (Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640), Internet Archive scan — <https://archive.org/details/imagoprimisaecul00boll>. The seven images in `assets/imago/` are rendered and cropped from this scan (PDF leaves 8, 213, 339, 472, 578, 730, 954; printed pages: engraved title, 200, 326, 459, 565, 717, 941 — one emblem from each of the six books); the Latin lemmas and epigrams are transcribed by eye from the same page images; the English is a working translation made for this site (CC0).
+- *Imago primi saeculi Societatis Iesu a Provincia Flandro-Belgica eiusdem Societatis repraesentata* (Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640), Internet Archive scan — <https://archive.org/details/imagoprimisaecul00boll>. The Latin plates in `assets/imago/` are rendered and cropped from this scan (PDF leaves 8, 212, 213, 339, 465, 472, 578, 730, 734, 954; printed pages: engraved title, 199, 200, 326, 452, 459, 565, 717, 721, 941); the Latin lemmas and epigrams are transcribed by eye from the same page images; the English is a working translation made for this site (CC0).
+- *Af-Beeldinghe van d'eerste eeuwe der Societeyt Iesu* (Antwerp: Plantin press of Balthasar Moretus, 1640) — the Dutch counterpart, same plates, vernacular verses by Adriaen Poirters, S.J.; Internet Archive scan — <https://archive.org/details/afbeeldinghevand00boll>. The `nl-*.jpg` pages in `assets/imago/` are rendered from this scan (PDF leaf = printed page + 11); the Dutch headings and rhymed lemma-glosses, and one full stanza of Poirters's verse, are transcribed by eye.
 
 ## The counter-voices
 

@@ -5,8 +5,8 @@
  "jahr": 1640,
  "lang": "la",
  "zitierweise": "Imago T / E1–E6 [k]",
- "quelle": "Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640; images rendered from the Internet Archive scan imagoprimisaecul00boll (public domain), plates cropped from the page images. Latin transcribed by eye from the same pages (long s and the ae ligature normalised, u/v as printed); English: this site's unofficial working translations (CC0).",
- "hinweis": "The iconographic path of the apparatus — unlike Calculemus, this corpus can carry images, and here it does: the engraved title and one emblem from each of the six books of the 1640 centenary volume, each with its lemma, its epigram distich by distich, and a working translation. The volume holds over 120 emblems in all; this selection is a spine, not a survey, and each emblem was chosen for what it touches elsewhere in the corpus. Not part of the concordance index.",
+ "quelle": "Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640; images rendered from the Internet Archive scan imagoprimisaecul00boll (public domain), plates cropped from the page images. Latin transcribed by eye from the same pages (long s and the ae ligature normalised, u/v as printed); English: this site's unofficial working translations (CC0). The Dutch mirror pages come from the vernacular counterpart issued by the same press in the same year, the Af-Beeldinghe van d'eerste eeuwe der Societeyt Iesu, with Dutch verses by Adriaen Poirters SJ (Internet Archive afbeeldinghevand00boll, public domain); headings and rhymed glosses transcribed by eye.",
+ "hinweis": "The iconographic path of the apparatus — unlike Calculemus, this corpus can carry images, and here it does: the engraved title and nine emblems of the 1640 centenary volume — one from each of the six books, plus three deepenings — each with its lemma, its epigram distich by distich, and a working translation, and each closed by its Dutch mirror: the same plate in the Af-Beeldinghe of the same year, with Poirters's rhymed vernacular gloss. The Latin volume holds over 120 emblems in all; this selection is a spine, not a survey, and each emblem was chosen for what it touches elsewhere in the corpus. Not part of the concordance index.",
  "sections": [
   {
    "id": "title",
@@ -68,6 +68,89 @@
      "k": 6,
      "orig": "Innouat hîc vires, hîc sacrae semina flammae / Sufficit, hîc alas Daedalus aptat amor.",
      "en": "Here love renews strength, here it supplies the seeds of the sacred flame, here — a Daedalus — it fits on the wings."
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "img": "assets/imago/nl-alitem.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 136: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 136",
+     "orig": "Vernieuwinghe vanden gheest. — Te voren kroop, / Nu vliegh en loop.",
+     "en": "Renewal of the spirit. — 'Before, I crept; now I fly and run.'"
+    }
+   ]
+  },
+  {
+   "id": "nexus",
+   "zk": "Imago E7",
+   "titel": "Book I · Nexus non sufficit vnus — One bond is not enough (p. 199)",
+   "blurb": "The ivy on the oak, the silkworm’s neighbour on the facing page: the renewal of vows as love multiplying its own chains — and the third of the volume’s “non sufficit” lemmata carried here.",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "img": "assets/imago/nexus-non-sufficit.jpg",
+     "alt": "Emblem engraving, Imago primi saeculi p. 199: ivy winds up an oak in an open landscape, its tendrils circling trunk and branches.",
+     "orig": "Renouatio votorum. — Nexus non sufficit vnus.",
+     "en": "The renewal of vows. — One bond is not enough. The third of the volume's 'non sufficit' lemmata carried here: one world (E1), one fire (E5) — and one bond. The ivy on the oak as the yearly renewal of the vows: love multiplies its own chains.",
+     "label": "The emblem and its lemma"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "orig": "Nulla quies in amore datur: quis comprimat ignem? / Feruida flamma moras, otia nescit amor.",
+     "en": "No rest is granted in love — who could smother its fire? A glowing flame knows no delays; love knows no idleness."
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "orig": "Siqua potest cessasse, potest periisse fauilla; / Deses ab extincto proximus ardor erit.",
+     "en": "A spark that can pause can also have died; an idle burning is next neighbour to one put out."
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "orig": "Pectus amans, triplici quamuis adamante reuinxit, / Haec mage, dum renouat vincula, stringit amor.",
+     "en": "Though love has bound the loving breast with triple adamant, it draws those chains the tighter each time it renews them."
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "orig": "Vultus alit, flammasque nouas, noua spicula vibrat, / Amplexuque nouo vincula multiplicat.",
+     "en": "It feeds its gaze, brandishes new flames and new darts, and with every new embrace multiplies the bonds."
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "orig": "Et quoties sacros, sua vota, retractat amores, / Et quoties renouat gaudia, vincla facit.",
+     "en": "And as often as it takes up again its sacred loves — its vows — as often as it renews its joys, it forges chains."
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "orig": "Sic hederae, iuncta quamuis radice ligantur, / Et trunco teneras applicuere comas;",
+     "en": "So the ivies: though they are tied to it by a joined root, and have laid their tender tresses on the trunk,"
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "orig": "Assurgunt, ramosque nouis complexibus vrgent, / Quaque patet quercus, Bacchica serta gerit:",
+     "en": "they climb, press the branches with new embraces, and wherever the oak spreads it wears the garlands of Bacchus:"
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "orig": "Non hederae, nexus non sufficit vnus amori: / Mille hederae amplexus, mille requirit amor.",
+     "en": "For the ivy — for love — one bond is not enough: the ivy asks a thousand embraces, and love a thousand."
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "img": "assets/imago/nl-nexus.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 134: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 134",
+     "orig": "Vernieuwinghe der beloften. — Het maeckt hem vast, / Soo langh het wast.",
+     "en": "Renewal of the vows. — 'It binds him fast, as long as it grows.'"
     }
    ]
   },
@@ -145,6 +228,107 @@
      "k": 11,
      "orig": "Ingentes animos faciunt, quos expleat vnus / Qui dulci recreat numine corda Deus.",
      "en": "make their spirits vast — spirits that only the one God can fill, who refreshes hearts with his sweet presence."
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "img": "assets/imago/nl-orbis.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 204: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 204",
+     "orig": "De Seyndinghe nae Indien. — Een alleen / VVas my te kleen.",
+     "en": "The mission to the Indies. — 'One alone was too small for me.'"
+    }
+   ]
+  },
+  {
+   "id": "omnibus",
+   "zk": "Imago E8",
+   "titel": "Book III · Omnibus omnia — All things to all (p. 452)",
+   "blurb": "The mirror emblem, from Societas agens: 1 Corinthians 9:22 as the workers’ motto — adaptation without flattery, likeness without deceit. Ignatius’s rules of dealing (Letter XII), drawn.",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "img": "assets/imago/omnibus-omnia.jpg",
+     "alt": "Emblem engraving, Imago primi saeculi p. 452: a mirror stands in a tiled room between two herm figures, reflecting the light of a window.",
+     "orig": "Societatis operarij. — Omnibus omnia.",
+     "en": "The workers of the Society. — All things to all (1 Corinthians 9:22). The mirror as the Jesuit worker: it takes on every likeness without flattery and without deceit — the epigram is a small treatise on the adaptability Ignatius taught in the instruction for Ireland (Letter XII) and Xavier practised from Comorin to Japan.",
+     "label": "The emblem and its lemma"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "orig": "Qualiter in speculo facies, motusque relucent, / Aduersasque refert laeuis imago notas;",
+     "en": "As a face and its motions shine back in a mirror, and the smooth image returns your marks reversed,"
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "orig": "Haud aliter formas hominum se vertit in omnes, / Omnibus vt solers omnia fiat amor:",
+     "en": "just so does love turn itself into all the shapes of men, that, all-skilled, it may become all things to all:"
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "orig": "Castus amor, castis quem mentibus indit IESVS, / Ignati sacro quae prius igne calent:",
+     "en": "chaste love, which JESUS plants in chaste minds — minds already glowing with Ignatius's sacred fire."
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "orig": "Omnia diuersae capit hic simulacra figurae, / Omnia compositis reddit imaginibus.",
+     "en": "It takes in every likeness of every different figure, and gives them all back in answering images."
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "orig": "Nec tamen in similes trahit assentatio mores: / Nec studet occultis ille nocere dolis.",
+     "en": "And yet it is no flattery that draws it into like manners, nor does it seek to harm by hidden wiles."
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "orig": "Fallere nescit amor, numquam sibi dissidet ipse, / Ingenio similis sit licet vsque tuo.",
+     "en": "Love cannot deceive; it is never at odds with itself, though it grow ever so like your own temper."
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "orig": "Assumet tecum, tecum sua gaudia ponet, / Cum puero ludet, cum sene tristis erit.",
+     "en": "It will take up your ways with you, and with you lay its joys aside; with the boy it will play, with the old man it will be grave."
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "orig": "Institor extremis merces accersis ab Indis? / Impiger ignoto littore quaeret opes.",
+     "en": "Are you a trader fetching wares from farthest India? Untiring, it will seek out goods on the unknown shore beside you."
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "orig": "Si victor redeas, laetos canet ille triumphos: / Tecum per terras, per mare, bella geret.",
+     "en": "If you come home a victor, it will sing your glad triumphs; with you it will wage wars by land and by sea."
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "orig": "Desertas etiam siluas montesque pererrat / Fidus amor, tamquam barbarus ingenio.",
+     "en": "Faithful love wanders even deserted woods and mountains, as though itself barbarous in temper."
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "orig": "Nempe vt possit amor similes sibi reddere cunctos, / Dissimilis toties redditur ipse sibi.",
+     "en": "For this — that love may render all men like itself — it is rendered, just as many times, unlike itself."
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "img": "assets/imago/nl-omnibus.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 258: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 258",
+     "orig": "Werck-lieden der Societeyt. — Ghelijck / Aen ieghelijck.",
+     "en": "The workmen of the Society. — 'Like unto everyone.'"
     }
    ]
   },
@@ -234,6 +418,15 @@
      "k": 13,
      "orig": "Hoc duce nec Pharios ignes, nec fila requires: / Certior hic Cresso stamine ductor erit.",
      "en": "With this guide you will need neither the fires of Pharos nor the threads: this guide will be surer than the Cretan clew."
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "img": "assets/imago/nl-monstrat.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 270: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 270",
+     "orig": "Het boecksken vande gheestelijcke Oeffeninghen is eenen sekeren leydts-man om eenen staet des leuens te verkiesen. — Vraeght hier raedt, / Eer ghy gaet.",
+     "en": "The little book of the Spiritual Exercises is a sure guide for choosing a state of life. — 'Ask counsel here, before you go.'"
     }
    ]
   },
@@ -317,6 +510,15 @@
      "k": 12,
      "orig": "Despicit ex alta vesanos arce furores; / Et ferit auctores missa sagitta suos.",
      "en": "From its high citadel it looks down on the ravings of the frenzied; and the arrow that was shot strikes those who sent it."
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "img": "assets/imago/nl-sagitta.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 388: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 388",
+     "orig": "De Societeyt wordt te vergheefs vande benijders bevochten. — Als 't Gode behaeght, / Beter benijdt, dan beklaeght.",
+     "en": "The Society is assailed by the envious in vain. — 'As it pleases God: better envied than pitied.'"
     }
    ]
   },
@@ -400,6 +602,108 @@
      "k": 12,
      "orig": "Mille operum Faber est: nec respirare potestas. / Tantae Xauerium fingere molis erat.",
      "en": "The Smith is a smith of a thousand tasks, with no leave to draw breath: so great a work was it to fashion Xavier."
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "img": "assets/imago/nl-faber.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 508: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 508",
+     "orig": "Ignatius ghebruyckt Faber, alias Smidt, tot de bekeeringhe van Xauerius. — Al is 't vier vverm, / 't Vereyscht 's smits erm.",
+     "en": "Ignatius employs Faber — alias Smith — for the conversion of Xavier. — 'Though the fire be warm, it needs the smith's arm.' The Dutch page spells the pun out in its heading."
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "orig": "Den hamer en het vier, die moeten samen wercken, / En met eenpaerigh hulp malckanderen verstercken: / 't Een maeckt het ijser heet, en 't ander gheeft den slagh, / Soo krijght het een nieuw vorm dat inden oven lagh. / VVant schoon den gauwen knecht den blaesbalgh treckt met lusten, / En dat den meester self de kolen niet laet rusten, / Maer meer en meer onsteeckt den ouergrooten brandt, / Komt daer gheen slagh omtrent, het ijser houdt sijn standt.",
+     "en": "Poirters's first stanza, translated: 'The hammer and the fire must work together, and with united help strengthen one another: the one makes the iron hot, the other gives the blow — so what lay in the furnace receives a new form. For though the quick apprentice pulls the bellows with a will, and the master himself lets the coals take no rest but kindles the great blaze more and more: if no blow comes near it, the iron keeps its old shape.' The stanza continues on the next page of the print.",
+     "label": "Poirters's Dutch verse, first stanza (p. 508)"
+    }
+   ]
+  },
+  {
+   "id": "terra",
+   "zk": "Imago E9",
+   "titel": "Book V · Tum te terra teget — The death of Xavier as an eclipse (p. 721)",
+   "blurb": "The answer to E1, four hundred pages on: the boy who held two globes dies at the gate of China, and the epigram reads his death as the eclipse of a full moon. Beside it belongs the last letter, FX IV.",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "img": "assets/imago/tum-te-terra-teget.jpg",
+     "alt": "Emblem engraving, Imago primi saeculi p. 721: an eclipse darkens the sky over the sea — a dark shrouded form against the stars, the moon below on the water.",
+     "orig": "Xauerius, orbe peragrato, moritur in littore Chinarum. — Tum te terra teget, cum totum impleueris orbem.",
+     "en": "Xavier, having traversed the world, dies on the shore of China. — Then only shall earth cover you, when you have filled the whole world. The emblem answers E1: the boy who held two globes ends at Sancian, and the epigram reads his death as an eclipse — read it beside the last letter, FX IV.",
+     "label": "The emblem and its lemma"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "orig": "Cingite fronde caput: Xauerius orbe laboris / Deficit impleto: cingite fronde caput.",
+     "en": "Wreathe his head with leaves: Xavier fails only when the circuit of his labour is filled — wreathe his head with leaves."
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "orig": "Amplius ille nihil potuit superaddere coeptis: / Tota peragrata est India, iam satis est.",
+     "en": "He could add nothing more to what he had begun: the whole of India is traversed; now it is enough."
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "orig": "Chinae, Goa, Iapon, Ternata, Moluca, tot vrbes, / Quae toties initae caussa fuere viae;",
+     "en": "China, Goa, Japan, Ternate, the Moluccas — so many cities that were, so many times, the reason for setting out;"
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "orig": "Totque aliae gentes, tot primo subdita Phoebo / Littora, sudoris plus habuere satis.",
+     "en": "and so many other peoples, so many shores that lie under the morning sun, have had more than their fill of his sweat."
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "orig": "Ergo vel extremam cum nil superesset ad Eon; / Ipsis terrarum finibus immoritur.",
+     "en": "And so, when nothing remained short of the uttermost East, he dies upon the very ends of the earth."
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "orig": "Immoritur votis ingentibus, orbe repleto: / Cynthia sic etiam plena perire solet.",
+     "en": "He dies upon his vast desires, the world now filled: so even Cynthia — the moon — is wont to perish at her fullest."
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "orig": "Cynthia terrarum, caeli Franciscus ab vmbra / Palluit: exanimis vultus, amantis erat.",
+     "en": "The moon grows pale in the shadow of the earth; Francis paled in the shadow of heaven — and the lifeless face was a lover's face."
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "orig": "Obruitur tenebris & furua Cynthia nube: / Franciscus radiis obruit astra suis.",
+     "en": "Cynthia is buried in darkness and a dusky cloud: Francis buries the stars beneath rays of his own."
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "orig": "Non iubar hoc magicae carmen tenuauerit artis: / Nil opus ad numeros aera repulsa sonent:",
+     "en": "No spell of magic art shall thin this radiance; no need for the beaten bronze to clash out its rescuing rhythms:"
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "orig": "Perstat, & integros vbi vita reliquerit artus, / Maius ab extincto corpore lumen erit.",
+     "en": "It stands fast; and when life has left the limbs — left them whole — the light from the extinguished body will be the greater."
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "img": "assets/imago/nl-terra.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 514: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 514",
+     "orig": "Xauerius de wereldt doorreyst hebbende, sterft inden ingangh van China. — Als de ronde is ghedaen, / Sult ghy onder d'aerde gaen.",
+     "en": "Xavier, having journeyed through the world, dies at the gate of China. — 'When the round is done, you shall go under the earth.'"
     }
    ]
   },
@@ -483,6 +787,15 @@
      "k": 12,
      "orig": "Praemia non leuium ferimus satis ampla laborum, / Si nostra constet vita aliena salus.",
      "en": "We carry home rewards ample enough for no light labours, if another's salvation is bought at the price of our own life."
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "img": "assets/imago/nl-animas.jpg",
+     "alt": "The same emblem in the Dutch Af-Beeldinghe of 1640, p. 690: the plate re-engraved smaller, above the Latin lemma with a rhymed Dutch gloss and the vernacular verse of Adriaen Poirters.",
+     "label": "The Dutch mirror — Af-Beeldinghe 1640, p. 690",
+     "orig": "De Seyndinghe nae 't legher. — Der sielen buyt / Kies ick voor uyt.",
+     "en": "The mission to the army. — 'The booty of souls I choose first.'"
     }
    ]
   }

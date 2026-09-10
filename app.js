@@ -1413,8 +1413,10 @@ function viewMethod() {
       full public-domain English translation of the brief exists. Xavier's four letters are cut from
       Coleridge's 1872 biography at their printed openings and datelines, his commentary and footnotes
       dropped — in the second volume by font size, which separates the letter text cleanly from the
-      small-type notes. The Imago pilot reverses the usual direction: there the images are the text, the
-      plates cropped from the 1640 scan and the epigrams transcribed by eye, distich by distich. None of
+      small-type notes. The Imago module reverses the usual direction: there the images are the text, the
+      plates cropped from the 1640 scan and the epigrams transcribed by eye, distich by distich; each
+      emblem closes with its page from the Dutch Af-Beeldinghe of the same year and press, whose headings
+      and rhymed lemma-glosses are transcribed the same way. None of
       these modules feeds the concordance, the statistics or the dialogue; each says so in its own footer.</p>
     </div>
 

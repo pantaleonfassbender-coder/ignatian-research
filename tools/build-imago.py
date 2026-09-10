@@ -5,9 +5,19 @@
 #
 # Images: rendered from the Internet Archive scan imagoprimisaecul00boll
 # (public domain), cropped to the plates; files in assets/imago/. PDF leaves
-# (printed pages): 8 (engraved title), 213 (200), 339 (326), 472 (459),
-# 578 (565), 730 (717), 954 (941). The emblem runs sit at the end of each
-# book (PDF leaves 185-217, 330-343, 465-493, 574-594, 726-740, 950-965).
+# (printed pages): 8 (engraved title), 212 (199), 213 (200), 339 (326),
+# 465 (452), 472 (459), 578 (565), 730 (717), 734 (721), 954 (941). The
+# emblem runs sit at the end of each book (PDF leaves 185-217, 330-343,
+# 465-493, 574-594, 726-740, 950-965).
+#
+# The Dutch mirror: the same year and press issued the Af-Beeldinghe van
+# d'eerste eeuwe der Societeyt Iesu (Internet Archive afbeeldinghevand00boll,
+# public domain), the vernacular counterpart with the same plates and Dutch
+# verses by Adriaen Poirters SJ. Each emblem here carries its Dutch page as a
+# closing unit (assets/imago/nl-*.jpg, PDF leaf = printed page + 11), with
+# the page heading and Poirters's rhymed gloss on the lemma transcribed by
+# eye. For the forge emblem his first stanza is transcribed and translated
+# in full - the Dutch page even glosses the pun: 'Faber, alias Smidt'.
 # Latin: transcribed BY EYE from the same page images (long s normalised to
 # s, ae ligature to ae, u/v as printed); the OCR was used only to locate the
 # pages. English: unofficial working translations made for this site (CC0).
@@ -24,6 +34,65 @@ def units(rows):
         u.update(r)
         out.append(u)
     return out
+
+def add(lst, rows):
+    """Append rows to an already-numbered unit list, continuing n/k."""
+    for r in rows:
+        k = len(lst) + 1
+        u = {'n': k, 'k': k}
+        u.update(r)
+        lst.append(u)
+
+# The Dutch mirror pages: printed page, page heading, and Poirters's rhymed
+# gloss on the Latin lemma (printed in braces beside it), each transcribed
+# by eye from the page images of the Af-Beeldinghe.
+NL = {
+ 'alitem':  (136, 'Vernieuwinghe vanden gheest.',
+             "Te voren kroop, / Nu vliegh en loop.",
+             "Renewal of the spirit. — 'Before, I crept; now I fly and run.'"),
+ 'orbis':   (204, 'De Seyndinghe nae Indien.',
+             "Een alleen / VVas my te kleen.",
+             "The mission to the Indies. — 'One alone was too small for me.'"),
+ 'monstrat': (270, 'Het boecksken vande gheestelijcke Oeffeninghen is eenen '
+              'sekeren leydts-man om eenen staet des leuens te verkiesen.',
+             "Vraeght hier raedt, / Eer ghy gaet.",
+             "The little book of the Spiritual Exercises is a sure guide for "
+             "choosing a state of life. — 'Ask counsel here, before you go.'"),
+ 'sagitta': (388, 'De Societeyt wordt te vergheefs vande benijders bevochten.',
+             "Als 't Gode behaeght, / Beter benijdt, dan beklaeght.",
+             "The Society is assailed by the envious in vain. — 'As it pleases "
+             "God: better envied than pitied.'"),
+ 'faber':   (508, 'Ignatius ghebruyckt Faber, alias Smidt, tot de bekeeringhe '
+              'van Xauerius.',
+             "Al is 't vier vverm, / 't Vereyscht 's smits erm.",
+             "Ignatius employs Faber — alias Smith — for the conversion of "
+             "Xavier. — 'Though the fire be warm, it needs the smith's arm.' "
+             "The Dutch page spells the pun out in its heading."),
+ 'animas':  (690, "De Seyndinghe nae 't legher.",
+             "Der sielen buyt / Kies ick voor uyt.",
+             "The mission to the army. — 'The booty of souls I choose first.'"),
+ 'nexus':   (134, 'Vernieuwinghe der beloften.',
+             "Het maeckt hem vast, / Soo langh het wast.",
+             "Renewal of the vows. — 'It binds him fast, as long as it grows.'"),
+ 'omnibus': (258, 'Werck-lieden der Societeyt.',
+             "Ghelijck / Aen ieghelijck.",
+             "The workmen of the Society. — 'Like unto everyone.'"),
+ 'terra':   (514, 'Xauerius de wereldt doorreyst hebbende, sterft inden '
+              'ingangh van China.',
+             "Als de ronde is ghedaen, / Sult ghy onder d'aerde gaen.",
+             "Xavier, having journeyed through the world, dies at the gate of "
+             "China. — 'When the round is done, you shall go under the earth.'"),
+}
+def nl_unit(name):
+    p, kop, gloss, en = NL[name]
+    return {'img': f'assets/imago/nl-{name}.jpg',
+            'alt': (f'The same emblem in the Dutch Af-Beeldinghe of 1640, '
+                    f'p. {p}: the plate re-engraved smaller, above the Latin '
+                    f'lemma with a rhymed Dutch gloss and the vernacular verse '
+                    f'of Adriaen Poirters.'),
+            'label': f'The Dutch mirror — Af-Beeldinghe 1640, p. {p}',
+            'orig': f'{kop} — {gloss}',
+            'en': en}
 
 FRONT = units([
  {'img': 'assets/imago/frontispiece.jpg',
@@ -243,6 +312,133 @@ ANIMAS = units([
   'en': "We carry home rewards ample enough for no light labours, if another's salvation is bought at the price of our own life."},
 ])
 
+NEXUS = units([
+ {'img': 'assets/imago/nexus-non-sufficit.jpg',
+  'alt': ('Emblem engraving, Imago primi saeculi p. 199: ivy winds up an oak '
+          'in an open landscape, its tendrils circling trunk and branches.'),
+  'orig': 'Renouatio votorum. — Nexus non sufficit vnus.',
+  'en': ("The renewal of vows. — One bond is not enough. The third of the "
+         "volume's 'non sufficit' lemmata carried here: one world (E1), one "
+         "fire (E5) — and one bond. The ivy on the oak as the yearly renewal "
+         "of the vows: love multiplies its own chains."),
+  'label': 'The emblem and its lemma'},
+ {'orig': 'Nulla quies in amore datur: quis comprimat ignem? / Feruida flamma moras, otia nescit amor.',
+  'en': 'No rest is granted in love — who could smother its fire? A glowing flame knows no delays; love knows no idleness.'},
+ {'orig': 'Siqua potest cessasse, potest periisse fauilla; / Deses ab extincto proximus ardor erit.',
+  'en': 'A spark that can pause can also have died; an idle burning is next neighbour to one put out.'},
+ {'orig': 'Pectus amans, triplici quamuis adamante reuinxit, / Haec mage, dum renouat vincula, stringit amor.',
+  'en': 'Though love has bound the loving breast with triple adamant, it draws those chains the tighter each time it renews them.'},
+ {'orig': 'Vultus alit, flammasque nouas, noua spicula vibrat, / Amplexuque nouo vincula multiplicat.',
+  'en': 'It feeds its gaze, brandishes new flames and new darts, and with every new embrace multiplies the bonds.'},
+ {'orig': 'Et quoties sacros, sua vota, retractat amores, / Et quoties renouat gaudia, vincla facit.',
+  'en': 'And as often as it takes up again its sacred loves — its vows — as often as it renews its joys, it forges chains.'},
+ {'orig': 'Sic hederae, iuncta quamuis radice ligantur, / Et trunco teneras applicuere comas;',
+  'en': 'So the ivies: though they are tied to it by a joined root, and have laid their tender tresses on the trunk,'},
+ {'orig': 'Assurgunt, ramosque nouis complexibus vrgent, / Quaque patet quercus, Bacchica serta gerit:',
+  'en': 'they climb, press the branches with new embraces, and wherever the oak spreads it wears the garlands of Bacchus:'},
+ {'orig': 'Non hederae, nexus non sufficit vnus amori: / Mille hederae amplexus, mille requirit amor.',
+  'en': 'For the ivy — for love — one bond is not enough: the ivy asks a thousand embraces, and love a thousand.'},
+])
+add(NEXUS, [nl_unit('nexus')])
+
+OMNIBUS = units([
+ {'img': 'assets/imago/omnibus-omnia.jpg',
+  'alt': ('Emblem engraving, Imago primi saeculi p. 452: a mirror stands in a '
+          'tiled room between two herm figures, reflecting the light of a '
+          'window.'),
+  'orig': 'Societatis operarij. — Omnibus omnia.',
+  'en': ("The workers of the Society. — All things to all (1 Corinthians 9:22). "
+         "The mirror as the Jesuit worker: it takes on every likeness without "
+         "flattery and without deceit — the epigram is a small treatise on the "
+         "adaptability Ignatius taught in the instruction for Ireland "
+         "(Letter XII) and Xavier practised from Comorin to Japan."),
+  'label': 'The emblem and its lemma'},
+ {'orig': 'Qualiter in speculo facies, motusque relucent, / Aduersasque refert laeuis imago notas;',
+  'en': 'As a face and its motions shine back in a mirror, and the smooth image returns your marks reversed,'},
+ {'orig': 'Haud aliter formas hominum se vertit in omnes, / Omnibus vt solers omnia fiat amor:',
+  'en': 'just so does love turn itself into all the shapes of men, that, all-skilled, it may become all things to all:'},
+ {'orig': 'Castus amor, castis quem mentibus indit IESVS, / Ignati sacro quae prius igne calent:',
+  'en': "chaste love, which JESUS plants in chaste minds — minds already glowing with Ignatius's sacred fire."},
+ {'orig': 'Omnia diuersae capit hic simulacra figurae, / Omnia compositis reddit imaginibus.',
+  'en': 'It takes in every likeness of every different figure, and gives them all back in answering images.'},
+ {'orig': 'Nec tamen in similes trahit assentatio mores: / Nec studet occultis ille nocere dolis.',
+  'en': 'And yet it is no flattery that draws it into like manners, nor does it seek to harm by hidden wiles.'},
+ {'orig': 'Fallere nescit amor, numquam sibi dissidet ipse, / Ingenio similis sit licet vsque tuo.',
+  'en': 'Love cannot deceive; it is never at odds with itself, though it grow ever so like your own temper.'},
+ {'orig': 'Assumet tecum, tecum sua gaudia ponet, / Cum puero ludet, cum sene tristis erit.',
+  'en': 'It will take up your ways with you, and with you lay its joys aside; with the boy it will play, with the old man it will be grave.'},
+ {'orig': 'Institor extremis merces accersis ab Indis? / Impiger ignoto littore quaeret opes.',
+  'en': 'Are you a trader fetching wares from farthest India? Untiring, it will seek out goods on the unknown shore beside you.'},
+ {'orig': 'Si victor redeas, laetos canet ille triumphos: / Tecum per terras, per mare, bella geret.',
+  'en': 'If you come home a victor, it will sing your glad triumphs; with you it will wage wars by land and by sea.'},
+ {'orig': 'Desertas etiam siluas montesque pererrat / Fidus amor, tamquam barbarus ingenio.',
+  'en': 'Faithful love wanders even deserted woods and mountains, as though itself barbarous in temper.'},
+ {'orig': 'Nempe vt possit amor similes sibi reddere cunctos, / Dissimilis toties redditur ipse sibi.',
+  'en': 'For this — that love may render all men like itself — it is rendered, just as many times, unlike itself.'},
+])
+add(OMNIBUS, [nl_unit('omnibus')])
+
+TERRA = units([
+ {'img': 'assets/imago/tum-te-terra-teget.jpg',
+  'alt': ('Emblem engraving, Imago primi saeculi p. 721: an eclipse darkens '
+          'the sky over the sea — a dark shrouded form against the stars, the '
+          'moon below on the water.'),
+  'orig': ('Xauerius, orbe peragrato, moritur in littore Chinarum. — '
+           'Tum te terra teget, cum totum impleueris orbem.'),
+  'en': ("Xavier, having traversed the world, dies on the shore of China. — "
+         "Then only shall earth cover you, when you have filled the whole "
+         "world. The emblem answers E1: the boy who held two globes ends at "
+         "Sancian, and the epigram reads his death as an eclipse — read it "
+         "beside the last letter, FX IV."),
+  'label': 'The emblem and its lemma'},
+ {'orig': 'Cingite fronde caput: Xauerius orbe laboris / Deficit impleto: cingite fronde caput.',
+  'en': 'Wreathe his head with leaves: Xavier fails only when the circuit of his labour is filled — wreathe his head with leaves.'},
+ {'orig': 'Amplius ille nihil potuit superaddere coeptis: / Tota peragrata est India, iam satis est.',
+  'en': 'He could add nothing more to what he had begun: the whole of India is traversed; now it is enough.'},
+ {'orig': 'Chinae, Goa, Iapon, Ternata, Moluca, tot vrbes, / Quae toties initae caussa fuere viae;',
+  'en': 'China, Goa, Japan, Ternate, the Moluccas — so many cities that were, so many times, the reason for setting out;'},
+ {'orig': 'Totque aliae gentes, tot primo subdita Phoebo / Littora, sudoris plus habuere satis.',
+  'en': 'and so many other peoples, so many shores that lie under the morning sun, have had more than their fill of his sweat.'},
+ {'orig': 'Ergo vel extremam cum nil superesset ad Eon; / Ipsis terrarum finibus immoritur.',
+  'en': 'And so, when nothing remained short of the uttermost East, he dies upon the very ends of the earth.'},
+ {'orig': 'Immoritur votis ingentibus, orbe repleto: / Cynthia sic etiam plena perire solet.',
+  'en': 'He dies upon his vast desires, the world now filled: so even Cynthia — the moon — is wont to perish at her fullest.'},
+ {'orig': 'Cynthia terrarum, caeli Franciscus ab vmbra / Palluit: exanimis vultus, amantis erat.',
+  'en': "The moon grows pale in the shadow of the earth; Francis paled in the shadow of heaven — and the lifeless face was a lover's face."},
+ {'orig': 'Obruitur tenebris & furua Cynthia nube: / Franciscus radiis obruit astra suis.',
+  'en': 'Cynthia is buried in darkness and a dusky cloud: Francis buries the stars beneath rays of his own.'},
+ {'orig': 'Non iubar hoc magicae carmen tenuauerit artis: / Nil opus ad numeros aera repulsa sonent:',
+  'en': 'No spell of magic art shall thin this radiance; no need for the beaten bronze to clash out its rescuing rhythms:'},
+ {'orig': 'Perstat, & integros vbi vita reliquerit artus, / Maius ab extincto corpore lumen erit.',
+  'en': 'It stands fast; and when life has left the limbs — left them whole — the light from the extinguished body will be the greater.'},
+])
+add(TERRA, [nl_unit('terra')])
+
+# Dutch mirrors for the six emblems already shipped
+add(ALITEM, [nl_unit('alitem')])
+add(ORBIS, [nl_unit('orbis')])
+add(MONSTRAT, [nl_unit('monstrat')])
+add(SAGITTA, [nl_unit('sagitta')])
+add(FABER, [nl_unit('faber'),
+ {'orig': ('Den hamer en het vier, die moeten samen wercken, / '
+           'En met eenpaerigh hulp malckanderen verstercken: / '
+           "'t Een maeckt het ijser heet, en 't ander gheeft den slagh, / "
+           'Soo krijght het een nieuw vorm dat inden oven lagh. / '
+           'VVant schoon den gauwen knecht den blaesbalgh treckt met lusten, / '
+           'En dat den meester self de kolen niet laet rusten, / '
+           'Maer meer en meer onsteeckt den ouergrooten brandt, / '
+           'Komt daer gheen slagh omtrent, het ijser houdt sijn standt.'),
+  'en': ("Poirters's first stanza, translated: 'The hammer and the fire must "
+         "work together, and with united help strengthen one another: the one "
+         "makes the iron hot, the other gives the blow — so what lay in the "
+         "furnace receives a new form. For though the quick apprentice pulls "
+         "the bellows with a will, and the master himself lets the coals take "
+         "no rest but kindles the great blaze more and more: if no blow comes "
+         "near it, the iron keeps its old shape.' The stanza continues on the "
+         "next page of the print."),
+  'label': "Poirters's Dutch verse, first stanza (p. 508)"}])
+add(ANIMAS, [nl_unit('animas')])
+
 out = {
  'id': 'imago',
  'autor': 'Imago primi saeculi Societatis Iesu',
@@ -255,15 +451,23 @@ out = {
             "(public domain), plates cropped from the page images. Latin "
             "transcribed by eye from the same pages (long s and the ae ligature "
             "normalised, u/v as printed); English: this site's unofficial working "
-            "translations (CC0)."),
+            "translations (CC0). The Dutch mirror pages come from the vernacular "
+            "counterpart issued by the same press in the same year, the "
+            "Af-Beeldinghe van d'eerste eeuwe der Societeyt Iesu, with Dutch "
+            "verses by Adriaen Poirters SJ (Internet Archive "
+            "afbeeldinghevand00boll, public domain); headings and rhymed glosses "
+            "transcribed by eye."),
  'hinweis': ("The iconographic path of the apparatus — unlike Calculemus, this "
              "corpus can carry images, and here it does: the engraved title and "
-             "one emblem from each of the six books of the 1640 centenary "
-             "volume, each with its lemma, its epigram distich by distich, and "
-             "a working translation. The volume holds over 120 emblems in all; "
-             "this selection is a spine, not a survey, and each emblem was "
-             "chosen for what it touches elsewhere in the corpus. Not part of "
-             "the concordance index."),
+             "nine emblems of the 1640 centenary volume — one from each of the "
+             "six books, plus three deepenings — each with its lemma, its "
+             "epigram distich by distich, and a working translation, and each "
+             "closed by its Dutch mirror: the same plate in the Af-Beeldinghe "
+             "of the same year, with Poirters's rhymed vernacular gloss. The "
+             "Latin volume holds over 120 emblems in all; this selection is a "
+             "spine, not a survey, and each emblem was chosen for what it "
+             "touches elsewhere in the corpus. Not part of the concordance "
+             "index."),
  'sections': [
   {'id': 'title', 'zk': 'Imago T',
    'titel': 'The engraved title (1640)',
@@ -275,12 +479,24 @@ out = {
              'turned to the renovation of vows — enclosure not as prison but as '
              'the workshop of wings.'),
    'units': ALITEM},
+  {'id': 'nexus', 'zk': 'Imago E7',
+   'titel': 'Book I · Nexus non sufficit vnus — One bond is not enough (p. 199)',
+   'blurb': ('The ivy on the oak, the silkworm’s neighbour on the facing page: '
+             'the renewal of vows as love multiplying its own chains — and the '
+             'third of the volume’s “non sufficit” lemmata carried here.'),
+   'units': NEXUS},
   {'id': 'orbis', 'zk': 'Imago E1',
    'titel': 'Book II · Vnus non sufficit orbis — One world is not enough (p. 326)',
    'blurb': ('The emblem of the Indian missions, from Societas crescens: the boy '
              'with two globes, against Alexander who halted at the Ganges. The '
              'most quoted — and most mocked — line of the whole volume.'),
    'units': ORBIS},
+  {'id': 'omnibus', 'zk': 'Imago E8',
+   'titel': 'Book III · Omnibus omnia — All things to all (p. 452)',
+   'blurb': ('The mirror emblem, from Societas agens: 1 Corinthians 9:22 as the '
+             'workers’ motto — adaptation without flattery, likeness without '
+             'deceit. Ignatius’s rules of dealing (Letter XII), drawn.'),
+   'units': OMNIBUS},
   {'id': 'monstrat', 'zk': 'Imago E3',
    'titel': 'Book III · Hac monstrat eundum — The book that shows the way (p. 459)',
    'blurb': ('From Societas agens: the little book of the Exercises as the surest '
@@ -299,6 +515,13 @@ out = {
              'Peter Favre — faber, the smith’s own name — as the added hand. '
              'Three works of this corpus in one engraving.'),
    'units': FABER},
+  {'id': 'terra', 'zk': 'Imago E9',
+   'titel': 'Book V · Tum te terra teget — The death of Xavier as an eclipse (p. 721)',
+   'blurb': ('The answer to E1, four hundred pages on: the boy who held two '
+             'globes dies at the gate of China, and the epigram reads his death '
+             'as the eclipse of a full moon. Beside it belongs the last letter, '
+             'FX IV.'),
+   'units': TERRA},
   {'id': 'animas', 'zk': 'Imago E6',
    'titel': 'Book VI · Da mihi animas, cetera tolle tibi — The army mission (p. 941)',
    'blurb': ('From the Flemish province’s own book: Abraham refusing the spoils '
