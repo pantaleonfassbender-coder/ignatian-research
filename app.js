@@ -52,7 +52,7 @@ const LINIEN = [
   ["schule", "The school of discernment", "How the Exercises became the practice of an order: the official Directory, Favre's journal — and, in the programme, Nadal's exhortations, Rodríguez's curriculum, and the Abandon attributed to Caussade."],
   ["welt", "The Society in the world", "Mission, observation and self-presentation before 1773: Xavier's letters, the Relations from New France, Ricci at the court of China, Acosta's New World, and the centenary emblem book of 1640."],
   ["spee", "Friedrich Spee", "A line of one voice: conscience from inside the order — the Cautio Criminalis against the witch trials, and the same conscience singing in the Trutznachtigall."],
-  ["kritik", "The counter-voices", "Forgery, polemic, suppression: the Monita secreta, Pascal's Provinciales, and the brief of 1773 with which the corpus will close."],
+  ["kritik", "The counter-voices", "Forgery, polemic, suppression: the Monita secreta, Pascal's Provinciales, and the brief of 1773 with which the corpus closes."],
 ];
 function route() {
   const h = (location.hash || "#/overview").slice(2).split("/");
@@ -1574,17 +1574,44 @@ const PATHS = [
         leitfrage: "Which discernment rules reappear here as community medicine?" },
     ],
   },
+  {
+    id: "image", level: "Introductory", titel: "The Society's image",
+    frage: "The iconographic path: the order's portrait of itself at one hundred, read through the engraved title and one emblem from each book of the Imago primi saeculi (1640) — with the rest of the corpus looking over its shoulder at every station.",
+    stationen: [
+      { href: "#/text/imago/title", cite: "Imago T", autor: "The engraved title",
+        warum: "The whole volume in one plate: the Society enthroned under the IHS, her six books in medallions, the Plantin imprint in the centenary year.",
+        leitfrage: "What does it mean that an order of 'pilgrims' portrays itself as a throne?" },
+      { href: "#/text/imago/alitem", cite: "Imago E2", autor: "Book I · The silkworm",
+        warum: "Renewal of spirit as metamorphosis: enclosure as the workshop of wings — the Exercises' retreat, drawn.",
+        leitfrage: "How does this emblem restate SpEx [20]'s case for withdrawal?" },
+      { href: "#/text/imago/orbis", cite: "Imago E1", autor: "Book II · The two globes",
+        warum: "'One world is not enough': the missions against Alexander at the Ganges — Xavier's letters turned into a boast.",
+        leitfrage: "Read FX I beside this: does the epigram keep or lose the letter's urgency?" },
+      { href: "#/text/imago/monstrat", cite: "Imago E3", autor: "Book III · The book that shows the way",
+        warum: "The libellus of the Exercises as the surest guide to the election — the apparatus's own core text as an emblem.",
+        leitfrage: "The emblem promises certainty; where do SpEx [169–189] admit difficulty?" },
+      { href: "#/text/imago/sagitta", cite: "Imago E4", autor: "Book IV · Arrows at the sun",
+        warum: "The Society answers its critics by drawing them as fools — while the Monita circulated and sixteen years before Pascal.",
+        leitfrage: "After reading the Monita and the Provinciales here, does the emblem's serenity read as confidence or as evasion?" },
+      { href: "#/text/imago/faber", cite: "Imago E5", autor: "Book V · The forge",
+        warum: "Ignatius as smith, Xavier as the iron, Favre — faber — as the added hand: three works of this corpus in one engraving and one pun.",
+        leitfrage: "Compare Favre's own Memoriale: does his journal sound like the 'skilful hand' the emblem makes of him?" },
+      { href: "#/text/imago/animas", cite: "Imago E6", autor: "Book VI · The spoils refused",
+        warum: "'Give me the souls, take the rest for yourself': the Flemish province's army mission under Abraham's refusal — and the volume's confidence, 133 years before the brief of 1773.",
+        leitfrage: "Read the coda after this: what does the centenary volume not know?" },
+    ],
+  },
 ];
 
 function viewPaths() {
   view.append(el(`<div>
     <div class="viewhead"><span class="tag">Guided routes</span>
       <h1>Reading paths</h1>
-      <p class="lede">Four curated ways through the shipped corpus — each with a stated order, a
+      <p class="lede">Five curated ways through the shipped corpus — each with a stated order, a
       reason for every station, and a guiding question to carry into the text. Every station opens
       a reader; the <a href="#/concordance">concordance</a> and the <a href="#/dialogue">dialogue</a>
-      are the companions to take along. A fifth, iconographic path — through the emblems of the
-      <em>Imago primi saeculi</em> of 1640 — is planned and will join when that module ships.</p></div>
+      are the companions to take along. The fifth is the iconographic path: the emblems of the
+      <em>Imago primi saeculi</em> of 1640, read with the rest of the corpus beside them.</p></div>
     <div id="plist"></div>
   </div>`));
   const list = view.querySelector("#plist");
@@ -1619,7 +1646,8 @@ function viewCoda() {
     <div class="panel"><h2>The threshold of 1773</h2>
       <p class="readable">This corpus confines itself, deliberately, to the old Society: from the
       first companions to the brief <em>Dominus ac Redemptor</em> of 21 July 1773, with which
-      Clement XIV dissolved the order — the text with which the programme intends to close. The
+      Clement XIV dissolved the order — <a href="#/text/dominus">carried here complete</a>, in
+      Theiner's paragraph numbering with a working translation, as the corpus's closing text. The
       boundary is historical, not accidental: the Society of 1540–1773 is a completed object, the
       world in which the Exercises found their first practice, their official Directory, their
       missions and their enemies. What lies beyond is named here rather than carried: the brief of

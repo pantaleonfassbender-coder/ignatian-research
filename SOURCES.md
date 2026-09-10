@@ -41,7 +41,7 @@ and therefore have no source entry here; their editions are named on the method 
 
 ### Imago primi saeculi — iconographic pilot · `data/imago.json` · `assets/imago/`
 
-- *Imago primi saeculi Societatis Iesu a Provincia Flandro-Belgica eiusdem Societatis repraesentata* (Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640), Internet Archive scan — <https://archive.org/details/imagoprimisaecul00boll>. The three images in `assets/imago/` are rendered and cropped from this scan (leaves 8, 213, 339 of the PDF; printed pages: engraved title, 200, 326); the Latin lemmas and epigrams are transcribed by eye from the same page images; the English is a working translation made for this site (CC0).
+- *Imago primi saeculi Societatis Iesu a Provincia Flandro-Belgica eiusdem Societatis repraesentata* (Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640), Internet Archive scan — <https://archive.org/details/imagoprimisaecul00boll>. The seven images in `assets/imago/` are rendered and cropped from this scan (PDF leaves 8, 213, 339, 472, 578, 730, 954; printed pages: engraved title, 200, 326, 459, 565, 717, 941 — one emblem from each of the six books); the Latin lemmas and epigrams are transcribed by eye from the same page images; the English is a working translation made for this site (CC0).
 
 ## The counter-voices
 

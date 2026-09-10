@@ -110,10 +110,19 @@ for name in ('longridge_exx', 'longridge_dir', 'anchors', 'corpus', 'network', '
         errors.append(f'data/{name}.json unreadable: {e}')
 
 # 4. reading-path stations resolve
+prog_sections = {}          # shipped programme module id -> set of section ids
+for p in prog:
+    if p.get('status') == 'shipped' and p.get('datei'):
+        try:
+            t = json.load(io.open(f"data/{p['datei']}.json", encoding='utf-8'))
+            prog_sections[p['id']] = {s['id'] for s in t.get('sections', [])}
+        except Exception:
+            pass
 app = io.open('app.js', encoding='utf-8').read()
 for href in re.findall(r'href: "(#/[a-z]+/[^"]+)"', app):
     kind, _, rest = href[2:].partition('/')
-    tgt = rest.split('/')[0]
+    parts = rest.split('/')
+    tgt = parts[0]
     ok = True
     if kind == 'exercitia':
         ok = tgt in exx_ids
@@ -125,6 +134,8 @@ for href in re.findall(r'href: "(#/[a-z]+/[^"]+)"', app):
         ok = tgt.isdigit() and int(tgt) in letter_ns
     elif kind == 'works':
         ok = tgt in {w['id'] for w in works}
+    elif kind == 'text':
+        ok = tgt in prog_sections and (len(parts) < 2 or parts[1] in prog_sections[tgt])
     if not ok:
         errors.append(f'path/link target does not resolve: {href}')
 
