@@ -179,13 +179,15 @@ function viewOverview() {
     <div class="viewhead">
       <span class="tag">Research apparatus</span>
       <h1>Ignatius of Loyola and the spirituality he set in motion</h1>
-      <p class="lede">Seven texts, one working corpus. At its centre stand the writings of Ignatius
-      himself — the retreat manual, the body of law, the dictated memoir, the private journal of
-      discernment, the letters. Around them, the texts in which his spirituality became the practice
-      of an order: the Society's official Directory of 1599 on giving the Exercises, and the Memoriale
-      of Pierre Favre, the first companion, discernment kept as a daily journal. The apparatus indexes
-      them by their canonical numbering, traces the vocabulary that migrates between them, and lets
-      you put questions to the corpus with the evidence attached.</p>
+      <p class="lede">One working corpus of the old Society of Jesus (1540–1773), in five lines. At its
+      centre stand the writings of Ignatius himself — the retreat manual, the body of law, the dictated
+      memoir, the private journal of discernment, the letters — and the texts in which his spirituality
+      became the practice of an order: the official Directory of 1599, and the Memoriale of Pierre Favre,
+      the first companion. Around them stand the programme modules that carry the corpus out into the
+      world and its controversies: Xavier's letters, the emblems of the Imago primi saeculi with their
+      Dutch mirror, Friedrich Spee, and the counter-voices down to the brief of 1773 with which the corpus
+      closes. The apparatus indexes them all by their canonical numbering, traces the vocabulary that
+      migrates between them, and lets you put questions to the corpus with the evidence attached.</p>
       <p class="fine">New here? The <a href="#/introduction">introductory essay</a> walks through the
       whole apparatus in a named author's voice, or take one of the <a href="#/paths">reading paths</a> —
       five guided routes with a guiding question per station. The corpus is organised in
@@ -194,7 +196,7 @@ function viewOverview() {
     </div>
 
     <div class="grid g4" style="margin-bottom:1.6rem">
-      <div class="kpi"><b>${k.werke}</b><span>works</span></div>
+      <div class="kpi"><b>${k.werke}</b><span>core works</span></div>
       <div class="kpi"><b>${nf(k.pdf_seiten)}</b><span>pages</span></div>
       <div class="kpi"><b>${nf(k.anker)}</b><span>canonical anchors</span></div>
       <div class="kpi"><b>${nf(k.tokens)}</b><span>analysed tokens</span></div>
@@ -229,8 +231,25 @@ function viewOverview() {
       </div>
     </div>
 
-    <h2>The corpus</h2>
-    <div class="grid g3" id="worklist" style="margin-bottom:2.4rem"></div>
+    <div class="card" style="margin-bottom:2rem">
+      <span class="tag">And the programme modules</span>
+      <h3>Seven public-domain texts, shipped in full</h3>
+      <p style="font-size:.92rem;color:var(--fg2)">Around the core stand the programme modules — public
+      domain in their own right, so their running text is shipped complete, each on its own citation grid
+      and part of the concordance and the dialogue: Pascal's <em>Provinciales</em>, the forged <em>Monita
+      secreta</em>, the brief <em>Dominus ac Redemptor</em> of 1773, Xavier's letters, eleven emblems of
+      the <em>Imago primi saeculi</em> with their Dutch mirror, and Friedrich Spee's <em>Cautio
+      Criminalis</em> and <em>Trutznachtigall</em>. Working translations are this site's own and marked
+      unofficial.</p>
+    </div>
+
+    <h2>The seven core works</h2>
+    <div class="grid g3" id="worklist" style="margin-bottom:1.8rem"></div>
+
+    <h2>The programme modules</h2>
+    <p class="fine" style="margin:0 0 1rem;max-width:60rem">Shipped complete and searchable; browse them by
+    line, with the works still planned, on the <a href="#/works">Works page</a>.</p>
+    <div class="grid g3" id="proglist" style="margin-bottom:2.4rem"></div>
 
     <div class="grid g2">
       <div class="chartbox">
@@ -260,6 +279,18 @@ function viewOverview() {
     </div>`);
     card.onclick = () => location.hash = `#/works/${w.id}`;
     wl.append(card);
+  }
+  const pl = view.querySelector("#proglist");
+  for (const p of (D.programme || []).filter(x => x.status === "shipped" && x.datei)) {
+    const card = el(`<div class="workcard" style="border-top:3px solid ${wc(p.id)}">
+      <h3 style="font-size:1.02rem">${esc(p.titel)}</h3>
+      <div><span class="rights pd">public domain</span> <span class="chip">reader</span></div>
+      <p class="fine" style="margin:0">${esc(p.autor)} · ${esc(p.jahr)}</p>
+      <p style="font-size:.9rem;color:var(--fg2);margin:.2rem 0 0">${esc(short(p.warum, 150))}</p>
+      <p class="fine" style="margin:.3rem 0 0">cited as <span class="mono">${esc(p.zk)}</span></p>
+    </div>`);
+    card.onclick = () => location.hash = `#/text/${p.id}`;
+    pl.append(card);
   }
   view.querySelector("#startUnlock").onclick = openUnlock;
   refreshUnlockCard();
