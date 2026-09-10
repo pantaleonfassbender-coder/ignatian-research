@@ -43,6 +43,7 @@ const ROUTES = {
   method: viewMethod, dialogue: a => renderDialogue(view, a),
   privacy: viewPrivacy, imprint: viewImprint, author: viewAuthor,
   memoriale: viewMemoriale, paths: viewPaths, coda: viewCoda, text: viewText,
+  introduction: viewIntroduction,
 };
 
 /* The five lines of the corpus. The apparatus confines itself to the old
@@ -82,6 +83,75 @@ export function lockedBox(text) {
 }
 export const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
 
+/* ======================================================== INTRODUCTION */
+/* The introductory essay (data/introduction.json, converted from the
+   author's manuscript, a copy of which is deposited in docs/). Italic
+   markers *...* become <em>; the first mention of each work or function
+   links to its reader, so the essay doubles as a guided entrance. The
+   essay is maintained alongside the site: when modules ship, its facts
+   are updated and the deposited manuscript superseded is noted here. */
+let INTRO = null;
+const INTRO_LINKS = [
+  ["Spiritual Exercises", "#/works/spex"],
+  ["Constitutions", "#/works/const"],
+  ["A Pilgrim's Testament", "#/works/auto"],
+  ["Spiritual Diary", "#/works/diary"],
+  ["Official Directory", "#/works/dir"],
+  ["Memoriale", "#/works/fabri"],
+  ["letters", "#/letters"],
+  ["Monita secreta", "#/text/monita"],
+  ["Lettres provinciales", "#/text/pascal"],
+  ["Provinciales", "#/text/pascal"],
+  ["Dominus ac Redemptor", "#/text/dominus"],
+  ["Xavier", "#/text/xavier"],
+  ["Imago primi saeculi", "#/text/imago"],
+  ["iconographic reading path", "#/paths"],
+  ["reading paths", "#/paths"],
+  ["concordance", "#/concordance"],
+  ["citation-bound dialogue", "#/dialogue"],
+  ["coda", "#/coda"],
+  ["method page", "#/method"],
+  ["five lines", "#/works"],
+];
+const emi = s => esc(s).replace(/\*([^*]+)\*/g, "<em>$1</em>");
+async function viewIntroduction() {
+  if (!INTRO) INTRO = await fetch("data/introduction.json").then(r => r.json());
+  const used = new Set();
+  const fmt = s => {
+    let h = emi(s);
+    for (const [phrase, href] of INTRO_LINKS) {
+      if (used.has(phrase)) continue;
+      const i = h.indexOf(phrase);
+      if (i < 0) continue;
+      used.add(phrase);
+      h = h.slice(0, i) + `<a href="${href}">${phrase}</a>` + h.slice(i + phrase.length);
+    }
+    return h;
+  };
+  view.append(el(`<div class="essay">
+    <div class="viewhead">
+      <span class="tag">Introductory essay</span>
+      <h1>${esc(INTRO.titel)}</h1>
+      <p class="fine">${esc(INTRO.autor)} · ${esc(INTRO.datum)} · editorial matter of this site, CC BY 4.0 ·
+        <a href="docs/Fassbender-2026-Ignatiana-Introduction.docx">manuscript (.docx)</a></p>
+      <p class="fine" style="max-width:46rem">${emi(INTRO.note)
+        .replace(/https?:\/\/[^\s]+/g, u => `<a href="${u}">${u}</a>`)}</p>
+    </div>
+    ${INTRO.abschnitte.map(a => `
+      ${a.titel ? `<h2>${esc(a.titel)}</h2>` : ""}
+      ${a.paras.map(p => `<p class="readable">${fmt(p)}</p>`).join("")}`).join("")}
+    <div class="toolbar" style="margin:1.8rem 0">
+      <a class="chip" href="#/works">Browse the five lines</a>
+      <a class="chip" href="#/paths">Take a reading path</a>
+      <a class="chip" href="#/concordance">Search the concordance</a>
+    </div>
+    <div class="panel"><h2 style="margin-top:0">References</h2>
+      <div class="refs">${INTRO.referenzen.map(r => `<p class="fine">${emi(r)
+        .replace(/https?:\/\/[^\s]+/g, u => `<a href="${u}">${u}</a>`)}</p>`).join("")}</div>
+    </div>
+  </div>`));
+}
+
 /* ============================================================ OVERVIEW */
 function viewOverview() {
   const k = D.corpus;
@@ -96,8 +166,9 @@ function viewOverview() {
       of Pierre Favre, the first companion, discernment kept as a daily journal. The apparatus indexes
       them by their canonical numbering, traces the vocabulary that migrates between them, and lets
       you put questions to the corpus with the evidence attached.</p>
-      <p class="fine">New here? Take one of the <a href="#/paths">reading paths</a> — four guided
-      routes with a guiding question per station. The corpus is organised in
+      <p class="fine">New here? The <a href="#/introduction">introductory essay</a> walks through the
+      whole apparatus in a named author's voice, or take one of the <a href="#/paths">reading paths</a> —
+      five guided routes with a guiding question per station. The corpus is organised in
       <a href="#/works">five lines</a> and confines itself to the old Society (1540–1773); its
       boundaries, and the way it was made, are owned in the <a href="#/coda">coda</a>.</p>
     </div>

@@ -103,7 +103,7 @@ if not mem['sections'] or not mem['appendix']:
 
 for name in ('longridge_exx', 'longridge_dir', 'anchors', 'corpus', 'network', 'terms',
              'keyness', 'glossary', 'lexicon', 'discernment', 'persons', 'places',
-             'itinerary', 'introductions', 'sections'):
+             'itinerary', 'introductions', 'introduction', 'sections'):
     try:
         json.load(io.open(f'data/{name}.json', encoding='utf-8'))
     except Exception as e:

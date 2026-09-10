@@ -16,6 +16,14 @@ you put a question to the corpus with the evidence attached.
 It is a working instrument, not a publication. It was built for one reader's use and is opened here in
 case it is useful to others; the limits are stated at length rather than buried.
 
+The site opens with a stand-alone scholarly introduction (*Ignatiana: An Introduction to a Research
+Apparatus for Ignatian Spirituality*, September 2026), reachable from the navigation as
+*Introduction*. It presents the five lines, the argument that runs through them, the threshold of
+1773, and the apparatus's method and limits, with a full reference list; on the site its first
+mention of each work links into the corresponding reader. The essay lives in
+`data/introduction.json` (editorial matter, CC BY 4.0) with the author's manuscript deposited in
+`docs/`; it is maintained alongside the site as modules ship.
+
 ---
 
 ## The rights position, first

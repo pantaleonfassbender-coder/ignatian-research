@@ -8,7 +8,7 @@ people entirely.
 | What | Files | Licence |
 |---|---|---|
 | **Source code** | `index.html`, `app.js`, `corpus.js`, `viz.js`, `dialogue.js`, `style.css`, `netlify/functions/*`, `netlify.toml`, `robots.txt` | [MIT](LICENSE) |
-| **Editorial texts** | `data/introductions.json`, `data/glossary.json`, `data/lexicon.json`, `data/sections.json`, `README.md`, and the editorial prose inside `app.js` and `index.html` | [CC BY 4.0](LICENSE-CONTENT) |
+| **Editorial texts** | `data/introductions.json`, `data/introduction.json` (the introductory essay, with its manuscript in `docs/Fassbender-2026-Ignatiana-Introduction.docx`), `data/glossary.json`, `data/lexicon.json`, `data/sections.json`, `README.md`, and the editorial prose inside `app.js` and `index.html` | [CC BY 4.0](LICENSE-CONTENT) |
 | **Derived datasets** | `data/anchors.json`, `works.json`, `corpus.json`, `terms.json`, `keyness.json`, `network.json`, `persons.json`, `places.json`, `itinerary.json`, `discernment.json` | [CC0 1.0](LICENSE-DATA) — public domain dedication |
 | **Public-domain source text** | `data/letters.json` | Public domain in its own right — see below |
 | **Bilingual edition of the 1599 Directory** | `data/directorium.json` | Latin: public domain (US, pre-1930 publication); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
