@@ -11,8 +11,8 @@ identifiers:
     value: 10.5281/zenodo.22682750
     description: "Concept DOI - resolves to the latest archived version on Zenodo"
   - type: doi
-    value: 10.5281/zenodo.22682751
-    description: "Version DOI for v1.0.0"
+    value: 10.5281/zenodo.22693990
+    description: "Version DOI for v1.1.0"
 repository-code: "https://github.com/pantaleonfassbender-coder/ignatian-research"
 url: "https://ignatian-research.netlify.app/"
 abstract: >-

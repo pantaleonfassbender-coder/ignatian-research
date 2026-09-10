@@ -51,6 +51,11 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: [Friedrich Spee,] *Cautio Criminalis, seu de processibus contra sagas liber* (Rinteln: Petrus Lucius, 1631; published anonymously), Internet Archive scan — <https://archive.org/details/per_witchcraft-in-europe-and-america_spee-friedrich-von_1631_911>. Dubium I (pp. 1–2) and Dubium LI (pp. 378–392) carried complete, transcribed by eye from the page images (the OCR of the italic type served only for navigation); long s and ligatures normalised, printer's abbreviations silently expanded.
 - English: unofficial working translation made for this site directly from the Latin (CC0); Marcus Hellyer's translation of 2003 remains in copyright and was not consulted.
 
+### Trutznachtigall (selections) · `data/trutz.json` · `assets/spee/`
+
+- German: Friedrich Spee, *Trutz-Nachtigall oder Geistlichs-Poetisch Lust-Waldlein* (Cologne, 1654; first published posthumously 1649), Internet Archive scan — <https://archive.org/details/trutz-nachtigall-oder-geistlichs-poetisc>. Two poems carried complete — the Ölberg lament (printed p. 170) and the "Liebgesang der Gesponß Jesu" (p. 26) — transcribed by eye from the page images (the Fraktur OCR served only for navigation); the long s is normalised and the print's virgule kept as the poet's comma. A facsimile page of each poem's opening is carried beside the text.
+- English: unofficial working prose translation made for this site directly from the German (CC0).
+
 ## The counter-voices
 
 ### Pascal, Lettres provinciales — Letters V, VII, X · `data/pascal.json`

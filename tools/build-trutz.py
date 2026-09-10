@@ -1,0 +1,246 @@
+# -*- coding: utf-8 -*-
+# Build data/trutz.json — Friedrich Spee, Trutznachtigall (selections):
+# the second module of the Spee line, the poet beside the jurist.
+#
+# German transcribed BY EYE from the page images of the Cologne print of
+# 1654, Trutz-Nachtigall oder Geistlichs-Poetisch Lust-Waldlein (Internet
+# Archive trutz-nachtigall-oder-geistlichs-poetisc, public domain; the
+# collection appeared posthumously in 1649, this being an early reprint).
+# The OCR of the Fraktur is unusable and served only for navigation. The
+# facsimile page of each poem's opening is carried as an image beside the
+# text. Transcription conventions: the long s is normalised to s and the
+# round r kept as r; u/v and i/j are given as printed; the print's virgule
+# "/" is kept as the poet's comma; spelling and capitalisation are left as
+# printed. The English is this site's unofficial working translation — prose
+# under the verse, made directly from the German (CC0).
+#
+# Usage: python tools/build-trutz.py
+import io, json, os
+
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def units(rows):
+    out = []
+    for k, r in enumerate(rows, start=1):
+        u = {'n': k, 'k': k}
+        u.update(r)
+        out.append(u)
+    return out
+
+OELBERG = units([
+ {'img': 'assets/spee/trutz-oelberg-p170.jpg',
+  'alt': ('The opening of the Ölberg lament in the Trutz-Nachtigall of 1654 '
+          '(printed p. 170), in Fraktur: "Trawr. Gesang von der noth Christi '
+          'am Oelberg in dem Garten."'),
+  'label': 'Trawr-Gesang von der noth Christi am Oelberg in dem Garten (p. 170)',
+  'orig': ('Bey stiller Nacht / zur ersten Wacht / Ein Stimm sich gunt zu klagen. / '
+           'Ich nam in acht / was die doch sagt; / That hin mit Augen schlagen.'),
+  'en': ("In the quiet night, at the first watch, a voice began to lament. I took heed "
+         "of what it was saying, and cast my eyes toward it.")},
+ {'orig': ('Ein junges Blut / von Sitten gut / Alleinig ohn Geferdten / '
+           'In grosser Noth / fast halber todt / Im Garten lag auff Erden.'),
+  'en': ("A young life, gentle of manner, alone and without companions, in great distress, "
+         "half dead already, lay on the ground in the garden.")},
+ {'orig': ('Es war der liebe Gottes Sohn / Sein Haupt er hat in Armen / '
+           'Viel weiss / vnd bleicher / dan der Mon / Ein Stein es möcht erbarmen.'),
+  'en': ("It was the dear Son of God, his head held in his arms, far whiter and paler than "
+         "the moon — a stone might have taken pity.")},
+ {'orig': ('Ach Vatter / liebster Vatter mein / Vnd muß den Kelch ich trincken? / '
+           'Vnd mags dan nit anders sein? / Mein Seel nit laß versincken.'),
+  'en': ("Ah Father, my dearest Father, and must I drink the cup? And can it be no "
+         "otherwise? Do not let my soul go under.")},
+ {'orig': ('Ach liebes Kind / trinck auß geschwind / Dirs laß in trewen sagen / '
+           'Sey wol gesinnt / bald überwind / Den Handel mustu wagen.'),
+  'en': ("Ah dear child, drink it down quickly — let this be told you in faithfulness. "
+         "Be of good heart, soon overcome it: you must venture the matter.")},
+ {'orig': ('Ach Vatter mein / vnd kans nit sein / Vnd muß ichs je dan wagen? / '
+           'Wil trincken rein / den Kelch allein / Kan dirs ja nit versagen.'),
+  'en': ("Ah my Father, and can it not be, and must I then venture it after all? I will "
+         "drink the cup clean and alone: I cannot refuse you.")},
+ {'orig': ('Doch sinn / vnd Muth erschrecken thut / Sol ich mein Leben lassen? / '
+           'O bitter Todt / mein Angst / vnd Noth / Ist über alle massen.'),
+  'en': ("Yet mind and courage take fright — must I give up my life? O bitter death, my "
+         "anguish and distress are beyond all measure.")},
+ {'orig': ('Maria zart / Jungfräwlich art / Soltu mein Schmertzen wissen / '
+           'Mein Leiden hart zu dieser Fahrt / Dein Hertz wär schon gerissen.'),
+  'en': ("Tender Mary, of virginal kind — did you but know my pain, my hard suffering on "
+         "this road, your heart would already be torn.")},
+ {'orig': ('Ach Mutter mein / bin ja kein Stein / Das Hertz mir dörfft zerspringen / '
+           'Sehr grosse Pein / muß nehmen ein / Mit Todt / vnd Marter ringen.'),
+  'en': ("Ah my mother, I am no stone; my heart could burst. Very great pain I must take "
+         "in, and wrestle with death and torment.")},
+ {'orig': ('Ade / ade zu guter Nacht / Maria Mutter milde / '
+           'Ist niemand der dan mit mir wacht / In dieser wüsten Wilde?'),
+  'en': ("Farewell, farewell and good night, Mary, gentle mother. Is there no one, then, "
+         "who watches with me in this desolate wilderness?")},
+ {'orig': ('Ein Creutz mir für den Augen schwebt / O wee der Pein / vnd Schmertzen! / '
+           'Dran soll ich morgen werd erhebt / Das greifft mir zum Hertzen.'),
+  'en': ("A cross hovers before my eyes — O the woe of the pain and the anguish! — on which "
+         "tomorrow I am to be raised: that grips me to the heart.")},
+ {'orig': ('Viel Ruthen / Geissel / Scorpion / In meinen Ohren sausen / '
+           'Auch kombt mir vor den dörnen Cron / O Gott / wem wolt nit grausen?'),
+  'en': ("Many rods, scourges, scorpion-whips ring in my ears; the crown of thorns comes "
+         "before me too — O God, whom would it not horrify?")},
+ {'orig': ('Zu Gott ich hab gerufffen zwar / Auß tieffen Todtes Banden; / '
+           'Dennoch ich bleib verlassen gar / Ist hilff noch Trost vorhanden.'),
+  'en': ("To God I have indeed cried out, from the deep bonds of death; yet I remain "
+         "wholly forsaken — is there help or comfort anywhere?")},
+ {'orig': ('Der schöne Mon / wil vndergahn / Für Leyd nit mehr mag scheinen / '
+           'Die Sternen lan jhr glitzen stahn / Mit mir sie wollen weinen. / '
+           'Kein Vogel-sang / noch Frewden-klang / Man höret in den Lüfften / '
+           'Die wilde Thier / trawren auch mit mir / In Steinen / vnd in Klüfften.'),
+  'en': ("The fair moon will go down, for grief it can shine no more; the stars leave off "
+         "their glittering — they would weep with me. No birdsong, no sound of joy is heard "
+         "in the air; the wild beasts too mourn with me, among the rocks and in the "
+         "clefts.")},
+])
+
+LIEBGESANG = units([
+ {'img': 'assets/spee/trutz-liebgesang-p26.jpg',
+  'alt': ('The opening of the "Liebgesang der Gesponß Jesu" in the Trutz-Nachtigall '
+          'of 1654 (printed p. 26), in Fraktur, beginning "Der trübe Winter ist fürbey."'),
+  'label': 'Liebgesang der Gesponß Jesu, im anfang der Sommer zeit (p. 26)',
+  'orig': ('Der trübe Winter ist fürbey / Die Kranich widerkehren: / '
+           'Nun reget sich der Vogel schrey / Die Nester sich vermehren: / '
+           'Laub mit gemach / Nun schleicht an Tag / Die Blümlein sich nun melden. / '
+           'Wie Schlänglein krumb / Gehn lächlend vmb / Die Bächlein kühl in Wälden.'),
+  'en': ("The gloomy winter is past, the cranes return; now the birds' cry stirs, the "
+         "nests multiply. Foliage steals gently into the day, the little flowers announce "
+         "themselves; and like little crooked serpents the cool brooks go smiling through "
+         "the woods.")},
+ {'orig': ('Der Brünnlein klar / vnd Quellen rein / Viel hie / viel dort erscheinen / '
+           'All silber-weisse Töchterlein / Der holen Berg / vnd Steinen: / '
+           'In grosser meng / Sie mit gedreng / Wie Pfeil von Felsen zielen; / '
+           'Bald rauschens her / Nit ohn gepleer / Vnd mit den Steinlein spielen.'),
+  'en': ("Clear little springs and pure wells appear, many here, many there — all "
+         "silver-white daughters of the hollow hills and rocks; in great throng, pressing, "
+         "they dart like arrows from the crags, soon come rushing, not without babble, and "
+         "play with the pebbles.")},
+ {'orig': ('Die Jägerin Diana stoltz / Auch Wald / vnd Wasser Nymphen / '
+           'Nun wider frisch in grünem Holtz / Gahn spielen / schertz / vnd schimpffen. / '
+           'Die reine Sonn / Schmuckt jhre Cron / Den Köcher füllt mit Pfeilen: / '
+           'Ihr beste Roß / Läßt lauffen loß / Auff marmer glatten-meilen.'),
+  'en': ("Proud Diana the huntress, and the nymphs of wood and water, fresh again in the "
+         "green timber, go playing, jesting and sporting. The pure sun adorns her crown, "
+         "fills her quiver with arrows, and lets her best steeds run loose over the smooth "
+         "marble miles.")},
+ {'orig': ('Mit jhr die kühle Sommer-wind / All jüngling still von Sitten / '
+           'Im Lüffte zu spielen seind gesinnt / Auff Wolcken leicht beritten. / '
+           'Die Bäum vnd Nest / Auch thun das best / Bereichen sich mit Schatten: / '
+           'Da sich behalt / Daß Wild im Wald / Wans pflegt von Hitz ermatten.'),
+  'en': ("With her the cool summer winds, all youthful and quiet of manner, are minded to "
+         "play in the air, lightly mounted on the clouds. The trees and nests also do their "
+         "best, enriching themselves with shade, where the game in the wood may keep itself "
+         "when it grows faint with heat.")},
+ {'orig': ('Die meng der Vöglein hören laß / Ihr Schnür-von Tyre-Lyre / '
+           'Da sauset auch so mancher nast / Sampt er mit musicire. / '
+           'Die Zweiglein schwanck / Zum Vogelsang / Sich auff / sich nider neigen; / '
+           'Auch höret man / Im grünen gahn / Spaziren Laut-vnd Geigen.'),
+  'en': ("Hear the crowd of little birds with their trilling of tirra-lirra; and many a "
+         "branch rustles too, as though it made music with them. The swaying twigs bow up "
+         "and down to the birdsong; and one hears, walking in the green, lutes and fiddles "
+         "abroad.")},
+ {'orig': ('Wo man nur schawt / fast alle Welt / Zun Frewden sich thut rüsten: / '
+           'Zum schertzen alles ist gestelt / Schwebt alles fast in lüsten. / '
+           'Nur ich allein / Ich leide Pein / Ohn end ich werd gequeelet / '
+           'Seit ich mit dir / Vnd du mit mir / O Jesu dich vermählet.'),
+  'en': ("Wherever one looks, almost all the world makes itself ready for joy; everything "
+         "is set for mirth, everything floats near to delight. Only I alone suffer pain, "
+         "endlessly am I tormented, since I with you, and you with me, O Jesus, were "
+         "betrothed.")},
+ {'orig': ('Nur ich / O Jesu / bin allein / Mit stätem Leyd vmbgeben / '
+           'Nur ich / muß nur in schmertzen sein / Weil nit bey dir mag leben. / '
+           'O stäte Klag! / O wehrend Plag / Wie lang bleib ich geschelden? / '
+           'Von grossem Wee / Daß dich nit seh / Mir kombt so schwäres Leiden.'),
+  'en': ("Only I, O Jesus, am alone, ringed with constant grief; only I must be always in "
+         "pain, because I cannot live with you. O unceasing lament! O lasting plague — how "
+         "long shall I remain parted? Out of great woe, that I do not see you, so heavy a "
+         "suffering comes upon me.")},
+ {'orig': ('Nichts schmäcket mir auff gantzer Welt / Als Jesu lieb alleine: / '
+           'Noch Spiel / noch Schertz mir je gefelt / Biß lang mir Er erscheine: / '
+           'Vnd zwar nun frey / Mit starckem schrey / Ruff im so manche stunden / '
+           'Doch nie kein tritt / Sich naher nit / Solt michs nit hart verwunden?'),
+  'en': ("Nothing in all the world tastes sweet to me but the love of Jesus alone; neither "
+         "play nor jest ever pleases me, until at length He appear to me. And indeed now "
+         "freely, with a strong cry, I call to him many an hour — yet never a step comes "
+         "nearer: should it not wound me sorely?")},
+ {'orig': ('Was nutzet mir dan schöne zeit? / Was glantz / vnd schein der Sonnen? / '
+           'Was Bäum gar lieblich außgebreit? / Waß klang der klarer Brunnen? / '
+           'Waß Athem lind / Der kühlen wind / Waß Bächlein krum geleitet; / '
+           'Waß edler Mey / Waß Vogelschrey / Waß Felder grün gespreitet?'),
+  'en': ("What use to me, then, is the fair season? What the glance and shining of the sun? "
+         "What the trees so sweetly spread? What the sound of the clear springs? What the "
+         "soft breath of the cool winds, what the brooks led winding, what the noble May, "
+         "what the birds' cry, what the fields spread out green?")},
+ {'orig': ('Was hilfft all Frewd / all Spil / vnd Schertz? / All tröst / vnd lust auff Erden? / '
+           'Ohn jhn ich bin doch gar in schmertz / In Leyd vnd in beschwerden. / '
+           'Groß hertzen band / Mich tödt zuhandt / Weil Jesu dich nit finde: / '
+           'Drumb nur ich wein / Vnd heul / vnd grein / Vnd seufftzerblaß in winde.'),
+  'en': ("What help is all joy, all play and jest, all comfort and pleasure on earth? "
+         "Without him I am wholly in pain, in grief and in trouble. A great heart-bond kills "
+         "me at once, because, Jesus, I do not find you; and so I only weep and wail and "
+         "whimper, and breathe out sighs into the wind.")},
+ {'orig': ('Ade du schöne Frühlings zeit / Ihr Felder / Wäld / vnd Wisen: / '
+           'Laub / Graß / vnd Blümlein new gekleid / Mit süssem Taw beriesen: / '
+           'Ihr Wässer klar / Erd / Himmel gar / Ihr Pfeil der gülden Sonnen / '
+           'Nur Pein vnd Qual / Bey mir zumahl / Hat überhandt gewonnen.'),
+  'en': ("Farewell, fair springtime, you fields, woods and meadows; foliage, grass and "
+         "little flowers newly clothed and sprinkled with sweet dew; you clear waters, earth "
+         "and heaven itself, you arrows of the golden sun. With me, meanwhile, only pain and "
+         "torment have gained the upper hand.")},
+ {'orig': ('Ach Jesu / Jesu / trewer Heldt / Wie kränckest mich so sehre? / '
+           'Bin jed doch hart / vnd hart gequeelt / Ach nit mich so beschweré. / '
+           'Ja wiltu sehn / All Pein vnd Peen / Im augenblick vergangen; / '
+           'Mein Augen beyd / Nur fähr zur weyd / Auff dein so schöne Wangen.'),
+  'en': ("Ah Jesus, Jesus, faithful hero, how you grieve me so sorely! I am indeed hard, so "
+         "hard tormented — ah, do not burden me so. Yes: would you but look, all pain and "
+         "penalty would in an instant be gone; my two eyes ask only for pasture upon your "
+         "cheeks, so fair.")},
+])
+
+out = {
+ 'id': 'trutz',
+ 'autor': 'Friedrich Spee',
+ 'titel': 'Trutznachtigall (selections) — the same conscience, singing',
+ 'jahr': 1649,
+ 'lang': 'de',
+ 'zitierweise': 'TN Oelb. / Liebg. [k]',
+ 'quelle': ("German transcribed by eye from the page images of the Cologne print of 1654, "
+            "Trutz-Nachtigall oder Geistlichs-Poetisch Lust-Waldlein (Internet Archive "
+            "trutz-nachtigall-oder-geistlichs-poetisc, public domain); the collection "
+            "appeared posthumously in 1649. The OCR of the Fraktur is unusable and served "
+            "only for navigation; the long s is normalised, the print's virgule kept as the "
+            "poet's comma, spelling and capitalisation left as printed. The English is this "
+            "site's unofficial working prose translation, made directly from the German "
+            "(CC0)."),
+ 'hinweis': ("The second module of the Spee line: the poet beside the jurist. Two of the "
+             "collection's most celebrated poems complete — the lament of Christ on the "
+             "Mount of Olives ('Bey stiller Nacht'), and the spring 'Liebgesang der Gesponß "
+             "Jesu', in which all creation rejoices while the soul alone grieves for the "
+             "absent beloved. The same trained attention to the motions of the soul that "
+             "the Exercises teach and the Cautio turns on a legal machine, here turned to "
+             "verse. A selection: the Trutznachtigall holds some fifty poems. Part of the "
+             "concordance and the citation-bound dialogue; not part of the linguistic "
+             "statistics, which describe the core corpus only.")
+             ,
+ 'sections': [
+  {'id': 'oelberg', 'zk': 'TN Oelb.',
+   'titel': 'The lament at the Mount of Olives (p. 170)',
+   'blurb': ('"Bey stiller Nacht": the agony in the garden as an overheard song — Christ\'s '
+             'own voice, the address to the Father, to Mary, to the sleeping world, and the '
+             'moon and stars that would weep with him. Fourteen strophes.'),
+   'units': OELBERG},
+  {'id': 'liebgesang', 'zk': 'TN Liebg.',
+   'titel': 'The love-song of the bride of Jesus (p. 26)',
+   'blurb': ('"Der trübe Winter ist fürbey": the whole of spring wakes, brook and bird and '
+             'nymph and sun — and the soul, betrothed to the absent Jesus, alone cannot '
+             'rejoice. The Ignatian attention to consolation and desolation turned to '
+             'nature poetry. Twelve strophes.'),
+   'units': LIEBGESANG},
+ ],
+}
+
+path = os.path.join(REPO, 'data', 'trutz.json')
+json.dump(out, io.open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print('wrote', path, '-', sum(len(s['units']) for s in out['sections']), 'units:',
+      {s['zk']: len(s['units']) for s in out['sections']})

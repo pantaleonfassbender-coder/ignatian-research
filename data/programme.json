@@ -101,12 +101,15 @@
  {
   "id": "spee_trutz",
   "linie": "spee",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Friedrich Spee",
-  "jahr": "1649 (posthumous)",
+  "jahr": 1649,
   "titel": "Trutznachtigall (selections)",
   "warum": "The same conscience as poetry: the counter-voice singing.",
-  "quelle": "Cologne 1649; German public domain, with working translations."
+  "quelle": "German transcribed by eye from the page images of the Cologne print of 1654 (Internet Archive trutz-nachtigall-oder-geistlichs-poetisc, public domain; first published posthumously 1649). Shipped: two celebrated poems complete — the Oelberg lament and the spring 'Liebgesang der Gesponss Jesu' — with this site's working prose translation (CC0). The rest of the ~50 poems wait their turn.",
+  "datei": "trutz",
+  "zk": "TN",
+  "kurz": "Trutz"
  },
  {
   "id": "monita",

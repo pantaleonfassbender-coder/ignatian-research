@@ -1,6 +1,6 @@
 # Ignatiana — a research apparatus for Ignatian spirituality
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22682751.svg)](https://doi.org/10.5281/zenodo.22682751)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22682750.svg)](https://doi.org/10.5281/zenodo.22682750)
 
 Live: **<https://ignatian-research.netlify.app/>**
 
@@ -249,7 +249,7 @@ apparatus describes. No part of their text is in this repository.
 
 > Pantaleon Fassbender, *Ignatiana: A Research Apparatus for Ignatian Spirituality*,
 > <https://ignatian-research.netlify.app/>, archived at
-> <https://doi.org/10.5281/zenodo.22682751> (accessed …).
+> <https://doi.org/10.5281/zenodo.22682750> (accessed …).
 
 See `CITATION.cff` for a machine-readable form. When citing a passage found through the concordance,
 cite the printed edition, not this site — the anchors exist precisely so that you can.

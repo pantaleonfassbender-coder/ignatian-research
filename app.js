@@ -412,11 +412,6 @@ function workDetail(id) {
         <table style="font-size:.85rem">
           <tr><td>Extent</td><td class="num">${nf(w.tokens)} tokens · ${w.pdf_seiten} pp.</td></tr>
           <tr><td>Sentences</td><td class="num">${nf(w.saetze)}</td></tr>
-          <tr><td>Mean sentence length</td><td class="num">${w.satzlaenge} words</td></tr>
-          <tr><td>Mean word length</td><td class="num">${w.wortlaenge} characters</td></tr>
-          <tr><td>Noun rate</td><td class="num">${w.nominalquote != null ? `${w.nominalquote} %` : "—"}</td></tr>
-          <tr><td>Type–token ratio</td><td class="num">${w.ttr}</td></tr>
-          <tr><td>Readability (LIX)</td><td class="num">${w.lix}</td></tr>
           <tr><td>Canonical anchors</td><td class="num">${w.anker ? `${nf(w.anker)} of ${nf(w.maxn)}` : "—"}</td></tr>
         </table></div>
       <div class="panel"><span class="tag">Characteristic lemmas (log-likelihood against the rest of the corpus)</span>
@@ -1275,110 +1270,35 @@ function viewRegister() {
 function viewLanguage() {
   view.append(el(`<div>
     <div class="viewhead">
-      <span class="tag">Quantitative profile</span>
-      <h1>Six genres, six registers</h1>
-      <p class="lede">The corpus spans a terse instructional manual, a shorthand private journal, a memoir
-      dictated aloud, a body of Latinate law and a set of letters written to be read out. Those differences
-      show up in measurable form, and the measures are worth reading against the genres rather than as a
-      ranking.</p>
+      <span class="tag">Distinctive vocabulary</span>
+      <h1>Keyness</h1>
+      <p class="lede">For each work of the core corpus: the lemmas that mark it against the rest,
+      by log-likelihood. This is the quantitative side of the story the
+      <a href="#/lexicon">discernment lexicon</a> tells editorially — which words do the work in
+      which genre, and how the vocabulary migrates between manual, journal, law and letter.</p>
     </div>
-    <div class="grid g2">
-      <div class="chartbox"><span class="tag">Works in a feature space</span>
-        <div class="toolbar" style="margin:.6rem 0">
-          <label class="fld">x<select id="xa">
-            <option value="satzlaenge">mean sentence length</option><option value="lix">readability (LIX)</option>
-            <option value="nominalquote">noun rate</option><option value="ttr">type–token ratio</option>
-            <option value="wortlaenge">mean word length</option></select></label>
-          <label class="fld">y<select id="ya">
-            <option value="nominalquote">noun rate</option><option value="lix">readability (LIX)</option>
-            <option value="satzlaenge">mean sentence length</option><option value="ttr">type–token ratio</option>
-            <option value="wortlaenge">mean word length</option></select></label>
-        </div>
-        <canvas id="sc" style="height:340px"></canvas>
-        <p class="fine" id="scinfo">Point size is extent; colour is the work.</p></div>
-      <div class="chartbox"><span class="tag">Measure by measure</span>
-        <div class="toolbar" style="margin:.6rem 0"><select id="metric" style="width:auto">
-          <option value="lix">readability (LIX) — lower is more accessible</option>
-          <option value="satzlaenge">mean sentence length</option>
-          <option value="nominalquote">noun rate (%)</option>
-          <option value="ttr">type–token ratio</option>
-          <option value="hapax">hapax legomena</option>
-          <option value="tokens">extent in tokens</option></select></div>
-        <canvas id="mb"></canvas>
-        <p class="fine" style="margin-top:.8rem">Type–token ratio falls with length by construction; the
-        Constitutions are five times the size of any other work here, so their low value is an artefact
-        of extent rather than evidence of a poorer vocabulary.</p></div>
-    </div>
-    <div class="panel" style="margin-top:1.2rem"><span class="tag">Table</span>
-      <div class="scroll" style="margin-top:.6rem"><table id="tbl"></table></div></div>
     <div class="panel"><span class="tag">Keyness</span>
       <div class="toolbar" style="margin:.6rem 0"><select id="kk" style="width:auto">
         ${D.works.map(w => `<option value="${w.id}">${esc(w.titel)}</option>`).join("")}</select></div>
       <canvas id="kc"></canvas>
       <p class="fine">Log-likelihood of each lemma in the work against the rest of the corpus.
-      Values above 15.13 correspond to p &lt; 0.0001 at one degree of freedom.</p></div>
+      Values above 15.13 correspond to p &lt; 0.0001 at one degree of freedom. Computed over the
+      reference translations of the core corpus; programme modules are not part of these counts.</p>
+    </div>
+    <p class="fine" style="max-width:46rem">This page once carried readability and complexity
+    measures (LIX, sentence length, type–token ratio and kin). They were removed deliberately: in
+    a corpus read through five different translators — two of them this site's own working
+    translations — such measures profile the translators, not Ignatius. The reasoning is on the
+    <a href="#/method">method page</a>; the keyness profile, which compares like with like inside
+    one reference corpus, is what remains.</p>
   </div>`));
-
-  const LBL = { satzlaenge: "mean sentence length (words)", lix: "readability (LIX)",
-    nominalquote: "noun rate (%)", ttr: "type–token ratio", wortlaenge: "mean word length",
-    hapax: "hapax legomena", tokens: "extent (tokens)" };
-  const scv = view.querySelector("#sc");
-  function drawScatter() {
-    const xk = view.querySelector("#xa").value, yk = view.querySelector("#ya").value;
-    const pts = D.works.map(w => ({ x: w[xk], y: w[yk], r: 5 + Math.sqrt(w.tokens) / 42, color: wc(w.id), w }));
-    const hits = V.scatter(scv, pts, { h: 340, xLabel: LBL[xk], yLabel: LBL[yk],
-      xDec: xk === "ttr" ? 3 : 1, yDec: yk === "ttr" ? 3 : 1 });
-    scv.onmousemove = ev => {
-      const r = scv.getBoundingClientRect();
-      const h = hits.find(h => (h.x - (ev.clientX - r.left)) ** 2 + (h.y - (ev.clientY - r.top)) ** 2 < h.r ** 2);
-      scv.style.cursor = h ? "pointer" : "default";
-      view.querySelector("#scinfo").textContent = h
-        ? `${h.d.w.titel} — ${LBL[xk]}: ${h.d.x}, ${LBL[yk]}: ${h.d.y}`
-        : "Point size is extent; colour is the work.";
-    };
-    scv.onclick = ev => {
-      const r = scv.getBoundingClientRect();
-      const h = hits.find(h => (h.x - (ev.clientX - r.left)) ** 2 + (h.y - (ev.clientY - r.top)) ** 2 < h.r ** 2);
-      if (h) location.hash = `#/works/${h.d.w.id}`;
-    };
-  }
-  const drawMetric = () => {
-    const m = view.querySelector("#metric").value;
-    V.bars(view.querySelector("#mb"), D.works.slice().sort((a, b) => b[m] - a[m]).map(w =>
-      ({ label: w.kurz, v: w[m], disp: m === "ttr" ? w[m].toFixed(3) : nf(w[m]), color: wc(w.id) })),
-      { padL: 110, rowH: 26 });
-  };
   const drawKey = () => {
     const id = view.querySelector("#kk").value;
     V.bars(view.querySelector("#kc"), (D.keyness[id] || []).slice(0, 24).map(k =>
       ({ label: k.w, v: k.ll, disp: `${k.f}× · LL ${k.ll}`, color: wc(id) })), { padL: 165 });
   };
-  const COLS = [["kurz", "Work"], ["tokens", "Tokens"], ["saetze", "Sentences"], ["satzlaenge", "Ø sent."],
-    ["wortlaenge", "Ø word"], ["nominalquote", "Noun %"], ["ttr", "TTR"], ["hapax", "Hapax"], ["lix", "LIX"]];
-  let sk = "tokens", sd = -1;
-  function drawTable() {
-    const rows = D.works.slice().sort((a, b) =>
-      (typeof a[sk] === "string" ? a[sk].localeCompare(b[sk]) : a[sk] - b[sk]) * sd);
-    view.querySelector("#tbl").innerHTML =
-      `<thead><tr>${COLS.map(([k, l]) => `<th data-k="${k}" class="${k === "kurz" ? "" : "num"}">${l}${sk === k ? (sd > 0 ? " ▲" : " ▼") : ""}</th>`).join("")}</tr></thead>
-       <tbody>${rows.map(w => `<tr>
-         <td><a href="#/works/${w.id}" style="color:${wc(w.id)}">${esc(w.kurz)}</a>
-           <span class="fine"> ${esc(short(w.titel, 34))}</span></td>
-         <td class="num">${nf(w.tokens)}</td><td class="num">${nf(w.saetze)}</td>
-         <td class="num">${w.satzlaenge}</td><td class="num">${w.wortlaenge}</td>
-         <td class="num">${w.nominalquote}</td><td class="num">${w.ttr}</td>
-         <td class="num">${nf(w.hapax)}</td><td class="num">${w.lix}</td></tr>`).join("")}</tbody>`;
-    view.querySelectorAll("#tbl th").forEach(th => th.onclick = () => {
-      if (sk === th.dataset.k) sd = -sd; else { sk = th.dataset.k; sd = th.dataset.k === "kurz" ? 1 : -1; }
-      drawTable();
-    });
-  }
-  view.querySelector("#xa").onchange = drawScatter;
-  view.querySelector("#ya").onchange = drawScatter;
-  view.querySelector("#metric").onchange = drawMetric;
   view.querySelector("#kk").onchange = drawKey;
-  drawTable();
-  requestAnimationFrame(() => { drawScatter(); drawMetric(); drawKey(); });
+  requestAnimationFrame(drawKey);
 }
 
 /* ============================================================ GLOSSARY */
@@ -1543,7 +1463,12 @@ function viewMethod() {
           information; edges shown from five shared sentences upward.</li>
         <li><strong>Retrieval</strong> in the dialogue: Okapi BM25 (k₁ = 1.4, b = 0.72) over passages of about
           950 characters, at most four passages per work so that no single text dominates an answer.</li>
-        <li><strong>LIX</strong>: mean sentence length plus the share of words over six characters.</li>
+        <li><strong>Removed by design</strong>: the readability and complexity measures this site
+          once displayed (LIX, mean sentence and word length, noun rate, type–token ratio). In a corpus
+          read through five different translators — two of them this site's own machine working
+          translations — such measures profile the translators and the translation models, not
+          Ignatius; and type–token ratio is length-dependent besides. The keyness profile, computed
+          inside one reference corpus, is what remains on the <a href="#/language">Keyness</a> page.</li>
       </ul>
     </div>
 
@@ -1556,8 +1481,6 @@ function viewMethod() {
           under-recognises Spanish and Basque names; the register is a finding aid, not a critical index.</li>
         <li>The Complementary Norms are printed alongside the Constitutions in the 1996 volume and are not
           separated out as an independent citation series here.</li>
-        <li>Type–token ratio is length-dependent and should not be compared across works of very different
-          extent without correction.</li>
         <li>The working English of the Directory of 1599 is a machine-generated translation. It has been
           made directly from the Latin and reviewed for consistency of key terms, but it carries no
           ecclesiastical or scholarly authority; anyone citing the Directory should cite the Latin. The
@@ -2295,10 +2218,13 @@ function drawUnlockTable() {
   });
 }
 function refreshUnlockBadge() {
-  const n = C.openIds().length;
+  // the badge tracks the seven core works only; shipped programme modules are
+  // always open and are not part of the unlock flow
+  const core = (D.works || []);
+  const n = core.filter(w => C.isOpen(w.id)).length;
   const b = document.getElementById("unlockBtn");
   b.classList.toggle("on", n > 1);
-  document.getElementById("unlockLabel").textContent = `${n} of ${(D.works || []).length || 7} open`;
+  document.getElementById("unlockLabel").textContent = `${n} of ${core.length || 7} open`;
 }
 function refreshUnlockCard() {
   const box = document.getElementById("unlockCardState");
