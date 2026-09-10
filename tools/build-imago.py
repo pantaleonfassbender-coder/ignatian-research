@@ -82,6 +82,14 @@ NL = {
              "Als de ronde is ghedaen, / Sult ghy onder d'aerde gaen.",
              "Xavier, having journeyed through the world, dies at the gate of "
              "China. — 'When the round is done, you shall go under the earth.'"),
+ 'noui':    (206, 'De Seyndinghe nae de Nieuwe wereldt.',
+             "De minne-straelen / En vinden gheen paelen.",
+             "The mission to the New World. — 'The rays of love find no "
+             "boundary posts.'"),
+ 'vincla':  (408, 'De boeyen en banden strecken de Societeyt tot eere.',
+             "Gheen banden / Van schanden.",
+             "Fetters and bonds serve the Society for honour. — 'No bonds of "
+             "shame.'"),
 }
 def nl_unit(name):
     p, kop, gloss, en = NL[name]
@@ -414,6 +422,79 @@ TERRA = units([
 ])
 add(TERRA, [nl_unit('terra')])
 
+NOUI = units([
+ {'img': 'assets/imago/missiones-noui-orbis.jpg',
+  'alt': ('Emblem engraving, Imago primi saeculi p. 327: the sun sets into the '
+          'sea between the two columns of Hercules, its rays still filling the '
+          'sky over an empty shore.'),
+  'orig': 'Missiones noui Orbis. — Nec segnior altera cura est Antipodum.',
+  'en': ("The missions of the New World. — Nor is the other care, for the "
+         "Antipodes, any slower. The facing page of E1: the setting sun does "
+         "not die but goes to light the other hemisphere — Hercules' columns, "
+         "the old edge of the world, stand open."),
+  'label': 'The emblem and its lemma'},
+ {'orig': 'Aurea ab Eois Phoebi lux fulserat vndis, / Grataque lux oculis fulserat ista meis:',
+  'en': "Golden had Phoebus's light flashed up from the eastern waves, and welcome had that light flashed upon my eyes:"},
+ {'orig': 'Reddiderat mundoque diem, rebusque colorem, / Ridebat toto multus in orbe nitor:',
+  'en': 'it had given the world back its day and things their colour, and a full radiance laughed over the whole earth.'},
+ {'orig': 'Tunc ego: Sic semper rutiles, pulcherrime Titan, / Neu caput auricomum condere nocte velis.',
+  'en': 'Then said I: So may you glow for ever, fairest Titan — and never wish to bury your golden-haired head in night.'},
+ {'orig': 'Quae, precor, inuidia est radios subducere terris, / Ac tenebris toties praecipitare diem?',
+  'en': 'What envy is it, I pray, to withdraw your rays from the lands, and so often to hurl the day down into darkness?'},
+ {'orig': 'Nil ago: iam praeceps deuexo fertur Olympo, / Et iam caeruleo Phoebus in amne latet:',
+  'en': 'I plead in vain: already Phoebus is carried headlong down the sloping sky, and already he hides in the dark-blue stream;'},
+ {'orig': 'Mox etiam furuo texerunt nubila caelum / Syrmate, & in toto nox fuit vna polo.',
+  'en': 'soon the clouds covered the sky with their dusky train, and one single night lay over the whole pole.'},
+ {'orig': 'Vt vidi infrendens, Sol o pulcherrime, dixi, / Exsere nube caput: quae tibi caussa fugae est?',
+  'en': 'When I saw it, gnashing my teeth I said: O fairest Sun, put your head out of the cloud — what reason have you for flight?'},
+ {'orig': 'Forsitan Hesperium fessus (quae fabula vatum est) / Luminis vt repares damna, cubile petis?',
+  'en': 'Perhaps, weary, you seek your western couch (so runs the poets’ fable), to repair the losses of your light?'},
+ {'orig': 'Fallimur: Antipodum non segnior altera cura est, / Nec tantum nostro diuidis orbe diem.',
+  'en': 'We are deceived: your other care, for the Antipodes, is no slower — you do not deal out the day to our world alone.'},
+ {'orig': 'Et miramur adhuc te, Loiolaea propago, / Tendere in oppositae dissita Regna plagae?',
+  'en': "And do we still wonder, offspring of Loyola, that you stretch toward the far-scattered kingdoms of the opposite quarter?"},
+ {'orig': 'Scilicet hoc quoque solis habes, nec segnior illo es; / Hinc alia ex alia te quoque cura vocat.',
+  'en': 'This too, of course, you have of the sun — nor are you slower than he: from here one care after another calls you also on.'},
+])
+add(NOUI, [nl_unit('noui')])
+
+VINCLA = units([
+ {'img': 'assets/imago/dant-vincla-decorem.jpg',
+  'alt': ('Emblem engraving, Imago primi saeculi p. 577: carnations in a pot, '
+          'bound upright to sticks — the tied flower blooming the fairer for '
+          'its bonds.'),
+  'orig': 'Societatem carceres & vincula cohonestant. — Dant vincla decorem.',
+  'en': ("Prisons and chains do the Society honour. — Bonds give beauty. The "
+         "pictura is a flower-pot: carnations tied to their sticks bloom the "
+         "fairer. Read this beside the Cautio Criminalis, printed nine years "
+         "earlier by a member of the same order: what the emblem wears as "
+         "ornament, Dubium LI counts link by link."),
+  'label': 'The emblem and its lemma'},
+ {'orig': 'Turpe catenati, si certa est culpa, nocentes; / Vincula dedecorant, quae meruere, manus.',
+  'en': 'Shameful are the chained when the guilt is certain; chains disgrace the hands that have deserved them.'},
+ {'orig': 'Infamis tetro procedit carcere, cuius / Ante fuit foedo crimine laesus honor.',
+  'en': 'He walks infamous out of the foul prison whose honour was wounded beforehand by a foul crime.'},
+ {'orig': 'Quam bene felici stringuntur brachia neruo, / Libera quae summi Iudicis vrna probat?',
+  'en': 'But how well are those arms bound with a happy cord which the urn of the highest Judge pronounces free?'},
+ {'orig': 'Vincula virtutem, virtutem carcer honorat; / Scilicet inde noui lucra decoris habet.',
+  'en': 'Chains honour virtue, and prison honours it: from there, indeed, it draws the gain of a new beauty.'},
+ {'orig': 'Vt flos, cui grati similis consensus odoris / Caryophyllorum nomen habere dedit:',
+  'en': 'Like the flower to which the like agreement of its pleasing scent has given the name of the carnation:'},
+ {'orig': 'Ille, licet nitida variat tot fronde colores, / Primus honor Florae deliciumque suae;',
+  'en': "though it varies so many colours on its shining leafage, first honour of Flora and her darling,"},
+ {'orig': 'Et forma tantum flores supereminet omnes, / Quantum vel Paphias vincit odore rosas;',
+  'en': 'and in beauty overtops all flowers by as much as it outdoes even the Paphian roses in scent —'},
+ {'orig': 'Si tamen obseptum vinclis & crate coerces, / Nescio quid paruo a carcere maius habet.',
+  'en': 'yet if you hedge it in and hold it fast with bonds and trellis, it takes from its little prison a something greater still.'},
+ {'orig': 'Tu quoque progenies Loiola digna parente, / Clarior a vinclis compedibusque redis.',
+  'en': 'You too, offspring worthy of Loyola your parent, come back the brighter from chains and fetters.'},
+ {'orig': 'Emicat in flammas specubus calor abditus atris: / Pulchrius obscura sidera nocte micant.',
+  'en': 'Heat hidden in black caverns leaps out into flame; the stars glitter more beautifully in the dark of night.'},
+ {'orig': 'Te quoque condecorant habitata nocentibus antra; / Nec minus his virtus clausa nitoris habet.',
+  'en': 'You too are adorned by dungeons that the guilty have inhabited; and virtue shut inside them has no less of splendour.'},
+])
+add(VINCLA, [nl_unit('vincla')])
+
 # Dutch mirrors for the six emblems already shipped
 add(ALITEM, [nl_unit('alitem')])
 add(ORBIS, [nl_unit('orbis')])
@@ -459,8 +540,8 @@ out = {
             "transcribed by eye."),
  'hinweis': ("The iconographic path of the apparatus — unlike Calculemus, this "
              "corpus can carry images, and here it does: the engraved title and "
-             "nine emblems of the 1640 centenary volume — one from each of the "
-             "six books, plus three deepenings — each with its lemma, its "
+             "eleven emblems of the 1640 centenary volume — one from each of the "
+             "six books, plus five deepenings — each with its lemma, its "
              "epigram distich by distich, and a working translation, and each "
              "closed by its Dutch mirror: the same plate in the Af-Beeldinghe "
              "of the same year, with Poirters's rhymed vernacular gloss. The "
@@ -490,6 +571,12 @@ out = {
              'with two globes, against Alexander who halted at the Ganges. The '
              'most quoted — and most mocked — line of the whole volume.'),
    'units': ORBIS},
+  {'id': 'noui', 'zk': 'Imago E10',
+   'titel': 'Book II · Nec segnior altera cura est Antipodum — The setting sun (p. 327)',
+   'blurb': ('The facing page of E1: the sun goes down between the columns of '
+             'Hercules — not dying, but crossing to light the Antipodes. The '
+             'missions to the New World as the second half of the day.'),
+   'units': NOUI},
   {'id': 'omnibus', 'zk': 'Imago E8',
    'titel': 'Book III · Omnibus omnia — All things to all (p. 452)',
    'blurb': ('The mirror emblem, from Societas agens: 1 Corinthians 9:22 as the '
@@ -508,6 +595,12 @@ out = {
              'Society’s answer to its attackers, printed while the Monita secreta '
              'and the pamphlets circulated. The counter-voices, seen from inside.'),
    'units': SAGITTA},
+  {'id': 'vincla', 'zk': 'Imago E11',
+   'titel': 'Book IV · Dant vincla decorem — Bonds give beauty (p. 577)',
+   'blurb': ('The tied carnation: prisons and chains as the Society’s ornament. '
+             'The deliberate friction of the corpus — read it beside the Cautio '
+             'Criminalis of 1631, where a Jesuit counts what chains actually did.'),
+   'units': VINCLA},
   {'id': 'faber', 'zk': 'Imago E5',
    'titel': 'Book V · Solus non sufficit ignis — The forging of Xavier (p. 717)',
    'blurb': ('From Societas honorata: Ignatius as smith, Xavier as the iron, and '
