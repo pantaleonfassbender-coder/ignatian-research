@@ -6,6 +6,13 @@ authors:
   - family-names: Fassbender
     given-names: Pantaleon
     orcid: "https://orcid.org/0000-0002-6683-3617"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22682750
+    description: "Concept DOI - resolves to the latest archived version on Zenodo"
+  - type: doi
+    value: 10.5281/zenodo.22682751
+    description: "Version DOI for v1.0.0"
 repository-code: "https://github.com/pantaleonfassbender-coder/ignatian-research"
 url: "https://ignatian-research.netlify.app/"
 abstract: >-

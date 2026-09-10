@@ -1,5 +1,7 @@
 # Ignatiana — a research apparatus for Ignatian spirituality
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22682751.svg)](https://doi.org/10.5281/zenodo.22682751)
+
 Live: **<https://ignatian-research.netlify.app/>**
 
 Seven texts as one working corpus. At the centre, the writings of Ignatius of Loyola himself: the
@@ -238,7 +240,8 @@ apparatus describes. No part of their text is in this repository.
 ## Citing the apparatus
 
 > Pantaleon Fassbender, *Ignatiana: A Research Apparatus for Ignatian Spirituality*,
-> <https://ignatian-research.netlify.app/> (accessed …).
+> <https://ignatian-research.netlify.app/>, archived at
+> <https://doi.org/10.5281/zenodo.22682751> (accessed …).
 
 See `CITATION.cff` for a machine-readable form. When citing a passage found through the concordance,
 cite the printed edition, not this site — the anchors exist precisely so that you can.
