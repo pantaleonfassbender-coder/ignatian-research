@@ -4,14 +4,19 @@
 
 Live: **<https://ignatian-research.netlify.app/>**
 
-Seven texts as one working corpus. At the centre, the writings of Ignatius of Loyola himself: the
-*Spiritual Exercises*, the *Constitutions* with their *Complementary Norms*, the dictated memoir known
-as *A Pilgrim's Testament*, the *Spiritual Diary*, and the letters of 1524–1547. Around them, the texts
-in which his spirituality became the practice of an order: the *Official Directory of 1599* on giving
-the Exercises, and the *Memoriale* of Blessed Peter Faber — the first companion, whom Ignatius judged
-the finest giver of the Exercises — discernment kept as a daily journal from 1542 to 1546. The apparatus
-indexes them by their canonical numbering, traces the vocabulary that migrates between them, and lets
-you put a question to the corpus with the evidence attached.
+A working corpus of the old Society of Jesus (1540–1773), organised in five lines. At the centre, the
+seven core works: the writings of Ignatius of Loyola himself — the *Spiritual Exercises*, the
+*Constitutions* with their *Complementary Norms*, the dictated memoir known as *A Pilgrim's Testament*,
+the *Spiritual Diary*, and the letters of 1524–1547 — and, around them, the texts in which his
+spirituality became the practice of an order: the *Official Directory of 1599* on giving the Exercises,
+and the *Memoriale* of Blessed Peter Faber, the first companion, discernment kept as a daily journal
+from 1542 to 1546. Around those stand the programme modules that carry the corpus out into the world and
+its arguments: Xavier's letters from India and Japan, the emblems of the *Imago primi saeculi* of 1640
+with their Dutch mirror, Friedrich Spee (the *Cautio Criminalis* and the *Trutznachtigall*), and the
+counter-voices — the forged *Monita secreta*, Pascal's *Provinciales*, and the brief *Dominus ac
+Redemptor* of 1773 with which the corpus closes. The apparatus indexes them by their canonical numbering,
+traces the vocabulary that migrates between them, and lets you put a question to the corpus with the
+evidence attached.
 
 It is a working instrument, not a publication. It was built for one reader's use and is opened here in
 case it is useful to others; the limits are stated at length rather than buried.
@@ -70,6 +75,18 @@ Full-text functions work against a copy **you** own. Your PDF is read in the bro
 that browser's IndexedDB, and never uploaded. Only the passages local retrieval selects for a specific
 question are sent onward.
 
+The programme modules are a different case: each is public-domain source in its own right, so its running
+text **is** shipped, complete, on its own citation grid. They are Pascal's *Lettres provinciales*
+(Letters V, VII, X, M'Crie's 1856 translation); the *Monita secreta* in Brownlee's 1857 bilingual
+printing; the brief *Dominus ac Redemptor* of 1773 (Latin after Theiner 1852, with a working
+translation); four letters of Francis Xavier (Coleridge's 1872 biography); eleven emblems of the *Imago
+primi saeculi* (Antwerp 1640) with the Dutch *Af-Beeldinghe* of the same year and page images; and
+Friedrich Spee — the *Cautio Criminalis* (two dubia, Rinteln 1631) and the *Trutznachtigall* (two poems,
+Cologne 1654). Where a module carries a working translation it is this site's own, made from the original
+and marked as unofficial; the sources are listed in **[SOURCES.md](SOURCES.md)**. These modules are part
+of the concordance and the citation-bound dialogue, but not of the linguistic statistics, which describe
+the core corpus only.
+
 If you hold rights in one of these editions and consider anything here to exceed what derived data and
 scholarly citation permit, write to the address in the site's legal notice and it will be dealt with
 promptly.
@@ -83,41 +100,54 @@ that a concordance hit reads `SpEx [23]` or `Const [134]` rather than a page num
 Coverage by work: Exercises 369 of 370, Constitutions 812 of 827, Pilgrim's Testament 101 of 101, Diary
 486 of 490, and 119 across the six directory documents.
 
-**A concordance across all seven works at once**, with keyword in context, hit distribution per work, and a
-canonical citation on every line — once you have opened your own copies.
+**A concordance across the whole apparatus at once**, with keyword in context, hit distribution per text,
+and a canonical citation on every line. The public-domain core (the Exercises, the Letters, the Directory
+of 1599 and the Memoriale) and every shipped programme module — from Pascal to the brief of 1773 and the
+Imago's emblems — are always searchable; the four in-copyright works join once you have opened your own
+copies.
 
 **The 1914 letters in full**, searchable and quotable without any copy of your own, with recipient, place
-and date for each.
+and date for each — as are all the programme modules.
 
 **A discernment lexicon**: 27 terms of the vocabulary of consolation, desolation and election traced
 across the corpus, with their distribution — which is where the differences between the works become
 visible rather than merely assertable.
 
-**Registers and networks**: persons, places, the memoir's itinerary, log-likelihood keyness per work, and
-a co-occurrence graph of the correspondence.
+**Keyness, registers and networks**: for each core work, the lemmas that mark it against the rest by
+log-likelihood; persons, places, the memoir's itinerary, and a co-occurrence graph of the correspondence.
 
-**A citation-bound dialogue.** Questions are answered only from passages retrieved from your own copies,
-with a canonical citation required on every substantive claim. It refuses to assert what the passages do
-not carry. It is still a language model and can misread; every citation it gives can and should be
-checked.
+**Five reading paths and a coda.** Guided routes through the corpus, each station with a reason and a
+guiding question — the Four Weeks, the discernment of spirits, the election, governance by letter, and an
+iconographic path through the Imago's emblems; a closing note owns the corpus's boundaries and the way it
+was made.
+
+**A citation-bound dialogue.** Questions are answered only from passages retrieved from the corpus (and,
+for the locked works, from your own copies), with a canonical citation required on every substantive
+claim. It refuses to assert what the passages do not carry. It is still a language model and can misread;
+every citation it gives can and should be checked.
 
 ---
 
 ## What is in `data/`
 
-About 500 kB of JSON, all of it derived or editorial.
+A few megabytes of JSON, all of it derived, editorial, or public-domain source text.
 
 | File | Contents |
 |---|---|
-| `works.json` | the seven works: translator, rights, citation form, body range, sections, linguistic measures |
+| `works.json` | the seven core works: translator, rights, citation form, body range, sections, measures |
+| `programme.json` | the programme modules — line, status, source, and (for shipped ones) data file and citation form |
+| `exercitia.json`, `directorium.json`, `memoriale.json` | the shipped full-text core editions (trilingual Exercises, bilingual Directory of 1599, bilingual Memoriale) |
+| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json` | the shipped programme modules, paragraph by paragraph on their own citation grids |
 | `anchors.json` | 1,887 canonical paragraph anchors, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
+| `introduction.json` | the introductory essay (editorial matter, CC BY 4.0); manuscript in `docs/` |
 | `introductions.json`, `sections.json` | editorial orientation, textual history, key passages, internal divisions |
 | `lexicon.json` | 27 discernment terms traced across the corpus |
 | `glossary.json` | 39 institutional, practical and philological terms |
 | `keyness.json`, `terms.json`, `network.json` | log-likelihood profiles, distributions, co-occurrence graph |
 | `persons.json`, `places.json`, `itinerary.json` | registers and the memoir's route |
 | `discernment.json`, `corpus.json` | term-family distributions and corpus totals |
+| `longridge_exx.json`, `longridge_dir.json` | Longridge's 1919 commentary and Directory translation |
 
 `anchors.json` is the piece most likely to be useful on its own. Its shape is
 `{ workId: [ { n: paragraph, p: pdfPage, s: printedPage }, … ] }` — a plain concordance between the
@@ -129,12 +159,13 @@ reuse.
 ## Opening your own copies
 
 Drop one or more PDFs into *Open from your own copies*. Recognition is automatic but not blind: each file
-is scored against all six editions on the evidence of its front matter — the title of the edition, the
-translator or editor, phrases proper to that volume, and phrases belonging to a *different* volume, which
-count against — corroborated by the page count of the reference edition. A work is opened only when one
-candidate wins by a clear margin; otherwise the panel asks which work it is, with the file already read.
+is scored against all five reference editions on the evidence of its front matter — the title of the
+edition, the translator or editor, phrases proper to that volume, and phrases belonging to a *different*
+volume, which count against — corroborated by the page count of the reference edition. A work is opened
+only when one candidate wins by a clear margin; otherwise the panel asks which work it is, with the file
+already read.
 
-This matters because the six volumes quote each other. The Constitutions name the Exercises on their
+This matters because the volumes quote each other. The Constitutions name the Exercises on their
 first pages, and Ganss's name stands in the front matter of three editions because the 1996 Constitutions
 print his translation — so a signature that counts shared phrases alone will file Padberg's Constitutions
 and Munitiz's Diary under the Exercises. Each work can also be opened from a named file directly, which
@@ -143,8 +174,10 @@ edition the panel says so, rather than letting a divergent printing be silently 
 
 Editions the anchors were built against: Ganss (IJS, 1992); Padberg (IJS, 1996); Divarkar (IJS, 1995);
 Munitiz, *Íñigo: Discernment Log-Book* (Inigo Enterprises, 1987); O'Leary, ed. Goodier
-(B. Herder / Manresa Press, 1914). The Directory of 1599 and the trilingual Exercises edition need no anchors: their texts are shipped
-paragraph by paragraph from *Monumenta Ignatiana*, series secunda (Madrid, 1919), and from Mullan (1914). A different printing will still search; its pages will not line up.
+(B. Herder / Manresa Press, 1914). The Directory of 1599, the trilingual Exercises, Favre's Memoriale
+and every programme module need no anchors: their texts are shipped paragraph by paragraph, so a hit in
+them is exact to the paragraph without a page lookup. A different printing of a locked work will still
+search; its pages will not line up.
 
 ---
 
@@ -154,9 +187,11 @@ Set out in full on the site's *Method, sources and limits* page, and worth readi
 In brief: the 1914 letters are an optical scan whose errors are left visible rather than silently emended;
 name recognition is automatic and over-recognises liturgical capitalisation while under-recognising
 Spanish and Basque names; the Complementary Norms are not separated out as an independent citation series;
-type–token ratio is length-dependent and should not be compared across works of very different extent;
-and the itinerary follows the memoir's own account, which is a narrative composed thirty years after the
-events and shaped for a purpose.
+the readability and complexity measures this site once displayed were removed by design, because in a
+corpus read through five different translators they profiled the translators, not the texts (the keyness
+profile, which compares like with like inside one reference corpus, is what remains); and the itinerary
+follows the memoir's own account, which is a narrative composed thirty years after the events and shaped
+for a purpose.
 
 ---
 
@@ -190,7 +225,10 @@ app.js                router, data, all views
 corpus.js             pdf.js reading, identification, index, KWIC, collocation, BM25
 viz.js                charts and force-directed graph, no external library
 dialogue.js           dialogue module and PDF export
-data/*.json           derived data and editorial matter
+data/*.json           derived data, editorial matter, and shipped editions
+assets/imago/         page images of the Imago emblems and the Dutch mirror
+assets/spee/          facsimile pages of the Trutznachtigall poems
+tools/                build scripts for the shipped editions, and the CI checker
 vendor/               pdf.js 4.6.82, jsPDF 2.5.2 — vendored, so no CDN is contacted
 netlify/functions/    the dialogue function
 ```
@@ -235,6 +273,14 @@ in short:
   Longridge's 1919 commentary, Additional Notes and Directory translation —
   public domain by age; the editorial keying to the [1]–[370] grid and the
   paragraph alignment are dedicated CC0 like the rest of the derived data.
+- **The programme modules** (`data/pascal.json`, `monita.json`, `dominus.json`,
+  `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, with the images in
+  `assets/imago/` and `assets/spee/`) carry public-domain source text —
+  printings of 1631 to 1872 and, for the images, of 1640 — whose faithful
+  transcription and reproduction add nothing licensable; the editorial
+  segmentation, the working translations made for this repository, and the
+  descriptions are dedicated CC0. Each file states its own source; the whole
+  list is in **[SOURCES.md](SOURCES.md)**.
 - **`data/pilgrim_profile.json`** and **`docs/`** carry the author's essay
   *The Pilgrim's Profile* (2026), presented on the site's separate author page
   (`#/author`). It is interpretation, not edition, and is © the author, all
