@@ -102,12 +102,14 @@
  {
   "id": "monita",
   "linie": "kritik",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Monita secreta",
   "jahr": "1614",
   "titel": "The forged 'secret instructions' of the Society",
   "warum": "A forgery that forced a debate — carried as the debate, not as truth: the apparatus's Turk, with the refutations beside it.",
-  "quelle": "Kraków 1614 (Zahorowski). Pinned source: the bilingual printing of 1824, 'Secreta Monita Societatis Jesu = The Secret Instructions of the Jesuits' (Internet Archive secretamonitaso00unkngoog, public domain) — Latin with facing English; Latin OCR is poor and will need hand transcription from the page images (build script to follow)."
+  "quelle": "Kraków 1614 (Zahorowski). Carried from the bilingual printing of 1857: W. C. Brownlee, Secret Instructions of the Jesuits (New York, American and Foreign Christian Union; Internet Archive instructiosecret00browrich, public domain) — Latin and English on facing pages, chapter and article numbering as the alignment grid; OCR repaired against the page images, all 145 articles bilingual.",
+  "datei": "monita",
+  "zk": "MS"
  },
  {
   "id": "pascal",
@@ -124,11 +126,13 @@
  {
   "id": "dominus",
   "linie": "kritik",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Clement XIV",
   "jahr": "1773",
   "titel": "Dominus ac Redemptor — the brief of suppression",
   "warum": "The corpus's intended closing text: the document that dissolved the old Society. The apparatus ends, deliberately, in 1773.",
-  "quelle": "Latin from a 1773 printing (pinned candidate: Internet Archive sanctissimidomin00cath_5, Latin/Portuguese parallel, public domain), hand-transcribed from the page images; English as this site's working translation — no full public-domain English located yet (Nicolini 1854 translates only the restoration brief of 1814 in full)."
+  "quelle": "Latin after Augustin Theiner, Clementis XIV. Pont. Max. Epistolae et Brevia (Paris, 1852), doc. CCCXVII, whose paragraph numbering (1–41) is carried as the citation grid; Internet Archive clementisxivpon00clemgoog, public domain, OCR emended against the page images. English: this site's unofficial working translation, made directly from the Latin — no full public-domain English translation exists (Nicolini 1854 translates only the restoration brief of 1814).",
+  "datei": "dominus",
+  "zk": "DaR"
  }
 ]

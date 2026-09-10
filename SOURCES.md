@@ -39,8 +39,19 @@ and therefore have no source entry here; their editions are named on the method 
 - English: *The Provincial Letters of Blaise Pascal*, trans. Thomas M'Crie (New York: Robert Carter & Brothers, 1856), via Project Gutenberg #73959 — <https://www.gutenberg.org/ebooks/73959>
 - French original (named, not yet carried): the Vallée transcription, *Les Provinciales (Vallée)*, on the French Wikisource — <https://fr.wikisource.org/wiki/Les_Provinciales_(Vall%C3%A9e)>
 
+### The Monita secreta — the forgery, bilingual · `data/monita.json`
+
+- Latin and English: W. C. Brownlee, *Secret Instructions of the Jesuits* (New York: American and Foreign Christian Union, 1857), printed with Latin and English on facing pages; Internet Archive scan — <https://archive.org/details/instructiosecret00browrich>. The chapter and article numbering of that printing is carried as the alignment grid; the OCR was repaired article by article against the page images.
+
+## The threshold of 1773
+
+### Dominus ac Redemptor — the brief of suppression · `data/dominus.json`
+
+- Latin: Augustin Theiner, *Clementis XIV. Pont. Max. Epistolae et Brevia* (Paris: Firmin Didot, 1852), doc. CCCXVII, whose paragraph numbering (1–41) is carried as the citation grid; Internet Archive scan — <https://archive.org/details/clementisxivpon00clemgoog>. OCR emended against the page images.
+- English: unofficial working translation made for this site directly from the Latin (CC0) — no full public-domain English translation of the 1773 brief was located, and none was consulted. Cite the Latin.
+
 ---
 
 Programme entries (Nadal, Rodríguez, Caussade, Xavier, the Jesuit Relations, Ricci/Trigault,
-Acosta, the Imago primi saeculi, Spee, the Monita secreta, Pascal, and the brief of 1773)
-name their intended sources in the works view; their entries move up here as they ship.
+Acosta, the Imago primi saeculi, and Spee) name their intended sources in the works view;
+their entries move up here as they ship.

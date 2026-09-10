@@ -1,0 +1,1018 @@
+{
+ "id": "monita",
+ "autor": "Monita secreta (forgery, 1614)",
+ "titel": "Monita secreta — the forged 'secret instructions' (1614)",
+ "jahr": 1614,
+ "lang": "la",
+ "zitierweise": "MS c. N [k]",
+ "quelle": "The Monita secreta first appeared in Kraków in 1614, the work of the dismissed Jesuit Hieronim Zahorowski; text here after W. C. Brownlee's edition (New York, 1857; Internet Archive scan), which prints the Latin and an English translation on facing pages with numbered articles. Both sides public domain.",
+ "hinweis": "Carried as the debate it forced, not as truth: the Monita are a forgery, condemned as such by the Church in 1616 and refuted from Gretser (1618) onward, yet reprinted for three centuries as the Society's 'secret instructions' — the apparatus's counterpart to the chess-playing Turk. The chapter and article numbering of the 1857 printing is kept as the citation grid; running heads are removed, hyphenation joined, and the systematic ligature losses of the OCR (ae) repaired, residual errors emended against the sense. Not yet part of the concordance index.",
+ "sections": [
+  {
+   "id": "c1",
+   "zk": "MS c. I",
+   "titel": "How the Society must behave themselves when they begin any new foundation.",
+   "blurb": "Qualem societas praestare sese debeat cum incipit de novo alicujus loci fundationem.",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "orig": "Ut se gratam reddat incolis loci, multum conducet explicatio finis societatis praescripti in regulls, ubi dicitur societatem summo conatu in salutem proximi incumbere, aeque atque in suam. Quare humilia obsequia obeunda in Xenodochiis, pauperes et afflicti, et incarcerati invisendi, confessiones prompte et generatim excipiendae, ut insolita in omnes charitatese, et rei novitate eminentiores incolae nostros admirentur et ament.",
+     "en": "It will be of great importance for the rendering our members agreeable to the inhabitants of the place where they design their settlement, to set forth the end of the Society in the manner prescribed by our statutes, which lay down, that the society ought as diligently to seek occasions of doing good to their neighbors as to themselves ; wherefore let them with humility discharge the meanest offices in the hospitals j frequently visit the sick, the poor, and the prisoners, and readily and indifferently take the confessions of all, that the novelty of such uncommon and diffusive charity may excite in the principal inhabitants an admiration of our conduct, and forcibly draw them into an affection for us."
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "orig": "Meminerint omnes facultatem ad exercenda societatis ministeria modeste ac religiose petendam ; et omnes turn ecclesiasticos praesertim turn saeculares quorum auctoritate indigemus, benevolos sibi facere studeant.",
+     "en": "Let it be remembered by all, that the priviOl 8ECRET INSTRUCTIONS OF THE JESUITS. 35 lege to exercise the ministry of this Society, must be requested in a modest and religious manner, and that they must use their best endeavors to gain chiefly the favor of such ecclesiastics and secular persons of whose authority they may stand in need."
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "orig": "Ad ]oca distantia etiam eundum, ubi elemo synje, quantumvis parvae recipiendae, exposita necessitate nostrorum ; eadem deinde dandae aliis pauperibus, ut sic sedificentur ii, qui nondum societateni noverunt, et sint in nos tanto liberiores.",
+     "en": "Let them also remember to visit distant places, where, having demonstrated the necessities of the Society, they shall readily receive the most inconsiderable alms, which afterwards being bestowed on other objects, may edify those which are as yet unacquainted with our Society, and stir them up to a greater liberality to us."
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "orig": "Omnes eimdem videantur spirare spiritum, ideoque eumdem modum exteriorem addiscant, ut uniformitas in tant& diversitate personarum unumquemque sedificet, qui secus fecerint, tanquam nocui, dimittantur.",
+     "en": "Let all seem as though they breathed the same spirit, and consequently learn the same exterior behavior, that by such an uniformity in so great a diversity of men. all may be edified. But if any obstinately persist in a contrary deportment, let them be immediately dismissed, as dangerous persons, and hurtful to the Society."
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "orig": "Caveant nostri emere fundos in initio ; sed si quos emerint nobis bene sitos, fiat hoc mutato nomine aliquorum amicorum fidelium et secretorum ; et ut melius luceat paupertas nostra, bona quee sunt vicina locis, in quibus collegia habeamus, per provincialem assignentur collegiis remotis, quo fiet ut nunquam principes vel magistratus habeant certam notitiam redituum societatis.",
+     "en": "At their first settlement, let our members be cautious of purchasing lands ; but if they happen to buy such as are well situated, let this be done in the name of some faithful and trusty friend. And that our poverty may have the more colorable gloss of reality, let the purchases, adjacent to the places wherein our colleges are founded, be assigned by the provincial to colleges at a distance ; by which means it will be impossible that princes and magistrates 36 SECRET INSTRUCTIONS 7. Summum pretium a viduis semper extorquendum, inculcata illis summa nostra necessitate. OF THE JESUITS. 3? can ever attain to a certain knowledge what the revenues of the Society amount to."
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "orig": "Non divertant nostri cum intentione residendi per modum collegii nisi ad urbes opulentas ; finis enim societatis est imitare Christum salvatorem nostrum, qui Hierosolymis maxime morabatur, alia autem loca minus praecipua tantum pertransibat.",
+     "en": "Let no places be pitched upon by any of our members for founding a college but opulent cities ; the end of the Society being the imitation of our blessed Saviour, who made his principal resi dence in the metropolis of Judea, and only transiently visited the less remarkable places."
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "orig": "Summum pretium a viduis semper extorquendum, inculcata illis summa nostra necessitate.",
+     "en": "Let the greatest sums be always extorted from widows, by frequent remonstrances of our extreme necessities. Vin."
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "orig": "In unaquaque provincia, nemo nisi provincialis noverit prascise valorem redituum. Sacrum autem esto quantum corbona romana contineat.",
+     "en": "In every province, let none but the principal be fully apprised of the real value of our revenues ; and let what is contained in the treasury of Rome be always kept as an inviolable secret."
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "orig": "Concionentur nostri, et ubique in colloquiis propalent, se adpuerorum instructionem et populi subsidium venisse, ac omnia gratis, et sine personarum acceptione prasstare, nec esse in gravamen communitatis, ut caeteri ordines religiosi.",
+     "en": "Let it be publicly demonstrated, and every- / where declared by our members in their private \\ conversation, that the only end of their coming there f was for the instruction of youth, and the good and welfare of the inhabitants ; that they do all this without the least view of reward, or respect of persons, and that they are not an incumbrance upon the people, as other religious societies are. 88 SECRET INSTRUCTIONS vabunt. OF THE JESUITS. 39"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "zk": "MS c. II",
+   "titel": "In what manner the Society must deport, that they may work themselves into, and after that preserve a familiarity with princes, noblemen, and persons of the greatest distinction.",
+   "blurb": "Quomodo principum, magnatum et primariorum PP. societatis familiaritatem acquirent et conservabunt.",
+   "units": [
+    {
+     "n": 10,
+     "k": 1,
+     "orig": "Conatus omnis ad hoc in primis adhibendus, at principum et primariorum ubique locorum aures et animos obtineainus ne sit qui in nos audeat insurgere, quinimo omnes cogantur a nobis dependere.",
+     "en": "Princes, and persons of distinction every where, must by all means be so managed that we may have their ear, and that will easily secure their hearts : by which way of proceeding, all persons will become our creatures, and no one will dare to give the Society the least disquiet or opposition."
+    },
+    {
+     "n": 11,
+     "k": 2,
+     "orig": "Cum autem experientia doceat principes et magnates turn praesertim affici personis ecclesiasti cis, quando odiosa eorum facta dissimulant, sed in meliorem potius partem ea interpretantur, ut videre est in matrimoniis contrahendis cum affinibus, aut consanguineis aut similibus, animandi sunt qui base aut similia affectant, spe facta per nostros istiusmodi dispensationes facile a summo Pontifice irnpetrandi, quod faciet si explicentur rationes, proferantur exempla, et reel ten tur sententise favorabiles titulo communis boni, et majoris gloriae Dei, quss est scopus societatis.",
+     "en": "That ecclesiastical persons gain a great footing in the favor of princes and noblemen, by winking at their vices, and putting a favorable construction on whatever they do amiss, experience convinces ; and this we may observe in their contracting of marriages with their near relations and kindred, or the like. It must be our business to encourage such, whose inclination lies this way, by leading them up in hopes, that through our assistance they may easily obtain a dispensation from the Pope ; and no doubt he will readily grant it, if proper reason be urged, parallel cases produced, and opinions quoted which countenance such actions, when the common good of mankind, and the greater advancement of God's glory, which are the only end and design of the society, are pretended to be the sole motives to them*, . 40 SECRET INSTRUCTIONS OF THE JESUITS. 41"
+    },
+    {
+     "n": 12,
+     "k": 3,
+     "orig": "Idem faciendum si princeps aggreditur allquid faciendum non eeque magnatibus omnibus gratum. Permovendus, nempe, animus ei, et instigandus, caeterorum vero animi commovendi ad hoc ut principi sese accomodent, neque contradicant ; in genere tamen tan turn, nec un<pam ad particularia descendendo, ne societati imputetur, si male negotium successerit ; et si quidem hoc aliquando factum reprobetur, recitentur monita contraria hsec plane prohibentia, et adhibeatur auctoritas aliquorum patrum, de quibus constat quod hsec ipsa monita illos lateant, qui etiam cum juramento asserere poterunt societatum, quoad hcec quae illi improperantur, calumniam pati.",
+     "en": "The same must be observed when the prince happens to engage in any enterprise which is not equally approved by all his nobility ; for in such cases he must be edged on and excited ; whilst they, on the other hand, must be dissuaded from opposing him, and advised to acquiesce in all his proposals. But this must be done only in generals, always avoiding particulars ; lest, upon the ill suecess of the affair, the miscarriage be thrown upon the Society. And should ever the action be called in question, care must be taken to have instructions always ready, plainly forbidding it; and these also must be backed with the authority of some senior members, who being wholly ignorant of the matter, must attest, upon oath, that such groundless insinuations are a malicious and base imputation on the Society."
+    },
+    {
+     "n": 13,
+     "k": 4,
+     "orig": "Juvabit etiam non parum ad occupandos principum animos, si, nostri dextre et per tertias personas insinuent se ad legationes honorificas et favorabiles ad alios principes aut reges pro ill is obeundas, praesertim apud pontificem et supremos monarchas ; hac enim occasions sese et societatem commendare • poterunt, quare non nisi zelosi valde et versati in institute nostro eo erunt destinandi.",
+     "en": "It will also very much further us in gaining the favor of princes, if our members artfully worm themselves, by the interest of others, into honorable ; embassies to foreign courts in their behalf; but es- \\ pecially to the Pope and great monarchs ; for by \" such opportunities they will be in a capacity both to recommend themselves and their society. To this end therefore let none but thorough zealots for our interest, and persons well versed in the schemes and institution of the Society, be ever pitched upon for such purposes."
+    },
+    {
+     "n": 14,
+     "k": 5,
+     "orig": "Alumni principum et domestic! prsscipue. quibus familiariter utuntur, per munuscula praecipue et varia pietatis officia vincendi sunt, ut tandem nostros fideJiter de humoribus et inclinationibus principum ac magnatum instruant; et sic facile illis societas sese accomodabit.",
+     "en": "Above all.iue care must be taken to curry 4* 42 SECRET INSTRUCTIONS 9. Tarn principes quarn pralati aliique omnes oui societati favorem extraordinarium prsostare OF THE JESUITS. 43 favor with the minions and domestics of princes and noblemen ; whom by small presents, and many offices of piety, we may so far byass, (bias,) as by means of them to get a faithful intelligence of the bent of their master's humors and inclinations; thus will the Society be better qualified to chime in with their tempers. VL."
+    },
+    {
+     "n": 15,
+     "k": 6,
+     "orig": "Experientia etiam docuit in domo austri&, aliisque regnis Gallias, Polonise, etc., caeterisque ducatibus, quantum societas sese juverit tractandis matrimoniis inter principes. Quare prudenter proponantur exquisiti conjuges, qui cum parentibus vel amicis nos-trorum sunt amici vel familiares.",
+     "en": "How much the Society has benefited from their engagements in marriage treaties, the house of Austria and Bourbon; Poland and other kingdoms, are experimental evidences. Wherefore let such matches be with prudence picked out, whose parents are our friends, and firmly attached to our interests."
+    },
+    {
+     "n": 16,
+     "k": 7,
+     "orig": "Feminae principes per domesticas, potissimum quas a cubiculis sunt, facillime vincentur; quare illas omnibus modis foveantur, sic enirn ad o'mnia, etiam secretissima, in familia aditus patebit.",
+     "en": "Princesses and ladies of quality are easily to be gained by the influence of the woman of their bed-chamber; for which reason we must by all means pay particular address to these, for thereby there will be no secrets in the family but what we shall have fully disclosed to us."
+    },
+    {
+     "n": 17,
+     "k": 8,
+     "orig": "In conscientiis magnatum regendis sequentur nostri confessorii, sententiam illorum auctorum qui liberiorem conscientiam faciunt contra opinionem aliorum religiosorum, ut, relictis illis, a nostra directione et consiliis toti velint dependere. possunt, parfcicipes faciendi sunt omnium meritorum societatis, exposito illis momento hujus summi privilegii.",
+     "en": "In directing the consciences of great men, it must be observed that our confessors are to follow the opinion of those who allow the greater latitude, in opposition to that of other religious orders; that, their penitents being allured with the prospect of such freedom, may readily relinquish them, and wholly depend upon our direction and counsel."
+    },
+    {
+     "n": 18,
+     "k": 9,
+     "orig": "Tam principes quam praelati aliique omnes qui societati favorem extraordinarium praestare possunt, participes faciendi sunt omnium meritorum societatis, exposito illis momento hujus summi privilegii.",
+     "en": "Princes, prelates, and all others who are capable of being signally serviceable to the order 44 SECRET INSTRUCTIONS OF THE JESUITS. 45 must be favored so far as to be made partakers of all the merits of the Society, after a proper in forniation of the high importance of so great a privilege."
+    },
+    {
+     "n": 19,
+     "k": 10,
+     "orig": "Insinuandae etiam caute et prud enter facultates amplissimae societatis absolvendi etiam a casibus reservatis respectu aliorum pastorum' aut religiosorum. item dispensandi in jejuniis, debito reddendo, aut petendo, matrimonii impedimentis, aliisque not is, in quo fiet ut plurimi ad nos recurrant et obstringantur.",
+     "en": "Let these notions be cautiously and with cunning instilled into the people, that this Society is entrusted with a far greater power of absolving, even in the nicest cases; of dispensing with fasts; with paying and demanding of debts; with impediments of matrimony, and other common matters, than any other religiousorder: which insinuations will be of such consequence, that many of necessity must have recourse to us, and thereby lay themselves under the strictest obligations. XL."
+    },
+    {
+     "n": 20,
+     "k": 11,
+     "orig": "Invitandi ad conciones, sodalitates, orationes, actiones, declamationes, etc., in quibus carminibus, inscriptis thesibus honorandi, turn, si expedit, in trie! inio mensa, excipiendi, variisque et dictis salutandi.",
+     "en": "It will be very proper to give invitations to such to attend our sermons and fellowships, to hear our orations and declamations, as also to compliment them with verses and theses; to address them in a genteel and complaisant manner, and at proper opportunities to give them handsome entertainments."
+    },
+    {
+     "n": 21,
+     "k": 12,
+     "orig": "Inimicitiae et dissensiones inter magnates ad nos distrahendae erunt ut componantur, sic enim in notitiam familiarium et secretorum paulatim poterimus devenire, et alterutram partem nobis devincere.",
+     "en": "Let proper methods be used to get knowledge of the animosities that arise among great men, that we may have a finger in reconciling their differences; for by this means we shall gradually become acquainted with their friends and secret affairs, and of necessity engage one of the parties in our interests."
+    },
+    {
+     "n": 22,
+     "k": 13,
+     "orig": "Quod si moharchoe vel principi serviat aliquis societati parum addictus/ invigilaudum ut sive per nostros, sive potius per alios ille in amicitiam ac familiaritatem societatis inducatur, promissis favoribus ac promotion i bus per principem aut monarcham suum procurandis.",
+     "en": "But should discovery happen to be made, that any person serves either king or prince, who is 46 SECRET INSTRUCTIONS OF THE JESUITS. 47 not well-affected towards our Society, no stone must be left unturned by our members, or which is more proper, some other, to induce him by promises, favors and preferments, which must be procured for him under his king or prince, to entertain a friendship for and familiarity with us."
+    },
+    {
+     "n": 23,
+     "k": 14,
+     "orig": "Caveant omnes quacunque ratione dimissos a societate, et praeserthn illos qui sua sponte ab ea d \\sced ere voluerunt, apud quemquam commendare, aut promovere; quia quantumcunque illi dissimulent, semper tamen irreconciliabile odium adversua socle tatem gerunt.",
+     "en": "Let all be very cautious of recommending or prefering such as have been any way dis, missed from the Socisty, but especially those who of their own accord have departed from it ; for let them disguise it ever so cunningly, nevertheless they always retain an implacable, hatred against our order."
+    },
+    {
+     "n": 24,
+     "k": 15,
+     "orig": "Denique ita omnes solliciti sint, principes, magnates, et magistratus cuj usque loci conciliare, ut etiani contra consanguineos, et affines, et amicos cuos, pro illis, quando occasio sese obtulerit, strenuo fideliterque agant.",
+     "en": "Finally, — Let all with such artfulness gain the ascendant over princes, noblemen, and the magistrates of every place, that they may be ready at our beck, evento sacrifice their nearest relations and most intimate friends, when we say it is for oui interest and advantage. 48 SECRET INSTRUCTIONS OF THE JESUITS. 49"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "zk": "MS c. III",
+   "titel": "How the Society must behave themselves towards those who are at the helm of affairs, and others who, although they be not rich, are notwithstanding in a capacity of being otherwise serviceable.",
+   "blurb": "Quomodo agendum societati cum illis qui magnae sunt auctoritatis in republica, et quamvis divites non sint, aliis tamen modis juvare possunt.",
+   "units": [
+    {
+     "n": 25,
+     "k": 1,
+     "orig": "P raster, supradicta, quae fere omnia proportionaliter illis applicari possunt, curanda est gratia illorum ad versus adversarios nostros.",
+     "en": "All that has been before mentioned, may, in a great measure, be applied to these; and we must also be industrious to procure their favor against every one that opposes us."
+    },
+    {
+     "n": 26,
+     "k": 2,
+     "orig": "Utendum etiam auctoritate, prudentia, et consilio eorum, ad contemptionem bonorum et acquisitionem variorum munerum a societate obeundorum ; adhibito etiam tacite et plene secreto illorum nomine, in augmentatione bonorum temporalium, si satis illis putetur confidendum.",
+     "en": "Their authority and wisdom must be courted, for obtaining several offices to be discharged by us; we must also make a handle of their advice with respect to the contempt of riches ; though at the same time, if their secrecy and faith may be depended on, we may privately make use of their names in amassing temporal goods for the benefit of the Society."
+    },
+    {
+     "n": 27,
+     "k": 3,
+     "orig": "Adhibendi etiam ut mitigent et compescant homines viliores, et plebem societati nostrae contrariam.",
+     "en": "They must be also employed in calming the minds of the meaner sort of people, and in wheedling the aversions of the populace into an affection for our Society."
+    },
+    {
+     "n": 28,
+     "k": 4,
+     "orig": "Ab episcopis, praelatis et aliis superioribus ecclesiasticis, pro diversitate rationnm et propensione in nos ea exigenda quss fuerinfc opportuna.",
+     "en": "As to bishops, prelates, and other supe rior ecclesiastics, they must be importuned for such things only as shall appear necessary ; and even for these, with a proper regard to the diversity of our occasions, and the tendency of their inclinations to serve us. 50 SECRET INSTRUCTIONS OF THE JESUITS. 51"
+    },
+    {
+     "n": 29,
+     "k": 5,
+     "orig": "In quibusdam partibus satis erit, si procuretur ut praelati et parochi efficiant quod subditi illorum societatem revereantur, et ipsi ministeria nostra non irnpediant, in aliis locis ubi plus possunt, ut in Germania, Polonia, etc. sacrosancte colendi, ut auctoritate illorum et principum, monasteria, parochias, proepositurae, patronatus, altarium fundationes, loca pia fundata ad nos divelli possint; facillime enim ea assequi poterimus in locis ubi catholici haereticis et schismaticis permixti sunt. Demonstrandum ejusmodi praelatis, immensum fructum et meritum ex talibus mutationibus oriundum, a sacerdotibus, sgecularibus, et monachis non expectandum ; quod si fecerint, laudandus pal am illorum zelus, etiam scripto, inculcandaque memoria facti perpetua.",
+     "en": "In some places it will be sufficient if we can prevail with the prelates and curates, to cause those under them only. to bear a reverence to our order, and that they themselves will be no hindrance to us in the discharge of our ministry. In others, where the clergy -are more predominant, as in Germany, Poland, &c. They must be addressed with the profoundest respect, that by their and the prince's an thority, monasteries, parishes, priories, patronages, foundations of masses, and religious places, may be drawn into our clutches ; and this is no hard matter to be o btained in those places where catholics are intermixed with heretics and schismatics. And for the better effecting of this, it will be of great importance to remonstrate to these prelates the prodigious advantage and merit there will be in changes of this sort, which can hardly be expected from priests, seculars, and monks. But should they be prevailed upon, their zeal must then be rewarded with public commendations, and the memory of the action trans mitted in writing to the latest posterity."
+    },
+    {
+     "n": 30,
+     "k": 6,
+     "orig": "Conandum eo fine ut prmlati tales nostris turn a confessionibus, turn a consiliis utantur et si quidem in spe sint, aut praetentione, ad alteriores gradus in curia romana, juvandi omni contentione\", ac conatu amicorum, ubicunque ad hoc conferre valentium.",
+     "en": "In prosecution of the same end, we must engage such prelates to make use of us both for confessors and counsellors ; and if they at any time aim at higher preferment from the see of Rome, their pretensions must be backed with such strong interest of our friends in every place, as we shall be almost sure not to meet with a disappointment. 52 SECRET INSTRUCTIONS OF THE JESUITS. 53"
+    },
+    {
+     "n": 31,
+     "k": 7,
+     "orig": "Curent etiam nostri apud episcopos et prin cipes, ut dum. fundant collegia acecclesias parochia les, societas habeat potestatem statuendi vicarium habentem curam animarum, ipae vero superior loci pro teinpore existens si parochus, et sic totum regi men ecclesiae illius erit nostrum, et paroehiani omnes societati plene erunt subjecti, ut quidvis ab illis impetretur.",
+     "en": "Due care must be also taken by such of our members who have intercourse with bishops and princes, that the society, when these found either colleges, or parochial churches, may always have the power of presenting vicars for the cure of souls ; and that the superintendent of the place for the time being be appointed curate, to the end we may grasp the whole government of the church ; and its parishioners by that means become such vassals to us, that we can ask nothing of them that they will dare to deny us."
+    },
+    {
+     "n": 32,
+     "k": 8,
+     "orig": "Ubi academici sunt nobis repugnantes, vel Catholic!, aut haeretici cives fundationes impedientes, ibi per praelatos conandum et primarios cathedrae concionatoriae occupentur ; sic enim continget societatem aliquando saltern necesitates ac rationes per occasionem saltern exposituram.",
+     "en": "Wherever the governors of academies hamper our design, or the catholics or heretics oppose us in our foundations, we must endeavor by the prelates to secure the principal pulpits ; for by this means the society at least may some time or other have an opportunity of remonstrating their wants, and laying open their necessities."
+    },
+    {
+     "n": 33,
+     "k": 9,
+     "orig": "Maxime vero praslati ecclesias, devinciendi erunt, quando agetur de beatificatione aut canonizatione nostrorum, et tune omnibus modis a iriagnatibus et principibus Iittera3 procurandas erunt, in quibus apud sedem apostolicam negotium promoveatur.",
+     "en": "The prelates of the church, above all others, must be mightily caressed when the affair of canonization of any of our members is upon the foot ; and at such & time, letters by all means must be procured from princes and noblemen, by whose interest the matter may be promoted at the court of Rome."
+    },
+    {
+     "n": 34,
+     "k": 10,
+     "orig": "Si contingat praelatos aut magnates legationem obire, cavendum sedulo ac prasveniendum ne aliis religiosis qui nobiscum certant, utantur ; ne aftectum in illos transferant, et in provincias ac civitates in quibus nos moramur, inducant. Quod si hujusmodi legati transiverint illas provincias vel civitates, ubi societas collegia habet, excipiantur rnagno honore et affectu et pro modestia religiosa tractentur.",
+     "en": "If ever it happen that prelates or noblemen are employed in embassies, all caution must be taken to prevent them from using any religious or5* 54 SECRET INSTRUCTIONS OF THE JESUITS. 55 der that oppose ours, lest their disaffection to us should be infused into their masters, and they propagate it among the provinces and cities where we reside. And if ever ambassadors of this kind pass through provinces or cities where we have colleges, let them be received with all due marks of honor and esteem, and as handsomely entertained as religious decency can possibly admit of."
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "zk": "MS c. IV",
+   "titel": "The chief things to be recommended to preachers and confessors of noblemen.",
+   "blurb": "Quae commendata esse debeant concionatoribus et confessariis magnatum.",
+   "units": [
+    {
+     "n": 35,
+     "k": 1,
+     "orig": "Nostri, principes virosque illustres ita dirigant, ut solum ad majorem Dei gloriam tendere videantur et ad talem austeritatem conscientiae, quam ipsimet principes concedunt; neque enim statim sed sensim spectare debet directio illorum externam et politicam gubernationem.",
+     "en": "Let the members of our Society direct princes and great men in such a manner that they may seem to have nothing else in view but the promotion of God's glory and advise them to no other austerity of conscience but what they themselves are willing to comply with ; for theiraim must not. immediately, but by degrees and insensibly, be directed towards political and secular dominion."
+    },
+    {
+     "n": 36,
+     "k": 2,
+     "orig": "Ideo saepe illis inculcandum distributionem honorum et dignitatum in republiia spectare ad justitiam, graviterque Deum ofFendi a principibus, si contra earn spectant, et ex passione procedunt. Protestentur saepe ac serio se nullo modo velle iu reipublicae administrationem ingerere, sed invitos dicere, ratione officii sui. Turn ubi semel bene hsec apprehenderint, explicetur quibus virtu tibus praediti esse debeant qui ad dignitates et munia publica ac primaria assumendi sunt, vsominenturque tandem, et cornmendentur ab ill is qui sunt sinceri amici societatis. Hoc tamen non fiet immediate per nostros, nisi princeps ad hoc coegerit, sed plus gratiae habebit, si interponantur amici vel familiares principis.",
+     "en": "We must therefore often inculcate into them, that honors and preferments in the state should always be conferred according to the rules of justice ; that God is very much offended at princes, when they any ways derogate from this principle and are hurried away by the impulse of their passions. In 56 SECRET INSTRUCTIONS * OF THE JESUITS. 67 the next place, our members must with gravity protest, and in a solemn manner affirm, that the administration of public affairs is what they with reluctance interfere in ; and that the duty of their office obliges them often to speak such truths as they would otherwise omit. When this point is once gained, care must be taken to lay before them the several virtues persons should be furnished with who are to be admitted into public employs : not forgetting slyly to recommend to them such as are sincere friends to our order : but this must be done in such a manner as not immediately to come from us, (unless the princes enjoin it,) for it may be effected with a far better grace by such as are their favorites and familiars."
+    },
+    {
+     "n": 37,
+     "k": 3,
+     "orig": "Quo circa eonfessarii et concionatores nostri informentur ab amicis nostris, qui pro quovis munere sunt apti, praesertim tales qui erga societatem liberales sunt, horum nomina apud se habeant, et suo tempoi*e cum dexteritate, sive per se, sive per alios, principibus insinuent.",
+     "en": "Wherefore let the confessors and preachers belonging to our order be informed by our friends of persons proper for every office, and above all, of such as are our benefactors ; and whose names let them carefully keep by them, that when proper opportunities occur, they may be palmed upon the prince by the dexterity of our members or their agents."
+    },
+    {
+     "n": 38,
+     "k": 4,
+     "orig": "Meminerint summopere eonfessarii et con cionatores, principes suaviter et blande tractare, nullo modo in concinionibus et privatis colloquiis perstringere, omnes pavores ab illis removere, et ia ipsa fide, justitia politica potissimum adhortari.",
+     "en": "Let the confessors and preachers always remember, with complaisance and a winning address, to sooth princes, and never give them the least offence in their sermons or private conversations ; to dispossess their minds of all imaginary doubts and 58 'SECRET INSTRUCTIONS OF THE JESUITS. 59 fears, and exhort them principally to faith, hope and political justice."
+    },
+    {
+     "n": 39,
+     "k": 5,
+     "orig": "Munuscula parva yix unquam pro private usu acceptant, sed commendent necessitatem com munem provincie aut collegii domi cubiculo. Simpliciter instrticto gaud can t, neque curlose minis so vestiant, et ad abjectiores person as, quae in palatio stmt, juvandas ac consoJandas prompte se conferant, ne solis magnatibus praesto esse videantur.",
+     "en": "Let them seldom or never accept of small presents for their own private use, but rather recommend the common necessities of the province or college. At home, let chambers plainly furnished content them ; and let them not appear in showy dresses, but be ready at every turn to administer their ghostly advice to the meanest person about the palace, lest they give others occasion to believe, they are willing to be helpful to none but the great."
+    },
+    {
+     "n": 40,
+     "k": 6,
+     "orig": "Quamprimum post mortem omcialium curent ut de substituendis amicis societatis mature agant, et suspicione se eximant extorti regiminis ; quare etiam, uti supradictum est, immediate se non impendent, sed amicos fideles, ac .potentes, qui sustinere invidiam possunt, si quaeoriatur.",
+     "en": "Immediately upon the death of any person of post, let them take timely care to get some friend of our Society preferred in his room ; but this must be cloaked with such cunning and management as to avoid giving the least suspicion of our intending to usurp the prince's authority ; for this reason (as has been already said) we ourselves must not appear in it, but make a handle of the artifice of some faithful friends for effecting our designs, whose power may screen them from the envy which might otherwise fall heavier upon the Society. 60 SECRET INSTRUCTIONS OF THE JESUITS. 6l"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "zk": "MS c. V",
+   "titel": "What kind of conduct must be observed towards such religious persons as are employed in the same ecclesiastical functions with us.",
+   "blurb": "Quomodo agendum cum religiosis, qui iisdem in ecclesia, quibus nos, functionibus vacant,",
+   "units": [
+    {
+     "n": 41,
+     "k": 1,
+     "orig": "Genus istud homimim ferendum animose, interim principibus et illis, qui aliqua auctoritate valent, et aliquo modo nobis addict! sunt, explicandum et indicandum opportune nostram societatem omnium ordinum continere perfectionem, piaster cantum et exteriorem in victu et vestitu asperitatem ; et si quae religiones in aliquo excellent, societatem eminentiori modo lucere in ecclesia Dei.",
+     "en": "We must not be discouraged or beat down by this sort of men, but take proper opportunities, demonstrably to convince princes, and others in authority, who are in any way attached to our interest, that our order contains the perfection of all others, excepting only their cant and outward austerity of life and dress; but if another order should claim pre-eminence in any particular, that it is ours which shines with the greatest lustre in the Church of God."
+    },
+    {
+     "n": 42,
+     "k": 2,
+     "orig": "Inquirantur et notentur defectus -aliorum religiosorum, quibus prudenter et plerumque per jnodum deplorationis apud fideles amicos paulatim defectis ac propalatis, ostendatur, minus feliciter illos satisfacere istis functionibus quibus nobiscum concurrunt.",
+     "en": "Let the defects of other religious orders be diligently canvassed and remarked, and, after full discovery, gradually published to our faithful friends, but always with prudence and a seeming sorrow ; and let it be pretended, that it is not in their power to acquit themselves so happily as we, even in the discharge of those functions which are common to us both."
+    },
+    {
+     "n": 43,
+     "k": 3,
+     "orig": "Majori conatu eundum est contra eos qui scholas dro juventute docenda instituere volunt istis locis, in quibus cum honore et utilitate nostri docent. Ostendant principibus et magistratibus tales fore perturbation! et sedition! reipublicae nisi impediantur, quae ab ipsismet pueris, qui diversimode instruentur, incipient, denlque societatem sufficere juventuti erudiendye.",
+     "en": "But far greater efforts must be made against those who attempt setting up schools for the education of -youth, in places where any of our members do the same already with honor and -advantage. And in this case, princes and magistrates must b* 62 SECRET INSTRUCTIONS OF THE JESUITS. 63 told, that such, unless timely prevented, will certainly prove nurseries of tumults and sedition ; for children, from different methods of instruction, must necessarily imbibe different principles; and lastly, we must persuade them, that no society but our's is qualified for discharging an office of so great importance."
+    },
+    {
+     "n": 44,
+     "k": 4,
+     "orig": "Quod si religiose literas pontificias obtinuerint aut cardinalium commendationera pro se habeant, agant nostri contra per principes ac magnates, qui Pontificem informent de benemeritis societates. et sufficientia ut per illam pacifice juventus instruatur ; procurent etiam et exhibeant testimonia a magistratibus danda de bona illorum conversatione et insti tutione.",
+     "en": "And should these religious orders procure license from the pope, or obtain recommendations from cardinals, our members must oppose these by the interest of princes and noblemen, who should inform his holiness of the merits of our society, and its capacity for the peaceful education of youth; and let this be corroborated by testimonies from the magistrates of the place, concerning the good behaviour and faithful instruction of such as are committed to our care."
+    },
+    {
+     "n": 45,
+     "k": 5,
+     "orig": "Interim pro viribus nostri studeant edere specimen singulare virtutis et doctrinae execcendo studiosos in studiis, aliisque plausibilibus ludis scholasticis, magnatibus ac magistratibus et populo spectantibus.",
+     "en": "In the mean time, let our members be mindful to give to the public some signal instances of their virtue and learning, by directing their pupils in the presence of the gentry, magistrates, and populace, in their several studies, or engaging them in the performance of some other scholastic exercises proper for gaming public applause. 64 SECRET INSTRUCTIONS De conciliandis societati viduis opulentis. OF THE JESUITS. 65"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "zk": "MS c. VI",
+   "titel": "Of proper methods for inducing rich widows to be liberal to our Society.",
+   "blurb": "De conciliandis societati viduis opulentis.",
+   "units": [
+    {
+     "n": 46,
+     "k": 1,
+     "orig": "Diligantiir ad hoc opus patres provectae aetatis, complexionis vivacis et conversationis gratte; ab illis visitentur viduse illas, efc simul atque a flee turn aliquem erga societatem ostendunt, vicissim. opera et merita societatis illis offerantur. Quod si acceptent et ecclesias nostras visitare cceperiut, prospiciatur eis de confessario, a quo bene dirigantur praesertim in ordine ad constantiam in statu viduali, enumerando et laudando illius fructus et felicitatem ; certoque spondeant et tanquam obsides promittant seternum meritum hac ratione conquirendum, et efficacissiinum esse remedium ad purgatorias pcenas evitandas.",
+     "en": "For the managing of this affair, let such members only be chosen as are advanced in age, of a lively complexion and agreeable conversation ; let these frequently visit such widows, and the minute they begin to show any affection towards our order, then is the time to lay before them the good works and merits of the society. If they seem kindly to give ear to this, and begin to visit our churches, we must by all means take care to provide them confessors ' by whom they may be well admonished, especially to a constant perseverance in their state of widowhood, and this, by ennumerating and praising the advantages and felicity of a single life: and let them pawn their faiths, and themselves too, as a security that a firm continuance in such a pious re solution will infallibly purchase an eternal merit, and prove a most effectual means of escaping the otherwise certain pains of purgatory. f II."
+    },
+    {
+     "n": 47,
+     "k": 2,
+     "orig": "Procuret idem confessarius ut sacello vel oratorio alicui domi adornando occupentur, in quo meditationibus aliisque exercitiis spiritualibus vacare possint, ut sic facilius a conversatione, et procorum, visitationibus avocentur; et quamvis sacellanurn habeant, nostri tamen a celebratione M et prgscipue ab exhor.tationibus opportune faciendis noil abstineant, et sacellanum sub se continere studeant.",
+     "en": "And let the same confessors persuade them to engage in beautifying some chapel or oratory in their own houses, as a proper place for their daily meditations and devotions. By this means they will be more easily disengaged from the conversation and address of importunate suitors; and although they have a chaplain of their own, yet ne • 6* 66 SECRET INSTRUCTIONS OF THE JESUITS. 67 ver let the confessors desist from celebrating mass, nor on all occasions giving them proper exhortations ; and to be sure (if possible) to keep the chaplain under."
+    },
+    {
+     "n": 48,
+     "k": 3,
+     "orig": "Caute et sensim mutanda quae ad gubernationem domus spectant, sic habita ratione personae, loci, afFectus, et devotionis.",
+     "en": "Matters which relate to the management of the house must be changed insensibly, and with the greatest prudence, regard being had to person, place, affection, and devotion."
+    },
+    {
+     "n": 49,
+     "k": 4,
+     "orig": "Amoliendi potissimum tales domestic! (sed paulatirn) qui plane cum societate non communicant aut correspondent, talesque, commendandi, (si qui substituendi sint) quia nostris dependeant aut depend ere velint : sic enim omnium, qui in familia aguntur, participes esse poterimus.",
+     "en": "Care must be taken to remove such servants particularly as do not keep a good understanding vrith the Society; but let this be done by little and little; and when we have managed to work them out, let such be recommended as already are, or willingly would become our creatures; thus shall we dive into every secret, and have a finger in every affair transacted in the family."
+    },
+    {
+     "n": 50,
+     "k": 5,
+     "orig": "Totus conatus confessarii hoc spectet, ut vidua ejus consilio in omnibus utatur et acquiescat; quod ostendetur per occasionem, esse unicum fundament um profectus spiritualis.",
+     "en": "The confessor must manage his matters so that the widow may have such faith in him asnot • to do the least thing without his advice, and his only, which he may occasionally insinuate to be the only basis of her spiritual edification."
+    },
+    {
+     "n": 51,
+     "k": 6,
+     "orig": "Consulatur et celebratur frequens usus sacramentorum, praesertim poenitentioe in quo intima animi sensa et ten tati ones quascumque liberrime aperiat, deinde frequens commimio auditus sacri ipsiusmet confessarii, ad quod invitabitur cum promissis peculiaribus precibus, recitatio litaniarum et quotidianum examen conscientix.",
+     "en": "She must be advised to the frequent use and celebration of the sacraments, but especially that of penance ; because in that she freely makes a dis co very of her most secret thoughts, and every temptation. In the next place, let her frequently com municate, and apply for instructions to her confessor, 68 SECRET INSTRUCTIONS OF THE JESUITS. 69 to the performance of which she must be invited by promises of some prayers adapted to her particular occasions ; and lastly, let her every day rehearse the litany, and strictly examine her conscience."
+    },
+    {
+     "n": 52,
+     "k": 7,
+     "orig": "Juvabit etiam non parum ad plenissimam cognitionem omnium inclinationum ejus, confessio generalis, etiam si alias alter! facta fuerit, iterata.",
+     "en": "It will be also a great help to the obtaining of a perfect knowledge of all her inclinations, to prevail with her to repeat a general confession, although she has formerly made it to another."
+    },
+    {
+     "n": 53,
+     "k": 8,
+     "orig": "Exhortationes fient de bonis viduitatis, de molestiis, matrimonii praesertim iterati, de periculis quae simul incurruntur, etc., quas maxime ad homi- nem sunt.",
+     "en": "Discourse must be made to her concerning the advantages of the state of widowhood, the inconveniences of wedlock, especially when it is * repeated, and the dangers to which mankind expose themselves by it, but above all, such as more particularly affect her."
+    },
+    {
+     "n": 54,
+     "k": 9,
+     "orig": "Proponendi subinde et dextre proci aliqui, sed tales a quibus scitur bene viduam abhorrere; describantur aliorum vitia et mail mores, si qui pu tentur illi arridere, ut sic universim secundas nuptias nauseet.",
+     "en": "It will be proper, every now and then, cunningly to propose to her some match, but such a one, be sure, as you know she has an aversion to ; and if it be 'thought that she has a kindness for any one, let his vices and failings be represented to her in a proper light, that she may abhor the thoughts of altering her condition with any person whatsoever."
+    },
+    {
+     "n": 55,
+     "k": 10,
+     "orig": "Quando ergo circa viduitatis statum bene affectam esse constat, tuno commend an da vita spiritualis, non religiosa, cujus incommoda potius proponenda. et exageranda, sed qualis fuit, Paulae et Enstachioe, etc. Prospiciatque confessarius ut quantotius voto castitatis saltern ad biennium vel triennium emisso, omnem aditum ad secundas nuptias excludat ; quo tempore omnis conversatio cum sexu impari, et recreationes etiam cum consanguineis et affinibus prohibendae titulo major is conjunctionis cum Deo. Ecclesiastic! antem a quibus vidua visitabilur, aut quos visitabit, si omnes excludi nequeant, tamen tales sint qui ex nostrorum commendatione admittantur, vel a nostrorum nutu dependeant.",
+     "en": "When therefore it is manifest that she is well disposed to continue a widow, it will then be time to recommend to her a spiritual life, but not a recluse one, the inconveniences of which must be magnified to her; but such a one as Paula's, or Eustachia? &c. and let the confessor, having as soon as possible prevailed with her to -make a vow 70 SECRET INSTRUCTIONS OF THE JESUITS. 71 of chastity, for two or three years at least, take due care to oppose all tendencies to a second marriage; and then all conversation with men, and diversions even with her near relations and kinsfolks must be forbidden her, under pretence of entering into a stricter union with God. As for the ecclesiastics, who either visit the widow, or receive visits from her, if they all cannot be worked out, yet let none be admitted but what are either recommended by some of our society, or are dependants upon them."
+    },
+    {
+     "n": 56,
+     "k": 11,
+     "orig": "Hue usque ubi progressum fuerit, paulatim ad bona opera praesertim eleemosynas inducenda erit vidua, quae tamen nulla ratione praestabit sine sui patris spiritualis directione ; cum plurimum intersit, ut cum discretione talentym in lucrum spirituale detur, et eleemosynae male collocatae sint saepe causa vel fomentum peccatorum, et sic simplicem tantum fructum et meritum causent.",
+     "en": "When we have thus far gained our point, the widow must be, by little and little, excited to the performance of good works, especially those ot charity ; which, however, she must by no means be suffered to do without the consent of her ghostly father, since it is of the last importance to her soul, that her talent be laid out with a prospect of obtaining spiritual interest; and since charity ill-applied, often proves the cause and incitement to sins, which effaces the merit and reward that might otherwise attend it."
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "zk": "MS c. VII",
+   "titel": "How such widows are to be secured, and in what manner their effects are to be disposed of.",
+   "blurb": "Quomodo conservandae viduae, et disponendum de bonis, quae habent.",
+   "units": [
+    {
+     "n": 57,
+     "k": 1,
+     "orig": "Urgeantur continuo ut pergant in devotione et operibus bonis, sic, ut nulla hebdomada transeat quin sua sponte aliquid in honorem Christi, beatae Virginis, at patron i sui praescindant a se de superfluis quod ipsum in pauperes erogent, vel ornatus tern, plorum destinent, donee spoliis plerisque et primitiis Egypti sint exutae.",
+     "en": "They are perpetually to be pressed to a per severance in their devotion and good works, in such 72 SECRET INSTRUCTIONS OF THE JESUITS. 73 manner, that no week pass in which they do not, of their own accord, Jay somewhat apart out of their abundance for the honor of Christ, the blessed Virgin, or their patron saint ; and let them dispose of it in relief of the poor, or in beautifying of churches, till they are entirely stripped of their superfluous stores and unnecessary riches."
+    },
+    {
+     "n": 58,
+     "k": 2,
+     "orig": "Quod si prceter communem affectum, suam erga societatem nostram, liberal itatem testentur, idque facere contingent, fiant omninum meritorum societatis participes, cum indulto speciali provincialis, aut etiam si taritss personas fuerint generalis.",
+     "en": "But if, besides their general acts of beneficence, they show a particular liberality to us, and continue in a course of such laudable works, let them be made partakers of all the merits of the society, and favored with a special indulgence from the provincial, or even from the general, if their quality be such as may in some measure demand it."
+    },
+    {
+     "n": 59,
+     "k": 3,
+     "orig": "Si emiserint votum castitatis, renovent illud more nostro bis in anno, concessa illis pro ilia die recreatione honesta cum nostris.",
+     "en": "If they have made a vow of chastity, let them, according to our custom, renew it twice a year; and let the day whereon this is done be set apart for innocent recreations with the members of the society."
+    },
+    {
+     "n": 60,
+     "k": 4,
+     "orig": "Visitentur crebr6j et jecundis colloquiis, et historiis spiritualibus, ac facetiis recreentur et foveantur, juxtra uniuscujusque humorem et Inclinationem,",
+     "en": "Let them be frequently visited, and entertained in an ogroeable manner, with spiritual stories; and also diverted with pleasant discourses, according to their particular humors and inclinations."
+    },
+    {
+     "n": 61,
+     "k": 5,
+     "orig": ". Non tracten tur nimis rigide in confessione, ne morosae nimis fiant, nisi forte amissa spe gratiam illarum aliunde occupatam recuperandi ; in quo",
+     "en": "They must not be treated with too much severity, in confession, lest we make them morose and ill-tempered, unless their favor be so far engaged by others, that there is danger of not retaining 74 SECRET INSTRUCTIONS magua discretione de inconstant! mulierum genio judicandum. OF THE JESUITS. 75 it ; and in this case, great discretion is to be used in forming a judgment of the natural inconsistency of women."
+    },
+    {
+     "n": 62,
+     "k": 6,
+     "orig": "Arceantur ingeniose a visitationibus et festivitatibus aliorum templorum, maxime religiosorum, et inculcetur illis omnes aliorum ordinum indulgentias in societatem esse refusas.",
+     "en": "Good management must be used to prevent their visiting the churches of others, or seeing their feasts, but especially those, of religious orders ; for which purpose, let them hear it often repeated, that all the indulgences of other orders are with greater extent contained in ours."
+    },
+    {
+     "n": 63,
+     "k": 7,
+     "orig": "Si lugendum ipsis sit, permittatur ornatus lugubris cum honesta majestate aliquid spirituale simul et rnundanum spirans, ut non apprehendant se a viro spiritual! plane gubernari. Deniqu modo non sit periculum inconstantise, et erga societatem fideles et liberales inveniantur, concedatur illis quidquid ad sensualitatem requirunt, moderate et excluso scandalo.",
+     "en": "If they propose to put on a weed, give them the liberty of such a becoming dress as has in it an air both religious and fashionable ; that they may not think they are altogether to be governed by their spiritual guide. Lastly, if there be no suspicion of their inconstancy, but they are, on the contrary, faithful and liberal to our Society, allow them in moderation, and without offence, whatever pleasures they have an inclination to."
+    },
+    {
+     "n": 64,
+     "k": 8,
+     "orig": "Collocentur apud viduas alias puellds honestaa et parentibus divitibus ac nobilibus natae, quae nostrorum direction!, et modo vivendi paulatim assuefiant. His praesit aliqua a confessario totius familise ad hoc electa et constituta. Subjiciantur syndicationibus aliisque consuetudinibus societatis, et quae sese accomodare nolunt, dimittantur ad parentes vel alios a quibus adductae erant, describantur tan* quam djscolas, difHcilis genii, etc.",
+     "en": "Let women that are young and descended from rich and noble parents, be placed with those widows, that they may, by degrees become subject to our directions, and accustomed to our method of living; as a governess to these, let some woman be chosen and appointed by the family confessor ; let these submit to all the censures, and other customs of the Society ; but such as will not conform themselves, immediately dismiss to their parents, or those who put them to us, and let them be repre76 SECRET INSTRUCTIONS OF THE JESUITS. 77 sented as untractably stubborn, and of a perverse disposition."
+    },
+    {
+     "n": 65,
+     "k": 9,
+     "orig": "Nec minor cura sanitatis, et recreationis illarum, quam salutis habenda erit : quare si de valetudine conquerantur, statim jejunia, eilicia, disciplinae aliasque pcenitentise corporales, prohibebuntur : neque permittantur ad templum etiam. exire, sed domi secreto et caute administrentur. Dissimuletur curn -illis ingressus in hortum vel collegium, modo secreto id fiat ; permittantur colloquia et recreationes secretes cum iis qui maxime arriserint.",
+     "en": "Nor is less care to be taken of their health and recreations than of their salvation ; wherefore if ever they complain of any indisposition, immediately all fasting, canvas, discipline, and other corporal penance must be forbidden; nor let them be permitted to stir abroad, even to church, but be attended at home with privacy and care. If they secretly steal into the garden, or college, seem as if you knew it not, and allow them the liberty of conversation and private diversions with those whose company is most agreeable to them."
+    },
+    {
+     "n": 66,
+     "k": 10,
+     "orig": "Pro dispositione redituum quos habet vidua in favorem societatis facienda, proponatur perfectio status hominum sanctorum, qui relicto mundo, parentibus, et bonis abdicatis, cum magna resignatione et animi hilaritate Deo servierunt. Exponantur in ordine ad hoc quae habentur in constitutione et examine societatis, de istius modi renuntiatione et abnegatione omnium rerum. Allegentur exempla viduarum, quoe sic brevi in sanctas evaserunt, cuni spe canonizationis, is sic in finem usque perseveraverint, ostendaturque ipsis non defuturam ad hoc nostrorum apud pontificem auctoritatem.",
+     "en": "That a widow may dispose of what she has in favor of the Society, set as a pattern to her, the perfect state of holy men, who having renounced the world, and forsaken their parents, and all that they had, with great resignation and cheerfulness of mind devoted themselves to the service of God. For the better effecting of this, let what is contained in the constitution and statutes of the Society relating to this kind of renunciation, and forsaking of all things, be explained to them ; and let several instances of widows be brought, who thus in a short time became saints, in hopes of being canonized, if they continued such to the end. And let them be apprized, that our Society will not fail to use their interest at the court of Rome for the obtaining such a favor. 78 SECRET INSTRUCTIONS OF THE JESUITS. 79 XL."
+    },
+    {
+     "n": 67,
+     "k": 11,
+     "orig": "Imprimendum ipsishocfirmiter,siconscientiae perfecta quiete frui velint, omnino sine murmuratione, tcedio, aut ull& reticentia interior!, sequendam esse tarn in temporalibus quam. in spiritualibus confessarii directionem, tanquam. a Deo peculiariter destinati.",
+     "en": "Let this be deeply imprinted on their minds, that, if they desire to enjoy perfect peace of conscience, they must, as well in matters temporal as spiritual, without the least murmuring, or inward reluctance, entirely follow the direction of their confessor, as one particularly allotted them by Divine providence."
+    },
+    {
+     "n": 68,
+     "k": 12,
+     "orig": "Instruendae etiam per occasionem, gratius esse si personis ecclesiasticis, maxime religiosis spectatae et exemplaris vitae eleemosynas suas dent, non nisi conscio turn et approbante confessario.",
+     "en": "They must be also instructed upon every occasion, that their bestowing of alms to ecclesiastics, and even to the religious' of an approved and exemplary life, without the knowledge and approbation of their confessor, is not equally meritorious in the sight of God."
+    },
+    {
+     "n": 69,
+     "k": 13,
+     "orig": "Cavebunt dilligentissime confessarii ne quocumque praetextu hujusmodi viduas illorum poenitentes alios religiosos invisant, aut familiaritatem cum illis ineant; quod ut irnpediant, conabuntur suo tempore depraadicare societatem tanquam ordinem superlativum prae caetaris, et utilissimum in ecclesia, majoris auctoritatis apud pontificem et principes omnes; perfectissimum in se, quia dimittit noxios et inidoneos, ade6que sine spuma et fecibus vivit, quibus scutent monachi, plerumque indocti, bardi, segnes, salutis suae incurii, ventricolaa, etc.",
+     "en": "Let the confessors take diligent care to prevent such widows as are their penitents, from visiting ecclesiastics of other orders, or entering into familiarity with them, under any pretence whatsoever; for which end, let them, at proper opportunities, cry up the Society as infinitely superior to all other orders; of the greatest service in the church of God, and of greater authority with the Pope, and all princes; and that it is the most perfect in itself. in that it discards all persons' offensive or unqualified, from its community, and therefore is purified from that scum and dregs with which these monks are infected, who, generally speaking, are a set of men unlearned, stupid, and slothful, negligent of their duty, and slaves to their bellies. J"
+    },
+    {
+     "n": 70,
+     "k": 14,
+     "orig": "Proponant confessarii et suadeant illis ordi11 arias pensiones, et tributa, quibus subleventur annuatim coliegioram et domorum professarum debita, praecipue domus professae romanae, nec immemores sint ornamentorum templi, cerae, vini, etc., ad celebrationem missas sacrificii necessariorum.",
+     "en": "Let the confessors propose to them, and 80 SECRET INSTRUCTIONS OF THE JESUITS. 81 endeavor to persuade them to pay small pensions and contributions towards the yearly support of colleges and professed houses, but especially of the professed house at Rome ; nor let them forget the ornaments of churches, wax-tapers, wine, &c. things necessary in the celebration of the sacrifice of mass."
+    },
+    {
+     "n": 71,
+     "k": 15,
+     "orig": "Quod si in vita sua vidua ex pleno bona sua societati non inscripaerit, proponatur illi per occasionem, et praesertim ingruente gravi morbo aut periculo vitae, segestas, novitas et multitude plurimorum coliegiorum nondum fundatorum, inducanturque suaviter et fortiter ad sumptus faciendos, quibus eeternam gloriam sunt fundaturae.",
+     "en": "If any widow does in her lifetime make over her whole estate to the Society ; whenever opportunity offers, but especially when she is seized with sickness, or in danger of life, let some take care to represent to her the poverty of the greatest num. ber of our colleges, whereof many just erected have hardly as yet any foundation ; engage her, by a winning behaviour and inducing arguments, to such a liberality as (you must persuade her) will lay a certain foundation for her eternal happiness."
+    },
+    {
+     "n": 72,
+     "k": 16,
+     "orig": "Idem faciendum cum principibus, et benefactoribus aliis, persuadendum, inquam, ea que perpetua sunt in hoc mundo et in altero seternam illis gloriam a Deo paritura. Quod si hinc hide aliqui malevoli allegent exemplum Christ! qui non habebat ubi caput reclinaret, velintque socios Jesu similiter esse pauperrimos, ostendatur et serio imprimatur, passim omnibus, ecclesiam Dei nunc mutatam et monarchiam factam, quae auctoriate et potentia magna tueri se debet, contra potentissimos inimicos, et esse lapidem iJlum parvum excisum qui crevit in montem maximum, proedictum per porphetap.",
+     "en": "The same art must be used with princes and other benefactors; for they must be wrought up to a belief, that these are the only acts which will perpetuate their memories in this world, and secure them eternal glory in the next : but should any persons out of ill-will pretend to trump up the example of our Saviour, who had not whereon to lay his head, and from thence urge that the Society of Jesus ought to distinguish themselves by their poverty, in answer to such insinuations as these, we must seriously inculcate on the minds of all, that the state of the church, being altered from what it was. and now changed into a monarchy, it cannot maintain 82 SECRET INSTRUCTIONS OF THE JESUITS. 83 its ground against mighty enemies, unless supported by great authority and power, and that it is that little stone which was foretold by the prophet should be hewn out of the rock, and afterwards rise into a vast mountain."
+    },
+    {
+     "n": 73,
+     "k": 17,
+     "orig": "Istis quae addicts sunt eleemosynis et ornatui templorurn, ostendatur crebro, summam perfeetionem in eo consistere, quod terrenarum rerum amore sese cxuentes. ipsnm Christum ejusque socios, earum possessores faciant.",
+     "en": "Those who are inclined to acts of charity, and the adorning of temples, should be frequently told that the height of perfection consists in withdrawing their affections from earthly things, thereby making Christ and his followers possessors of them. XVIII."
+    },
+    {
+     "n": 74,
+     "k": 18,
+     "orig": "Sed quia minus semper sperandum a viduis quae liberos suos ad seculum dirigunt, videbimus.",
+     "en": "But since our expectations must necessarily be less from widows that educate their children for the business of the world ; we shall now proceed to lay down methods proper for preventing this inconvenience."
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "zk": "MS c. VIII",
+   "titel": "How widows ore to be treated, that they may embrace religion, or a devoted life.",
+   "blurb": "Quomodo faciendum ut filii et filiae viduarem religiosum aut devotorium statum amplectantur.",
+   "units": [
+    {
+     "n": 75,
+     "k": 1,
+     "orig": "Sicut matribus fortiter, sicnostris suaviter in hac materia est agendum Matres, nirnirum, instruendae ut proli suse reprehensionibus, castigationibus, etc., molestae sint a teneris; dum provectiores prresert'm filias faerint, muliebrem ornatum et clenodias illis negent, optando saepe et Deum rogando ut ad statum ecclesiasticum adspirent et pollicendo insignem dotem si rnoniales*esse voluerint. Exponan t sagpe difficultates quae in matrimonio sunt omnibus communes, et si quas ipsaemet in particulari expertae sint, dolendo quod caelibatum suo tempore, matrimonio non pnetulerint, denique sic agant continuo, ut filia3 praesertim, taedio vitae apud matrem tali modo transigendae, de statu religioso cogitent.",
+     "en": "As it will behove the widows to act with resolution, so must we proceed with gentleness upon this occasion. Let the mothers be instructed to use their children harshly, even from their cradles, by plying them with reproofs and frequent chastisements, &c. And when their daughters are near grown up to discretion, let them then be especially 84 SECRET INSTRUCTIONS OF THE JESUITS. 85 denied the common dress and ornaments of their sex ; at all times offering up prayers to God, that he would inspire them with a desire of entering into a religious order, and promising them very plentiful portions, on condition they would become nuns ; let them lay before them the many inconveniences attending every one in a married state, and those in particular which they themselves have found by wofui experience ; often lamenting the great misfortunes of their younger years, in not having preferred a single life. And lastly, let them persist to use them in this manner, that their daughters may think of a religious state, being tired by leading such a life with their mothers."
+    },
+    {
+     "n": 76,
+     "k": 2,
+     "orig": "Cum filiis converaentur nostri familiariter, siquidem ad societatem nostram apti visi fyerint, introducantur opportune in collegium, et ostendantur, explicenturque illis ea, quoe quoquo modo grata futura, et ad societatem amplectendam invitatura creduntur, ut sunt horti, vineae, domus rurales, et praedia, ubi nostri sese recreant ; narretur illis itineratio ad di versa regna, communicatio cum principibus mundi, et quascumque juvenilem aetatem oblectant, in refectorio et cublculis exterior mundi ties, blanda conversatio inter nostros, regulae nostroe facilitas, cui tainen comprorriissa est gloria Dei. ordinis deiiique nostri super alios praeeminentia, et colloquia simul faceta cum piis commisceantur.",
+     "en": "Let our members converse familiarly with their sons, and if they seem fit for our turn, introduce them occasionally into the college, and let every thing be shown with the best face, to invite them to enter themselves of the order : as the gardens, vineyard, country-seats, and villas, where those of our Society pass an agreeable life; let them be informed of our travels into several parts of the . world, of our familiarity with princes, and whatever else may be agreeable to youth : let them see the outward neatness of our refectories and chambers, the agreeable intercourse we have one with another, the easiness of our rules, which yet has the promise of the glory of God ; and lastly, the pre-eminence of our order above all others ; not forgetting, amidst 86 SECRET INSTRUCTIONS OF THE JESUITS. 87 our discourses of piety, to entertain them also with pleasant and diverting stories. -"
+    },
+    {
+     "n": 77,
+     "k": 3,
+     "orig": "Moneantur quasi ex revelatione interdum ad religionem in genere, deinde caute insinuetur perfectio et commoditas nostree pr3e costeris ; exponanturque tuin in publicis exhortationibus, turn in prU vatis colloquiis, quarn sit grave contra vocationern divinam calcitrare, tandemque inducantur ad facienda exercitia spiritualia, ut de statu vitoe deligendo con cl ud ant.",
+     "en": "Let us now and then (as if by divine inspiration) exhort them to religion in general ; and then artfully insinuate the perfection and conveniences of our institution above others ; and take care to set in a due light, both in public exhortations and private discourses, how heinous a crime it is to resist the immediate call of God; and lastly, let them be soothed to the performance of spiritual exercises, to determine them in the choice of such a state of life."
+    },
+    {
+     "n": 78,
+     "k": 4,
+     "orig": "Procurent nostri ut hujumodi adolescentes instructores habeant societati addictos, qui continuo invigilent et hortentur ; si autem reluctentur, subtrahantur hinc inde aliqua, ut taedeo vitae afficiantur. Exponat mater difficultates familioe. Tandem, si non ita commode fieri possit, ut sua sponte animum ad societatem adjiciant, mittantur titulo studiorum ad remota societatis gymnasia, et ex parte matris pauca submittantur solatia, ex parte ver6 societatis adhibeantur lenocinia, ut affectum in nos tros transferant.",
+     "en": "We must also take care to provide for these youths tutors that are firmly attached to our interest; who must keep a strict eye over them, and continually exhort them to such a course of life; but should they seem reluctant, abridge them of some of their former liberties, that by such restraint they may become conformable. Let their mothers set forth the difficulties which the family labor under; and if, after all, they cannot be brought of their own accord to desire admission into the Society, send them to distant colleges belonging to the order, under the notion of keeping them closer to their studies; and from their mothers let them receive little countenance, but let our members make use of the most alluring behaviour, that their affections may be brought over to us. 88 SECRET INSTRUCTIONS «< OF THE JESUITS. 89"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "zk": "MS c. IX",
+   "titel": "Chapter IX",
+   "blurb": "De reditibus collegiorum augendis.",
+   "units": [
+    {
+     "n": 79,
+     "k": 1,
+     "orig": "Nemo quantum fieri poterit ad ultimam professionem admittatur, quarndiu successiones aliquas exspectet, nisi fratrem se juniorem habeat in societate. vel ob alias graves causas; in omnibus tamen et ante omnia consulendum est amplification! societatis secundiam fines superioribus notos, qui in hoe saltern conspirent, ut ecJesia ad majorem gloriam Dei pristine nitori restituatur, et totius cleri non nisi unus sit spiritus; quocirca frequenter inonendum est et passim pvomulgandum, societatem partim constare ex profess! i adeo mendicis, ut praeter largitiones quotidianas fidelium, careant omnibus omnino, partirn etiam aliis patribus pauperibus quidcm sed qui possident bona stabilia, ne sint in gravamen populi pro studiis ac functionibus suis, ut sunt casteri mendicantes; indeoque serio inculcent confessarii principum, rr.agnatum, viduarurn, et aliorum a qui bus societas mult urn sperare potest, ea qux hai\\c materiam, concernunt, ut dum spiritualia illis conferunt et divina, ad minimum terrena et temporalia ab illis recipiant, neque vix unquam oinittant occasiones recipiendi cum offertur. Si autem promissum fuerit et differatur, prudenter in mernoriam revocetur, quantum tamen fieri potest omnem affectum erga divitias dissimulando. Quod si qui ex confessariis sive magnatum sive aliorum ad hsec in praxin redigenda minus industrius videatur, tempori et caute amoveatur, alio in locum ens suffecto ; et si necessarium sit ad majorem pcenitentium satisfactionem, ad remotiora collegia relegetur, dicendo societatem plurimum illius persona ac talent'rs ibidem indigere. Nuper enim audivimus juvenes viduas immatura morte praeventas, negligentia nostrorum supellectilem valde pretiosam, templis societatis dicatam non legasse, e6 qu6d tempestive acceptata non esset ; neque est ad similia acceptanda tempus, sed bona poenitentium voluntas spectan da est.",
+     "en": "Never admit any person, if it can well be prevented, to his last degree, so long as he shall have an expectation of any estate falling to him, unless he has a brother in the Society who is younger than himself, or some other important reasons rerequire it; but above all things, and in every action, the increase of the Society must be regarded, for ends known to the superiors ; who in this point (no doubt) agree that, for the greater displaying of God's glory, the church should be restored to its ancient splendor by the perfect harmony of all its clergy. Wherefore let it frequently, in every place, be published, that the Society consists partly of professors so very poor, that, excepting the daily alms, of the faithful, they are entirely destitute of the common necessaries of life ; and partly by others, poor indeed, but possessed of some little matters, by help whereof they subsist, being, neither for their studies, nor the duties they perform, an incumbrance to the people, as other mendicants are. Therefore let confessors of princes, and noblemen, widows and others, (from whom our expectations may reasonably be large) with great seriousness inculcate this notion, that while we administer to them in divine and spiritual things, -they at least should, in return, contribute to us of their earthly and temporal : and let 8* 90 SECRET INSTRUCTIONS 3. Non negligant confessarii interrogare poenitentes suos (opportune tamen) de nomine, familia, OF THE JESUITS. 91 no opportunity ever be slipt of receiving from them whatever is offered : and if any thing be promised, and the performance delayed, take care to remind them thereof with prudence, and in such a manner . as may best conceal our love of riches. But should any confessors, either of noblemen, or others, seem the least negligent to put in practice these rules, let him, at a proper opportunity, be removed, and put another more fit in his room; and should it be necessary, for the greater satisfaction of the penitants, let him be sent to one of the most distant colleges, saying, that a person of his ability would be there of much greater service to the Society : for we have lately been informed that several young widows, being snatched away by sudden death, did not bequeath to us their valuable effects through the negligence of some members who did not take care to accept of them in due time; for in. getting these things, regard is not to be had to the time, but the good inclination of the penitent."
+    },
+    {
+     "n": 80,
+     "k": 2,
+     "orig": "Praelati, canonici, pastores, aliique opulenti ecc/esiastici industriis variis ad exercitia spiritualia sunt alliciendi, et paulatim sic mediante affectu ergares spirituales societati conciliandi, deinde eorum liberalitas paulatim prognosticanda.",
+     "en": "Let various wiles be used to draw prelates, canons, pastors, and other rich ecclesiastics to the exercise of spiritual acts, that through their affection for holy things, we may gradually gain them to the Society ; and by that means promise ourselves to be in some measure partakers of their liberality."
+    },
+    {
+     "n": 81,
+     "k": 3,
+     "orig": "Non negligant confessarii interrogare poenitentes suos (opportune tamen) de nomine, familia, affinibus, parentibus, amicis bonis dein spectare successiones illorum, statuin, intentioneni ac resolutionem ; quam si nondum sumpaerint societati favorabilem, oportebit persuadere ; qu6d si spes alicujus utilitatis prima fronte affulgeat, quia non expedit de omnibus simul interrogare. jubeantur sive titulo majoris elucidationis conscientise, sive pcenitentise medicinalis. hebdomatim confiteri, et honeste ab eodeni confessario invitentur, ut quod una vix inquirere non potuit, pluribus inquirat. Quod si successerit ex voto, si femina fuerit, ad persistendum in frequenti confessione et visitatione ; bi vir ad sodalitatem frequentandam, et familia'ritatem nostrorum, quoque modo inducatur.",
+     "en": "Confessors must remember to sift out of their penitents, at proper opportunities, what family, relations, parents, friends, and effects, they have ; 92 SECRET INSTRUCTIONS 5. Hectores collegiorum conabuntur habere no OF THE JESUITS. 93 then learn their reversions, state, intention, and resolution, which they must endeavor to mould in favor of the Society, if it be not so already. If, at first trial, we have prospect of advantage, (it being improper to pry into all things at once,) let the same confessor, under pretence of better clearing their conscience, or doing some soul-saving penance, strictly enjoin them to make weekly confessions: and gravely, and with a seeming honest intention, invite them to it, that he may have the better opportunity to propose the questions, at several times, which he could not so conveniently offer at once. The matter succeeding according to his wish ; if it be a female penitent, let all ways be tried to induce her to persist in frequent confessions, and constant attendance on the service of the church. If a male, to frequent the company of the members of our Society, and to endeavor to enter into a familiarity with them."
+    },
+    {
+     "n": 82,
+     "k": 4,
+     "orig": "Qua3 de viduis dicta sunt, eadem agenda circa mercatores, cives opulentos, et conjugates prole carentes, intelligantur ; a quibus non raro societas ex asse haereditatem acquiret, si prudenter has praxes execution! mandentur. Potissimum autem haec obaervanda erunt, circa opulentas devoterias nostros frequenkmtes, quas si non sint parentibus valde nobilibus natae tantum ad summum potent vulgus obmurmurare.",
+     "en": "What has been said, in relation to widows, must be made use of towards merchants, rich citizens, and married people who are childless ; whose entire estates the Society may often acquire, provided these rules be prudently put in practice : but, chiefly they must be observed with respect to rich female devotees, who often converse with our members ; upon whose account the common people can but grumble at most, unless they happen to be descended from very noble families."
+    },
+    {
+     "n": 83,
+     "k": 5,
+     "orig": "Rectores collegiorum conabuntur habere notitiam domorum, hortorum, praediorum, vicarum, pagorum, caeterumque bonorum, quae a primariis nobilibus, mercatoribus aut civibus possidentur, et si fieri potest, gravaminum ac redituum, quibus onerantur; sed caute id praestandum et efficacissime per confessionem, sodalitatem, ac privata colloquia. Quod si confessarius poenitentem divitem adeptus sit, continuo rectorem moneat, et omni modo fovere conetur.",
+     "en": "Let the rectors of colleges endeavor to pro94 SECRET INSTRUCTIONS OF THE JESUITS. 95 cure thorough information of the houses, gardens, farm*, vine-yards, villages, and other effects belong, ing to the prime nobility, merchants and citizens ; and (if possible) of the taxes and rents with which they are incumbered : but this may be done with caution, and most effectually at confessions, in familiar conversation, and private discourses. And whenever a confessor has got a rich penitent, let him immediately inform the rectors, and try all winning artifices to secure him."
+    },
+    {
+     "n": 84,
+     "k": 6,
+     "orig": "Porro summa rei in eo constiluenda est, quod nostri omnes apposite benevolentiam pcenitentium, et aliorum, quibuscum conversantur captare norint, et singulorum inclmationi se accommodare. Quapropter ad loca quae a divitibus et nobilibus inhabitantur, provinciates provideant ut multi m ittan tur ; ut provinciales id prudent! us ac felicius faciant, rectores <?e inesse illos accurate instruere suo tempore meminerint.",
+     "en": "But the whole success of our affairs turns chiefly on this point;, viz. That all our members, by studying a compliance with every one's humor, work themselves into the good graces of their penitents, and others they converse with ; to which end, where places are inhabited by the rich and noble, there let the provincials take care to send a considerable number: and that they may perform this with more prudence and success, let the rectors not omit giving them full instructions (as occasion requires) what a plentiful harvest is like to crown their endeavors."
+    },
+    {
+     "n": 85,
+     "k": 7,
+     "orig": "Inquirant etiam an contractus et possessiones, per receptiones filiorum in societatem, ad illam transire possint; et si fieri potest ex pi orent an bona aliqua sic per pactum aliquod conducta, vel aliter collegio cadere possint. ut post tempus societati cedant ad quem finem societatis necessitas, et gravamen debitor-urn omnibus praesertim magnatibus et divitibus'mtirnanda erunt.",
+     "en": "Let inquiry be made, whether, by taking their children into the order, their contracts and possessions may fall to the Society ; and if so, whether, should they enter into an agreement with us, any part of their effects could be made over to the college in such a manner, that it may, after a limited time, revert unto us ; and for the better success in 96 SECRET INSTRUCTIONS OF THE JESUITS. 97 this affair, let the necessities of the Society, and the load of debts they labor under, be particularly represented to the nobility arid those that are rich."
+    },
+    {
+     "n": 86,
+     "k": 8,
+     "orig": "Si contigerit viduas aut conjugates, divites nobis addictos tan turn habere filias, eas nostri blande dirigentad statuni devotoriuni. vel ad religionem monialium ; dote aliqua illis relicta, caetera societati paulatim acquirentur. Quod si filios habeant, qui societati apti erunt, ad illain allicientur, alii ad alias religiones, etiam certo minirno compromisso inducendi erunt. *Sed si filius unicus sit, quibuslibet modis ad societatern pertrahendus erit, eique metus omnis parentum ex animo removendus, et vocatio Christ! inculcanda est, ostendendo etiam Deo sacrificiuin gratissimum fore, si parentibus insciis et invitis aufugerit ; delude mittatur ad novitiatum remotum, praemonito prius generali. Quod si filios et filias habeant, prius filioe in monasterium vel statum devotiorurn dirigantur, dinde filii in societatein cum successione honorum pertrahantur.",
+     "en": "If it happen that the widows and rich married people, who are our friends, have daughterj only, let these be persuaded by our members to make choice of a religious life ; that a small for turn being left to them, the Society may, by degrees, get the rest into their possession: and if they have sons who are fit for our turn, let them be allured to us, and the others be enticed, by the promiseof small rewards, to enter themselves of different orders. But should there be an only son, let no means be omitted for the bringing him over to the Society, and freeing him from all fear of his parents ; let him be persuaded it is a call from above ; and shown how acceptable a sacrifice it would be to God, should he desert his parents without their know, ledge or consent; if this be effected, let him enter his novicate in a remote college, having first given information to the general. But if they happen to have both sons and daughters, let the daughters bo first disposed of in a nunnery ; and afterwards let the sons be drawn into the Society when they are got into possession of their sisters' effects."
+    },
+    {
+     "n": 87,
+     "k": 9,
+     "orig": "Superiores hujusmodi viduarum et conjugatorum confessarios suaviter et fortiter moneant, ut sese utiliter pro societate secundurn base moiiitu iinpendant ; quod si non feceririt, alii eoruin loco substittianter et ipsi removeantur, sic ut notitiam cum ilia familia fovere non possint.",
+     "en": "Let superiors earnestly, but with mildness, advise the confessors of such wido\\vs, and married people, to apply themselves industriously for the service of the Society, according to the instructions 98 SECRET INSTRUCTIONS OF THE JESUITS. 99 before laid down ; but if they will not act conformable thereto, let others be substituted in their places, and they removed a good way off, to prevent them from keeping up the least correspondence with any of the family."
+    },
+    {
+     "n": 88,
+     "k": 10,
+     "orig": "Viduae vel aliae personae devotas, quae viden_ tur magno affectu ad perfectionem tender e, inducantur ad hoc tanquam ad efficacissimum medium perveniendi ad apicern perfectionis, si omnes suas possessiones societati cedarit, et vivant annona sociekitis, quae ill is secundum, exigentiam continuo administrabitur, ut sine ulla cura ac sollicitudine Deo liberius serviant.",
+     "en": "Let the widows or other devotees, who sec with fervency to aspire at spiritual perfection, b brought to give up all they have to the Society, an.! be contented to live upon such allowance as we from time to time shall think they have occasion for ; that, by easing their minds of the cares and anxieties of worldly affairs, they may be more at liberty for the service of God."
+    },
+    {
+     "n": 89,
+     "k": 11,
+     "orig": "Ad persuadendam efficacius paupertatem societatls, superiores a ditioribus person is societati addictis mutuent pecunias sub chirographo, quarurn solutio differatur; deinde tempore morbi prcesertim periculosi talis persona constanter visitetur. et omni ratione praaveniatur, ut tandem moveatur ad redd end urn chirographum ; sic enim nostri non agnoscentur testamento, et interim nihilominuslucrabimur absque invidias uccedentium in bona morientis. .",
+     "en": "The better to convince the world of the Society's poverty, let the superiors borrow money on bond, of some rich persons who are our friends, and when it is due defer the payment thereof. Afterwards let the person who lent the money (especially in time of dangerous sickness) be constantly visited, and by all methods wrought upon to deliver up the bond ; by this means we shall not be mentioned in the deceased's will ; and yet gain handsomely without incurring the ill-will of their heirs."
+    },
+    {
+     "n": 90,
+     "k": 12,
+     "orig": "Conveniet etiam ab aliquibus personis pecuniam sub annuo reditu sum ere, et eamdem nummo altiori alibi constituere, ut reditus reditum compenaet ; interim enim fieri poterit, ut amici, qui pecunias sic mutuo dederunt, misericordia nostri moti, lucrum aut subinde etiam capitale, sive testamento, sive donatione inter vivos, societati cedant, dum collegia struantur, aut templa aedificantur.",
+     "en": "It will also be proper to borrow money of some at a yearly interest, and dispose of it to others at a higher rate, that the income on one hand may j more than answer the outgo on the other. For in ,J 100 SECRET INSTRUCTIONS. OF THE JESUITS. 101 the mean time it may happen that our friends, to whom we are indebted, compassionating the necessities of the Society, when they find us engaged in erecting of colleges, or building of churches, may by will, or donation in their life-times, forgive us the interest, and may be the principal."
+    },
+    {
+     "n": 91,
+     "k": 13,
+     "orig": "Utiliter etiam societas sub nomine mercatorum divitum nobis addictorum negotiari poterit ; sed respiciendum certum ac copiosum lucrum, etiam in Indiis, quae societati non tantum animas, verum etiam opes multas hactenus, Deo favente, subministrarint.",
+     "en": "The Society may also advantageously traffic under the borrowed names of some rich merchants, our friends ; but never without a prospect of certain and abundant gain; and this may be done even to the Indies, which hitherto, by the bountiful favor of God, have furnished us not only with souls, but also plenteously supplied our coffers with wealth."
+    },
+    {
+     "n": 92,
+     "k": 14,
+     "orig": "Procurent nostri habere in locis ubi resident, medicum aliquem societati fidelem, quem apud aegros prae caeteris praecipue commendent et extollant; ut vicissim ipae nostros prae caeteris religiosis commendans, efficiat ut passim apud primarios aegrotos et praesertim moribundos vocemur.",
+     "en": "In whatever places our members reside, let them never omit to provide a physician who is firm to the interest of the Society : him let them recommend to the sick, and prefer before all others ; that he, in return, by extolling our Society above all other religious orders, may occasion us to be called to all persons of distinction, when afflicted with sickness, but chiefly to such as are past hopes of recovery."
+    },
+    {
+     "n": 93,
+     "k": 15,
+     "orig": "Confessarii sint assidui in visitandis aegris, potissimum qui periclitantur, et ut alios religiosos ac ecclesiasticos inde honeste eliminent, procurent .superiores, ut tempore illo quo confessarius discedere cogitur ab aegroto. continuo alii succedant, et aegrotum in bonis propositis foveant ; interim incu tiendus erit prudenter horror inferni, etc,, ad minimum purgatorium, demonstrandumque, quod sicut aqua cxstinguit ignem, sic eleemosyna extinguit peo caturn ; nusquam autem meliiis eleemosynas impend! posse quam in hujus modi personarum alimentum ac subsidium qui ex vocatione sua profitentur charitatern erga salutem proximi ; sic enim illius parti cipes faciendos, et satisfacturos aegrotos pro peccatis propriis, quia charitas operiit multitudinem peccatorum ; describi potest quoque charitas, tanquam vestis ilia nuptialis, sine qua nemo admittitur ad mensam coelestem. Denique ex scriptura et sanctis patribus alleganda erunt, quae, respectu habito ad capacitatem segroti, efficacissima judicabuntur ad ilium permovendum.",
+     "en": "Let the confessors be constant in visiting the sick, but especially such as are thought to be in danger; and that the ecclesiastics and members of other orders may be discarded with a good pretence, let the superiors take care that when the confessor is obliged to withdraw, others may immediately succeed, and keep up the sick person in his 9* 102 SECRET INSTRUCTIONS OF THE JESUITS. 103 good resolutions. At this time it may be advisable to move him by apprehensions of hell, &c. at least of purgatory ; and tell him, that as fire is quenched by water, so sin is extinguished by acts of charity ; and that alms can never be better bestowed than for the nourishment and support of such who by their calling profess a desire to promote the salvation of their neighbor. Thus will the sick become partakers. of our merit, and by it atone for the sins they have committed ; for charity covers a multitude of sins. This virtue may be also represented to them as that wedding garment, without which no one is admitted to the heavenly feast. Next let some passages be quoted out of the sacred writ, and holy fathers, which (regard being had to the sick person's capacity) shall be judged most proper for persuading him to a compliance."
+    },
+    {
+     "n": 94,
+     "k": 16,
+     "orig": "Mulieres conquerentes de vitiis aut molestiis suorum maritorum, doceantur subtrahere secreto summatn aliquam pecunise, illamque Deo offerre pro expiandis peccatis maritorum et impetranda ill is gratia.",
+     "en": "Lastly, let the women who complain of the vices or ill-humor of their husbands, be instructed secretly to withdraw a sum of money, that by mak. ing an offering thereof to God, they may expiate ' the crimes of their sinful help-mates, and secure a pardon for them."
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "zk": "MS c. X",
+   "titel": "Of the private rigor of discipline in the Society.",
+   "blurb": "De disciplinae hujus rigore privatae in societate.",
+   "units": [
+    {
+     "n": 95,
+     "k": 1,
+     "orig": "Dimittendus erit quilibet vel cnjusvis coixlisionis vel setatis, alio colore quaesito tanquam hostis societatis, qui devotas nostras vel alios amicos alienaverit a ternplo nostro vel frequentatione nostrorum, aut eleemosynas ad alia templa, vel religioso diverterit, vel alicui opulento, aut bene societati congruo iliam dissuaserit ; turn etiam qui circa ternpus, quo de bonis propriis disponendum erat, affecturn erga consanguineos potius quam erga societatem, ostenderint ; hoc enim magnum immortificati animi signum est, et convenit professos esse plane mortificatos, item qui eleemosynas a pcenitentibus aut aliis amicis societatis ablatas ad consanguineos suos pauperes diverterint. Ut autem de causa dimissionis suse postea. non conqueraritur, non dimittantur statira, sed prohibeantur primo ab audiendis confessionibus, mortificentur et vexentur exercitiis vilissimorum officiorum ; cogantur ad ea in dies praestanda a qui bus aversionem maximam habere cognoscuntur ; removeantur ab altioribus studiis ac honorificis muniis ; urgeantur capitulis ac reprehensionibus publicis ; arceantur a recreationibus, et conversatione externorum ; subtrahantur in vestibus, aliisque utensilibus, ea quae omnin6 necessaria non sunt, donee ad murmurationem et impatientiam inducantur, et tune tan quam nimis immortificati, et aliis malo exemplo perniciosi dimittantur ; et si ratio dimissionis parentibus aut praelatis ecclesiae danda sit, dicantur non habuisse spiritum societatis.",
+     "en": "Whoever hath alienated our female devotees or other friends, from our churches, or frequent con104 SECRET INSTRUCTIONS OF THE JESUITS. 105 verse with our members : whoever hath withdrawn alms to other churches or orders, themselves, or persuaded the rich and well-inclined to us, to do it ; whoever, at the time of disposal of their effects, hath shown a greater affection to their near relations, than to the Society : (a plain demonstration of an umnortified mind, and directly contrary to the thorough mortification enjoined professors :) whoever hath converted the alms of penitents, or of other of our friends, to the use of their own necessitous kinsfolks : let them all be discarded, as enemies to the Society, of what age or condition soever they be ; yet for this, let some other pretence be alleged. But to prevent their making complaint of this usage, let them not be expelled immediately, but first be restrained from hearing confessions, be plagued and perplexed with exercise of the most servile offices ; be obliged to perform such duties, to which it isevident they have an utter aversion ; let them be removed from higher studies and honorable employments, and harassed with chapters and public censures, let them be debarred of recreations, and conversation with strangers, and be denyed, in dress and every thing else, whatever is not absolutely necessary ; till by such rigorous methods of chas. tisement, they become impatient, and murmuring against us ; let them then be1 dismissed, as persons not duly mortified, whose bad example may be pernicious to others; and if the reason of their expulsion be required by their parents, or the prelates of 106 SECRET INSTRUCTIONS Qualiter se nostri unanimiter proestabunt contra dimissos £ societate. OF THE JESUITS. 107 the church, let them be represented as not having the true spirit of the Society."
+    },
+    {
+     "n": 96,
+     "k": 2,
+     "orig": "Dimittendi insuper erunt qui scrupulum fecerint in acquirendis societatl bonis dicanturque esse mmium proprio judicio addicti. Quod si apud provinciales rationem facti sui reddere voluerint, non audiantur, sed urgeantur ad regulam quae omiies obligat ad caecam obedientiam praestandam.",
+     "en": "Let such also be dismissed who make a scruple of acquiring riches for the Society, and set forth as persons too much in love with their own opinions : and if they desire to give an account of their actions before the provincials, let them not be heard, but compelled to conform themselves to the statute, which commands implicit obedience from all."
+    },
+    {
+     "n": 97,
+     "k": 3,
+     "orig": "Reflectendum erit ab initio et a teneris, quinam maxime in affectu erga societatem proficiant, qui autem afTectum erga alios ordines, aut pauperes, aut parerites tenere deprehenduntur, cum sint futuri inutiles, modo supra dicto, paulatirn ad di mission em disponantur.",
+     "en": "Let us observe, from the first entrance, and even from their tender years, who they are that make the greatest advances in their affection for us : and let such as are found to retain a love, either for other orders, the poor, or their parents, be by little and little, disposed for dismission, according to the method already mentioned, since they are not likely to prove of any service to the Society."
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "zk": "MS c. XI",
+   "titel": "How our members are unanimously to behave towards those who are expelled the Society.",
+   "blurb": "Qualiter se nostri unanimiter praestabunt contra dimissos e societate.",
+   "units": [
+    {
+     "n": 98,
+     "k": 1,
+     "orig": "Quoniam demissi saltern all quorum secretorum conscii sunt, plerumque obsunt ; ac proinde eorum conatibus obviandum erit his modis : antequam e societate dimittantur, inducantur ut peomittant scripto, et jurent se nihil de societate unquam sinistri scriptures vel dicturos. Interim superiores servent scripto malas inclinationes, defectus ac vitia illorum, quae ipsi aliquando in manifestation e conscientiae pro more societatis dederunt, quibus si necesse fuerit, societas apud magnates et praelatos ad illorum promotionem impediendam se juvare poterit.",
+     "en": "Since those that are dismissed, do frequently very much prejudice the Society by divulging such secrets as they have been privy to; their attempts must therefore be obviated in the following manner. Let them be prevailed upon? before they are dis108 SECRET INSTRUCTIONS OF THE JESUITS. 109 missed, to give it under their hands, and swear that they never will, directly or indirectly, either write or speak any thing to the disadvantage of the order; and let the superiors keep upon record the evil inclinations, failings and vices, which they, according to the custom of the Society, for discharge of their consciences, formerly confessed : this, if ever they give us occasion, may be produced by the Society, to the nobility and prelates, as a very good handle to prevent their promotion. II."
+    },
+    {
+     "n": 99,
+     "k": 2,
+     "orig": "Scribatur quamprimum per collegia, quinam dirnissi sint, exaggerenturque causae dimissionis generales, immortificatio animi, inobedientia, parvus affectus erga exercitia spiritualia, propriura judicium, etc. Deinde moneantur alii omnes ne cum illis ulla ratione correspondeant ; et si ab externis de demissi§ mentio fiat, loquantur omnes uniformiter, et passim dicant, societatem neminem dimittere sine gravibus causis, ejicere instar maris cadavera, etc. Insinuentur etiam caute hujus modi causos, propter quas odio habemur, ut plausibilior sit dimissio.",
+     "en": "Let it be immediately published through all our colleges, that such and such are dismissed; and let the general causes of their expulsion (such as an unmortified mind, disobedience, disaffection for spiritual exercises, an obstinate adherence to their own opinions, &c.) be highly aggravated. In the next place, let all be advised to keep no correspondence with them upon any account whatsoever. And if strangers should happen to make any mention of them, let all our members unanimously affirm, in every public place, that the Society expels none without weighty causes; spewing out, as the sea, all its dead .carcasses, &c. and let such causes also be artfully insinuated, which have occasioned us any ill-will, that their ejectment may appear to the world with a more commendable grace."
+    },
+    {
+     "n": 100,
+     "k": 3,
+     "orig": "In domesticis exhortationibus persuadeatur dimissos esse plane inquietos, et continue societa* tern repetre ; exaggerenturque infortunia eorum qui post dicessum a societate male perierunt.",
+     "en": "In private exhortations, at people's houses, let those be represented as persons very turbulent, and continually importuning a re-admission into the 110 SECRET INSTRUCTIONS OF THE JESUITS. Ill Society. And let their sad fate be industriously aggravated, who, after exclusion, have happened to come to an untimely or miserable end."
+    },
+    {
+     "n": 101,
+     "k": 4,
+     "orig": "Obviandum etiam erit accusaionibus, quas demissi e societate facere possent, per auctoritatem virorum gravium, qui passim declarent societatern neminem sine gravi causa dimittere, neque praescindere sana membra ; quod confirmari potest per zelum quem habet, et generatim ostendit societas erga animas externorum, quanto magis erga domesticos suos.",
+     "en": "Whatever accusations these bring against us, let them be oppugned by the authority of some grave members, who must every where declare that the Society dismisses none but upon very good reasons, nor ever lops off members that are sound ; this must be confirmed by the zeal and concern we show for the souls of all strangers in general : how much greater must it therefore be for those who are members of our order?"
+    },
+    {
+     "n": 102,
+     "k": 5,
+     "orig": "Deinde hujusmodi magnates aut praelati, apud quos dimissi aliquid auctoritatis aut fidei sibi conciliare cceperint, omni genere beneficiorum a societate praeveniendi sunt, ac obstringendi ; explicandurn illi's quomodo bonum commune unius religionis tarn Celebris, quam utilis ecclesias, praeponderare debeat bono privato qualiscumque personoe; quod si affectus erga dimissos perseveret, juvabit causas dimissionis exponere, et exaggerare etiam quas non adeo certa sunt, modo per probabilem consequent! am deducantur.",
+     "en": "In the next place, let the Society, by all manner of obligations, endeavor to prevail upon the noblemen and prelates with whom the dismissed may have any credit or authority, to deny them their countenance ; and let it be shown that the common good of an order, which is as famous as it is useful to the church, should always be preferred to the private advantage of any particular person whatsoever ; and should they still retain an affection for them, it will then be of importance to lay open the causes of their expulsion, and even to aggravate them with those we have no positive proof of, so they can but be deduced by probable consequence."
+    },
+    {
+     "n": 103,
+     "k": 6,
+     "orig": "Omni modo praecavendum erit, ne praesertim ii, qui sua sponte societatem deseruerunt, promoveantur ad aliqua officia aut dignitates ecclesise, nisi se suaque omnia societati submiserint et addixerint, ita ut omnibus constare possit quod a societate omnino depend ere velint.",
+     "en": "Let all possible care be taken to hinder the promotion of such to offices and preferments in the church, who of their own accord have relinquished 112 SECRET INSTRUCTIONS OF THE JESUITS. 113 the Society ; unless they submit themselves, and all they have in the world, to our disposal, in such a manner that it may plainly appear to every one they are willing to have their whole dependance on us."
+    },
+    {
+     "n": 104,
+     "k": 7,
+     "orig": "Procuretur tempori ut ab exercitio fonctionum celebriurn in ecelesia, ut sunt coneiones, confession es, evulgationes liborcm, etc., quantum fieri potest sint remoti, ne affectum et pluusum vulgi ubi concilient. Eo fine diligentissime in vitam ac mores illorum. erit inquirendum, necnon in sodalitm, occupationes, etc., et intentiones dimissi. Quocir.-a efficiendum erit, ut cum aliquo e familia ilia, quam dimissi incolunt, nostri peculiarem correspondentiam habeant. Quamprimum autem quidpiam minus laudabile, aut censura dignum deprehensum fuerit, per personas inferioris ordinis nobis addictas in vulgus dispergatur, deinde magnates vel praelatos, qui dimissos fovent, futura3 inflimise indiciis teneantur. Quod si nihil committant reprehensione dignum, et laudabiliter se gerant, extenuentur argutis propositionibus, ambiguisque verbis eorum virtutes, operaque quae commendantur, donee eestimatio et fides qua3 antea illis adhibebatur, imminuatur ; societatis enim plane interest, dimissos et praesertim eos, qui earn sua sponte deseruerunt, prorsus supprimi.",
+     "en": "Let them (as far as is possible) be timely removed from the exercise of honorable functions in the church, such as preaching, confessing, and publishing of books, &o. lest by these means they attract the affection and applause of the people. The strictest inquiries must therefore be made into their lives, manners, and conversations, what they apply themselves to, and their very intentions : to which end, matters must be so managed, that we may keep up a good correspondence with some of the family in which they live, and the minute the least trip be discovered, or any thing deserving censure, let it be industriously spread abroad in the wrorld by some of the lower rank of people, who are our friends, that so the noblemen or prelates may be restrained from showing them any farther countenance, for fear of the scandal it may bring upon themselves ; and should they behave so as to leave us no room to find fault, let their virtues and laudable actions be depreciated by subtile insinuation and doubtful •expressions ; till the esteem and credit they had formerly acquired be lessened in the opinion of the world ; for it is altogether for the interest of the Society, that the dismissed, especially such as of their own accord desert it, should be entirely kept under. 10* 1 14 SECRET INSTRUCTIONS OF THE JESUITS. 115 YIII."
+    },
+    {
+     "n": 105,
+     "k": 8,
+     "orig": "Infortunia et eventus sinistri, qui illis accidunt, quampriiniim divulgandi sunt, imploratis tamen precibus personarum piarum, ut nou credantur nostri expassione procedure ; domi vero omnibus modis exaggerentur, ut alii contineantur.",
+     "en": "Let the misfortunes, and unlucky accidents which happen to them, be immediately published ; but with entreaties for the prayers of good Christians, that the world may not think we are hurried away by passion : but, among our members, let these things, by all means, be represented in the blackest colors, that the rest may be the better secured."
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "zk": "MS c. XII",
+   "titel": "Chapter XII",
+   "blurb": "Quinam conservari ac foveri in societate debeant.",
+   "units": [
+    {
+     "n": 106,
+     "k": 1,
+     "orig": "Primum locum tenere debent strenui operarii, qui, scilicet, non minus temporal e quam spirituale societatis bonum promovent, quales sunt plerumque confessarii principum ac magnatum, viduarum et devotarum opulentarum, concionatores et professores, et quicumque horum secretorum sunt conscii ;",
+     "en": "Let diligent laborers, whose industry is equally bent on promoting the temporal, as the spiritual interest of the Society, be always held in the greatest esteem; of which sort are (generally speaking) confessors of princes and noblemen, of widows and rich t female devotees, preachers, professors, and whoever are privy to these secret instructions."
+    },
+    {
+     "n": 107,
+     "k": 2,
+     "orig": "Corruentes viribus et defecti setate, secundum quod talenta sua pro bono societatis temporal i impenderunt, adeo ut habeatur decens ratio messis prasteritae ; praeterquam quod adhuc apta instrumenta sint ad deferendos superioribus defectus ordinarios quos in reliquis domesticis, cum perpetuo domi sint animadvertunt.",
+     "en": "The impaired in strength, and decrepid with age, must be next considered, according as they have employed their several talents for the temporal advantage of the Society ; that a greatful regard may be shown to their past labors, and because they may also (remaining always at home) be made use of, to pry into the actions of the other domestics, and communicate to the superiors a faithful account of whatever miscarriages they shall be guilty of. 116 SECRET INSTRUCTIONS OF THE JESUITS. 117"
+    },
+    {
+     "n": 108,
+     "k": 3,
+     "orig": "Dimittendi illi nun qua in erunt quantum fieri poterit, ne societas male audiat.",
+     "en": "These should scarce ever be dismissed, least we bring an ill reputation upon the Society."
+    },
+    {
+     "n": 109,
+     "k": 4,
+     "orig": "Prxterea, fovendi quicumque ingenio, nobilitate, atit divitiis excellunt, praesertim si amicos et consanguineos societati addictos habeant et potentes, et revera ipsi sincere affectu erga societatem sint, secundum explicationem supra datam. Mittendi illi Romam, vel ad universitates celebriores ut studeant ; si autem in provincial studuerint, peculiari affectu et favore professorum sunt promovendi. Quoadusque cessionem bonorum suorum fecerint? societati, nihil illis denegetur, sed postquam illam fecerunt, mortificentur, ut caeteri, sempert amen respectu aliquo habito ad praeterita.",
+     "en": "Besides these, let all be caressed who are distinguished either for their parts, nobility or riches, especially if they have friends or relations who are firm to our interests, possessed of power, and have given convincing proofs of a sincere affection towards us, according to themethod before laid down. Let these be sent to Rome, or some other famous universities, to prosecute their studies; but if their inclinations lead them to do this in the province, let them be encouraged by the particular affection and favor of the professors, till they have surrendered to us their effects let nothing be denyed them; but, when once we have got them to do this, oblige them then to mortification, like the rest, but not without having a little regard to their past beneficence."
+    },
+    {
+     "n": 110,
+     "k": 5,
+     "orig": "Erit etiam ratio peculiar is eorum apud superiores, qui selectos aliquos juvenes ad societatem allexerint quando quid em affectum suum erga societatem non par urn testati sunt ; sed quamdiu illi noridum professi sunt. videndum ne nimium illis indulgeatur, ne forte fortuna, quos ad societatem add uxe runt, reducant.",
+     "en": "Let the superiors also show a particular respect to such as have allured any clever youths into the Society ; since this is no trifling testimony of their affection for us: but till these are professed, care must be taken not to give those too great in diligence, for fear they should carry away again those very persons they brought to us. 118 SECRET INSTRUCTIONS 5. Munusculis ac privilegiis variis, setati illorum OF THE JESUITS. / 119"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "zk": "MS c. XIII",
+   "titel": "How to pick out young men to be admitted into the Society, and in what manner to retain them.",
+   "blurb": "De delectu juvenum in societatem admittendorum et modo retinendi.",
+   "units": [
+    {
+     "n": 111,
+     "k": 1,
+     "orig": "Summa prudentia contendendum est, ut diligantur juvenes ingenio bono, forma non contemnencla, genere nobiles, aut quod minimum horum all quo excel 1 en tes.",
+     "en": "Let us endeavor, with the utmost prudence, to pick out young men, of a good genius, an agreeable personage, and noble family, or at least such as excel in some one of these."
+    },
+    {
+     "n": 112,
+     "k": 2,
+     "orig": "Ut facilius ad institutum nostrum pertrahantur, peculiari affectu quamdiu student a praefectis scholarum et magistris sunt praeveniendi ; extra tempora scholae ab iisdem sunt instruendi, quam gratum Deo sit, si quis illi se, et sua omnia, praesertim in societate filii sui, consecret.",
+     "en": "That they may, with greater ease, be drawn to us, let the masters who have the care of their instruction, both during, and also after school-time, by a particular mildness, prepossess them in our favor, and insinuate how acceptable an offering it is to the Almighty, when any one dedicates himself, and all that he has, to him ; especially in the Society of his Son."
+    },
+    {
+     "n": 113,
+     "k": 3,
+     "orig": "Ducantur occasione data per collegium et hortum, irno aliquando etiam ad villas, et cum nostris veraentur tempore recreationum, et paulatim fami Hares fiant, cavendo tamen ne familiaritas pariat contemptum.",
+     "en": "At proper opportunities, let them be entertained in our colleges and gardens, and sometimes at our country-seats ; let them accompany our members at times of recreation, and by little and little\" be drawn into a familiarity; but, however, with such proper cautions as may prevent its breeding in them contempt."
+    },
+    {
+     "n": 114,
+     "k": 4,
+     "orig": "Non permittantur castigari, et in ordinern re digi a praeceotoribus cum aliis discipulis.",
+     "en": "Let not their masters be allowed to chastise, nor keep them in subjection as the other scholars."
+    },
+    {
+     "n": 115,
+     "k": 5,
+     "orig": "Munusculis ac privilegiis variis, aetati illorum conformibus, divinciendi sunt, et maxime colloquiis spiritualibus sunt animandi.",
+     "en": "Let them be allured, by little presents, and indulgence of liberties agreeable to their age ; and, 120 SECRET INSTRUCTIONS OF THE JESUITS. 121 above all, let their affections be warmed with spiritual discourses."
+    },
+    {
+     "n": 116,
+     "k": 6,
+     "orig": "Inculcetur illis hcec fieri dispositione divina, tanquam ad societatern electis prae tot aliis idem gy mnasiuin frequentantibus.",
+     "en": "Let it be inculcated, that their being chosen out of such a number, rather than any of their fellow-collegiates, is a most pregnant instance of divine appointment."
+    },
+    {
+     "n": 117,
+     "k": 7,
+     "orig": "Aliisoccasionibus, pncaertim exhortationibus, terrendi sunt minis damnationis seternae, nis divinae vocationi obtemperent.",
+     "en": "On other occasions, but especially in exhortations, let them be terrified with denunciations of eternal punishment, unless they accept of the heavenly invitation. VII f."
+    },
+    {
+     "n": 118,
+     "k": 8,
+     "orig": "Si sociatatem ingredi constantcr petant, differatui* illorum aclmissio, quamdiu constantes marient ; qujd si mutabiles appareant, quamprimum et omnibus modis foveantur.",
+     "en": "The more earnestly they desire admission into our Society, the longer let the grant of such favor be deferred, provided at the same time they seem stedfast in their resolution; but if their minds appear to be wavering, let all proper methods be used for the immediate firing of them."
+    },
+    {
+     "n": 119,
+     "k": 9,
+     "orig": "Admoneantur efficaciter ne ulli familiari sue, et ne quidem par en ti bus vocationem suam aperiant, priusquam admissi sint. Quod si deinde aliqua illos tentatio resiliendi superveniat, in integro turn ipsi, turn societas erit, et si ilia superata fuerit, semper erit occasio illos rememoratione ejusdem postea animandi si tcmpore novitiatus, aut post emissa vota simplicia obveniat.",
+     "en": "Let them be strictly cautioned not to make the least discovery of their call to any intimate friends, not even so much as to their parents, before they are become one of us : that if afterwards any temptation to fall off, arises, both they and the Society will be wholly at their liberties ; and should we get the better of such inclinations, it will always be a handle, from their past irresolution, to stir them up to a firmer perseverance for the future, if this happens while they are novices, or after they have made but simple vows."
+    },
+    {
+     "n": 120,
+     "k": 10,
+     "orig": "Quia ver6 maxima difficultas est in alliciendis mngnatum, nobilium senatorum filiis, quandiu apud parentes sunt, qui illos, ad succedendum illorum officiis educant, persuadendum illis per amicos potius quam per personas societatis, ut illos in aliis provinciis, et remotis universitatibus collocent, in quibus nostrl docent, praemissis instructionibus ad professores de qualitate et conditionibus illorum, ut afftfCtum. illorum, societati facilius et certius concilient.",
+     "en": "But since the greatest difficulty occurs in 122 SECRET INSTRUCTIONS drawing in the sons of noblemen, persons of distinction, arid senators, while they are under the wing of their parents, who endeavor to train them up to succeed in their employments ; let our friends, rather than members, persuade them to send their children into other provinces, and remote universities, wherein some of our order are tutors ; private instructions, concerning their quality and condition, being first transmitted, that they may be the better enabled, by touching upon right strings, to secure their affection to the Society."
+    },
+    {
+     "n": 121,
+     "k": 11,
+     "orig": "Quando ad setatem aliquo modo maturam pervenerint, inducendl erunt ad facienda aliqua exercilia spiritualia, quae in Gernianis et Polonis saepe bonum successum habuerunt.",
+     "en": "When they are more advanced in age, let them be enticed to the performance of some spiritual exercises, this method having been attended with very good success among the Germans and Polanders."
+    },
+    {
+     "n": 122,
+     "k": 12,
+     "orig": "Perturbationibus et afflictionibus illorum occurrenduiTi erit, pro qualitate et condilione uniuscujusque adhibitis demonstrationibus, et exhortationibus privatis de malo siiccessu divitiarum, etbono vocationis non contemnendo sub poena infernalis.",
+     "en": "In troubles and afflictions we must administer comfort to every one according to their several qualities and conditions, by laying before them how often riches are a curse to the possessors, and privately exhort them not to contemn the call of God, the doing which exposes the offender to no less a penalty than that of hell-fire."
+    },
+    {
+     "n": 123,
+     "k": 13,
+     "orig": "Apud parentes ut facilius fill or um suorurn desiderio in societatem ingrediendi condescendant, ostendatur excellentio instituti sooietatis, prae aliis religionibus, sanctitatis, et doctrinae patrum nostrorum, sestimatio Integra apud omnes, honor et applausus universalis, qui socletatis a summis et a minimis defertur; et recenseatur numerus principum et magnatum, qui magno anirni sui solatio in bac societate Jesu vixerunt, et mortui simt, et tiain niinc vivunt. Ostendatur quam gratum Deo sit quod juvenes sese illi mancipent, praesertim in societate filiii sui, et quam bonum sit viro, cum porfeiverit jugain Domini ab adolescentia sua. Quod si de teneritudine et minus perfecta cetate disceptetur, declaretur facilitas instituti nostri quod praeter trium votorum obaervationem, nihii aliud quod value molestum sit continet, et quod valde spectan dum est, nullam regulam obligare, ne quidem sub peccato veniali.",
+     "en": "That parents may more readily condescend to their sons desires of becoming members of our Society, it will be highly expedient to extol the excellence of its institutions, in comparison of that of all other orders; the sanctity and learning of our 124 SECRET INSTRUCTIONS * OF THE JESUITS. 125 brethren, the unspotted character they maintain among all, and the universal honor and applause they meet with every where, from persons of all qualities and degrees. Let an enumeration be made of the princes and noblemen, who, to the great comfort of their souls, lived in this Society of Jesus, and are dead, and yet live. Let us show that nothing is more pleasing to God, than that young men should devote themselves entirely to him, especially as companions in the Society of his Son ; and that it is one of the greatest felicities, for a man, from his youth, to bear the yoke of the Lord : but if any difficulties be started, by reason of the tenderness of their age, let the easiness of our institution be explained, which contains nothing in it very difficult to be observed, except the keeping of three vows ; and (which is very remarkable) not any one rule, whose non-observance would be the commission even of a venial sin."
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "zk": "MS c. XIV",
+   "titel": "Of reserved cases, and causes of dismission frork the Society.",
+   "blurb": "De casibus reservatis, et causa dimittendi e societate.",
+   "units": [
+    {
+     "n": 124,
+     "k": 1,
+     "orig": "Praeter casus expressos in constitutionibus, a quibus solus superior aut confessarius ordinarius, cum ejus licentia, absolvere poterit, sunt sodomia, mollities, fornicatio, adulterium, stuprum, tactus impudicus maris aut feminoe, prteterea, si quis quacumquezeli causa aut occaslone quomodolibet quidquam grave moliatur contra societatem, ej usque lionorem aut utilitatem, quae etiani omnes sunt justae causae dimissionis.",
+     "en": "Besides the cases already mentioned in our statutes, in which the superior only, or the ordinary confessor, by his authority, has power to absolve ; 11* 126 SECRET INSTRUCTIONS OF THE JESUITS. 127 there are others, namely, sodomy, effeminacy, fornication, adultery, uncleanness, unseemly commerce with man or woman ; the commission also of any heinous offence against the Society, its honor or in* terest, whether through zeal or otherwise ; all which also are just causes of expulsion. IT."
+    },
+    {
+     "n": 125,
+     "k": 2,
+     "orig": "Quod si quis aliquid hujusmodi confiteatur sacramental iter, non prius absolvatur, quam promiserit se extra confessionem superior! manifestatururn per se, vel per confessarium ; turn superior concludet, pro bono communi societatis, quod melius videbitur ; et si certa spes \"sit criminis occultandi, conform! poenitentia plectendus erifc, sin vero quamprimum dimittendus ; caverit sibi iterim confcssarius dicere poenitenti ilium periclitari de demissione.",
+     "en": "But if any one at the sacrament confess sins of this kind, till promise be made, out of confession to discover them to the superior, either himself, or by his confessor, let not absolution be given him ; and then let the superior take such resolutions as shall tend most to the common good of the Society, but if there be hopes of smothering the crime, let it then be punished with an adequate penance : but if not, let him, as soon as possible, be expelled ; let the confessor however be always very cautious not to inform the penitent that he is in danger of it."
+    },
+    {
+     "n": 126,
+     "k": 3,
+     "orig": "Si quis ex nostris confessariis audiverit ab aliqua persona externa, quod cum aliquo e societate rem turpem commiserit, non earn prius absolvat, quam extra confessionem aperuerit nomen illius cum quo peccavit; quod si dixerit, adhuc non absolvatur, nisi jurejurando se obstrinxerit se riunquam id ulli mortal! um revelaturum sine conaensu societatis.",
+     "en": "If it come to the ear of any of our confessors, that a strange woman has had to do with a member of the Society; let her not be absolved before she has discovered his name, out of confess ion ; and even when this is done, let her by no means receive absolution till she has further obliged herself, by an oath, never to reveal it to any one living without our consent."
+    },
+    {
+     "n": 127,
+     "k": 4,
+     "orig": "Si duo ex nostris carnal iter peccaverint, si prior manifestaverit, in societate retineatur, alter dimittatur; sed deinde si qui detinetur ita mortificetur et undequaque affligatur, ut prae taedio et impatientia occasionem det dimissioni, quee statim arripiatur.",
+     "en": "If two of our members have carnally sinned, let the first that discovers it be retained, and the 128 SECRET INSTRUCTIONS OF THE JESUITS. 129 other expelled : but let him that stays with us be mortified and plagued with such intolerable discipline, that we may drive him to commission, of some fresh offence which will afford a good handle for spewing him out; and the first time it offers, be sure to lay hold on it."
+    },
+    {
+     "n": 128,
+     "k": 5,
+     "orig": "Poterit etiam societas, cum sit corpus nobile et praestans in ecclesia, a se praescindere hujusmodi personas, quae ad instituti nostri executionem minus idonese videbuntur, quamvis initio satisfecerint, et facile) invenietur occasio ; si, nempe continue vexehtur, et omnia fiant contra illorum inclinationem, subjiciantur superioribus tetricis, arceantur a studiis ac functionibus honorificentioribus, etc., donee obmurmurent. G.",
+     "en": "As the Society is a body, both noble and excellent in the church, it has authority to lop off such members, who, though at their entrance they might seem fit for our purpose, should afterwards prove unqualified for the execution of our designs. To effect this, a method may easily be found, to wit, by continually using them hardly, and doing every thing contrary to their inclinations ; by subjecting them to severe superiors; and by forcing them from the more honorable studies and functions, till they begin to murmur against such usage."
+    },
+    {
+     "n": 129,
+     "k": 6,
+     "orig": "Retinendi etiam nullatenus sunt, qui aut superioribus palam insurgunt, aut palam aut clam apud socios, ac potissimum externos conqueruntur ; item qui apud domesticos vel externos mod urn agendi societatis, quoad acquisitionem aut administrationem bonorum temporalium condemnant, vel alias rationes agendi, verbi gratia, conculcandi ac supprimendi male affectos erga societatem, vel dimissos. etc., qui Venetos, Francos, aut alios a quibus societas pulsa, et gravia damna passa est, in colloquiis ferunt aut defendant.",
+     "en": "Nor let such by any means be retained as either openly oppose their superiors, or, in public or private, make complaints against them to their fel low-members, but especially to strangers ; or such as condemn, to their associates, or strangers, the conduct of the Society in the amassing or management of temporal goods, or any other of our methods of proceeding ; as for instance, our suppressing, and keeping under all either disaffected to, or expelled from our order, &c. or that admit in conversation, or defend the Venetians, French or others, who by 130 SECRET INSTRUCTIONS OF THE JESUITS. 131 hindering us from getting a footing among them, have done the Society intolerable damages."
+    },
+    {
+     "n": 130,
+     "k": 7,
+     "orig": "A?ite dimissionem, acerrime agitandi sunfc ii qui demittentur, arnovendi a consuetis officiis, et mo do huic, modo illi applicandi. interim quantumcumque bene praestiterint, reprehendendi, eoque titulo alteri applicandi ; pro leviori culpa quam forte commiserint graves poenae assignentur, confundantur publice usque ad impalientiam, tandemque tanquam aliis perniciosi dimittantur ; ad hoc autem locus, de quo minime opinantur, eligatur.",
+     "en": "Before the time of their dismission, let them be treated with the utmost severity, removed from their usual duties, and hurried about from one to another; and though they do whatever you task them, yet always rind fault, and under this pretence remove them to some other. For the slightest offence, though inadvertently committed, be sure you subject them to a heavy punishment; in public, constantly abash them, till they are able no longer to bear it. and then turn them out, as persons whose example may be pernicious to others ; and for this purpose, choose such place and opportunity, as they never in the least thought of."
+    },
+    {
+     "n": 131,
+     "k": 8,
+     "orig": "Si de aliquo nostrorum spes certa sit de obtinendo episcopatu, aut alia dignitate ecclesiastica, praeter consueta societatis vota, cogatur alter uni emittere, qu6d semper bene de institute societatis sensurus sit, ac dicturus, neque alio confessario quam qui de societate sit ; utetur, quin im6 se in nullis rebus alicujus momenti quidquam dispositurum, nisi audito judicio societatis. Quod quia cardinalis Toletus non obaervavit, societas a sancta sede impetravit ut posthic null us maranus, perfidas judai'cae aut mahometicae haeres admittatur, qui tale votum •?r£estare noluerit, et tanquam acerrimus societatis",
+     "en": "If any of our order has certain expectations of a bishoprick, or other ecclesiastical preferment, let him, besides the usual vows of the Society, be obliged to make another; namely, That he will always entertain a favorable opinion, and on all occasions speak honorably of us ; that he will never confess, but to one of our members, nor determine, in any affair of moment, without first consulting the judgment of the Society: for non-observance of which by cardinal Tolet, our order obtained from the holy see, that no Maran (descended from the perfidious race of Jews and Mahometans,} who will not oblige himself to perform such a vow, should never, for the future, bo admitted among us ; but 132 SECRET INSTRUCTIONS hostis quantumctimque Celebris esset, dimittatur. OF THE JESUITS. 133 immediately expelled as a most virulent enemy, though a person of ever so great fame and reputation."
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "zk": "MS c. XV",
+   "titel": "Of our conduct towards nuns and female devotees.",
+   "blurb": "Quomodo agendum cum monialibus, et devotariis.",
+   "units": [
+    {
+     "n": 132,
+     "k": 1,
+     "orig": "Caveant valde confessarii et concionatores ofifendere moniales, aut illis dare occasionem tentationis contra vocationem ; sed contra, afFeciu potissimuin superiorum sibi conciliate, procurent confessiones saltern extraordinarias excipere, et conciones apud eas facere, si gratitudinem illarum viceisshn experiantur ; multuin enim juvare sociatatem possunt nobiles, pefesertim ac divites abbaLise, turn per se, turn per parentes ac amicos suos, adeo ut niediante notitia primariorurn monasteriorum paulatim in notitiarn et amicitias totius fese civitatis societas venire possit.",
+     "en": "Let the confessors and preachers be very cautious of offending nuns, or of leading them into any even the least temptation contrary to their calling; but, on the other hand, having by all means gained the affection of the governesses, let them manage so as at least to take their extraordinary confessions, and preach to them, if they find them forward in making grateful returns: for persons descended from noble families, especially rich abbesses, are capable of being very serviceable to us, either through their own, or the interest of their parents and friends ; so that by currying favor with the principal monasteries, the Society may by degrees get an acquaintance, and work themselves into the friendship of almost the whole city."
+    },
+    {
+     "n": 133,
+     "k": 2,
+     "orig": "Vitandum tamen ex altera parte devotabus nostris, ne monasteria feminaruiu frequentent, ne videndi ratio ilia ipsis magis arrideat, et sic societas expectatiorie omnium bonorum, quae possident. frustretur. Inducantur vero ad praestandum votum castitatis et obedientiae in manibus confessarii sni, ostendaturque illam vivendi rationem esse con forme m primitives ecclesiae moribus, utpote lucentem in domo, et nou sub modio sine proximi aedificatione ac fructu animarum ; praeterquam quud exemplo viduarum evangelicarum Christo in sociis suis benefaciant de substantial sua : denique omnia quae in praejudicium claustralis vitae sunt, exponantur, eique applicent, hujusmodi instructiones illis sub secret! sigillo comniunicent, ne forte ad aures religiosorum perveniant.",
+     "en": "Yet, on the other side, let our female devotees be forbidden to frequent nunneries, lest they should be most taken with that kind of life, and we thereby be baulked in our expectations of what they have. But let them be induced to the performance of their vow of chastity and obedience, by the caro 134 SECRET INSTRUCTIONS OF THE JESUITS. 18 of their confessor, by his showing them that such method of living is conformableto the purity of the primitive church, being as a candle which diffuses its light through the whole house, and not hid under a buskl, and consequently contributing nothing to the eomcation of our neighbor, or the good of souls; and, like the good widovs in the gospel, that they should communicate of their substance to Christ, by their bounty to his companions. Lastly, let every argument be applied which may create in them an aversion to a recluse life; but let all these instructions be delivered to them under the strictest obligations to secresy, lest other orders shoujfi happen to hear of them."
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "zk": "MS c. XVI",
+   "titel": "In what manner we must outwardly feign a contempt of riches.",
+   "blurb": "De contemptu divitiarum palam prae se ferendo.",
+   "units": [
+    {
+     "n": 134,
+     "k": 1,
+     "orig": "Ne saecu lares nobis adscribant nimium affectum erga divitias, juvabit nonnunquam recusare eleemosynas minoris momenti, quag pro officiis a societate praastitis offeruntur, quanquam ab iis qui ornnino nobis sunt addicti, etiam mini mas quascumque acceptare conveniat, ne avaritiaa arguamur, si tantum dona insigniora admittamus.",
+     "en": "Lest the seculars should represent us as too much hankering after riches, it will be proper now and then to refuse such small and trifling alms as are offered for performance of pious offices ; though of such as are thoroughly attached to our interest, we must readily accept whatever they give us, lest \\ve bring upon ourselves the imputation of covetousness for our swallowing nothing but presents of value. 136 SECRET INSTRUCTIONS W De medlis promovendi societatem. y OF THE JESUITS. 137"
+    },
+    {
+     "n": 135,
+     "k": 2,
+     "orig": "Negandae erunt sepultures personis vilibus in templis nostris, quair.vis valde addicti fuerint societati, ne videamur pluralitate mortuorum divitias venari, et constet de beneficiis qua? a mortuo redpimus.",
+     "en": "Let burial in our churches be denied to persons of a base character, although, in their life-times,? they have been ever so much our friends, lest the world should surmise that we hunt after riches by the numbers of the deceased, and come to a know ledge 8f what we gain by them."
+    },
+    {
+     "n": 136,
+     "k": 3,
+     "orig": "Cum yiduis aliisqife personis, qua3 societati pleraque sua dederunt, agendum erit valde resolute et acrius coeteris paribus, quain cum aliis, ne videamur propter considerationem bonorum temporalium illis favere plus quam caeteris. Imo idem obaervari conduit respectu illorum qui in societate sunt, sed postquam bonorum suorum cessionem et resignationem in favorem societatis fecerint; et si necesse sit, a societate dimittantur, sed omni curn discretione, ut saltern partem eorum quae societati dederunt ei relinquant, aut morientes testarnento legent.",
+     "en": "Let widows and others who have given u? almost all they possessed, (though then they are on equal footing with others,) be treated with much more rigor ; lest people should imagine their greater indulgence proceeds from our hopes of secular advantages. The same method should be also observed with such as are in the Society, but this must be after they have entirely given up all into our hands; and if ever after there be a necessity for it, let them be dismissed ; but this must be done with such discretion, that they may be induced to leave to the order, part at least of what they formerly gave us • or bequeath it by will, at the time of their death."
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "zk": "MS c. XVII",
+   "titel": "Chapter XVII",
+   "blurb": "De mediis promovendi societatem.",
+   "units": [
+    {
+     "n": 137,
+     "k": 1,
+     "orig": "In primis in hoc incumbant omnes, ut etiam in rebus parvi momenti unuin semper sentiant et saltern exterius dicant; sic enim quantumcumque res muncL hujus turbidae fuerint, societas semper necessario augebitur et confirmabitur.",
+     "en": "Let our members chiefly endeavor at this, always to act with humanity, even in things of tri fling moment ; or at least to have the outward appear ance of doing so ; for by this means, whatever con12* 138 SECRET INSTRUCTIONS OF THE JESUITS. 139 fusions may arise in the world, the Society of necessity will always increase and maintain its ground."
+    },
+    {
+     "n": 138,
+     "k": 2,
+     "orig": "Sic omnes lucere nitantur doctrina et exemplis, lit reliqui religiosi, praesertim ii qui de clero sunt, pastores, etc., superentur, tandemquefRilgua oirmia a nostris tantuin praestari optet ; quin imo hoc paKim dicatur, non requiri in pastoribus doctrina ra. tan tarn, mod 5 suo munere bene fungantur, consilio enini societatem juvare posse, quoe idcirc6 studia summopere commendata habet.",
+     "en": "Let all earnestly endeavor so to shine in their learning and good example, that other religious 1 especially those of the clergy, &c, may be eclipsed, and the common people at length drawn in to request us to discharge every office. And let it be also publicly declared, that a very great fund of learning is not so absolutely necessary in pastors, provided in all other respects they discharge their duty as they ought; for the Society can assist with advice on emergencies, for which reason it has good offices of this sort in a particular esteem."
+    },
+    {
+     "n": 139,
+     "k": 3,
+     "orig": "Fovendi reges ac principes hac doctrina. quid fides cat hoi i en in present! statu persistere neqneat sine politismo, sed ad hoc magna opus discretione ; hac ratione nostri grati erunt magnatibus, et ad intimiora consilia adhibebuntur.",
+     "en": "Let kings and princes be kept up in this principle, that the Catholic faith, as matters now ,| stand, cannot subsist without the civil power, which \\ however must be managed with the greatest discretion. By this means our members will work themselves into the favor of persons in the highest post of government, and consequently be admitted into their most secret councils."
+    },
+    {
+     "n": 140,
+     "k": 4,
+     "orig": "Foveri poterunt novis lectissimis et certissirais undequaque transcriptis.",
+     "en": "It will be also proper to entertain their curiosity with the newest, choicest, and most genuine transcripts that can be purchased from all places."
+    },
+    {
+     "n": 141,
+     "k": 5,
+     "orig": "Neque par urn conferet si magnatum et principum dissensiones caute ac secreto nutriantur, etiam cum mutua viriuni infractione. Qu6d si animadverteretur verisimiliter conciliandos, societas quamprimum illos pacificare contendet, ne aliunde praeveniatur.",
+     "en": "Nor will it contribute a little to our advantage, if, with caution and secrecy ., we foment and heighten the animosities that arise among princes and great men} even to such a degree that they may 140 SECRET INSTRUCTIONS OP THE JESUITS. 141 weaken each other. But if there appear any likelihood of reconciliation, then as soon as possible let us endeavor to be the mediators, lest others prevent us."
+    },
+    {
+     "n": 142,
+     "k": 6,
+     "orig": "Ingeneranda omnibus mod is, praesertim vulgo et tnagnatibus, opinio de societatis erection e per singularem providentiam divinam, juxta prophetias Joachimi abbatis, ad hoc ut ecclesia depressa ad haereticis elevetur.",
+     "en": "The nobility .and populace must, by all methods, be persuaded into a. belief that the Society was instituted by the particular direction of divine providence, according to the prophecies of the abbot Jackim, that by this means the church, though depressed by the attempts of heretics, may be raised again to its primitive lustre."
+    },
+    {
+     "n": 143,
+     "k": 7,
+     "orig": "Turn magnatum et episcoporum gratia obtenta, occupandi pastoratus et canonicatus, ad reformationem cleri exactiorern, qui olim sub certa regula cum episcopis suis vivebant, et ad perfectionem tendebant ; ac tandem ad abbatias et preelaturas aspirandum, quas attenta ignavia ac stupiditate monachorum, ubi vacaverint, non erit difficile assequi ; etenim ex re ecclesias omnino foret, si omnes episcopatus a societate tenerentur, im6 sedes apostolica possideretur ; praesertim si pontifex bonorum omnium princeps temporalis fieret, quare omni ratione temporal i a societatis, prud enter tamen et secret6 paulatim extendenda, neque dubium quin tune aurea saecula et pax continua ac universalis, et consequenter benedictio divina ecclesiam comitaretur.",
+     "en": "The favor of the nobility and superior clergy, once got, our next aim must be to draw all cures and canonships into our possession, for the more complete reformation of the clergy, who heretofore lived under certain regulation of their bishops, and made considerable advances towards perfection. And lastly, let us aspire to abbacies and bishoprics, the obtaining which, when vacancies happen, will very easily be effected, considering the supineness and stupidity of the monks ; for it would entirely tend to the benefit of the church, that all bishoprics, and even the apostolical see, should be hooked into our hands, especially should his holiness ever become a temporal prince over all. Wherefore, let no methods be untried, with cunning and privacy, by degrees, to increase the worldly interests of the Society, and then, no doubt, a golden age will go hand in hand with an universal and lasting peace, 142 SECRET INSTRUCTIONS OF THE JESUITS. 143 and the divine blessing of consequence attend the catholic church. VJII."
+    },
+    {
+     "n": 144,
+     "k": 8,
+     "orig": "Quod si spes non afFulgeat ad hcec pervenien di, cum equidem necesse sit. ut vend iant scandal a, protempore invertendus erit status politicus, et'incitandi principes nostris familiariter utentes ad bella mntua.et importuna ; ut sic ubique societas imploretur ac impendatur reconciliationi publicae, ut cornmunis boni auctrix, et primariis beneficiis et dignitatibus eoclesiasticis compenaetur.",
+     "en": "But if our hopes in this sfcould be blasted, and since offences of necessity will corne, our political schemes must be cunningly varied, according to the different posture of the times; and princes, our intimates, whom we can influence to follow our councils, must be pushed on to embroil themselves in vigorous wars one with another, to the end, our Society (as promoters of the universal good of the world,) may on all hands be solicited to contribute its assistance, and always employed in being mediators of public dissensions : by this means the chief benefices and preferments in the church will, of course, be given to us by way of compensation for our services."
+    },
+    {
+     "n": 145,
+     "k": 9,
+     "orig": "Denique hoc saltern conabitur societas efficere, acquisita principum gratia et auctoritate, ut ab iis a quibus non amatur, saltern timeatur.",
+     "en": "Finally, the Society must endeavor to effect this at least, that having got the favor and authority . of princes, those who do not love them at least fear ! them. END OF 6ECKET INSTRUCTIONS. J - ,"
+    }
+   ]
+  }
+ ]
+}

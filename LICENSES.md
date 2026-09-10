@@ -15,6 +15,8 @@ people entirely.
 | **Trilingual edition of the Exercises** | `data/exercitia.json` | Spanish, Latin and English texts: public domain (US, pre-1930 publications); editorial segmentation and numbering: [CC0 1.0](LICENSE-DATA) |
 | **Longridge 1919 texts** | `data/longridge_exx.json`, `data/longridge_dir.json` | Longridge's translation, commentary and notes: public domain (US, pre-1930 publication); editorial block assignment to the [1]–[370] grid: [CC0 1.0](LICENSE-DATA) — see below |
 | **Bilingual edition of Favre's Memoriale** | `data/memoriale.json` | Latin: public domain (US, 1873 publication); English working translation and editorial paragraph numbering: [CC0 1.0](LICENSE-DATA) — see below |
+| **Bilingual edition of the Monita secreta** | `data/monita.json` | Latin and English: public domain (US, 1857 publication); editorial repair and alignment: [CC0 1.0](LICENSE-DATA) — see below |
+| **Bilingual edition of the brief of 1773** | `data/dominus.json` | Latin: public domain (brief of 1773, edition of 1852); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
 | **The author's essay** | `data/pilgrim_profile.json`, `docs/Fassbender-2026-The-Pilgrims-Profile.docx` | © 2026 Dr. Pantaleon Fassbender, **all rights reserved** — deliberately excluded from the open licences above |
 | **Third-party libraries** | `vendor/` | Upstream licences — see below |
 
@@ -54,6 +56,27 @@ public domain; M'Crie's footnote markers are removed and his notes are not
 reproduced. The editorial paragraph numbering is dedicated to the public
 domain under CC0 1.0. The French original (public domain) is named as source
 but not yet carried.
+
+**`data/monita.json`** holds the *Monita secreta* — the anti-Jesuit forgery of
+1614, carried by this apparatus as the debate it forced, not as truth — in the
+bilingual printing of W. C. Brownlee, *Secret Instructions of the Jesuits* (New
+York: American and Foreign Christian Union, 1857), Latin and English on facing
+pages. An 1857 publication is in the United States public domain; a faithful
+transcription adds nothing licensable. The OCR was repaired article by article
+against the page images (a handful of articles lost at page breaks were
+re-transcribed from the images by hand); that repair, and the pairing of the
+Latin chapter/article grid with the English one, are dedicated to the public
+domain under CC0 1.0.
+
+**`data/dominus.json`** holds the brief *Dominus ac Redemptor* (21 July 1773)
+complete, in the Latin of Augustin Theiner's edition, *Clementis XIV. Pont.
+Max. Epistolae et Brevia* (Paris, 1852), doc. CCCXVII — a papal act of 1773 in
+an 1852 printing, public domain twice over; a faithful transcription adds
+nothing licensable. The English beside it is an unofficial machine-generated
+working translation made for this repository directly from that Latin,
+consulting no other translation; whatever rights it could attract are dedicated
+to the public domain under CC0 1.0. It carries no ecclesiastical or scholarly
+authority — cite the Latin, in Theiner's paragraph numbering as carried here.
 
 **`data/memoriale.json`** holds the Memoriale of Blessed Peter Faber, with the
 appendix of letters and counsels, as printed in the editio princeps, ed. Marcel
