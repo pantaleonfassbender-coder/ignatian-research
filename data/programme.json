@@ -2,12 +2,15 @@
  {
   "id": "nadal",
   "linie": "schule",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Jerónimo Nadal",
-  "jahr": "1554–1562",
+  "jahr": "1557",
   "titel": "Exhortations and instructions on the Institute (selections)",
   "warum": "The man Ignatius sent across Europe to explain the Exercises and the Institute to the Society itself — the first authorised interpreter.",
-  "quelle": "Epistolae P. Hieronymi Nadal, MHSI (Madrid 1898–1905); the pre-1930 volumes are US public domain. Latin/Spanish with a working translation."
+  "quelle": "Latin after the Monumenta Ignatiana, series secunda (Madrid, 1919; the same public-domain volume this apparatus uses for the Exercises and the Directory), which prints Nadal's annotations on the General Examen from his autograph. Shipped: the 'In Examen annotationes', in which Nadal reads the Society's vocation out of the Exercises and gives the phrase 'simul in actione contemplativus', with this site's working translation (CC0). The Apologia for the Exercises and the prayer instructions are the named next steps.",
+  "datei": "nadal",
+  "zk": "Nadal",
+  "kurz": "Nadal"
  },
  {
   "id": "rodriguez",

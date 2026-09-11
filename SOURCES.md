@@ -56,6 +56,11 @@ and therefore have no source entry here; their editions are named on the method 
 - German: Friedrich Spee, *Trutz-Nachtigall oder Geistlichs-Poetisch Lust-Waldlein* (Cologne, 1654; first published posthumously 1649), Internet Archive scan — <https://archive.org/details/trutz-nachtigall-oder-geistlichs-poetisc>. Two poems carried complete — the Ölberg lament (printed p. 170) and the "Liebgesang der Gesponß Jesu" (p. 26) — transcribed by eye from the page images (the Fraktur OCR served only for navigation); the long s is normalised and the print's virgule kept as the poet's comma. A facsimile page of each poem's opening is carried beside the text.
 - English: unofficial working prose translation made for this site directly from the German (CC0).
 
+### Nadal, In Examen annotationes (selections) · `data/nadal.json`
+
+- Latin: Jerónimo Nadal's annotations on the General Examen, as printed in *Monumenta Ignatiana*, series secunda (Madrid, 1919) — the same public-domain volume this apparatus uses for the Exercises and the Directory — from Nadal's autograph. Internet Archive scan — <https://archive.org/details/monumentaignatia01igna>. Transcribed from that printing: u/v normalised, the nomina sacra expanded, the editors' apparatus dropped, obvious OCR slips emended against the sense.
+- English: unofficial working translation made for this site directly from the Latin (CC0). Nadal's fuller corpus is in the four volumes of his *Epistolae* (MHSI, 1898–1905), pre-1930 and public domain, named as the module's next steps.
+
 ## The counter-voices
 
 ### Pascal, Lettres provinciales — Letters V, VII, X · `data/pascal.json`

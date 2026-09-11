@@ -1,0 +1,266 @@
+# -*- coding: utf-8 -*-
+# Build data/nadal.json — Jerónimo Nadal, "In Examen annotationes"
+# (selections): the first module of the school-of-discernment line's
+# interpreter, the man Ignatius sent across Europe to explain the Exercises
+# and the Institute to the Society itself.
+#
+# Latin after the Monumenta Ignatiana, series secunda (Madrid, 1919), which
+# prints Nadal's annotations on the General Examen from his autograph
+# (Miscell. de Inst. I, n. 8); a pre-1930 publication in the United States
+# public domain, the same 1919 volume this apparatus already draws on for the
+# Exercises and the Directory. The text is Nadal's exposition — for the
+# Society itself — of its name, its vocation read straight out of the
+# Exercises (the meditations of the Kingdom and the Two Standards), the
+# vision at La Storta, the doctrine of prayer, and Ignatius as the man who
+# was "simul in actione contemplativus", contemplative in action, "finding
+# God in all things". Transcription conventions: u/v normalised to the
+# classical convention (as elsewhere on this site), the nomina sacra
+# (Xpus, Xpi, Xpo) expanded to Christus/Christi/Christo, the editors'
+# critical apparatus and their bracketed restorations dropped, obvious OCR
+# slips emended against the sense.
+#
+# The English is this site's unofficial working translation, made directly
+# from the Latin (CC0).
+#
+# Usage: python tools/build-nadal.py
+import io, json, os
+
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def units(rows):
+    out = []
+    for k, r in enumerate(rows, start=1):
+        u = {'n': k, 'k': k}
+        u.update(r)
+        out.append(u)
+    return out
+
+EXAMEN = units([
+ {'label': 'The name, and the vocation read from the Exercises',
+  'orig': ('«Fuit a Sede Apostolica nuncupata Societas Jesu.» Ut aliae partes instituti, ita et hoc '
+           'nomen auctoritatem accepit ab apostolica sede, principium tamen a Dei ipsius inspiratione. '
+           'Nam ratio nostrae vocationis militia quaedam est sub vexillo Christi, quod et totis '
+           'exercitiis colligimus, et in meditatione praesertim Regis temporalis ac Vexillorum '
+           'sentimus; nam in meditatione Regis temporalis vocamur a Christo Jesu summo et angelorum et '
+           'hominum, et rege et duce ad societatem sui belli, quod adversus mundum, carnem, '
+           'teterrimosque daemones gerit, donec tradat regnum Deo et Patri, atque evacuet omnem '
+           'principatum, potestatem et virtutem, nomina nos damus atque conscribimus digito Dei in '
+           'illam militiam sacrosanctam. Ex Vexillorum vero meditatione intelligimus Christi Jesu, '
+           'ad ipsumque imperatorem Christum nos concurrere, cum eo in aciem procedere, in acie stare, '
+           'ex acie per illum confligere. Hac ratione primum vocatus est P. Ignatius; hac per illas '
+           'meditationes nos vocat Christus in Societatem suae militiae; ita nomen eius vicario in '
+           'terris romano pontifici sub vexillo crucis dare nos in formula instituti nostri legimus.'),
+  'en': ("'The Society was named of Jesus by the Apostolic See.' Like the other parts of the Institute, "
+         "this name too received its authority from the Apostolic See — but its origin from the "
+         "inspiration of God himself. For the ground of our vocation is a kind of warfare under the "
+         "standard of Christ, which we gather from the whole of the Exercises, and feel above all in the "
+         "meditation of the Temporal King and of the Standards. In the meditation of the Temporal King "
+         "we are called by Christ Jesus, sovereign of angels and of men, King and Leader, to the "
+         "fellowship of his war — the war he wages against the world, the flesh and the foulest demons, "
+         "until he hand over the kingdom to God the Father and make void all principality, power and "
+         "might: we give and enrol our names, by the finger of God, in that sacred soldiery. And from "
+         "the meditation of the Standards we understand that it is Christ Jesus', and that we run "
+         "together to Christ our commander, advance with him into the line of battle, stand in the line, "
+         "and from the line do battle through him. It was in this way that Father Ignatius was first "
+         "called; in this way, through those meditations, Christ calls us into the Society of his "
+         "soldiery; and so we read, in the Formula of our Institute, that we give his name to the Roman "
+         "Pontiff, his vicar on earth, under the standard of the cross.")},
+ {'label': 'La Storta: the inspiration confirmed',
+  'orig': ('Quemadmodum autem confirmata fuerit divina haec inspiratio et appellatio, audite, fratres '
+           'mei. Nam cum iam primum veniret Pater Ignatius Romam, antequam quidquam de confirmatione '
+           'Societatis ageretur, atque in itinere oraret, ecce apparuit illi Christus Jesus, crucem '
+           'baiulans, audivit vero Deum Patrem in spiritu, ac sensit quod se ad Christum applicaret, et '
+           'in illius servitutem et sequelam assereret ac diceret: «Ego vobis ero propitius.» Haec sese '
+           'audisse ab illo confirmat P. Lainez, qui erat ipsi eo in itinere socius.'),
+  'en': ("But hear, my brothers, how this divine inspiration and naming was confirmed. When Father "
+         "Ignatius was first coming to Rome, before anything was yet done about the confirmation of the "
+         "Society, and was praying on the road — behold, Christ Jesus appeared to him, carrying his "
+         "cross; and he heard God the Father in his spirit, and felt that the Father set him with "
+         "Christ, claimed him for his service and following, and said: 'I will be favourable to you.' "
+         "Father Laínez confirms that Ignatius told him he had heard this — Laínez, who was his "
+         "companion on that road.")},
+ {'label': 'Ignatius insists on the name',
+  'orig': ('Ad haec cum ageretur de formula instituti, quo illam sedi apostolicae offerrent Patres '
+           'confirmandam, ut in re gravissima, ad internam quandam devotionem atque spiritus sensum '
+           'compositus P. Ignatius enixe ac confirmate postulavit a sociis ut illud nomen Societati '
+           'facerent, id se rogare et contendere ab omnibus ut sibi concederetur. Cum enim incidisset '
+           'sermo, ut fit, de nomine congregationis nostrae, post Societatis scilicet confirmationem, '
+           'et diceret quidam: «quid si aliud nomen Societati faceremus?» respondit Pater noster ex '
+           'animi devotione constanter illud nomen praeter Deum nullum posse immutare. Quibus ex rebus '
+           'satis aperte possumus intelligere ex divina inspiratione fuisse a Deo illud nomen Societati '
+           'impositum. Socii igitur sumus Christi Jesu ex illustri quadam atque eximia in nos '
+           'benignitate ac gratia.'),
+  'en': ("And so, when the Formula of the Institute was being drawn up, by which the Fathers would "
+         "offer it to the Apostolic See for confirmation, Father Ignatius — composed, as in a most "
+         "weighty matter, to a certain inward devotion and sense of the spirit — earnestly and firmly "
+         "asked the companions to give the Society that name, begging and pressing it upon them all "
+         "that this be granted him. For when talk arose, as happens, of the name of our congregation, "
+         "after the Society's confirmation, and someone said, 'What if we gave the Society another "
+         "name?', our Father answered steadfastly, out of the devotion of his soul, that none but God "
+         "could change that name. From all which we may understand plainly enough that it was by divine "
+         "inspiration that this name was laid on the Society by God. Companions, then, we are of Christ "
+         "Jesus, by a certain signal and surpassing kindness and grace toward us.")},
+ {'label': 'The ministry to the neighbour',
+  'orig': ('Magna et salutis et perfectionis nostrae pars in iuvando proximo constituta sit; quocirca '
+           'ubi ad ministeria mittimur a superioribus, nihil addubitemus quin maximus sit nobis '
+           'futurus proventus ex ministerio in proximum, ad hoc enim vocamur, ad hoc nostrae religionis '
+           'gratia proprie ducit et iuvat. Memini ego, cum insinuaret mihi Pater Ignatius, ad initia '
+           'mei ad Societatem ingressus, ut praedicationibus et proximo operam darem, et ego '
+           'ineptitudinem meam de meis peccatis et miseria excusarem, respondisse Patrem: «Hoc, inquit, '
+           'pacto proficies, si ad proximi salutem attendas.» Ut semel igitur dicam, nullus suo iudicio '
+           'innixus quod imperfectus sit, quod ineptus, quod in periculo versetur, vel gravetur, vel '
+           'ambigat proximo inservire; sed, explicata conscientia superiori, si mittatur, magno animo '
+           'ac pleno bonae spei aggrediatur opus: fiet ex singulari Jesu Christi gratia, qua suam '
+           'complectitur Societatem, ut et nihil periclitetur, et magnum brevi proventum perfectionis '
+           'consequatur, modo rationem ministerii Societatis amplectatur et imprimis non omittat '
+           'spiritum per orationem suo tempore refocillare.'),
+  'en': ("A great part of both our salvation and our perfection is set in helping the neighbour; and so, "
+         "when we are sent to ministries by our superiors, let us not doubt at all that the greatest "
+         "fruit will come to us from ministry toward the neighbour — for to this we are called, to this "
+         "the grace of our religious state properly leads and helps us. I remember, when Father Ignatius "
+         "was urging me, at the beginning of my entry into the Society, to give myself to preaching and "
+         "to the neighbour, and I excused my unfitness on the ground of my sins and wretchedness, that "
+         "the Father answered: 'In just this way you will make progress — if you attend to the "
+         "neighbour's salvation.' To say it once for all: let no one, relying on his own judgement that "
+         "he is imperfect, or unfit, or in danger, be burdened or hesitate to serve the neighbour; but, "
+         "having opened his conscience to the superior, if he is sent, let him set about the work with a "
+         "great heart and full of good hope. It will come to pass, by the singular grace of Jesus "
+         "Christ with which he embraces his Society, that he neither runs any risk and soon wins a great "
+         "harvest of perfection — provided he embraces the Society's way of ministry, and above all does "
+         "not fail to refresh his spirit, in its due time, by prayer.")},
+ {'label': 'Prayer, in the three ways of the Exercises',
+  'orig': ('Orationem autem magnam esse religiosi instituti partem certum est, eamque imprimis '
+           'necessariam, orationem eam dico, de qua Paulus «Orabo (inquit) spiritu, orabo et mente», '
+           'quae omnis complectatur spiritualis exercitii partes, purgativam, illuminativam atque '
+           'unitivam. Diligenter igitur haec et magna aviditate complectitur Societas in dulcedine '
+           'spiritus in Christo Jesu; nullum enim e suis non exercet primum illis meditationibus, quae '
+           'ad poenitentiam attinent, veterisque hominis expoliationem, dein contemplationibus omnium '
+           'mysteriorum Christi, in quibus ad sensum viae, veritatis ac vitae aspirare desideramus; '
+           'demum in amore conquiescimus, ut unde proficisci debet oratio, in eo finem collocemus, in '
+           'charitate, scilicet, summa ac divina virtute, ut ex hac eiusque fervore ac zelo ad nostra '
+           'ministeria egrediamur in hilaritate spiritus atque humilitate cordis nostri ac suavitate '
+           'fortiter in Christo Jesu. Haec ex libro exercitiorum nostrorum colligimus.'),
+  'en': ("That prayer is a great part of the religious institute, and above all necessary, is certain — "
+         "the prayer, I mean, of which Paul says, 'I will pray with the spirit, I will pray also with "
+         "the mind' — a prayer that embraces all the parts of spiritual exercise: the purgative, the "
+         "illuminative and the unitive. Diligently, then, and with great eagerness, the Society embraces "
+         "these in the sweetness of the spirit in Christ Jesus. For it exercises every one of its own "
+         "first in those meditations that pertain to penance and the stripping off of the old man, then "
+         "in the contemplations of all the mysteries of Christ, in which we long to aspire to the sense "
+         "of the Way, the Truth and the Life; and last we rest in love — that from which prayer ought to "
+         "set out, in that we place its end: in charity, that is, the highest and divine virtue, so that "
+         "from it and from its fervour and zeal we may go out to our ministries in gladness of spirit "
+         "and humility of heart, and with sweetness, mightily, in Christ Jesus. All this we gather from "
+         "the book of our Exercises.")},
+ {'label': 'Ignatius, contemplative in action',
+  'orig': ('Illud vero non omittam (etiamsi propius hic locus non est, ut de oratione dicam, sed alius): '
+           'Patrem Ignatium scimus singularem gratiam accepisse a Deo ut in contemplatione '
+           'sanctissimae Trinitatis exerceretur libere ac conquiesceret: nunc quidem gratia '
+           'contemplandae totius Trinitatis ducebatur, in illam ferebatur, in illam uniebatur toto '
+           'corde magno sensu devotionis atque spiritualis gustus; nunc Patrem contemplabatur, nunc '
+           'Filium, nunc Spiritum sanctum; et huius quidem contemplationem accepit, cum alias '
+           'frequenter, tum vero (quasi si unice dicas) ad annos suae peregrinationis ultimos; hanc '
+           'rationem orationis concepit Pater Ignatius, magno privilegio, selectissime; tum illud '
+           'praeterea in omnibus rebus, actionibus, colloquiis, ut Dei praesentiam rerumque spiritualium '
+           'affectum sentiret atque contemplaretur, simul in actione contemplativus (quod ita solebat '
+           'explicare: Deum esse in omnibus rebus inveniendum); hanc vero gratiam ac lucem animae suae, '
+           'quodam quasi splendore vultus, claritate ac certitudine actionum suarum in Christo explicari '
+           'vidimus, magna nostra omnium admiratione, et magna cordis nostri consolatione, et quasi '
+           'derivatum in nos nescio quid illius gratiae sensimus. Quod igitur privilegium Patri Ignatio '
+           'factum intelligimus, idem toti Societati concessum esse credimus, et gratiam orationis '
+           'illius et contemplationis in Societate omnibus nobis paratam esse confidimus, eamque cum '
+           'vocatione nostra coniunctam esse confitemur.'),
+  'en': ("But this I will not omit (though the fitter place to speak of prayer is another): we know that "
+         "Father Ignatius received a singular grace from God, to be exercised freely and to rest in the "
+         "contemplation of the most holy Trinity. At one time he was led by the grace of contemplating "
+         "the whole Trinity, borne into it, united to it with his whole heart, in a great sense of "
+         "devotion and of spiritual relish; at another he contemplated the Father, now the Son, now the "
+         "Holy Spirit. This contemplation of the Trinity he received, often at other times, but most of "
+         "all (one might almost say uniquely) toward the last years of his pilgrimage. This manner of "
+         "prayer Father Ignatius conceived by a great privilege, most rarely; and besides, in all "
+         "things, actions and conversations, he would feel and contemplate the presence of God and the "
+         "relish of spiritual things — at once, in action, contemplative (which he used to put thus: "
+         "that God is to be found in all things). And this grace and light of his soul we saw shown "
+         "forth by a kind of splendour of his face, by the clarity and certainty of his actions in "
+         "Christ, to the great wonder of us all and the great consolation of our hearts; and we felt, as "
+         "it were, some I-know-not-what of that grace flowing down into us. That privilege, then, which "
+         "we understand was granted to Father Ignatius, we believe was granted to the whole Society; and "
+         "we trust that the grace of his prayer and contemplation is ready in the Society for us all, "
+         "and we confess it to be joined to our vocation.")},
+ {'label': 'How superiors are to govern prayer',
+  'orig': ('Superiores autem atque orationis praefectus hanc moderationem adhibeant, quam scimus Patrem '
+           'Ignatium habuisse familiarem, et instituti Societatis dicimus propriam, ut si quem iudicent '
+           'in Domino bono spiritu in oratione progredi, illi nihil praescribant, nihil illum '
+           'interpellent, quin potius illum confirment atque animent, ut progrediatur in Domino '
+           'suaviter quidem ac fortiter; sin erit aliquis, qui vel non proficiat, vel non bene '
+           'progrediatur, vel illusione aliqua ducatur, vel errore, eum ad veram orationis viam ac '
+           'progressum enitantur reducere in Christo Jesu.'),
+  'en': ("Let superiors and the prefect of prayer use this moderation — which we know was familiar to "
+         "Father Ignatius, and which we call proper to the Society's institute: that if they judge "
+         "someone to be advancing in prayer by a good spirit in the Lord, they prescribe him nothing "
+         "and interrupt him in nothing, but rather confirm and encourage him, that he may go forward in "
+         "the Lord gently indeed and strongly; but if there be anyone who either makes no progress, or "
+         "does not advance well, or is led by some illusion or error, let them strive to bring him back "
+         "to the true way and progress of prayer in Christ Jesus.")},
+ {'label': 'Everything from the light of Manresa',
+  'orig': ('Quoad eius fieri possit, omnia transigantur perfectissime et ad finem nostrum '
+           'appositissime. Horum vero omnium, ut totius instituti rationem reddebat Pater Ignatius, '
+           'illustrationem illam eximiam mentis suae, quam singulari Dei benignitate ac magno divinae '
+           'gratiae privilegio accepit ad initia suae conversionis Manresae, quod oppidum est in '
+           'Tarraconensi Hispania; ex illa enim luce, ex illo principio, ex illo divinae benignitatis '
+           'privilegio, haec lux, gratia haec, quam in Societate sentimus et amplectimur, quae nos '
+           'exhilarat in spiritu mentis nostrae, quae nos consolatur atque animat, ex illo inquam '
+           'principio, ex illa luce ac gratia a clementissimo Patre coelesti in universam Societatem, '
+           'omnesque eius partes atque in omnia ministeria derivata est atque inducta.'),
+  'en': ("So far as may be, let everything be carried through most perfectly and most aptly to our end. "
+         "And of all these things, as Father Ignatius rendered the account of the whole Institute, the "
+         "source was that surpassing illumination of his mind which he received, by God's singular "
+         "kindness and a great privilege of divine grace, at the beginning of his conversion at "
+         "Manresa, a town in Tarraconensian Spain. For from that light, from that beginning, from that "
+         "privilege of divine kindness — this light, this grace which we feel and embrace in the "
+         "Society, which gladdens us in the spirit of our mind, which consoles and heartens us — from "
+         "that beginning, I say, from that light and grace, it was, by the most merciful heavenly "
+         "Father, derived and led into the whole Society, and all its parts, and all its ministries.")},
+])
+
+out = {
+ 'id': 'nadal',
+ 'autor': 'Jerónimo Nadal',
+ 'titel': 'In Examen annotationes (selections) — the Institute read from the Exercises',
+ 'jahr': '1557',
+ 'lang': 'la',
+ 'zitierweise': 'Nadal, In Ex. [k]',
+ 'quelle': ("Latin after the Monumenta Ignatiana, series secunda (Madrid, 1919), which prints "
+            "Nadal's annotations on the General Examen from his autograph; a pre-1930 publication in "
+            "the United States public domain — the same 1919 volume this apparatus uses for the "
+            "Exercises and the Directory. Text transcribed from that printing: u/v normalised to the "
+            "classical convention, the nomina sacra (Xpus, Xpi, Xpo) expanded to Christus/Christi/"
+            "Christo, the editors' critical apparatus and bracketed restorations dropped, obvious OCR "
+            "slips emended against the sense. The English is this site's unofficial working "
+            "translation, made directly from the Latin (CC0)."),
+ 'hinweis': ("The first module of the school-of-discernment line's interpreter. Jerónimo Nadal was the "
+             "man Ignatius sent across Europe to explain the Exercises and the Institute to the Society "
+             "itself — the first authorised interpreter — and here, annotating the General Examen, he "
+             "reads the Society's vocation straight out of the Exercises: the meditation of the Kingdom "
+             "and the Two Standards as the ground of the call, La Storta and Manresa as its "
+             "confirmation, and Ignatius as the man who was 'simul in actione contemplativus' — "
+             "contemplative in action, 'finding God in all things', a grace Nadal insists is given to "
+             "the whole Society. A selection: the Monumenta Ignatiana and the four volumes of Nadal's "
+             "Epistolae (MHSI, 1898–1905) hold much more — the Apologia for the Exercises, the "
+             "instructions on prayer, the exhortations from the visitations — named as the module's "
+             "next steps. Part of the concordance and the citation-bound dialogue; not part of the "
+             "linguistic statistics, which describe the core corpus only."),
+ 'sections': [
+  {'id': 'examen', 'zk': 'Nadal, In Ex.',
+   'titel': 'The Society read out of the Exercises (c. 1557)',
+   'blurb': ('Annotating the General Examen for the Society itself: the name and its warrant, the '
+             'vocation drawn from the Kingdom and the Two Standards, the vision at La Storta, the '
+             'doctrine of prayer in the three ways of the Exercises, and — the most quoted phrase '
+             'Nadal wrote — Ignatius "contemplative in action", finding God in all things.'),
+   'units': EXAMEN},
+ ],
+}
+
+path = os.path.join(REPO, 'data', 'nadal.json')
+json.dump(out, io.open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print('wrote', path, '-', sum(len(s['units']) for s in out['sections']), 'units')

@@ -16,6 +16,7 @@ people entirely.
 | **Longridge 1919 texts** | `data/longridge_exx.json`, `data/longridge_dir.json` | Longridge's translation, commentary and notes: public domain (US, pre-1930 publication); editorial block assignment to the [1]–[370] grid: [CC0 1.0](LICENSE-DATA) — see below |
 | **Bilingual edition of Favre's Memoriale** | `data/memoriale.json` | Latin: public domain (US, 1873 publication); English working translation and editorial paragraph numbering: [CC0 1.0](LICENSE-DATA) — see below |
 | **Xavier letters (Coleridge 1872)** | `data/xavier.json` | Public domain (US, 1872 publication); selection and paragraph numbering: [CC0 1.0](LICENSE-DATA) — see below |
+| **Nadal, In Examen annotationes** | `data/nadal.json` | Latin: public domain (Monumenta Ignatiana, 1919); English working translation: [CC0 1.0](LICENSE-DATA) |
 | **Cautio Criminalis selections** | `data/spee.json` | Latin: public domain (1631 printing; transcription adds nothing licensable); English working translation: [CC0 1.0](LICENSE-DATA) |
 | **Trutznachtigall selections** | `data/trutz.json`, `assets/spee/*` | German and facsimile pages: public domain (1649/1654 printing); transcription and English working translation: [CC0 1.0](LICENSE-DATA) |
 | **Imago primi saeculi module** | `data/imago.json`, `assets/imago/*` | Engravings, Latin and Poirters's Dutch: public domain (two 1640 printings; faithful reproduction of a public-domain 2-D work adds nothing licensable); transcription, working translations and descriptions: [CC0 1.0](LICENSE-DATA) |
