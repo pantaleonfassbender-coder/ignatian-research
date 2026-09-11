@@ -15,12 +15,15 @@
  {
   "id": "rodriguez",
   "linie": "schule",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Alonso Rodríguez",
   "jahr": "1609",
-  "titel": "Practice of Perfection and Christian Virtues (selections)",
-  "warum": "Three centuries of Jesuit formation read this book; the school of discernment as a daily curriculum.",
-  "quelle": "Ejercicio de perfección (Seville 1609); early English translations (from 1697) are public domain."
+  "titel": "Of Conformity to the Will of God — the Eighth Treatise",
+  "warum": "Three centuries of Jesuit formation read this book; the school of discernment as a daily curriculum, and the direct ancestor of the Abandonment attributed to Caussade.",
+  "quelle": "English after The Practice of Christian and Religious Perfection, vol. I (Dublin: James Duffy, 1861; US public domain) — made, as its title page states, not from the Spanish but from the French of the Abbé Régnier-Desmarais: the classic transmission chain of this book, carried as it stands. Shipped: the Eighth Treatise of the First Part, Of Conformity to the Will of God, complete in all thirty-four chapters. The Spanish original (Ejercicio de perfección, Seville 1609) is named as source but not yet carried.",
+  "datei": "rodriguez",
+  "zk": "Rodr. VIII",
+  "kurz": "Rodr."
  },
  {
   "id": "caussade",

@@ -32,6 +32,16 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: *Memoriale Beati Petri Fabri*, ed. M. Bouix (Paris, 1873) — the editio princeps — Internet Archive scan — <https://archive.org/details/memorialebeatipe0000sign>
 - English: working translation made for this site (CC0).
 
+### Nadal, In Examen annotationes (selections) · `data/nadal.json`
+
+- Latin: Jerónimo Nadal's annotations on the General Examen, as printed in *Monumenta Ignatiana*, series secunda (Madrid, 1919) — the same public-domain volume this apparatus uses for the Exercises and the Directory — from Nadal's autograph. Internet Archive scan — <https://archive.org/details/monumentaignatia01igna>. Transcribed from that printing: u/v normalised, the nomina sacra expanded, the editors' apparatus dropped, obvious OCR slips emended against the sense.
+- English: unofficial working translation made for this site directly from the Latin (CC0). Nadal's fuller corpus is in the four volumes of his *Epistolae* (MHSI, 1898–1905), pre-1930 and public domain, named as the module's next steps.
+
+### Rodríguez, Of Conformity to the Will of God · `data/rodriguez.json`
+
+- English: *The Practice of Christian and Religious Perfection*, vol. I (Dublin: James Duffy; London, 1861), Internet Archive scan — <https://archive.org/details/PracticeOfChristianAndReligiousPerfectionV1>. The Eighth Treatise of the First Part carried complete, all thirty-four chapters (printed pp. 386–522). The translation was made, as its title page states, not from the Spanish but from the French version of the Abbé Régnier-Desmarais of the Académie française — the classic transmission chain of this book, carried as it stands. Damaged chapter headings repaired against the volume's own table of contents; the final page, defaced by a library stamp, re-transcribed from the page image.
+- Spanish original (named, not yet carried): *Ejercicio de perfección y virtudes cristianas* (Seville, 1609), part I, treatise VIII; the 1609 printing and several 19th-century Spanish editions are on the Internet Archive.
+
 ## The Society in the world
 
 ### Francis Xavier, Letters from India and Japan (selections) · `data/xavier.json`
@@ -56,11 +66,6 @@ and therefore have no source entry here; their editions are named on the method 
 - German: Friedrich Spee, *Trutz-Nachtigall oder Geistlichs-Poetisch Lust-Waldlein* (Cologne, 1654; first published posthumously 1649), Internet Archive scan — <https://archive.org/details/trutz-nachtigall-oder-geistlichs-poetisc>. Two poems carried complete — the Ölberg lament (printed p. 170) and the "Liebgesang der Gesponß Jesu" (p. 26) — transcribed by eye from the page images (the Fraktur OCR served only for navigation); the long s is normalised and the print's virgule kept as the poet's comma. A facsimile page of each poem's opening is carried beside the text.
 - English: unofficial working prose translation made for this site directly from the German (CC0).
 
-### Nadal, In Examen annotationes (selections) · `data/nadal.json`
-
-- Latin: Jerónimo Nadal's annotations on the General Examen, as printed in *Monumenta Ignatiana*, series secunda (Madrid, 1919) — the same public-domain volume this apparatus uses for the Exercises and the Directory — from Nadal's autograph. Internet Archive scan — <https://archive.org/details/monumentaignatia01igna>. Transcribed from that printing: u/v normalised, the nomina sacra expanded, the editors' apparatus dropped, obvious OCR slips emended against the sense.
-- English: unofficial working translation made for this site directly from the Latin (CC0). Nadal's fuller corpus is in the four volumes of his *Epistolae* (MHSI, 1898–1905), pre-1930 and public domain, named as the module's next steps.
-
 ## The counter-voices
 
 ### Pascal, Lettres provinciales — Letters V, VII, X · `data/pascal.json`
@@ -81,6 +86,5 @@ and therefore have no source entry here; their editions are named on the method 
 
 ---
 
-Programme entries (Nadal, Rodríguez, Caussade, Xavier, the Jesuit Relations, Ricci/Trigault,
-Acosta, the Imago primi saeculi, and Spee) name their intended sources in the works view;
-their entries move up here as they ship.
+Programme entries still planned (Caussade, the Jesuit Relations, Ricci/Trigault, Acosta)
+name their intended sources in the works view; their entries move up here as they ship.
