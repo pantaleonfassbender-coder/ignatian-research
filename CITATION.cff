@@ -19,18 +19,22 @@ abstract: >-
   A research apparatus for Ignatian spirituality, confined to the old Society
   (1540-1773) and organised in five lines: the founder's own writings (the
   Exercises in a trilingual public-domain parallel edition, the letters of
-  1524-1547 in full); the school of discernment (the Official Directory of
-  1599, bilingual, and Favre's Memoriale, bilingual); the Society in the
+  1524-1547 in full); the school of discernment, carried to its end - the
+  Official Directory of 1599 (bilingual), Favre's Memoriale (bilingual),
+  Nadal's In Examen annotationes, Rodriguez's Of Conformity to the Will of
+  God complete in all thirty-four chapters, and the Abandonment to Divine
+  Providence attributed to Caussade, carried whole in Ramiere's arrangement
+  of 1861 with the attribution stated as debated; the Society in the
   world (Xavier's letters, and the Imago primi saeculi with its Dutch
-  mirror, emblem by emblem); Friedrich Spee (the Cautio Criminalis);
-  and the counter-voices, from the Monita secreta and Pascal to the
-  brief of 1773 carried complete. With a canonical
-  paragraph-level citation index, a cross-corpus concordance, a concept
-  atlas, curated reading paths, a discernment lexicon, registers of persons
-  and places, and a citation-bound dialogue with the corpus. Four modern
-  translations remain in copyright: their structure and anchors are part of
-  the apparatus, but no text of them is distributed - a reader opens them
-  from a copy they own.
+  mirror, emblem by emblem); Friedrich Spee (the Cautio Criminalis and the
+  Trutznachtigall); and the counter-voices, from the Monita secreta and
+  Pascal to the brief of 1773 carried complete. With a canonical
+  paragraph-level citation index, a cross-corpus concordance over the whole
+  apparatus, a concept atlas, curated reading paths, a discernment lexicon,
+  registers of persons and places, and a citation-bound dialogue with the
+  corpus. Four modern translations remain in copyright: their structure and
+  anchors are part of the apparatus, but no text of them is distributed - a
+  reader opens them from a copy they own.
 keywords:
   - Ignatius of Loyola
   - Jesuit studies
@@ -40,5 +44,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.1.0
-date-released: 2026-09-10
+version: 1.2.0
+date-released: 2026-09-12
