@@ -11,7 +11,9 @@ the *Spiritual Diary*, and the letters of 1524–1547 — and, around them, the 
 spirituality became the practice of an order: the *Official Directory of 1599* on giving the Exercises,
 and the *Memoriale* of Blessed Peter Faber, the first companion, discernment kept as a daily journal
 from 1542 to 1546. Around those stand the programme modules that carry the corpus out into the world and
-its arguments: Xavier's letters from India and Japan, the emblems of the *Imago primi saeculi* of 1640
+its arguments: the school of discernment carried to its end — Nadal's annotations on the Examen,
+Rodríguez's *Of Conformity to the Will of God*, and the *Abandonment to Divine Providence* attributed to
+Caussade — Xavier's letters from India and Japan, the emblems of the *Imago primi saeculi* of 1640
 with their Dutch mirror, Friedrich Spee (the *Cautio Criminalis* and the *Trutznachtigall*), and the
 counter-voices — the forged *Monita secreta*, Pascal's *Provinciales*, and the brief *Dominus ac
 Redemptor* of 1773 with which the corpus closes. The apparatus indexes them by their canonical numbering,
@@ -137,7 +139,7 @@ A few megabytes of JSON, all of it derived, editorial, or public-domain source t
 | `works.json` | the seven core works: translator, rights, citation form, body range, sections, measures |
 | `programme.json` | the programme modules — line, status, source, and (for shipped ones) data file and citation form |
 | `exercitia.json`, `directorium.json`, `memoriale.json` | the shipped full-text core editions (trilingual Exercises, bilingual Directory of 1599, bilingual Memoriale) |
-| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json` | the shipped programme modules, paragraph by paragraph on their own citation grids |
+| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json` | the shipped programme modules, paragraph by paragraph on their own citation grids |
 | `anchors.json` | 1,887 canonical paragraph anchors, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
 | `introduction.json` | the introductory essay (editorial matter, CC BY 4.0); manuscript in `docs/` |
@@ -274,9 +276,10 @@ in short:
   public domain by age; the editorial keying to the [1]–[370] grid and the
   paragraph alignment are dedicated CC0 like the rest of the derived data.
 - **The programme modules** (`data/pascal.json`, `monita.json`, `dominus.json`,
-  `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, with the images in
+  `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`,
+  `rodriguez.json`, `caussade.json`, with the images in
   `assets/imago/` and `assets/spee/`) carry public-domain source text —
-  printings of 1631 to 1872 and, for the images, of 1640 — whose faithful
+  printings of 1631 to 1919 and, for the images, of 1640 — whose faithful
   transcription and reproduction add nothing licensable; the editorial
   segmentation, the working translations made for this repository, and the
   descriptions are dedicated CC0. Each file states its own source; the whole
