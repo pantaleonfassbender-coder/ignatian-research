@@ -284,10 +284,12 @@ in short:
   segmentation, the working translations made for this repository, and the
   descriptions are dedicated CC0. Each file states its own source; the whole
   list is in **[SOURCES.md](SOURCES.md)**.
-- **`data/pilgrim_profile.json`** and **`docs/`** carry the author's essay
-  *The Pilgrim's Profile* (2026), presented on the site's separate author page
-  (`#/author`). It is interpretation, not edition, and is © the author, all
-  rights reserved — deliberately outside the open licences of this repository.
+- **`data/pilgrim_profile.json`**, **`data/exercised_self.json`** and
+  **`docs/`** carry the author's essays *The Pilgrim's Profile* (2026) and
+  *The Exercised Self and the Ecstatic Image* (2026), presented on the site's
+  separate author page (`#/author`). They are interpretation, not edition, and
+  are © the author, all rights reserved — deliberately outside the open
+  licences of this repository.
 - **`vendor/`** carries the upstream licences of pdf.js (Apache-2.0) and jsPDF
   (MIT).
 

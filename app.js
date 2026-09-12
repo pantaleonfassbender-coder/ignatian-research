@@ -1834,6 +1834,7 @@ function textSection(p, t, sid) {
    the concordance, the statistics or the dialogue. */
 function viewAuthor() {
   const ready = ensureLG("pilgrim_profile", () => route());
+  const ready2 = ensureLG("exercised_self", () => route());
   const links = [
     ["Portfolio & Resource Hub", "https://leo-fassbender.netlify.app/"],
     ["LinkedIn", "https://www.linkedin.com/in/drpantaleonfassbender"],
@@ -1847,7 +1848,7 @@ function viewAuthor() {
       <h1>Dr. Pantaleon Fassbender</h1>
       <p class="lede">This page is deliberately separate from the research apparatus. The apparatus
       confines itself to sources, derived data and stated method; what follows here is the author's
-      own — his professional profile, and an interpretive essay that reads the Ignatian sources
+      own — his professional profile, and two interpretive essays that read the Ignatian sources
       through the lens of his discipline. Nothing on this page feeds the concordance, the statistics
       or the dialogue.</p>
     </div>
@@ -1873,11 +1874,24 @@ function viewAuthor() {
       <a href="#/exercitia">Exercitia</a> and <a href="#/directorium">Directory 1599</a>.</p>
       <div id="essay">${ready ? "" : `<p class="fine">Loading the essay …</p>`}</div>
     </div>
+
+    <div class="panel"><span class="tag">Essay · September 2026</span>
+      <h2 style="margin:.4rem 0 .2rem">The Exercised Self and the Ecstatic Image</h2>
+      <p class="fine" style="margin:0 0 .8rem">Ignatius of Loyola in Two Modern Receptions: Peter
+      Sloterdijk's Anthropotechnics and Sergei Eisenstein's Poetics of Pathos ·
+      <a href="docs/Fassbender-2026-The-Exercised-Self-and-the-Ecstatic-Image.docx">download the manuscript (.docx)</a></p>
+      <p class="fine" style="margin:0 0 1rem;color:var(--fg3)">A companion piece to the essay above:
+      what happened to Ignatius when he fell into the hands of two of the twentieth century's most
+      consequential readers of practice — the philosopher of anthropotechnics and the theorist of
+      montage. Its closing table maps each reception claim to a corpus anchor, so every claim can be
+      audited against the apparatus's own editions — start at <a href="#/exercitia">Exercitia</a>.</p>
+      <div id="essay2">${ready2 ? "" : `<p class="fine">Loading the essay …</p>`}</div>
+    </div>
   </div>`));
-  if (ready) renderEssay(view.querySelector("#essay"));
+  if (ready) renderEssay(view.querySelector("#essay"), D.pilgrim_profile);
+  if (ready2) renderEssay(view.querySelector("#essay2"), D.exercised_self);
 }
-function renderEssay(box) {
-  const e = D.pilgrim_profile;
+function renderEssay(box, e) {
   if (!e) return;
   const table = c => `<div style="overflow-x:auto;margin:.8rem 0"><p class="fine" style="margin:0 0 .3rem"><strong>${esc(c.caption)}</strong></p>
     <table style="font-size:.85rem;min-width:640px"><tr>${c.header.map(h => `<th style="text-align:left;padding:.3rem .6rem .3rem 0;color:var(--acc2)">${esc(h)}</th>`).join("")}</tr>

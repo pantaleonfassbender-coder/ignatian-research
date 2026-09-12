@@ -1,0 +1,367 @@
+{
+ "titel": "The Exercised Self and the Ecstatic Image",
+ "untertitel": "Ignatius of Loyola in Two Modern Receptions: Peter Sloterdijk's Anthropotechnics and Sergei Eisenstein's Poetics of Pathos",
+ "autor": "Dr. Pantaleon Fassbender (with Claude Fable 5)",
+ "datum": "September 2026",
+ "copyright": "© 2026 Dr. Pantaleon Fassbender. All rights reserved.",
+ "sections": [
+  {
+   "level": 1,
+   "titel": "Executive Summary",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "This essay — a companion piece to The Pilgrim's Profile, the psychological portrait published on this site — examines what happened to Ignatius of Loyola when he fell into the hands of two of the twentieth and twenty-first centuries' most unlikely readers: the German philosopher Peter Sloterdijk and the Soviet film director Sergei Eisenstein. Neither man read the Spiritual Exercises as devotional literature, and neither had a confessional stake in them. Both read them instead as technology: a written procedure that, correctly executed, reliably produces inner states in a human being. That shared intuition, arrived at independently and put to almost opposite uses, is the subject of this essay."
+    },
+    {
+     "t": "p",
+     "s": "Sloterdijk gives Ignatius a load-bearing position in his “general ascetology.” In “You Must Change Your Life” (2009/2013), human beings are defined as practicing creatures who produce themselves through repeated exercises, and the Ignatian Exercises appear as the most concentrated early-modern layer in a sedimented history of such self-formation — “autogenic training in contrition” over thirty days of utmost concentration (Sloterdijk, 2013b, pp. 310–311). In his globalization book he goes further: the Jesuits are “the first subjects of the Modern Age in the precise sense of the word” (Sloterdijk, 2013a, p. 59), and a late essay adds the Jesuit to the genealogy of the modern consultant (Sloterdijk, 2017)."
+    },
+    {
+     "t": "p",
+     "s": "Eisenstein worked the same seam from the other end. In his unfinished theoretical magnum opus “Metod” and in “Nonindifferent Nature,” the Exercises figure as an engineering manual for ecstasy: a system of rhythm, repetition and staged sensory imagination whose dramaturgy of interiority he reverse-engineered into a theory of montage and pathos — the art of transporting a viewer “out of himself” by compositional means (Bulgakowa, 2021; Iampolski, 2016; do Egito, 2022). Where the retreat director orchestrates the exercitant's seeing, the film director orchestrates the audience's; the transcendence toward which pathos transports is no longer God but the revolution."
+    },
+    {
+     "t": "p",
+     "s": "The two receptions converge on a de-theologized, praxeological Ignatius and diverge on everything else: formation of a self over years versus transformation of an audience in seconds; askesis versus aisthesis. Both pay the same price — discernment, election and grace drop out of view. The essay maps both readings against the sources, tabulates their structure, and closes with pointers to the passages of this apparatus where every claim can be checked."
+    }
+   ]
+  },
+  {
+   "level": 1,
+   "titel": "1. Introduction and Aim",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "The reception history of Ignatius of Loyola did not end with hagiography, church history and the psychological literature surveyed in the companion essay. In the twentieth century the Spiritual Exercises began to attract a different kind of reader: semiologists, philosophers of practice, theorists of media and film — people with no confessional stake in the text and often an explicit distance from its faith. What drew them was a feature that pious editions tend to soften and that the companion essay identified as central to Ignatius's psychology: the Exercises are not a book to be read but a program to be executed, a month-long choreography of imagination, memory, affect and decision, written not for the exercitant but for the person who directs him. Roland Barthes called their author a “logothete,” a founder of a language (Barthes, 1971/1976); Pierre Hadot took the very phrase “spiritual exercises” from the Ignatian tradition to name what ancient philosophy had been before it became an academic discipline (Hadot, 1995); Michel Foucault placed such practices in his history of “technologies of the self” (Foucault, 1988)."
+    },
+    {
+     "t": "p",
+     "s": "Within this broad practice turn, two receptions stand out for their depth, their consequences and their strangeness. Peter Sloterdijk built Ignatius into the most ambitious philosophical system of the early twenty-first century to be organized around the concept of exercise. Sergei Eisenstein, three generations earlier and on the other side of an ideological divide, studied the Exercises for decades as a working manual for the production of ecstasy in an audience. One appropriated Ignatius for a theory of how selves are made; the other, for a theory of how selves are momentarily unmade. Neither reception has been systematically confronted with the other, and neither is well known to readers of Ignatian literature."
+    },
+    {
+     "t": "p",
+     "s": "This essay reconstructs both readings from their primary passages and the relevant scholarship, compares their logic, and asks what each sees in the sources that conventional readings miss — and what each flattens. Like the companion essay, it is interpretation, argued with its limits on the table, and it is written to be checked: the final section points to the places in this apparatus — the Exercises, the Constitutions, the letters — where the claims of both receptions can be audited against the texts themselves."
+    }
+   ]
+  },
+  {
+   "level": 1,
+   "titel": "2. The Practice Turn: Ignatius Among the Moderns",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "The context for both receptions is a twentieth-century rediscovery of religious practice as technique. Barthes's Sade, Fourier, Loyola (1971/1976) is its most provocative document: what interests Barthes in Ignatius is not belief but code — the Exercises as an invented language whose grammar (annotations, weeks, preludes, points, colloquies) organizes the production and reception of signs, down to a bookkeeping of the soul in which every motion is noted and weighed. Hadot (1995), from the side of classical philology, showed that such structured regimes of meditation, examination and self-transformation were the substance of ancient philosophy itself, and that the Ignatian Exercises stand — knowingly or not — in a line of Stoic and Platonic askesis transmitted through monasticism. Foucault (1988) generalized the category: techniques by which individuals act on their own bodies, thoughts and conduct so as to transform themselves toward some state of perfection are a constant of Western history, and their study is neither theology nor psychology but a kind of technology assessment. Michel de Certeau, himself a Jesuit, supplied the historiographical conscience of this field with his account of early-modern mystic speech (de Certeau, 1982/1992)."
+    },
+    {
+     "t": "p",
+     "s": "These authors set the terms that our two protagonists radicalize in opposite directions. Sloterdijk generalizes: not only philosophy and religion but all of human culture is re-described as systems of exercise, and Ignatius becomes one summit in a mountain range of trainers. Eisenstein instrumentalizes: the exercise is stripped of its goal and mined for its mechanism, which is then rebuilt in another medium for another purpose. Both moves presuppose the same textual fact — that the Exercises are written as procedure, with the repeatability and indifference to the operator that the word implies — and both were made by readers working at full distance from the text's own intention. That distance is their limitation and, as will be seen, their diagnostic value."
+    }
+   ]
+  },
+  {
+   "level": 1,
+   "titel": "3. Sloterdijk: Ignatius in the General Ascetology",
+   "inhalt": []
+  },
+  {
+   "level": 2,
+   "titel": "3.1 Anthropotechnics and the practicing life",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "“You Must Change Your Life” (Du mußt dein Leben ändern, 2009; English 2013) takes its title from the imperative at the end of Rilke's poem on the archaic torso of Apollo — the command that, for Sloterdijk, every demanding artifact and every exemplary life silently addresses to us. The book's thesis is that the human being is the creature that cannot not practice: homo repetitivus, formed and re-formed by “anthropotechnics,” the repeated operations by which humans work on themselves. What tradition called religions are, on this account, misdescribed entities — not systems of belief but “systems of exercises,” graded programs for producing improbable states of the person under the pull of a “vertical tension” toward the better. The history of piety is thus re-filed under the history of training, alongside athletics, medicine, pedagogy and the modern self-optimization industries (Sloterdijk, 2013b)."
+    },
+    {
+     "t": "p",
+     "s": "Ignatius enters this panorama at a precise point: as the great early-modern condenser of the practice heritage. In Sloterdijk's reading, the Exercises gather the whole sedimented history of “autoplastic” practice — the athlete's drill, the monk's rule, the penitent's discipline — into a single concentrated month: “the Jesuit exercises, this autogenic training in contrition over thirty hard days and nights of utmost concentration,” form the “newest layer” in the archaeology of Western self-cultivation, and the order built on them “explicitly heralded” what would later be called the Modern Age (Sloterdijk, 2013b, pp. 310–311). The anachronistic vocabulary — autogenic training is Johannes Heinrich Schultz's twentieth-century relaxation method — is deliberate: Sloterdijk wants the reader to see a psychotechnique where the tradition saw a school of prayer, and to notice that the technique came first."
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "titel": "3.2 The Jesuit as first modern subject",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "The globalization study In the World Interior of Capital sharpens the claim into a thesis about modernity itself. There the Jesuits appear as “the first subjects of the Modern Age in the precise sense of the word”: subjectivity, for Sloterdijk, is not inwardness but fitness — the psychotechnically produced readiness to be sent anywhere, to engage the whole world as a field of operations (Sloterdijk, 2013a, p. 59). The Ignatian formation system manufactures precisely this: mobile, self-steering, mission-capable persons, decades before secular Europe had a name for them. Sloterdijk singles out the conversion at the heart of the machinery: “When a sequence of adverse events can be experienced as a passion, suffering is converted into ability” (2013a, p. 60) — a formula in which a reader of the companion essay will recognize both Loyolan indifference and the reframing technology of the Exercises' First Week, redescribed as the production of operational competence out of adversity."
+    },
+    {
+     "t": "p",
+     "s": "The claim is less eccentric than it sounds. Historians have long noted that the Society of Jesus was the first religious order designed for worldwide deployment — no choir, no fixed residence, a superior general holding a global map — and that its Constitutions read in long stretches like an operations manual for a distributed organization (O'Malley, 1993). What Sloterdijk adds is the philosophical valuation: he takes the formation system that produces such persons to be the historically decisive invention, and the theology it serves to be, for purposes of this history, packaging. The provocation lies entirely in that inversion."
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "titel": "3.3 The consultant genealogy",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "A late essay completes the picture from an unexpected side. In “Konsultanten” (2017), Sloterdijk describes modernity as a “neo-sophistic” age of advisers: since the Renaissance, the acting human being has been discovered as das zu beratende Wesen — the creature in need of consultation — and a series of new social characters institutionalized this need: the lawyer, the secretary, the diplomat, the journalist, the essayist — and the Jesuit. The order figures here as an ascetically drilled advisory corps: confessors and counselors of princes, educators of elites, specialists in other people's decisions — consultants avant la lettre whose authority rested precisely on the trained indifference their formation produced (Sloterdijk, 2017). The essay has already entered the cultural history of consulting: Schauerte's media history of counsel takes it as a leading witness for the “consiliary dispositive” of the modern West, while pushing the genealogy back far beyond the Renaissance (Schauerte, 2019)."
+    },
+    {
+     "t": "p",
+     "s": "For readers of the companion essay, this closes a loop. The Pilgrim's Profile examined what the modern leadership industry — a consulting culture par excellence — tries to extract from Ignatius. Sloterdijk's genealogy suggests the traffic has been running in the other direction for four centuries: the figure of the modern adviser, detached, methodical, working on the decisions of others while claiming nothing for himself, is itself partly a Jesuit invention. The spiritual director of the Exercises, who must not incline the exercitant toward any choice but keep him “in equilibrium” before his election, is the ancestor idealized in every consulting ethics ever written."
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "titel": "3.4 What Sloterdijk sees — and what he ignores",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "What Sloterdijk sees, more clearly than most theological readers, is the procedural exactness of the Ignatian corpus and its systemic character: formation over heroics, repeatable method over charism — the very finding the psychological profile arrived at from the evidence of the letters and the Constitutions. His Ignatius is a designer of subjectivation processes, and on that point the sources are with him. The reading also has real explanatory power for the order's improbable scaling in its first decades, which hero-centered accounts consistently fail to explain."
+    },
+    {
+     "t": "p",
+     "s": "What he flattens is the interior of the machine. In a general ascetology, grace can only appear as a training effect and God as the name of the vertical tension; but the Exercises themselves are built around moments the method explicitly cannot produce — consolation “without preceding cause,” the freedom of the Creator to “deal directly with the creature” (Ignatius of Loyola, 1951, §§ 15, 330). Discernment, in the sources, is not self-monitoring for performance but receptivity to what one did not make; the election — the sober, criteria-guided decision that the whole month serves — disappears in Sloterdijk's account behind the spectacle of self-enhancement. Sympathetic readers have noted the same reduction from the theological side (Dettloff, 2017). Even the celebrated formula of pages 310–311 misfiles the text: thirty days of “contrition” describes the First Week, not the four-week arc, whose center of gravity is not penance but choice. Sloterdijk's Ignatius, in short, is a trainer without a counterpart — an athlete of the self in a world where the Other has become a gradient."
+    }
+   ]
+  },
+  {
+   "level": 1,
+   "titel": "4. Eisenstein: The Exercises as a Machine for Ecstasy",
+   "inhalt": []
+  },
+  {
+   "level": 2,
+   "titel": "4.1 Sources of an obsession",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "Eisenstein's engagement with Ignatius was neither a flourish nor a secret. He collected literature on mysticism all his life — to the discomfort of his leftist German acquaintances — and was introduced to hermetic and mystical doctrines in 1920 by the Rosicrucian Boris Zubakin (Bulgakowa, 2021, p. 92). The interest was professional from the start: when Eisenstein wanted to understand what Stanislavsky's acting system actually did to an actor's inner life, he characteristically “did not interpret Stanislavskiy with reference to Buddhism but with reference to Loyola's mental exercises” (Bulgakowa, 2021, p. 92); a text of 1937 sets the monastic production of ecstatic states side by side with the Stanislavskian production of emotion, as two laboratories of the same applied psychology (do Egito, 2022). Popular interwar accounts of the Society — above all Fülöp-Miller's widely read The Power and Secret of the Jesuits (1929/1930) — had put Jesuit psychotechnics into general circulation; Eisenstein, who corresponded with psychologists and read voraciously in the German experimental literature, took the further step of treating the Exercises as data."
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "titel": "4.2 Metod: ecstasy, pre-logical thought, rhythm",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "The theoretical frame is the unfinished Grundproblem, later Metod, on which Eisenstein worked from 1932 until his death (Eisenstein, 2002). Its basic hypothesis: an artwork is effective when its form leads the recipient from logical thought down into pre-logical, sensuous thinking and back — a regression experienced, at maximum intensity, as ecstasy. In building the theory, Eisenstein linked the German experimental psychology of Wundt and Kretschmer and the physiological aesthetics of Nietzsche “with inspirations from his study of the mystical practices of Ignatius of Loyola” (Bulgakowa, 2021, p. 89). Loyola supplied what the laboratory could not: a documented, centuries-tested procedure for inducing the state in question. The mechanism Eisenstein isolated was rhythm: “Loyola's Exercises propose achieving an ecstatic state through rhythmic repetition” (Bulgakowa, 2021, p. 94) — the fixed hours, the repetitions and “applications,” the recursive return of the same material at rising intensity, which the Exercises prescribe with the exactness of a training plan (Ignatius of Loyola, 1951, §§ 62, 118–126, 148)."
+    },
+    {
+     "t": "p",
+     "s": "Read against the text, the observation is acute. The Exercises do organize repetition as an escalating series — exercise, first repetition, second repetition, “application of the senses” — in which discursive meditation is progressively replaced by direct multi-sensory immersion in the scene: seeing the persons, hearing the words, smelling, tasting, touching (§§ 121–126). What a theologian describes as deepening prayer, a director recognizes as a shooting script for the imagination: the composition of place (§ 47) is a location scout's instruction; the preludes are establishing shots; the application of the senses is close-up and sensory montage. Eisenstein's originality was to take this dramaturgy of interiority seriously as dramaturgy — and to ask what it implies for an art whose spectator, unlike the exercitant, does not cooperate voluntarily."
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "titel": "4.3 Nonindifferent Nature: pathos and the formula of ecstasy",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "In Nonindifferent Nature, written in the 1940s, the harvest of this study is a theory of pathos defined purely by its effect: “the effect of the pathos of a work consists in bringing the viewer to the point of ecstasy” (Eisenstein, 1987, as cited in Iampolski, 2016, p. 363). Ecstasy is taken at its etymology — ex-stasis, a being-beside-oneself — and analyzed as a formal event: a leap of the work's structure out of one register into another (image into sound, quality into its opposite, the depicted into the undepictable), which carries the viewer with it. Iampolski has shown how close this places Eisenstein to Georges Bataille, who at the same moment was building his “inner experience” from the same materials: “Christian mysticism, the practice of ecstasy, St. Ignatius of Loyola's spiritual exercises” (Iampolski, 2016, p. 364; Bataille, 1943/1988). And Eisenstein knew where the road led: for the person brought into this state, he noted, its uncommonness is connected “with the image of the Lord God” (as cited in Iampolski, 2016, p. 364). The engineer of ecstasy understood that he was operating a machine built for transcendence."
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "titel": "4.4 From exercise to montage",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "The structural transfer is exact enough to state as a proportion: as the director of the Exercises is to the exercitant, so the film director is to the audience. In the retreat, an experienced other selects and orders the material, controls pacing and repetition, intensifies sensory involvement step by step, and aims the whole sequence at a moment of decisive inner movement. Eisenstein rebuilt that architecture for the cinema — with the difference that the audience has not asked for an election, and none is on offer. The ecstatic composition of the Odessa steps or of the mourning sequences he analyzed, the study of El Greco's vertically exploding canvases as proto-montage: all apply the Loyolan insight that transport is producible by composition. Aumont, triangulating Barthes and Eisenstein through their common source, put the difference precisely: Barthes reads the Exercises for signifiance, the endless production of meaning; Eisenstein reads them for efficacy — what the machine does to the one inside it (Aumont, 1991). And the purpose was never hidden: in the Soviet frame, the transcendence toward which pathos transports is no longer God but the revolution — a secularization of religious functions into art that do Egito (2022) identifies as the signature of the whole Soviet modernist project."
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "titel": "4.5 What Eisenstein sees — and what he ignores",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "Eisenstein sees, better than almost any reader before modern media theory, that the Exercises are a compositional system addressed to the imagination and that their instructions are executable — that the book works. His notes anticipate by decades the scholarly rediscovery of Ignatian image-practice as a chapter in the history of media, and his archive became a site where Western scholarship relearned how deeply the Soviet avant-garde had read the mystics (Kleberg & Lövgren, 1987; Kleiman & Somaini, 2016; Somaini, 2016)."
+    },
+    {
+     "t": "p",
+     "s": "What he flattens is the steering. In the sources, ecstasy is not the product; it is not even the point. Consolation and desolation are data for discernment (§§ 313–336), and the rules warn the exercitant against exactly the confusion Eisenstein needs: intensity is no warrant of truth, and the affective peak is to be examined, not repeated for its own sake. The month aims at an election — a sober, reviewable decision about a life (§§ 169–189) — and its most characteristic device, agere contra (§ 13), runs directly against the grain of appetite, including the appetite for exalted states. Eisenstein kept the accelerator and discarded the brakes and the destination; what remained is a technics of transport available to any operator for any end. His own late notes on pathos and the “image of the Lord God” suggest he understood the amputation better than his theory admitted."
+    }
+   ]
+  },
+  {
+   "level": 1,
+   "titel": "5. Two Receptions Compared",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "Set side by side, the two readings form a near-perfect complementary pair. Both are praxeological: they take the Exercises as procedure, not doctrine, and both place Ignatius at the threshold of modernity — Sloterdijk at the birth of the modern subject, Eisenstein at the birth of modern affect-engineering and thus, by his own genealogy of media, of cinema itself. But they cut the machine at right angles to each other: Sloterdijk follows what long, repeated exercise does to the practicing self; Eisenstein follows what composed intensity does to a receiving audience. Askesis versus aisthesis; years versus seconds; the formation of a person versus the momentary unmaking of one."
+    },
+    {
+     "t": "table",
+     "caption": "Table 1  Two modern receptions of Ignatius of Loyola compared",
+     "header": [
+      "Dimension",
+      "Sloterdijk",
+      "Eisenstein"
+     ],
+     "rows": [
+      [
+       "Primary engagement",
+       "You Must Change Your Life (2009); In the World Interior of Capital (2005); “Konsultanten” (2017)",
+       "Metod / Grundproblem (1932–1948); Nonindifferent Nature (1940s)"
+      ],
+      [
+       "The Exercises are…",
+       "The concentrated early-modern layer of anthropotechnics — a system for producing subjects",
+       "An engineering manual for ecstasy — a system for producing states"
+      ],
+      [
+       "Operative concept",
+       "Exercise (Übung), vertical tension, autoplasticity",
+       "Pathos, ecstasy (ex-stasis), rhythm, montage"
+      ],
+      [
+       "Site of transformation",
+       "The practicing self",
+       "The receiving audience"
+      ],
+      [
+       "Time scale",
+       "Decades of formation; a life",
+       "Minutes of composition; an instant of transport"
+      ],
+      [
+       "Ignatius's modernity",
+       "First modern subjects: mobile, formed, mission-capable; ancestors of the consultant",
+       "First theorist-practitioner of affect production; ancestor of cinema's dramaturgy"
+      ],
+      [
+       "What remains of God",
+       "A gradient: “vertical tension”",
+       "A destination renamed: the revolution"
+      ],
+      [
+       "Characteristic risk",
+       "Reduction of grace and election to training effects",
+       "Transport without discernment; the machine without its steering"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "s": "The symmetry has one ironic center. The Ignatian figure both receptions quietly presuppose is not the exercitant but the director of the Exercises — the experienced other who administers the process without owning its outcome. Sloterdijk's genealogy turns him into the modern consultant and trainer; Eisenstein turns him into the film director. Two of the twentieth century's defining professions — the adviser of decisions and the composer of mass emotion — thus both trace a line of descent, one avowed and one practical, to the same slim sixteenth-century manual for directing other people's interiority."
+    }
+   ]
+  },
+  {
+   "level": 1,
+   "titel": "6. Limitations",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "Three limits should be stated plainly. First, this is a reception study: it reports what Sloterdijk and Eisenstein made of Ignatius, and neither is a reliable guide to the historical Ignatius — both read him in translation, at speed, and through mediating literatures (Sloterdijk through the cultural history of asceticism, Eisenstein through the mysticism shelf of the 1920s, including popularizations such as Fülöp-Miller's). Second, the textual base is asymmetric: Sloterdijk's books are stable published objects, while Metod is a posthumously edited archive whose editions differ substantially (Eisenstein, 2002; Bulgakowa, 2021), and part of the Russian scholarship is engaged here through its published summaries rather than at full depth (do Egito, 2022). Third, quotations from Sloterdijk are given in Hoban's English translation, and the essay's own comparisons — the proportion of director to exercitant, the consultant genealogy's link to the election — are interpretive constructions, offered to be tested against the sources, not found in them verbatim. No claim of mutual influence between the two receptions is made or implied; there is no evidence Sloterdijk built on Eisenstein's Ignatiana or vice versa."
+    }
+   ]
+  },
+  {
+   "level": 1,
+   "titel": "7. Where to Check: Reception Claims and Corpus Anchors",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "Both receptions are checkable against this apparatus, and checking them is the best use of this essay. The table below pairs each central claim with the primary passages — by the standard paragraph numbering used throughout this site — where a reader can watch the claim succeed or fail."
+    },
+    {
+     "t": "table",
+     "caption": "Table 2  Reception claims and where to test them in the sources",
+     "header": [
+      "Claim",
+      "Corpus anchor",
+      "What to look for"
+     ],
+     "rows": [
+      [
+       "The Exercises are executable procedure (both receptions)",
+       "Exx. 1–20 (annotations)",
+       "Instructions addressed to the director, not the exercitant; timing, dosage, adaptation rules"
+      ],
+      [
+       "Rhythmic repetition escalating to sensory immersion (Eisenstein)",
+       "Exx. 62, 118–126, 148",
+       "Exercise → repetition → second repetition → application of the senses; rising sensory specificity"
+      ],
+      [
+       "Composition as staged seeing (Eisenstein)",
+       "Exx. 47, 91, 112, 138",
+       "Composition of place; preludes functioning as establishing shots"
+      ],
+      [
+       "Intensity is data, not goal (against Eisenstein's use)",
+       "Exx. 313–336",
+       "Rules for discernment; consolation examined, not pursued; § 330 on consolation without preceding cause"
+      ],
+      [
+       "The month aims at a decision (against both reductions)",
+       "Exx. 169–189",
+       "The election: criteria, times, methods; sobriety of the procedure"
+      ],
+      [
+       "Training against appetite (against reading ecstasy as product)",
+       "Exx. 13, 97, 157, 350–351",
+       "Agere contra; acting against the very states one enjoys"
+      ],
+      [
+       "Formation system over hero selection (Sloterdijk)",
+       "Constitutions, Parts I–V",
+       "Admission, probation, studies, incorporation: subjectivation as designed process"
+      ],
+      [
+       "The Jesuit as adviser of decisions (Sloterdijk, 2017)",
+       "Exx. 15; the letters",
+       "The director's mandated neutrality before the election; counsel to princes and colleagues in the correspondence"
+      ]
+     ]
+    },
+    {
+     "t": "p",
+     "s": "A reader who follows these anchors will find that the receptions are neither refuted nor vindicated wholesale. Sloterdijk's formation thesis survives contact with the Constitutions remarkably well; his erasure of the election does not survive Exx. 169–189. Eisenstein's compositional reading survives — even gains — from a close reading of the applications of the senses; his equation of the Exercises with ecstasy production dissolves on the rules for discernment. That is the pattern one would expect when strong readers mine a text for what they need: the ore is real, and so is the tailings pile."
+    }
+   ]
+  },
+  {
+   "level": 1,
+   "titel": "8. Conclusion",
+   "inhalt": [
+    {
+     "t": "p",
+     "s": "Two of the strangest readers Ignatius ever had agree on one thing against most of his pious and most of his hostile readers alike: the Spiritual Exercises are a technology, and technologies can be studied, copied and repurposed. Sloterdijk repurposed the formation machine into a philosophy of practice and a genealogy of the consulting society; Eisenstein repurposed the ecstasy machine into a poetics of cinema. Each reception is powerful precisely where it is partial, and their partialities are instructive because they are opposite: put together, they reconstruct almost the whole apparatus — the long discipline and the engineered instant — while each alone amputates the faculty that connects the two, discernment, and the purpose both serve in the sources, a free decision before God."
+    },
+    {
+     "t": "p",
+     "s": "That surplus — discernment as a means of deciding rather than a technique of intensity, and a God who is more than a vertical gradient or a renamed destination — is exactly what remains unclaimed by both receptions, and exactly what this apparatus keeps available for inspection. The texts are in the five lines of this site; the receptions are now on the table beside them. The invitation, as always, is to read both and audit the difference."
+    }
+   ]
+  }
+ ],
+ "references": [
+  "Aumont, J. (1991). Barthes, Loyola, Ejzenštejn [Barthes, Loyola, Eisenstein]. In P. Montani (Ed.), Sergej Ejzenštejn: Oltre il cinema (pp. 29–41). Edizioni Biblioteca dell'Immagine.",
+  "Barthes, R. (1976). Sade, Fourier, Loyola (R. Miller, Trans.). Hill and Wang. (Original work published 1971)",
+  "Bataille, G. (1988). Inner experience (L. A. Boldt, Trans.). State University of New York Press. (Original work published 1943)",
+  "Bulgakowa, O. (2021). Sergei Eisenstein's system thinking: Influences and inspirations. Cultural Science Journal, 13(1), 85–100. https://doi.org/10.2478/csj-2021-0007",
+  "de Certeau, M. (1992). The mystic fable: Vol. 1. The sixteenth and seventeenth centuries (M. B. Smith, Trans.). University of Chicago Press. (Original work published 1982)",
+  "Dettloff, D. (2017, January 7). Sloterdijk's Jesuits. https://deandettloff.com/2017/01/07/sloterdijks-jesuits/",
+  "do Egito, T. (2022). Ignatiy Loyola i Konstantin Stanislavskiy v interpretatsii Sergeya Eyzenshteyna: Ot misticheskogo ekstaza k montazhu [Ignatius Loyola and Konstantin Stanislavsky in the interpretation of Sergey Eisenstein: From mystical ecstasy to editing]. Vestnik Pravoslavnogo Svyato-Tikhonovskogo gumanitarnogo universiteta. Seriya I: Bogoslovie. Filosofiya. Religiovedenie, 103, 87–107. https://doi.org/10.15382/sturI2022103.87-107",
+  "Eisenstein, S. M. (1987). Nonindifferent nature: Film and the structure of things (H. Marshall, Trans.). Cambridge University Press.",
+  "Eisenstein, S. M. (2002). Metod (N. Kleiman, Ed., Vols. 1–2). Muzey kino; Eyzenshteyn-tsentr.",
+  "Fassbender, P. (2026). The pilgrim's profile: An evidence-based psychological portrait of Ignatius of Loyola and its lessons for modern leadership practice. Ignatiana. https://ignatian-research.netlify.app/",
+  "Foucault, M. (1988). Technologies of the self. In L. H. Martin, H. Gutman, & P. H. Hutton (Eds.), Technologies of the self: A seminar with Michel Foucault (pp. 16–49). University of Massachusetts Press.",
+  "Fülöp-Miller, R. (1930). The power and secret of the Jesuits (F. S. Flint & D. F. Tait, Trans.). Viking Press. (Original work published 1929)",
+  "Hadot, P. (1995). Philosophy as a way of life: Spiritual exercises from Socrates to Foucault (A. I. Davidson, Ed.; M. Chase, Trans.). Blackwell.",
+  "Iampolski, M. (2016). Point – pathos – totality. In N. Kleiman & A. Somaini (Eds.), Sergei M. Eisenstein: Notes for a general history of cinema (pp. 357–372). Amsterdam University Press.",
+  "Ignatius of Loyola. (1951). The Spiritual Exercises of St. Ignatius: Based on studies in the language of the autograph (L. J. Puhl, Trans.). Loyola Press.",
+  "Ignatius of Loyola. (1996). Personal writings: Reminiscences, Spiritual Diary, Select Letters, including the text of The Spiritual Exercises (J. A. Munitiz & P. Endean, Trans.). Penguin.",
+  "Kleberg, L., & Lövgren, H. (Eds.). (1987). Eisenstein revisited: A collection of essays. Almqvist & Wiksell International.",
+  "Kleiman, N., & Somaini, A. (Eds.). (2016). Sergei M. Eisenstein: Notes for a general history of cinema. Amsterdam University Press.",
+  "O'Malley, J. W. (1993). The first Jesuits. Harvard University Press.",
+  "Schauerte, E. (2019). Lebensführungen: Eine Medien- und Kulturgeschichte der Beratung [Conducts of life: A media and cultural history of counsel]. Wilhelm Fink.",
+  "Sloterdijk, P. (2013a). In the world interior of capital: For a philosophical theory of globalization (W. Hoban, Trans.). Polity. (Original work published 2005)",
+  "Sloterdijk, P. (2013b). You must change your life: On anthropotechnics (W. Hoban, Trans.). Polity. (Original work published 2009)",
+  "Sloterdijk, P. (2017, February 18). Konsultanten sind die Künstler der Enthemmung [Consultants are the artists of disinhibition]. Neue Zürcher Zeitung. https://www.nzz.ch/feuilleton/sloterdijk-konsultanten-sind-die-kuenstler-der-enthemmung-ld.146325",
+  "Somaini, A. (2016). Cinema as “dynamic mummification,” history as montage: Eisenstein's media archaeology. In N. Kleiman & A. Somaini (Eds.), Sergei M. Eisenstein: Notes for a general history of cinema (pp. 19–108). Amsterdam University Press."
+ ]
+}
