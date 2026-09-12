@@ -91,5 +91,10 @@ and therefore have no source entry here; their editions are named on the method 
 
 ---
 
-Programme entries still planned (the Jesuit Relations, Ricci/Trigault, Acosta)
-name their intended sources in the works view; their entries move up here as they ship.
+Programme entries still planned name their intended sources in the works view, and their
+entries move up here as they ship: the Jesuit Relations, Ricci/Trigault and Acosta in the
+world line, and — the doctrine-of-the-soul strand of the school line — the Ratio Studiorum
+of 1599 (Latin in Pachtler's Monumenta Germaniae Paedagogica edition of 1887, public
+domain), one question of the Coimbra *De anima* commentary (early printings of 1598–1617,
+transcribed by eye), and an excerpt of Suárez's *De anima* (a usable early printing still
+to be located; the modern critical editions are in copyright and are not used).

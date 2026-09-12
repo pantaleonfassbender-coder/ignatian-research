@@ -39,6 +39,36 @@
   "kurz": "Caussade"
  },
  {
+  "id": "ratio",
+  "linie": "schule",
+  "status": "planned",
+  "autor": "Society of Jesus",
+  "jahr": "1599",
+  "titel": "Ratio Studiorum (selections)",
+  "warum": "The pedagogical constitution of the order — the document that made Aristotle's De anima and Aquinas's Summa the curriculum of every Jesuit college, and so the hinge between the Constitutions and the school's doctrine of the soul.",
+  "quelle": "Ratio atque institutio studiorum Societatis Iesu (1599). Latin in G. M. Pachtler's edition, Ratio studiorum et institutiones scholasticae Societatis Jesu, vol. II (Monumenta Germaniae Paedagogica V; Berlin: A. Hofmann, 1887; US public domain; Internet Archive ratiostudiorumetinstitutiones2). Planned selections: the rules for the professors of philosophy and of theology, with a working translation made for this site (CC0)."
+ },
+ {
+  "id": "conimbricenses",
+  "linie": "schule",
+  "status": "planned",
+  "autor": "The Coimbra Jesuits (Manuel de Góis)",
+  "jahr": "1598",
+  "titel": "Commentarii in tres libros De anima (one question)",
+  "warum": "The science of the soul beneath the school of discernment: the De anima course of the Coimbra college, where the order worked out its doctrine of the senses, the imagination and the intellect — the anthropology the Exercises presuppose when they set the imagination to compose a place and the intellect to weigh an election.",
+  "quelle": "Commentarii Collegii Conimbricensis Societatis Iesu in tres libros De anima (first printed Coimbra 1598); printings of 1600–1617 are on the Internet Archive. The modern editions are in copyright, so the text must be transcribed by eye from an early printing, as the Cautio was. Planned: a single question — the internal senses, or the prooemium on what the science of the soul is — with a working translation made for this site (CC0)."
+ },
+ {
+  "id": "suarez_anima",
+  "linie": "schule",
+  "status": "planned",
+  "autor": "Francisco Suárez",
+  "jahr": "1621",
+  "titel": "De anima (an excerpt)",
+  "warum": "The order's greatest philosopher on the cooperation of the soul's powers — sense, imagination and intellect rooted in the same soul and working in harmony — the doctrine at work wherever the Exercises set imagination and intellect to prayer together.",
+  "quelle": "Suárez's commentary on De anima, published posthumously (Lyon 1621). The critical edition (Castellote, 1978–1991) is in copyright and cannot be used; a usable early printing has not yet been sighted on the Internet Archive and must first be located. Until then this entry names the intention."
+ },
+ {
   "id": "xavier",
   "linie": "welt",
   "status": "shipped",
