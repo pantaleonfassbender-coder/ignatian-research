@@ -1857,7 +1857,8 @@ function viewAuthor() {
       <p class="readable">Dr. theol.; psychologist and leadership-development professional: teaching,
       research and consulting at the intersection of personnel psychology, leadership, ethics and —
       most recently — the psychology of artificial-intelligence systems. This apparatus is one instrument in a wider
-      portfolio of research tools and publications, collected on the portfolio site below.</p>
+      portfolio of research tools and publications, collected on the portfolio site below, and includes
+      the two interpretive essays presented on this page.</p>
       <p style="margin:.7rem 0 0">${links.map(([t, u]) =>
         `<a class="chip" href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" ")}</p>
     </div>
