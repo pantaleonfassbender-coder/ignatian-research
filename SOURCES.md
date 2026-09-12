@@ -42,6 +42,11 @@ and therefore have no source entry here; their editions are named on the method 
 - English: *The Practice of Christian and Religious Perfection*, vol. I (Dublin: James Duffy; London, 1861), Internet Archive scan — <https://archive.org/details/PracticeOfChristianAndReligiousPerfectionV1>. The Eighth Treatise of the First Part carried complete, all thirty-four chapters (printed pp. 386–522). The translation was made, as its title page states, not from the Spanish but from the French version of the Abbé Régnier-Desmarais of the Académie française — the classic transmission chain of this book, carried as it stands. Damaged chapter headings repaired against the volume's own table of contents; the final page, defaced by a library stamp, re-transcribed from the page image.
 - Spanish original (named, not yet carried): *Ejercicio de perfección y virtudes cristianas* (Seville, 1609), part I, treatise VIII; the 1609 printing and several 19th-century Spanish editions are on the Internet Archive.
 
+### Caussade (attributed), Abandonment to Divine Providence · `data/caussade.json`
+
+- English: Ella J. McMahon (trans.), *Abandonment; or, Absolute Surrender to Divine Providence*, ed. H. Ramière, S.J. (New York: Benziger Brothers, 1887), Internet Archive scan — <https://archive.org/details/abandonmentorabs00caus>. The book carried whole as Ramière shaped it: his doctrinal preface, the treatise in three books (9 + 12 + 12 chapters), and the appendix of pieces by other hands (Surin, Bossuet twice, Francis de Sales, the acts of abandonment of de Chantal, Bossuet and Pignatelli, and La Colombière's act of confidence in God, whose blackletter heading — lost to the OCR — was restored from the page image, printed p. 191). Two italic words the OCR shredded were likewise restored against the page images.
+- French original (named, not yet carried): *L'abandon à la providence divine*, ed. H. Ramière (Lyon: Perisse, 1861). The attribution to Caussade († 1751) is debated in modern scholarship; the module states the book as what it demonstrably is — the text Ramière published under Caussade's name.
+
 ## The Society in the world
 
 ### Francis Xavier, Letters from India and Japan (selections) · `data/xavier.json`
@@ -86,5 +91,5 @@ and therefore have no source entry here; their editions are named on the method 
 
 ---
 
-Programme entries still planned (Caussade, the Jesuit Relations, Ricci/Trigault, Acosta)
+Programme entries still planned (the Jesuit Relations, Ricci/Trigault, Acosta)
 name their intended sources in the works view; their entries move up here as they ship.

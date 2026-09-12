@@ -28,12 +28,15 @@
  {
   "id": "caussade",
   "linie": "schule",
-  "status": "planned",
+  "status": "shipped",
   "autor": "attributed to Jean-Pierre de Caussade († 1751)",
   "jahr": "before 1751 · transmitted 1861",
-  "titel": "Abandonment to Divine Providence (selections)",
+  "titel": "Abandonment to Divine Providence",
   "warum": "The school distilled to a single motion: the present moment as the sacrament of God's will. Written before the suppression, printed long after — the Favre pattern of transmission.",
-  "quelle": "L'Abandon à la providence divine, ed. Ramière (1861); E. J. McMahon's English of 1887 is public domain. The attribution is debated and will be stated as such."
+  "quelle": "English after Ella J. McMahon's translation, Abandonment; or, Absolute Surrender to Divine Providence (New York: Benziger Brothers, 1887; US public domain). Carried whole as Ramière shaped the book in 1861: his doctrinal preface, the treatise in three books (9 + 12 + 12 chapters), and the appendix of pieces by other hands (Surin, Bossuet, Francis de Sales, the acts of abandonment, and La Colombière's act of confidence). The French original (ed. Ramière, Lyon 1861) is named as source but not yet carried. The attribution is debated in modern scholarship and is stated as debated.",
+  "datei": "caussade",
+  "zk": "Ab.",
+  "kurz": "Caussade"
  },
  {
   "id": "xavier",
