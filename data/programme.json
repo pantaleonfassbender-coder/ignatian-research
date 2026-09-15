@@ -94,12 +94,15 @@
  {
   "id": "ricci",
   "linie": "welt",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Matteo Ricci / Nicolas Trigault",
   "jahr": "1615",
-  "titel": "De Christiana expeditione apud Sinas (selections)",
-  "warum": "Inculturation argued at the court of China: the boldest application of Ignatian adaptability.",
-  "quelle": "Trigault's Latin (Augsburg 1615), public domain; English would be this site's working translation (Gallagher 1953 in copyright)."
+  "titel": "De Christiana expeditione apud Sinas — in Purchas his Pilgrimes (selections)",
+  "warum": "Inculturation argued at the court of China: the boldest application of Ignatian adaptability — read here through the eyes of a Protestant compiler of 1625, a double transmission that is itself part of the story.",
+  "quelle": "English after Samuel Purchas's digest of 1625 ('A Discourse of the Kingdome of China, taken out of Ricius and Trigautius', with the mission narrative and the death of Ricci), as reprinted by MacLehose (Hakluytus Posthumus, vol. XII, Glasgow 1906; US public domain twice over). Eight sections cut to the argument: the entry of Ruggieri and Ricci, the alteration of habit from bonze to literatus, Nanquin with the Booke of Friendship; the kingdom's name and greatness, its characters, studies and degrees, the three sects, the strangers and forraine religions; and the death of Ricci with Pantoja's petition for a burial place. Purchas's orthography kept as printed. The Latin original (Trigault, Augsburg 1615) is named as source but not yet carried; Gallagher's 1953 translation is in copyright and was not consulted.",
+  "datei": "ricci",
+  "zk": "RT",
+  "kurz": "Ricci"
  },
  {
   "id": "acosta",

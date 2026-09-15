@@ -64,6 +64,11 @@ and therefore have no source entry here; their editions are named on the method 
 - English: Edward Grimston's translation of 1604, as reprinted by the Hakluyt Society — *The Natural & Moral History of the Indies*, ed. Clements R. Markham, 2 vols. (London, 1880) — <https://archive.org/details/naturalmoralhist01acos> (Books I–IV) and <https://archive.org/details/naturalmoralhist61acosrich> (Books V–VII). A 1604 translation in an 1880 printing, public domain twice over. Eleven chapters carried (I.1, I.9; II.6, II.9, II.14; IV.6–7; VI.1, VI.4, VI.7, VI.8), Grimston's orthography kept as printed; Markham's editorial footnotes and the printing's marginal glosses are not carried, and where the OCR shredded a marginal citation into the running text the sentence is restored and the fragment dropped.
 - Spanish original (named, not yet carried): *Historia natural y moral de las Indias* (Seville: Juan de León, 1590); the 1590 printing and later Spanish editions are on the Internet Archive.
 
+### Ricci/Trigault, De Christiana expeditione — in Purchas his Pilgrimes (selections) · `data/ricci.json`
+
+- English: Samuel Purchas's digest of 1625 — "A Discourse of the Kingdome of China, taken out of Ricius and Trigautius", with the mission narrative (ch. V) and the death of Ricci (ch. VIII) — as reprinted by James MacLehose and Sons, *Hakluytus Posthumus, or Purchas his Pilgrimes*, vol. XII (Glasgow, 1906) — <https://archive.org/details/hakluytusposthum12purc>. A 1625 translation-digest in a 1906 printing, public domain twice over; Purchas abridges and reworks Trigault, and that reception is carried as it stands, in its own orthography. Eight sections (V §§ 3–5; VII §§ 1, 2, 5, 6; VIII, the death of Ricci); the reprint's marginal glosses and page furniture are not carried, and the drop-cap letters the OCR loses at section openings are restored.
+- Latin original (named, not yet carried): [Ricci/]Trigault, *De Christiana expeditione apud Sinas suscepta ab Societate Jesu* (Augsburg: Christoph Mang, 1615), Internet Archive scan — <https://archive.org/details/dechristianaexpe00ricc>. Louis J. Gallagher's translation of 1953 remains in copyright and was not consulted.
+
 ## Friedrich Spee
 
 ### Cautio Criminalis (selections) · `data/spee.json`
@@ -97,7 +102,7 @@ and therefore have no source entry here; their editions are named on the method 
 ---
 
 Programme entries still planned name their intended sources in the works view, and their
-entries move up here as they ship: the Jesuit Relations and Ricci/Trigault in the
+entries move up here as they ship: the Jesuit Relations in the
 world line, and — the doctrine-of-the-soul strand of the school line — the Ratio Studiorum
 of 1599 (Latin in Pachtler's Monumenta Germaniae Paedagogica edition of 1887, public
 domain), one question of the Coimbra *De anima* commentary (early printings of 1598–1617,
