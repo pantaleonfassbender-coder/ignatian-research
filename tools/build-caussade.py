@@ -79,6 +79,7 @@ WORD_FIXES = {
     "all the re*'- subject": 'all the real subject',
     "all the re'- subject": 'all the real subject',
     'fidelty': 'fidelity', 'in Ihe depths': 'in the depths',
+    'designs oi divine': 'designs of divine', 'power oi God': 'power of God',
 }
 
 def clean(t):
