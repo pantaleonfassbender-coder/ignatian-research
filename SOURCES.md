@@ -59,6 +59,11 @@ and therefore have no source entry here; their editions are named on the method 
 - *Imago primi saeculi Societatis Iesu a Provincia Flandro-Belgica eiusdem Societatis repraesentata* (Antwerp: ex officina Plantiniana Balthasaris Moreti, 1640), Internet Archive scan — <https://archive.org/details/imagoprimisaecul00boll>. The Latin plates in `assets/imago/` are rendered and cropped from this scan (PDF leaves 8, 212, 213, 339, 340, 465, 472, 578, 590, 730, 734, 954; printed pages: engraved title, 199, 200, 326, 327, 452, 459, 565, 577, 717, 721, 941); the Latin lemmas and epigrams are transcribed by eye from the same page images; the English is a working translation made for this site (CC0).
 - *Af-Beeldinghe van d'eerste eeuwe der Societeyt Iesu* (Antwerp: Plantin press of Balthasar Moretus, 1640) — the Dutch counterpart, same plates, vernacular verses by Adriaen Poirters, S.J.; Internet Archive scan — <https://archive.org/details/afbeeldinghevand00boll>. The `nl-*.jpg` pages in `assets/imago/` are rendered from this scan (PDF leaf = printed page + 11); the Dutch headings and rhymed lemma-glosses, and one full stanza of Poirters's verse, are transcribed by eye.
 
+### Acosta, The Natural and Moral History of the Indies (selections) · `data/acosta.json`
+
+- English: Edward Grimston's translation of 1604, as reprinted by the Hakluyt Society — *The Natural & Moral History of the Indies*, ed. Clements R. Markham, 2 vols. (London, 1880) — <https://archive.org/details/naturalmoralhist01acos> (Books I–IV) and <https://archive.org/details/naturalmoralhist61acosrich> (Books V–VII). A 1604 translation in an 1880 printing, public domain twice over. Eleven chapters carried (I.1, I.9; II.6, II.9, II.14; IV.6–7; VI.1, VI.4, VI.7, VI.8), Grimston's orthography kept as printed; Markham's editorial footnotes and the printing's marginal glosses are not carried, and where the OCR shredded a marginal citation into the running text the sentence is restored and the fragment dropped.
+- Spanish original (named, not yet carried): *Historia natural y moral de las Indias* (Seville: Juan de León, 1590); the 1590 printing and later Spanish editions are on the Internet Archive.
+
 ## Friedrich Spee
 
 ### Cautio Criminalis (selections) · `data/spee.json`
@@ -92,7 +97,7 @@ and therefore have no source entry here; their editions are named on the method 
 ---
 
 Programme entries still planned name their intended sources in the works view, and their
-entries move up here as they ship: the Jesuit Relations, Ricci/Trigault and Acosta in the
+entries move up here as they ship: the Jesuit Relations and Ricci/Trigault in the
 world line, and — the doctrine-of-the-soul strand of the school line — the Ratio Studiorum
 of 1599 (Latin in Pachtler's Monumenta Germaniae Paedagogica edition of 1887, public
 domain), one question of the Coimbra *De anima* commentary (early printings of 1598–1617,

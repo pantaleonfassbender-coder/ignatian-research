@@ -104,12 +104,15 @@
  {
   "id": "acosta",
   "linie": "welt",
-  "status": "planned",
+  "status": "shipped",
   "autor": "José de Acosta",
   "jahr": "1590",
-  "titel": "Historia natural y moral de las Indias (selections)",
-  "warum": "A Jesuit empiricism before the word: the New World described by observation against the authorities.",
-  "quelle": "Seville 1590; Edward Grimston's English of 1604 is public domain."
+  "titel": "The Natural and Moral History of the Indies (selections)",
+  "warum": "A Jesuit empiricism before the word: the New World described by observation against the authorities — 'what could I else do then, but laugh at Aristotle's Meteors and his Philosophie'.",
+  "quelle": "English after Edward Grimston's translation of 1604, as reprinted by the Hakluyt Society (ed. Clements Markham, 2 vols., London 1880; US public domain twice over). Eleven chapters carried, cut to the argument: the Fathers may err on cosmography (I.1, I.9), the burning zone watered and temperate against the ancients (II.6, II.9, II.14), Potosí observed (IV.6–7), and the rationality, writing and reckoning of the Indians defended (VI.1, VI.4, VI.7, VI.8 — the quipus). Grimston's orthography of 1604 is kept as printed. The Spanish original (Seville 1590) is named as source but not yet carried.",
+  "datei": "acosta",
+  "zk": "Acosta",
+  "kurz": "Acosta"
  },
  {
   "id": "imago",
