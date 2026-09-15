@@ -317,10 +317,12 @@ function stackedBars(cv, rows, padL) {
   cv.width = w * r; cv.height = h * r; cv.style.width = w + "px"; cv.style.height = h + "px";
   const c = cv.getContext("2d"); c.setTransform(r, 0, 0, r, 0, 0);
   c.font = "12px -apple-system,Segoe UI,Roboto,sans-serif"; c.textBaseline = "middle";
+  const cs = getComputedStyle(document.documentElement);
+  const fg2 = cs.getPropertyValue("--fg2").trim(), fg3 = cs.getPropertyValue("--fg3").trim();
   const max = Math.max(1, ...rows.map(x => x.v));
   rows.forEach((row, i) => {
     const y = i * rowH + rowH / 2 + 4;
-    c.fillStyle = "#bcae99"; c.textAlign = "right";
+    c.fillStyle = fg2; c.textAlign = "right";
     let lab = row.label;
     while (c.measureText(lab).width > padL - 12 && lab.length > 4) lab = lab.slice(0, -1);
     c.fillText(lab === row.label ? lab : lab + "…", padL - 8, y);
@@ -332,7 +334,7 @@ function stackedBars(cv, rows, padL) {
       c.fillRect(x, y - 7, Math.max(1, p.v * scale), 14);
       x += p.v * scale;
     }
-    c.globalAlpha = 1; c.fillStyle = "#8a7d6a"; c.textAlign = "left";
+    c.globalAlpha = 1; c.fillStyle = fg3; c.textAlign = "left";
     c.fillText(row.disp, x + 7, y);
   });
 }
@@ -2116,6 +2118,23 @@ function closeUnlock() { modal.hidden = true; }
 document.getElementById("unlockBtn").onclick = openUnlock;
 document.getElementById("closeUnlock").onclick = closeUnlock;
 modal.addEventListener("click", e => { if (e.target === modal) closeUnlock(); });
+
+/* Theme toggle: index.html decides the initial theme before first paint;
+   this button flips it, stores the choice, and re-renders the current view
+   so every canvas redraws in the new palette. */
+function syncThemeBtn() {
+  const light = document.documentElement.getAttribute("data-theme") === "light";
+  document.getElementById("themeLabel").textContent = light ? "Dark room" : "Daylight";
+}
+document.getElementById("themeBtn").onclick = () => {
+  const light = document.documentElement.getAttribute("data-theme") === "light";
+  if (light) document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", "light");
+  try { localStorage.setItem("theme", light ? "dark" : "light"); } catch (e) {}
+  syncThemeBtn();
+  route();
+};
+syncThemeBtn();
 
 const input = document.getElementById("pdfInput");
 const drop = document.getElementById("drop");

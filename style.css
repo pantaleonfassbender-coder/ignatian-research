@@ -1,14 +1,34 @@
 /* Ignatiana — research apparatus */
 :root{
+  color-scheme:dark;
   --bg:#100e0c; --bg2:#17140f; --panel:#1c1813; --panel2:#241f18;
   --line:#332c22; --line2:#463c2d;
   --fg:#f0e9dd; --fg2:#bcae99; --fg3:#8a7d6a;
   --acc:#c9a227; --acc2:#9db8a4; --acc3:#c07a5a;
   --ok:#7fae86; --warn:#c07a5a;
+  --topbar:rgba(16,14,12,.94); --accfg:#171208;
+  --markbg:rgba(211,162,74,.28); --hatch:rgba(255,255,255,.014);
+  --modalbg:rgba(6,8,11,.82);
+  --okbg:rgba(127,174,134,.08); --warnbg:rgba(192,122,90,.08); --accbg:rgba(201,162,39,.1);
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
   --mono:"SF Mono",ui-monospace,"Cascadia Mono",Menlo,Consolas,monospace;
   --r:10px;
+}
+/* Daylight: the same apparatus on warm paper. Every colour the site uses is a
+   variable, so the theme is this block and nothing else; the canvases read
+   the variables at draw time. */
+html[data-theme="light"]{
+  color-scheme:light;
+  --bg:#faf7f0; --bg2:#f2ecdf; --panel:#ffffff; --panel2:#f6f0e3;
+  --line:#ddd2bd; --line2:#c7b99d;
+  --fg:#211c14; --fg2:#5b5040; --fg3:#8a7d6a;
+  --acc:#8a6b10; --acc2:#42604d; --acc3:#9c4f30;
+  --ok:#3f6f4a; --warn:#9c4f30;
+  --topbar:rgba(250,247,240,.94); --accfg:#fffdf5;
+  --markbg:rgba(138,107,16,.16); --hatch:rgba(0,0,0,.02);
+  --modalbg:rgba(40,35,25,.5);
+  --okbg:rgba(63,111,74,.08); --warnbg:rgba(156,79,48,.07); --accbg:rgba(138,107,16,.08);
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -30,7 +50,7 @@ hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
 /* ---------- Topbar ---------- */
 .topbar{
   position:sticky; top:0; z-index:40; display:flex; align-items:center; gap:1.2rem;
-  padding:.6rem 1.4rem; background:rgba(16,14,12,.94); backdrop-filter:blur(12px);
+  padding:.6rem 1.4rem; background:var(--topbar); backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line); flex-wrap:wrap;
 }
 .brand{display:flex;align-items:center;gap:.7rem;color:var(--fg);text-decoration:none}
@@ -79,7 +99,7 @@ button,.btn{
   border:1px solid var(--line2);background:var(--panel2);color:var(--fg);padding:.48rem .9rem;
 }
 button:hover,.btn:hover{border-color:var(--acc);text-decoration:none}
-button.primary{background:var(--acc);color:#171208;border-color:var(--acc);font-weight:600}
+button.primary{background:var(--acc);color:var(--accfg);border-color:var(--acc);font-weight:600}
 button.primary:hover{filter:brightness(1.08)}
 button.ghost{background:transparent;color:var(--fg2)}
 button:disabled{opacity:.45;cursor:not-allowed}
@@ -98,7 +118,7 @@ label.fld{display:flex;flex-direction:column;gap:.25rem;font-size:.76rem;color:v
   display:inline-block;background:var(--panel2);border:1px solid var(--line2);
   border-radius:99px;padding:.12rem .6rem;font-size:.76rem;color:var(--fg2);margin:0 .3rem .35rem 0;
 }
-.chip.on{background:var(--acc);color:#171208;border-color:var(--acc)}
+.chip.on{background:var(--acc);color:var(--accfg);border-color:var(--acc)}
 button.chip{cursor:pointer}
 .tag{font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);font-weight:700}
 
@@ -141,17 +161,17 @@ canvas{display:block;max-width:100%}
 .kwic .k{color:var(--acc);font-weight:700;text-align:center;white-space:nowrap;padding:0 .3rem}
 .kwic .r{color:var(--fg2)}
 .kwic .ref{color:var(--fg3);white-space:nowrap;font-size:.74rem}
-mark{background:rgba(211,162,74,.28);color:var(--acc);padding:0 .12em;border-radius:3px}
+mark{background:var(--markbg);color:var(--acc);padding:0 .12em;border-radius:3px}
 
 /* ---------- Locked ---------- */
 .locked{
   border:1px dashed var(--line2);border-radius:var(--r);padding:1.6rem;text-align:center;
-  color:var(--fg3);background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(255,255,255,.014) 9px,rgba(255,255,255,.014) 18px);
+  color:var(--fg3);background:repeating-linear-gradient(45deg,transparent,transparent 9px,var(--hatch) 9px,var(--hatch) 18px);
 }
 .locked strong{color:var(--fg2);display:block;margin-bottom:.35rem;font-family:var(--serif);font-size:1.05rem}
 
 /* ---------- Modal ---------- */
-.modal{position:fixed;inset:0;background:rgba(6,8,11,.82);z-index:80;display:flex;align-items:center;justify-content:center;padding:1.4rem;backdrop-filter:blur(4px)}
+.modal{position:fixed;inset:0;background:var(--modalbg);z-index:80;display:flex;align-items:center;justify-content:center;padding:1.4rem;backdrop-filter:blur(4px)}
 .modal[hidden]{display:none}
 .modalbox{background:var(--panel);border:1px solid var(--line2);border-radius:14px;padding:1.7rem;max-width:610px;width:100%;position:relative;max-height:88vh;overflow:auto}
 .closex{position:absolute;top:.7rem;right:.8rem;background:none;border:none;font-size:1.5rem;color:var(--fg3);padding:0 .35rem}
@@ -199,9 +219,9 @@ footer p{max-width:88ch}
 /* ---------- Ignatiana ---------- */
 .rights{display:inline-flex;align-items:center;gap:.35rem;font-size:.7rem;letter-spacing:.05em;
   text-transform:uppercase;font-weight:700;padding:.1rem .5rem;border-radius:99px;border:1px solid}
-.rights.pd{color:var(--ok);border-color:var(--ok);background:rgba(127,174,134,.08)}
-.rights.cr{color:var(--warn);border-color:var(--warn);background:rgba(192,122,90,.08)}
-.rights.open{color:var(--acc);border-color:var(--acc);background:rgba(201,162,39,.1)}
+.rights.pd{color:var(--ok);border-color:var(--ok);background:var(--okbg)}
+.rights.cr{color:var(--warn);border-color:var(--warn);background:var(--warnbg)}
+.rights.open{color:var(--acc);border-color:var(--acc);background:var(--accbg)}
 
 .workcard{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
   padding:1.1rem 1.2rem;cursor:pointer;transition:border-color .12s;display:flex;flex-direction:column;gap:.45rem}

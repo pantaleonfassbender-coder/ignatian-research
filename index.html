@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ignatiana · A Research Apparatus for Ignatian Spirituality</title>
 <meta name="description" content="A scholarly apparatus for Ignatius of Loyola and the spirituality he set in motion: canonical citation index, concordance, discernment lexicon, correspondence network, keyness profiles, and a citation-bound dialogue with the texts. The Exercises (trilingual, with Longridge's 1919 commentary), the 1914 Letters, the bilingual Directory of 1599 and Favre's Memoriale are included in full; in-copyright translations unlock from your own copy.">
+<script>
+/* Theme, decided before first paint: a stored choice wins; otherwise the
+   system preference; otherwise the site's native dark. */
+try{
+  var t=localStorage.getItem("theme");
+  if(!t&&window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)t="light";
+  if(t==="light")document.documentElement.setAttribute("data-theme","light");
+}catch(e){}
+</script>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='25' font-size='24'>✠</text></svg>">
 </head>
@@ -36,6 +45,9 @@
     <a href="#/dialogue" data-v="dialogue">Dialogue</a>
     <a href="#/coda" data-v="coda">Coda</a>
   </nav>
+  <button id="themeBtn" class="unlock" title="Switch between the dark room and daylight">
+    <span id="themeLabel">Daylight</span>
+  </button>
   <button id="unlockBtn" class="unlock" title="Load your own copies">
     <span id="unlockDot" class="dot"></span><span id="unlockLabel">4 of 7 open</span>
   </button>

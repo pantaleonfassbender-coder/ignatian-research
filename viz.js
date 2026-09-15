@@ -7,6 +7,24 @@ export const TEILFARBE = {
 };
 export function teilfarbe(t) { return TEILFARBE[t || "0"] || "#8b95a5"; }
 
+/* The palette, read from the CSS variables at draw time, so every canvas
+   follows the active theme; the few canvas-only colours switch on the
+   data-theme attribute. */
+function theme() {
+  const cs = getComputedStyle(document.documentElement);
+  const v = n => cs.getPropertyValue(n).trim();
+  const light = document.documentElement.getAttribute("data-theme") === "light";
+  return {
+    acc: v("--acc"), acc2: v("--acc2"), line: v("--line"),
+    fg2: v("--fg2"), fg3: v("--fg3"),
+    edge: light ? "#b3a689" : "#5d5241",
+    labelBg: light ? "rgba(250,247,240,.85)" : "rgba(16,14,12,.80)",
+    labelFg: light ? "#3a3223" : "#ded3c2",
+    focusRing: light ? "#211c14" : "#fff",
+    dotRing: light ? "rgba(0,0,0,.22)" : "rgba(0,0,0,.4)",
+  };
+}
+
 function dpi(cv, w, h) {
   const r = window.devicePixelRatio || 1;
   cv.width = w * r; cv.height = h * r;
@@ -19,11 +37,12 @@ function dpi(cv, w, h) {
 export function sparkline(el, values, opts = {}) {
   const w = el.clientWidth || 320, h = opts.h || 34;
   const c = dpi(el, w, h);
+  const P = theme();
   const max = Math.max(1, ...values);
   const bw = w / values.length;
   values.forEach((v, i) => {
     const bh = Math.max(v > 0 ? 1.5 : 0, (v / max) * (h - 4));
-    c.fillStyle = opts.colors ? opts.colors[i] : (v > 0 ? "#c9a227" : "#332c22");
+    c.fillStyle = opts.colors ? opts.colors[i] : (v > 0 ? P.acc : P.line);
     c.globalAlpha = v > 0 ? 0.9 : 0.5;
     c.fillRect(i * bw + .5, h - bh, Math.max(1, bw - 1.2), bh);
   });
@@ -35,18 +54,19 @@ export function bars(el, rows, opts = {}) {
   const rowH = opts.rowH || 22, padL = opts.padL || 150;
   const w = el.clientWidth || 600, h = rows.length * rowH + 8;
   const c = dpi(el, w, h);
+  const P = theme();
   const max = Math.max(1, ...rows.map(r => r.v));
   c.font = "12px -apple-system,Segoe UI,Roboto,sans-serif";
   c.textBaseline = "middle";
   rows.forEach((r, i) => {
     const y = i * rowH + rowH / 2 + 4;
-    c.fillStyle = "#bcae99"; c.textAlign = "right";
+    c.fillStyle = P.fg2; c.textAlign = "right";
     c.fillText(clip(c, r.label, padL - 10), padL - 8, y);
     const bw = (r.v / max) * (w - padL - 52);
-    c.fillStyle = r.color || "#c9a227"; c.globalAlpha = .85;
+    c.fillStyle = r.color || P.acc; c.globalAlpha = .85;
     c.fillRect(padL, y - 7, Math.max(1.5, bw), 14);
     c.globalAlpha = 1;
-    c.fillStyle = "#8a7d6a"; c.textAlign = "left";
+    c.fillStyle = P.fg3; c.textAlign = "left";
     c.fillText(r.disp != null ? r.disp : r.v, padL + bw + 7, y);
   });
 }
@@ -62,21 +82,22 @@ export function timeline(el, pairs, opts = {}) {
   const c = dpi(el, w, h);
   const from = opts.from ?? Math.min(...pairs.map(p => p[0]));
   const to = opts.to ?? Math.max(...pairs.map(p => p[0]));
+  const P = theme();
   const max = Math.max(1, ...pairs.map(p => p[1]));
   const m = { l: 34, r: 8, t: 10, b: 24 };
   const iw = w - m.l - m.r, ih = h - m.t - m.b;
-  c.strokeStyle = "#332c22"; c.lineWidth = 1;
+  c.strokeStyle = P.line; c.lineWidth = 1;
   c.beginPath(); c.moveTo(m.l, m.t + ih + .5); c.lineTo(m.l + iw, m.t + ih + .5); c.stroke();
   const bw = Math.max(1.2, iw / (to - from + 1));
   for (const [y, v] of pairs) {
     if (y < from || y > to) continue;
     const x = m.l + ((y - from) / (to - from + 1)) * iw;
     const bh = (v / max) * ih;
-    c.fillStyle = "#9db8a4"; c.globalAlpha = .85;
+    c.fillStyle = P.acc2; c.globalAlpha = .85;
     c.fillRect(x, m.t + ih - bh, Math.max(1, bw - .6), bh);
   }
   c.globalAlpha = 1;
-  c.fillStyle = "#8a7d6a"; c.font = "11px ui-monospace,monospace"; c.textAlign = "center";
+  c.fillStyle = P.fg3; c.font = "11px ui-monospace,monospace"; c.textAlign = "center";
   const step = (to - from) > 120 ? 40 : (to - from) > 60 ? 20 : 10;
   for (let y = Math.ceil(from / step) * step; y <= to; y += step) {
     const x = m.l + ((y - from) / (to - from + 1)) * iw;
@@ -89,18 +110,19 @@ export function timeline(el, pairs, opts = {}) {
 export function scatter(el, pts, opts = {}) {
   const w = el.clientWidth || 700, h = opts.h || 380;
   const c = dpi(el, w, h);
+  const P = theme();
   const m = { l: 48, r: 14, t: 14, b: 40 };
   const iw = w - m.l - m.r, ih = h - m.t - m.b;
   const xs = pts.map(p => p.x), ys = pts.map(p => p.y);
   const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
   const X = v => m.l + ((v - x0) / (x1 - x0 || 1)) * iw;
   const Y = v => m.t + ih - ((v - y0) / (y1 - y0 || 1)) * ih;
-  c.strokeStyle = "#2a241c";
+  c.strokeStyle = P.line;
   for (let i = 0; i <= 4; i++) {
     const y = m.t + (ih / 4) * i;
     c.beginPath(); c.moveTo(m.l, y + .5); c.lineTo(m.l + iw, y + .5); c.stroke();
   }
-  c.font = "10.5px ui-monospace,monospace"; c.fillStyle = "#8a7d6a";
+  c.font = "10.5px ui-monospace,monospace"; c.fillStyle = P.fg3;
   c.textAlign = "right";
   for (let i = 0; i <= 4; i++) {
     const v = y1 - ((y1 - y0) / 4) * i;
@@ -111,7 +133,7 @@ export function scatter(el, pts, opts = {}) {
     const v = x0 + ((x1 - x0) / 4) * i;
     c.fillText(v.toFixed(opts.xDec ?? 0), m.l + (iw / 4) * i, h - 22);
   }
-  c.fillStyle = "#bcae99"; c.font = "11px sans-serif";
+  c.fillStyle = P.fg2; c.font = "11px sans-serif";
   c.fillText(opts.xLabel || "", m.l + iw / 2, h - 6);
   c.save(); c.translate(12, m.t + ih / 2); c.rotate(-Math.PI / 2);
   c.fillText(opts.yLabel || "", 0, 0); c.restore();
@@ -119,8 +141,8 @@ export function scatter(el, pts, opts = {}) {
   for (const p of pts) {
     const x = X(p.x), y = Y(p.y), r = p.r || 5;
     c.beginPath(); c.arc(x, y, r, 0, 7);
-    c.fillStyle = p.color || "#c9a227"; c.globalAlpha = .82; c.fill();
-    c.globalAlpha = 1; c.strokeStyle = "rgba(0,0,0,.4)"; c.stroke();
+    c.fillStyle = p.color || P.acc; c.globalAlpha = .82; c.fill();
+    c.globalAlpha = 1; c.strokeStyle = P.dotRing; c.stroke();
     hit.push({ x, y, r: r + 4, d: p });
   }
   return hit;
@@ -192,6 +214,7 @@ export function network(cv, data, opts = {}) {
   }
 
   function draw() {
+    const P = theme();
     c.clearRect(0, 0, w, h);
     const t = state.transform;
     c.save(); c.translate(t.x, t.y); c.scale(t.k, t.k);
@@ -201,7 +224,7 @@ export function network(cv, data, opts = {}) {
     for (const e of edges) {
       const on = focus && (e.s === focus || e.t === focus);
       c.globalAlpha = focus ? (on ? .8 : .04) : Math.min(.5, .14 + (e.f / maxE) * .8);
-      c.strokeStyle = on ? "#c9a227" : "#5d5241";
+      c.strokeStyle = on ? P.acc : P.edge;
       c.lineWidth = (on ? 1.5 : Math.max(.5, (e.f / maxE) * 2.4)) / t.k;
       c.beginPath(); c.moveTo(e.a.x, e.a.y); c.lineTo(e.b.x, e.b.y); c.stroke();
     }
@@ -211,7 +234,7 @@ export function network(cv, data, opts = {}) {
       c.globalAlpha = dim ? .16 : 1;
       c.beginPath(); c.arc(n.x, n.y, n.r, 0, 7);
       c.fillStyle = col(n.teil); c.fill();
-      if (n.id === focus) { c.strokeStyle = "#fff"; c.lineWidth = 1.6 / t.k; c.stroke(); }
+      if (n.id === focus) { c.strokeStyle = P.focusRing; c.lineWidth = 1.6 / t.k; c.stroke(); }
     }
     c.globalAlpha = 1; c.restore();
     /* labels in screen space: crisp and constant-size at every zoom, with the
@@ -234,9 +257,9 @@ export function network(cv, data, opts = {}) {
       if (placed.some(p => !(box.x1 < p.x0 || box.x0 > p.x1 || box.y1 < p.y0 || box.y0 > p.y1))) continue;
       placed.push(box); shown++;
       c.globalAlpha = 1;
-      c.fillStyle = "rgba(16,14,12,.80)";
+      c.fillStyle = P.labelBg;
       c.fillRect(box.x0, box.y0, box.x1 - box.x0, box.y1 - box.y0);
-      c.fillStyle = n.id === focus ? "#fff" : "#ded3c2";
+      c.fillStyle = n.id === focus ? P.focusRing : P.labelFg;
       c.fillText(n.id, sx, sy - sr - 3);
     }
     c.globalAlpha = 1;
