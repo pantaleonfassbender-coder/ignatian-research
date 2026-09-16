@@ -245,6 +245,7 @@ viz.js                charts and force-directed graph, no external library
 dialogue.js           dialogue module and PDF export
 data/*.json           derived data, editorial matter, and shipped editions
 assets/imago/         page images of the Imago emblems and the Dutch mirror
+assets/imago-mark.png the site's mark: the IHS medallion from the Imago's engraved title (1640)
 assets/spee/          facsimile pages of the Trutznachtigall poems
 tools/                build scripts for the shipped editions, and the CI checker
 vendor/               pdf.js 4.6.82, jsPDF 2.5.2 — vendored, so no CDN is contacted
