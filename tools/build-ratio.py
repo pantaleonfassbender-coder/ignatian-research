@@ -53,7 +53,7 @@ WORD_FIXES = {
     'practicnm': 'practicum', 'subaltematio': 'subalternatio',
     'ca dunt': 'cadunt', 'inter pretum': 'interpretum',
     'eo reficiantur': 'eo reiiciantur', 'feBto': 'festo',
-    'na- \\ turales': 'naturales',
+    'na- \\ turales': 'naturales', 'inci dat': 'incidat',
 }
 
 def clean(t):
