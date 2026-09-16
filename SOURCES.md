@@ -57,6 +57,11 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: transcribed by eye from the page images of the 1617 printing, *Commentarii Collegii Conimbricensis Societatis Iesu, in tres libros De anima Aristotelis* — <https://archive.org/details/commentariicolle00col> (the printing's columns 2–7; the OCR of the early-modern type served only for navigation). First printed at Coimbra in 1598; the modern editions are in copyright and were not used. Long s and ligatures normalised, printer's abbreviations silently expanded, u/v kept as printed; the marginal captions and source references are not carried.
 - English: unofficial working translation made for this site directly from the Latin (CC0). Named next steps: the Prooemium's Quaestio unica and the internal-senses questions of book III.
 
+### Suárez, Commentaria in libros De anima — three chapters · `data/suarez_anima.json`
+
+- Latin: after the *Opera omnia* edition of Vivès, vol. III (Paris, 1856; US public domain) — <https://archive.org/details/tomus-19-francisci-suarez> — which prints the posthumous text of the De anima commentary completed and published by Baltasar Álvares (Lyon, 1621). The OCR of the Archive scan was corrected against sense and context; æ/œ written out as ae/oe, the edition's j and u/v kept as printed; the italic point-captions carried inline; doubtful readings emended and disclosed in `tools/build-suarez.py`. The critical edition (S. Castellote, 1978–1991) is in copyright and was not used. Carried complete and bilingual: book II, chapter 3; book III, chapter 30; book IV, chapter 7.
+- English: unofficial working translation made for this site directly from the Latin (CC0).
+
 ## The Society in the world
 
 ### Francis Xavier, Letters from India and Japan (selections) · `data/xavier.json`
@@ -116,9 +121,7 @@ and therefore have no source entry here; their editions are named on the method 
 
 ---
 
-Program entries still planned name their intended sources in the works view, and their
-entries move up here as they ship: — the doctrine-of-the-soul strand of the school line — the Ratio Studiorum
-of 1599 (Latin in Pachtler's Monumenta Germaniae Paedagogica edition of 1887, public
-domain), one question of the Coimbra *De anima* commentary (early printings of 1598–1617,
-transcribed by eye), and an excerpt of Suárez's *De anima* (a usable early printing still
-to be located; the modern critical editions are in copyright and are not used).
+Every program entry has now shipped, and its sources stand above. Named next steps
+within shipped modules — the Coimbra Prooemium's Quaestio unica and the internal-senses
+questions of book III, further chapters of Suárez's *De anima*, the Cautio's torture
+dubia — would draw on the same printings already cited.

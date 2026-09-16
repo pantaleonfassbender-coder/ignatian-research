@@ -24,6 +24,7 @@ people entirely.
 | **The Jesuit Relations (selections)** | `data/relations.json` | English: public domain (Thwaites's edition and translation, 1896–1901); selection and paragraph numbering: [CC0 1.0](LICENSE-DATA) |
 | **The Ratio Studiorum of 1599 (selections)** | `data/ratio.json` | Latin: public domain (printings of 1893 and 1887); English working translation: [CC0 1.0](LICENSE-DATA) |
 | **The Coimbra De anima Prooemium** | `data/conimbricenses.json` | Latin: public domain (1617 printing; transcription adds nothing licensable); English working translation: [CC0 1.0](LICENSE-DATA) |
+| **Suárez, De anima — three chapters** | `data/suarez_anima.json` | Latin: public domain (Vivès edition, Paris 1856); OCR correction adds nothing licensable; English working translation: [CC0 1.0](LICENSE-DATA) |
 | **Cautio Criminalis selections** | `data/spee.json` | Latin: public domain (1631 printing; transcription adds nothing licensable); English working translation: [CC0 1.0](LICENSE-DATA) |
 | **Trutznachtigall selections** | `data/trutz.json`, `assets/spee/*` | German and facsimile pages: public domain (1649/1654 printing); transcription and English working translation: [CC0 1.0](LICENSE-DATA) |
 | **Imago primi saeculi module** | `data/imago.json`, `assets/imago/*` | Engravings, Latin and Poirters's Dutch: public domain (two 1640 printings; faithful reproduction of a public-domain 2-D work adds nothing licensable); transcription, working translations and descriptions: [CC0 1.0](LICENSE-DATA) |

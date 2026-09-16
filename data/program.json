@@ -67,12 +67,15 @@
  {
   "id": "suarez_anima",
   "linie": "schule",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Francisco Suárez",
   "jahr": "1621",
-  "titel": "De anima (an excerpt)",
+  "titel": "Commentaria in libros De anima — three chapters",
   "warum": "The order's greatest philosopher on the cooperation of the soul's powers — sense, imagination and intellect rooted in the same soul and working in harmony — the doctrine at work wherever the Exercises set imagination and intellect to prayer together.",
-  "quelle": "Suárez's commentary on De anima, published posthumously (Lyon 1621). The critical edition (Castellote, 1978–1991) is in copyright and cannot be used; a usable early printing has not yet been sighted on the Internet Archive and must first be located. Until then this entry names the intention."
+  "quelle": "Latin after the Vivès Opera omnia, vol. III (Paris 1856; US public domain; Internet Archive tomus-19-francisci-suarez), printing the posthumous text completed by Baltasar Álvares (Lyon 1621); the critical edition (Castellote, 1978–1991) is in copyright and was not used. Shipped complete and bilingual: II.3 (the powers flow from the soul and are rooted in it), III.30 (one interior sense, not four — the seven vocabula reduced to a single power), and IV.7 (the intellect in this life depends on the phantasy). The English is this site's working translation (CC0).",
+  "datei": "suarez_anima",
+  "zk": "Suár. De an.",
+  "kurz": "Suárez"
  },
  {
   "id": "xavier",
