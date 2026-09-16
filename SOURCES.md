@@ -52,6 +52,11 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: the definitive *Ratio atque Institutio Studiorum Societatis Iesu* of 1599, as printed in the *Institutum Societatis Iesu*, vol. III (Florence, 1893) — <https://archive.org/details/Institutum3> — a pure text of the 1599 rules; collated, where the OCR is doubtful, with G. M. Pachtler's edition, *Ratio studiorum et institutiones scholasticae Societatis Jesu*, vol. II (Monumenta Germaniae Paedagogica V; Berlin, 1887) — <https://archive.org/details/ratiostudiorumetinstitutiones2> — which prints the 1599 and 1832 texts in parallel columns. Both printings are in the United States public domain. Carried complete: the rules for the professor of scholastic theology (14) and the professor of philosophy (20); the 1893 printing's marginal captions and source references are not carried.
 - English: unofficial working translation made for this site directly from the Latin (CC0).
 
+### The Coimbra course on De anima — the Prooemium · `data/conimbricenses.json`
+
+- Latin: transcribed by eye from the page images of the 1617 printing, *Commentarii Collegii Conimbricensis Societatis Iesu, in tres libros De anima Aristotelis* — <https://archive.org/details/commentariicolle00col> (the printing's columns 2–7; the OCR of the early-modern type served only for navigation). First printed at Coimbra in 1598; the modern editions are in copyright and were not used. Long s and ligatures normalised, printer's abbreviations silently expanded, u/v kept as printed; the marginal captions and source references are not carried.
+- English: unofficial working translation made for this site directly from the Latin (CC0). Named next steps: the Prooemium's Quaestio unica and the internal-senses questions of book III.
+
 ## The Society in the world
 
 ### Francis Xavier, Letters from India and Japan (selections) · `data/xavier.json`

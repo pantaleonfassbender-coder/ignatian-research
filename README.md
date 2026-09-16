@@ -11,7 +11,9 @@ the *Spiritual Diary*, and the letters of 1524–1547 — and, around them, the 
 spirituality became the practice of an order: the *Official Directory of 1599* on giving the Exercises,
 and the *Memoriale* of Blessed Peter Faber, the first companion, discernment kept as a daily journal
 from 1542 to 1546. Around those stand the program modules that carry the corpus out into the world and
-its arguments: the school of discernment carried to its end — Nadal's annotations on the Examen,
+its arguments: the school of discernment carried to its end — the Ratio Studiorum of 1599 and the
+Prooemium of the Coimbra *De anima* commentary (both bilingual, the rules and the course that bound
+the schools to Thomas and Aristotle), Nadal's annotations on the Examen,
 Rodríguez's *Of Conformity to the Will of God*, and the *Abandonment to Divine Providence* attributed to
 Caussade — Xavier's letters from India and Japan, Acosta's *Natural and Moral History of the
 Indies* in Grimston's English of 1604, Ricci and Trigault's China in Purchas's digest of 1625,
@@ -91,7 +93,9 @@ translation, 1896–1901); eleven emblems of the *Imago
 primi saeculi* (Antwerp 1640) with the Dutch *Af-Beeldinghe* of the same year and page images;
 Friedrich Spee — the *Cautio Criminalis* (two dubia, Rinteln 1631) and the *Trutznachtigall* (two poems,
 Cologne 1654); Nadal's *In Examen annotationes* (Latin of the 1919 Monumenta, with a working
-translation); Rodríguez's *Of Conformity to the Will of God* complete (Dublin 1861); and the
+translation); the Ratio Studiorum of 1599 in its rules for the professors of theology and philosophy
+(bilingual, with a working translation); the Prooemium of the Coimbra *De anima* commentary,
+transcribed by eye from the 1617 printing (bilingual); Rodríguez's *Of Conformity to the Will of God* complete (Dublin 1861); and the
 *Abandonment to Divine Providence* attributed to Caussade, carried whole (McMahon's English of 1887). Where a module carries a working translation it is this site's own, made from the original
 and marked as unofficial; the sources are listed in **[SOURCES.md](SOURCES.md)**. These modules are part
 of the concordance and the citation-bound dialogue, but not of the linguistic statistics, which describe
@@ -147,7 +151,7 @@ A few megabytes of JSON, all of it derived, editorial, or public-domain source t
 | `works.json` | the seven core works: translator, rights, citation form, body range, sections, measures |
 | `program.json` | the program modules — line, status, source, and (for shipped ones) data file and citation form |
 | `exercitia.json`, `directorium.json`, `memoriale.json` | the shipped full-text core editions (trilingual Exercises, bilingual Directory of 1599, bilingual Memoriale) |
-| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json` | the shipped program modules, paragraph by paragraph on their own citation grids |
+| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json`, `ratio.json`, `conimbricenses.json` | the shipped program modules, paragraph by paragraph on their own citation grids |
 | `anchors.json` | 1,887 canonical paragraph anchors, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
 | `introduction.json` | the introductory essay (editorial matter, CC BY 4.0); manuscript in `docs/` |
@@ -286,7 +290,7 @@ in short:
 - **The program modules** (`data/pascal.json`, `monita.json`, `dominus.json`,
   `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`,
   `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`,
-  `relations.json`, with the images in
+  `relations.json`, `ratio.json`, `conimbricenses.json`, with the images in
   `assets/imago/` and `assets/spee/`) carry public-domain source text —
   printings of 1631 to 1919 and, for the images, of 1640 — whose faithful
   transcription and reproduction add nothing licensable; the editorial

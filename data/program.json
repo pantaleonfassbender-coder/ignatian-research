@@ -54,12 +54,15 @@
  {
   "id": "conimbricenses",
   "linie": "schule",
-  "status": "planned",
+  "status": "shipped",
   "autor": "The Coimbra Jesuits (Manuel de Góis)",
   "jahr": "1598",
-  "titel": "Commentarii in tres libros De anima (one question)",
+  "titel": "Commentarii in tres libros De anima — the Prooemium",
   "warum": "The science of the soul beneath the school of discernment: the De anima course of the Coimbra college, where the order worked out its doctrine of the senses, the imagination and the intellect — the anthropology the Exercises presuppose when they set the imagination to compose a place and the intellect to weigh an election.",
-  "quelle": "Commentarii Collegii Conimbricensis Societatis Iesu in tres libros De anima (first printed Coimbra 1598); printings of 1600–1617 are on the Internet Archive. The modern editions are in copyright, so the text must be transcribed by eye from an early printing, as the Cautio was. Planned: a single question — the internal senses, or the prooemium on what the science of the soul is — with a working translation made for this site (CC0)."
+  "quelle": "Latin transcribed by eye from the page images of the 1617 printing (Internet Archive commentariicolle00col, columns 2–7); first printed Coimbra 1598; the modern editions are in copyright and were not used. Shipped: the Prooemium complete and bilingual — what the science of the soul is, its utility, its place in the physics course, the disputed subject of the three books, and their partition. The English is this site's working translation (CC0). Named next steps: the Prooemium's Quaestio unica and the internal-senses questions of book III.",
+  "datei": "conimbricenses",
+  "zk": "Con. De an.",
+  "kurz": "Coimbra"
  },
  {
   "id": "suarez_anima",
