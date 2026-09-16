@@ -28,9 +28,13 @@ abstract: >-
   1524-1547 in full); the school of discernment, carried to its end - the
   Official Directory of 1599 (bilingual), Favre's Memoriale (bilingual),
   Nadal's In Examen annotationes, Rodriguez's Of Conformity to the Will of
-  God complete in all thirty-four chapters, and the Abandonment to Divine
+  God complete in all thirty-four chapters, the Abandonment to Divine
   Providence attributed to Caussade, carried whole in Ramiere's arrangement
-  of 1861 with the attribution stated as debated; the Society in the
+  of 1861 with the attribution stated as debated, and, beneath the school,
+  its doctrine of the soul - the Ratio Studiorum of 1599 in its rules for
+  the professors of theology and philosophy, the Prooemium of the Coimbra
+  De anima commentary, and three chapters of Suarez's De anima commentary
+  (all bilingual); the Society in the
   world, likewise carried to its end - Xavier's letters, Acosta's Natural
   and Moral History in Grimston's English of 1604, Ricci and Trigault's
   China in Purchas's digest of 1625, the Jesuit Relations from New France
@@ -38,7 +42,8 @@ abstract: >-
   the Imago primi saeculi with its Dutch mirror, emblem by emblem;
   Friedrich Spee (the Cautio Criminalis and the
   Trutznachtigall); and the counter-voices, from the Monita secreta and
-  Pascal to the brief of 1773 carried complete. With a canonical
+  Pascal to the brief of 1773 carried complete. Every planned module has
+  shipped: the program is editorially complete. With a canonical
   paragraph-level citation index, a cross-corpus concordance over the whole
   apparatus, a concept atlas, curated reading paths, a discernment lexicon,
   registers of persons and places, and a citation-bound dialogue with the
@@ -54,5 +59,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.3.0
-date-released: 2026-09-15
+version: 1.4.0
+date-released: 2026-09-16
