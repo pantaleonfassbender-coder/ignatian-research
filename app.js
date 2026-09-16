@@ -253,19 +253,6 @@ function viewOverview() {
     line, with the works still planned, on the <a href="#/works">Works page</a>.</p>
     <div class="grid g3" id="proglist" style="margin-bottom:2.4rem"></div>
 
-    <div class="grid g2">
-      <div class="chartbox">
-        <span class="tag">Where the vocabulary of discernment sits</span>
-        <canvas id="discchart" style="margin-top:.6rem"></canvas>
-        <div class="legend" id="disclegend"></div>
-        <p class="fine">Each bar is one term family, split by the work it occurs in. Tears belong almost
-        entirely to the Diary; discreet charity almost entirely to the Constitutions.</p>
-      </div>
-      <div class="chartbox">
-        <span class="tag">Most frequent content lemmas across the corpus</span>
-        <canvas id="topterms" style="margin-top:.6rem"></canvas>
-      </div>
-    </div>
   </div>`));
 
   const wl = view.querySelector("#worklist");
@@ -296,19 +283,6 @@ function viewOverview() {
   }
   view.querySelector("#startUnlock").onclick = openUnlock;
   refreshUnlockCard();
-
-  requestAnimationFrame(() => {
-    const rows = D.discernment.slice(0, 14).map(d => ({
-      label: d.begriff, v: d.f, disp: nf(d.f),
-      parts: d.dist.map((v, i) => ({ v, color: wc(D.corpus.ids[i]) })),
-    }));
-    stackedBars(view.querySelector("#discchart"), rows, 210);
-    view.querySelector("#disclegend").innerHTML = D.corpus.ids.map(id =>
-      `<span><i style="background:${wc(id)}"></i>${esc(workOf(id).kurz)}</span>`).join("");
-    V.bars(view.querySelector("#topterms"),
-      D.corpus.top_lemmata.slice(0, 22).map(([w, f]) => ({ label: w, v: f, disp: nf(f) })),
-      { padL: 150 });
-  });
 }
 
 /** Stacked horizontal bars (work-by-work split). */
@@ -1317,7 +1291,11 @@ function viewLanguage() {
       <canvas id="kc"></canvas>
       <p class="fine">Log-likelihood of each lemma in the work against the rest of the corpus.
       Values above 15.13 correspond to p &lt; 0.0001 at one degree of freedom. Computed over the
-      reference translations of the core corpus; programme modules are not part of these counts.</p>
+      reference translations of the core corpus; programme modules are not part of these counts.
+      The Memoriale's profile was computed later with this repository's own tokenizer, against the
+      same reference counts and restricted to the same lemma inventory; its English is this site's
+      working translation, so the profile partly reflects the translation's vocabulary — see the
+      <a href="#/method">method page</a>.</p>
     </div>
     <p class="fine" style="max-width:46rem">This page once carried readability and complexity
     measures (LIX, sentence length, type–token ratio and kin). They were removed deliberately: in
@@ -1530,9 +1508,12 @@ function viewMethod() {
           as edited by Bouix. Its paragraph numbers here are this site's own and do not correspond to the
           canonical MF numbering of the 1914 critical edition; the assignment of entries to month sections
           follows the running heads of the 1873 printing and can blur at month boundaries. The English is a
-          machine working translation with no scholarly authority — cite the Latin. The Memoriale's
-          linguistic profile is computed with simple counts only, like the Directory's; it is outside the
-          spaCy pipeline, so it contributes no lemmas to the lexicon, keyness or network views.</li>
+          machine working translation with no scholarly authority — cite the Latin. The Memoriale is
+          outside the original spaCy pipeline and contributes no lemmas to the lexicon or network views.
+          Its keyness profile was computed later with this repository's own tokenizer
+          (tools/build-keyness-fabri.py), against the same reference counts and restricted to the same
+          lemma inventory as the other profiles; since its English is a working translation, that profile
+          partly reflects the translation's vocabulary.</li>
         <li>The Spanish and Latin of the trilingual Exercises edition are likewise OCR reconstructions of the
           1919 printing and may retain undetected errors, particularly where a line-end syllable crossed the
           column gutter. The [1]–[370] numbers were assigned editorially to texts that never carried them;
