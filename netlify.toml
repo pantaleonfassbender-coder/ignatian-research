@@ -12,10 +12,14 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
+# Data files revalidate on every load (cheap: Netlify answers 304 via etag).
+# A fixed max-age here kept browsers on stale editions for up to an hour
+# after each deploy — a Faber keyness profile that had long shipped showed
+# an empty chart until the cache expired.
 [[headers]]
   for = "/data/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/vendor/*"

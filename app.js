@@ -1306,7 +1306,15 @@ function viewLanguage() {
   </div>`));
   const drawKey = () => {
     const id = view.querySelector("#kk").value;
-    V.bars(view.querySelector("#kc"), (D.keyness[id] || []).slice(0, 24).map(k =>
+    const rows = (D.keyness[id] || []).slice(0, 24);
+    const note = view.querySelector("#knone");
+    if (note) note.remove();
+    if (!rows.length) {
+      view.querySelector("#kc").insertAdjacentHTML("afterend",
+        `<p class="fine" id="knone">No profile is loaded for this work — if one has shipped,
+         reload the page to fetch the current data.</p>`);
+    }
+    V.bars(view.querySelector("#kc"), rows.map(k =>
       ({ label: k.w, v: k.ll, disp: `${k.f}× · LL ${k.ll}`, color: wc(id) })), { padL: 165 });
   };
   view.querySelector("#kk").onchange = drawKey;
