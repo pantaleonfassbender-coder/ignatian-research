@@ -1,0 +1,230 @@
+{
+ "id": "ratio",
+ "autor": "Society of Jesus",
+ "titel": "Ratio Studiorum (1599, selections)",
+ "jahr": "1599",
+ "lang": "la",
+ "zitierweise": "Ratio, Prof. X, reg. N",
+ "quelle": "Latin: the definitive Ratio atque Institutio Studiorum Societatis Iesu of 1599, as printed in the Institutum Societatis Iesu, vol. III (Florence, 1893; Internet Archive Institutum3) — collated, where the OCR is doubtful, with Pachtler's edition of 1887 (Monumenta Germaniae Paedagogica V), which prints the 1599 text beside that of 1832. Both printings are in the United States public domain. Carried: the rules for the professor of scholastic theology (14) and the professor of philosophy (20), complete; the 1893 printing's marginal captions and source references are not carried. The English is an unofficial machine-generated working translation made for this site directly from the Latin (CC0); it carries no authority — cite the Latin.",
+ "hinweis": "The pedagogical constitution of the order, and the hinge between the Constitutions and the school's doctrine of the soul: rule 2 binds the theologians to St. Thomas — with the Society's liberty stated in the same breath — and rule 2 of the philosophers binds them to Aristotle, the De anima course following in the rules on the curriculum. This is the document under which the Coimbra commentaries and Suárez's De anima were taught, and the programme of the doctrine-of-the-soul modules that follow it here. Cited by office and rule number, the print's own grid. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only.",
+ "sections": [
+  {
+   "id": "theol",
+   "zk": "Ratio, Prof. theol.",
+   "titel": "Regulae Professoris Scholasticae Theologiae — Rules of the Professor of Scholastic Theology",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "en": "Let him understand that it is his office so to join the solid subtlety of disputation with orthodox faith and piety, that the former serve the latter above all.",
+     "orig": "Sui muneris esse intelligat, solidam disputandi subtilitatem ita cum orthodoxa fide ac pietate coniungere, ut huic in primis illa deserviat."
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "en": "In scholastic theology let Ours follow altogether the doctrine of St. Thomas, hold him as their own proper Doctor, and put all their effort into it, that their hearers may be as well affected toward him as possible. Yet they should not understand themselves to be so bound to St. Thomas that it is never permitted to depart from him in anything; since those very men who most profess themselves Thomists sometimes depart from him, and it is not fitting that Ours be tied to St. Thomas more tightly than the Thomists themselves.",
+     "orig": "Sequantur Nostri omnino in scholastica Theologia doctrinam S. Thomae, eumque ut Doctorem proprium habeant: ponantque in eo omnem operam, ut auditores erga illum quam optime afficiantur. Non sic tamen S. Thomae adstricti esse debere intelligantur, ut nulla prorsus in re ab eo recedere liceat; cum illi ipsi, qui se thomistas maxime profitentur, aliquando ab eo recedant, nec arctius Nostros S. Thomae alligari par sit, quam thomistas ipsos."
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "en": "Therefore on the Conception of the Blessed Mary and on the solemnity of vows let them follow the opinion that is at this time the more common and the more received among theologians; and in questions purely philosophical, or in those that pertain to the Scriptures and the Canons, it will be permitted to follow others also, who have treated those faculties more professedly.",
+     "orig": "Ergo de Conceptione B. Mariae ac de solemnitate votorum sequantur sententiam, quae magis hoc tempore communis est, magisque recepta apud Theologos; et in quaestionibus mere philosophicis, aut etiam in iis, quae ad Scripturas et Canones pertinent, licebit sequi etiam alios, qui eas Facultates magis ex professo tractaverunt."
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "en": "If ever the opinion of St. Thomas is ambiguous, or if, in questions that St. Thomas perhaps did not touch, Catholic Doctors do not agree among themselves, it will be permitted to follow either side, as is said in the Common Rules, rule five.",
+     "orig": "Si quando, vel ambigua fuerit S. Thomae sententia, vel in iis quaestionibus, quas S. Thomas forte non attigit, Doctores catholici inter se non consenserint, licebit quamcumque partem sequi, ut dictum est in Regulis Communibus, regula quinta."
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "en": "In teaching, let care be taken first to strengthen faith and to nourish piety. Therefore in questions that St. Thomas does not treat professedly, let no one teach anything that does not agree well with the sense of the Church and the received traditions, or that in any way diminishes the firmness of solid piety. To this it belongs that they neither refute the received arguments, however merely fitting, by which the matters of faith are usually proved, nor rashly devise new ones, except from constant and solid principles.",
+     "orig": "In docendo corroborandae primum fidei, alendaeque pietatis cura habeatur. Quare in iis quaestionibus, quas S. Thomas ex professo non tractat, nemo quidquam doceat, quod cum Ecclesiae sensu receptisque traditionibus non bene conveniat, quodque aliquo modo solidae pietatis firmitatem minuat. Quo pertinet, ut nec receptas iam, quamvis congruentes tantum rationes, quibus fidei res probari solent, refellant; nec temere novas excogitent, nisi ex constantibus solidisque principiis."
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "en": "Opinions which, whoever their author, are known gravely to offend Catholics in some province or academy, let him not teach or defend there. For where neither the doctrine of the faith nor the integrity of morals is put at risk, prudent charity requires that Ours accommodate themselves to those among whom they live.",
+     "orig": "Quae opiniones, cuiuscumque auctoris sint, in aliqua Provincia aut Academia catholicos graviter offendere scirentur, eas ibi non doceat aut defendat. Ubi enim nec fidei doctrina, nec morum integritas in discrimen adducitur, prudens charitas exigit, ut Nostri se illis accommodent, cum quibus versantur."
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "en": "The whole course of theology is to be completed in four years. If, then, there are two professors of scholastic theology: § 1. Let the first explain forty-three questions of the first part in the first year; in the second year, the matter on the angels and twenty-one questions of the first part of the second; in the third year, from question 55 or 71 to the end of the first part of the second; in the fourth year, from the second part of the second, the matter on faith, hope and charity. § 2. Let the other professor, in the first year, expound from the second part of the second the questions on justice and right and certain principal matters on religion; in the second, from the third part, the questions on the Incarnation and, if he can, at least the weightier points on the sacraments in general; in the third, on baptism and the Eucharist and, what he can, on order, confirmation and extreme unction; in the fourth, on penance and matrimony. § 3. But where there are three professors of theology, let the first in the first year set out twenty-six questions of the first part; in the second, whatever questions of the same part he can; in the third, whatever he can of the first part of the second before question 81; in the fourth year, the rest of the first part of the second. § 4. The second: in the first year, from the second part of the second, the controversies on Scripture and traditions, on the Church, on the Council, on the Roman Pontiff; in the second, the questions on faith, hope and charity; in the third, the questions on justice and right, on restitution and usury, on contracts, as much as he can; in the fourth, whatever remained on contracts, and what he disputes on religion and the states of life. § 5. The third: in the first year, the questions on the Incarnation; in the second, on the sacraments in general, on baptism and the Eucharist; in the third, on penance and matrimony; in the fourth, on ecclesiastical censures and the remaining sacraments.",
+     "orig": "Quadriennio totus Theologiae cursus absolvendus. Si ergo duo fuerint scholasticae Theologiae Professores. § 1. Primus 43 quaestiones ex prima parte explicet primo anno; secundo anno materiam de Angelis, atque unam et viginti quaestiones ex prima secundae; tertio anno a quaestione 55 vel 71 ad finem primae secundae; quarto anno ex secunda secundae materiam de fide, spe et charitate. § 2. Alter Professor, primo anno explanet ex secunda secundae quaestiones de iustitia et iure, et praecipua quaedam de religione; secundo, ex tertia parte quaestiones de Incarnatione, et, si potest, graviora saltem quaedam explicet de sacramentis, in genere; tertio, de baptismo et Eucharistia, et, si quid potest, de ordine, confirmatione, extrema unctione; quarto de poenitentia et matrimonio. § 3. Ubi vero tres erunt Theologiae professores, primus primo anno exponat 26 quaestiones ex prima parte; secundo, reliquas eiusdem partis quaestiones quascumque poterit; tertio, ex prima secundae quidquid poterit ante quaestionem 81; quarto anno, reliquum primae secundae. § 4. Alter, primo anno, ex secunda secundae controversias de Scriptura et traditionibus, de Ecclesia, de Concilio, de Romano Pontifice; secundo, quaestiones de fide, spe et charitate; tertio, quaestiones de iustitia et iure, de restitutione et usura, de contractibus, quantum potest; quarto, si quae de contractibus superfuerant, et quae de religione ac statibus disputat. § 5. Tertius, primo anno, quaestiones de Incarnatione; secundo, de sacramentis in genere, de baptismo et Eucharistia; tertio, de poenitentia ac matrimonio; quarto, de censuris ecclesiasticis et de reliquis sacramentis."
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "en": "Of the questions he is to expound, let him finish each within the year to which it is assigned; those he cannot, let him omit altogether and not put off to another year, but refer his hearers to some fixed author.",
+     "orig": "Ex quaestionibus autem, quae sibi explanandae fuerint, singulas intra annum, cui adscriptae sunt, absolvat; si quas non poterit, praetermittat omnino, nec alium in annum reiiciat, sed auditores ad certum aliquem auctorem remittat."
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "en": "That they may more easily make progress of this kind in scholastic theology, it is fitting that they abstain, as far as may be, from certain kinds of matter — chiefly these four: § 1. One kind comprises the questions or commentaries proper to the divine Scriptures: these let them yield to the interpreter of Scripture. § 2. A second kind lies in the controversies against the heretics; in handling these, whenever they occur in the parts of St. Thomas, let them keep the scholastic rather than the historical method, and think it enough to fortify each conclusion with two or three firm foundations, and likewise to dissolve about as many principal calumnies of the heretics — yet in each case naming some author from whom whoever wishes may draw the rest. § 3. In the third kind are philosophical matters, which they should by no means treat professedly, nor so much dispute as indicate where they have been explained by others or by themselves. § 4. To the fourth kind belong cases of conscience: here, content with certain general principles of moral matters that are usually disputed in the theological manner, let them pass over that subtler and more minute explication of cases.",
+     "orig": "Ut autem facilius in Theologia scholastica huiusmodi progressus faciant, par est, ut a quibusdam rerum generibus abstineant, quoad eius fieri poterit: sunt autem in primis haec quatuor: § 1. Unum genus quaestiones aut commentationes divinarum Scripturarum proprias complectitur. Has concedant interpreti Scripturarum. § 2. Alterum genus in controversiis adversus haereticos positum est; in quibus pertractandis, quoties in S. Thomae partibus occurrerint, servent scholasticam, potius quam historicam, rationem, et satis esse putent conclusionem quamlibet duobus aut tribus firmis munire fundamentis; diluere etiam totidem fere praecipuas haereticorum calumnias: in singulis tamen indicent auctorem aliquem, ex quo caetera promere possit, qui velit. § 3. In tertio genere sunt philosophicae res, quas haudquaquam ex instituto tractent, nec tam disputent, quam vel ab aliis, vel a se explicatas indicent. § 4. Ad quartum genus pertinent conscientiae casus. In quo, generalibus quibusdam rerum moralium principiis, de quibus disputari theologico more solet, contenti, subtiliorem illam ac minutiorem praetereant casuum explicationem."
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "en": "If St. Thomas ever draws out the same difficulty into several articles, especially of different questions, then, lest the same thing be repeated in two places, they may gather those articles either into one disputation or even, if the matter does not demand a longer explication, into a summary, as will be said distinctly in the Catalogue of Questions annexed to these Rules — provided they pass over nothing in the several articles that is worthy of observation.",
+     "orig": "Si quando S. Thomas eamdem difficultatem in plures distrahit articulos, praesertim diversarum quaestionum, ne idem duobus repetatur locis, poterunt vel in unam disputationem, vel etiam, si res ipsa longiorem non exigat explicationem, in compendium articulos illos redigere, ut distincte dicetur in Catalogo quaestionum hisce Regulis adiuncto, modo nihil praetereant, quod in articulis singulis observatione dignum sit."
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "en": "Let them run through the easy articles. Thus, the title having been read, let them either briefly indicate St. Thomas's conclusion or say: St. Thomas answers by denying, or by affirming. In the more difficult ones let them proceed roughly in this way and order: first let the title of the article be explained, if it has any obscurity; then let the distinction be set out, if there is one, from whose members the conclusions arise; next let the primary conclusion of St. Thomas be stated, and then the others; and to each conclusion, unless it is evident, let some reason of his be added — and let this too be so explained that the hearers understand that there is more force in the distinctions and reasons of St. Thomas than sometimes appears at first sight.",
+     "orig": "Faciles percurrant articulos. Itaque, praelecto titulo, mox vel indicent breviter conclusionem S. Thomae, vel dicant: S. Thomas respondet negando, vel affirmando. In difficilioribus vero progrediantur hoc fere modo atque ordine. Explicetur primum articuli titulus, si quid habet obscuritatis; tum exponatur distinctio, si qua est, ex cuius membris conclusiones nascuntur; mox conclusio primaria S. Thomae, atque aliae deinceps ponantur; singulisque conclusionibus, nisi perspicuae sint, adiiciatur aliqua eiusdem ratio: quae etiam ita explicetur, ut intelligant auditores, in distinctionibus ac rationibus S. Thomae maiorem inesse vim quam prima fronte aliquando videatur."
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "en": "When any article has been explained, let him take up a question if the matter requires; yet no longer treatise, except in those matters which either are not found in St. Thomas, or are found indeed but are more usefully explained in summary.",
+     "orig": "Explicato quolibet articulo, si res exigat, quaestionem instituat; non tamen longiorem ullum tractatum, nisi in iis materiis, quae vel in S. Thoma non habentur, vel habentur quidem, sed utilius explicantur compendio."
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "en": "It is not enough to report the opinions of the Doctors and keep silence about his own; let him defend the opinion of St. Thomas, as has been said, or omit the question itself.",
+     "orig": "Non satis est Doctorum sententias referre, et suam reticere; sed defendat opinionem S. Thomae, ut dictum est, vel quaestionem ipsam omittat."
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "en": "In the monthly disputations, at which as many will defend as there are teachers, let about three argue before noon and as many after noon, each against all the defenders; and indeed, if nothing prevents, let him who answered first in the morning answer second after dinner.",
+     "orig": "In disputationibus menstruis, quibus totidem defendent, quot fuerint Praeceptores, terni fere ante meridiem argumententur, totidem post meridiem, quilibet adversus omnes defendentes; et quidem, si nihil impediat, qui mane responderit primo loco, a prandio secundo respondeat."
+    }
+   ]
+  },
+  {
+   "id": "phil",
+   "zk": "Ratio, Prof. phil.",
+   "titel": "Regulae Professoris Philosophiae — Rules of the Professor of Philosophy",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "en": "Since the arts or natural sciences dispose the mind for theology, and serve for its perfect knowledge and use, and of themselves help toward the same end, let the teacher — seeking sincerely in all things the honor and glory of God — treat them with the diligence that is fitting, so as to prepare his hearers, and especially Ours, for theology, and above all to stir them to the knowledge of their Creator.",
+     "orig": "Quoniam artes vel scientiae naturales ingenia disponunt ad Theologiam, et ad perfectam cognitionem et usum illius inserviunt, et per se ipsas ad eumdem finem iuvant; eas, qua diligentia par est, Praeceptor, in omnibus sincere honorem et gloriam Dei quaerendo, ita tractet, ut auditores suos ac potissimum Nostros ad Theologiam praeparet, maximeque ad cognitionem excitet sui Creatoris."
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "en": "In matters of any moment let him not depart from Aristotle, unless something occurs foreign to the doctrine which the academies everywhere approve — much more if it is repugnant to the orthodox faith: against which, if there are arguments of his or of any other philosopher, let him strive strenuously to refute them, according to the Lateran Council.",
+     "orig": "In rebus alicuius momenti ab Aristotele non recedat, nisi quid inci dat a doctrina, quam Academiae ubique probant, alienum; multo magis, si orthodoxae fidei repugnet: adversus quam, si quae sunt illius aliusve Philosophi argumenta, strenue refellere studeat, iuxta lateranense Concilium."
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "en": "The interpreters of Aristotle who have deserved ill of the Christian religion let him not read, or bring into the school, without great selection; and let him take care that the students are not drawn to them.",
+     "orig": "Aristotelis interpretes, male de christiana religione meritos, non sine magno delectu aut legat, aut in scholam proferat: caveatque, ne erga illos afficiantur discipuli."
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "en": "For that reason let him not gather the digressions of Averroes (and the judgment is the same of others of that kind) into some separate treatise; and if anything good is to be cited from him, let him cite it without praise, and, if it can be done, show that he took it from elsewhere.",
+     "orig": "Eam ob rem nec Averroes (idem de eiusmodi aliis iudicium) digressiones in separatum aliquem tractatum conferat: et, si quid boni ex ipso proferendum sit, sine laude proferat; et, si fieri potest, id eum aliunde sumpsisse demonstret."
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "en": "Let him bind neither himself nor his students to any sect, such as the Averroists, the Alexandrians and the like; and let him not dissemble the errors of Averroes, of Alexander or of the rest, but use them to press down their authority the more sharply.",
+     "orig": "Nulli sectae, ut Averroistarum, Alexandrinorum et similium, vel se vel suos addicat: nec Averrois, aut Alexandri, aut caeterorum errata dissimulet; sed inde acrius deprimat eorum auctoritatem."
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "en": "Of St. Thomas, on the contrary, let him never speak but with honor: following him with willing mind whenever it is proper, or, when he pleases less, departing from him with reverence and reluctance.",
+     "orig": "Contra vero de S. Thoma numquam non loquatur honorifice; libentibus illum animis, quoties oporteat, sequendo; aut reverenter et gravate, si quando minus placeat, deserendo."
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "en": "Let him lecture on the whole of philosophy in not less than three years, and that for two hours daily, one before noon and one after, unless it is ordered otherwise in some university.",
+     "orig": "Universam Philosophiam non minus quam triennio praelegat, idque binis quotidie horis, antemeridiana una, altera pomeridiana, nisi aliter in aliqua Universitate constitutum sit."
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "en": "And accordingly let the course nowhere be finished before the vacations that are usually given toward the end of the year have arrived, or are very near.",
+     "orig": "Ac proinde nusquam cursus absolvatur, antequam venerint aut valde proximae sint vacationes, quae sub anni finem dari solent."
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "en": "§ 1. In the first year let him explain logic, its summary having been delivered in about the first two months, not so much by dictating as by explaining, out of Toletus or Fonseca, what shall seem more necessary. § 2. In the prolegomena of logic let him dispute only whether it is a science, and of what subject, and a few things about second intentions; the full disputation on universals let him defer to metaphysics, content here to give a moderate acquaintance with them. § 3. Of the categories too let him propose certain easier points, which are for the most part touched by Aristotle, and put off the rest to the last year. Yet of analogy and relation, since they fall most frequently into disputations, let him treat in logic as much as is enough. § 4. The second book of the Perihermenias and both books of the Prior Analytics — beyond the first eight or nine chapters of the first — let him run through in summary; yet let him set out their proper questions, and very briefly the one on contingents, in which nothing on free will. § 5. And, that the second year may be given whole to physics, at the end of the first year let a fuller disputation on science be held, and into it let the prolegomena of physics be brought for the greatest part — the divisions of the sciences, the abstractions, the speculative and the practical, subalternation, likewise the different manner of proceeding in physics and in mathematics, of which Aristotle in book 2 of the Physics, and finally whatever is said of definition in book 2 On the Soul. § 6. From the Topics and the Refutations, the places and the fallacies, reduced to a more convenient order, are better explained at the beginning of logic, in the summary.",
+     "orig": "§ l. Explicet primo anno Logicam, eius summa primo circiter bimestri tradita, non tam dictando, quam ex Toleto seu Fonseca, quae magis necessaria videbuntur, explicando. § 2. In prolegomenis Logicae disputet tantum, an sit scientia, et de quo subiecto, et pauca quaedam de secundis intentionibus: plenam de universalibus disputationem differat in Metaphysicam, contentus hic mediocrem quamdam eorum notitiam tradere. § 3. De praedicamentis etiam faciliora quaedam proponat, quae fere attinguntur ab Aristotele: caetera in postremum reiiciat annum. De analogia tamen et relatione, quoniam frequentissime in disputationes cadunt, quantum satis est agat in Logica. § 4. Librum secundum Perihermenias, et ambos Priorum libros, praeter octo vel novem prima capita primi, compendio percurrat: exponat tamen proprias illorum quaestiones; brevissime vero eam, quae est de contingentibus, in qua nihil de libero arbitrio. § 5. Atque, ut secundus annus integer rebus physicis tribuatur, in fine primi anni plenior instituatur disputatio de scientia, in eamque conficiantur prolegomena Physicae maxima ex parte, ut scientiarum divisiones, abstractiones, speculativum, practicum, subalternatio, diversus quoque procedendi modus in Physicis et Mathematicis, de quo Aristoteles lib. 2 Physicorum, demum quidquid de definitione dicitur lib. 2 de anima. § 6. Ex Topicis vero et Elenchis, loci et fallaciae, commodiorem in ordinem redactae, melius explicantur initio Logicae, in summa."
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "en": "§ 1. In the second year let him explain the eight books of the Physics, the books On the Heavens, and the first On Generation. In the eight books of the Physics let the text of the sixth and seventh books be delivered in summary, and of the first too in that part which concerns the opinions of the ancients. In the eighth book let nothing be discussed of the number of the intelligences, nor of liberty, nor of the infinity of the first mover; let these be disputed in metaphysics, and indeed only according to the opinion of Aristotle. § 2. Let the texts of the second, third and fourth On the Heavens be touched briefly, and for a great part passed over. In these books let nothing be treated but a few questions on the elements; and of the heavens, only of their substance and of the influences: the rest are to be left to the professor of mathematics, or brought into a summary. § 3. The Meteorology is to be run through in the summer months in the last afternoon hour of school, whether by the ordinary professor of philosophy, if he can, or by an extraordinary one — unless it should seem more convenient to do otherwise.",
+     "orig": "§ 1. Secundo anno explicet libros octo Physicorum, libros de coelo, et primum de generatione. In octo libris Physicorum compendio tradatur textus libri sexti et septimi, etiam primi ex ea parte, quae est de antiquorum opinionibus. In octavo libro nihil disseratur de numero intelligentiarum, nec de libertate, nec de infinitate primi motoris; sed haec in Metaphysicis disputentur; et quidem solum ex sententia Aristotelis. § 2. Textus secundi, tertii, quarti de coelo breviter perstringantur, magna etiam ex parte praetereantur. In his libris non tractentur, nisi paucae de elementis quaestiones; de coelo autem, dumtaxat de eius substantia, et de influentiis: caeterae Mathematicae Professori relinquantur, vel conferantur in compendium. § 3. Meteorologica vero percurrantur aestivis mensibus ultima pomeridiana scholae hora, idque sive ab ordinario, si possit, Philosophiae Professore, sive ab extraordinario; nisi aliter fieri commodius videretur."
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "en": "§ 1. In the third year he will explain the second book On Generation, the books On the Soul, and the Metaphysics. In the first book On the Soul let him run through the opinions of the ancient philosophers summarily. In the second, the sense-organs having been expounded, let him not digress into anatomy and the other things that belong to the physicians. § 2. In metaphysics, the questions on God and the intelligences, which depend wholly or greatly on truths handed down by divine faith, are to be passed over. The proem, and the text of the seventh and twelfth books, is for a great part to be explained diligently; in the other books let certain principal texts be selected from each, as foundations of the questions that belong to the metaphysician.",
+     "orig": "§ 1. Tertio anno explanabit librum secundum de generatione, libros de anima, et Metaphysicorum. In primo libro de anima veterum placita Philosophorum summatim percurrat. In secundo, expositis sensoriis, non digrediatur in anatomiam, et caetera, quae Medicorum sunt. § 2. In Metaphysica quaestiones de Deo et intelligentiis, quae omnino, aut magnopere pendent ex veritatibus divina fide traditis, praetereantur. Prooemium, ac septimi et duodecimi libri textus magna ex parte diligenter explicetur: in caeteris libris seligantur ex unoquoque quidam praecipui textus, tamquam fundamenta quaestionum, quae ad Metaphysicum pertinent."
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "en": "Let him endeavor with all his might to interpret the Aristotelian text well, and spend no less labor on this than on the questions. Let him also persuade his hearers that the philosophy of those who hold that study of no account will be very mutilated and maimed.",
+     "orig": "Summopere conetur aristotelicum textum bene interpretari, in eoque nihil minus operae, quam in quaestionibus collocet. Auditoribus etiam persuadeat, mutilam valde ac mancam futuram Philosophiam eorum, quibus id studii in pretio non sit."
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "en": "Whenever he comes upon texts that are very celebrated and often tossed about in disputations, let him weigh them accurately, comparing several of the more distinguished interpretations, so that it may be understood which is to be preferred to which — from what precedes and follows, or from the force of the Greek, or from the observation of other passages, or from the authority of the more notable interpreters, or finally from the weight of the reasons. Then only let him come to certain small doubts, not indeed to be pursued too far, but, if they are of any moment, not to be omitted.",
+     "orig": "Quoties incidit in textus aliquos admodum celebres, et iactari saepe solitos in disputationibus, eos accurate perpendat, illustrioribus aliquot interpretationibus inter se collatis, ut quae quibus anteferenda sit, ex antecedentibus et consequentibus possit intelligi, vel ex vi graeci sermonis, vel ex aliorum locorum observatione, vel ex insigniorum interpretum auctoritate, vel denique ex momentis rationum. Tum demum veniatur ad dubitatiunculas quasdam, non nimium exquirendas quidem, sed, si cuius momenti sint, non omittendas."
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "en": "Let him also make a great selection of questions: and those which do not arise from Aristotle's own disputation but on the occasion of some axiom that he uses in passing while disputing, if they have their proper place in other books, are to be sent back there; if not, let them be explained immediately after the very text in which they presented themselves.",
+     "orig": "Magnum etiam quaestionum delectum habeat: et eae quidem, quae non ex ipsa Aristotelis disputatione nascuntur, sed ex occasione cuiuspiam axiomatis, quod is obiter inter disputandum usurpat, si aliis in libris proprium locum habent, eo reiiciantur; sin minus, continuo post textum ipsum, in quo se obtulerint, explicentur."
+    },
+    {
+     "n": 15,
+     "k": 15,
+     "en": "But questions that of themselves belong to the matter of which Aristotle disputes are not to be treated before all the texts pertaining to the proposed sum of the matter have been explained — provided these texts are not more than can be set out in one or two lectures. But if they run out longer, as do those on the principles, on the causes, on motion, then let neither fuller treatises be held in them, nor the whole context of Aristotle be set before the questions, but let it be so joined with them that after some series of texts certain questions arising from them are interposed.",
+     "orig": "Quaestiones vero, quae per se ad materiam, de qua disputat Aristoteles, pertinent, ne tractentur ante explicatos textus omnes ad propositam rei summam pertinentes; si quidem plures textus hi non sint, quam ut una aut altera lectione possint exponi. Sin autem excurrant longius, ut qui sunt de principiis, de causis, de motu, in his nec fusiores tractatus habeantur, nec totus Aristotelis contextus quaestionibus anteponatur, sed cum illis ita coniungatur, ut post aliquam textuum seriem quaestiones aliquae, quae ex illis exsistant, interserantur."
+    },
+    {
+     "n": 16,
+     "k": 16,
+     "en": "The lectures ended, let some of them go over together what they have heard for half an hour, about ten at a time, one of the fellow students from the Society, if it can be done, being set over each group of ten.",
+     "orig": "Absolutis lectionibus, aliqui inter se audita recolant per semihoram, circiter deni, uno aliquo ex condiscipulis e Societate, si fieri potest, singulis decuriis praeposito."
+    },
+    {
+     "n": 17,
+     "k": 17,
+     "en": "Let monthly disputations be held, at which not fewer than three argue in the morning and as many after dinner; the first indeed for an hour, the rest for about three quarters each. And in the morning let some theologian (if there is a supply of theologians) dispute in the first place against the metaphysician, the metaphysician against the physicist, the physicist against the logician; but after dinner metaphysician with metaphysician, physicist with physicist, logician with logician. Likewise in the morning the metaphysician, after dinner the physicist, will briefly and philosophically confirm one or two conclusions.",
+     "orig": "Disputationes menstruae fiant, in quibus argumententur non pauciores quam tres mane, totidem a prandio; primus quidem per horam, caeteri vero per ternos circiter quadrantes. Et mane quidem primo loco disputet Theologus aliquis (si Theologorum suppetit copia) contra Metaphysicum, contra Physicum Metaphysicus, Physicus contra Logicum; sed a prandio Metaphysicus cum Metaphysico, Physicus cum Physico, Logicus cum Logico. Mane item Metaphysicus, a prandio Physicus unam aut alteram conclusionem confirmabit breviter et philosophice."
+    },
+    {
+     "n": 18,
+     "k": 18,
+     "en": "While the teacher delivers the summary of logic, let neither he nor his hearers come to these disputations. Indeed for about the first week or two let the logicians dispute nothing, content almost with the explanation of the matter; from that time they may defend some theses in their own class on Saturday.",
+     "orig": "Quo tempore summam Logicae Praeceptor tradit, nec ipse nec eius auditores ad has disputationes conveniant. Immo prima aut altera circiter hebdomada Logici nihil disputent, una fere rerum explanatione contenti: ex quo tempore poterunt in sua classe defendere theses aliquas die sabbati."
+    },
+    {
+     "n": 19,
+     "k": 19,
+     "en": "Where there is but one master of philosophy, let him hold three or four times a year some more solemn disputations on a feast day or other holiday, and that with such splendor and apparatus — religious and other doctors being invited to argue — that from this some not unfruitful fervor may accrue to our studies.",
+     "orig": "Ubi non est nisi unus Philosophiae Magister, ter aut quater in anno instituat solemniores aliquas disputationes festo aliove feriato die; idque eo splendore atque apparatu, invitatis etiam Religiosis aliisque Doctoribus ad argumentandum, ut ex ea re studiis nostris non infructuosus aliquis fervor accedat."
+    },
+    {
+     "n": 20,
+     "k": 20,
+     "en": "From the very beginning of logic let the young men be so trained that nothing shames them more in disputing than to have swerved from the order of form; and let the teacher exact nothing from them more severely than the laws and appointed turns of disputing. Therefore let him who answers first repeat the whole argumentation, answering nothing to the several propositions; then the propositions again, adding I deny, or I concede, the major, the minor, the consequence; sometimes let him also distinguish; but rarely let him obtrude declarations or reasons, especially on the unwilling.",
+     "orig": "Sic ab ipso Logicae initio iuvenes instituantur, nihil ut eos magis pudeat in disputando, quam a formae ratione deflexisse; nihil ab illis severius exigat Praeceptor, quam disputandi leges ac statas vices. Itaque, qui respondet, repetat primum totam argumentationem, nihil ad singulas propositiones respondendo; tum iterum propositiones, addatque Nego, vel Concedo maiorem, minorem, consequentiam; interdum etiam distinguat; raro autem vel declarationes, vel rationes, praesertim invitis, obtrudat."
+    }
+   ]
+  }
+ ]
+}

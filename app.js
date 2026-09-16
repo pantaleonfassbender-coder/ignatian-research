@@ -27,7 +27,7 @@ export const searchProg = () => (D.program || [])
 const PROGCOLOR = { pascal: "#b0687a", monita: "#9a6a9a", dominus: "#7a6a56",
   xavier: "#5a8a8a", imago: "#a08a50", spee_cautio: "#6a8a5f", spee_trutz: "#86a06a",
   nadal: "#6f7fae", rodriguez: "#8a6f5a", caussade: "#7d6a92", acosta: "#4f7f74",
-  ricci: "#a3584e", relations: "#5f7a99" };
+  ricci: "#a3584e", relations: "#5f7a99", ratio: "#7a7f5a" };
 
 /* --------------------------------------------------------------- boot */
 async function boot() {

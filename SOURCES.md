@@ -47,6 +47,11 @@ and therefore have no source entry here; their editions are named on the method 
 - English: Ella J. McMahon (trans.), *Abandonment; or, Absolute Surrender to Divine Providence*, ed. H. Ramière, S.J. (New York: Benziger Brothers, 1887), Internet Archive scan — <https://archive.org/details/abandonmentorabs00caus>. The book carried whole as Ramière shaped it: his doctrinal preface, the treatise in three books (9 + 12 + 12 chapters), and the appendix of pieces by other hands (Surin, Bossuet twice, Francis de Sales, the acts of abandonment of de Chantal, Bossuet and Pignatelli, and La Colombière's act of confidence in God, whose blackletter heading — lost to the OCR — was restored from the page image, printed p. 191). Two italic words the OCR shredded were likewise restored against the page images.
 - French original (named, not yet carried): *L'abandon à la providence divine*, ed. H. Ramière (Lyon: Perisse, 1861). The attribution to Caussade († 1751) is debated in modern scholarship; the module states the book as what it demonstrably is — the text Ramière published under Caussade's name.
 
+### The Ratio Studiorum of 1599 (selections) · `data/ratio.json`
+
+- Latin: the definitive *Ratio atque Institutio Studiorum Societatis Iesu* of 1599, as printed in the *Institutum Societatis Iesu*, vol. III (Florence, 1893) — <https://archive.org/details/Institutum3> — a pure text of the 1599 rules; collated, where the OCR is doubtful, with G. M. Pachtler's edition, *Ratio studiorum et institutiones scholasticae Societatis Jesu*, vol. II (Monumenta Germaniae Paedagogica V; Berlin, 1887) — <https://archive.org/details/ratiostudiorumetinstitutiones2> — which prints the 1599 and 1832 texts in parallel columns. Both printings are in the United States public domain. Carried complete: the rules for the professor of scholastic theology (14) and the professor of philosophy (20); the 1893 printing's marginal captions and source references are not carried.
+- English: unofficial working translation made for this site directly from the Latin (CC0).
+
 ## The Society in the world
 
 ### Francis Xavier, Letters from India and Japan (selections) · `data/xavier.json`

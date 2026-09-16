@@ -41,12 +41,15 @@
  {
   "id": "ratio",
   "linie": "schule",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Society of Jesus",
   "jahr": "1599",
   "titel": "Ratio Studiorum (selections)",
   "warum": "The pedagogical constitution of the order — the document that made Aristotle's De anima and Aquinas's Summa the curriculum of every Jesuit college, and so the hinge between the Constitutions and the school's doctrine of the soul.",
-  "quelle": "Ratio atque institutio studiorum Societatis Iesu (1599). Latin in G. M. Pachtler's edition, Ratio studiorum et institutiones scholasticae Societatis Jesu, vol. II (Monumenta Germaniae Paedagogica V; Berlin: A. Hofmann, 1887; US public domain; Internet Archive ratiostudiorumetinstitutiones2). Planned selections: the rules for the professors of philosophy and of theology, with a working translation made for this site (CC0)."
+  "quelle": "Latin after the definitive Ratio atque Institutio Studiorum of 1599 as printed in the Institutum Societatis Iesu, vol. III (Florence, 1893; US public domain), collated where doubtful with Pachtler's edition of 1887 (Monumenta Germaniae Paedagogica V, which prints the 1599 text beside that of 1832). Carried complete and bilingual: the rules for the professor of scholastic theology (14 — rule 2 binds the schools to St. Thomas, with the Society's liberty stated in the same breath) and for the professor of philosophy (20 — rule 2 binds them to Aristotle, the De anima course following in the curriculum rules). The English is this site's working translation (CC0), without authority — cite the Latin.",
+  "datei": "ratio",
+  "zk": "Ratio",
+  "kurz": "Ratio"
  },
  {
   "id": "conimbricenses",
