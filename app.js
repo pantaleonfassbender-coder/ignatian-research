@@ -1458,10 +1458,12 @@ function viewMethod() {
 
     <div class="panel"><h2>Canonical anchors</h2>
       <p class="readable">Scholarship on this corpus cites paragraph numbers, not pages, because the numbering
-      is stable across editions and translations while pagination is not. ${nf(k.anker)} anchors were recovered
+      is stable across editions and translations while pagination is not. The ${nf(k.anker)} canonical anchors
+      count both kinds the apparatus carries. For the four locked editions, page-level anchors were recovered
       by locating each canonical number at the start of its line — in the Exercises and the Diary in braces, in
-      the Constitutions, the memoir and the directives in brackets — which distinguishes a paragraph marker from
-      a cross-reference or a footnote sign in running text.</p>
+      the Constitutions and the memoir in brackets — which distinguishes a paragraph marker from
+      a cross-reference or a footnote sign in running text. The shipped editions need no recovery: their texts
+      carry their numbers paragraph by paragraph.</p>
       <table style="font-size:.86rem;max-width:520px">
         ${D.works.filter(w => w.maxn).map(w => `<tr><td>${esc(w.titel)}</td>
           <td class="num">${nf(w.anker)} of ${nf(w.maxn)}</td>
@@ -1469,9 +1471,9 @@ function viewMethod() {
       </table>
       <p class="fine" style="margin-top:.7rem">A search hit is reported at the nearest preceding anchor on
       its page. That is the honest resolution: it locates the passage at paragraph granularity without
-      pretending to a precision the page-level index does not have. The Directory of 1599 is the exception:
-      its text is shipped paragraph by paragraph, so every hit in it is exact to the chapter and margin
-      number.</p>
+      pretending to a precision the page-level index does not have. The Directory of 1599, the Memoriale
+      and the program modules are the exceptions: their texts are shipped paragraph by paragraph, so every
+      hit in them is exact to its grid.</p>
     </div>
 
     <div class="panel"><h2>Measures</h2>

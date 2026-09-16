@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://ignatian-research.netlify.app/sitemap.xml

@@ -112,10 +112,11 @@ promptly.
 
 ## What a researcher gets
 
-**A canonical citation index.** 1,887 anchors tying paragraph numbers to the page on which they begin, so
-that a concordance hit reads `SpEx [23]` or `Const [134]` rather than a page number nobody cites.
-Coverage by work: Exercises 369 of 370, Constitutions 812 of 827, Pilgrim's Testament 101 of 101, Diary
-486 of 490, and 119 across the six directory documents.
+**A canonical citation index.** 2,464 canonical anchors in all. 1,768 of them tie paragraph numbers to
+the page on which they begin in the four locked reference editions — Exercises 369 of 370, Constitutions
+812 of 827, Pilgrim's Testament 101 of 101, Diary 486 of 490 — so that a concordance hit reads `SpEx [23]`
+or `Const [134]` rather than a page number nobody cites. The bilingual Directory of 1599 (287) and Favre's
+Memoriale (409) need no page lookup: their texts ship paragraph by paragraph on their own grids.
 
 **A concordance across the whole apparatus at once**, with keyword in context, hit distribution per text,
 and a canonical citation on every line. The public-domain core (the Exercises, the Letters, the Directory
@@ -155,7 +156,7 @@ A few megabytes of JSON, all of it derived, editorial, or public-domain source t
 | `program.json` | the program modules — line, status, source, and (for shipped ones) data file and citation form |
 | `exercitia.json`, `directorium.json`, `memoriale.json` | the shipped full-text core editions (trilingual Exercises, bilingual Directory of 1599, bilingual Memoriale) |
 | `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json`, `ratio.json`, `conimbricenses.json`, `suarez_anima.json` | the shipped program modules, paragraph by paragraph on their own citation grids |
-| `anchors.json` | 1,887 canonical paragraph anchors, each with PDF page and printed page |
+| `anchors.json` | 1,768 canonical paragraph anchors for the four locked editions, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
 | `introduction.json` | the introductory essay (editorial matter, CC BY 4.0); manuscript in `docs/` |
 | `introductions.json`, `sections.json` | editorial orientation, textual history, key passages, internal divisions |
