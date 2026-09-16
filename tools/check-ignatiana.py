@@ -6,7 +6,7 @@ text, so — unlike a fully public-domain corpus — a registry entry without a
 text file can be legitimate. The check therefore verifies:
 
   1. works.json: seven entries, required fields present, every `linie` valid;
-  2. programme.json: planned entries well-formed, lines valid;
+  2. program.json: planned entries well-formed, lines valid;
   3. the open editions parse and their unit counts hold
      (exercitia 370 canonical paragraphs, directorium 287, letters 24,
      memoriale sections + appendix non-empty, Longridge layers well-formed);
@@ -40,42 +40,42 @@ for w in works:
     if w.get('linie') not in LINIEN:
         errors.append(f"works.json {w['id']}: unknown linie {w.get('linie')}")
 
-# 2. programme.json
-prog = json.load(io.open('data/programme.json', encoding='utf-8'))
+# 2. program.json
+prog = json.load(io.open('data/program.json', encoding='utf-8'))
 for p in prog:
     for f in ('id', 'linie', 'status', 'autor', 'jahr', 'titel', 'warum', 'quelle'):
         if not p.get(f):
-            errors.append(f"programme.json {p.get('id','?')}: field {f} empty")
+            errors.append(f"program.json {p.get('id','?')}: field {f} empty")
     if p.get('linie') not in LINIEN:
-        errors.append(f"programme.json {p['id']}: unknown linie {p.get('linie')}")
+        errors.append(f"program.json {p['id']}: unknown linie {p.get('linie')}")
 ids = [x['id'] for x in works] + [x['id'] for x in prog]
 if len(ids) != len(set(ids)):
-    errors.append('duplicate ids across works.json and programme.json')
+    errors.append('duplicate ids across works.json and program.json')
 
-# 2b. shipped programme modules: data file loads and is well-formed
+# 2b. shipped program modules: data file loads and is well-formed
 for p in prog:
     if p.get('status') != 'shipped':
         continue
     if not p.get('datei') or not p.get('zk'):
-        errors.append(f"programme {p['id']}: shipped but datei/zk missing"); continue
+        errors.append(f"program {p['id']}: shipped but datei/zk missing"); continue
     try:
         t = json.load(io.open(f"data/{p['datei']}.json", encoding='utf-8'))
     except Exception as e:
-        errors.append(f"programme {p['id']}: data file unreadable: {e}"); continue
+        errors.append(f"program {p['id']}: data file unreadable: {e}"); continue
     for f in ('titel', 'zitierweise', 'quelle', 'sections'):
         if not t.get(f):
-            errors.append(f"programme {p['id']}: module field {f} missing")
+            errors.append(f"program {p['id']}: module field {f} missing")
     tn = 0
     for s in t.get('sections', []):
         if not s.get('units'):
-            errors.append(f"programme {p['id']}/{s.get('id')}: no units")
+            errors.append(f"program {p['id']}/{s.get('id')}: no units")
         for k, u in enumerate(s.get('units', []), start=1):
             tn += 1
             if u.get('k') != k:
-                warns.append(f"programme {p['id']}/{s['id']}: k mismatch at n={u.get('n')}")
+                warns.append(f"program {p['id']}/{s['id']}: k mismatch at n={u.get('n')}")
             if not (u.get('en') or u.get('orig')):
-                errors.append(f"programme {p['id']}/{s['id']}: empty unit {u.get('n')}")
-    print(f"programme module {p['id']}: {tn} units ok")
+                errors.append(f"program {p['id']}/{s['id']}: empty unit {u.get('n')}")
+    print(f"program module {p['id']}: {tn} units ok")
 
 # 3. open editions
 exx = json.load(io.open('data/exercitia.json', encoding='utf-8'))
@@ -110,7 +110,7 @@ for name in ('longridge_exx', 'longridge_dir', 'anchors', 'corpus', 'network', '
         errors.append(f'data/{name}.json unreadable: {e}')
 
 # 4. reading-path stations resolve
-prog_sections = {}          # shipped programme module id -> set of section ids
+prog_sections = {}          # shipped program module id -> set of section ids
 for p in prog:
     if p.get('status') == 'shipped' and p.get('datei'):
         try:

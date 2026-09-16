@@ -106,7 +106,7 @@ and therefore have no source entry here; their editions are named on the method 
 
 ---
 
-Programme entries still planned name their intended sources in the works view, and their
+Program entries still planned name their intended sources in the works view, and their
 entries move up here as they ship: — the doctrine-of-the-soul strand of the school line — the Ratio Studiorum
 of 1599 (Latin in Pachtler's Monumenta Germaniae Paedagogica edition of 1887, public
 domain), one question of the Coimbra *De anima* commentary (early printings of 1598–1617,

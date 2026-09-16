@@ -208,7 +208,7 @@ out = {
              "and this, its most celebrated treatise, is the one the tradition kept "
              "closest — conformity to the will of God carried through content and "
              "calamity, sickness, aridity in prayer, and death. It is the direct ancestor "
-             "of the Abandonment attributed to Caussade, which the programme names as a "
+             "of the Abandonment attributed to Caussade, which the program names as a "
              "later module. Rodríguez is cited by treatise and chapter; the paragraph "
              "numbers within each chapter are this site's own. Part of the concordance "
              "and the citation-bound dialogue; not part of the linguistic statistics, "

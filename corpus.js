@@ -24,14 +24,14 @@ export const corpus = {
   _favPages: null,  // flattened paragraph texts of Favre's Memoriale
   _favCites: null,
   _exxCites: null,  // parallel Exx [n] citation labels
-  prog: {},         // shipped programme modules: id -> {pages:[], cites:[]}
+  prog: {},         // shipped program modules: id -> {pages:[], cites:[]}
   progMeta: [],     // their meta rows: {id, kurz, zk, titel}
   _idx: {},         // id -> Map token -> [pageIdx]
   _chunks: [],      // retrieval units across everything available
   _bm25: null,
 };
 
-/** Core works plus every shipped programme module — the index walks this. */
+/** Core works plus every shipped program module — the index walks this. */
 const allMeta = () => [...(corpus.meta || []), ...corpus.progMeta];
 
 /* ---------------------------------------------------------- IndexedDB */
@@ -217,7 +217,7 @@ export async function forgetAll() {
   corpus.works = {};
   reindex();
 }
-export async function restore(meta, anchors, letters, directorium, exercitia, memoriale, programme) {
+export async function restore(meta, anchors, letters, directorium, exercitia, memoriale, program) {
   corpus.meta = meta; corpus.anchors = anchors; corpus.letters = letters;
   corpus.directorium = directorium || null;
   if (directorium) buildDirectorium(directorium);
@@ -225,7 +225,7 @@ export async function restore(meta, anchors, letters, directorium, exercitia, me
   if (exercitia) buildExercitia(exercitia);
   corpus.memoriale = memoriale || null;
   if (memoriale) buildMemoriale(memoriale);
-  if (programme) buildProgramme(programme);
+  if (program) buildProgram(program);
   for (const k of await dbKeys()) {
     // The Directory of 1599 now ships with the site; a Palmer PDF stored under
     // "dir" by an earlier version of this page would shadow it, so it is dropped.
@@ -287,11 +287,11 @@ function buildMemoriale(m) {
   corpus._favCites = cites;
 }
 
-/** Flatten every shipped programme module into paragraph "pages" with exact
+/** Flatten every shipped program module into paragraph "pages" with exact
     citation labels (section zk + [k]). The list arrives from the boot: one
-    {reg, data} pair per shipped entry of programme.json, so any module that
+    {reg, data} pair per shipped entry of program.json, so any module that
     ships joins the concordance and the dialogue without further code. */
-function buildProgramme(list) {
+function buildProgram(list) {
   corpus.prog = {}; corpus.progMeta = [];
   for (const { reg, data } of list || []) {
     if (!reg || !data) continue;
@@ -320,7 +320,7 @@ export const openIds = () => allMeta().filter(w => isOpen(w.id)).map(w => w.id);
 /** True when a PDF page belongs to Ignatius's text rather than to the
     translator's introduction, endnotes or index. */
 export function inBody(id, p) {
-  if (corpus.prog[id]) return true;   // programme modules ship body-only
+  if (corpus.prog[id]) return true;   // program modules ship body-only
   if (id === "letters" || id === "dir" || id === "fabri") return true;
   // when the Exercises run on the shipped trilingual edition rather than an
   // unlocked Ganss PDF, every "page" is a canonical paragraph — all body

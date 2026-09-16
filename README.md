@@ -10,7 +10,7 @@ seven core works: the writings of Ignatius of Loyola himself — the *Spiritual 
 the *Spiritual Diary*, and the letters of 1524–1547 — and, around them, the texts in which his
 spirituality became the practice of an order: the *Official Directory of 1599* on giving the Exercises,
 and the *Memoriale* of Blessed Peter Faber, the first companion, discernment kept as a daily journal
-from 1542 to 1546. Around those stand the programme modules that carry the corpus out into the world and
+from 1542 to 1546. Around those stand the program modules that carry the corpus out into the world and
 its arguments: the school of discernment carried to its end — Nadal's annotations on the Examen,
 Rodríguez's *Of Conformity to the Will of God*, and the *Abandonment to Divine Providence* attributed to
 Caussade — Xavier's letters from India and Japan, Acosta's *Natural and Moral History of the
@@ -79,7 +79,7 @@ Full-text functions work against a copy **you** own. Your PDF is read in the bro
 that browser's IndexedDB, and never uploaded. Only the passages local retrieval selects for a specific
 question are sent onward.
 
-The programme modules are a different case: each is public-domain source in its own right, so its running
+The program modules are a different case: each is public-domain source in its own right, so its running
 text **is** shipped, complete, on its own citation grid. They are Pascal's *Lettres provinciales*
 (Letters V, VII, X, M'Crie's 1856 translation); the *Monita secreta* in Brownlee's 1857 bilingual
 printing; the brief *Dominus ac Redemptor* of 1773 (Latin after Theiner 1852, with a working
@@ -112,12 +112,12 @@ Coverage by work: Exercises 369 of 370, Constitutions 812 of 827, Pilgrim's Test
 
 **A concordance across the whole apparatus at once**, with keyword in context, hit distribution per text,
 and a canonical citation on every line. The public-domain core (the Exercises, the Letters, the Directory
-of 1599 and the Memoriale) and every shipped programme module — from Pascal to the brief of 1773 and the
+of 1599 and the Memoriale) and every shipped program module — from Pascal to the brief of 1773 and the
 Imago's emblems — are always searchable; the four in-copyright works join once you have opened your own
 copies.
 
 **The 1914 letters in full**, searchable and quotable without any copy of your own, with recipient, place
-and date for each — as are all the programme modules.
+and date for each — as are all the program modules.
 
 **A discernment lexicon**: 27 terms of the vocabulary of consolation, desolation and election traced
 across the corpus, with their distribution — which is where the differences between the works become
@@ -145,9 +145,9 @@ A few megabytes of JSON, all of it derived, editorial, or public-domain source t
 | File | Contents |
 |---|---|
 | `works.json` | the seven core works: translator, rights, citation form, body range, sections, measures |
-| `programme.json` | the programme modules — line, status, source, and (for shipped ones) data file and citation form |
+| `program.json` | the program modules — line, status, source, and (for shipped ones) data file and citation form |
 | `exercitia.json`, `directorium.json`, `memoriale.json` | the shipped full-text core editions (trilingual Exercises, bilingual Directory of 1599, bilingual Memoriale) |
-| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json` | the shipped programme modules, paragraph by paragraph on their own citation grids |
+| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json` | the shipped program modules, paragraph by paragraph on their own citation grids |
 | `anchors.json` | 1,887 canonical paragraph anchors, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
 | `introduction.json` | the introductory essay (editorial matter, CC BY 4.0); manuscript in `docs/` |
@@ -185,7 +185,7 @@ edition the panel says so, rather than letting a divergent printing be silently 
 Editions the anchors were built against: Ganss (IJS, 1992); Padberg (IJS, 1996); Divarkar (IJS, 1995);
 Munitiz, *Íñigo: Discernment Log-Book* (Inigo Enterprises, 1987); O'Leary, ed. Goodier
 (B. Herder / Manresa Press, 1914). The Directory of 1599, the trilingual Exercises, Favre's Memoriale
-and every programme module need no anchors: their texts are shipped paragraph by paragraph, so a hit in
+and every program module need no anchors: their texts are shipped paragraph by paragraph, so a hit in
 them is exact to the paragraph without a page lookup. A different printing of a locked work will still
 search; its pages will not line up.
 
@@ -283,7 +283,7 @@ in short:
   Longridge's 1919 commentary, Additional Notes and Directory translation —
   public domain by age; the editorial keying to the [1]–[370] grid and the
   paragraph alignment are dedicated CC0 like the rest of the derived data.
-- **The programme modules** (`data/pascal.json`, `monita.json`, `dominus.json`,
+- **The program modules** (`data/pascal.json`, `monita.json`, `dominus.json`,
   `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`,
   `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`,
   `relations.json`, with the images in

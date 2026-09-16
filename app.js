@@ -20,8 +20,8 @@ export const WORKCOLOR = {
 export const wc = id => WORKCOLOR[id] || PROGCOLOR[id] || "#8a7d6a";
 export const workOf = id => (D.works || []).find(w => w.id === id) ||
   searchProg().find(p => p.id === id) || {};
-/** Shipped programme modules, as searchable pseudo-works beside D.works. */
-export const searchProg = () => (D.programme || [])
+/** Shipped program modules, as searchable pseudo-works beside D.works. */
+export const searchProg = () => (D.program || [])
   .filter(p => p.status === "shipped" && p.datei)
   .map(p => ({ id: p.id, kurz: p.kurz || p.zk || p.id, zk: p.zk, titel: p.titel }));
 const PROGCOLOR = { pascal: "#b0687a", monita: "#9a6a9a", dominus: "#7a6a56",
@@ -33,13 +33,13 @@ const PROGCOLOR = { pascal: "#b0687a", monita: "#9a6a9a", dominus: "#7a6a56",
 async function boot() {
   const names = ["works", "corpus", "anchors", "letters", "terms", "keyness", "network",
     "discernment", "persons", "places", "itinerary", "introductions", "sections",
-    "lexicon", "glossary", "directorium", "exercitia", "memoriale", "programme"];
+    "lexicon", "glossary", "directorium", "exercitia", "memoriale", "program"];
   const res = await Promise.all(names.map(n => fetch(`data/${n}.json`).then(r => r.json())));
   names.forEach((n, i) => D[n] = res[i]);
   D.introOf = {}; D.introductions.forEach(x => D.introOf[x.id] = x);
-  // shipped programme modules join the concordance and the dialogue: their
+  // shipped program modules join the concordance and the dialogue: their
   // data files load here and are handed to the corpus layer for indexing
-  const shipped = (D.programme || []).filter(p => p.status === "shipped" && p.datei);
+  const shipped = (D.program || []).filter(p => p.status === "shipped" && p.datei);
   const progData = await Promise.all(shipped.map(p =>
     fetch(`data/${p.datei}.json`).then(r => r.json()).then(data => {
       D[p.datei] = data;             // the generic reader reuses the same load
@@ -70,7 +70,7 @@ const ROUTES = {
    Society (1540–1773); the reasons are owned in the coda. */
 const LINIEN = [
   ["kern", "The founder", "Ignatius's own hand and dictation: the retreat manual, the body of law, the dictated memoir, the private journal of discernment, the letters."],
-  ["schule", "The school of discernment", "How the Exercises became the practice of an order: the official Directory, Favre's journal — and, in the programme, Nadal's exhortations, Rodríguez's curriculum, and the Abandon attributed to Caussade."],
+  ["schule", "The school of discernment", "How the Exercises became the practice of an order: the official Directory, Favre's journal — and, in the program, Nadal's exhortations, Rodríguez's curriculum, and the Abandon attributed to Caussade."],
   ["welt", "The Society in the world", "Mission, observation and self-presentation before 1773: Xavier's letters, the Relations from New France, Ricci at the court of China, Acosta's New World, and the centenary emblem book of 1640."],
   ["spee", "Friedrich Spee", "A line of one voice: conscience from inside the order — the Cautio Criminalis against the witch trials, and the same conscience singing in the Trutznachtigall."],
   ["kritik", "The counter-voices", "Forgery, polemic, suppression: the Monita secreta, Pascal's Provinciales, and the brief of 1773 with which the corpus closes."],
@@ -86,7 +86,7 @@ function route() {
 /* ------------------------------------------------------------- pieces */
 export function citeChip(cite, work) {
   if (!cite) return "";
-  const prog = (D.programme || []).some(p => p.id === work && p.status === "shipped");
+  const prog = (D.program || []).some(p => p.id === work && p.status === "shipped");
   const href = prog ? `#/text/${work}` : `#/works/${work}`;
   return `<a class="cite" href="${href}" title="${esc(workOf(work).titel || "")}">${esc(cite.label)}${cite.seite ? `, p. ${cite.seite}` : ""}</a>`;
 }
@@ -185,7 +185,7 @@ function viewOverview() {
       centre stand the writings of Ignatius himself — the retreat manual, the body of law, the dictated
       memoir, the private journal of discernment, the letters — and the texts in which his spirituality
       became the practice of an order: the official Directory of 1599, and the Memoriale of Pierre Favre,
-      the first companion. Around them stand the programme modules that carry the corpus out into the
+      the first companion. Around them stand the program modules that carry the corpus out into the
       world and its controversies: Xavier's letters, the emblems of the Imago primi saeculi with their
       Dutch mirror, Friedrich Spee, and the counter-voices down to the brief of 1773 with which the corpus
       closes. The apparatus indexes them all by their canonical numbering, traces the vocabulary that
@@ -234,9 +234,9 @@ function viewOverview() {
     </div>
 
     <div class="card" style="margin-bottom:2rem">
-      <span class="tag">And the programme modules</span>
+      <span class="tag">And the program modules</span>
       <h3>Seven public-domain texts, shipped in full</h3>
-      <p style="font-size:.92rem;color:var(--fg2)">Around the core stand the programme modules — public
+      <p style="font-size:.92rem;color:var(--fg2)">Around the core stand the program modules — public
       domain in their own right, so their running text is shipped complete, each on its own citation grid
       and part of the concordance and the dialogue: Pascal's <em>Provinciales</em>, the forged <em>Monita
       secreta</em>, the brief <em>Dominus ac Redemptor</em> of 1773, Xavier's letters, eleven emblems of
@@ -248,7 +248,7 @@ function viewOverview() {
     <h2>The seven core works</h2>
     <div class="grid g3" id="worklist" style="margin-bottom:1.8rem"></div>
 
-    <h2>The programme modules</h2>
+    <h2>The program modules</h2>
     <p class="fine" style="margin:0 0 1rem;max-width:60rem">Shipped complete and searchable; browse them by
     line, with the works still planned, on the <a href="#/works">Works page</a>.</p>
     <div class="grid g3" id="proglist" style="margin-bottom:2.4rem"></div>
@@ -270,7 +270,7 @@ function viewOverview() {
     wl.append(card);
   }
   const pl = view.querySelector("#proglist");
-  for (const p of (D.programme || []).filter(x => x.status === "shipped" && x.datei)) {
+  for (const p of (D.program || []).filter(x => x.status === "shipped" && x.datei)) {
     const card = el(`<div class="workcard" style="border-top:3px solid ${wc(p.id)}">
       <h3 style="font-size:1.02rem">${esc(p.titel)}</h3>
       <div><span class="rights pd">public domain</span> <span class="chip">reader</span></div>
@@ -321,18 +321,18 @@ function viewWorks(args) {
     <div class="viewhead">
       <span class="tag">Five lines</span>
       <h1>The corpus, line by line</h1>
-      <p class="lede">Seven works shipped, and a stated programme around them, in five lines: the
+      <p class="lede">Seven works shipped, and a stated program around them, in five lines: the
       founder's own writings; the school of discernment they set in motion; the Society in the world
       before 1773; Friedrich Spee, a line of one voice; and the counter-voices, from forgery to the
       brief of suppression. Each shipped entry gives an orientation, the textual history, advice on
-      the numbering, and the passages that carry weight; the programme entries name their sources and
+      the numbering, and the passages that carry weight; the program entries name their sources and
       wait their turn. The corpus confines itself to the old Society (1540–1773) — the reasons are
       owned in the <a href="#/coda">coda</a>.</p>
     </div><div id="lines"></div></div>`));
   const box = view.querySelector("#lines");
   for (const [key, name, lede] of LINIEN) {
     const shipped = D.works.filter(w => w.linie === key);
-    const planned = (D.programme || []).filter(p => p.linie === key);
+    const planned = (D.program || []).filter(p => p.linie === key);
     if (!shipped.length && !planned.length) continue;
     const sec = el(`<div style="margin-bottom:2rem">
       <h2 style="margin:0 0 .2rem">${esc(name)}</h2>
@@ -986,7 +986,7 @@ function viewConcordance() {
       <h1>Concordance</h1>
       <p class="lede">Keyword in context across every text currently available, each hit resolved to its
       canonical citation. The Exercises, the Letters, the Directory of 1599, Favre's Memoriale and all
-      shipped programme modules — from Pascal to the brief of 1773 and the Imago's emblems — are always
+      shipped program modules — from Pascal to the brief of 1773 and the Imago's emblems — are always
       searchable; the four locked works join the search as you open them.</p>
     </div>
     <div class="toolbar">
@@ -1291,7 +1291,7 @@ function viewLanguage() {
       <canvas id="kc"></canvas>
       <p class="fine">Log-likelihood of each lemma in the work against the rest of the corpus.
       Values above 15.13 correspond to p &lt; 0.0001 at one degree of freedom. Computed over the
-      reference translations of the core corpus; programme modules are not part of these counts.
+      reference translations of the core corpus; program modules are not part of these counts.
       The Memoriale's profile was computed later with this repository's own tokenizer, against the
       same reference counts and restricted to the same lemma inventory; its English is this site's
       working translation, so the profile partly reflects the translation's vocabulary — see the
@@ -1426,7 +1426,7 @@ function viewMethod() {
       prints a different (largely Spanish) text. The appendix of the 1873 volume, nine letters and
       counsels, was segmented into its individual pieces, several of which the volume runs together.
       The English is again a machine working translation made directly from the Latin.</p>
-      <p class="readable">The programme modules — the texts around the core corpus, opened from the works
+      <p class="readable">The program modules — the texts around the core corpus, opened from the works
       view — follow the same rules with one difference: they carry their source's own citation grid where
       one exists, and this site's own paragraph numbers where none does. Pascal's three Provincial Letters
       come from the Project Gutenberg transcription of M'Crie's 1856 translation, cut at the printed
@@ -1441,7 +1441,7 @@ function viewMethod() {
       small-type notes. The Imago module reverses the usual direction: there the images are the text, the
       plates cropped from the 1640 scan and the epigrams transcribed by eye, distich by distich; each
       emblem closes with its page from the Dutch Af-Beeldinghe of the same year and press, whose headings
-      and rhymed lemma-glosses are transcribed the same way. Every shipped programme module is part of
+      and rhymed lemma-glosses are transcribed the same way. Every shipped program module is part of
       the concordance and of the citation-bound dialogue, paragraph-exact on its own citation grid; none
       is part of the linguistic statistics, which describe the core corpus only — each module's footer
       says so.</p>
@@ -1722,14 +1722,14 @@ function viewCoda() {
 }
 
 /* ================================================================ TEXT */
-/* Generic reader for programme modules (data file named in programme.json).
+/* Generic reader for program modules (data file named in program.json).
    Sections with optional blurbs; units {n, k, en, orig?, label?, note?};
    a language bar appears only when a module carries an original text. */
 const textLang = {
   get: () => localStorage.getItem("textLang") || "both",
   set: v => localStorage.setItem("textLang", v),
 };
-function progOf(id) { return (D.programme || []).find(p => p.id === id); }
+function progOf(id) { return (D.program || []).find(p => p.id === id); }
 function viewText(args) {
   const id = args && args[0];
   const p = progOf(id);
@@ -2265,7 +2265,7 @@ function drawUnlockTable() {
   });
 }
 function refreshUnlockBadge() {
-  // the badge tracks the seven core works only; shipped programme modules are
+  // the badge tracks the seven core works only; shipped program modules are
   // always open and are not part of the unlock flow
   const core = (D.works || []);
   const n = core.filter(w => C.isOpen(w.id)).length;
