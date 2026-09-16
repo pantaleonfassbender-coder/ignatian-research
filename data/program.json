@@ -1,5 +1,18 @@
 [
  {
+  "id": "formula",
+  "linie": "kern",
+  "status": "shipped",
+  "autor": "Paul III",
+  "jahr": "1540",
+  "titel": "Regimini militantis Ecclesiae — the founding bull, with the Formula of the Institute",
+  "warum": "The corpus's opening document: the bull of 27 September 1540 by which Paul III approved the ten companions' own sketch of their way of life — the Formula of the Institute, quoted whole inside the papal frame — and capped the Society at sixty members. The apparatus now opens and closes with the two papal documents that made and unmade the old Society.",
+  "quelle": "Latin after Institutum Societatis Iesu, vol. I (Bullarium et compendium privilegiorum), Florence 1892, pp. 3–7; Internet Archive Institutum1, OCR emended against the sense. English: this site's unofficial working translation. The revised Formula of 1550 (Exposcit debitum) is named, not carried.",
+  "datei": "formula",
+  "zk": "Reg. mil.",
+  "kurz": "Reg. mil."
+ },
+ {
   "id": "nadal",
   "linie": "schule",
   "status": "shipped",

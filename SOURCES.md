@@ -9,6 +9,11 @@ and therefore have no source entry here; their editions are named on the method 
 
 ## The founder
 
+### Regimini militantis Ecclesiae — the founding bull of 1540 · `data/formula.json`
+
+- Latin: *Institutum Societatis Iesu*, vol. I (*Bullarium et compendium privilegiorum*; Florence, 1892), pp. 3–7 — <https://archive.org/details/Institutum1> — United States public domain (bull of 1540; edition 1892). Carried complete: the papal frame and the Formula of the Institute it quotes whole, with the restriction to sixty members. The OCR was emended against the sense; the volume's systematic damage is the B/s confusion (*Bollicitis* → *sollicitis*), T/I in *Iaius* (the 1544 bull on the same opening reads it correctly), *Lebu/Iebu* → *Iesu*, and *in/iu* (*indicavimus* → *iudicavimus*); the print's own spellings (*caeteri*, *charitas*, *normulam*) are kept. The print's marginal summaries are carried as unit labels; the paragraph numbering [1]–[19] is this site's own. The revised Formula of 1550 (*Exposcit debitum*) is named, not carried.
+- English: this site's unofficial working translation, made directly from the Latin and dedicated CC0.
+
 ### The Spiritual Exercises — trilingual parallel edition · `data/exercitia.json`
 
 - Spanish Autograph and Latin Vulgata of 1548: *Monumenta Ignatiana*, ser. II (Madrid, 1919), Internet Archive scan — <https://archive.org/details/monumentaignatia01igna>

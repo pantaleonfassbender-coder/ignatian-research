@@ -11,7 +11,9 @@ the *Spiritual Diary*, and the letters of 1524–1547 — and, around them, the 
 spirituality became the practice of an order: the *Official Directory of 1599* on giving the Exercises,
 and the *Memoriale* of Blessed Peter Faber, the first companion, discernment kept as a daily journal
 from 1542 to 1546. Around those stand the program modules that carry the corpus out into the world and
-its arguments: the school of discernment carried to its end — the Ratio Studiorum of 1599, the
+its arguments: the founding bull *Regimini militantis Ecclesiae* of 1540 with the Formula of the
+Institute, carried complete (bilingual) — the corpus opens and closes on papal parchment — the school
+of discernment carried to its end — the Ratio Studiorum of 1599, the
 Prooemium of the Coimbra *De anima* commentary and three chapters of Suárez's *De anima* (all
 bilingual: the rules, the course and the commentator that bound
 the schools to Thomas and Aristotle), Nadal's annotations on the Examen,
@@ -83,7 +85,9 @@ that browser's IndexedDB, and never uploaded. Only the passages local retrieval 
 question are sent onward.
 
 The program modules are a different case: each is public-domain source in its own right, so its running
-text **is** shipped, complete, on its own citation grid. They are Pascal's *Lettres provinciales*
+text **is** shipped, complete, on its own citation grid. They are the founding bull *Regimini
+militantis Ecclesiae* of 1540 with the Formula of the Institute (Latin of the 1892 *Institutum*, with
+a working translation); Pascal's *Lettres provinciales*
 (Letters V, VII, X, M'Crie's 1856 translation); the *Monita secreta* in Brownlee's 1857 bilingual
 printing; the brief *Dominus ac Redemptor* of 1773 (Latin after Theiner 1852, with a working
 translation); four letters of Francis Xavier (Coleridge's 1872 biography); eleven chapters of Acosta's
@@ -155,7 +159,7 @@ A few megabytes of JSON, all of it derived, editorial, or public-domain source t
 | `works.json` | the seven core works: translator, rights, citation form, body range, sections, measures |
 | `program.json` | the program modules — line, status, source, and (for shipped ones) data file and citation form |
 | `exercitia.json`, `directorium.json`, `memoriale.json` | the shipped full-text core editions (trilingual Exercises, bilingual Directory of 1599, bilingual Memoriale) |
-| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json`, `ratio.json`, `conimbricenses.json`, `suarez_anima.json` | the shipped program modules, paragraph by paragraph on their own citation grids |
+| `formula.json`, `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json`, `ratio.json`, `conimbricenses.json`, `suarez_anima.json` | the shipped program modules, paragraph by paragraph on their own citation grids |
 | `anchors.json` | 1,768 canonical paragraph anchors for the four locked editions, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
 | `introduction.json` | the introductory essay (editorial matter, CC BY 4.0); manuscript in `docs/` |
@@ -292,7 +296,7 @@ in short:
   Longridge's 1919 commentary, Additional Notes and Directory translation —
   public domain by age; the editorial keying to the [1]–[370] grid and the
   paragraph alignment are dedicated CC0 like the rest of the derived data.
-- **The program modules** (`data/pascal.json`, `monita.json`, `dominus.json`,
+- **The program modules** (`data/formula.json`, `pascal.json`, `monita.json`, `dominus.json`,
   `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`,
   `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`,
   `relations.json`, `ratio.json`, `conimbricenses.json`, `suarez_anima.json`, with the images in

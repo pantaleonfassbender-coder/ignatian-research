@@ -1,0 +1,154 @@
+{
+ "id": "formula",
+ "autor": "Paul III",
+ "titel": "Regimini militantis Ecclesiae — the founding bull, with the Formula of the Institute (27 September 1540)",
+ "jahr": 1540,
+ "lang": "la",
+ "zitierweise": "Reg. mil. [k]",
+ "quelle": "Latin after Institutum Societatis Iesu, vol. I (Bullarium et compendium privilegiorum), Florence 1892, pp. 3–7; Internet Archive Institutum1, OCR emended against the sense (the volume's systematic B/s and T/I confusions are corrected; the print's own spellings are kept). Public domain (bull of 1540; edition 1892).",
+ "hinweis": "The corpus's opening document, complete: the bull by which Paul III approved the Society of Jesus on 27 September 1540, carrying the Formula of the Institute — the companions' own 'sketch' (typus) of their way of life — inside the papal frame, with the famous restriction to sixty members. The print articulates the bull by marginal summaries, carried here as labels; the paragraph numbering [1]–[19] is this site's own. The conventional five-chapter division of the Formula belongs to the revised text of 1550 (Exposcit debitum, named but not carried) and is not imposed on the 1540 print. The English is this site's unofficial working translation, made directly from the Latin — cite the Latin. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only.",
+ "sections": [
+  {
+   "id": "bulla",
+   "zk": "Reg. mil.",
+   "titel": "The bull, complete: arenga, Formula, confirmation",
+   "blurb": "One document in three movements, on this site's numbering. The papal frame opens in the plural of the Apostolic See and recites what has been reported of the ten companions, named one by one with their dioceses and their Paris degrees [1]–[3]; the Formula of the Institute follows, the companions' own 'sketch' (typus) quoted whole — end of the Institute, superior and Constitutions, the special vow to the pope concerning missions, obedience, poverty, colleges, the office said privately, and the counsel to count the cost [4]–[14]; the frame closes with approval, the faculty to make Constitutions, and the cap of sixty members [15]–[19].",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "orig": "Regimini militantis Ecclesiae, meritis licet imparibus, disponente Domino, praesidentes; et animarum salutem, prout ex debito pastoralis officii tenemur, sollicitis studiis exquirentes: fideles quoslibet, qui vota sua in id exponunt, apostolici favoris gratia confovemus, aliasque desuper disponimus, prout, temporum et locorum qualitate pensata, id in Domino conspicimus salubriter expedire.",
+     "en": "Presiding over the government of the Church militant, though with merits unequal to it, by the disposing of the Lord, and seeking with solicitous care the salvation of souls, as by the debt of our pastoral office we are bound: we cherish with the grace of apostolic favour whichever of the faithful devote their vows to that end, and make further disposition for them as, weighing the quality of times and places, we perceive in the Lord to be wholesomely expedient.",
+     "label": "Paulus Episcopus, servus servorum Dei, ad perpetuam rei memoriam"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "orig": "Nuper siquidem accepimus quod dilecti filii, Ignatius de Loyola, et Petrus Faber, ac Iacobus Laynez, nec non Claudius Iaius, et Paschasius Broet, ac Franciscus Xavier, nec non Alfonsus Salmeron, et Simon Rodericus, ac Ioannes Coduri, et Nicolaus de Bobadilla, Presbyteri Pampilonen., Gebennen., Seguntin., Toletan., Visen., Ebredunen. et Palentin. civitatum et dioeceseon respective, in artibus Magistri, in Universitate Parisiensi graduati, et in theologicis studiis per plures annos exercitati, Spiritu Sancto, ut pie creditur, afflati, iam dudum e diversis mundi regionibus discedentes, in unum convenerunt, et Socii effecti, abdicatis huius saeculi illecebris, eorum vitam perpetuo Domini nostri Iesu Christi, atque Nostro et aliorum successorum Nostrorum Romanorum Pontificum servitio dedicarunt; et iam quampluribus annis laudabiliter in vinea Domini se exercuerunt, verbum Dei praevia sufficienti licentia publice praedicando, fideles privatim ad bene beateque vivendum exhortando et ad pias meditationes excitando, hospitalibus inserviendo, pueros et personas rudes ea, quae ad Christianam hominis institutionem sunt necessaria, docendo, et demum omnia charitatis officia et quae ad animarum consolationem faciunt, ubique terrarum, ubi peregrinati sunt, multa cum laude obeundo.",
+     "en": "For we have lately learned that our beloved sons Ignatius de Loyola, and Peter Faber, and James Laynez, together with Claude Jay, and Paschase Broët, and Francis Xavier, with Alfonso Salmerón, and Simon Rodrigues, and John Codure, and Nicolás de Bobadilla, priests of the cities and dioceses respectively of Pamplona, Geneva, Sigüenza, Toledo, Viseu, Embrun and Palencia, Masters of Arts, graduated in the University of Paris and exercised for several years in theological studies, moved — as is piously believed — by the Holy Spirit, long since departing from divers regions of the world, came together into one and, made companions, renouncing the allurements of this age, dedicated their lives to the perpetual service of our Lord Jesus Christ, and of us and of the other Roman Pontiffs our successors; and that for many years now they have laboured praiseworthily in the vineyard of the Lord — preaching the word of God publicly, sufficient licence first obtained, exhorting the faithful privately to good and blessed living and stirring them to pious meditations, serving in hospitals, teaching children and unlettered persons the things necessary to the Christian instruction of man, and in short discharging everywhere, wherever they have travelled and with much praise, all the offices of charity and whatever makes for the consolation of souls.",
+     "label": "Primi decem Patres Societatis",
+     "note": "The print's marginal summary names the first ten Fathers; the OCR's 'Claudius Taius' is the print's 'Iaius' (Claude Jay)."
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "orig": "Cumque ad hanc almam Urbem se contulerint, et in charitatis vinculo persistentes, ad perficiendam et conservandam eorum Societatis in Christo unionem, quamdam vivendi formam, iuxta ea, quae ad propositum sibi finem conducere usu didicerunt, evangelicis consiliis et canonicis Patrum sanctionibus conformem ediderint: factum est, ut ipsorum Sociorum vitae institutum, sub dicta formula comprehensum, non solum a multis probis viris et Deum zelantibus laudetur, verum etiam a quibusdam ita approbetur, ut illud etiam sequi velint. Formulae autem praedictae tenor sequitur, et est talis:",
+     "en": "And that, when they had betaken themselves to this beloved City and, persisting in the bond of charity, in order to perfect and to preserve the union of their Society in Christ, they set forth a certain form of living — according to those things which by use they have learned to conduce to the end they have set before themselves — conformed to the evangelical counsels and to the canonical sanctions of the Fathers: whence it has come about that this institute of the companions' life, comprehended under the said formula, is not only praised by many upright men zealous for God, but is even so approved by some that they wish to follow it themselves. The tenor of the aforesaid formula follows, and is this:",
+     "label": "Instituti Societatis formula"
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "orig": "Quicumque in Societate nostra, quam Iesu nomine insigniri cupimus, vult sub crucis vexillo Deo militare, et soli Domino atque Romano Pontifici, eius in terris Vicario, servire, post solemne perpetuae castitatis votum, proponat sibi in animo se partem esse Societatis, ad hoc potissimum institutae, ut ad profectum animarum in vita et doctrina Christiana, ad fidei propagationem per publicas praedicationes et verbi Dei ministerium, Spiritualia Exercitia et charitatis opera, et nominatim per puerorum ac rudium in christianismo institutionem, ac Christi fidelium in confessionibus audiendis spiritualem consolationem praecipue intendat; curetque primo Deum, deinde huius sui Instituti rationem, quae via quaedam est ad illum, semper ante oculos habere, et finem hunc sibi a Deo propositum totis viribus assequi; unusquisque tamen secundum gratiam sibi a Spiritu Sancto subministratam, et vocationis suae proprium gradum, ne quis forte zelo utatur, sed non secundum scientiam.",
+     "en": "Whoever, in our Society — which we desire to be marked with the name of Jesus — wishes to fight for God under the banner of the cross, and to serve the Lord alone and the Roman Pontiff, his Vicar on earth, shall, after a solemn vow of perpetual chastity, set before his mind that he is part of a Society founded above all for this end: to strive especially for the advancement of souls in Christian life and doctrine and for the propagation of the faith through public preaching and the ministry of the word of God, the Spiritual Exercises and works of charity, and expressly through the instruction of children and the unlettered in Christianity, and the spiritual consolation of Christ's faithful in the hearing of confessions; and let him take care to keep always before his eyes first God, and then the plan of this his Institute, which is a certain way to him, and to pursue with all his strength this end set before him by God — each one, however, according to the grace supplied to him by the Holy Spirit and the proper grade of his own vocation, lest anyone should perhaps use a zeal that is not according to knowledge.",
+     "label": "Votum castitatis · Finis Instituti"
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "orig": "Cuius proprii cuiusque gradus iudicium, et officiorum discretio ac distributio tota sit in manu Praepositi seu Praelati per nos eligendi, ut congruus ordo servetur in omni bene instituta communitate necessarius; qui quidem Praepositus de consilio consociorum Constitutiones ad consecutionem huius propositi nobis finis conducentes in consilio condendi auctoritatem habeat, maiori suffragiorum parte semper statuendi ius habente. Consilium vero intelligatur esse, in rebus quidem gravioribus ac perpetuis, maior pars totius Societatis, quae a Praeposito commode convocari poterit; in levioribus autem et temporaneis, omnes illi, qui in loco, ubi Praepositus noster residebit, praesentes esse contigerit. Iubendi autem ius totum penes Praepositum erit.",
+     "en": "The judgment of each one's proper grade, and the discernment and distribution of offices, shall lie wholly in the hand of the Superior or Prelate to be chosen by us, so that the fitting order necessary in every well-ordered community may be preserved; and this Superior, with the counsel of his companions, shall have authority in council to make Constitutions conducing to the attainment of this end we have set before us, the greater part of the votes always having the right to decide. The council shall be understood to be, in matters of greater weight and of lasting consequence, the greater part of the whole Society that can conveniently be summoned by the Superior; in lighter and temporary matters, all those who happen to be present in the place where our Superior resides. The whole right of commanding, however, shall rest with the Superior.",
+     "label": "Officiorum distributio · De condendis Constitutionibus"
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "orig": "Sciant omnes Socii, et non solum in primis professionis suae foribus, sed quoad vixerint quotidie animo volvant, Societatem hanc universam et singulos, sub Sanctissimi Domini nostri Papae et aliorum Romanorum Pontificum successorum eius fideli obedientia, Deo militare. Et quamvis Evangelio doceamur, et fide orthodoxa cognoscamus, ac firmiter profiteamur, omnes Christi fideles Romano Pontifici, tamquam Capiti ac Iesu Christi Vicario, subesse: ad maiorem tamen nostrae Societatis humilitatem, ac perfectam uniuscuiusque mortificationem et voluntatum nostrarum abnegationem, summopere conducere iudicavimus, singulos nos, ultra illud commune vinculum, speciali voto adstringi; ita ut, quidquid modernus et alii Romani Pontifices pro tempore exsistentes iusserint ad profectum animarum et fidei propagationem pertinens, et ad quascumque provincias nos mittere voluerint, sine ulla tergiversatione aut excusatione, illico, quantum in nobis fuerit, exsequi teneamur; sive miserint nos ad Turcas, sive ad quoscumque alios infideles, etiam in partibus, quas Indias vocant, exsistentes, sive ad quoscumque haereticos, seu schismaticos, seu ad quosvis fideles.",
+     "en": "Let all the companions know — and not only at the first threshold of their profession, but daily, as long as they live, let them turn it over in mind — that this whole Society and each of its members fight for God under the faithful obedience of our most holy lord the Pope and of the other Roman Pontiffs his successors. And although we are taught by the Gospel, and know by the orthodox faith, and firmly profess, that all Christ's faithful are subject to the Roman Pontiff as their Head and as the Vicar of Jesus Christ: yet for the greater humility of our Society, and the perfect mortification of each one of us and the abnegation of our own wills, we have judged it supremely profitable that each of us be bound, beyond that common bond, by a special vow; so that whatever the present and the other Roman Pontiffs for the time being shall command that pertains to the advancement of souls and the propagation of the faith, and to whatever provinces they shall wish to send us, we are bound to carry out at once, without any evasion or excuse, so far as in us lies — whether they send us to the Turks, or to any other unbelievers, even in the parts they call the Indies, or to any heretics or schismatics, or to any of the faithful.",
+     "label": "Speciale votum obediendi Romano Pontifici"
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "orig": "Quamobrem qui ad nos accessuri sunt, et antequam huic oneri humeros supponant, diu multumque meditentur, an tantum pecuniae spiritualis in bonis habeant, ut turrim hanc iuxta consilium dominicum possint consummare: hoc est, an Spiritus Sanctus, qui illos impellit, tantum illis gratiae polliceatur, ut huius vocationis pondus, illo adiuvante, se laturos sperent; et postquam, Domino inspirante, huic Iesu Christi militiae nomen dederint, die noctuque succincti lumbos, et ad tam grandis debiti solutionem prompti esse debebunt.",
+     "en": "Wherefore let those who would come to us consider long and hard, before they put their shoulders to this burden, whether they have among their goods spiritual money enough to finish this tower according to the counsel of the Lord: that is, whether the Holy Spirit who impels them promises them grace enough that they may hope, with his help, to bear the weight of this vocation; and after they have, at the Lord's inspiration, given their names to this soldiery of Jesus Christ, they must be girded about the loins day and night and stand ready for the payment of so great a debt.",
+     "note": "The 'tower' is the Lord's counsel of Luke 14:28 — count the cost before building."
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "orig": "Ne qua autem possit esse inter nos missionum ac provinciarum huiusmodi aut ambitio vel detrectatio, profiteantur singuli, se numquam directe aut indirecte de huiusmodi missionibus quidquam cum Romano Pontifice curaturos, sed omnem hanc curam Deo et ipsi Pontifici, tamquam eius Vicario, et Societatis Praeposito dimissuros: qui quidem Praepositus, sicut caeteri, etiam profiteatur se nihil de suimetipsius missione in alterutram partem, nisi de Societatis Consilio, cum dicto Pontifice esse curaturum.",
+     "en": "But lest there be able to arise among us any ambition for, or refusal of, such missions and provinces, let each one profess that he will never, directly or indirectly, negotiate anything with the Roman Pontiff about such missions, but will leave all this care to God, and to the Pontiff himself as his Vicar, and to the Superior of the Society: and the Superior likewise, like the rest, shall profess that he will negotiate nothing with the said Pontiff about his own mission, in either direction, except with the counsel of the Society.",
+     "label": "Missiones non procurandae"
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "orig": "Voveant singuli se in omnibus, quae ad Regulae huius nostrae observationem faciunt, obedientes fore Societatis Praeposito. Ille autem iubeat ea, quae ad consecutionem propositi sibi a Deo et a Societate finis cognoverit esse opportuna; in praelatione autem sua, benignitatis ac mansuetudinis charitatisque Christi, ac Petri Paulique formulae semper sit memor; et tam ipse quam Consilium ad normam hanc assidue spectent; et nominatim commendatam habeant institutionem puerorum ac rudium in christiana doctrina decem praeceptorum, atque aliorum similium rudimentorum, quaecumque secundum circumstantias personarum, locorum ac temporum illis congrua videbuntur. Est enim maxime necessarium, circa providentiam huius rei diligenter Praepositum et Consilium invigilare, cum et in proximis aedificium fidei sine fundamento non possit consurgere, et in Nostris periculum sit, ne, ut quisque erit doctior, ita provinciam hanc, tamquam primo aspectu minus speciosam, forsitan detrectare conetur; cum tamen revera nulla sit fructuosior, vel proximis ad aedificationem, vel Nostris ad charitatis et humilitatis simul officia exercenda.",
+     "en": "Let each one vow that in all things which concern the observance of this our Rule he will be obedient to the Superior of the Society. He for his part shall command those things which he knows to be opportune for attaining the end set before him by God and by the Society; in his rule let him be ever mindful of the kindness and meekness and charity of Christ, and of the pattern of Peter and Paul; and let both he himself and the council keep this norm assiduously in view; and let them hold especially commended the instruction of children and the unlettered in the Christian doctrine of the ten commandments and other like rudiments, according to whatever shall seem suited to the circumstances of persons, places and times. For it is most necessary that the Superior and the council keep diligent watch over the provision of this matter: since among our neighbours the edifice of faith cannot rise without a foundation, and among our own there is danger that, the more learned a man is, the more he may be tempted to decline this province as at first sight less splendid — whereas in truth none is more fruitful, whether for the edification of our neighbours, or for the exercise in our own of the offices of charity and of humility together.",
+     "label": "Votum obedientiae · Gubernandi ratio · De institutione puerorum ac rudium"
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "orig": "Subditi vero, tum propter ingentes Ordinis utilitates, tum propter numquam satis laudatum humilitatis assiduum exercitium, Praeposito in omnibus ad Institutum Societatis pertinentibus parere semper teneantur, et in illo Christum veluti praesentem agnoscant, et quantum decet venerentur.",
+     "en": "The subjects, in their turn — both because of the immense benefits to the Order, and because of the assiduous exercise of humility, never sufficiently praised — shall be bound always to obey the Superior in all things pertaining to the Institute of the Society, and shall acknowledge Christ in him as though present, and reverence him as is fitting.",
+     "label": "Obedientia subditorum erga Praepositum"
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "orig": "Cum autem experti fuerimus iucundiorem, puriorem et ad proximi aedificationem aptiorem esse vitam ab omni avaritiae contagione quam remotissimam et evangelicae paupertati quam simillimam; cumque sciamus Dominum nostrum Iesum Christum servis suis, regnum Dei solum inquirentibus, necessaria ad victum et vestitum esse subministraturum: voveant singuli et universi perpetuam paupertatem, declarantes quod non solum privatim, sed neque etiam communiter possint pro Societatis sustentatione aut usu, ad bona aliqua stabilia, aut ad proventus seu introitus aliquos, ius aliquod civile acquirere; sed sint contenti usum tantum rerum sibi donatarum, ad necessaria sibi comparanda, recipere.",
+     "en": "And since we have found by experience that a life removed as far as possible from every contagion of avarice, and as like as possible to evangelical poverty, is more joyful, purer, and more apt for the edification of our neighbour; and since we know that our Lord Jesus Christ will supply the necessities of food and clothing to his servants who seek only the kingdom of God: let each and all vow perpetual poverty, declaring that neither privately, nor even in common, may they acquire any civil right to any stable goods, or to any revenues or incomes, for the sustenance or use of the Society; but let them be content to receive only the use of the things given to them, for procuring what is necessary for themselves.",
+     "label": "Votum paupertatis"
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "orig": "Possint tamen habere in Universitatibus Collegium seu Collegia, habentia reditus, census seu possessiones, usibus et necessitatibus studentium applicandas; retenta penes Praepositum et Societatem omnimoda gubernatione, seu superintendentia super dicta Collegia et praedictos studentes, quoad gubernatoris seu gubernatorum ac studentium electionem, ac eorumdem admissionem, emissionem, receptionem, exclusionem, statutorum ordinationem, circa studentium instructionem, eruditionem, aedificationem ac correctionem, victus vestitusque eis ministrandi modum, atque aliam omnimodam gubernationem, regimen ac curam; sic tamen, ut neque studentes dictis bonis abuti, neque Societas in proprios usus convertere possit, sed studentium necessitati subvenire. Qui quidem, post cognitum in spiritu et litteris eorum profectum, et post sufficientem probationem, in Societatem nostram admitti possint.",
+     "en": "They may nevertheless have in universities a college or colleges possessing revenues, rents or possessions, to be applied to the uses and needs of the students; the entire government or superintendence over the said colleges and students being retained in the hands of the Superior and the Society — as regards the election of the governor or governors and of the students, and their admission, dismissal, reception and exclusion, the ordering of statutes, the instruction, education, edification and correction of the students, the manner of providing them with food and clothing, and every other kind of government, rule and care; in such wise, however, that neither may the students abuse the said goods, nor may the Society convert them to its own uses, but must relieve with them the students' need. And these students, when progress in spirit and in letters has been recognised in them, and after sufficient probation, may be admitted into our Society.",
+     "label": "De Collegiis et eorum reditibus"
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "orig": "Socii omnes, quicumque in sacris fuerint, quamvis beneficia ecclesiastica aut eorum reditus non habeant, teneantur tamen singuli privatim ac particulariter, et non communiter, ad dicendum officium secundum Ecclesiae ritum.",
+     "en": "All the companions who are in holy orders, although they hold no ecclesiastical benefices or revenues from them, shall nevertheless be bound, each one privately and individually — and not in common — to say the office according to the rite of the Church.",
+     "label": "De divino officio recitando"
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "orig": "Haec sunt, quae sub praefati Domini nostri Pauli et Sedis Apostolicae beneplacito, de nostra professione, typo quodam explicare potuimus. Quod nunc fecimus, ut summatim scriptione hac informaremus tum illos, qui nos de nostro vitae instituto interrogant, tum etiam posteros nostros, si quos, Deo volente, imitatores umquam habebimus huius vitae. Quam cum multas magnasque habere annexas difficultates fuerimus experti, opportunum iudicavimus etiam statuere, ne quis in hac Societate recipiatur, nisi diu ac diligentissime fuerit probatus; cumque prudens in Christo, et vel doctrina seu vitae christianae puritate apparuerit conspicuus, tunc demum admittatur ad Iesu Christi militiam: qui tenuibus coeptis nostris favere dignetur ad gloriam Dei Patris, cui soli sit semper decus et honor in saecula. Amen.",
+     "en": "These are the things which, under the good pleasure of our aforesaid lord Paul and of the Apostolic See, we have been able to set out, as in a kind of sketch, concerning our profession. This we have now done in order that by this summary writing we might inform both those who ask us about our plan of life, and also those who shall come after us, if, God willing, we shall ever have imitators of this way. And since we have found by experience that it has many and great difficulties annexed to it, we have judged it opportune to ordain also that no one be received into this Society who has not been long and most diligently tested; and when he shall have shown himself prudent in Christ, and conspicuous either in doctrine or in the purity of Christian life, then at last let him be admitted to the soldiery of Jesus Christ: who may deign to favour our slender beginnings, to the glory of God the Father, to whom alone be honour and glory for ever. Amen.",
+     "label": "Admittendi probentur"
+    },
+    {
+     "n": 15,
+     "k": 15,
+     "orig": "Cum autem nil in praemissis reperiatur, quod pium non sit ac sanctum, Nos, ut iidem Socii, qui Nobis super hoc humillime supplicari fecerunt, in eorum pio vivendi proposito eo promptiores exsistant, quo se maiori Sedis Apostolicae gratia complecti cognorint, et praemissa per nos approbari viderint; praemissa omnia et singula, tamquam ad spiritualem profectum eorumdem Sociorum et reliqui christiani gregis opportuna, apostolica auctoritate, tenore praesentium ex certa scientia approbamus, confirmamus et benedicimus, ac perpetuae firmitatis munimine roboramus; ipsosque Socios sub Nostra et huius sanctae Sedis Apostolicae protectione suscipimus; eis nihilominus concedentes, quod particulares inter eos Constitutiones, quas ad Societatis huiusmodi finem, et Iesu Christi Domini nostri gloriam, ac proximi utilitatem conformes esse iudicaverint, condere libere et licite valeant.",
+     "en": "And since nothing is found in the foregoing that is not pious and holy, We — in order that these same companions, who have caused humble supplication to be made to us in this matter, may be the more prompt in their pious purpose of living, the more they know themselves embraced by the greater grace of the Apostolic See and see the foregoing approved by us — by apostolic authority, by the tenor of these presents and of our certain knowledge, approve, confirm and bless all and each of the things aforesaid, as opportune for the spiritual advancement of these same companions and of the rest of the Christian flock, and fortify them with the bulwark of perpetual firmness; and we take these companions under our protection and that of this holy Apostolic See; granting them nonetheless that they may freely and lawfully make among themselves particular Constitutions, such as they shall judge conformed to the end of this Society, to the glory of Jesus Christ our Lord, and to the profit of their neighbour.",
+     "label": "Approbatio Instituti · Facultas condendi Constitutiones"
+    },
+    {
+     "n": 16,
+     "k": 16,
+     "orig": "Non obstantibus generalis Concilii, et fel. rec. Gregorii Papae X, praedecessoris Nostri, ac quibusvis aliis constitutionibus et ordinationibus apostolicis, caeterisque contrariis quibuscumque.",
+     "en": "Notwithstanding the constitutions of the general Council and of Pope Gregory X of happy memory, our predecessor, and any other apostolic constitutions and ordinances, and anything else whatsoever to the contrary.",
+     "note": "The conciliar constitutions in question are the bans of Lateran IV and of Gregory X at Lyon II on founding new religious orders."
+    },
+    {
+     "n": 17,
+     "k": 17,
+     "orig": "Volumus autem, quod in Societate huiusmodi, usque ad numerum sexaginta personarum, normulam vivendi huiusmodi profiteri cupientium, et non ultra, admitti et Societati praefatae aggregari dumtaxat valeant.",
+     "en": "We will, however, that into this Society there may be admitted and aggregated to the aforesaid Society only up to the number of sixty persons desiring to profess this little rule of living, and not beyond.",
+     "label": "Restrictio personarum ad sexaginta",
+     "note": "The cap of sixty was lifted by Paul III's Iniunctum nobis of 14 March 1544 — the next document in the 1892 Bullarium."
+    },
+    {
+     "n": 18,
+     "k": 18,
+     "orig": "Nulli ergo omnino hominum liceat hanc paginam Nostrae approbationis, confirmationis, benedictionis, roborationis, susceptionis, concessionis et voluntatis infringere, vel ei ausu temerario contraire. Si quis autem hoc attentare praesumpserit, indignationem omnipotentis Dei ac BB. Petri et Pauli Apostolorum eius se noverit incursurum.",
+     "en": "Let no man whosoever, therefore, infringe this page of our approval, confirmation, blessing, fortification, reception, grant and will, or with rash daring go against it. But if anyone shall presume to attempt this, let him know that he will incur the indignation of Almighty God and of his blessed apostles Peter and Paul."
+    },
+    {
+     "n": 19,
+     "k": 19,
+     "orig": "Datum Romae, apud S. Marcum, anno Incarnationis Dominicae MDXL, quinto kal. Octobris, Pontificatus Nostri anno sexto. Blo.",
+     "en": "Given at Rome, at Saint Mark's, in the year of the Lord's Incarnation 1540, on the fifth day before the Kalends of October, in the sixth year of our Pontificate. Blo.",
+     "note": "Quinto kalendas Octobris = 27 September. 'Blo.' is the curial signature of the print: Blosius (Blosio Palladio), secretary of briefs under Paul III."
+    }
+   ]
+  }
+ ]
+}

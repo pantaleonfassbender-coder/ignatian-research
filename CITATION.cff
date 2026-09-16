@@ -28,7 +28,10 @@ abstract: >-
   A research apparatus for Ignatian spirituality, confined to the old Society
   (1540-1773) and organised in five lines: the founder's own writings (the
   Exercises in a trilingual public-domain parallel edition, the letters of
-  1524-1547 in full); the school of discernment, carried to its end - the
+  1524-1547 in full), with the founding bull Regimini militantis Ecclesiae
+  of 1540 carried complete, bilingual, with the Formula of the Institute -
+  the corpus opens and closes with the two papal documents that made and
+  unmade the old Society; the school of discernment, carried to its end - the
   Official Directory of 1599 (bilingual), Favre's Memoriale (bilingual),
   Nadal's In Examen annotationes, Rodriguez's Of Conformity to the Will of
   God complete in all thirty-four chapters, the Abandonment to Divine
@@ -62,5 +65,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.4.0
+version: 1.5.0
 date-released: 2026-09-16
