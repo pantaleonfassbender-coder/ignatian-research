@@ -28,8 +28,12 @@ abstract: >-
   God complete in all thirty-four chapters, and the Abandonment to Divine
   Providence attributed to Caussade, carried whole in Ramiere's arrangement
   of 1861 with the attribution stated as debated; the Society in the
-  world (Xavier's letters, and the Imago primi saeculi with its Dutch
-  mirror, emblem by emblem); Friedrich Spee (the Cautio Criminalis and the
+  world, likewise carried to its end - Xavier's letters, Acosta's Natural
+  and Moral History in Grimston's English of 1604, Ricci and Trigault's
+  China in Purchas's digest of 1625, the Jesuit Relations from New France
+  in Thwaites's translation with his page numbers on every paragraph, and
+  the Imago primi saeculi with its Dutch mirror, emblem by emblem;
+  Friedrich Spee (the Cautio Criminalis and the
   Trutznachtigall); and the counter-voices, from the Monita secreta and
   Pascal to the brief of 1773 carried complete. With a canonical
   paragraph-level citation index, a cross-corpus concordance over the whole
@@ -47,5 +51,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.2.0
-date-released: 2026-09-12
+version: 1.3.0
+date-released: 2026-09-15
