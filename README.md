@@ -14,7 +14,8 @@ from 1542 to 1546. Around those stand the programme modules that carry the corpu
 its arguments: the school of discernment carried to its end — Nadal's annotations on the Examen,
 Rodríguez's *Of Conformity to the Will of God*, and the *Abandonment to Divine Providence* attributed to
 Caussade — Xavier's letters from India and Japan, Acosta's *Natural and Moral History of the
-Indies* in Grimston's English of 1604, Ricci and Trigault's China in Purchas's digest of 1625, the emblems of the *Imago primi saeculi* of 1640
+Indies* in Grimston's English of 1604, Ricci and Trigault's China in Purchas's digest of 1625,
+the *Jesuit Relations* from New France in Thwaites's translation, the emblems of the *Imago primi saeculi* of 1640
 with their Dutch mirror, Friedrich Spee (the *Cautio Criminalis* and the *Trutznachtigall*), and the
 counter-voices — the forged *Monita secreta*, Pascal's *Provinciales*, and the brief *Dominus ac
 Redemptor* of 1773 with which the corpus closes. The apparatus indexes them by their canonical numbering,
@@ -85,7 +86,8 @@ printing; the brief *Dominus ac Redemptor* of 1773 (Latin after Theiner 1852, wi
 translation); four letters of Francis Xavier (Coleridge's 1872 biography); eleven chapters of Acosta's
 *Natural and Moral History of the Indies* (Grimston's 1604 English in the Hakluyt printing of 1880);
 eight sections of Ricci/Trigault's *De Christiana expeditione* (Purchas's 1625 digest in the
-MacLehose printing of 1906); eleven emblems of the *Imago
+MacLehose printing of 1906); four selections of the *Jesuit Relations* (Thwaites's edition and
+translation, 1896–1901); eleven emblems of the *Imago
 primi saeculi* (Antwerp 1640) with the Dutch *Af-Beeldinghe* of the same year and page images;
 Friedrich Spee — the *Cautio Criminalis* (two dubia, Rinteln 1631) and the *Trutznachtigall* (two poems,
 Cologne 1654); Nadal's *In Examen annotationes* (Latin of the 1919 Monumenta, with a working
@@ -145,7 +147,7 @@ A few megabytes of JSON, all of it derived, editorial, or public-domain source t
 | `works.json` | the seven core works: translator, rights, citation form, body range, sections, measures |
 | `programme.json` | the programme modules — line, status, source, and (for shipped ones) data file and citation form |
 | `exercitia.json`, `directorium.json`, `memoriale.json` | the shipped full-text core editions (trilingual Exercises, bilingual Directory of 1599, bilingual Memoriale) |
-| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json` | the shipped programme modules, paragraph by paragraph on their own citation grids |
+| `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json` | the shipped programme modules, paragraph by paragraph on their own citation grids |
 | `anchors.json` | 1,887 canonical paragraph anchors, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
 | `introduction.json` | the introductory essay (editorial matter, CC BY 4.0); manuscript in `docs/` |
@@ -283,7 +285,8 @@ in short:
   paragraph alignment are dedicated CC0 like the rest of the derived data.
 - **The programme modules** (`data/pascal.json`, `monita.json`, `dominus.json`,
   `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`,
-  `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, with the images in
+  `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`,
+  `relations.json`, with the images in
   `assets/imago/` and `assets/spee/`) carry public-domain source text —
   printings of 1631 to 1919 and, for the images, of 1640 — whose faithful
   transcription and reproduction add nothing licensable; the editorial

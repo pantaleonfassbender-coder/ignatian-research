@@ -1,0 +1,622 @@
+{
+ "id": "relations",
+ "autor": "Le Jeune · Brébeuf · Ragueneau",
+ "titel": "The Jesuit Relations (selections: 1634 · 1637 · 1649)",
+ "jahr": "1632–1673",
+ "lang": "en",
+ "zitierweise": "JR vol., c. N [k]",
+ "quelle": "English: Reuben Gold Thwaites's edition and translation, The Jesuit Relations and Allied Documents, 73 vols. (Cleveland: Burrows Brothers, 1896–1901), a pre-1930 publication in the United States public domain; the text follows the electronic transcription of that edition hosted by Creighton University, spot-verified against the Internet Archive scans of the Burrows printing, with Thwaites's page numbers carried on each paragraph — the citation grid the scholarship uses. Four selections in the genre's three registers: Le Jeune wintering with the Montagnais (Relation of 1634, ch. XII; JR 7), Brébeuf's Instructions for the Fathers who shall be sent to the Hurons as Le Jeune printed them (Relation of 1637; JR 12), and from Ragueneau's Relation of 1649 the capture of Saint-Ignace and the deaths of Brébeuf and Lalemant (JR 34, chs. III–IV). The French originals stand on the facing pages of the same public-domain volumes, named as source but not yet carried.",
+ "hinweis": "The order's annual world-reporting of mission, ethnography and martyrdom — the genre the Society made. Le Jeune opens the wintering chapter with Epictetus, as Acosta crossed the equator with Aristotle; Brébeuf's Instructions are the accommodation rulebook of New France, the canoe-borne mirror of Ricci's change of habit; and Ragueneau's chapters carry the register the genre was named for. Cited by Thwaites's volume and the document's chapter, with his page under every paragraph. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only.",
+ "sections": [
+  {
+   "id": "jr7c12",
+   "zk": "JR 7, c. 12",
+   "titel": "What one must suffer in wintering with the Savages — Le Jeune, Relation of 1634, chapter XII",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "en": "Epictetus says that he who intends to visit the public baths must previously consider all the improprieties that will be committed there; so that, when he finds himself sur-rounded by the derision of a mob of scoundrels who would rather wash his head than his feet, he may lose none of the gravity and modesty of a wise man. I might say the same to those in whom God inspires the thought and desire to cross over the seas, in order to seek and to instruct the Savages. It is for their sake that I shall pen this Chapter, so that, knowing the enemy they will encounter, they may not forget to fortify themselves with the weapons necessary for the combat, especially with patience of iron or bronze, or rather with a patience entirely of gold, in order to bear bravely and lovingly the great trials that must be endured among these people. Let us begin by speaking of the house they will have to live in, if they wish to follow them.",
+     "label": "Thwaites, p. 33"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "en": "In order to have some conception of the beauty of this edifice, its construction must be described. I shall speak from knowledge, for I have often helped to build it. Now, when we arrived at the place where we were to camp, the women, armed with axes, went here and there in the great forests, cutting the frame-work of the hostelry where we were to lodge; meantime the men, having drawn the plan thereof, cleared away the snow with their snowshoes, or with shovels which they make and carry expressly for this purpose. Imagine now a great ring or square in the snow, two, three or four feet deep, according to the weather or the place where they encamp. This depth of snow makes a white wall for us, which surrounds us on all sides, except the end where it is broken through to form the door. The framework having been brought, which consists of twenty or thirty poles, more or less, according to the size of the cabin, it is planted, not upon the ground but upon the snow; then they throw upon these poles, which converge a little at the top, two or three rolls of bark sewed together, beginning at the bottom, and behold, the house is made. The ground inside, as well as the wall of snow which extends all around the cabin, is covered with little branches of fir; and, as a finishing touch, a wretched skin is fastened to two poles to serve as a door, the doorposts being the snow itself. Now let us examine in detail all the comforts of this elegant Mansion.",
+     "label": "Thwaites, p. 35"
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "en": "You cannot stand upright in this house, as much on account of its low roof as the suffocating smoke; and consequently you must always lie down, or sit flat upon the ground, the usual posture of the Savages. When you go out, the cold, the snow, and the danger of getting lost in these great woods drive you in again more quickly than the wind, and keep you a prisoner in a dungeon which has neither lock nor key.",
+     "label": "Thwaites, p. 35"
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "en": "This prison, in addition to the uncomfortable position that one must occupy upon a bed of earth, has four other great discomforts,—cold, heat, smoke, and dogs. As to the cold, you have the snow at your head with only a pine branch between, often nothing but your hat, and the winds are free to enter in a thousand places. For do not imagine that these pieces of bark are joined as paper is glued and fitted to a window frame; they are often like the plant mille-pertuis, except that their holes and their openings are a little larger; and even if there were only the opening at the top, which serves at once as window and chimney, the coldest winter in France could come in there every day without any trouble. When I lay down at night I could study through this opening both the Stars and the Moon as easily as if I had been in the open fields.",
+     "label": "Thwaites, p. 37"
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "en": "Nevertheless, the cold did not annoy me as much as the heat from the fire. A little place like their cabins is easily heated by a good fire, which sometimes roasted and broiled me on all sides, for the cabin was so narrow that I could not protect myself against the heat. You cannot move to right or left, for the Savages, your neighbors, are at your elbows; you cannot withdraw to the rear, for you encounter the wall of snow, or the bark of the cabin which shuts you in. I did not know what position to take. Had I stretched myself out, the place was so narrow that my legs would have been halfway in the fire; to roll myself up in a ball, and crouch down in their way, was a position I could not retain as long as they could; my clothes were all scorched and burned. You will ask me perhaps if the snow at our backs did not melt under so much heat. I answer, \"no, no;\" that if sometimes the heat softened it in the least, the cold immediately turned it into ice. I will say, however, that both the cold and the heat are endurable, and that some remedy may be found for these two evils.",
+     "label": "Thwaites, p. 39"
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "en": "But, as to the smoke, I confess to you that it is martyrdom. It almost killed me, and made me weep continually, although I had neither grief nor sadness in my heart. It sometimes grounded all of us who were in the cabin; that is, it caused us to place our mouths against the earth in order to breathe. For, although the Savages were accustomed to this torment, yet occasionally it became so dense that they, as well as I, were compelled to prostrate themselves, and as it were to eat the earth, so as not to drink the smoke. I have sometimes remained several hours in this position, especially during the most severe cold and when it snowed; for it was then the smoke assailed us with the greatest fury, seizing us by the throat, nose, and eyes. How bitter is this drink! How strong its odor! How hurtful to the eyes are its fumes! I sometimes thought I was going blind; my eyes burned like fire, they wept or distilled drops like an alembic; I no longer saw anything distinctly, like the good man who said, video homines velut arbores ambulantes. I repeated the Psalms of my Breviary as best I could, knowing them half by heart, and waited until the pain might relax a little to recite the lessons; and when I came to read them they seemed written in letters of fire, or of scarlet; I have often closed my book, seeing things so confusedly that it injured my sight.",
+     "label": "Thwaites, p. 39"
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "en": "Some one will tell me that I ought to have gone out from this smoky hole to get some fresh air; and I answer him that the air was usually so cold at those times that the trees, which have a harder skin than man, and a more solid body, could not stand it, splitting even to the core, and making a noise like the report of a musket. Nevertheless, I occasionally emerged from this den, fleeing the rage of the smoke to place myself at the mercy of the cold, against which I tried to arm myself by wrapping up in my blanket like an Irishman; and in this garb, seated upon the snow or a fallen tree, I recited my Hours; the trouble was, the snow had no more pity upon my eyes than the smoke.",
+     "label": "Thwaites, p. 41"
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "en": "As to the dogs, which I have mentioned as one of the discomforts of the Savages' houses, I do not know that I ought to blame them, for they have sometimes rendered me good service. True, they exacted from me the same courtesy they gave, so that we reciprocally aided each other, illustrating the idea of mutuum auxilium. These poor beasts, not being able to live outdoors, came and lay down sometimes upon my shoulders, sometimes upon my feet, and as I only had one blanket to serve both as covering and mattress, I was not sorry for this protection, willingly restoring to them a part of the heat which I drew from them. It is true that, as they were large and numerous, they occasionally crowded and annoyed me so much, that in giving me a little heat they robbed me of my sleep, so that I very often drove them away. In doing this one night, there happened to me a little incident which caused some confusion and laughter; for, a Savage having thrown himself upon me while asleep, I thought it was a dog, and finding a club at hand, I hit him, crying out, Aché, Aché, the words they use to drive away the dogs. My man woke up greatly astonished, thinking that all was lost; but having discovered whence came the blows, \" Thou hast no sense,\" he said to me, \" it is not a dog, it is I.\" At these words I do not know who was the more astonished of us two; I gently dropped my club, very sorry at having found it so near me.",
+     "label": "Thwaites, p. 43"
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "en": "Let us return to our dogs. These animals, being famished, as they have nothing to eat, any more than we, do nothing but run to and fro gnawing at everything in the cabin. Now as we were as often lying down as sitting up in these bark houses, they frequently walked over our faces and stomachs; and so often and persistently, that, being tired of shouting at them and driving them away, I would sometimes cover my face and then give them liberty to go where they wanted. If any one happened to throw them a bone, there was straightway a race for it, upsetting all whom they encountered sitting, unless they held themselves firmly. They have often upset for me my bark dish, and all it contained, in my gown. I was amused whenever there was a quarrel among them at our dinner table, for there was not one of us who did not hold his plate down with both hands on the ground, which serves as table, seat, and bed both to men and dogs. From this custom arose the great annoyance we experienced from these animals, who thrust their noses into our bark plates before we could get our hands in. I have said enough about the inconveniences of the Savages' houses, let us speak of their food.",
+     "label": "Thwaites, p. 43"
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "en": "When I first went away with them, as they salt neither their soup nor their meat, and as filth itself presides over their cooking, I could not eat their mixtures, and contented myself with a few sea biscuit and smoked eel; until at last my host took me to task because I ate so little, saying that I would starve myself before the famine overtook us. Meanwhile our Savages had feasts every day, so that in a very short time we found ourselves without bread, without our, without eels, and without any means of helping ourselves. For besides being very far in the woods, where we would have died a thousand times before reaching the French settlement, we were wintering on the other side of the great river, which cannot be crossed in this season on account of the great masses of ice which are continually floating about, and which would crush not only a small boat but even a great ship. As to the chase, the snows not being deep in comparison with those of other years, they could not take the Elk, and so brought back only some Beavers and Porcupines, but in so small a number and so seldom that they kept us from dying rather than helped us to live. My host said to me during this time of scarcity, \" Chibiné, harden thy soul, resist hunger; thou wilt be sometimes two, sometimes three or four, days without food; do not let thyself be cast down, take courage; when the snow comes, we shall eat.\" It was not our Lord's will that they should be so long without capturing anything; but we usually had something to eat once in two days,—indeed, we very often had a Beaver in the morning, and in the evening of the next day a Porcupine as big as a sucking Pig. This was not much for nineteen of us, it is true, but this little sufficed to keep us alive. When I could have, toward the end of our supply of food, the skin of an Eel for my day's fare, I considered that I had breakfasted, dined, and supped well.",
+     "label": "Thwaites, p. 45"
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "en": "At first, I had used one of these skins to patch the cloth gown that I wore, as I forgot to bring some pieces with me; but, when I was so sorely pressed with hunger, I ate my pieces; and, if my gown had been made of the same stuff, I assure you I would have brought it back home much shorter than it was. Indeed, I ate old Moose skins, which are much tougher than those of the Eel; I went about through the woods biting the ends of the branches, and gnawing the more tender bark, as I shall relate in the journal. Our neighboring Savages suffered still more than we did, some of them coming to see us, and telling us that their comrades had died of hunger. I saw some who had eaten only once in five days, and who considered themselves very well off if they found something to dine upon at the end of two days; they were reduced to skeletons, being little more than skin and bones. We occasionally had some good meals; but for every good dinner we went three times without supper. When a young Savage of our cabin was dying of hunger, as I shall relate in the following Chapter, they often asked me if I was not afraid, if I had no fear of death; and seeing me quite firm, they were astonished, on one occasion in particular, when I saw them almost falling into a state of despair. When they reach this point, they play, so to speak, at \"save himself who can;\" throwing away their bark and baggage, deserting each other, and abandoning all interest in the common welfare, each one strives to find something for himself. Then the children, women, and for that matter all those who cannot hunt, die of cold and hunger. If they had reached this extremity, I would have been among the first to die.",
+     "label": "Thwaites, p. 49"
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "en": "So these are the things that must be expected I before undertaking to follow them; for, although they may not be pressed with famine every year, yet they run the risk every winter of not having food or very little, unless there are heavy snowfall and a great many Moose, which does not always happen.",
+     "label": "Thwaites, p. 49"
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "en": "Now if you were to ask me what my feelings were in the terrors of death, and of a death so lingering as is that which comes from hunger, I will say that I can hardly tell. Nevertheless, in order that those who read this Chapter may not have a dread of coming over to our assistance, I can truly say that this time of famine was for me a time of abundance. When I realized that we began to hover between the hope of life and the fear of death, I made up my mind that God had condemned me to die of starvation for my sins; and, a thousand times kissing the hand that had written my sentence, I awaited the execution of it with a peace and joy which may be experienced, but cannot be described. I confess that one suffers, and that he must reconcile himself to the Cross; but God glories in helping a soul when it is no longer aided by his creatures. Let us continue on our way.",
+     "label": "Thwaites, p. 49"
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "en": "After this famine, we had some good days. The snow, which had been only too deep to be cold, but too shallow to take the Moose, having greatly increased toward the end of January, our Hunters captured some Moose, which they dried. Now either on account of my lack of moderation, or because this meat, dried as hard as wood and as dirty as the street, did not agree with my stomach, I fell sick in the very beginning of February. So behold me obliged to remain all the time lying upon the cold ground; this did not tend to cure me of the severe cramps that tormented me and compelled me to go out at all hours of the day and night, plunging me every time in snow up to my knees and sometimes almost up to my waist, especially when we had first begun our encampment in any one place. These severe attacks lasted about eight or ten days, and were accompanied by a pain in the stomach, and a weakness in the heart, which spread through my whole body. I recovered from this sickness, but not entirely, for I was only dragging myself around at mid-Lent, when I was again seized with this disease. I tell the following in order to show how little help may be expected from the Savages when a person is sick. Being very thirsty one day, I asked for a little water; they said there was none, and that they would give me some melted snow if I wanted it. As this drink was bad for my disease, I made my host understand that I had seen a lake not far from there, and that I would like very much to have some of that water. He pretended not to hear, because the road was somewhat bad; and it happened thus not only this time, but at any place where the river or brook was a little distance from our cabin. We had to drink this snow melted in a kettle whose copper was less thick than the dirt; if any one wishes to know how bitter this drink is, let him take some from a kettle just out of the smoke and taste it.",
+     "label": "Thwaites, p. 51"
+    },
+    {
+     "n": 15,
+     "k": 15,
+     "en": "As to the food, they divide with a sick man just as with the others; if they have fresh meat they give him his share, if he wants it, but if he does not eat it then, no one will take the trouble to keep a little piece for him to eat when he wants it; they will give him some of what they happen to have at the time in the cabin, namely, smoked meat, and nothing better, for they keep the best for their feasts. So a poor invalid is often obliged to eat among them what would horrify him even in good health if he were with our Frenchmen. A soul very thirsty for the Son of God, I mean for suffering, would find enough here to satisfy it.",
+     "label": "Thwaites, p. 53"
+    },
+    {
+     "n": 16,
+     "k": 16,
+     "en": "It remains for me yet to speak of their conversation, in order to make it clearly understood what there is to suffer among these people. I had gone in company with my host and the Renegade, on condition that we should not pass the winter with the Sorcerer, whom I knew as a very wicked man. They had granted my conditions, but they were faithless, and kept not one of them, involving me in trouble with this pretended Magician, as I shall relate hereafter. Now this wretched man and the smoke were the two greatest trials that I endured among these Barbarians. The cold, heat, annoyance of the dogs, sleeping in the open air and upon the bare ground; the position I had to assume in their cabins, rolling myself up in a ball or crouching down or sitting without a seat or a cushion; hunger, thirst, the poverty and filth of their smoked meats, sickness,—all these things were merely play to me in comparison to the smoke and the malice of the Sorcerer, with whom I have always been on a very bad footing, for the following reasons:—",
+     "label": "Thwaites, p. 53"
+    },
+    {
+     "n": 17,
+     "k": 17,
+     "en": "First. because, when he invited me to winter with him, I refused; and he resented this greatly, because he saw that I cared more for my host, his younger brother, than I did for him.",
+     "label": "Thwaites, p. 53"
+    },
+    {
+     "n": 18,
+     "k": 18,
+     "en": "Second. because I could not gratify his covetousness. I had nothing that he did not ask me for, often taking my mantle off my shoulders to put it on his own. Now as I could not satisfy all his demands, he looked upon me with an evil eye; indeed, even if I had given him all the little I had, I could not have gained his friendship, because we were at variance on other subjects.",
+     "label": "Thwaites, p. 55"
+    },
+    {
+     "n": 19,
+     "k": 19,
+     "en": "Third. In the third place, seeing that he acted the Prophet, amusing these people by a thousand absurdities, which he invented, in my opinion, every day, I did not lose any opportunity of convincing him of their nonsense and childishness, exposing the senselessness of his superstitions. Now this was like tearing his soul out of his body; for, as he could no longer hunt, he acted the Prophet and Magician more than ever before, in order to preserve his credit, and to get the dainty pieces. So that in shaking his authority, which was diminishing daily, I was touching the apple of his eye and wresting from him the delights of his Paradise, which are the pleasures of his jaws.",
+     "label": "Thwaites, p. 55"
+    },
+    {
+     "n": 20,
+     "k": 20,
+     "en": "Fourth. In the fourth place, wishing to have sport at my expense, he sometimes made me write vulgar things in his language, assuring me there was nothing bad in them, then made me pronounce these shameful words, which I did not understand, in the presence of the Savages. Some women having warned me of this trick, I told him I would no longer soil my paper nor My lips with these vile words. He insisted, however, that I should read before all those of the cabin, and some Savages who had come thither, something he had dictated to me. I answered him that, if the Apostate would interpret them to me, I would read them. That Renegade refusing to do this, I refused to read. The Sorcerer commanded me imperiously, that is, with high words, and I at first begged him gently to excuse me; but as he did not wish to be thwarted before the Savages, he persisted in urging me, and had my host, who pretended to be vexed, urge me also. At last, aware that my excuses were of no avail, I spoke to him peremptorily, and, after reproaching him for his lewdness, I addressed him in these words: \" Thou hast me in thy power, thou canst murder me, but thou canst not force me to repeat indecent words.\" They are not such,\" he said. \" Why then,\" said I, will they not interpret them to me? \" He emerged from this conflict very much exasperated.",
+     "label": "Thwaites, p. 57"
+    },
+    {
+     "n": 21,
+     "k": 21,
+     "en": "Fifth. In the fifth place, seeing that my host was greatly attached to me, he was afraid that this friendliness might deprive him of some choice morsel. I tried to relieve him of this apprehension by stating publicly that I did not live to eat, but that I ate to live; and that it mattered little what they gave me, provided it was enough to keep me alive. He retorted sharply that he was not of my opinion, but that he made a profession of being dainty; that he was fond of the good pieces, and was very much obliged when people gave them to him. Now although my host gave him no cause for fear in this direction, yet he attacked me at almost every meal as if he were afraid of losing his precedence. This apprehension increased his hatred.",
+     "label": "Thwaites, p. 57"
+    },
+    {
+     "n": 22,
+     "k": 22,
+     "en": "Sixth. In the sixth place, when he saw that the Savages of the other cabins showed me some respect, knowing besides that I was a great enemy of his impostures, and that, if I gained influence among his flock, I would ruin him completely, he did all he could to destroy me and to make me appear ridiculous in the eyes of his people.",
+     "label": "Thwaites, p. 59"
+    },
+    {
+     "n": 23,
+     "k": 23,
+     "en": "Seventh. In the seventh place, add to all these things the aversion which he and all the Savages of Tadoussac had, up to the present time, against the French, since their intercourse with the English; and judge what treatment I might have received from these Barbarians, who adore this miserable Sorcerer, against whom I was generally in a state of open warfare. I thought a hundred times that I should only emerge from this conflict through the gates of death. He treated me shamefully, it is true; but I am astonished that he did not act worse, seeing that he is an idolater of those superstitions which I was fighting with all my might. To relate in detail all his attacks, gibes, sneers, and contempt, I would write a Book instead of a Chapter. Suffice it to say, that he sometimes even attacked God to displease me; and that he tried to make me the laughingstock of small and great, abusing me in the other cabins as well as in ours. He never had, however, the satisfaction of inciting our neighboring Savages against me; they merely hung their heads when they heard the blessings he showered upon me. As to the servants, instigated by his example, and supported by his authority, they continually heaped upon me a thousand taunts and a thousand insults; and I was reduced to such a state, that, in order not to irritate them or give them any occasion to get angry, I passed whole days without opening my mouth. Believe me, if I have brought back no other fruits from the Savages, I have at least learned many of the insulting words of their language. They were saying to me at every turn, eca titou, eca titou nama khitirinisin, \"Shut up, shut up, thou hast no sense.\" Achineou, \"He is proud;\" Moucachtechiou, \"He plays the parasite;\" sasegau, \"He is haughty;\" cou attimou, \"He looks like a Dog;\" cou mascoua, \"He looks like a Bear;\" cou ouabouchou ouichtoui, \"He is bearded like a Hare;\" attimonai oukhimau, \"He is Captain of the Dogs;\" cou oucousimas ouchtigonan, \"He has a head like a pumpkin;\" matchiriniou, \"He is deformed, he is ugly;\" khichcouebeon, \"He is drunk.\" So these are the colors in which they paint me, and a multitude of others, which I omit. The best part of it was that they did not think sometimes that I understood them; and, seeing me smile, they became embarrassed,—at least, those who sang these songs only to please the Sorcerer. The children were very troublesome, playing numberless tricks upon me, and imposing silence when I wanted to talk. When my host was at home, I had some rest; and, when the Sorcerer was absent, I was in smooth water, managing both great and small just as I wished. So these are some of the things that have to be endured among these people. This must not frighten any one; good soldiers are animated with courage at the sight of their blood and their wounds, and God is greater than our hearts. One does not always encounter a famine; one does not always meet Sorcerers or jugglers with so bad a temper as that one had; in a word, if we could understand the language, and reduce it to rules, there would be no more need of following these Barbarians. As to the stationary tribes, from which we expect the greatest fruit, we can have our cabins apart, and consequently be freed from many of these great inconveniences. But let us finish this Chapter; otherwise I see myself in danger of becoming as troublesome as that impostor, whom I commend to the prayers of all those who will read this. I shall set down in the following Chapter some conversations I had with him when we were enjoying a truce.",
+     "label": "Thwaites, p. 61"
+    }
+   ]
+  },
+  {
+   "id": "jr12instr",
+   "zk": "JR 12, Instr.",
+   "titel": "Brébeuf's Instructions for the Fathers of our Society who shall be sent to the Hurons — as Le Jeune printed them, Relation of 1637",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "en": "Let us say a few words more before concluding this chapter. Father Brebeuf sent me some instructions, which I have all our Fathers read whom I send to the Hurons. I thought it would be wise to place them here, so that those who should be appointed to this mission might see from France the trials with which they will have to contend. I know very well that the greater these trials are made, the more ardor we see in our Fathers, who even go so far as to wish for them too eagerly. It is better, in my opinion, while one is still in France, not to think either of the Hurons, or of the Algonquins, or of the Montagnez, or of Kebec, or of Miskou, or even of converting the Savages, but to take up the Cross wherever Jesus Christ shall offer it to us. Let us come to the point.",
+     "label": "Thwaites, p. 115"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "en": "The Fathers and Brethren whom God shall call to the Holy Mission of the Hurons ought to exercise careful foresight in regard to all the hardships, annoyances, and perils that must be encountered in making this journey, in order to be prepared betimes for all emergencies that may arise.",
+     "label": "Thwaites, p. 115"
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "en": "You must have sincere affection for the Savages, looking upon them as ransomed by the blood of the son of God, and as our brethren, with whom we are to pass the rest of our lives.",
+     "label": "Thwaites, p. 115"
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "en": "To conciliate the Savages, you must be careful never to make them wait for you in embarking.",
+     "label": "Thwaites, p. 115"
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "en": "You must provide yourself with a tinder box or with a burning mirror, or with both, to furnish them fire in the daytime to light their pipes, and in the evening when they have to encamp; these little services win their hearts.",
+     "label": "Thwaites, p. 115"
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "en": "You should try to eat their sagamité or salmagundi in the way they prepare it, although it may be dirty, half-cooked, and very tasteless. As to the other numerous things which may be unpleasant, they must be endured for the love of God, without saying anything or appearing to notice them.",
+     "label": "Thwaites, p. 117"
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "en": "It is well at first to take everything they offer, although you may not be able to eat it all; for, when one becomes somewhat accustomed to it, there is not too much.",
+     "label": "Thwaites, p. 117"
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "en": "You must try and eat at daybreak unless you can take your meal with you in the canoe; for the day is very long, if you have to pass it without eating. The Barbarians eat only at Sunrise and Sunset, when they are on their journeys.",
+     "label": "Thwaites, p. 117"
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "en": "You must be prompt in embarking and disembarking; and tuck up your gowns so that they will not get wet, and so that you will not carry either water or sand into the canoe. To be properly dressed, you must have your feet and legs bare; while crossing the rapids, you can wear your shoes, and, in the long portages, even your leggings.",
+     "label": "Thwaites, p. 117"
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "en": "You must so conduct yourself as not to be at all troublesome to even one of these Barbarians.",
+     "label": "Thwaites, p. 117"
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "en": "It is not well to ask many questions, nor should you yield to your desire to learn the language and to make observations on the way; this may be carried too far. You must relieve those in your canoe of this annoyance, especially as you cannot profit much by it during the work. Silence is a good equipment at such a time.",
+     "label": "Thwaites, p. 117"
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "en": "You must bear with their imperfections without saying a word, yes, even without seeming to notice them. Even if it be necessary to criticise anything, it must be done modestly, and with words and signs which evince love and not aversion. In short, you must try to be, and to appear, always cheerful.",
+     "label": "Thwaites, p. 117"
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "en": "Each one should be provided with half a gross of awls, two or three dozen little knives called jambettes [pocket-knives], a hundred fishhooks, with some beads of plain and colored glass, with which to buy fish or other articles when the tribes meet each other, so as to feast the Savages; and it would be well to say to them in the beginning, \" Here is something with which to buy fish.\" Each one will try, at the portages, to carry some little thing, according to his strength; however little one carries, it greatly pleases the Savages, if it be only a kettle.",
+     "label": "Thwaites, p. 119"
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "en": "You must not be ceremonious with the Savages, but accept the comforts they offer you, such as a good place in the cabin. The greatest conveniences are attended with very great inconvenience, and these ceremonies offend them.",
+     "label": "Thwaites, p. 119"
+    },
+    {
+     "n": 15,
+     "k": 15,
+     "en": "Be careful not to annoy any one in the canoe with your hat; it would be better to take your nightcap. There is no impropriety among the Savages.",
+     "label": "Thwaites, p. 119"
+    },
+    {
+     "n": 16,
+     "k": 16,
+     "en": "Do not undertake anything unless you desire to continue it; for example, do not begin to paddle unless you are inclined to continue paddling. Take from the start the place in the canoe that you wish to keep; do not lend them your garments, unless you are willing to surrender them during the whole journey. It is easier to refuse at first than to ask them back, to change, or to desist afterwards.",
+     "label": "Thwaites, p. 119"
+    },
+    {
+     "n": 17,
+     "k": 17,
+     "en": "Finally, understand that the Savages will retain the same opinion of you in their own country that they will have formed on the way; and one who has passed for an irritable and troublesome person will have considerable difficulty afterwards in removing this opinion. You have to do not only with those of your own canoe, but also (if it must be so stated) with all those of the country; you meet some to-day and others to-morrow, who do not fail to inquire, from those who brought you, what sort of man you are. It is almost incredible, how they observe and remember even to the slightest fault. When you meet Savages on the way, as you cannot yet greet them with kind words, at least show them a cheerful face, and thus prove that you endure gayly the fatigues of the voyage. You will thus have put to good use the hardships of the way, and have already advanced considerably in gaining the affection of the Savages.",
+     "label": "Thwaites, p. 121"
+    },
+    {
+     "n": 18,
+     "k": 18,
+     "en": "This is a lesson which is easy enough to learn, but very difficult to put into practice; for, leaving a highly civilized community, you fall into the hands of barbarous people who care but little for your Philosophy or your Theology. All the fine qualities which might make you loved and respected in France are like pearls trampled under the feet of swine, or rather of mules, which utterly despise you when they see that you are not as good pack animals as they are. If you could go naked, and carry the load of a horse upon your back, as they do, then you would be wise according to their doctrine, and would be recognized as a great man, otherwise not. Jesus Christ is our true greatness; it is he alone and his cross that should be sought in running after these people, for, if you strive for anything else, you will find naught but bodily and spiritual affliction. But having found Jesus Christ in his cross, you have found the roses in the thorns, sweetness in bitterness, all in nothing.",
+     "label": "Thwaites, p. 123"
+    }
+   ]
+  },
+  {
+   "id": "jr34c3",
+   "zk": "JR 34, c. 3",
+   "titel": "Of the capture of the villages of the mission of Saint-Ignace — Ragueneau, Relation of 1649, chapter III",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "en": "The progress of the Faith kept increasing from day to day, and the blessings of Heaven were flowing down in abundance upon these peoples, when God chose to derive from them his glory in ways which are adorable, and which belong to the jurisdiction of his divine providence,—although they have been very severe for us, and were not in our expectations.",
+     "label": "Thwaites, p. 121"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "en": "The 16th day of March in the present year, 1649, marked the beginning of our misfortunes,—if, however, that be a misfortune which no doubt has been the salvation of many of God's elect.",
+     "label": "Thwaites, p. 121"
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "en": "The Iroquois, enemies of the Hurons, to the number of about a thousand men, well furnished with weapons,—and mostly with firearms, which they obtain from the Dutch, their allies,—arrived by night at the frontier of this country, without our having had any knowledge of their approach; although they had started from their country in the Autumn, hunting in the forests throughout the Winter, and had made over the snow nearly two hundred leagues of a very difficult road, in order to come and surprise us. They reconnoitered by night the condition of the first place upon which they had designs,—which was Surrounded with a stockade of pine trees, from fifteen to sixteen feet in height, and with a deep ditch, wherewith nature had strongly fortified this place on three sides,—there remaining only a little a space which was weaker than the others.",
+     "label": "Thwaites, p. 123"
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "en": "It was at that point that the enemy made a breach at daybreak, but so secretly and promptly that he was master of the place before people had put themselves on the defensive,—all being then in a deep sleep, and not having leisure to reconnoiter their situation. Thus this village was taken, almost without striking a blow, there having been only ten Iroquois killed. Part of the Hurons—men, women, and children—were massacred then and there; the others were made captives, and reserved for cruelties more terrible than death.",
+     "label": "Thwaites, p. 123"
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "en": "Three men alone escaped, almost naked, across the snows; they bore the alarm and terror to another and neighboring village, about a league distant. This first village was the one which we called Saint Ignace, which had been abandoned by most of its people at the beginning of the Winter,—the most apprehensive and most clear-sighted having withdrawn from it, foreboding the danger; thus the loss of it was not so considerable, and amounted only to about four hundred souls.",
+     "label": "Thwaites, p. 123"
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "en": "The enemy does not stop there; he follows up his victory, and before Sunrise he appears in arms to attack the village of Saint Louys, which was fortified with a fairly good stockade. Most of the women, and the children, had just gone from it, upon hearing the news which had arrived regarding the approach of the Iroquois. The people of most courage, about eighty persons, being resolved to defend themselves well, repulse with courage the first and the second assault, having killed among the enemy some thirty of their most venturesome men, besides many wounded. But, finally, number has the advantage,—the Iroquois having undermined with blows of their hatchets the palisade of stakes, and having made a passage for themselves through considerable breaches.",
+     "label": "Thwaites, p. 125"
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "en": "Toward nine o'clock in the morning, we perceived from our house at Sainte Marie the fire which was consuming the cabins of that village, where the enemy, having entered victoriously, had reduced everything to desolation,—casting into the midst of the flames the old men, the sick, the children who had not been able to escape, and all those who, being too severely wounded, could not have followed them into captivity. At the sight of those flames, and by the color of the smoke which issued from them, we understood sufficiently what was happening,—this village of Saint Louys not being farther distant from us than one league. Two Christians, who escaped from the fire, arrived almost at the same time, and gave us assurance of it.",
+     "label": "Thwaites, p. 125"
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "en": "In this village of Saint Louys were at that time two of our Fathers,—Father Jean de Brebeuf and Father Gabriel Lalemant, who had charge of five closely neighboring villages; these formed but one of the eleven Missions of which we have spoken above; we named it the Mission of St. Ignace.",
+     "label": "Thwaites, p. 125"
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "en": "Some Christians had begged the Fathers to preserve their lives for the glory of God,—which would have been as easy for them as for the more than 500 persons who went away at the first alarm, and had abundant leisure to reach a place of security; but their zeal could not permit them, and the salvation of their flock was dearer to them than love for their own lives. They employed all the moments of that time, as the most precious which they had ever had in the world; and, during the heat of the combat, their hearts were only fire for the salvation of souls. One was at the breach, baptizing the Catechumens; the other, giving absolution to the Neophytes,—both animating the Christians to die in the sentiments of piety, with which they consoled them in their miseries. Accordingly, never was their faith, or the love which they had for their good Fathers and Pastors, more lively.",
+     "label": "Thwaites, p. 127"
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "en": "An Infidel, seeing affairs in a desperate condition, spoke of taking to flight; a Christian, named Estienne Annaotaha, the most esteemed in the country for his courage and his exploits over the enemy, would never allow it. \" What! \" he said, \" could we ever abandon these two good Fathers, who for us have exposed their lives? The love which they have had for our salvation will be the cause of their death; there is no longer time for them to flee across the snows. Let us then die with them, and we shall go in company to Heaven.\"",
+     "label": "Thwaites, p. 127"
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "en": "This man had made a general confession a very few days previously,—having had a presentiment of the danger wherein he saw himself involved, and saying that he wished that death should find him disposed for Heaven. And indeed he, as well as many other Christians, had abandoned himself to fervor in a manner so extraordinary, that we shall never be sufficiently able to bless the guidance of God over so many predestinated souls, for whom his divine Providence continues directing with love all the moments, both of life and of death.",
+     "label": "Thwaites, p. 129"
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "en": "All this band of Christians fell, mostly alive, into the hands of the enemy; and with them, our two Fathers, the Pastors of that Church. They were not killed on the spot; God was reserving them for much nobler crowns, of which we will speak hereafter.",
+     "label": "Thwaites, p. 129"
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "en": "The Iroquois having dealt their blow, and wholly reduced to fire the village of Saint Louys, retraced their steps into that of Saint Ignace, where they had left a good garrison, that it might be for them a sure retreat in case of misfortune, and that the victuals which they had found there might serve them as refreshments and provisions for their return.",
+     "label": "Thwaites, p. 129"
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "en": "On the evening of the same day, they sent scouts to reconnoiter the condition of our house at Sainte Marie; their report having been made in the Council of war, the decision was adopted to come and attack us the next morning,—promising themselves a victory which would be more glorious to them than all the successes of their arms in the past. We were in a good state of defense, and saw not one of our Frenchmen who was not resolved to sell his life very dear, and to die in a cause which—being for the interests of the Faith, and the maintenance of Christianity in these countries—was more the cause of God than ours; moreover, our greatest confidence as in him.",
+     "label": "Thwaites, p. 129"
+    },
+    {
+     "n": 15,
+     "k": 15,
+     "en": "Meanwhile, a part of the Hurons, who are called Atinniaoenten (that is to say, the nation of those who wear a Bear on their coat of arms), having armed in haste, were at hand the next morning, the seventeenth of March, about three hundred warriors,—who, while awaiting a more powerful help, secreted themselves in the ways of approach, intending to surprise some portion of the enemy.",
+     "label": "Thwaites, p. 131"
+    },
+    {
+     "n": 16,
+     "k": 16,
+     "en": "About two hundred Iroquois having detached themselves from their main body, in order to get the start and proceed to the attack of our house, encountered some advance-guards of that Huron troop. The latter straightway took flight after some skirmishing, and were eagerly pursued until within sight of our fort,—many having been killed while they were in disorder in the midst of the snows. But the more courageous of the Hurons, having stood firm against those who joined combat with them, had some advantage on their side, and constrained the Iroquois to take refuge within the palisades of the village of Saint Louys,—which had not been burned, but only the cabins. These Iroquois were forced into that palisade, and about thirty of them were taken captives.",
+     "label": "Thwaites, p. 131"
+    },
+    {
+     "n": 17,
+     "k": 17,
+     "en": "The main body of the enemy, having heard of the defeat of their men, came to attack our people in the very midst of their victory. Our men were the choicest Christians of the village of la Conception, and some others of the village of la Magdelaine. Their courage was not depressed, although they were only about one hundred and fifty. They proceed to prayers, and sustain the assault of a place which, having been so recently captured and recaptured, was no longer adequate for defense. The shock was furious on both sides,—our people having made many sallies, notwithstanding their small number, and having often constrained the enemy to give way. But,—the combat having continued quite far into the night,—as not more than a score of Christians, mostly wounded, were left, the victory remained wholly in the hands of the Infidels. It had, however, cost them very dear, as their Chief had been seriously wounded, and they had lost nearly a hundred men on the spot, of their best and most courageous.",
+     "label": "Thwaites, p. 133"
+    },
+    {
+     "n": 18,
+     "k": 18,
+     "en": "All night our French were in arms, waiting to see at our gates this victorious enemy. We redoubled our devotions, in which were our strongest hopes, since our help could only come from Heaven. Seeing ourselves on the eve of the feast of the glorious Saint Joseph, the Patron of this country, we felt ourselves constrained to have recourse to a Protector so powerful. We made a vow to say, every month, each a Mass in his honor, during the space of a whole year, for those who should be Priests. And all, as many as there were people here, joined to this, by vow, sundry Penances, to the end of preparing us more holily for the accomplishment of the will of God concerning us, whether for life or for death; for we all regarded ourselves as so many victims consecrated to Our Lord, who must await from his hand the hour when they should be sacrificed for his glory, without undertaking to delay or to wish to hasten the moments thereof.",
+     "label": "Thwaites, p. 133"
+    },
+    {
+     "n": 19,
+     "k": 19,
+     "en": "The whole day passed in a profound silence on both sides,—the country being in terror and in the expectation of some new misfortune.",
+     "label": "Thwaites, p. 133"
+    },
+    {
+     "n": 20,
+     "k": 20,
+     "en": "On the nineteenth, the day of the great Saint Joseph, a sudden panic fell upon the hostile camp,—some withdrawing in disorder, and others thinking only of flight. Their Captains were constrained to yield to the terror which had seized them; they precipitated their retreat, driving forth in haste a part of their captives, who were burdened above their strength, like packhorses, with the spoils which the victorious were carrying off,—their captors reserving for some other occasion the matter of their death.",
+     "label": "Thwaites, p. 135"
+    },
+    {
+     "n": 21,
+     "k": 21,
+     "en": "As for the other captives who were left to them, destined to die on the spot, they attached them to stakes fastened in the earth, which they had arranged in various cabins. To these, on leaving the village, they set fire on all sides,—taking pleasure, at their departure, in feasting upon the frightful cries which these poor victims uttered in the midst of those flames, where children were broiling beside their mothers; where a husband saw his wife roasting near him; where cruelty itself would have had compassion at a spectacle which had nothing human about it, except the innocence of those who were in torture, most of whom were Christians.",
+     "label": "Thwaites, p. 135"
+    },
+    {
+     "n": 22,
+     "k": 22,
+     "en": "An old woman, escaped from the midst of that fire, bore the news of it to the village of Saint Michel, where there were about seven hundred men in arms, who charged upon the enemy; but, not having been able to overtake him after two days' march, partly the want of provisions, partly the dread of combatting without advantage an enemy encouraged by his victories, and one who had mostly firearms, of which our Hurons have very few,—all these things obliged them to retrace their steps, without having done aught. They found upon the roads, from time to time, various captives, who—not having strength enough to follow the conqueror, who was precipitating his retreat—had had their heads split by a blow of the hatchet; others remained, half burned, at a post.",
+     "label": "Thwaites, p. 137"
+    }
+   ]
+  },
+  {
+   "id": "jr34c4",
+   "zk": "JR 34, c. 4",
+   "titel": "Of the blessed deaths of Father Jean de Brébeuf and Father Gabriel Lalemant — Ragueneau, Relation of 1649, chapter IV",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "en": "As early as the next morning, when we had assurance of the departure of the enemy,—having had, before that, certain news, through some escaped captives, of the deaths of Father Jean de Brebeuf and of Father Gabriel Lalemant,—we sent one of our Fathers and seven other Frenchmen to seek their bodies at the place of their torture. They found there a spectacle of horror,—the remains of cruelty itself: or rather the relics of the love of God, which alone triumphs in the death of Martyrs.",
+     "label": "Thwaites, p. 137"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "en": "I would gladly call them, if I were allowed, by that glorious name, not only because voluntarily, for the love of",
+     "label": "Thwaites, p. 137"
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "en": "God and for the salvation of their neighbor, they exposed themselves to death, and to a cruel death, if ever there was one in the world,—for they could easily and without sin have put their lives in safety, if they had not been filled with love for God rather than for themselves. But much rather would I thus call them, because, in addition to the charitable dispositions which they have manifested on their side, hatred for the Faith and contempt for the name of God have been among the most powerful incentives which have influenced the mind of the Barbarians to practice upon them as many cruelties as ever the rage of tyrants obliged the Martyrs to endure, who, at the climax of their tortures, have triumphed over both life and death.",
+     "label": "Thwaites, p. 139"
+    },
+    {
+     "n": 4,
+     "k": 4,
+     "en": "As soon as they were taken captive, they were stripped naked, and some of their nails were torn out; and the welcome which they received upon entering the village of St. Ignace was a hailstorm of blows with sticks upon their shoulders, their loins, their legs, their breasts, their bellies, and their faces,—there being no part of their bodies which did not then endure its torment.",
+     "label": "Thwaites, p. 139"
+    },
+    {
+     "n": 5,
+     "k": 5,
+     "en": "Father Jean de Brebeuf, overwhelmed under the burden of these blows, did not on that account lose care for his flock; seeing himself surrounded with Christians whom he had instructed, and who were in captivity with him, he said to them: \" My children, let us lift our eyes to Heaven at the height of our afflictions; let us remember that God is the witness of our sufferings, and will soon be our exceeding great reward. Let us die in this faith; and let us hope from his goodness the fulfillment of his promises. I have more pity for you than for myself; but sustain with courage the few remaining torments. They will end with our lives; the glory which follows them will never have an end.\" \" Echon,\" they said to him (this is the name which the Hurons gave the Father), \" our spirits will be in Heaven when our bodies shall be suffering on earth. Pray to God for us, that he may show us mercy; we will invoke him even until death.\"",
+     "label": "Thwaites, p. 139"
+    },
+    {
+     "n": 6,
+     "k": 6,
+     "en": "Some Huron Infidels—former captives of the Iroquois, naturalized among them, and former enemies of the Faith—were irritated by these words, and because our Fathers in their captivity had not their tongues captive. They cut off the hands of one, and pierce the other with sharp awls and iron points; they apply under their armpits and upon their loins hatchets heated red in the fire, and put a necklace of these about their necks in such a way that all the motions of their bodies gave them a new torture. For, if they attempted to lean forward, the red-hot hatchets which hung behind them burned the shoulders everywhere; and if they thought to avoid that pain, bending back a little, their stomachs and breasts experienced a similar torment; if they stood upright, without leaning to one side or the other, these glowing hatchets, touching them alike on all sides, were a double torture to them. They put about them belts of bark, filled with pitch and resin, to which they set fire, which scorched the whole of their bodies.",
+     "label": "Thwaites, p. 141"
+    },
+    {
+     "n": 7,
+     "k": 7,
+     "en": "At the height of these torments, Father Gabriel Lalemant lifted his eyes to Heaven, clasping his hands from time to time, and uttering sighs to God, whom he invoked to his aid. Father Jean de Brebeuf suffered like a rock, insensible to the fires and the flames, without uttering any cry, and keeping a profound silence, which astonished his executioners themselves: no doubt, his heart was then reposing in his God. Then, returning to himself, he preached to those Infidels, and still more to many good Christian captives, who had compassion on him.",
+     "label": "Thwaites, p. 141"
+    },
+    {
+     "n": 8,
+     "k": 8,
+     "en": "Those butchers, indignant at his zeal, in order to hinder him from further speaking of God, girdled his mouth, cut off his nose, and tore off his lips; but his blood spoke much more loudly than his lips had done; and, his heart not being yet torn out, his tongue did not fail to render him service until the last sigh, for blessing God for these torments, and for animating the Christians more vigorously than he had ever done.",
+     "label": "Thwaites, p. 143"
+    },
+    {
+     "n": 9,
+     "k": 9,
+     "en": "In derision of holy Baptism,—which these good Fathers had so charitably administered even at the breach, and in the hottest of the fight,—those wretches, enemies of the Faith, bethought themselves to baptize them with boiling water. Their bodies were entirely bathed with it, two or three times, and more, with biting gibes, which accompanied these torments. \" we baptize thee,\" said these wretches, \" to the end that thou mayst be blessed in Heaven; for without proper Baptism one cannot be saved.\" Others added, mocking, \" we treat thee as a friend, since we shall be the cause of thy greatest happiness up in Heaven; thank us for so many good offices,—for, the more thou sufferest, the more thy God will reward thee. \"",
+     "label": "Thwaites, p. 143"
+    },
+    {
+     "n": 10,
+     "k": 10,
+     "en": "These were Infidel Hurons, former captives of the Iroquois, and, of old, enemies of the Faith,—who, having previously had sufficient instruction for their salvation, impiously abused it,—in reality, for the glory of the Fathers; but it is much to be feared that it was also for their own misfortune.",
+     "label": "Thwaites, p. 143"
+    },
+    {
+     "n": 11,
+     "k": 11,
+     "en": "The more these torments were augmented, the more the Fathers entreated God that their sins should not be the cause of the reprobation of these poor blind ones, whom they pardoned with all their heart. It is surely now that they say in repose, Transivimus per ignem et aquam, et eduxisti nos in refrigerium.",
+     "label": "Thwaites, p. 143"
+    },
+    {
+     "n": 12,
+     "k": 12,
+     "en": "When they were fastened to the post where they suffered these torments, and where they were to die, they knelt down, they embraced it with joy, and kissed it piously as the object of their desires and their love, and as a sure and final pledge of their salvation. They were there some time in prayers, and longer than those butchers were willing to permit them. They put out Father Gabriel Lalemant's eyes and applied burning coals in the hollows of the same.",
+     "label": "Thwaites, p. 145"
+    },
+    {
+     "n": 13,
+     "k": 13,
+     "en": "Their tortures were not of the same duration. Father Jean de Brebeuf was at the height of his torments at about three o'clock on the same day of the capture, the 16th day of March, and rendered up his soul about four o ' clock in the evening. Father Gabriel Lalemant endured longer, from six o'clock in the evening until about nine o'clock the next morning, the seventeenth of March.",
+     "label": "Thwaites, p. 145"
+    },
+    {
+     "n": 14,
+     "k": 14,
+     "en": "Before their death, both their hearts were torn out, by means of an opening above the breast; and those Barbarians inhumanly feasted thereon, drinking their blood quite warm, which they drew from its source with sacrilegious hands. While still quite full of life, pieces of flesh were removed from their thighs, from the calves of the legs, and from their arms,—which those executioners placed on coals to roast, and ate in their sight.",
+     "label": "Thwaites, p. 145"
+    },
+    {
+     "n": 15,
+     "k": 15,
+     "en": "They had slashed their bodies in various parts; and, in order to increase the feeling of pain, they had thrust into these wounds red-hot hatchets.",
+     "label": "Thwaites, p. 145"
+    },
+    {
+     "n": 16,
+     "k": 16,
+     "en": "Father Jean de Brebeuf had had the skin which covered his skull torn away; they had cut off his feet and torn the flesh from his thighs, even to the bone, and had split, with the blow of a hatchet, one of his jaws in two.",
+     "label": "Thwaites, p. 145"
+    },
+    {
+     "n": 17,
+     "k": 17,
+     "en": "Father Gabriel Lalemant had received a hatchetblow on the left ear, which they had driven into his brain, which appeared exposed; we saw no part of his body, from the feet even to the head, which had not been broiled, and in which he had not been burned alive,—even the eyes, into which those impious ones had thrust burning coals.",
+     "label": "Thwaites, p. 147"
+    },
+    {
+     "n": 18,
+     "k": 18,
+     "en": "They had broiled their tongues, repeatedly putting into their mouths flaming brands, and burning pieces of bark,— not willing that they should invoke, in dying, him for whom they were suffering, and who could never die in their hearts. I have learned all this from persons worthy of credence, who have seen it, and reported it to me personally, and who were then captives with them,—but whoa having been reserved to be put to death at another time, found means to escape.",
+     "label": "Thwaites, p. 147"
+    },
+    {
+     "n": 19,
+     "k": 19,
+     "en": "But let us leave these objects of horror, and these monsters of cruelty; since one day all those parts will be endowed with an immortal glory, the greatness of their torments will be the measure of their happiness, and, from now on, they live in the repose of the Saints, and will dwell in it forever.",
+     "label": "Thwaites, p. 147"
+    },
+    {
+     "n": 20,
+     "k": 20,
+     "en": "We buried these precious relics on Sunday, the 21st day of March, with so much consolation and such tender feelings of devotion in all those who were present at their obsequies, that I know none who did not desire a similar death, rather than fear it; and who did not regard himself as blest to stand in a place where, it might be, two days thence, God would accord him the grace of shedding both his blood and his life on a like occasion. Not one of us could ever prevail upon himself to pray to God for them, as if they had had any need of it; but our spirits were at once directed toward Heaven, where we doubted not that their souls were. Be this as it may I entreat God that he fulfill upon us his will, even to death, as he has done in their persons.",
+     "label": "Thwaites, p. 149"
+    },
+    {
+     "n": 21,
+     "k": 21,
+     "en": "Father Gabriel Lalemant was the last to come to the combat, and yet has fortunately borne away one of the first crowns. I mean to say that, although it is but six months since he arrived in this Mission of the Hurons,—and that, last of all,—he has been chosen by God as one of the first victims sacrificed to the hatred for the Christian name and Faith.",
+     "label": "Thwaites, p. 149"
+    },
+    {
+     "n": 22,
+     "k": 22,
+     "en": "For several years, he had been asking God, with tears and sighs, to be sent to this Mission in the end f the world, notwithstanding his very delicate constitution. and the fact that his body had no strength except what the spirit of God, and the desire of suffering for his name, could give him. I cannot grudge to the public a private writing from his hand, which I found after his death, concerning the motives which he had had, for so ardently desiring occupation in these Missions. Here are his own words:",
+     "label": "Thwaites, p. 149"
+    },
+    {
+     "n": 23,
+     "k": 23,
+     "en": "\" It is, my God, my Savior; 1st, to make good the obligations which I feel toward you: for if you abandoned your contentments, your honors, your comforts your joys, and your life, in order to save me, wretched one,—is it more than reasonable that I abandon, after your example, all these things for the salvation of souls,—which you esteem yours, which have cost you your blood; which you have loved even until death, and of which you have said, Quod uni em minimis meis fecistis, mihi fecistis?",
+     "label": "Thwaites, p. 149"
+    },
+    {
+     "n": 24,
+     "k": 24,
+     "en": "\"2. Even though, indeed, I were not moved by a spirit of gratitude, in making you these burnt-offerings of myself, I would do so with all my heart in consideration of the grandeurs of your adorable Majesty, and of your infinitely infinite goodness, — which deserves that a man sacrifice himself to your service, and that he blessedly cast himself away, in order to accomplish faithfully what he judges to be your will concerning him, and special inspirations which it pleases you to give him for the good of your greater glory.",
+     "label": "Thwaites, p. 151"
+    },
+    {
+     "n": 25,
+     "k": 25,
+     "en": "\"3. Since I have been so wicked as to offend so greatly your goodness, O my Jesus, it is right to make amends to you by extraordinary pains: and thus I must walk before your face the remainder of my life, with my heart humbled and contrite in the endurance of the evils which you first suffered for me.",
+     "label": "Thwaites, p. 151"
+    },
+    {
+     "n": 26,
+     "k": 26,
+     "en": "\"4. I am indebted to my parents, to my mother, and to my brothers, and I must draw upon them the effects of your mercies. My God, never permit that any of this family, for which you have had so much love, shall perish in your presence, or that he be of the number of those who are destined to blaspheme you eternally. Let me be for them the victim,— Quoniam ego in flagella paratus sum; hîc ure, hîc seca, ut in œternum parcas.",
+     "label": "Thwaites, p. 151"
+    },
+    {
+     "n": 27,
+     "k": 27,
+     "en": "\"5. Yes, my Jesus and my love, it must therefore be that your blood, shed for the Barbarians as well as for us, be efficaciously applied for their salvation; and this is wherein I wish to coöperate with your grace, and to sacrifice myself for them",
+     "label": "Thwaites, p. 151"
+    },
+    {
+     "n": 28,
+     "k": 28,
+     "en": "\"6. It must be that your name be adored, that your Kingdom be extended through all the Nations of the world; and that I consume my life, in order to withdraw from the hands of Satan, your enemy, these poor souls who have cost you both your blood and your life.",
+     "label": "Thwaites, p. 151"
+    },
+    {
+     "n": 29,
+     "k": 29,
+     "en": "\"7. Finally, if it be reasonable that some one incline, from love, to give this satisfaction to Jesus Christ,—though at the risk of a hundred thousand lives, if he had so many, and with the loss of everything which is sweetest and most agreeable to nature,—thou wilt never find any one who is more obliged to undertake it than thou. Up then, my soul, let us blessedly cast ourselves away, in order to give this satisfaction to the sacred heart of Jesus Christ; he deserves it, and thou canst not forego it, if thou wouldst not live and die ungrateful to his love.\"",
+     "label": "Thwaites, p. 153"
+    },
+    {
+     "n": 30,
+     "k": 30,
+     "en": "Such are the motives which had animated his zeal to come and die with us in the midst of this barbarism. There was no one more innocent than he, for he had left the world since his tender youth; and, in the nineteen years since he had been a Religious of our Society, he had always walked with a conscience so pure that the least shadow,—I will not say of sin, but of thoughts which approach it, and are not at all criminal—served only to aid him in uniting himself more to God.",
+     "label": "Thwaites, p. 153"
+    },
+    {
+     "n": 31,
+     "k": 31,
+     "en": "After his arrival here among the Hurons, he had applied himself with so much ardor to learn the language,—thankless, if ever there were such a one in the world,—and subsequently had made in it so much progress, that we did not doubt that God wished to use him in these countries for the advancement of his glory. His charity found no difference between the study of the higher sciences, which had occupied him until then, and the thorny difficulties of a barbarous language, which has nothing attractive about it,—except in so far as zeal for the salvation of one's neighbor leads one to find beauties in it. It is not one of the least difficulties in these countries, that it is necessary to become a child at the age of 39 years, in order to learn to speak.",
+     "label": "Thwaites, p. 155"
+    },
+    {
+     "n": 32,
+     "k": 32,
+     "en": "After all, his course has been quickly finished; but in this little time he has fulfilled the expectations which earth and Heaven could have for his labors. He has died in the cause of God, and has found in these countries the Cross of Jesus Christ which he sought in them,—of which he has borne upon himself the truly bloody marks.",
+     "label": "Thwaites, p. 155"
+    },
+    {
+     "n": 33,
+     "k": 33,
+     "en": "Although, in leaving the world, he had left the share which his birth gave him in honorable offices, yet I can say, with truth, that the robe which he has crimsoned with his blood is a thousand times more precious than the purple, or the loftiest expectations which the world could have promised him.",
+     "label": "Thwaites, p. 155"
+    },
+    {
+     "n": 34,
+     "k": 34,
+     "en": "He was born at Paris, on the 31st of October in the year 1610. He entered our Society on the 24th of March in the year 1630; he died in it, upon a bed of glory, on the 17th of March in the current year, 1649, The Hurons named him Atironta.",
+     "label": "Thwaites, p. 157"
+    }
+   ]
+  }
+ ]
+}

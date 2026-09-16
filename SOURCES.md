@@ -69,6 +69,11 @@ and therefore have no source entry here; their editions are named on the method 
 - English: Samuel Purchas's digest of 1625 — "A Discourse of the Kingdome of China, taken out of Ricius and Trigautius", with the mission narrative (ch. V) and the death of Ricci (ch. VIII) — as reprinted by James MacLehose and Sons, *Hakluytus Posthumus, or Purchas his Pilgrimes*, vol. XII (Glasgow, 1906) — <https://archive.org/details/hakluytusposthum12purc>. A 1625 translation-digest in a 1906 printing, public domain twice over; Purchas abridges and reworks Trigault, and that reception is carried as it stands, in its own orthography. Eight sections (V §§ 3–5; VII §§ 1, 2, 5, 6; VIII, the death of Ricci); the reprint's marginal glosses and page furniture are not carried, and the drop-cap letters the OCR loses at section openings are restored.
 - Latin original (named, not yet carried): [Ricci/]Trigault, *De Christiana expeditione apud Sinas suscepta ab Societate Jesu* (Augsburg: Christoph Mang, 1615), Internet Archive scan — <https://archive.org/details/dechristianaexpe00ricc>. Louis J. Gallagher's translation of 1953 remains in copyright and was not consulted.
 
+### The Jesuit Relations from New France (selections) · `data/relations.json`
+
+- English: Reuben Gold Thwaites (ed. & trans.), *The Jesuit Relations and Allied Documents*, 73 vols. (Cleveland: Burrows Brothers, 1896–1901) — a pre-1930 publication in the United States public domain. The text follows the electronic transcription of Thwaites's edition hosted by Creighton University — <https://moses.creighton.edu/kripke/jesuitrelations/> — spot-verified against the Internet Archive scans of the Burrows printing (e.g. vol. 34 — <https://archive.org/details/jesuits34jesuuoft>); a transcription of a public-domain text adds nothing licensable. Thwaites's page numbers, preserved as markers in the transcription, are carried on every paragraph. Four selections: JR 7 (Le Jeune, Relation of 1634, ch. XII), JR 12 (Brébeuf's Instructions, in the Relation of 1637), JR 34 chs. III–IV (Ragueneau, Relation of 1649).
+- French originals (named, not yet carried): on the facing pages of the same Thwaites volumes.
+
 ## Friedrich Spee
 
 ### Cautio Criminalis (selections) · `data/spee.json`
@@ -102,8 +107,7 @@ and therefore have no source entry here; their editions are named on the method 
 ---
 
 Programme entries still planned name their intended sources in the works view, and their
-entries move up here as they ship: the Jesuit Relations in the
-world line, and — the doctrine-of-the-soul strand of the school line — the Ratio Studiorum
+entries move up here as they ship: — the doctrine-of-the-soul strand of the school line — the Ratio Studiorum
 of 1599 (Latin in Pachtler's Monumenta Germaniae Paedagogica edition of 1887, public
 domain), one question of the Coimbra *De anima* commentary (early printings of 1598–1617,
 transcribed by eye), and an excerpt of Suárez's *De anima* (a usable early printing still

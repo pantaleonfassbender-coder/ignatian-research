@@ -84,12 +84,15 @@
  {
   "id": "relations",
   "linie": "welt",
-  "status": "planned",
-  "autor": "The Jesuit Relations",
+  "status": "shipped",
+  "autor": "Le Jeune · Brébeuf · Ragueneau",
   "jahr": "1632–1673",
-  "titel": "Relations from New France (selections)",
-  "warum": "The order's world reporting: mission, ethnography, martyrdom — annual letters that became a genre.",
-  "quelle": "Thwaites edition (Cleveland 1896–1901, 73 vols.), French/Latin with English en face; entirely public domain."
+  "titel": "The Jesuit Relations from New France (selections)",
+  "warum": "The order's world reporting: mission, ethnography, martyrdom — annual letters that became a genre. Le Jeune opens the wintering chapter with Epictetus; Brébeuf's Instructions are the canoe-borne mirror of Ricci's change of habit.",
+  "quelle": "English after R. G. Thwaites's edition and translation, The Jesuit Relations and Allied Documents, 73 vols. (Cleveland: Burrows Brothers, 1896–1901; pre-1930, US public domain), via the Creighton University electronic transcription, spot-verified against the Internet Archive scans of the Burrows printing; Thwaites's page numbers are carried on every paragraph. Four selections in the genre's three registers: Le Jeune wintering with the Montagnais (Relation of 1634, ch. XII; JR 7), Brébeuf's Instructions for the Fathers who shall be sent to the Hurons (Relation of 1637; JR 12), and the capture of Saint-Ignace with the deaths of Brébeuf and Lalemant (Ragueneau, Relation of 1649; JR 34, chs. III–IV). The French originals stand on the facing pages of the same public-domain volumes, named but not yet carried.",
+  "datei": "relations",
+  "zk": "JR",
+  "kurz": "Relations"
  },
  {
   "id": "ricci",
