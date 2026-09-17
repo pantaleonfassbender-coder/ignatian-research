@@ -124,6 +124,21 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: Augustin Theiner, *Clementis XIV. Pont. Max. Epistolae et Brevia* (Paris: Firmin Didot, 1852), doc. CCCXVII, whose paragraph numbering (1–41) is carried as the citation grid; Internet Archive scan — <https://archive.org/details/clementisxivpon00clemgoog>. OCR emended against the page images.
 - English: unofficial working translation made for this site directly from the Latin (CC0) — no full public-domain English translation of the 1773 brief was located, and none was consulted. Cite the Latin.
 
+## The plates
+
+`assets/plates/` carries one public-domain image per work or module where a suitable one
+exists (first tranche: fourteen) — title pages, frontispieces and facsimile pages, mostly
+from the very digitisations cited above, fetched page by page over IIIF; no full scans are
+downloaded or redistributed. Each plate's caption and credit line (source, digitisation,
+leaf) live in `data/plates.json`, built by `tools/build-plates.py`, which documents every
+choice and names the works still awaiting a usable image (Suárez's Vivès title, Ricci's
+1615 title, Pascal, the locked core works). Highlights: the editio princeps title of the
+Exercitia spiritualia (Rome 1548, Internet Archive bub_gb_eyZ68wmgWoIC), the engraved
+Ratio title of the Roman printing of 1606 (bub_gb_6mcuvbXlgXEC), the 1617 Coimbra title,
+the Rinteln 1631 Cautio title, and the frontispiece of Brownlee's hostile Monita edition
+of 1857, carried as a document of the forgery's afterlife. Faithful reproduction of a
+public-domain two-dimensional work adds nothing licensable.
+
 ---
 
 Every program entry has now shipped, and its sources stand above. Named next steps

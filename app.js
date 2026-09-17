@@ -18,6 +18,16 @@ export const WORKCOLOR = {
   diary: "#a89bc4", dir: "#7fa9c9", letters: "#c9968f", fabri: "#8fae87",
 };
 export const wc = id => WORKCOLOR[id] || PROGCOLOR[id] || "#8a7d6a";
+/* One public-domain plate per work/module where a suitable image exists
+   (assets/plates/, registry data/plates.json, built by tools/build-plates.py). */
+const plateFig = id => {
+  const pl = (D.plates || {})[id];
+  return pl ? `<figure class="plate">
+    <img src="assets/plates/${id}.jpg" alt="${esc(pl.caption)}" loading="lazy">
+    <figcaption class="fine">${esc(pl.caption)}
+      <span style="color:var(--fg3)"> — ${esc(pl.credit)}</span></figcaption>
+  </figure>` : "";
+};
 export const workOf = id => (D.works || []).find(w => w.id === id) ||
   searchProg().find(p => p.id === id) || {};
 /** Shipped program modules, as searchable pseudo-works beside D.works. */
@@ -37,6 +47,7 @@ async function boot() {
     "lexicon", "glossary", "directorium", "exercitia", "memoriale", "program"];
   const res = await Promise.all(names.map(n => fetch(`data/${n}.json`).then(r => r.json())));
   names.forEach((n, i) => D[n] = res[i]);
+  D.plates = await fetch("data/plates.json").then(r => r.json()).catch(() => ({}));
   D.introOf = {}; D.introductions.forEach(x => D.introOf[x.id] = x);
   // shipped program modules join the concordance and the dialogue: their
   // data files load here and are handed to the corpus layer for indexing
@@ -64,6 +75,7 @@ const ROUTES = {
   method: viewMethod, dialogue: a => renderDialogue(view, a),
   privacy: viewPrivacy, imprint: viewImprint, author: viewAuthor,
   memoriale: viewMemoriale, paths: viewPaths, coda: viewCoda, text: viewText,
+  timeline: viewTimeline,
   introduction: viewIntroduction,
 };
 
@@ -345,6 +357,7 @@ function viewWorks(args) {
     for (const w of shipped) {
       const intro = D.introOf[w.id] || {};
       const card = el(`<div class="workcard" style="border-left:3px solid ${wc(w.id)}">
+        ${(D.plates || {})[w.id] ? `<img class="platethumb" src="assets/plates/${w.id}_t.jpg" alt="" loading="lazy">` : ""}
         <h3>${esc(w.titel)}</h3>
         <div>${rightsBadge(w)} <span class="chip">${esc(intro.genre || "")}</span></div>
         <p class="fine" style="margin:0">${w.id === "dir"
@@ -360,6 +373,7 @@ function viewWorks(args) {
     for (const p of planned) {
       const shippedProg = p.status === "shipped" && p.datei;
       const card = el(`<div class="workcard" style="border-left:3px solid ${shippedProg ? "var(--acc2)" : "var(--fg3)"};${shippedProg ? "" : "opacity:.6"}">
+        ${(D.plates || {})[p.id] ? `<img class="platethumb" src="assets/plates/${p.id}_t.jpg" alt="" loading="lazy">` : ""}
         <h3 style="font-size:1.02rem">${esc(p.titel)}</h3>
         <div>${shippedProg ? `<span class="rights pd">public domain</span> <span class="chip">reader</span>` : `<span class="chip">planned</span>`}</div>
         <p class="fine" style="margin:0">${esc(p.autor)} · ${esc(p.jahr)}</p>
@@ -801,6 +815,7 @@ function viewExercitia(args) {
       of 1919, with his seventeen Additional Notes, block by block along the same grid. Ganss's 1992
       translation remains a separate, <a href="#/works/spex">unlockable work</a>.</p>
     </div>
+    ${plateFig("spex")}
     ${exxLangBar(lang)}
     <div class="grid g2" id="exxtoc"></div>
     <p class="fine" style="margin-top:1.2rem">Cited as <span class="mono">SpEx [n]</span>. The Spanish
@@ -919,6 +934,7 @@ function viewMemoriale(args) {
       including his advice on dealing with the heretics of the age. The Latin follows the first public
       edition (Bouix, Paris 1873); the English side is this site's own unofficial working translation.</p>
     </div>
+    ${plateFig("fabri")}
     ${memLangBar(lang)}
     <h3 style="margin:.4rem 0 .6rem">The Memoriale</h3>
     <div class="grid g2" id="memtoc"></div>
@@ -1682,6 +1698,154 @@ function viewPaths() {
 }
 
 /* ================================================================ CODA */
+/* ============================================================ TIMELINE */
+/* Chronological view of the five lines. Dates are editorial anchors — the
+   year of the carried text, with spans for works written over years; the
+   Caussade anchor follows the apparatus's stated position (composed before
+   1751, transmitted 1861). Editorial matter, CC BY 4.0. */
+const TIMELINE = [
+  { id: "spex", linie: "kern", y: 1522, jahr: "1522–1548", kurz: "Exercises", href: "#/exercitia" },
+  { id: "letters", linie: "kern", y: 1524, jahr: "1524–1547", kurz: "Letters", href: "#/letters" },
+  { id: "formula", linie: "kern", y: 1540, jahr: "1540", kurz: "Formula", href: "#/text/formula" },
+  { id: "fabri", linie: "schule", y: 1542, jahr: "1542–1546", kurz: "Memoriale", href: "#/memoriale" },
+  { id: "xavier", linie: "welt", y: 1543, jahr: "1543–1552", kurz: "Xavier", href: "#/text/xavier" },
+  { id: "diary", linie: "kern", y: 1544, jahr: "1544–45", kurz: "Diary", href: "#/works" },
+  { id: "const", linie: "kern", y: 1547, jahr: "1547–1556", kurz: "Constitutions", href: "#/works" },
+  { id: "auto", linie: "kern", y: 1553, jahr: "1553–1555", kurz: "Testament", href: "#/works" },
+  { id: "nadal", linie: "schule", y: 1557, jahr: "1557", kurz: "Nadal", href: "#/text/nadal" },
+  { id: "acosta", linie: "welt", y: 1590, jahr: "1590/1604", kurz: "Acosta", href: "#/text/acosta" },
+  { id: "conimbricenses", linie: "schule", y: 1598, jahr: "1598/1617", kurz: "Coimbra", href: "#/text/conimbricenses" },
+  { id: "dir", linie: "schule", y: 1599, jahr: "1599", kurz: "Directory", href: "#/directorium" },
+  { id: "ratio", linie: "schule", y: 1599.5, jahr: "1599", kurz: "Ratio", href: "#/text/ratio" },
+  { id: "rodriguez", linie: "schule", y: 1609, jahr: "1609", kurz: "Rodríguez", href: "#/text/rodriguez" },
+  { id: "monita", linie: "kritik", y: 1614, jahr: "1614", kurz: "Monita", href: "#/text/monita" },
+  { id: "ricci", linie: "welt", y: 1615, jahr: "1615/1625", kurz: "Ricci", href: "#/text/ricci" },
+  { id: "suarez_anima", linie: "schule", y: 1621, jahr: "1621", kurz: "Suárez", href: "#/text/suarez_anima" },
+  { id: "spee_cautio", linie: "spee", y: 1631, jahr: "1631", kurz: "Cautio", href: "#/text/spee_cautio" },
+  { id: "relations", linie: "welt", y: 1632, jahr: "1632–1673", kurz: "Relations", href: "#/text/relations" },
+  { id: "imago", linie: "welt", y: 1640, jahr: "1640", kurz: "Imago", href: "#/text/imago" },
+  { id: "spee_trutz", linie: "spee", y: 1649, jahr: "1649/1654", kurz: "Trutznachtigall", href: "#/text/spee_trutz" },
+  { id: "pascal", linie: "kritik", y: 1656, jahr: "1656–57", kurz: "Provinciales", href: "#/text/pascal" },
+  { id: "caussade", linie: "schule", y: 1740, jahr: "bef. 1751 (pr. 1861)", kurz: "Caussade", href: "#/text/caussade" },
+  { id: "dominus", linie: "kritik", y: 1773, jahr: "1773", kurz: "Brief of 1773", href: "#/text/dominus" },
+];
+const TL_ERAS = [
+  { until: 1557, titel: "The founder's lifetime (to 1556)" },
+  { until: 1600, titel: "After Ignatius" },
+  { until: 1651, titel: "The learned century" },
+  { until: 1700, titel: "Conscience and critique" },
+  { until: 9999, titel: "Toward the suppression" },
+];
+/* Crossings the carried texts themselves document. */
+const TL_CROSS = [
+  { from: "spex", to: "dir",
+    titel: "The Directory of 1599: the official answer to how the Exercises are to be given" },
+  { from: "const", to: "nadal",
+    titel: "Nadal's In Examen annotationes: the Constitutions' Examen expounded" },
+  { from: "ratio", to: "conimbricenses",
+    titel: "The De anima course in the third year of philosophy, as the Ratio's rules prescribe" },
+  { from: "conimbricenses", to: "suarez_anima",
+    titel: "The internal senses signposted to book III — answered by Suárez's single interior sense" },
+  { from: "spee_cautio", to: "imago",
+    titel: "The bound carnation of 1640 (Dant vincla decorem) beside the Cautio's dungeons — a friction the apparatus documents" },
+];
+
+function viewTimeline() {
+  const CX = { kern: 152, schule: 324, welt: 496, spee: 668, kritik: 840 };
+  const W = 960, ROW = 44, ERAROW = 42, TOP = 46;
+  const rows = [...TIMELINE].sort((a, b) => a.y - b.y);
+
+  let yy = TOP, eraIdx = -1;
+  const bands = [], pos = {};
+  for (const r of rows) {
+    const e = TL_ERAS.findIndex(x => r.y < x.until);
+    if (e !== eraIdx) { eraIdx = e; bands.push({ y: yy, titel: TL_ERAS[e].titel }); yy += ERAROW; }
+    pos[r.id] = { x: CX[r.linie], y: yy + ROW / 2 };
+    yy += ROW;
+  }
+  const H = yy + 16;
+
+  const spines = Object.keys(CX).map(l => {
+    const ys = rows.filter(r => r.linie === l).map(r => pos[r.id].y);
+    return { l, y1: Math.min(...ys), y2: Math.max(...ys) };
+  });
+
+  const bandSvg = bands.map(b => `
+    <text x="20" y="${b.y + 28}" font-family="Georgia,serif" font-size="14" font-style="italic"
+      fill="var(--fg3)">${esc(b.titel)}</text>
+    <line x1="20" x2="${W - 20}" y1="${b.y + 36}" y2="${b.y + 36}" stroke="var(--line)"/>`).join("");
+
+  const spineSvg = spines.map(s => `
+    <line x1="${CX[s.l]}" x2="${CX[s.l]}" y1="${s.y1}" y2="${s.y2}"
+      stroke="var(--fg3)" stroke-width="2" stroke-opacity=".22"/>`).join("");
+
+  const crossSvg = TL_CROSS.map(c => {
+    const a = pos[c.from], b = pos[c.to];
+    const same = a.x === b.x, bow = same ? a.x - 78 : (a.x + b.x) / 2;
+    const d = `M ${a.x} ${a.y} C ${bow} ${a.y + (b.y - a.y) * .25}, ${bow} ${a.y + (b.y - a.y) * .75}, ${b.x} ${b.y}`;
+    return `<path d="${d}" fill="none" stroke="var(--fg3)" stroke-width="1.4"
+      stroke-dasharray="4 4" stroke-opacity=".7"><title>${esc(c.titel)}</title></path>`;
+  }).join("");
+
+  const dotSvg = rows.map(r => {
+    const p = pos[r.id], right = r.linie !== "kritik";
+    const w = workOf(r.id);
+    return `<a href="${r.href}">
+      <title>${esc(w.autor ? w.autor + " — " : "")}${esc(w.titel || r.kurz)}</title>
+      <text x="96" y="${p.y + 4}" text-anchor="end" font-family="var(--mono, monospace)" font-size="11"
+        fill="var(--fg3)">${esc(r.jahr)}</text>
+      <circle cx="${p.x}" cy="${p.y}" r="5.5" fill="${wc(r.id)}"
+        stroke="var(--bg)" stroke-width="1.5"/>
+      <text x="${p.x + (right ? 15 : -15)}" y="${p.y + 4.5}" text-anchor="${right ? "start" : "end"}"
+        font-family="Georgia,serif" font-size="13.5" fill="var(--fg)"
+        paint-order="stroke" stroke="var(--bg)" stroke-width="4" stroke-linejoin="round">
+        ${esc(r.kurz)}</text>
+    </a>`;
+  }).join("");
+
+  const headSvg = LINIEN.map(([l, t]) => `
+    <text x="${CX[l]}" y="24" text-anchor="middle" font-size="12.5" font-weight="600"
+      fill="var(--fg2)">${esc(t)}</text>`).join("");
+
+  view.append(el(`<div>
+    <div class="viewhead"><span class="tag">Chronology</span>
+      <h1>Timeline — five lines, 1522–1773</h1>
+      <p class="lede">The corpus in time: from the notes begun at Manresa to the brief of
+      suppression — twenty-four stations across two and a half centuries. The founder's
+      generation writes everything at once; the school then codifies (Directory, Ratio, the De
+      anima course), the mission observes, Spee's conscience answers, and the counter-voices run
+      from forgery to abolition. Dashed arcs mark crossings the carried texts themselves document;
+      every station opens its reader.</p></div>
+    <div class="tlwrap panel" style="padding:1rem .4rem">
+      <svg class="tl" viewBox="0 0 ${W} ${H}" role="img"
+        aria-label="Chronological chart of the corpus in five lines, 1522 to 1773">
+        ${headSvg}${bandSvg}${spineSvg}${crossSvg}${dotSvg}
+      </svg>
+    </div>
+    <div class="panel">
+      <h2 style="margin-top:0">The documented crossings</h2>
+      <ul style="margin:.4rem 0 0;padding-left:1.2rem">
+        <li style="margin-bottom:.5rem"><a href="#/directorium">Exercises → Directory</a> — the manual's
+          manual: how the Exercises are to be given, fixed in 1599.</li>
+        <li style="margin-bottom:.5rem"><a href="#/text/nadal">Constitutions → Nadal</a> — the Examen
+          expounded by the man Ignatius sent to explain the Institute.</li>
+        <li style="margin-bottom:.5rem"><a href="#/text/conimbricenses">Ratio → Coimbra</a> — the De anima
+          course of the third year of philosophy, exactly as the Ratio's rules prescribe it.</li>
+        <li style="margin-bottom:.5rem"><a href="#/text/suarez_anima">Coimbra → Suárez</a> — the internal
+          senses the Prooemium signposts to book III, answered by Suárez's single interior sense.</li>
+        <li><a href="#/text/imago">Cautio → Imago</a> — the bound carnation of 1640 (Dant vincla
+          decorem) nine years after the Cautio's dungeons: the friction the apparatus carries
+          deliberately.</li>
+      </ul>
+      <p class="fine" style="margin:.8rem 0 0">Dates are editorial anchors — the years of the carried
+      texts, shown as spans where the writing stretched over years. The Caussade station follows the
+      apparatus's stated position: composed before 1751, transmitted in Ramière's arrangement of
+      1861. The chart spaces stations by order, not elapsed time; the locked core works (Testament,
+      Diary, Constitutions) link to the works view, where their unlock is explained.</p>
+    </div>
+  </div>`));
+}
+
 /* Editorial closing note: the threshold of 1773, the hybrid boundary, and
    the making of the apparatus. Editorial matter, CC BY 4.0. */
 function viewCoda() {
@@ -1760,6 +1924,7 @@ function viewText(args) {
       <h1>${esc(t.titel)}</h1>
       <p class="lede">${esc(p.warum)}</p>
     </div>
+    ${plateFig(p.id)}
     <div class="grid g2" id="ttoc"></div>
     <p class="fine" style="margin-top:1.2rem">Cited as <span class="mono">${esc(t.zitierweise)}</span>.
       ${esc(t.quelle)} ${esc(t.hinweis || "")}</p>

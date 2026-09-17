@@ -261,3 +261,22 @@ a.cite:hover{border-color:var(--acc);text-decoration:none}
 .tlitem:before{content:"";position:absolute;left:-1.32rem;top:.5rem;width:9px;height:9px;border-radius:99px;
   background:var(--acc);border:2px solid var(--bg)}
 .tlyear{font-family:var(--mono);color:var(--acc);font-size:.8rem}
+
+/* ------------------------------------------------------------ timeline */
+.tlwrap { overflow-x: auto; }
+.tl { width: 100%; min-width: 740px; display: block; }
+.tl a { cursor: pointer; }
+.tl a circle { transition: r .12s; }
+.tl a:hover circle { r: 8px; }
+
+/* -------------------------------------------------------------- plates */
+.plate { margin: 0 0 1.4rem; }
+.plate img {
+  max-width: min(100%, 440px); max-height: 560px; display: block;
+  border-radius: 6px; border: 1px solid var(--line); background: #fff;
+}
+.plate figcaption { margin-top: .45rem; max-width: 640px; }
+.platethumb {
+  float: right; width: 60px; margin: 0 0 .5rem .8rem;
+  border-radius: 4px; border: 1px solid var(--line); background: #fff;
+}

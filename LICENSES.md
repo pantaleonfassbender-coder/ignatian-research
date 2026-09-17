@@ -31,6 +31,7 @@ people entirely.
 | **Imago primi saeculi module** | `data/imago.json`, `assets/imago/*` | Engravings, Latin and Poirters's Dutch: public domain (two 1640 printings; faithful reproduction of a public-domain 2-D work adds nothing licensable); transcription, working translations and descriptions: [CC0 1.0](LICENSE-DATA) |
 | **Bilingual edition of the Monita secreta** | `data/monita.json` | Latin and English: public domain (US, 1857 publication); editorial repair and alignment: [CC0 1.0](LICENSE-DATA) — see below |
 | **Bilingual edition of the brief of 1773** | `data/dominus.json` | Latin: public domain (brief of 1773, edition of 1852); English working translation: [CC0 1.0](LICENSE-DATA) — see below |
+| **Plates** | `assets/plates/*.jpg`, `data/plates.json` | images: public domain (faithful reproductions of public-domain 2-D works; sources leaf by leaf in [SOURCES.md](SOURCES.md)); captions and credits: [CC0 1.0](LICENSE-DATA) |
 | **The author's essays** | `data/pilgrim_profile.json`, `data/exercised_self.json`, `docs/Fassbender-2026-The-Pilgrims-Profile.docx`, `docs/Fassbender-2026-The-Exercised-Self-and-the-Ecstatic-Image.docx` | © 2026 Dr. Pantaleon Fassbender, **all rights reserved** — deliberately excluded from the open licences above |
 | **Third-party libraries** | `vendor/` | Upstream licences — see below |
 
