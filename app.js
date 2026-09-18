@@ -77,6 +77,7 @@ const ROUTES = {
   memoriale: viewMemoriale, paths: viewPaths, coda: viewCoda, text: viewText,
   timeline: viewTimeline,
   introduction: viewIntroduction,
+  ludus: viewLudus,
 };
 
 /* The five lines of the corpus. The apparatus confines itself to the old
@@ -1894,6 +1895,76 @@ function viewCoda() {
       reconsidered — including what was dropped. A corpus about the discernment of spirits,
       assembled partly by a machine whose motions must themselves be tested, owes its readers this
       fact plainly stated.</p>
+    </div>
+  </div>`));
+}
+
+/* =============================================================== LUDUS */
+/* The page after the coda: an introduction to the solitaire simulation
+   built on this corpus. The game lives outside the apparatus — its own
+   site, its own repository — and the links run one way, from there to
+   here. This page is the one deliberate exception. */
+function viewLudus() {
+  view.append(el(`<div>
+    <div class="viewhead"><span class="tag">Beyond the coda</span>
+      <h1>Ad maiorem: the corpus as a game</h1>
+      <p class="lede">An introduction to a solitaire historical simulation built on this apparatus
+      — the old Society from the bull of 1540 to the brief of 1773, in eighteen generalates. The
+      Latin has the right word for it: a <em>ludus</em> is a school and a game at once.</p></div>
+
+    <div class="panel"><h2>What it is</h2>
+      <p class="readable"><a href="https://ad-maiorem.netlify.app/" target="_blank"
+      rel="noopener"><strong>Ad maiorem</strong></a> is a didactic solo game in the tradition of
+      footnoted historical simulations: one turn per Superior General, Ignatius to Lorenzo Ricci,
+      and an end that is fixed — on 21 July 1773 the brief falls, always. The player does not play
+      to prevent the suppression; the player plays for what stands when it comes. It is a working
+      prototype, free, in the browser, without registration; its rules and its balance are still
+      being tested, and it says so.</p>
+    </div>
+
+    <div class="panel"><h2>The sources as rules</h2>
+      <p class="readable">The game's claim to a place on this site is not decoration but method:
+      its rules are the corpus's own documents, cited paragraph by paragraph, and every citation
+      links back into the readers here. The founding bull is the rulebook — the cap of sixty
+      members until 1544 (<a href="#/text/formula">Reg. mil. [17]</a>), missions received from the
+      pope and never lobbied for (<a href="#/text/formula">Reg. mil. [8]</a>), colleges as the only
+      economy (<a href="#/text/formula">Reg. mil. [11]–[12]</a>). The rules for the discernment of
+      spirits govern the tempo: a generalate that opens in desolation may not change its standing
+      assignments (<a href="#/exercitia">SpEx [318]</a>), and acting against the desolation has a
+      price (<a href="#/exercitia">SpEx [319]</a>). And the endgame is played from the suppression
+      document itself: the late cards are the grievances that the brief's own recital lists —
+      the quarrels with the ordinaries, the rites, the proscribed maxims, the ban on novices
+      (<a href="#/text/dominus">DaR [18]–[25]</a>). A player who wants to check a card checks it
+      here.</p>
+    </div>
+
+    <div class="panel"><h2>The accounting as a thesis</h2>
+      <p class="readable">The game is scored <em>after</em> the brief, not before it. Members count
+      for nothing — the Society is dissolved. Colleges still standing count at half. But every year
+      a college stood banks education delivered, which no later expulsion reaches; the texts printed
+      along the way survive at full worth; and if enough men stand in the periphery at the end, a
+      remnant crosses the gap to 1814 in White Russia, where Catherine II forbade the promulgation.
+      The arithmetic states the thesis this apparatus embodies: what remains of the old Society is
+      the paper, the people it educated, and a remnant in the snow — and the first of these is
+      exactly what this corpus is.</p>
+    </div>
+
+    <div class="panel"><h2>Its limits, owned</h2>
+      <p class="readable">In the manner of this site's <a href="#/method">method page</a>, the
+      game's limits are stated rather than buried. It is a stage-one prototype: its numbers are
+      placeholders under playtest, its history is compressed — eighteen turns for two hundred and
+      thirty-three years, a pressure clock in place of the calendar, expulsions that can fire
+      generalates before their dates — and a model is an argument, not a record. The colonial
+      violence that runs through the world line's sources is not converted into victory points;
+      where the sources carry it, the cards show it. And the boundary is kept: the game lives on
+      its own site and in its own repository, duplicates none of this corpus's texts, and links
+      only inward — the apparatus remains the single canonical source, and this page is its one
+      deliberate pointer outward. The game's code is MIT, its card texts CC BY; the seals and era
+      plates it wears are cut from the public-domain page images of the
+      <a href="#/text/imago">Imago primi saeculi</a> carried here.</p>
+      <p class="fine" style="margin-top:.7rem">→ <a href="https://ad-maiorem.netlify.app/"
+      target="_blank" rel="noopener">ad-maiorem.netlify.app</a> — a game takes about an hour;
+      the accounting will tell you how you fared against three hundred machine generalships.</p>
     </div>
   </div>`));
 }
