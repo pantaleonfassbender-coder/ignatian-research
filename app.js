@@ -1917,9 +1917,9 @@ function viewLudus() {
       rel="noopener"><strong>Ad maiorem</strong></a> is a didactic solo game in the tradition of
       footnoted historical simulations: one turn per Superior General, Ignatius to Lorenzo Ricci,
       and an end that is fixed — on 21 July 1773 the brief falls, always. The player does not play
-      to prevent the suppression; the player plays for what stands when it comes. It is a working
-      prototype, free, in the browser, without registration; its rules and its balance are still
-      being tested, and it says so.</p>
+      to prevent the suppression; the player plays for what stands when it comes. It is free, in
+      the browser, without registration — version 1, its rules and its balance still under tuning,
+      and it says so.</p>
     </div>
 
     <div class="panel"><h2>The sources as rules</h2>
@@ -1951,7 +1951,7 @@ function viewLudus() {
 
     <div class="panel"><h2>Its limits, owned</h2>
       <p class="readable">In the manner of this site's <a href="#/method">method page</a>, the
-      game's limits are stated rather than buried. It is a stage-one prototype: its numbers are
+      game's limits are stated rather than buried. It is a first version: its numbers are
       placeholders under playtest, its history is compressed — eighteen turns for two hundred and
       thirty-three years, a pressure clock in place of the calendar, expulsions that can fire
       generalates before their dates — and a model is an argument, not a record. The colonial
