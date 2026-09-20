@@ -141,7 +141,13 @@ public-domain two-dimensional work adds nothing licensable.
 
 ---
 
-Every program entry has now shipped, and its sources stand above. Named next steps
-within shipped modules — the Coimbra Prooemium's Quaestio unica and the internal-senses
-questions of book III, further chapters of Suárez's *De anima*, the Cautio's torture
-dubia — would draw on the same printings already cited.
+Every entry of the first program has shipped, and its sources stand above. A **second,
+cultural program** is now stated in the registry with its sources pinned: the Reductions
+of Paraguay (Muratori's *Relation* in the London English of 1759, with Montoya's
+*Conquista espiritual* of 1639 bilingual), Kircher's *Musurgia universalis* (Rome 1650),
+Pozzo's *Perspectiva pictorum et architectorum* (Rome 1693, with the London English of
+1707), and — carried only if a public-domain printing can be secured — Bidermann's
+*Cenodoxus* for the Jesuit stage. Named next steps within shipped modules — the Coimbra
+Prooemium's Quaestio unica and the internal-senses questions of book III, further
+chapters of Suárez's *De anima*, the Cautio's torture dubia — would draw on the same
+printings already cited.

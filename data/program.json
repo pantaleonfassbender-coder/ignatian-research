@@ -219,5 +219,45 @@
   "datei": "dominus",
   "zk": "DaR",
   "kurz": "DaR"
+ },
+ {
+  "id": "paraguay",
+  "linie": "welt",
+  "status": "planned",
+  "autor": "Muratori · Ruiz de Montoya",
+  "jahr": "1639 / 1743",
+  "titel": "The Reductions of Paraguay — Muratori's Relation, with Montoya's voice",
+  "warum": "The Society's boldest social experiment and its Iberian catastrophe: thirty mission towns beyond the slavers' reach, ended by the crowns the Society obeyed. The second program's opening module — and the source the Ludus's Reductions cards will cite.",
+  "quelle": "English: L. A. Muratori, A Relation of the Missions of Paraguay (London 1759; IA bim_eighteenth-century_a-relation-of-the-missio_muratori-lodovico-anton_1759), public domain — selections carried in full. Spanish: A. Ruiz de Montoya, Conquista espiritual (Madrid 1639; IA A1100623, reprint 1892 conquistaespiri00montgoog), key passages bilingual with a working translation."
+ },
+ {
+  "id": "musurgia",
+  "linie": "schule",
+  "status": "planned",
+  "autor": "Athanasius Kircher",
+  "jahr": "1650",
+  "titel": "Musurgia universalis — the Society's book of music",
+  "warum": "The learned culture's sound: Kircher's monumental music treatise from the Collegio Romano — definition, birdsong notations, the doctrine of the affects. The apparatus's music module, beside Muratori's chapters on the reductions' orchestras.",
+  "quelle": "Latin: Musurgia universalis (Rome 1650; IA bub_gb_97xCAAAAcAAJ and others), public domain; narrow selections with a working translation. Plates: the engraved frontispiece and the birdsong page."
+ },
+ {
+  "id": "pozzo",
+  "linie": "welt",
+  "status": "planned",
+  "autor": "Andrea Pozzo",
+  "jahr": "1693–1700",
+  "titel": "Perspectiva pictorum et architectorum — the apotheosis, explained by its painter",
+  "warum": "The Jesuit brother who threw the Apotheosis of Ignatius onto the ceiling of Sant'Ignazio explains, figure by figure, how it is done — architecture and self-presentation in one treatise, beside the Imago.",
+  "quelle": "Latin/Italian: Perspectiva pictorum et architectorum (Rome 1693; IA gri_33125009760485 — Getty scan, plates in high quality). English: Rules and Examples of Perspective (London 1707; IA rulesexamplesof00pozz), public domain — the 1707 English carries the text."
+ },
+ {
+  "id": "cenodoxus",
+  "linie": "schule",
+  "status": "planned",
+  "autor": "Jacob Bidermann",
+  "jahr": "1602 / 1666",
+  "titel": "Cenodoxus — the Jesuit stage",
+  "warum": "College theatre as the schools' own art: the doctor of Paris damned before the audience that laughed at him. Named as a candidate; carried only if a public-domain printing can be secured.",
+  "quelle": "SOURCE HUNT REQUIRED: the Ludi theatrales printing of 1666 (or Meichel's German of 1635, Fraktur risk) must be located in a usable scan — the modern editions of 1963/65 are in copyright and will not be consulted. If no printing is found, this entry is withdrawn, and it says so here."
  }
 ]
