@@ -236,12 +236,15 @@
  {
   "id": "musurgia",
   "linie": "schule",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Athanasius Kircher",
   "jahr": "1650",
   "titel": "Musurgia universalis — the Society's book of music",
-  "warum": "The learned culture's sound: Kircher's monumental music treatise from the Collegio Romano — definition, birdsong notations, the doctrine of the affects. The apparatus's music module, beside Muratori's chapters on the reductions' orchestras.",
-  "quelle": "Latin: Musurgia universalis (Rome 1650; IA bub_gb_97xCAAAAcAAJ and others), public domain; narrow selections with a working translation. Plates: the engraved frontispiece and the birdsong page."
+  "warum": "The learned culture's sound: Kircher's monumental music treatise from the Collegio Romano, cut deliberately narrow — the Synopsis of the ten books (the whole architecture, ending in God's concert with nature), the voices of the birds with Iconismus III carried as an image, and the doctrine of the affects from Book VII. The apparatus's music module, beside Muratori's chapter on the reductions' orchestras (Mur. IX).",
+  "quelle": "Latin: Musurgia universalis, Tomus I (Rome: Corbelletti, 1650; IA chepfl-lipr-AXC19_01, Fribourg scan, collated where doubtful with bub_gb_97xCAAAAcAAJ), public domain; OCR transcribed and emended against the sense and the page images. Shipped: the Synopsis of the ten books; the voices of the birds (Lib. I, pp. 28–32) with Iconismus III, fol. 30; and the pathetic music (Lib. VII, pp. 550–551) — 13 units, with this site's working translation (CC0). Named next steps: the tarantism chapter and a Musarithmica specimen from Tomus II.",
+  "datei": "musurgia",
+  "zk": "Musurg.",
+  "kurz": "Musurgia"
  },
  {
   "id": "pozzo",

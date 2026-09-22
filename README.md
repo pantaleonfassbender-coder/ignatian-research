@@ -21,7 +21,8 @@ Rodríguez's *Of Conformity to the Will of God*, and the *Abandonment to Divine 
 Caussade — Xavier's letters from India and Japan, Acosta's *Natural and Moral History of the
 Indies* in Grimston's English of 1604, Ricci and Trigault's China in Purchas's digest of 1625,
 the *Jesuit Relations* from New France in Thwaites's translation, the Reductions of Paraguay
-in Muratori's *Relation* of 1759 with Montoya's own voice beside it, the emblems of the *Imago primi saeculi* of 1640
+in Muratori's *Relation* of 1759 with Montoya's own voice beside it, Kircher's *Musurgia
+universalis* of 1650 with the birdsong plate, the emblems of the *Imago primi saeculi* of 1640
 with their Dutch mirror, Friedrich Spee (the *Cautio Criminalis* and the *Trutznachtigall*), and the
 counter-voices — the forged *Monita secreta*, Pascal's *Provinciales*, and the brief *Dominus ac
 Redemptor* of 1773 with which the corpus closes. The apparatus indexes them by their canonical numbering,
@@ -96,7 +97,10 @@ translation); four letters of Francis Xavier (Coleridge's 1872 biography); eleve
 eight sections of Ricci/Trigault's *De Christiana expeditione* (Purchas's 1625 digest in the
 MacLehose printing of 1906); four selections of the *Jesuit Relations* (Thwaites's edition and
 translation, 1896–1901); five chapters of Muratori's *Relation of the Missions of Paraguay*
-(London 1759) with four bilingual passages of Montoya's *Conquista espiritual* (1639/1892); eleven emblems of the *Imago
+(London 1759) with four bilingual passages of Montoya's *Conquista espiritual* (1639/1892);
+selections of Kircher's *Musurgia universalis* (Rome 1650, bilingual — the Synopsis of the ten
+books, the voices of the birds with Iconismus III as a page image, and the doctrine of the
+affects); eleven emblems of the *Imago
 primi saeculi* (Antwerp 1640) with the Dutch *Af-Beeldinghe* of the same year and page images;
 Friedrich Spee — the *Cautio Criminalis* (two dubia, Rinteln 1631) and the *Trutznachtigall* (two poems,
 Cologne 1654); Nadal's *In Examen annotationes* (Latin of the 1919 Monumenta, with a working

@@ -38,7 +38,7 @@ const PROGCOLOR = { formula: "#a3873c", paraguay: "#5f8a62", pascal: "#b0687a", 
   xavier: "#5a8a8a", imago: "#a08a50", spee_cautio: "#6a8a5f", spee_trutz: "#86a06a",
   nadal: "#6f7fae", rodriguez: "#8a6f5a", caussade: "#7d6a92", acosta: "#4f7f74",
   ricci: "#a3584e", relations: "#5f7a99", ratio: "#7a7f5a", conimbricenses: "#6a5f7f",
-  suarez_anima: "#8a527a" };
+  suarez_anima: "#8a527a", musurgia: "#a3703c" };
 
 /* --------------------------------------------------------------- boot */
 async function boot() {

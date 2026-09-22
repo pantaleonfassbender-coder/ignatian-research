@@ -67,6 +67,21 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: after the *Opera omnia* edition of Vivès, vol. III (Paris, 1856; US public domain) — <https://archive.org/details/tomus-19-francisci-suarez> — which prints the posthumous text of the De anima commentary completed and published by Baltasar Álvares (Lyon, 1621). The OCR of the Archive scan was corrected against sense and context; æ/œ written out as ae/oe, the edition's j and u/v kept as printed; the italic point-captions carried inline; doubtful readings emended and disclosed in `tools/build-suarez.py`. The critical edition (S. Castellote, 1978–1991) is in copyright and was not used. Carried complete and bilingual: book II, chapter 3; book III, chapter 30; book IV, chapter 7.
 - English: unofficial working translation made for this site directly from the Latin (CC0).
 
+### Kircher, Musurgia universalis (selections) · `data/musurgia.json` · `assets/musurgia/`
+
+- Latin: Athanasius Kircher, *Musurgia universalis, sive Ars magna consoni et dissoni*,
+  Tomus I (Rome: heirs of Francesco Corbelletti, 1650), Internet Archive scan of the
+  Fribourg copy — <https://archive.org/details/chepfl-lipr-AXC19_01> — collated, where the
+  OCR is doubtful, with the Bologna copy <https://archive.org/details/bub_gb_97xCAAAAcAAJ>;
+  both public domain. Carried, deliberately narrow: the Synopsis of the ten books from the
+  front matter; the voices of the birds (Lib. I, pp. 28–32), with Iconismus III (fol. 30)
+  carried as a page image beside the text; and the doctrine of the affects (Lib. VII,
+  pp. 550–551). Transcribed from the OCR and emended against the sense and the page images —
+  long s and ligatures resolved, the scan's æ-damage repaired, u/v classicised; printed
+  pages cited from the running heads. Named next steps: the tarantism chapter of book IX
+  and a Musarithmica specimen from Tomus II.
+- English: unofficial working translation made for this site directly from the Latin (CC0).
+
 ## The Society in the world
 
 ### Francis Xavier, Letters from India and Japan (selections) · `data/xavier.json`
@@ -148,7 +163,9 @@ and therefore have no source entry here; their editions are named on the method 
 ## The plates
 
 `assets/plates/` carries one public-domain image per work or module where a suitable one
-exists (first tranche: fourteen) — title pages, frontispieces and facsimile pages, mostly
+exists (fourteen in the first tranche, joined module by module by the second program's
+plates — Muratori's 1759 title, the Musurgia's 1650 title) — title pages, frontispieces
+and facsimile pages, mostly
 from the very digitisations cited above, fetched page by page over IIIF; no full scans are
 downloaded or redistributed. Each plate's caption and credit line (source, digitisation,
 leaf) live in `data/plates.json`, built by `tools/build-plates.py`, which documents every
@@ -163,12 +180,13 @@ public-domain two-dimensional work adds nothing licensable.
 ---
 
 Every entry of the first program has shipped, and its sources stand above. A **second,
-cultural program** is now stated in the registry with its sources pinned: the Reductions
-of Paraguay (Muratori's *Relation* in the London English of 1759, with Montoya's
-*Conquista espiritual* of 1639 bilingual), Kircher's *Musurgia universalis* (Rome 1650),
-Pozzo's *Perspectiva pictorum et architectorum* (Rome 1693, with the London English of
-1707), and — carried only if a public-domain printing can be secured — Bidermann's
-*Cenodoxus* for the Jesuit stage. Named next steps within shipped modules — the Coimbra
-Prooemium's Quaestio unica and the internal-senses questions of book III, further
-chapters of Suárez's *De anima*, the Cautio's torture dubia — would draw on the same
-printings already cited.
+cultural program** has opened: its first two modules — the Reductions of Paraguay
+(Muratori's *Relation* in the London English of 1759, with Montoya's *Conquista
+espiritual* of 1639 bilingual) and Kircher's *Musurgia universalis* (Rome 1650) — have
+shipped, and their sources likewise stand above. Still pinned in the registry: Pozzo's
+*Perspectiva pictorum et architectorum* (Rome 1693, with the London English of 1707),
+and — carried only if a public-domain printing can be secured — Bidermann's *Cenodoxus*
+for the Jesuit stage. Named next steps within shipped modules — the Coimbra Prooemium's
+Quaestio unica and the internal-senses questions of book III, further chapters of
+Suárez's *De anima*, the Cautio's torture dubia — would draw on the same printings
+already cited.
