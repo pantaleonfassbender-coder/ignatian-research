@@ -203,8 +203,10 @@ function viewOverview() {
       memoir, the private journal of discernment, the letters — and the texts in which his spirituality
       became the practice of an order: the official Directory of 1599, and the Memoriale of Pierre Favre,
       the first companion. Around them stand the program modules that carry the corpus out into the
-      world and its controversies: Xavier's letters, the emblems of the Imago primi saeculi with their
-      Dutch mirror, Friedrich Spee, and the counter-voices down to the brief of 1773 with which the corpus
+      world and its controversies: Xavier's letters, the Reductions of Paraguay, Kircher's music and
+      Pozzo's ceilings, the emblems of the Imago primi saeculi with their
+      Dutch mirror, the conscience of the Society from Spee to Molina, and the counter-voices down to
+      the brief of 1773 with which the corpus
       closes. The apparatus indexes them all by their canonical numbering, traces the vocabulary that
       migrates between them, and lets you put questions to the corpus with the evidence attached.</p>
       <p class="fine">New here? The <a href="#/introduction">introductory essay</a> walks through the
@@ -252,14 +254,14 @@ function viewOverview() {
 
     <div class="card" style="margin-bottom:2rem">
       <span class="tag">And the program modules</span>
-      <h3>Seven public-domain texts, shipped in full</h3>
+      <h3>Twenty-two public-domain texts, shipped in full</h3>
       <p style="font-size:.92rem;color:var(--fg2)">Around the core stand the program modules — public
       domain in their own right, so their running text is shipped complete, each on its own citation grid
-      and part of the concordance and the dialogue: Pascal's <em>Provinciales</em>, the forged <em>Monita
-      secreta</em>, the brief <em>Dominus ac Redemptor</em> of 1773, Xavier's letters, eleven emblems of
-      the <em>Imago primi saeculi</em> with their Dutch mirror, and Friedrich Spee's <em>Cautio
-      Criminalis</em> and <em>Trutznachtigall</em>. Working translations are this site's own and marked
-      unofficial.</p>
+      and part of the concordance and the dialogue: from the founding bull of 1540 and Xavier's letters
+      through the school's doctrine of the soul, the Reductions of Paraguay, Kircher's <em>Musurgia</em>
+      and Pozzo's feigned dome, to the conscience line — Spee, the limpieza dossier, Molina on the slave
+      trade — and the counter-voices down to the brief of 1773. Working translations are this site's own
+      and marked unofficial.</p>
     </div>
 
     <h2>The seven core works</h2>
@@ -338,12 +340,13 @@ function viewWorks(args) {
     <div class="viewhead">
       <span class="tag">Five lines</span>
       <h1>The corpus, line by line</h1>
-      <p class="lede">Seven works shipped, and a stated program around them, in five lines: the
+      <p class="lede">Seven core works, and twenty-two program modules shipped around them, in five
+      lines: the
       founder's own writings; the school of discernment they set in motion; the Society in the world
-      before 1773; Friedrich Spee, a line of one voice; and the counter-voices, from forgery to the
+      before 1773; the conscience of the Society, from Spee to the limpieza dossier and Molina; and the counter-voices, from forgery to the
       brief of suppression. Each shipped entry gives an orientation, the textual history, advice on
-      the numbering, and the passages that carry weight; the program entries name their sources and
-      wait their turn. The corpus confines itself to the old Society (1540–1773) — the reasons are
+      the numbering, and the passages that carry weight; what remains planned names its sources and
+      waits its turn. The corpus confines itself to the old Society (1540–1773) — the reasons are
       owned in the <a href="#/coda">coda</a>.</p>
     </div><div id="lines"></div></div>`));
   const box = view.querySelector("#lines");
