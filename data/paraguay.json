@@ -1,0 +1,654 @@
+{
+ "id": "paraguay",
+ "autor": "Muratori · Ruiz de Montoya",
+ "titel": "The Reductions of Paraguay — Muratori's Relation, with Montoya's voice",
+ "jahr": 1639,
+ "lang": "es",
+ "zitierweise": "Mur. c. N [k] · Mont. [k]",
+ "quelle": "English: L. A. Muratori, A Relation of the Missions of Paraguay (London 1759; Internet Archive bim_eighteenth-century_a-relation-of-the-missio_muratori-lodovico-anton_1759), public domain — chapters V, IX, XV, XVIII and XX carried complete, page numbers of the 1759 print on the paragraphs. Spanish: A. Ruiz de Montoya, Conquista espiritual (Madrid 1639), quoted from the Bilbao reprint of 1892 (IA conquistaespiri00montgoog), four passages transcribed from the OCR and emended against the sense; the English of those passages is this site's unofficial working translation.",
+ "hinweis": "The second program's opening module: the Society's boldest social experiment, in the two voices that carried it to Europe — the outside admirer and the protagonist. Muratori never saw Paraguay; he compiled from the missionaries' letters, and says so; the 1759 London English (made from the French) is carried as printed, its eighteenth-century spellings kept and only scan damage repaired. Chapter numbers destroyed by the OCR are restored from the book's own table of contents and the chapter sequence. Montoya's four passages are the protagonist's own first person, thirty years in the missions, written for the court of Madrid. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only.",
+ "sections": [
+  {
+   "id": "mur5",
+   "zk": "Mur. V",
+   "titel": "The principal obstacles to the Indians' conversion",
+   "blurb": "Why the missions nearly failed before they began: the example of the Europeans, the encomienda, and the slaving raids of the Mamelucos of São Paulo — the enemy the Reductions were built against.",
+   "units": [
+    {
+     "en": "IT is easy to imagine how difficult it was to subject the Indians, such as they are represented here, to the laws of the gospel. But as barbarous as their manners could be, I dare venture to say, that this was not the greatest obstacle to their conversion. The Europeans themselves, more than any thing else, have been the main cause of the aversion the Indians have to Christianity, by their barbarous usage of these unfortunate people. The nature of this work",
+     "label": "p. 40",
+     "n": 1,
+     "k": 1
+    },
+    {
+     "en": "28153 D 4 makes it necessary to give a short sketch of the past and present behaviour of the Europeans in South- — and its pernicious confeque \"Tis well known, that the Spaniards, whether necessitated to it by a chain of circumstances not in their power to avoid, or otherwise, did not establish their empire in SowuthAmerica, but by force; and that they destroyed millions under various pretexts. If they spared any, they did it to make them slaves.",
+     "n": 2,
+     "k": 2
+    },
+    {
+     "en": "A great number of these miserable creatures were confined to the mines, where they were oppressed with labour and ill usage. This excess of cruelty raised among the Indians, that had escaped the yoke, a furious hatred of the Spanish nation, and which is so much the more sure to continue, as their tyranny holds on at least in part, notwithstanding the wise and rigorous ordinances of the catholic Kings, and the complaints of all the good Spaniards, who cease not to lament the — so contrato the maxims of the gospel, and humanity.",
+     "n": 3,
+     "k": 3
+    },
+    {
+     "en": "Now this has raised a great obstacle, and so difficult to get over, as to render the propagation of the christian faith almost impossible. From a hatred of the Spaniards, there follows naturally a hatred of their Religion. And indeed, how could they be ever persuaded, that the God, whom cruel and unjust men, and enemies of mankind adored, should be a merciful and good God, and that his law is most holy? This conduct is not less prejudicial to the concerns of the state, than of Religion. When the Spaniards intended to stretch beyond the high mountains of Peru and Chili, to the inland rts of the continent, they were forced to use violence; but often fell very short of the expected success. For the Indians not only made stout efforts to preserve, or recover, their liberty; but in their turns became aggressors, and penetrated more than once into the Spanish towns and cities, which they destroyed with fire and sword, and by all the means that hatred and fury could suggest.",
+     "n": 4,
+     "k": 4
+    },
+    {
+     "en": "The Muscovites in the year 1590, and under the reign of the Czar Fedor Ivanovitz, conquered Siberia, an immense tract of land, and which has no bounds, but the Chinese Tartary. We have a faithful relation of that glorious expedition, that pacific conquest, if I may use the expression. The Muscovites engaged the Siberians so much with presents and demonstrations of kindness, that they all voluntarily submitted to the Emperor of Russia. Towns, forts, and churches, were built without opposition, and now flourish more than ever; and if the Russians had been more zealous in endeavouring to convert the Siberians, perhaps there would not have remained the least trace of Idolatry. Would to God”, says the author of the relation, that the Spaniards had treated the Indians in the same gentle \" manner, They would have civilized the e fierce minds of those barbarians, and made them their friends. After this it would have been easy to carry on their. conquests, * as far as they would. This I am fully convinced of, by a voyage I made to America. But by taking a quite contrary method, and e incurring the universal odium and execration of the Indians, they can get no subjects but by force; a means that seldom succeeds. \" The Muscovites can say it with truth, and experience has taught them, that to establish \" new Empires, and civilize savage people, they must be treated with humanity”. Great numbers of Spaniards are absolutely destitute of this virtue, who fail to the Ladies merely to get riches. They are in this world, one would think, only to command. They are above all work. In many parts even of Spain, the lands are tilled wholly by slaves, or strangers. This humour goes yet farther in the Indies. A Spaniard would rather die for hunger and want, than hold the plough. What has been the consequences of this out of the-way pride? In the immense countries that are comprehended under the general name of Paraguay, there are hardly to be found a dozen Cities, with some village-towns raised by the Spaniards; and neither the one or the other very populous. Some scattered hutts are to be seen here and there in the parts adjacent to the towns, for men to watch! the corn, which makes up the bulk of their riches. There are besides at small distances, i little townships of Indians subject to the Spaniards.",
+     "n": 5,
+     "k": 5
+    },
+    {
+     "en": "The rest of the Country is either deserted, or possessed by independant Indians. The Kings of Spain were no sooner masters of this vast country and the richest in the world, but they imagined they had a ready means to recompense the officers, who had signalized themselves in the wars. They gave them not only a great extent of lands, but also the old inhabitants the Indians, and those who had been brought thither from other parts. These lands were called Commanderies, as those to whom the lands were given, Commanders, They and their posterity were to enjoy them, as a reward of their labours, under certain conditions, This custom till subsists. After the death of the Commander, in default of issue, the Commandery reverts to the crown; and the royal treasury receives the rents for some years. The term being elapsed, the Governor of the Province may \"dispose of the Commandery in favour of any other family, that has served the state faithfully; fo that all, in proportion to their deserts, may hope, some time or other, to succeed to a share in the King's benefactions.",
+     "label": "p. 43",
+     "n": 6,
+     "k": 6
+    },
+    {
+     "en": "Every Indian must pay five Piasters “ yearly to their Commander; who strictly speaking, has no right to exact any more; and the fifth part (one piaster) is due to the Curate of the Com* A Piaster, or piece of eight, is about four shillings and sixpence English money and is the whole income of his Curacy. The remainder is for the Commander, but with an obligation to assist the Indians in their wants, and to watch for their safety. Tho' this may seem a heavy tax, yet it is a very easy one with respect to what many subjects of Europe pay to their Princes; and these regulations are conformable to the laws of prudence and equity. Hence the misfortune pf the Indians is wholly due to the almost general neglect of the wise ordinances made in their favour by the Kings of Spain. They are not content with what the laws allow; but the Indians are oppressed with a thousand other heavy impositions, that reduce these poor creatures to extreme misery, Many officers are appointed, to see the King's orders called Protectors, whose only business is to attend the Indians in the courts of justice; and without this formality, all acts of these courts are void. But altho* Bishops, Governors, and principal! officers, are commonly men of probity and equity, *tis impossible that of so many subaltern officers there should not be some, that a sordid J and base interest will induce to commit crying injustices: and the evil will scarce admit of a remedy, at this great distance from the court and the presence of the Sovereign. Let the ministers be never so well disposed, they are under a necessity of leaving the case to the judgment of the very authors of these evils, who transmit what accounts they please, and assure the ministry, that nothing is done, but what is agreeable to his majesty's intentions.",
+     "n": 7,
+     "k": 7
+    },
+    {
+     "en": "The way that is usually taken to grow rich in a short time, is to make the Indians work without respite, or moderation. The unhappy creatures are a thousand times worse off, han even the Negroes; and the reason is obvious. The Blacks are the property of the masters; whereas the Indians are, as it were, only lent by the King; and if they fail, the loss is the King's. Thus the Commanders, who soon become Gentlemen, if they were not such at their arrival in America, make all the advantage they can of the Indians in their Commanderies. No care is taken for them, or their families, They are oppressed with labour. They sink under the weight of burthens that are above their strength; or else run away in despair, and take to remote forests for refuge among the independant Indians, whom they fail not to inspire with the greatest hatred for the name of a Spaniard, and of a christian, Some after their escape, go to the high-ways, and lie in wait to murther the passengers. They engage the Savages, to carry desolation to the very gates of the Spanish Towns, with impunity from the Spaniards, who dare not punish them for fear ot farther exasperating the Indians.",
+     "label": "p. 44",
+     "n": 8,
+     "k": 8
+    },
+    {
+     "en": "It appears in an excellent memorial, sent in 1735, by Father d' Aguilar to the court of Spain, and of which I shall give a more ample account at the close of this work, that some Indian nations ravaged the Province of Tucumán; at that time that they had seized all c the roads, that there was no going by land * to Peru, without extreme danger; that they daily committed infinite murthers and robe beries; that many christians were led off * captives by the Savages; and that the Spanish \" Towns were in a manner blocked up”.",
+     "n": 9,
+     "k": 9
+    },
+    {
+     "en": "This Father adds, that the Indians had massacred Spaniards in the broad day, and even \" at the gates of their cities; some of which \" were so distressed, that the inhabitants durst not go out at night, no not so much as out of their own houses, without danger of falling into the enemies hands.” Such are the fruits of oppression, pride, and covetousness; and it must of necessity have another effect of very great prejudice to the crown of Spain. The best peopled Colonies are soon reduced. The Indian families are destroyed by degrees; and the number of inhabitants, the main support of a state, and without which the most extended and fruitful Country, and even all the treasures of the world, signify nothing, decreases daily in a very sensible manner. The Indians, if you will, are baptised; but",
+     "label": "p. 46",
+     "n": 10,
+     "k": 10
+    },
+    {
+     "en": "They are incessantly taken up with hard work in places at a great distance from any Church; they can neither go to Mass, nor partake of the Sacraments, nor hear any instructions from their Curates; nay, they scarce have any knowledge of their Curates. This is also the case of all the labovring people; as Negroes, those that are born of European and Indian parents, and Mulattoes, who live in village townships or places very distant from towns.",
+     "label": "p. 47",
+     "n": 11,
+     "k": 11
+    },
+    {
+     "en": "Every year indeed the Jesuits run over these Provinces with unspeakable zeal and charity. They go from Colony to Colony, performing the missions in each, administring the Sacraments, and distributing the word of God, without fear of the fatigues, or dangers, that are unavoidable in these long excursions. They comfort the Indians, distribute the charities, which they have taken care to collect before; these they accompany with small presents, and equally proper to gain their hearts, and keep up the devotion of these poor people. In fine, these fervent Missionaries endeavour all they can to alleviate the hardships of their slavery.",
+     "n": 12,
+     "k": 12
+    },
+    {
+     "en": "But the apostolic labourers are too few for so vast a harvest, The Jesuits have but eight or ten Colleges in these immense territories. Some of these Colleges have but six priests, and those sufficiently employed among the Spanish inhabitants of the towns. Even the College of Cordova in the Tucuman, the most numerous and flourishing, where they have their noviceship and university together, has not a sufficient number of subjects, it the wants of the Country are considered. For the number of different plantations and townships in the district of that city amounts to 670, and these are dispersed at a great distance in the inland parts,",
+     "n": 13,
+     "k": 13
+    },
+    {
+     "en": "The scandalous life most Christians lead in America, obstructs the Conversion of the Indians as much as their merciless barbarity. I need not repeat what prejudiced or misinformed Travellers say on this head, I shall confine myself to what is attested by persons of known worth, in Books printed at Madrid, without any objection ever made to the truth of their accounts. The Spanish nation has always been justly commended for that edifying piety and religion which it professes. But those who go over to America are not commonly the most zealous. The desire of being Saints is not their motive to undertake the voyage. And so, tho* there are in the Indies, especially among the Spaniards of the best rank, persons of a very regular conduct, the most part are corrupt in their morals by interest, luxury, and an immoderate love of pleasures and conveniences of life. To judge by outward appearances, one would be persuaded that God is well served. But this is all a specious outside. Ignorance, injustice, pride, an insatiable thirst of gold, take in their hearts the place due to religion. The infidels come in time of peace to the Spanish towns to traffic. The counterfeit piety of the inhabitants does not deceive them long. They are immediately struck with the barbarous usage of their brother Indians. They soon perceive that the Spaniards, even those who are bound to give better exam ple, because they preach up virtue to others, shame, by their conduct, the religion they profess. When the Jesuit Missionaries, who are owned even by Sectaries to lead irreproachable lives even in America, endeavour to insinuate the holy maxims of religion into the hearts of these Indians they will scarce give them the hearing. If they succeed so far, as to bring over a few Infidels to Jesus Christ, the conversions are commonly of no long continuance, on account of the sad impressions, which the scandalous behaviour of the Spaniards makes on the new converts. When the Savages are told, that our religion does not allow polygamy; that it teaches humility, self-denial, and charity, they retort the manners of the Spaniards against all that has been said, and accompany their answers with a disdainful smile, and which is sufficient to defeat the warmest zeal. At last experience has too sensibly: convinced the Missionaries, that it is next to impossible to convert the Indians, who have opportunities of being acquainted with the Spaniards way of life; and that they must seek out other nations, which. by their situation had no intercourse with Europeans. How the enterprise succeeded we shall see very soon.",
+     "n": 14,
+     "k": 14
+    },
+    {
+     "en": "But first I am to give an account of a particular calamity, which oppressed the Indians grievously and for a long time. And now it is also 5 proper to shew my reader what the Mamelucos of Brazil are, the robbers I have already mentioned. These lights will be of great service to understand other things that follow in this work. work.",
+     "label": "p. 50",
+     "n": 15,
+     "k": 15
+    },
+    {
+     "en": "Some Spanish merchants that were settled on the other side of the mountains of Peru, and especially those of Santa Cruz de la Sierra, had entered into a kind of an association to make slaves of the Indians, and after that to bring them to market. They came with armed force into the lands of the Indians, and ran thro' an extent of Country of some ninety, or one hundred and twenty miles, or more, pursuing the Savages much in the same manner, as hunters follow their game. If the booty made in the enemies quarters did not answer their expectation, they fell unawares on the neighbouring Indian townships with whom they were at peace, and without mercy put all to the; sword, who pretended to resist, or burnt them alive in their huts. The rest were led off captives. Some injury or other was always pretended, to give a colour of justice to these atrocious attempts. These merchants when returned home sold their slaves very cheap to others, who drove crouds of these ill-fated creatures bound and fettered to Peru, where they sold them to considerable advantage The profit of the parties concerned amounted yearly to several thousand Piasters.",
+     "n": 16,
+     "k": 16
+    },
+    {
+     "en": "Mean while the true Spaniards could not see without horror and indignation so many nations unjustly oppressed, and sacrificed to the insatiable avarice of the inhabitants of Santa Cruz. But they dreaded men, who were in great credit by their riches, and no one, had courage to oppose this torrent of iniquity. The evil was inveterate, and proof against several rigorous Edicts of the Kings of Spain.",
+     "label": "p. 51",
+     "n": 17,
+     "k": 17
+    },
+    {
+     "en": "Father Joseph de Arce, a Jesuit, full of zeal for the salvation of souls, appeared in 1690 before the Governor of the Indies, and petitioned for leave to preach the Gospel in the Country of the Chiguitos. The merchants of Santa Cruz used all endeavours to prevent the success of the Missionary's proposal; they made no doubt that their trade must fall, if he were allowed to go on with his enterprise. All their efforts were without effect. The undaunted servant of God, whom neither fear, nor any human consideration could restrain, where the honour of God was concerned, in defiance to all opposition began his apostolic labours and excursions, which were afterwards blessed with wonderful success. Nevertheless the wretches went on plundering and carrying off Indians, till the Missionaries, who could not bear any longer being disturbed in their functions, nor the inhuman treatment of their Neophytes, and the cutting off thus all hopes of bringing over the other Indians to the fold of Jesus Christ, took the resolution of making their complaints to the royal audience, or tribunal, of Chuquisaca, and begged most earnestly that a stop might be put to these violent abuses, The merchants of Santa Cruz were supported and protected by a person of power in the Country; and the magistrates not daring to determine any thing in regard to the petition laid before them, referred the cause to the Viceroy of Peru. This was the Prince of Santo Bueno, a Neapolitan, and a man of great religion and piety. And this I can assure with so much the greater confidence, as I was very particularly acquainted with him at Bologna. He took instantly the most effectual and speedy measures to redress these flagrant disorders. The Prince issued a most rigorous ordinance, whereby every one was forbid under the penalty of banishment, confiscation - of goods and chattels, to sell, or purchase Indians, or make any attempt whatever on their liberty. As to Governors who should tolerate so criminal an abuse, he condemned them to be deprived of their posts, and to a fine of 12000 Piasters. These exact orders put an end to their ini- -quitous traffic; the Indians were molested no more; and it is to be believed, that they feel to this day the good effects of so wise a re* — —ö ⁴ñæ5 x —. — + oe A gulation, and so agreeable to the laws of nature.",
+     "n": 18,
+     "k": 18
+    },
+    {
+     "en": "But whatever the Indians suffered from the Spaniards, these unhappy nations have suffered still more from the Mamelucos of Brazil. And, here we shall give in a few words the history of this other set of robbers. N",
+     "n": 19,
+     "k": 19
+    },
+    {
+     "en": "Beyond the Rio Janeiro, and towards the Cape of St. Vincent, where Brazil is terminated, the Portuguese built on a very steep rock the town of St Paul by some called Piratininga. The climate is temperate, Inaccessible mountains and the thick forests of Pernabacaba surrounds, and is a fence to it on all sides. The territory is fruitful, and well cultivated; it produces plenty of all necessaries for life, as corn, Indian wheat, plenty of cattle, sugar, and several spices in sufficient quantity to supply the neighbouring Countries.",
+     "n": 20,
+     "k": 20
+    },
+    {
+     "en": "The inhabitants of this town, for want of European women married the natives of the Country. From this mixture of base with the noble blood of the Portuguese, sprung a race with all the defects of their mothers, and without any of their fathers virtues. They sunk into such disrepute, thro? the profligacy of their manners, that the neighbouring towns would have thought themselves utterly disgraced, had they kept up any. correspondence with the inhabitants of St. Paul. Tho' they were originally Portuguese, they were deemed unworthy of bearing a name, which they dishonoured by their infamous actions. They were called Mamelucos, and the name continues to this day in Brazil; tho* they commonly go among Historians by the names of Paulists,",
+     "n": 21,
+     "k": 21
+    },
+    {
+     "en": "However for some years they remained true to God and their King; and this was chiefly owing to the labours of the renowned Father Joseph Anchieta, the apostle of Brazil, and other Fathers of the Society of Jesus, who had a College at St. Paul's founded by the town. But at length, whether they found too strong an opposition to their dissolute lives from these Fathers, or whether the Governors of Brazil had not a sufficient regard and consideration for them, they turned out the Jesuits, and threw off in a manner all subjection to Portugal. For they obey the Governors of Brazil no longer than they please; that is, as long as it serves their interest; insomuch, that a kind of Commonwealth is formed in the town, and is governed by its own particular laws.",
+     "n": 22,
+     "k": 22
+    },
+    {
+     "en": "St. Paul, which at first had not above 400 inhabitants, slaves, negroes, and Indians, included; now reckons many thousands within the walls. The refuse of all nations is indiscriminately admitted. *Tis the asylum of all the Portuguese, Spanish, English, Dutch, and Italian robbers, who have left Europe to escape the punishments due to their crimes; or such as desire to lead a licentious life with impunity. as desire to lead a licentious life with impunity.",
+     "n": 23,
+     "k": 23
+    },
+    {
+     "en": "A Black who runs away from his master is sure to be well received.",
+     "label": "p. 55",
+     "n": 24,
+     "k": 24
+    },
+    {
+     "en": "The Mamelucos declare openly, that they are independent. But yet they pay to the King of Portugal yearly a fifth of the Gold got out of their mountains, which are not without mines. But when they pay, they never forget to protest, this payment is neither made out of fear, or on account of any indispensible obligation; but out of respect and consideration for his majesty, The advantageous situation of St. Paul, and the fortifications added by the inhabitants, have made the Portuguese drop, not the desire, but all hopes of ever subduing this strong-hold. Besides the arms common to them and the Indians, the Mamelucos have plenty of fire arms, brought partly by fugitive Blacks, or which themselves have taken from passengers, on the high ways. It appears, that they have got the secret of making gunpowder.,;",
+     "n": 25,
+     "k": 25
+    },
+    {
+     "en": "They are also said to have priests and religious among them; but certainly very little religion remains: and if the Mamelucos still call themselves Christians, they shew very little respect to the laws of Christianity.",
+     "n": 26,
+     "k": 26
+    },
+    {
+     "en": "In effect, from the time the Mamelucos withdrew their obedience to the authority of the Viceroy of Brazil, they took to pillage and plunder; and in a manner that only became the most barbarous nations. It is well known that they made yearly excursions, into the lands of the Indians, and carried off an infinity of these poor souls into slavery, in order to put them to hard work in the mines, and sugar plantations. The lands in the neighbourhood of St. Paul were ever after tilled by the poor",
+     "n": 27,
+     "k": 27
+    },
+    {
+     "en": "Indian captives only. The Provinces of Guaira, Paraguay, and Rio de la Plata, were the most exposed to the inroads of the Mamelucos, and were the places that suffered most. They destroyed entirely several populous townships of the Indians, and only spared those that paid them tribute. After they had depopulated their neighbouring Countries, they carryed on desolation to the more remote. It would almost be thought incredible, were it not attested by all accounts, that the Mamelucos frequently penetrated as far as the vast lake of the Xarayes, and to the river Maragnon; that in the space of five or six months they have made courses of three thousand miles in length; and it is not easy to understand how they found means to subsist at this distance from home, under a necessity of traversing immense tracts, which they had already ravaged. It is however certain, that very few of the Indian populations, which were so numerous about that lake, escaped their fury and barbarity.",
+     "n": 28,
+     "k": 28
+    },
+    {
+     "en": "They have not spared even the Spanish cities and Colonies; but pillaged some, and carried off the inhabitants. They have destroyed fourteen christian reductions, or townships; and in the compass of 130 years have made above two millions of Indians slaves, and among these fifty thousand christians. Among so many captives, scarce one in a hundred proved of any service. The greatest part perished with misery and hardship, before they reached St Paul; and those who came sound and safe were soon taken off with the bad air in the mines, or excessive labour in the Sugar-works. An authentic record has been seen, whereby it is proved that o",
+     "n": 29,
+     "k": 29
+    }
+   ]
+  },
+  {
+   "id": "mur9",
+   "zk": "Mur. IX",
+   "titel": "The music of the Indians",
+   "blurb": "The most famous pages of the book: missionaries who fished for souls with song, the chapels in every Reduction, orchestras of Indian-built organs, lutes and trumpets — and Father Cattaneo writing home to Milan for masses and vespers in music.",
+   "units": [
+    {
+     "en": "Introducing music among them was another means, which the Missionaries used, and is equally powerful to maintain and increase the devotion of the faithful, and to bring over infidels to our holy religion; and must have a place here. The greatest part of the Missionaries were sufficiently acquainted with this liberal art. How, music — the Indians, is not easy to imagine. The ministers of Jesus Christ began immediately to think of making their advantage of the particular inclination they observed in those people to harmony, A Missionary could hardly begin singing some canticles relating to christian doctrine, but these savage infidels at that time would instantly bolt out from their thickets, and lurking holes, and follow with the greatest transports the voice they heard. When the Missionary perceived a great number gathered about him, he would then set out with preaching evangelical truths, thus prepare the way for founding a new Reduction. Besides the natural inclination, which the savages had for all kinds of music, the Missionaries discovered that they had excellent qualifications for their becoming good musicians. There are very fine voices commonly found among them, owing in part, as it is pretended, to the waters of the Parana and Uraguay.",
+     "label": "p. 87",
+     "n": 30,
+     "k": 1
+    },
+    {
+     "en": "The Missionaries chuse among the children those who appear at that age best qualified to be formed into musicians. They teach them to sing, and to touch instruments with so much exactness and nicety, that their pious concertos are not less pleasing and affecting than those in Europe. And hence they have established in each Reduction a chapel; as they term it, or a band of musicians, who equally execute the easiest and the most composed pieces of music.",
+     "label": "p. 88",
+     "n": 31,
+     "k": 2
+    },
+    {
+     "en": "It must no doubt be surprising to hear, that we have scarce any musical instrument in Europe, that is not in use in the Reductions; that they play on the organ, lute, spinet, violoncello, trumpet, &c. and what is still more, that very near all the instruments used among them are of their own making.",
+     "n": 32,
+     "k": 3
+    },
+    {
+     "en": "Several Europeans, who have heard the Indian music, assure it is no ways inferior to that of the Spanish cathedrals. F. Cattaneo, among other things which he desired Mr. Cattaneo his brother to send him, asks the following in these words, by a letter of February 1730: \"I would gladly have also three or four masses, the vespers of the confessors, and those of our Lady, in music, with all the parts; the whole well copied as to the notes and words, and composed by the best masters in Italy; as also twelve or fifteen concertos of Signor Alberti of Bologna, the first of his composition, which are so much esteemed by the connoisseurs, and which are not too difficult for our performers.” The Missionary desired these things of his brother for his dear Neophytes. And hence a judgment may be formed of what the Indians are able to do as to music.",
+     "n": 33,
+     "k": 4
+    },
+    {
+     "en": "Let us add here the testimony of a Spaniard, who accompanied the Bishop of the Assumption, when that Prelate made his visitations in the Reductions of Uraguay, In one of the last visitations, he says, which his Lordship our Bishop made among the Guaranis, we were just coming into one of the Reductions; all the inhabitants were assembled there to meet the Bishop, a choir of children advanced towards us singing the praises of the christian doctrine. But one amongst them very soon engaged the attention and eyes of as many Spaniards as we were in company, He played on the violoncello so gracefully, and in so masterly a manner, that the Prelate struck with admiration, as well as the rest, ordered the choir to stop, and the child to come nearer, and play a sonata by himself. The child came forwards in obedience to his Lordship's orders, and after making a low and respectful bow to his Lordship and the persons who attended him, rested the instrument on his foot, and played about a quarter of an hour, with such exactness and so nimbly, that it was impossible to be tired with hearing and admiring the performance. On other occasions, as I have gone by myself through some of the Reductions, where I always found the kindest welcome from the Missionaries, I have heard the music of the Indians more than once, and always with the same surprise that I experienced at first, I shall not be easily brought to believe that the music of the most celebrated cathedrals in Spain can be heard with greater pleasure.” Such is the care of the Missionaries, to make an advantage of every thing that can endear religion to the Indians; and experience shews that this noble and masculine music of the church, far from softenin the heart, at once encreases the devotion of the Neophytes, and procures them a most sensible pleasure. This appears evidently when they assist at solemn masses, processions, and other pious ceremonies, where the praises of God, and his holy mysteries are sung forth in so devout a manner. This makes the strongest impression on the infidels that come to the Reductions, and inclines them most to fix their abode there.",
+     "n": 34,
+     "k": 5
+    },
+    {
+     "en": "The ancients in their writings recount wonderful instances. of the power of music on the fiercest minds, and their expressions really fall short of the truth. But nothing surely is so glorious for this charming art, as being highly instrumental in increasing the number of christians. Their esteem for music makes them look. upon being elected to the office of a chanter in a church as a singular honour. In effect the persons raised to this kind of dignity are afterwards esteemed the most knowing in the nation, as they can read the Mass, and th",
+     "n": 35,
+     "k": 6
+    }
+   ]
+  },
+  {
+   "id": "mur15",
+   "zk": "Mur. XV",
+   "titel": "The civil government of the christian settlements",
+   "blurb": "The utopia's mechanics, soberly described: Indian magistrates under royal sovereignty, common fields and storehouses, no money within the towns — the chapter Europe's philosophes would quote for a century.",
+   "units": [
+    {
+     "en": "THE temporal compared with the spiritual advantages enjoyed by the christians of Paraguay, are not respectively inferior to the latter. Perhaps our Europeans accustomed to luxury, state, and pleasures, will not be easily persuaded of it. But yet it really is so; and their situation, when examined by true principles, is preferable to the present state of the most flourishing nations in Europe. Their liberty is well regulated; they have in plenty all necessaries for life; their houses are small, but sufficient; peace, union, and concord, reign amongst them; and is not this all that can make a nation happy?",
+     "label": "p. 125",
+     "n": 36,
+     "k": 1
+    },
+    {
+     "en": "Thus the Indians themselves administer Justice, and govern the Reductions. As they all have no other object in view but the public weal, this makes them act in concert, and maintains a concord, and harmony among them extremely advantageous to the nation. Besides the Missionaries, whose disinterestedness is sufficiently known, and who are even universally respected for this reason, are very vigilant, and take care, that no one abuses the power he has by his office.",
+     "label": "p. 126",
+     "n": 37,
+     "k": 2
+    },
+    {
+     "en": "They never go to the full severity of the law in punishing criminals. A due regard is always had to the narrow compass of their understanding, which has a great share in the faults committed by the Indians. But as chastisements are necessary to keep within bounds such as are deaf to all motives but fear; and as some of these are always to be found in every Reduction; the royal Corregidor and the Alcaldes inflict penalties, but with great prudence and moderation. And no final determination is made without consulting the Missionaries. Ways and means are found to punish offences in such. a manner, that the offender may not conceive any aversion to continue his residence in the colony. But in case an atrocious crime is to be punished, which is capital, for which it would be difficult to produce precedents, the affair is carried to the tribunal of the Governor of the Province, in whom alone is vested the power of condemning an Indian to death.",
+     "n": 38,
+     "k": 3
+    },
+    {
+     "en": "If we consider next the burthens imposed. by the Kings of Spain on the Indians in the Reductions, these are so easy, that all the nations in Europe would think themselves happy under the same. A very small tribute is exacted as an acknowledgment of their vassalage; they have no other obligation besides, but to march for the King's service, when they are commanded to take the field; for building, or fortifying towns; but this seldom happens. They are very well recompensed in consideration of these burthens, by the privileges which Philip the IV. and Charles II. granted to the Indians, and which the most religious King Philip V. now reigning has confirmed.",
+     "n": 39,
+     "k": 4
+    },
+    {
+     "en": "1st. All the Indians, who have embraced the catholic faith, and who on their own accord have submitted to the crown, are the immediate subjects of the King; nor can their lands, or persons be made over in fee, or in Commendam to any one, (as it is done with respect to other Indians, who are subjects of Spain,) or any ways depend on any particular person. 2dly. No more than a Piaster a head can be annually demanded; while the other Indians, made over in Commendam, pay five times as much, and are besides liable to many other vexations. 3dly. The converted Indians are not taxed, till they are twenty years of age, nor is this tax payable by Indians, who have embraced the christian religion in an advanced age, nor by women, nor by any turned of fifty. 4thly. The Caciques, as being noble, and twelve other Indians, in every Reduction, who are employed in the service of the altar, are exempted from this duty.",
+     "n": 40,
+     "k": 5
+    },
+    {
+     "en": "The Indians pay this money themselves at the capital of the Province into the hands of the Kings officers, who immediately give them an acquittance in writing. The officers of the Reductions, in concert with the Missionaries, are to see that the tribute is duly paid; and this is done without any difficulty. And by this means there is no occasion in this country, as in Europe, for collectors, who are often a greater burthen, than the duties. they collect.",
+     "label": "p. 128",
+     "n": 41,
+     "k": 6
+    },
+    {
+     "en": "The Revenues paid to the King by the Indians hardly suffice to bear his expences on their account. For as often as evangelical labourers are sent by his orders from Europe to Paraguay, he allows three hundred Piasters for every one, and is at all the charges of their embarkation. Ten thousand Piasters more are allowed yearly out of the royal Treasury, for the support of the Missionaries in Paraguay. The King gives a Bell to every new Church, and all the sacred ornaments that are necessary for every new Settlement. The King is also at the expence of all the wine used at the altar, and of all the oil that burns night and day in the lamps before the altar. This is no trivial charge, as both are brought from Europe. They cultivate vines in Peru and Chili, which yield a pretty good wine; but this must come by landcarriage, which would add considerably to the expence. I am not informed, whether the Jesuits have attempted to plant the Olive in Paraguay. It seems that those trees would succeed in that soil, unless it be like that of Hispaniola, where they set down some plants brought thither, which in a few years came on to admiration, but never yielded any fruit. In fine, the royal Treasury allows each Reduction a hundred and forty Piasters to find drugs for their use. I do not bring in to account, the extraordinary alms given by the Kings of Spain, which often amount to considerable sums. It is observed that the catholic Kings are at the same charge, for the benefit of Religion, throughout all their Dominions in America; and in effect they receive even in this world the reward of their generous piety. It is a kind of a miracle, that they have kept a quiet possession of such a vast and extended empire for two hundred and fifty years.",
+     "n": 42,
+     "k": 7
+    },
+    {
+     "en": "Add to these advantages, the real title which the Indians have acquired to his catholic Majesty's protection by this easy tribute. They have more than once found the happy effects of his patronage, when they were not yet able to raise sufficient forces for their own defence.",
+     "label": "p. 129",
+     "n": 43,
+     "k": 8
+    },
+    {
+     "en": "Is it not another great advantage for the Indians to have it in their power, as it were, to decide all suits and differences without Lawyers,",
+     "label": "p. 130",
+     "n": 44,
+     "k": 9
+    },
+    {
+     "en": "Attorneys, Notaries, and to be utter strangers to all the by-ways and evasions of pettifoggers? If any dispute arises among them, it is immediately determined by a peremptory judgement of the Alcaldes, who neither know what it is to protract law-suits, or to take a bribe.",
+     "n": 45,
+     "k": 10
+    },
+    {
+     "en": "As to what concerns the substance of the Indians, there is not a family that has not a parcel of land allotted, more than sufficient, to support every person in it. The large rivers, which have infinite numbers and variety of birds on their banks, abound, as do the lakes, with all sorts of fish. One cannot step without meeting game of all kinds in the woods, and fruits, tho' wild, yet very agreeable to the taste. Bees of various kinds provide plenty of exquisite honey, and the finest wax. The sugar cane grows wild in moist places. Among the fish, particular notice is taken of two amphibious animals the sea hog and wolf, in shape and size not unlike the land animals from which they take their names. The skin of the sea-wolf or Base, is so soft and fine, that it might be mistaken for velvet; it is of a snuff colour, and sells at a high price if well cured, The flesh of the sea-hog is said to be very wholsome and delicious.",
+     "n": 46,
+     "k": 11
+    },
+    {
+     "en": "The knowledge of the true God, and raising from a brutish life to the practice of all christian virtues, are unquestionably the most signal benefits the Indians have received from the Missionaries: But what is there, that they do not owe to their care and trouble in procuring all conveniences of life for every Reduction, as far as their situation could allow?",
+     "n": 47,
+     "k": 12
+    },
+    {
+     "en": "To consider what the first settlements must have cost these evangelical workmen is something that must strike our imagination. A whole body of people was to be provided for the space of a whole year, that is till their first harvest. But what was still harder, a coarse and unexperienced people were to be taught by degrees those arts, which are necessary, and in process of time such as are useful, tho? not necessary, to society. The Missionaries were forced to act, if I may be allowed the expression, all sorts of parts, and to work at all trades successively. Sometimes they forwarded the public work much more by example, than words. Then they took to clearing of lands till that time waste and uncultivated. Some turned up the ground with wooden ploughs, others sowed Mayz, barley, beans, and all sorts of pulse, of which they had procured seeds. Some hewed down trees, and conveyed them to the Reductions, to build a church and houses. Others drove six or nine hundred miles herds of cattle, flocks of sheep, goats, and domestic fowls, which they fetched from the Spanish towns, to stock the settlements. Father Peter Espinosa lost his life in this commendable exercise of charity. He drove a numerous flock of sheep from Santa Fe, when he was taken, and massacred, by the barbarous nation of the Guaiaguires. What can be more edifying, than the project which those great men had in view! These were born in the chief cities of Europe: Many were distinguished by their noble Extraction, or had by their superior talents deserved applause in the chairs of the most celebrated universities. Not content to renounce the conveniences of life, and the reputation, which they had reason to expect in Europe, to the end they might embrace the painful and obscure life of Missionaries in barbarous countries, they became herdsmen, masons, joiners, and carters. They took to the meanest, and most laborious trades; and all to teach the Indians, whom they had converted these professions, and to make them understand, how necessary it was they should apply themselves seriously to those trades.",
+     "n": 48,
+     "k": 13
+    },
+    {
+     "en": "While the Missionaries toiled in the sweat of their brow, the Savages usually kept with folded arms, and looked on in amazement; but never so much as thought of offering to take their share in the work, tho' satisfied, that they were better able to bear it than the Missionaries, who on the other side underwent these fatigues for the benefit of their Neophytes, In the Spanish towns this scheme of the Missionaries was generally looked upon as a downright piece of folly. But God who had inspired this noble design to his servants, gave his blessing to an enterprise they went upon for his glory. Thanks to the early labours of these first brave Missionaries, the lands of the Reductions are this day well cultivated, and generally answer the labourers hopes. There are now in every colony Carpenters, Masons, Smiths, Weavers, Sculptors, Architects, and even Painters, and Engravers, who all vie one with another to excel in their professions. Nothing forwards them more in these arts, than their earnest desire to beautify the churches and altars. Some have learned to melt metals, and make all sorts of musical instruments. And lastly, the women can spin, sew, embroider, and cut out clothes. The Indians in general are represented as unfit for speculative sciences. I apprehend that this character is imposed upon them. This seeming dulness may be only an effect of their education. The Indians in Paraguay live much as our people of the country in Europe. Do not these appear as simple and coarse, without any genius or taste? And yet the Country, especially where the air is thin and sharp, produces as well as the towns, men of Invention and parts, who when they are trained to arts, sciences, and trade, are great proficients.",
+     "n": 49,
+     "k": 14
+    },
+    {
+     "en": "The same would happen, I am persuaded, among the Indians, could their children be exercised and brought up in schools as they are in Europe; and some would shine with distinction in sciences and the Belles Lettres. This may be well inferred from a great facility they have in learning music, and other arts, taught them by the Missionaries. We have here in Modena at messieurs Cattaneos, a small piece painted by an Indian, and ent over by Father Cattaneo their uncle. The piece does not indeed give any great idea of the painter; but the uncle took care to let them know that many better were to be seen in Paraguay. As the Indians are without means to come at nice colours, the colouring wants life and strength. They imitate extremely well with a pen printed Letters, Engravings on copper. Father Cattaneo gave the following account in a letter to his brother Cattaneo, dated the 30th of December 1730. el I send you a couple of draughts drawn by * an, Indian with his pen from the original prints. To me they appear two masterpieces. J am bold to say, that had these ** been done by some celebrated hand in Europe, he would have gained credit by the delicacy and easiness of the drawing. It is well known, how difficult it is to design * with the pen, But our admiration is raised much more, when we find it is the Work of a poor raw Indian, who spends his days at work in the fields. An Indian \" copied in the same manner a small picture ce of the conception of our Lady, such as is * commonly put in Breviaries, or the priests office book, which the German Missionaries. * prized so much as to send it to Vienna by way “of a valuable curiosity, to be placed in a famous cabinet with another of the same nature, sent formerly by Missionaries of the * same Nation. The two pictures you receive from me, are without dispute superior to * those in the elegancy of the work, and the great number, and the happy disposition of * the figures. I think they would grace a collection.\" collection.\"",
+     "label": "p. 134",
+     "n": 50,
+     "k": 15
+    },
+    {
+     "en": "If the Indians have no great success in several pieces of work, it is owing to the mediocrity of the patterns they copy. Can they want wit, who have so great a disposition for all arts? Is it not far more likely, that were the Indians applied to higher studies, their capacities would soon begin to shew and display themselves? Some would be fit to be admitted into the Society of Jesus. This would be a great advantage to-Paraguay. And this extended part of the Lord's vinyard would not be so often destitute of labourers.",
+     "n": 51,
+     "k": 16
+    },
+    {
+     "en": "Since the Missionaries have not yet taken this course, they must without doubt have cogent reasons for the contrary. I must however beg leave to affirm upon the evidence of several creditable relations from those parts, K 4 that ve 7",
+     "n": 52,
+     "k": 17
+    }
+   ]
+  },
+  {
+   "id": "mur18",
+   "zk": "Mur. XVIII",
+   "titel": "The military government of the Reductions",
+   "blurb": "The armed utopia: why the crown licensed Guaraní firearms, the militia that saved Buenos Aires, the drills after mass — the arrangement whose revocation in 1750 doomed the whole experiment.",
+   "units": [
+    {
+     "en": "THO' peace reigns within the christian Reductions, and they live in the greatest harmony, without even the least appearance of dissention, it has been found. necessary even from their beginning to introduce the military art among the Indians. These small Republics have on one fide the heathenish nations, that abhor christians, and christianity. If no check was given to their fierce nature, these barbarians, who are enemies to peace and quiet, and accustomed to pursue one another incessantly, with a view to devour. their enemies, would soon carry the terrors of war into the center of the christian Reductions. Some instances of a fresh date prove sufficiently all that can be apprehended from their cruelty. In 1735, they came pouring down on one of the two small Reductions founded in the country of the Ciriguanes. The church was burnt down, and the Missionary massacred. Another Reduction newly formed on the confines of the Province. of Chaco, between the Lules and Mocovies met with the same fate.",
+     "label": "p. 155",
+     "n": 53,
+     "k": 1
+    },
+    {
+     "en": "On the other fide, the Mamelucos of Brasil must ever be dreaded by the Neophytes, till the Kings of Portugal are pleased to take proper measures, for putting a stop to this terrible evil. We have given elsewhere an account of their horrible ravages in Paraguay. I beg leave to insert here another specimen of their cruelty. Tho? it is out of place, I hope the ' small digression will be forgiven, which is another proof of the undaunted zeal of the Missionaries, who labour and toil in Paraguay. The Mamelucos, towards the close of the last century, surprized the Reduction called Jesus and Mary in the Province of Guaira, which lies the nearest to St. Paul. Upon the first rumour of their arrival, Father Simon Mazetta a renowned Missionary, comes out of his house in a surplice and stole, and a crucifix in his hand, hoping they would respect a priest of Jesus Christ, But his hopes deceived him. One of their captains named Frederic Mello, to whom the Jesuit addressed himself first, lifted up his hanger and would infallibly have killed him, had he not luckily avoided the blow.",
+     "n": 54,
+     "k": 2
+    },
+    {
+     "en": "Almost at the same instant he saw the Cacique Coruba murthered by his side. The houses of the Neophytes and the church were to be plundered, and the Neophytes, men, women, and children, were made slaves. As the Mamelucos apprehended the christians of the neighbouring Reductions coming to assist their brethren, they set out at day break on their return to St.",
+     "label": "p. 156",
+     "n": 55,
+     "k": 3
+    },
+    {
+     "en": "Paul, with their captives, The Reductions were not then in a condition to undertake the deliverance of their brethren. But Father Mazetta, in concert with Father Francis Diaz, who came to join him, took a most heroic resolution. And this was to go after their dear Neophytes, and venture all the dangers of this hazardous step. Upon this the two Missionaries set out as soon as they could. What a sight for these tender Pastors to find all a long the road, old men, women, and children, some dead with hunger and hardships, others breathing out their last sighs! At length they overtook the main body, and without any regard to their own fatigues and without any respite set about comforting their afflicted charge, with the hope that men who went still under the name of christians, would at least and procuring them all the relief, that lay in their power. Neither the impious behaviour of the Mamelucos, nor the blows laid on, more than once, were able to check their resolution. At last, after a journey of nine hundred miles, they arrived at St. Paul's. All their representations were ineffectual, and could not prevent the immediate distribution of the captives, some to till the ground, others for the sugar works, and some to work in the mines.",
+     "n": 56,
+     "k": 4
+    },
+    {
+     "en": "The Missionaries saw clearly, that they had conceived very vain hopes of finding any redress, or even the shadow of Justice, at St. Paul's; they set out directly to the Bay of All Saints the capital of the Brazils, some six hundred miles distant from St. Pauls, and presented themselves to Don Francis Oliveyra, then captain general of the Brazils, and. requested of him the deliverance of their Neophytes. The humane Governor gave them letters, with orders to the inhabitants of St. Pauls for the restoring the Indians of the Reductions; and appointed a Commissary to accompany the Fathers in their return, and see that his orders were duly executed. The Mamelucos were like to tear the Missionaries in pieces. It was not very long before that Father James Afaro lost his life on the like occasion. At least, threats, and abuses were not spared, and in the night, arrows, and stones were sent in at the windows. At last all the pains of the Missionaries ended in procuring the liberty of some fifty Indians out of fifteen thousand. and upwards, taken away by force from Paraguay. Father Mazetta and his, companion made no long stay at St. Pauls but went off with just reasons to think that the Mamelucos meditated some new enter\" prise against the Reductions.",
+     "label": "p. 157",
+     "n": 57,
+     "k": 5
+    },
+    {
+     "en": "To prevent any such fatal accidents for the future, companies of foot, and troops of horse, were formed in every Reduction, on the same footing as they are in Spain. Their forces have two sorts of arms; first those which have been of old standing among the Indians, viz. the bow and arrow headed with bone, or wood as hard as iron, a sling, and a huge club made of very heavy wood, called Macana. The Neophytes want no other weapons to oppose the Infidels. Ow",
+     "n": 58,
+     "k": 6
+    },
+    {
+     "en": "But as the Mamelucos, a far more formidable enemy, are armed with pikes, swords, and fire arms; the Indians are allowed the same weapons, the better to withstand this dangerous foe. Thus when they are at war with them, the Infantry is armed with pikes, swords, and guns; and the Cavalry with lances and fire arms.",
+     "n": 59,
+     "k": 7
+    },
+    {
+     "en": "The only precaution they use, is to keep the fire arms lockt up in the armouries, and not to let the Indian have them but in case of necessity. There are proper officers, who have the charge of the arms, and are to keep them in order.",
+     "n": 60,
+     "k": 8
+    },
+    {
+     "en": "The royal Corregidor musters the troops of the Reduction, and exercises them every week, on the great place which forms a square, encompassed with buildings all of an equal height, except the side where the church and the house of the Missionary stand.",
+     "label": "p. 159",
+     "n": 61,
+     "k": 9
+    },
+    {
+     "en": "The Indians learn very early the use of the bow and fling. Prizes are given to those who excell most in these exercises, The first horses that the Indians saw frightened them so much that they climbed the trees as they would at the sight of lions or tygers. Now the Indians fit a horse extremely well, and their cavalry is the terror of all the enemies of the Reductions.",
+     "n": 62,
+     "k": 10
+    },
+    {
+     "en": "These forces being raised, not to make any conquests, but only for the defence of the country, great care is taken, that nothing be done which may hinder a good understanding with the Infidels. And this is necessary for the welfare of Religion.",
+     "n": 63,
+     "k": 11
+    },
+    {
+     "en": "As they found that the Mamelucos were constantly on the watch for a favourable opportunity to make new inroads among them, and that they sent out scouts for the discovering of proper roads, that they may arrive with greater security and privacy at the Reduction, the Neophytes are constantly on their guard. All the summer long, men are kept for no other end, than to scour the country. These will go a hundred and fifty, or a hundred and fourscore miles to observe whether any thing is done that seems to indicate the approach of their enemies, and then come back to make their report. If there appear any just reason to fear, arms are distributed to the troops, and the neighbouring Reductions have notice given them of the danger they are threatened with. The forces march soon after towards the enemy, with whom they endeavour to engage in an open country. The Indians are invincible, when they can use their horse and fire arms. Besides by going out to meet the enemy, the women and meaner sort of people are freed from those perplexing terrors, which are occasioned by the presence of the enemy. And lastly, for fear the Mamelucos and the savage Indians should take the advantage of the time when the church service is performing, it has happened sometimes that the christians even when they go to church take their bow and arrows with them. They never take the field without the permission and blessing of the Missionary. When they have this they make sure of victory. The people of St. Paul's have been taught by more than one defeat to fear and respect them. But the most signal victory which the christians have gained, was some years ago near the Reduction of Santa Cruz. The army of the enemy composed of eight hundred Mamelucos, and four thousand of their Indians, were comng routed. The greatest part lost their lives in the action, the others owed their lives to the mercy of the conquerors, who generously allowed them to go back to Brasil, and even furnished them with provisions for their journey, after they had taken an oath never more to molest the Reductions, These will very likely keep their word, and so much the more, for that the Reductions are in a condition to make them repent any such breach of promise,",
+     "n": 64,
+     "k": 12
+    },
+    {
+     "en": "As to the infidel Indians, it is certain they have not sufficient force to resist the christians; and consequently they are very careful, when near the Reductions, not to fall out with them. Those who are not disposed to live peaceably, generally retire to a greater distance; There are notwithstanding some Savages scattered about the country, who lie_in wait for the travellers in the high roads, or steal their cattle, and kill those that guard them, or carry them off prisoners, if they surprise them alone in the fields.",
+     "label": "p. 161",
+     "n": 65,
+     "k": 13
+    },
+    {
+     "en": "The Reductionists have not only signalized their bravery in their own defence; their important services for the state have gained them the highest commendations from the Kings of Spain, and the Governors of the Provinces As early as the year 1662, Don Alphonso Sarmiento, Governor of the Assumption, the capital of Paraguay, whilst he was on a progress to inspect his government, took up his quarters in a kind of castle on the road to Villarica. He saw himself on a sudden invested by a nation of infidels, and the most warlike in-those parts. Don Alphonso had but a score of soldiers, and very little provision. A Reduction in the territory of the Itatines was timely informed of the extreme danger the Governor was in. Three hundred men were instantly dispatched; they made forced marches, and in twenty four hours, which on another occasion must have been four days, they came up with, and fell very smartly on, the enemy. The action was obstinately disputed on both sides. Victory at last declared for the christians, who slaughtered a great number of Infidels, put the rest to flight, delivered the Governor, and escorted him safe to the capital. Sarmiento from that time could never give over commending the brave Indians. Don Sebastian de Leon was in the same danger, and in the same manner rescued by the Reduction of St. Ignatius in the Parana. No action of any importance has happened in Paraguay this hundred years, nor has any victory been gained, where they have not only had the greatest share, but have given the ' strongest proofs of their courage and zeal for the King's service, We must add that the Indians have always waged war at their own expence, without any pay, or being indemnified. They thought they were sufficiently paid; with the honour of serving his majesty, and were glad that they had it in their power to make this acknowledgement for the privileges he was pleased to grant, as a reward of their zeal and fidelity.. It must be owned however, that in order to succeed in the field they must have Spanish officers to head them, as they neither know how to put themselves in order of battle, or how to keep it. Their way is to rush on the enemy all together, with great outcries and howling dreadfully. This might perhaps do, were they only to engage other Indians. But they must be more cautious against Mamelucos and Europeans. They have prudent and experienced officers sent them in time of war, who train them up for some days before they lead them to battle. After this they do wonders, and fight like lions. The Portuguese found it so in the year 1680. This event is too glorious to the brave Indians, to be passed over in silence. The Portuguese in the year 1679, under the conduct of Don Emanuel de Lobos, had seized the post where the colony of the B. Sacrament is at present. The river La Plata forms here a port capable of harbouring a great number of ships and sheltered from contrary winds by the Island of St. Gabriel, which stands over against this harbour. While D. Joseph de Barro, Governor of Buenos Ayres, Kept dispatching expresses one after another to Lobos, to be informed directly by him what the Portuguese meant, the latter had all the leisure they wanted, to raise a fort well provided with artillery and to hold out a long siege.",
+     "n": 66,
+     "k": 14
+    },
+    {
+     "en": "Barro, though some thing too late, found he had been duped, and resolved to be even with Lobos. The Corregidors of the Reductions had orders to raise immediately an army of Indians. In eleven days three thousand three hundred Indians well equipt were ready to march. They brought with them four thousand horses, four hundred mules, and two hundred oxen, to draw the artillery. This small army in a short time came six hundred miles, which is reckoned to be the distance from the Reduction to Buenos Ayres,",
+     "label": "p. 164",
+     "n": 67,
+     "k": 15
+    },
+    {
+     "en": "The Indians made no doubt of meeting an army of Spaniards, who would find their account in the four. thousand horses they brought. But all the Governor's forces amounted only to three hundred, including the Spanish foot, Negroes, and Mulattos, that joined the Indians. To complete their distress, there were but two hundred muskets, and some broad swords, to distribute among them. The Indians were only armed with their slings, bows and arrows, and their clubs. The Inaian militia was not then upon the footing it is at present.",
+     "n": 68,
+     "k": 16
+    },
+    {
+     "en": "But however the siege of the fort built by the Portuguese was resolved on; and the Governor nominated D. Joseph de Vere to command the siege. This general, being determined to storm the fort, drew up his forces in a very singular manner. The four thousand",
+     "n": 69,
+     "k": 17
+    },
+    {
+     "en": "The horses without riders formed the van. The Indians came next led up by Spanish Officers. The three hundred regular foot made up the rear. D. Joseph imagined that the horses would serve as a rampart to his forces, and that after the first discharge of the artillery against the van, the Indian militia might easily scale the work, and get possession of the terre-plain,",
+     "n": 70,
+     "k": 18
+    },
+    {
+     "en": "This order of battle could only end in the defeat of his army. The Indians saw the danger; they halted, and represented to the General, that the horses frightened by the fire and noise 'of the Cannon would certainly fall back on the troops, and would throw them into disorder and confusion, and that taking this way to work would be only yielding the victory to the enemies.",
+     "label": "p. 165",
+     "n": 71,
+     "k": 19
+    },
+    {
+     "en": "D. Joseph approved of their opinion, and ordered the horses to be withdrawn, and set aside. Then the Indians resumed their march, and arrived under the walls of the fortress with surprising silence and order. He had forbid any of the soldiers stirring, till the firing off a pistol gave notice for the assault to be made on the place. Mean while an Indian had the courage to scale the walls and get up to the platform; and finding the centry asleep, he cut off his head, and was about doing as much for the rest, when he was fired upon. The Indians taking this to be the signal agreed on, scrambled up all of them with the greatest intrepidity to the terre-plain, and helped the Spaniards to come up after them. The Portuguese made a stout resistance for several hours, animated by the example of D. Emanuel Galban their Commander. This brave officer performed prodigies of valour; but at length overpowered by numbers, and covered over with wounds, he fell down dead on the walls of the place. They saw with wonder and surprize his Lady fighting sword in hand by his side, It was to no purpose for the Spaniards to offer an honourable retreat to this Heroine; she would hearken to no terms, but was wholly actuated by her affection to her husband, and fought to the last breath. The besieged seeing the fort covered with the dead, or the dying, begged quarter, But as the Indians did not understand Portuguese, and thought they were engaged with the Mamelucos of Brasil, did not give over slaying the enemies, till they received orders from the: Spanish chiefs. On the side of the victors in this memorable action no one gave more signal proofs than the Cacique Don Ignatius Landau. He saw his men disposed to lose ground at the beginning of the engagement, and restored them to their former intrepidity much more by his example than his words. The military stores, fortifications, and slaves were seized for the King. The rest 'of the booty was assigned by sound of trumpet to the Indians as a reward of their bravery. These good people fell on the provisions they found in the place, and took the knives, scissors, and other trifles, and the cloaths of the slain; while the Spaniards carried off at their ease the silver, gold, jewels, and what was most valuable. Two hundred Portuguese lost their lives in the action; the rest were made prisoners with their General D. Emanuel Lobos. On the victorious side, six Spaniards only and thirty Indians were killed. The wounded were in greater number. Four Missionaries at the Governor's request accompanied the Indians in this dangerous expedition. During the battle they were taken up with hearing the confessions of those who were dying, and afterwards gave all their attendance promiscuously to the wounded on both sides. This victory raised the reputation of the Indians to a high degree. The Viceroy of Peru, and the Governors of the provinces and towns, thought they were obliged to write to the court of Madrid on this important event. At the same time they insinuated how necessary it was to send to, and to maintain Jesuit Missionaries in those parts; that nothing could be of greater service to the Monarchy, than to second the zeal of these fathers in - establishing new Reductions, and that all their enterprises were both a credit to Religion and: an advantage to the State, Many other memorable exploits are related of these good Indians, whom nothing can withstand, when they are to fight for the interest of a Prince to whom they have chosen to be subject.",
+     "n": 72,
+     "k": 20
+    }
+   ]
+  },
+  {
+   "id": "mur20",
+   "zk": "Mur. XX",
+   "titel": "The persecutions raised through envy",
+   "blurb": "Muratori's defence of the missionaries against the standing accusations — hidden mines, kingdom-building, trade — written a decade before the Treaty of Madrid turned the accusations into policy.",
+   "units": [
+    {
+     "en": "THE credit of the Missionaries wat not be complete, if after so many labours in behalf of christian religion, they were not exposed to the darts of envy, that hideous monster, which delights in shedding its poison upon the brightest virtues, whereof the Missionaries of the society of Fesus have had but too much experience. Hence to finish their Eulogium, and complete this work, an account must be given of the hardships they have suffered, not only from heathens, and Savages, but from certain persons, who call themselves catholics, but have no other God besides Interest. In effect, who are the authors of so many calumnious imputations, by which attempts have been made to defame the Missionaries? Who are they, I say, but those base slaves of cupidity, and who have been mentioned here more than once? They only think of acquiring riches by all sorts of means. If they wish the conversion of the Indians, it is not that they desire to see great numbers of children added to the church, or to the subjects of his catholic majesty; all they hope for is to have a great number of slaves. The zeal of the Missionaries is an invincible obstacle to the execution of their iniquitous designs. Upon this account they would if possible exterminate them all, or ruin them at least in the opinion and confidence of his catholic majesty, and of his ministers, which these zealous servants of the church and the state have so justly deserved: in a word they would have the care of the Missions taken from them. To this effect essect for more than a century they have not only made Mexico and Peru, but Spain, and even all Europe, ring with their clamours, saying that if the Jesuits have founded so many Reductions in Paraguay, it was out of interested and ambitious views.",
+     "label": "p. 180",
+     "n": 73,
+     "k": 1
+    },
+    {
+     "en": "To hear them talk, * These religious men have made themselves petty princes. They almost engross all the commerce of Paraguay, they and their friends have the whole profit. They are so wealthy and powerful, that in a few years they will be able to invade America. As they can give liberally, they know how to have the Governors at their devotion, They have often procured officers, that did not please them, to be dismissed from their posts. They persuade the Indians, that to please God, they must consecrate all that is most precious to the service of the altar; that they must generously lay at the feet of the sacred ministers the first fruits, or rather the best part of the products of the earth. They add that whenever the Indians go a hunting, it is for the Missionaries, and that the herb of Paraguay is gathered for them only, and the value of jt amounts to several millions; and what is much more, that they receive all the gold that is found mixed with sand in the rivers, or taken out of the mines of Calchacos and Uraguay.”",
+     "label": "p. 181",
+     "n": 74,
+     "k": 2
+    },
+    {
+     "en": "This is an abstract of the defamatory reports spread about the world, either by word of mouth, or printed libels, against the Missionaries of Paraguay. Thus Coreal represents matters in his travels. But before we proceed farther, it is convenient to observe, that this traveller by his own confession never went farther than Buenos Ayres; that the name Coreal is a borrowed name, and a disguise put on by the author, a common shift in use with dealers in calumny and imposture; lastly neither he, nor any such as himself, have alledged, as yet, any particular fact against the persons whom they decry, or when they have, the fact has rested on no other evidence than their bare word. Let all men of sense judge, whether this be a sufficient proof, when such heinous imputations as those Charged against the Jesuits in Paraguay are the matter in debate. Not to copy after these rash persons, I will advance nothing without clear proofs.",
+     "n": 75,
+     "k": 3
+    },
+    {
+     "en": "I am not afraid of affirming with regard to the missions of Paraguay, (the only missions that I can give an account of, and of which I have certain informations,) that all the imputations I have summed up are mere calumnies, and detestable forgeries, suggested by envy and malice. What has been said of the method of Government in the Reductions, is enough to confute all the clamours of the enemies of the society of Jesus, and to disperse the phantom of sovereignty ascribed ro the Missionaries. The royal Corregidor, as I have already said, and now repeat it, administers justice in the King's name in every Reduction. justice in the King's name in every Reduction.",
+     "n": 76,
+     "k": 4
+    },
+    {
+     "en": "All the Indians depend on the governors of the Provinces nominated by the King. These two points are more than certain.",
+     "label": "p. 183",
+     "n": 77,
+     "k": 5
+    },
+    {
+     "en": "The Missionaries of Paraguay are only on the footing of curates, or parish Priests. Properly speaking they have no more authority, than parish Priests in the towns and villages in Europe. Can the docility of the Indians with any justice be imputed as a crime to their teachers? To change the hearts of barbarians, and make mildness and charity succeed to their former ferocity, to inspire the love of christian virtues, to maintain these happy dispositions in them for a whole century, and in so many different places; is this the work of worldly ambition, or of the most edifying and irreproachable zeal? This can be no problem to any one, that has the least knowledge of mankind.",
+     "n": 78,
+     "k": 6
+    },
+    {
+     "en": "As to the interested views fathered on the Missionaries, it is evident that the Indians pay them no tribute, nor tythes, nor first fruits. His catholic majesty allows every year a considerable sum for maintaining the Missionaries. The sum is paid into the hands of the superior of the Missions, who provides the Missionaries with all they want. This is the whole of their revenue. They receive now and then some charities from the more wealthy and virtuous Spaniards, and chiefly when a new Reduction is to be made. These alms are laid out for the relief of the indigent Indians, or to facilitate the conversion of savages.",
+     "n": 79,
+     "k": 7
+    },
+    {
+     "en": "The Missionaries are maintained, as if they lived in colleges. They cannot dispose of the least thing without leave from their superiors. After they have taken out of the allowance what suffices for their subsistance, the remainder goes to make the poverty of the Indians a lighter burthen. The faithful pay no surplice fees, and give nothing at christenings, marriages, or burials. The superior of the Missions not only provides all that.can be wanted, but also sends several bagatelles, which are known to - be very agreeable to the Indians, such as needles, scisors, knives, fish-hooks, medals, pictures of devotion, &c. The Missionaries would not enjoy the liberty they have in the exercises of their ministry, if they seemed to be in expectation of any advantage from the Indians. They would sooner or later have perceived, that the Missionaries were in hopes of being benefited by them, and would have shewn much less regard for religion and its ministers.",
+     "n": 80,
+     "k": 8
+    },
+    {
+     "en": "Some would fain make the world believe, that the Indians bring quantities of gold. But this is another manifest imposture, There is not any mine of any metal in all the Provinces comprehended under the name of Paraguay. There is no end nor measure of the dreams that take their birth from the avidity of the Europeans with regard to these extended tracts. If they see a mountain, they immediately conceit it full of gold. A long list of all the mines in Paraguay is to be seen in Coreal; but no one has yet got a single grain of the metal so much desired from these mines, to this day. Consult the work called à relation of Guianna. No one has ever penetrated into this barbarous country; those who have come the nearest, or who have been on the coast, have only seen some savages dispersed here and there among the woods. The author of the relation just cited, will shew you their houses and palaces filled with gold and silver vases.",
+     "n": 81,
+     "k": 9
+    },
+    {
+     "en": "If gold mines were discovered in Paraguay, there would be an end of that felicity of the Indians, on which I have dwelt so long. Nothing could stop the Spaniards, they would speed their way to these springs of wealth and opulence, and cloaking their own interest under the fair title of the interest of the state, they would ravage and lay waste all the christian settlements, which hitherto have had poverty for their strongest bulwark. As to the herb of Paraguay; here is what may be depended on as certain and out of dispute The Indians are allowed to bring every year to Buenos Ayres, or Santa Fe, twelve thousand Arrobes of this herb, worth at the current price four Piasters an Arrobe, that is a quarter of a hundred. So that if the Indians would make the most of their permission, they could only receive 48000 Piasters (not 12000 sterling) from this branch of their commerce.",
+     "n": 82,
+     "k": 10
+    },
+    {
+     "en": "Now it is certain, that the Indians have scarce brought in yearly 6000 Arrobes of this herb, the value of which is at most but 24000 Piasters, which beyond all doubt is not enough to discharge the yearly tribute to the King. But perhaps the Indians have another mart for this herb? Let us know, where they have been known to vend this commodity, and to whom such quantities have been delivered for so many years. For if such facts are advanced without any proof, it betrays an unbounded desire of mischief; and is more a means to blacken one's self, than an adversary.",
+     "label": "p. 186",
+     "n": 83,
+     "k": 11
+    },
+    {
+     "en": "And therefore it is no wonder, that all these accusations, laid so often before the court of Madrid, have always been without effect. The piety of the Kings of Spain was not to be surprised. And yet these accusations, so often proved to be false, have incessantly been renewed, and presented in other shapes; because there has always been a number of persons who sought to be rich and have a number of slaves, whatever it cost them. The Missionaries have constantly opposed all that offered to break in upon the liberty, or strike off the privileges, of their beloved Neophytes. And in this they are warranted by the ordinances of the catholic Kings, which forbid any Indian being made a slave. The Missionaries have hitherto prevented the establishing Commanderies in Paraguay, like those in Tucuman and other parts. The court of Spain, in consideration of their pressing instances, would never impose this intolerable yoke on the Indians, who by their own choice became subject to Spain, and to the holy laws of the gospel. Tho' this indulgent behaviour of the sovereign is very equitable, it is not at all relished by men, who pass into America with the prospect of great fortune, which they hope to raise in a short time. They have raised the greatest storms against the Missionaries, and have set every engine at work, to get them expelled from the Reductions; knowing full well, that it the shepherds are once dispersed, it will be an easy matter to enter the sheepfold, and commit all manner of outrages, without any danger of opposition from any person to their tyranny, But all these calumnies have only served to place the irreproachable conduct of the Missionaries in a stronger light. They have often earnestly intreated the Governors and Bishops to visit the Reductions, These have yielded to their intreaties; they have gone through a regular course of law to examine the accusations brought against the Fathers, and they have found every thing turned out contrary to the information laid against them by ill minded persons. The authentic instruments of all these inquiries, made at the request of the Missionaries themselves, are extant in the courts of Buenos Ayres, and the Assumption. All Spain has seen faithful copies of these deeds; and the letters wrote by the Prelates, and principal",
+     "n": 84,
+     "k": 12
+    },
+    {
+     "en": "Spanish Officers of the crown in America, in commendation of the Missionaries, and the wise government they have established in the Reductions. Whoever is not blinded with passion must own, that they have done the greatest and most important services to the church and the crown. However they have never been able to procure for themselves the tranquility and quiet, which they have procured for so many nations. If they have had some little respite, it was only a short lived truce. Another new storm has been lately raised against them, of which I think it my duty to give an account, as I have had an opportunity of being thoroughly informed of the affair.",
+     "label": "p. 187",
+     "n": 85,
+     "k": 13
+    },
+    {
+     "en": "In the year 1735 the Jesuits of Paraguay had intelligence of an information sent to the court of Spain in 1730 by D. Martin de Barua, Governour of that Province, Several copies were handed about at Buenos Ayres, and very likely in Spain. The substance of this information was, that indeed the Indians said they were subjects of the Spanish monarchy, but that they were of no advantage to the King; that the crown spent more upon them than it received from them; that hereafter a more considerable tribute should be exacted, and that they * should be put under Spanish Corregidors, and that a free trade should again be opened between the Indian and Spanish towns.",
+     "n": 86,
+     "k": 14
+    },
+    {
+     "en": "Barua hated the Jesuits too much not to take this occasion of painting them in the blackest colours. The Missionaries perceiving, that the Governor intended to introduce innovations very prejudicial to the Indians, and quite contrary to the well known intentions of his majesty, opposed these measures all they could. Barua, enraged at their opposition, expelled them twice by force from their college; but they were always reinstated by the express orders of his catholic Majesty. The information was fraught with heaps of base calumnies against those Fathers. Among many other things it was said, that they had more authority in Paraguay, than the King himself. And lastly the coarse impostures that Coreal had stuffed his voyages with thirty years before, were repeated word by word,",
+     "n": 87,
+     "k": 15
+    },
+    {
+     "en": "The mine was discovered in the manner we have mentioned, and F. James d' Aguilar, Provincial of the Jesuits in Paraguay, drew up immediately an excellent memorial, which he sent to his catholic Majesty in opposition to Barua's. He refuted all his calumnious imputations without leaving his adversary any possibility of making a reply. The whole strength of his argument was directed to show how irreproachable the Missionaries conduct had been hitherto, and how void of sense the advice was, which Barua gave to the court. He demonstrated by authenticated facts, that if the Governor's advice was followed, the only effect it could have would be to make the conversion of the Indians impossible, and to drive those back into infidelity whom they had brought over to the christian religion. I have by me a copy of this memorial, for which I am obliged to the generosity of the prince Cajetan Buon Campagno Duke of Sora, Lord steward of the household to his majesty of the two Sicilies. This nobleman was embassador from the King his master to the catholic King, when this affair broke out: As he was thoroughly convinced, that the accusations laid against the Jesuits were false, he made use of all his credit to hinder the Missions of Paraguay being disturbed. The Governour's information contained palpable contradictions, which F. Aguilar took up with great strength of reason. Here Barua pretended, that the Indians paid no tribute, there he allowed that they did, but that the tribute was not proportionable to the number of inhabitants. These propositions were demonstrated to be false by the memorial: for it was certain that the payment was regularly made every year since 1666, the year, when that tribute was first imposed. Barua's ignorance in this point was inexcusable, and perhaps much more for not knowing the privileges granted the Indians so often confirmed by the catholic Kings. Privileges by which the women in general, and the men under twenty, and those past fifty, with such as are lately become christians, are exempted from paying the tribute. It must not be forgot that the Indians are to pay it in ready coin. As they have neither gold nor silver, nor any money, they are forced to bring their goods to the Spanish towns, distant above six hundred miles, to get by the sale enough to satisfy the King's demands. These long journies are very expensive; the catholic Kings have thought them a very considerable article and they deserved some attention from the Governour.",
+     "label": "p. 189",
+     "n": 88,
+     "k": 16
+    },
+    {
+     "en": "Barua will have the tribute doubled; the Indians must pay two Piasters instead of one; they must have Spanish Correg idors, like the other Indians subjects to the Spanish monarchy. But it is answered, that a wide difference ought to be made betwixt Indians subdued by force of arms, and Indians of the Reductions, who have of their own free choice embraced christianity, by the diligence and care of the Jesuit Missionaries. These Indians have freely submitted to the Kings of Spain, on condition, to pay no more than the tribute of one Piaster, to have liberty to chuse their own officers themselves, and to have the government vested in the Reductions, like so many little republics, under the protection of the Kings of Spain. Hence it would be \"unjust to alter their form of government, and to increafe their burthens, and more particularly, for that the Indians are obliged to serve the King in time of war, to work at the fortifications of the Spazih towns, and when thus employed they bear their own expences without any charge to the King for their suppart. This very article suffices to shew in the most sensible manner, the falsehood advanced to 3+ IRE 8 advanced by the Governour, where he says, the Indians own no other masters, but the Provincial of the Jesuits, and the MissionaTIES..",
+     "label": "p. 191",
+     "n": 89,
+     "k": 17
+    },
+    {
+     "en": "readiness to obey the viceroys, the Governours of Provinces, the Bishops, and all the King's officers? Upon the least sign made by your Majesty's Governours, says Father Aguilar, they with the greatest eagerness leave the country, to the number of five or fix e thousand; without any delay they go from * home, from their wives and families. They e themselves find the necessary arms, if they have horses they bring them, if not, they go on foot ix or nine hundred miles, to \" work, to fight, and if necessary, to die in \" your Majesty's service. The Indians on these \" occasions receive no allowance or pay. \" Where is the vassal on earth, that serves his \" Lord in this manner? How then dare they ** say, that the Indians own no, other masters but the Provincials, and their Jesuit parishThe Governours of the Provinces visit \" the Reductions from time to time, and always find the most perfect submission to \" their orders. The officers of these diminu- * tive Republics go every year and present themfelves to the same Governours to ob-. * taintheir being confirmed in their respective * offices. Hence the reason which makes q e some Spaniards so averse to the Indians is On \"ers f this; they would have them not only subject * to your majesty, but to every Spaniard, even * to the servants and slaves of the Spaniards. e When a Spaniard, a Creole, a Mestizo, * or less than that, sees an Indian who does not * cringe before him, or blindly humour all his “ fancies, he declaims against the poor Indian, calls him a barbarian, a clown, that carries * insolence so far as to be wanting in the respect \" due to a Spaniard, and is no subject to the “King, and owns no authority but that of his the parish Priest.” Barua indeed allows, that putting a Spanish Corregidor over the Indians, would be running the hazard of an insurrection. But he adds with a matchless assurance, that the Missionaries dispose the Indians to revolt. But can he persuade any person, that such wise and religious men are capable of betraying thus the cause of their God, and their King? Can any one believe that they can come to this excess of wickedness, that to satisfy their resentment they would be easy and content to see their spiritual children return to their woods, and to their former barbarity and infidelity? Father d' Aguilar owns, that were an attempt made to change the government, the taking of such a step would probably, and very soon, be followed by a revolt. There have been but too",
+     "label": "p. 192",
+     "n": 90,
+     "k": 18
+    },
+    {
+     "en": "* The breed of Spaniards or Europeans with original Americans.",
+     "n": 91,
+     "k": 19
+    },
+    {
+     "en": "many instances of emotions and troubles caused by innovations of this nature, in the towns of the Assumption, Villa-rica, Corrientes, Santa Fe, and a thousand other places. From the time that the Spaniards were for overcharging the new christians, they saw them disperse, and raise the standard of rebellion, and raise the standard of rebellion, and become their most implacable enemies; they saw their own towns either plundered. and destroyed, or in a manner blocked up, for years together, All roads were infested, and an infinity of travellers murthered. And this points out the true reason why such an extent of country even in the neighbourhood of the Spanish towns is at present uncultivated; and indeed they scarce dare to stir out of the towns.",
+     "n": 92,
+     "k": 20
+    },
+    {
+     "en": "Barua was of opinion, that the Indians of the Reductions should be brought nearer to the towns, for that in case of a revolt they might be easier quelled. The stupidity of this advice appears immediately. The instances now made, and others very recent, shew what success may be expected from such attempts. If the Spaniards could never subdue by force of arms so many extended Countries inhabited by barbarians in the Paraguay, nor bring the rebellious Indians to reason; if the Spanish troops march but very, unwillingly against the Infidels, because they find that they have not sufficient forces to conquer the enemy; if in fine they have more than once repented that they have attacked them; what must the consequence be, were all the Reductions to join with the Infidels and bring their whole force against that handful of Spaniards which could be brought against them?",
+     "label": "p. 194",
+     "n": 93,
+     "k": 21
+    },
+    {
+     "en": "Will they pretend that the Missionaries have ever been concerned in the commotions that have happened hitherto? But is it not well Known, that on these occasions, the Missionaries have been the first victims of the enraged Indians? The massacre of their Missionaries has always been the first step those people, if they deserve that name, have taken to their revolt.",
+     "n": 94,
+     "k": 22
+    },
+    {
+     "en": "Barua further insisted, that a free trade might be opened between the Indians and the Spaniards; that the Indians should be allowed to sell the produce of their country, and their manufactures, to whom, and where they pleased. For the Indians have been this long time accustomed to send off to the Spanish settlements, the overplus of their cloths, tobacco, herb of Paraguay, hides; and skins, &c. after they are provided with what they may want. All these effects are consigned to the procurator general of the Jesuit Missionaries. They are sold or bartered to the best advantage; and afterwards the whole is exactly accounted for to the Reductions, deducting first on the produce of the goods the tribute payable to the King; the remainder goes to purchase what he knows to be necessary and useful for the Indians, without reserving the least thing for his own use.",
+     "n": 95,
+     "k": 23
+    },
+    {
+     "en": "'Tis seen immediately, that the quantity of the goods they trade in, and the use that is made of the money arising from the sale, are not objects, that can easily escape the vigilance and zeal of the King's officers. And tis impossible they should not know what they carry home, as well as what they have brought to market,",
+     "n": 96,
+     "k": 24
+    },
+    {
+     "en": "In other respects, the excessive simplicity of the Indians cannot admit of allowing any contract to be made by them without the approbation of the Procurators general. When left to themselves, they. have been a hundred and a hundred times tricked by the Spaniards, who dealing with poor people, unacquainted with the value of their goods, have given them only a Piaster, and often much less, for what was worth ten or twelve.",
+     "label": "p. 196",
+     "n": 97,
+     "k": 25
+    },
+    {
+     "en": "The Spaniards would be extremely pleased with the liberty of frequenting the Reductions; they would carry thither trifles of no value, glass beads, or such as desire to lead a licentious life with impunity. as desire to lead a licentious life with impunity. like things, which they themselves call baits. The immense profits the Europeans get by these bagatelles among the barbarous nations of Asia, Africa, and even of America, is well known. If no opposition was made to the enterprises of some Spaniards, the Indians would be soon fleeced in the same manner, It has happened too often, says F. d' Aguilar, that the Indians have stolen horses and mules, eyen those that belonged to the public stock, or to the church, to exchange them for trifles that a Spaniard has let them see. Now this is the unjust and dangerous trade which the Missionaries desired to prevent, as fathers and guardians of the people entrusted to their care; and they believe that your Majesty's intention is the same. Those who would have the commerce of the Indians upon another footing than it is at present, are every one of them persons who, without any scruple, would take an uncharitable advantage of their simplicity to cheat the Indians, and who look on what belongs to these poor people as derelict goods, which every Spaniard has a right to seize on.",
+     "n": 98,
+     "k": 26
+    },
+    {
+     "en": "But what deserves more particularly your Majesty's attention is that if the Spaniards were permitted to treat immediately with the Indians, these would suffer irreparable damages from their ill examples absolutely contrary to the morals and laws of christianity. And moreover, that the Spaniards I speak of would be sure to propagate among the Reductions pernicious maxims against the ministers of Jesus Christ, By frequently molesting and cheating the Indians, they would soon bring them to be as vexatious and as deceitful as themselves. Nothing is left unpractised to decoy them into the Spanish towns, They engage the husbands to leave their wives, and the children to fly from their parents. These they take when they can, and carry off persons of all ages and both sexes. Would to God we had never known by fatal experience what they are capable of. To prevent these evils, the Spaniards were forbidden to make any long stay, ' when they passed through any Reduction. This prohibition however does not concern the bishop, governours, or their officers. Not long ago a lieutenant of your Majesty's dragoons continued about a year in one of the Reductions, with four soldiers of the garrison of Buenos Ayres, by order of the governour of the province D. Bruno de Zavola. He had been sent to put such arms as were necessary into their hands, to teach them the proper use of them, and to prepare them for the expedition from Paraguay.",
+     "label": "p. 197",
+     "n": 99,
+     "k": 27
+    },
+    {
+     "en": "Father d' Aguilar adds what has been so often mentioned, and is confirmed by the most authentic attestations of the bishops and governours, printed at Madrid, viz. that to communicate with the Spaniards is a contagious evil for the Indians. If an infidel nation frequent the Spaniards, it is near an impossibility to convert them,",
+     "n": 100,
+     "k": 28
+    },
+    {
+     "en": "This has been found too true by experience in all these Provinces. To hope to bring over to christianity the Payaguas in Paraguay, the Charuas, the Calchaguis, the Abipones near Corrientes and Santa Fe, the Pampas, the Minuanes towards Buenos Ayres and the other Pampas settled in the country adjacent to Cordova, is to hope for the conversion of th",
+     "n": 101,
+     "k": 29
+    },
+    {
+     "en": "What Coreal says of the gold brought to the Missionaries, who recommend the contempt of worldly wealth to the Indians, has been already observed. This author, who has all the air of Spaniard and a Catholic, goes on and says, that the zeal of the good Fathers redoubles when the time approaches to receive the tribute from the people, that they collect it after the Sermon, and take care to get all that is collected brought safely to be lodged in the Magazines of the Society.",
+     "n": 102,
+     "k": 30
+    },
+    {
+     "en": "After F. d' Aguilar has drawn up in his memorial all the reasons for hindering the destructive commerce which Barua openly favours, he affirms without any fear of being contradicted, that if any opposition is made to this commerce, it is not with a view to obstruct the Spaniards in the discovery -of those chimerical gold mines, trumpt up by antient enemies of the Society; and which imaginary mines are still the idols of some persons blinded with interest and passion. Is it possible, that such a great quantity of Gold as they publish should not some where or other be betrayed by the brightness of the metal. Have not several juridical inquiries been made at the request of the Jesuits themselves on this account? Has not the world been convinced in process of time, that the accusations formed to this effect by several persons against the Jesuits were entirely calumnious? Are not the sentences past by your Majesty's judges against the informers manifest proofs of what I advance? Tho? this gold should not discover itself, it would have been infallibly discovered by so many Spaniards both ecclesiastics and secular, and persons of so much wisdom and zeal for the good of the state, who have seen all the Reductions. To go farther, could so many Indians who go down the rivers in their floats, and who land in the Spanish towns, so many fugitives, who, as may be well supposed, have been closely examined on the matter, would they all have been totally ignorant of it? Would none of them have revealed it?",
+     "n": 103,
+     "k": 31
+    },
+    {
+     "en": "Barua goes on with the accusation. He charges the Missionaries with receiving the whole growth of the land, and the produce of their Manufactories, without the Indians being allowed any thing but their cloathing. Calumnies, which can no ways be supported; since it is evident that the Indians pay their Pastors neither tribute nor tythes. And what is gathered from the Tupambae, or the land in common, is lodged in the public Granaries, and public Magazines.",
+     "label": "p. 200",
+     "n": 104,
+     "k": 32
+    },
+    {
+     "en": "These public funds are employed for the payment of the tribute, which the Indians, left to their sloth and negligence, would never acquit; and also to bear their expences, who are abroad in the service of the Reduction, or of the King in war, or otherwise. And farther, to supply the Indians with the herb of Paraguay, tobacco, cotton, horses, mules, horn-cattle, tools, arms, drugs; to support the expences of the church, and keep it in repair; to relieve the sick; not to mention the meat given daily to the children, when they have done their days work. It is a calumny, F. d' Aguilar goes on, to say, that the Missionaries, instead of employing the revenues of the Tupambae in procuring what is useful for the Indians, make use of them to provide all the conveniences of life, to enrich their college, relations and friends, or to feed their vanity. Let these sharp sighted people tell, whether they ever saw a Missionary with an equipage suitable to a wealthy and rich person; whether they have seen any of these Fathers, returning to their Colleges, or going from one part of the country to another, carry any thing with them, but a a pair of small bags, or a little box, with a little linnen, or some cloathing suitable to their state, and provisions for the road. Has any one ever found at their death, any quantity of gold, bills of credit, rich furniture, or any thing of this nature?\"",
+     "n": 105,
+     "k": 33
+    },
+    {
+     "en": "In fine, to give fresh proof of the Missionaries disinterestedness, Father d' Aguilar says, that the General of the Society of Jesus has forbid in the most express and strong terms, to all particulars, and even the Provincial, to appropriate any thing whatsoever from the public Magazines, or dispose thereof otherwise than for the relief of the Indians, tho' it should be by way of alms, or for pious uses. The General has also forbid his subjects all palliated trafic, or any charity, from the lands of the Reductions, duftions, to poor Colleges. And in effect the condition most Colleges are in, in America, shows that the General's orders are well observed. And the Bishops, and Governours of the Provinces, confirmed this by their unsuspected evidence at the court of Spain, It is not foreign to the purpose to observe, that the Governour accusing the Jesuits of so many atrocious crimes, does not allege a single fact that he pretends to warrant, If all the imputations he lays to the Missionaries were true, ought not a person in authority, as he was, to have been provided with sufficient materials to convict them clearly? He might have filled the country with spies, and got juridical informations drawn up, and those backed with proper witnesses, and incontestable proofs. And yet nothing of this has been done; the information only offers to view a vague declamation unsupported by any solid proofs. There appears in every page, a man who speaks and shews that he is carried away with passion; and not a Governour of a Province, examining and discussing the affair with the wisdom and gravity becoming his station; nor making use of the helps his post could supply. Whilst Barua strove all he could to decry the Missionaries of Paraguay, some late converted nations revolted; for that they could not bear any longer the cupidity and pride of the Spaniards. These melancholy events were but too strong a proof of the truth Father d Aguilar had advanced in his memorial. Nevertheless the Government found powerful protectors at court; many advised the catholic King to exact a larger tribute from the Reductions. It was a sure means to lose the Indian Colonies in a short time, and to increase still more the hatred and animosity of the savage Indians; in a word, to confirm them in their persuasion, that the only design of making them christians was to make them slaves. But no Prince for this long time has been seated on the Spanish Throne, who has not professed a singular piety, and a particular attachment to the duty of a christian, Philip V. went on gloriously in the footsteps of his illustrious predecessors. He saw all the injustice of the counsels suggested to him by some persons, and that he could not follow them without a great prejudice to religion, and to the state, which in many occasions had received great assistance from their important services. In fine, F. d' Aguilar's memorial made so strong an impression on the King, that he forbid under the severest penalties molesting henceforwards the Indians and their zealous Pastors. 5 And thus ended this affair, which brought the Reductions to the very brink of ruin. God only knows what is to be. There is room to hope, that nothing will ever weaken the true zeal which inflames the hearts of the catholic Kings, to promote the conversion of infidels. These Princes will never cease protecting",
+     "label": "p. 201",
+     "n": 106,
+     "k": 34
+    }
+   ]
+  },
+  {
+   "id": "montoya",
+   "zk": "Mont.",
+   "titel": "Montoya's own voice: the exodus, and the martyrs of Caaró",
+   "blurb": "Four passages of the Conquista espiritual (1639), bilingual: the protagonist of the great exodus of 1631 at the falls of the Paraná — the stockade, the three embassies, the three hundred canoes — and the deaths of Roque González and Alonso Rodríguez at Caaró in 1628, with the bell kept as a relic.",
+   "units": [
+    {
+     "n": 107,
+     "k": 1,
+     "orig": "Volvamos ahora á nuestra flota de balsas, que iba caminando, al parecer segura de enemigos que por detrás dejaba, cuando tuvimos aviso que los españoles, vecinos de Guairá, nos aguardaban en un estrecho y peligroso paso que hace el famoso salto del Paraná, en cuya ribera habían fabricado una fortaleza de palos para impedirnos el paso y cautivar la gente. La traza era que desde este fuerte, al pasar las embarcaciones, fuesen derribando los remeros y gente que podía defenderse, y debilitando con esto aquella tropa, saliesen ellos á la presa. Supe el caso, y dudoso que fuese así, dejando la gente, me adelanté en una embarcación ligera. Hallé ser verdad; entré en aquel palenque, seguro de traición; quejéme dando mis razones, á que cerrando los oídos sacaron sus espadas, y poniéndome cinco á los pechos me quisieron tener por prisionero. Salí por medio de ellas ayudado de una sobrerropa que llevaba.",
+     "en": "Let us return now to our fleet of rafts, which went on its way, safe, as it seemed, from the enemies it was leaving behind, when word reached us that the Spaniards, the settlers of Guairá, were waiting for us at the narrow and dangerous passage made by the famous falls of the Paraná, on whose bank they had built a stockade of timber to bar our passage and enslave the people. The plan was that from this fort, as the vessels passed, they would shoot down the rowers and whoever could defend himself, and, having weakened the company, come out for their prey. I learned of it and, doubting it could be so, left the people and went ahead in a light craft. I found it true; I entered that stockade, certain of treachery; I made my complaint and gave my reasons — at which, shutting their ears, they drew their swords, and setting five points at my breast would have taken me prisoner. I came out from among them, helped by an overgarment I wore.",
+     "label": "The fleet of rafts at the falls of the Paraná (1631) · p. 157"
+    },
+    {
+     "n": 108,
+     "k": 2,
+     "orig": "Volví á mis compañeros á consultar el caso, que causó á todos pena y dolor, viéndose perseguidos y atajados de la fortuna, que por todas partes quería hacer presa de ellos. Resolvimos que volviesen dos Padres á requerir á aquellos hombres nos diesen paso libre... Fuimos dos religiosos; roguélos que nos dejasen pasar; hallélos aún con más aceros á la resistencia... Los españoles, picados de lo que oyeron, recelaron su dureza; ya no se veían seguros en el fuerte, ya les parecía verse consumidos, y cuando la conciencia aprieta los cordeles aparece la verdad muy clara. Juzgaron su acción por muy injusta, y así, enviándonos mensajeros, nos pidieron que les diésemos término y seguro para salir de aquel palenque. Dióseles con mucha humanidad y cortesía.",
+     "en": "I returned to my companions to take counsel, which brought grief and pain to all, seeing themselves hunted and cut off by a fortune that on every side sought to make them its prey. We resolved that two Fathers should go back and demand of those men free passage... I went myself with another religious; I begged them to let us pass, and found them harder set than ever on resistance... But the Spaniards, stung by what they had heard, began to mistrust their own hardness; they no longer felt safe in their fort, they seemed to themselves already consumed; and when conscience tightens the cords, the truth appears very plain. They judged their own action most unjust, and so, sending us messengers, they asked us for terms and safe-conduct to quit that stockade. It was granted them with much humanity and courtesy.",
+     "label": "Three embassies, and the fort gives way · p. 158"
+    },
+    {
+     "n": 109,
+     "k": 3,
+     "orig": "Con esto tomamos aquel puesto, donde fué fuerza dejásemos las canoas; porque por allí es innavegable el río por la despeñada agua, que forma remolinos tales, que rehúsa la vista el verlos por el temor que causan. Con todo eso probamos á echar por aquellas rocas de agua 300 canoas, por ver si salían algunas sanas, porque pasadas 25 leguas que habíamos de fuerza caminar por tierra, habíamos de volver á tomar el mismo río y rumbo; pero el ímpetu del agua, la profundidad inmensa y el arrebatado movimiento con que daba con ellas en asperísimos escollos, las volvía astillas... Pasado ya aqueste impedimento, tratamos de seguir nuestro camino por tierra; todo viviente apercibía su carga: varones, mujeres y niños, acomodando sobre sus costillas sus alhajas y su comida.",
+     "en": "With this we took that post, where of necessity we had to abandon the canoes; for there the river is unnavigable by reason of the falling water, which makes such whirlpools that the eye refuses to look on them for the terror they cause. Even so we tried sending three hundred canoes down over those rocks of water, to see whether any would come through whole; for after the twenty-five leagues we were forced to march overland, we had to take to the same river and course again. But the rush of the water, the immense depth, and the violent motion with which it dashed them on the sharpest reefs turned them all to splinters... That obstacle passed, we set ourselves to follow our road by land; every living soul took up a burden — men, women and children, settling on their shoulders their few treasures and their food.",
+     "label": "Three hundred canoes over the falls · pp. 158–159"
+    },
+    {
+     "n": 110,
+     "k": 4,
+     "orig": "Estaban tan ignorantes los Padres de esta alevosía, que los PP. Roque y Alonso trataron de celebrar fiesta á la dedicación del pueblo del Caaró... El santo P. Roque, después de haber dicho la Misa y dado (con la devoción que solía) gracias al Altísimo, por sus propias manos quiso atar la lengüeta á una campana, cosa nunca vista de aquella gente bárbara, para con su sonido regocijar la fiesta. Apenas le vió Carupé, cacique principal, ocupado en esta acción, cuando hizo señas á un esclavo suyo, que ya estaba prevenido, para que le matase. Levantó este vil esclavo una porra de armas, que aunque de madera imitaba al hierro en su dureza y forma, y dando al Padre un furioso golpe en el cerebro le hizo pedazos la cabeza, con que á golpes y repique de campana voló su alma regocijada al cielo. Hoy tenemos esta campana por reliquia... Partieron en cuadrilla á la choza donde el P. Alonso estaba, que al ruido de la algazara llegaron juntos él y su muerte á los umbrales... y el Padre con amor de hijo se acercó á su ya muerto Padre, repitiendo estas razones: ¿Hijos, por qué me matáis? ¿Qué hacéis, hijos? ... en los mismos umbrales le cogió la muerte.",
+     "en": "So ignorant were the Fathers of this treachery that Fathers Roque and Alonso set about celebrating the feast of the dedication of the town of Caaró... The holy Father Roque, after saying mass and giving thanks to the Most High with his accustomed devotion, wished with his own hands to hang the clapper in a bell — a thing never yet seen among that barbarous people — to gladden the feast with its sound. Scarcely had Carupé, the principal cacique, seen him occupied in this work when he made a sign to a slave of his, already prepared, to kill him. That vile slave raised a war-club which, though of wood, imitated iron in hardness and form, and striking the Father a furious blow on the skull shattered his head — and so, amid blows and the pealing of the bell, his rejoicing soul flew to heaven. We keep that bell today as a relic... Then they went in a band to the hut where Father Alonso was, who at the noise of the tumult arrived together with his death at the threshold... and the Father, with a son's love, drew near his already dead Father, repeating these words: Children, why do you kill me? What are you doing, children? ... on that same threshold death took him.",
+     "label": "The deaths of Roque González and Alonso Rodríguez at Caaró (1628) · pp. 229–231"
+    }
+   ]
+  }
+ ]
+}

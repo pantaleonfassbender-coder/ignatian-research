@@ -34,7 +34,7 @@ export const workOf = id => (D.works || []).find(w => w.id === id) ||
 export const searchProg = () => (D.program || [])
   .filter(p => p.status === "shipped" && p.datei)
   .map(p => ({ id: p.id, kurz: p.kurz || p.zk || p.id, zk: p.zk, titel: p.titel }));
-const PROGCOLOR = { formula: "#a3873c", pascal: "#b0687a", monita: "#9a6a9a", dominus: "#7a6a56",
+const PROGCOLOR = { formula: "#a3873c", paraguay: "#5f8a62", pascal: "#b0687a", monita: "#9a6a9a", dominus: "#7a6a56",
   xavier: "#5a8a8a", imago: "#a08a50", spee_cautio: "#6a8a5f", spee_trutz: "#86a06a",
   nadal: "#6f7fae", rodriguez: "#8a6f5a", caussade: "#7d6a92", acosta: "#4f7f74",
   ricci: "#a3584e", relations: "#5f7a99", ratio: "#7a7f5a", conimbricenses: "#6a5f7f",

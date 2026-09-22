@@ -94,6 +94,27 @@ and therefore have no source entry here; their editions are named on the method 
 - English: Reuben Gold Thwaites (ed. & trans.), *The Jesuit Relations and Allied Documents*, 73 vols. (Cleveland: Burrows Brothers, 1896–1901) — a pre-1930 publication in the United States public domain. The text follows the electronic transcription of Thwaites's edition hosted by Creighton University — <https://moses.creighton.edu/kripke/jesuitrelations/> — spot-verified against the Internet Archive scans of the Burrows printing (e.g. vol. 34 — <https://archive.org/details/jesuits34jesuuoft>); a transcription of a public-domain text adds nothing licensable. Thwaites's page numbers, preserved as markers in the transcription, are carried on every paragraph. Four selections: JR 7 (Le Jeune, Relation of 1634, ch. XII), JR 12 (Brébeuf's Instructions, in the Relation of 1637), JR 34 chs. III–IV (Ragueneau, Relation of 1649).
 - French originals (named, not yet carried): on the facing pages of the same Thwaites volumes.
 
+### The Reductions of Paraguay — Muratori and Montoya · `data/paraguay.json`
+
+- English: L. A. Muratori, *A Relation of the Missions of Paraguay. Wrote originally in
+  Italian … and now done into English from the French translation* (London: J. Marmaduke,
+  1759) — <https://archive.org/details/bim_eighteenth-century_a-relation-of-the-missio_muratori-lodovico-anton_1759> —
+  United States public domain. Chapters V, IX, XV, XVIII and XX carried complete, with the
+  1759 pagination on the paragraphs. The OCR preserves the long ſ as its own character, so
+  its conversion is deterministic; catchwords, quire marks and running heads are stripped;
+  residual scan damage is repaired in the disclosed fix tables of `tools/build-paraguay.py`
+  (word fixes, and a paragraph-surgery list that returns page-turn fragments to their
+  sentences); chapter numbers whose heads the scan destroyed are restored from the book's
+  own table of contents ("CAP. IX. The Music of the Indians … 87") and the chapter
+  sequence. The print's eighteenth-century spellings (cloath, compleat, tho') are kept.
+- Spanish: A. Ruiz de Montoya, *Conquista espiritual hecha por los religiosos de la
+  Compañía de Jesús* (Madrid, 1639), quoted from the Bilbao reprint of 1892 —
+  <https://archive.org/details/conquistaespiri00montgoog> — both public domain. Four
+  passages (the falls of the Paraná, 1631; the deaths of Roque González and Alonso
+  Rodríguez at Caaró, 1628) transcribed from the OCR and emended against the sense, with
+  the 1892 page numbers; the English of these passages is this site's unofficial working
+  translation, dedicated CC0.
+
 ## Friedrich Spee
 
 ### Cautio Criminalis (selections) · `data/spee.json`

@@ -20,7 +20,8 @@ the schools to Thomas and Aristotle), Nadal's annotations on the Examen,
 Rodríguez's *Of Conformity to the Will of God*, and the *Abandonment to Divine Providence* attributed to
 Caussade — Xavier's letters from India and Japan, Acosta's *Natural and Moral History of the
 Indies* in Grimston's English of 1604, Ricci and Trigault's China in Purchas's digest of 1625,
-the *Jesuit Relations* from New France in Thwaites's translation, the emblems of the *Imago primi saeculi* of 1640
+the *Jesuit Relations* from New France in Thwaites's translation, the Reductions of Paraguay
+in Muratori's *Relation* of 1759 with Montoya's own voice beside it, the emblems of the *Imago primi saeculi* of 1640
 with their Dutch mirror, Friedrich Spee (the *Cautio Criminalis* and the *Trutznachtigall*), and the
 counter-voices — the forged *Monita secreta*, Pascal's *Provinciales*, and the brief *Dominus ac
 Redemptor* of 1773 with which the corpus closes. The apparatus indexes them by their canonical numbering,
@@ -94,7 +95,8 @@ translation); four letters of Francis Xavier (Coleridge's 1872 biography); eleve
 *Natural and Moral History of the Indies* (Grimston's 1604 English in the Hakluyt printing of 1880);
 eight sections of Ricci/Trigault's *De Christiana expeditione* (Purchas's 1625 digest in the
 MacLehose printing of 1906); four selections of the *Jesuit Relations* (Thwaites's edition and
-translation, 1896–1901); eleven emblems of the *Imago
+translation, 1896–1901); five chapters of Muratori's *Relation of the Missions of Paraguay*
+(London 1759) with four bilingual passages of Montoya's *Conquista espiritual* (1639/1892); eleven emblems of the *Imago
 primi saeculi* (Antwerp 1640) with the Dutch *Af-Beeldinghe* of the same year and page images;
 Friedrich Spee — the *Cautio Criminalis* (two dubia, Rinteln 1631) and the *Trutznachtigall* (two poems,
 Cologne 1654); Nadal's *In Examen annotationes* (Latin of the 1919 Monumenta, with a working
@@ -159,7 +161,7 @@ A few megabytes of JSON, all of it derived, editorial, or public-domain source t
 | `works.json` | the seven core works: translator, rights, citation form, body range, sections, measures |
 | `program.json` | the program modules — line, status, source, and (for shipped ones) data file and citation form |
 | `exercitia.json`, `directorium.json`, `memoriale.json` | the shipped full-text core editions (trilingual Exercises, bilingual Directory of 1599, bilingual Memoriale) |
-| `formula.json`, `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json`, `ratio.json`, `conimbricenses.json`, `suarez_anima.json` | the shipped program modules, paragraph by paragraph on their own citation grids |
+| `formula.json`, `pascal.json`, `monita.json`, `dominus.json`, `xavier.json`, `imago.json`, `spee.json`, `trutz.json`, `nadal.json`, `rodriguez.json`, `caussade.json`, `acosta.json`, `ricci.json`, `relations.json`, `paraguay.json`, `ratio.json`, `conimbricenses.json`, `suarez_anima.json` | the shipped program modules, paragraph by paragraph on their own citation grids |
 | `anchors.json` | 1,768 canonical paragraph anchors for the four locked editions, each with PDF page and printed page |
 | `letters.json` | the 24 public-domain letters in full, with recipient, place, date |
 | `introduction.json` | the introductory essay (editorial matter, CC BY 4.0); manuscript in `docs/` |

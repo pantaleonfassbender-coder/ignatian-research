@@ -223,12 +223,15 @@
  {
   "id": "paraguay",
   "linie": "welt",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Muratori · Ruiz de Montoya",
   "jahr": "1639 / 1743",
   "titel": "The Reductions of Paraguay — Muratori's Relation, with Montoya's voice",
   "warum": "The Society's boldest social experiment and its Iberian catastrophe: thirty mission towns beyond the slavers' reach, ended by the crowns the Society obeyed. The second program's opening module — and the source the Ludus's Reductions cards will cite.",
-  "quelle": "English: L. A. Muratori, A Relation of the Missions of Paraguay (London 1759; IA bim_eighteenth-century_a-relation-of-the-missio_muratori-lodovico-anton_1759), public domain — selections carried in full. Spanish: A. Ruiz de Montoya, Conquista espiritual (Madrid 1639; IA A1100623, reprint 1892 conquistaespiri00montgoog), key passages bilingual with a working translation."
+  "quelle": "English: L. A. Muratori, A Relation of the Missions of Paraguay (London 1759; IA bim_eighteenth-century_a-relation-of-the-missio_muratori-lodovico-anton_1759) — chapters V, IX, XV, XVIII and XX carried complete, 1759 page numbers on the paragraphs. Spanish: A. Ruiz de Montoya, Conquista espiritual (Madrid 1639; Bilbao reprint 1892, IA conquistaespiri00montgoog) — four passages bilingual, with this site's working translation.",
+  "datei": "paraguay",
+  "zk": "Mur./Mont.",
+  "kurz": "Paraguay"
  },
  {
   "id": "musurgia",

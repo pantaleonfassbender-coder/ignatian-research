@@ -54,7 +54,10 @@ abstract: >-
   Pascal to the brief of 1773 carried complete. The first program is
   editorially complete; a second, cultural program - the Reductions of
   Paraguay, Kircher's Musurgia, Pozzo's Perspectiva, the Jesuit stage -
-  is stated in the registry with its sources pinned. With a canonical
+  has opened: its first module, the Reductions of Paraguay - five
+  chapters of Muratori's Relation in the London English of 1759, with
+  four bilingual passages of Montoya's Conquista espiritual - has
+  shipped. With a canonical
   paragraph-level citation index, a cross-corpus concordance over the whole
   apparatus, a concept atlas, curated reading paths, a discernment lexicon,
   registers of persons and places, and a citation-bound dialogue with the
@@ -70,5 +73,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.5.0
-date-released: 2026-09-16
+version: 1.6.0
+date-released: 2026-09-22
