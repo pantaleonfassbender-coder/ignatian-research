@@ -50,14 +50,29 @@ async function boot() {
   names.forEach((n, i) => D[n] = res[i]);
   D.plates = await fetch("data/plates.json").then(r => r.json()).catch(() => ({}));
   D.introOf = {}; D.introductions.forEach(x => D.introOf[x.id] = x);
-  // shipped program modules join the concordance and the dialogue: their
-  // data files load here and are handed to the corpus layer for indexing
+  // shipped program modules join the concordance and the dialogue. Their
+  // data ships as one build-time bundle (data/modules.json, written by
+  // tools/bundle-modules.py and checked by the CI checker) so the boot
+  // costs one request instead of twenty-two; if the bundle is missing or
+  // stale, the individual files are fetched as before.
   const shipped = (D.program || []).filter(p => p.status === "shipped" && p.datei);
-  const progData = await Promise.all(shipped.map(p =>
-    fetch(`data/${p.datei}.json`).then(r => r.json()).then(data => {
-      D[p.datei] = data;             // the generic reader reuses the same load
-      return { reg: p, data };
-    }).catch(() => null)));
+  let progData = null;
+  try {
+    const bundle = await fetch("data/modules.json").then(r => r.ok ? r.json() : null);
+    if (bundle && shipped.every(p => bundle[p.datei])) {
+      progData = shipped.map(p => {
+        D[p.datei] = bundle[p.datei];  // the generic reader reuses the same load
+        return { reg: p, data: bundle[p.datei] };
+      });
+    }
+  } catch (e) { /* fall through to individual fetches */ }
+  if (!progData) {
+    progData = await Promise.all(shipped.map(p =>
+      fetch(`data/${p.datei}.json`).then(r => r.json()).then(data => {
+        D[p.datei] = data;
+        return { reg: p, data };
+      }).catch(() => null)));
+  }
   try {
     await C.restore(D.works, D.anchors, D.letters, D.directorium, D.exercitia,
                     D.memoriale, progData.filter(Boolean));
@@ -1389,6 +1404,16 @@ function viewMethod() {
     <div class="viewhead"><span class="tag">Transparency</span>
       <h1>Method, sources and limits</h1>
       <p class="lede">What was computed, from what, with which tools, and where the results do not carry.</p></div>
+
+    <div class="panel"><h2>Take the data with you</h2>
+      <p class="readable">Every open data file of the apparatus — the editions, the working
+      translations, the anchors, registers and module texts — can be downloaded as one archive:
+      <a href="assets/download/ignatiana-data.zip" download>ignatiana-data.zip</a> (about 2&nbsp;MB,
+      with a manifest and the license texts). The historical texts are public domain; this site's
+      editorial layers are CC0, its prose CC BY 4.0 — LICENSES.md in the archive states the terms
+      per file. The two interpretive author essays are not included (all rights reserved). Cite the
+      printed editions for any passage you quote; cite the apparatus by its
+      <a href="https://doi.org/10.5281/zenodo.22682750">archived version</a>.</p></div>
 
     <div class="panel"><h2>Rights, and what follows from them</h2>
       <p class="readable">Ignatius died in 1556, Favre in 1546, and their writings — with the early

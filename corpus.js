@@ -74,8 +74,28 @@ const STOP = new Set(("the a an and or but of to in on at by for with from as is
   "things way ways make made take taken give given go going come came say said see seen know " +
   "known think thought well good great little long new old ought thereof therein hereby").split(" "));
 
+/* Accent folding: the corpus speaks Latin, Spanish, English, German and
+   Dutch, and a reader typing "judios" must find "judíos". Diacritics are
+   stripped for indexing and matching only; the stored pages keep their
+   accents for display. ß is left alone (NFD does not decompose it), so
+   the German tokens behave as before. */
+export const fold = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
+
 export function tokens(s) {
-  return (s.toLowerCase().match(/[a-zà-ÿ][a-zà-ÿ0-9'\-]{1,}/g) || []);
+  return (fold(s.toLowerCase()).match(/[a-zà-ÿ][a-zà-ÿ0-9'\-]{1,}/g) || []);
+}
+
+/* An accent-insensitive regex for a query term: each foldable letter
+   becomes a class of its accented variants, so the pattern matches the
+   unfolded page text. */
+const ACC = { a: "aàáâãäå", e: "eèéêë", i: "iìíîï", o: "oòóôõöø",
+  u: "uùúûü", n: "nñ", c: "cç", y: "yýÿ" };
+function rxTerm(t) {
+  return fold(t).split("").map(ch => {
+    const lo = ch.toLowerCase();
+    if (ACC[lo]) return "[" + ACC[lo] + "]";
+    return ch.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }).join("");
 }
 
 /* ------------------------------------------------------- identification */
@@ -448,7 +468,7 @@ const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 export function kwic(q, { win = 54, limit = 500, works = null } = {}) {
   const terms = tokens(q).filter(t => t.length > 2);
   if (!terms.length) return [];
-  const rx = new RegExp("(" + q.trim().split(/\s+/).map(esc).join("\\s+") + ")", "gi");
+  const rx = new RegExp("(" + q.trim().split(/\s+/).map(rxTerm).join("\\s+") + ")", "gi");
   const out = [];
   for (const w of allMeta()) {
     if (works && !works.includes(w.id)) continue;
@@ -479,7 +499,7 @@ export function hitCounts(q) {
   for (const w of allMeta()) {
     const pages = pagesOf(w.id);
     if (!pages) { res[w.id] = null; continue; }
-    const rx = new RegExp(q.trim().split(/\s+/).map(esc).join("\\s+"), "gi");
+    const rx = new RegExp(q.trim().split(/\s+/).map(rxTerm).join("\\s+"), "gi");
     let n = 0;
     for (const p of pagesWith(w.id, terms)) {
       n += (pages[p].replace(/\s+/g, " ").match(rx) || []).length;
@@ -490,7 +510,7 @@ export function hitCounts(q) {
 }
 
 export function collocates(q, span = 5, top = 28) {
-  const key = q.toLowerCase().trim();
+  const key = fold(q.toLowerCase()).trim();
   const terms = tokens(q).filter(t => t.length > 2);
   const cnt = new Map();
   for (const w of allMeta()) {

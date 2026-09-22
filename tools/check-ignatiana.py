@@ -157,6 +157,53 @@ for key in ('exercitia', 'directorium', 'memoriale', 'letters'):
 if not os.path.exists('LICENSES.md'):
     errors.append('LICENSES.md missing')
 
+# 7. every shipped module has a timeline station (the lesson of 2026-09-22:
+#    three modules shipped without one and nobody noticed until asked)
+tl_ids = set(re.findall(r'\{ id: "(\w+)", linie:', app))
+shipped_ids = {p['id'] for p in prog if p.get('status') == 'shipped'}
+for pid in sorted(shipped_ids - tl_ids):
+    errors.append(f'program {pid}: shipped but no TIMELINE station in app.js')
+
+# 8. version agreement across the three metadata homes, and the og module
+#    count against the registry
+cff = io.open('CITATION.cff', encoding='utf-8').read()
+v_cff = re.search(r'^version: ([\d.]+)', cff, re.M)
+v_ld = re.search(r'"version": "([\d.]+)"', idx)
+if not (v_cff and v_ld):
+    errors.append('version string missing in CITATION.cff or index.html JSON-LD')
+elif v_cff.group(1) != v_ld.group(1):
+    errors.append(f'version mismatch: CFF {v_cff.group(1)} vs JSON-LD {v_ld.group(1)}')
+WORDS = {12: 'twelve', 13: 'thirteen', 14: 'fourteen', 15: 'fifteen', 16: 'sixteen',
+         17: 'seventeen', 18: 'eighteen', 19: 'nineteen', 20: 'twenty',
+         21: 'twenty-one', 22: 'twenty-two', 23: 'twenty-three', 24: 'twenty-four',
+         25: 'twenty-five', 26: 'twenty-six', 27: 'twenty-seven', 28: 'twenty-eight'}
+og_words = re.findall(r'([a-z-]+) satellite modules', idx)
+want = WORDS.get(len(shipped_ids))
+for wd in og_words:
+    if want and wd != want:
+        errors.append(f'og/twitter says "{wd} satellite modules" but {len(shipped_ids)} are shipped ("{want}")')
+if not og_words:
+    warns.append('no "satellite modules" count found in index.html metas')
+
+# 9. the modules bundle is fresh: it exists and covers exactly the shipped
+#    datei set (tools/bundle-modules.py regenerates it)
+try:
+    bundle = json.load(io.open('data/modules.json', encoding='utf-8'))
+    want_files = {p['datei'] for p in prog if p.get('status') == 'shipped' and p.get('datei')}
+    have = set(bundle.keys())
+    for m in sorted(want_files - have):
+        errors.append(f'data/modules.json stale: shipped module {m} missing — run tools/bundle-modules.py')
+    for m in sorted(have - want_files):
+        errors.append(f'data/modules.json stale: contains {m} which is not shipped — run tools/bundle-modules.py')
+    for m in want_files & have:
+        disk = json.load(io.open(f'data/{m}.json', encoding='utf-8'))
+        if disk != bundle[m]:
+            errors.append(f'data/modules.json stale: {m} differs from data/{m}.json — run tools/bundle-modules.py')
+except FileNotFoundError:
+    errors.append('data/modules.json missing — run tools/bundle-modules.py')
+except Exception as e:
+    errors.append(f'data/modules.json unreadable: {e}')
+
 print(f'works: {len(works)} shipped · {len(prog)} planned · exercitia {len(ns)} ¶ · directorium {dn} ¶ · letters {len(letters)}')
 print()
 print('ERRORS:', len(errors))

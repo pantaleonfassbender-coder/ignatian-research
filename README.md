@@ -134,6 +134,12 @@ promptly.
 
 ## What a researcher gets
 
+**The data as one download.** Every open data file of the apparatus — editions, working
+translations, anchors, registers and all module texts — ships as a single archive with manifest and
+license texts: [ignatiana-data.zip](https://ignatian-research.netlify.app/assets/download/ignatiana-data.zip)
+(~2 MB; regenerated each release by `tools/build-download.py`). The two interpretive author essays are
+not included (all rights reserved).
+
 **A canonical citation index.** 2,464 canonical anchors in all. 1,768 of them tie paragraph numbers to
 the page on which they begin in the four locked reference editions — Exercises 369 of 370, Constitutions
 812 of 827, Pilgrim's Testament 101 of 101, Diary 486 of 490 — so that a concordance hit reads `SpEx [23]`

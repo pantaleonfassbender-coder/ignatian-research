@@ -95,6 +95,12 @@ export function renderDialogue(view, args) {
     "How is the greater glory of God used as a decision criterion?",
     "What role do tears play, and where are they recorded?",
     "How does Ignatius write to someone who is being tempted?",
+    "What did Ignatius say about candidates of Jewish descent, and what did the Congregation of 1593 decree?",
+    "What did Molina conclude about the slave trade, and whom did he hold responsible?",
+    "How does Spee argue against the witch trials from inside the Society?",
+    "How does Kircher explain the power of music over the affects?",
+    "What does Pozzo answer to the objection about the single point of sight?",
+    "How does Muratori describe the music of the Reductions?",
   ];
   wrap.querySelector("#sug").innerHTML = SUG.map(s =>
     `<button class="chip" style="text-align:left;white-space:normal" data-s="${esc(s)}">${esc(s)}</button>`).join("");
