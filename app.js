@@ -1753,9 +1753,12 @@ const TIMELINE = [
   { id: "suarez_anima", linie: "schule", y: 1621, jahr: "1621", kurz: "Suárez", href: "#/text/suarez_anima" },
   { id: "spee_cautio", linie: "spee", y: 1631, jahr: "1631", kurz: "Cautio", href: "#/text/spee_cautio" },
   { id: "relations", linie: "welt", y: 1632, jahr: "1632–1673", kurz: "Relations", href: "#/text/relations" },
-  { id: "imago", linie: "welt", y: 1640, jahr: "1640", kurz: "Imago", href: "#/text/imago" },
+  { id: "paraguay", linie: "welt", y: 1639, jahr: "1639/1759", kurz: "Reductions", href: "#/text/paraguay" },
+  { id: "imago", linie: "welt", y: 1640.5, jahr: "1640", kurz: "Imago", href: "#/text/imago" },
   { id: "spee_trutz", linie: "spee", y: 1649, jahr: "1649/1654", kurz: "Trutznachtigall", href: "#/text/spee_trutz" },
+  { id: "musurgia", linie: "schule", y: 1650, jahr: "1650", kurz: "Musurgia", href: "#/text/musurgia" },
   { id: "pascal", linie: "kritik", y: 1656, jahr: "1656–57", kurz: "Provinciales", href: "#/text/pascal" },
+  { id: "pozzo", linie: "welt", y: 1693, jahr: "1693/1707", kurz: "Pozzo", href: "#/text/pozzo" },
   { id: "caussade", linie: "schule", y: 1740, jahr: "bef. 1751 (pr. 1861)", kurz: "Caussade", href: "#/text/caussade" },
   { id: "dominus", linie: "kritik", y: 1773, jahr: "1773", kurz: "Brief of 1773", href: "#/text/dominus" },
 ];
@@ -1841,11 +1844,13 @@ function viewTimeline() {
     <div class="viewhead"><span class="tag">Chronology</span>
       <h1>Timeline — five lines, 1522–1773</h1>
       <p class="lede">The corpus in time: from the notes begun at Manresa to the brief of
-      suppression — twenty-four stations across two and a half centuries. The founder's
+      suppression — twenty-nine stations across two and a half centuries. The founder's
       generation writes everything at once; the school then codifies (Directory, Ratio, the De
-      anima course), the mission observes, Spee's conscience answers, and the counter-voices run
-      from forgery to abolition. Dashed arcs mark crossings the carried texts themselves document;
-      every station opens its reader.</p></div>
+      anima course) and theorises its culture (Kircher's Musurgia); the mission observes, builds
+      and paints (the Reductions, Pozzo's feigned dome); the conscience answers — Spee against
+      the trials, Ribadeneira against the decree of 1593, Molina against the trade; and the
+      counter-voices run from forgery to abolition. Dashed arcs mark crossings the carried texts
+      themselves document; every station opens its reader.</p></div>
     <div class="tlwrap panel" style="padding:1rem .4rem">
       <svg class="tl" viewBox="0 0 ${W} ${H}" role="img"
         aria-label="Chronological chart of the corpus in five lines, 1522 to 1773">
