@@ -1919,7 +1919,13 @@ function viewLudus() {
       and an end that is fixed — on 21 July 1773 the brief falls, always. The player does not play
       to prevent the suppression; the player plays for what stands when it comes. It is free, in
       the browser, without registration — version 1, its rules and its balance still under tuning,
-      and it says so.</p>
+      and it says so. It can be played right here: the table below is the game itself, the one
+      live instance — a saved campaign and the Hall of the Accounting are the same here and on
+      its own site.</p>
+      <p><button class="primary" id="ludusPlay">Open the table here</button>
+      <span class="fine" style="margin-left:.6rem">or play at
+      <a href="https://ad-maiorem.netlify.app/" target="_blank" rel="noopener">ad-maiorem.netlify.app</a></span></p>
+      <div id="ludusFrame"></div>
     </div>
 
     <div class="panel"><h2>The sources as rules</h2>
@@ -1967,6 +1973,17 @@ function viewLudus() {
       the accounting will tell you how you fared against three hundred machine generalships.</p>
     </div>
   </div>`));
+  // The table itself, on demand: the SAME live instance as ad-maiorem.netlify.app
+  // (same origin inside the frame, so saved campaigns and the Hall are shared).
+  // Loaded only on click, to keep the essay page light.
+  view.querySelector("#ludusPlay").onclick = e => {
+    const box = view.querySelector("#ludusFrame");
+    if (box.firstChild) { box.innerHTML = ""; e.target.textContent = "Open the table here"; return; }
+    box.innerHTML = `<iframe src="https://ad-maiorem.netlify.app/" title="Ad maiorem — the solitaire"
+      style="width:100%;height:min(78vh,900px);border:1px solid var(--line);border-radius:8px;margin-top:.8rem;background:#f6f1e6"
+      loading="lazy"></iframe>`;
+    e.target.textContent = "Close the table";
+  };
 }
 
 /* ================================================================ TEXT */
