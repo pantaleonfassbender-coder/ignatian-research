@@ -130,6 +130,27 @@ and therefore have no source entry here; their editions are named on the method 
   the 1892 page numbers; the English of these passages is this site's unofficial working
   translation, dedicated CC0.
 
+### Pozzo, Perspectiva pictorum et architectorum (selections) · `data/pozzo.json` · `assets/pozzo/`
+
+- Latin AND English from one printing: *Rules and Examples of Perspective proper for
+  Painters and Architects, &c. In English and Latin* (London: Benjamin Motte, 1707;
+  engraved throughout by John Sturt), Internet Archive scan of the Clark Art Institute
+  copy — <https://archive.org/details/rulesexamplesof00pozz> — public domain. The 1707
+  edition prints Pozzo's Latin and an English translation on the same pages, with an
+  Approbation signed by Wren, Vanbrugh and Hawksmoor; both languages of this module are
+  therefore the print's own — the English is the 1707 translation, not this site's
+  working translation (an exception among the bilingual modules, stated in the module).
+  Carried, deliberately narrow: the Ad Lectorem with the Approbation; the First Figure;
+  and the Sant'Ignazio dossier — Figs. 66, 87, 90, 91 and 93 with the plates of Fig. 66
+  and the feigned cupola, and the closing Answer on the single point of sight. Straight
+  pages emended from the OCR against the page images; the pages the scan preserves only
+  sideways or inverted (Figs. 90, 91, 93) transcribed by eye; Fig. 90 abridged to its
+  argument, as its note discloses; the 1707 spellings kept as printed.
+- The Rome original of 1693, *Perspectiva pictorum et architectorum*, vol. I (Getty
+  scan) — <https://archive.org/details/gri_33125009760485> — is named as the source of
+  the Latin, not carried. Named next step: the Ad Lectorem of the second volume (Rome,
+  1700).
+
 ## Friedrich Spee
 
 ### Cautio Criminalis (selections) · `data/spee.json`
@@ -164,7 +185,8 @@ and therefore have no source entry here; their editions are named on the method 
 
 `assets/plates/` carries one public-domain image per work or module where a suitable one
 exists (fourteen in the first tranche, joined module by module by the second program's
-plates — Muratori's 1759 title, the Musurgia's 1650 title) — title pages, frontispieces
+plates — Muratori's 1759 title, the Musurgia's 1650 title, the engraved London Pozzo
+title of 1707) — title pages, frontispieces
 and facsimile pages, mostly
 from the very digitisations cited above, fetched page by page over IIIF; no full scans are
 downloaded or redistributed. Each plate's caption and credit line (source, digitisation,
@@ -180,13 +202,13 @@ public-domain two-dimensional work adds nothing licensable.
 ---
 
 Every entry of the first program has shipped, and its sources stand above. A **second,
-cultural program** has opened: its first two modules — the Reductions of Paraguay
-(Muratori's *Relation* in the London English of 1759, with Montoya's *Conquista
-espiritual* of 1639 bilingual) and Kircher's *Musurgia universalis* (Rome 1650) — have
-shipped, and their sources likewise stand above. Still pinned in the registry: Pozzo's
-*Perspectiva pictorum et architectorum* (Rome 1693, with the London English of 1707),
-and — carried only if a public-domain printing can be secured — Bidermann's *Cenodoxus*
-for the Jesuit stage. Named next steps within shipped modules — the Coimbra Prooemium's
-Quaestio unica and the internal-senses questions of book III, further chapters of
-Suárez's *De anima*, the Cautio's torture dubia — would draw on the same printings
-already cited.
+cultural program** has opened, and its three named modules have shipped: the Reductions
+of Paraguay (Muratori's *Relation* in the London English of 1759, with Montoya's
+*Conquista espiritual* of 1639 bilingual), Kircher's *Musurgia universalis* (Rome 1650),
+and Pozzo's *Perspectiva* (in the bilingual London printing of 1707) — their sources
+stand above, and the sixth reading path, "The Society as culture", runs through them.
+Still pinned in the registry, conditionally: Bidermann's *Cenodoxus* for the Jesuit
+stage, carried only if a public-domain printing can be secured. Named next steps within
+shipped modules — the Coimbra Prooemium's Quaestio unica and the internal-senses
+questions of book III, further chapters of Suárez's *De anima*, the Cautio's torture
+dubia — would draw on the same printings already cited.

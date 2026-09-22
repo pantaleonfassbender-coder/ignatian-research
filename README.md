@@ -22,7 +22,8 @@ Caussade — Xavier's letters from India and Japan, Acosta's *Natural and Moral 
 Indies* in Grimston's English of 1604, Ricci and Trigault's China in Purchas's digest of 1625,
 the *Jesuit Relations* from New France in Thwaites's translation, the Reductions of Paraguay
 in Muratori's *Relation* of 1759 with Montoya's own voice beside it, Kircher's *Musurgia
-universalis* of 1650 with the birdsong plate, the emblems of the *Imago primi saeculi* of 1640
+universalis* of 1650 with the birdsong plate, Pozzo's *Perspectiva* of 1693 in the bilingual
+London printing of 1707, the emblems of the *Imago primi saeculi* of 1640
 with their Dutch mirror, Friedrich Spee (the *Cautio Criminalis* and the *Trutznachtigall*), and the
 counter-voices — the forged *Monita secreta*, Pascal's *Provinciales*, and the brief *Dominus ac
 Redemptor* of 1773 with which the corpus closes. The apparatus indexes them by their canonical numbering,
@@ -100,7 +101,11 @@ translation, 1896–1901); five chapters of Muratori's *Relation of the Missions
 (London 1759) with four bilingual passages of Montoya's *Conquista espiritual* (1639/1892);
 selections of Kircher's *Musurgia universalis* (Rome 1650, bilingual — the Synopsis of the ten
 books, the voices of the birds with Iconismus III as a page image, and the doctrine of the
-affects); eleven emblems of the *Imago
+affects); selections of Pozzo's *Perspectiva* in the bilingual London printing of 1707 (the
+preface that draws every line 'to that true Point, the Glory of GOD', the first lesson of the
+method, and the Sant'Ignazio dossier with the plates of the Holy Week apparatus and the feigned
+cupola — the 1707 English is the print's own, approved by Wren, Vanbrugh and Hawksmoor); eleven
+emblems of the *Imago
 primi saeculi* (Antwerp 1640) with the Dutch *Af-Beeldinghe* of the same year and page images;
 Friedrich Spee — the *Cautio Criminalis* (two dubia, Rinteln 1631) and the *Trutznachtigall* (two poems,
 Cologne 1654); Nadal's *In Examen annotationes* (Latin of the 1919 Monumenta, with a working
@@ -144,10 +149,11 @@ visible rather than merely assertable.
 **Keyness, registers and networks**: for each core work, the lemmas that mark it against the rest by
 log-likelihood; persons, places, the memoir's itinerary, and a co-occurrence graph of the correspondence.
 
-**Five reading paths and a coda.** Guided routes through the corpus, each station with a reason and a
-guiding question — the Four Weeks, the discernment of spirits, the election, governance by letter, and an
-iconographic path through the Imago's emblems; a closing note owns the corpus's boundaries and the way it
-was made.
+**Six reading paths and a coda.** Guided routes through the corpus, each station with a reason and a
+guiding question — the Four Weeks, the discernment of spirits, the election, governance by letter, an
+iconographic path through the Imago's emblems, and the second program's path, the Society as culture:
+from the Ratio's classrooms through Kircher's music and Pozzo's ceilings to the Reductions and the court
+of China; a closing note owns the corpus's boundaries and the way it was made.
 
 **A citation-bound dialogue.** Questions are answered only from passages retrieved from the corpus (and,
 for the locked works, from your own copies), with a canonical citation required on every substantive

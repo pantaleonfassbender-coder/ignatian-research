@@ -60,12 +60,19 @@ abstract: >-
   Pascal to the brief of 1773 carried complete. The first program is
   editorially complete; a second, cultural program - the Reductions of
   Paraguay, Kircher's Musurgia, Pozzo's Perspectiva, the Jesuit stage -
-  has opened: the Reductions of Paraguay - five chapters of Muratori's
-  Relation in the London English of 1759, with four bilingual passages
-  of Montoya's Conquista espiritual - and Kircher's Musurgia universalis
-  of 1650 - the Synopsis of the ten books, the voices of the birds with
-  Iconismus III carried as a page image, and the doctrine of the affects
-  of Book VII, bilingual - have shipped. With a canonical
+  has opened, and its three named modules have shipped: the Reductions
+  of Paraguay - five chapters of Muratori's Relation in the London
+  English of 1759, with four bilingual passages of Montoya's Conquista
+  espiritual; Kircher's Musurgia universalis of 1650 - the Synopsis of
+  the ten books, the voices of the birds with Iconismus III carried as
+  a page image, and the doctrine of the affects of Book VII, bilingual;
+  and Pozzo's Perspectiva in the bilingual London printing of 1707 -
+  the preface that draws every line to the glory of God, the first
+  lesson of the method, and the Sant'Ignazio dossier with the plates of
+  the Holy Week apparatus and the feigned cupola, approved by Wren,
+  Vanbrugh and Hawksmoor. A sixth reading path, the Society as culture,
+  binds the second program from the Ratio's classrooms to the court of
+  China. With a canonical
   paragraph-level citation index, a cross-corpus concordance over the whole
   apparatus, a concept atlas, curated reading paths, a discernment lexicon,
   registers of persons and places, and a citation-bound dialogue with the
@@ -81,5 +88,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.7.0
+version: 1.8.0
 date-released: 2026-09-22

@@ -249,12 +249,15 @@
  {
   "id": "pozzo",
   "linie": "welt",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Andrea Pozzo",
-  "jahr": "1693–1700",
+  "jahr": "1693 / 1707",
   "titel": "Perspectiva pictorum et architectorum — the apotheosis, explained by its painter",
-  "warum": "The Jesuit brother who threw the Apotheosis of Ignatius onto the ceiling of Sant'Ignazio explains, figure by figure, how it is done — architecture and self-presentation in one treatise, beside the Imago.",
-  "quelle": "Latin/Italian: Perspectiva pictorum et architectorum (Rome 1693; IA gri_33125009760485 — Getty scan, plates in high quality). English: Rules and Examples of Perspective (London 1707; IA rulesexamplesof00pozz), public domain — the 1707 English carries the text."
+  "warum": "The Jesuit lay brother who threw the Apotheosis of Ignatius onto the flat vault of Sant'Ignazio explains how it is done — the preface that draws every line 'to that true Point, the Glory of GOD', the first lesson of the method, and the Sant'Ignazio dossier: the feigned dome of 1685 with its plate, the plan of the church whose nave he was 'at present employ'd in painting', and the Answer on the single point of sight. Architecture and self-presentation in one treatise, beside the Imago — and the keystone of the culture path.",
+  "quelle": "Latin AND English from one printing: Rules and Examples of Perspective (London: Motte, 1707; engraved by John Sturt; IA rulesexamplesof00pozz), which prints Pozzo's Latin and an English translation on the same pages, with the Approbation of Wren, Vanbrugh and Hawksmoor — both languages are the print's own, an exception among the bilingual modules (the English of 1707 is not this site's working translation). Straight pages emended from the OCR against the page images; the sideways and inverted pages (Figs. 90, 91, 93) transcribed by eye. Shipped: To the Reader + Approbation, the First Figure, and the Sant'Ignazio dossier (Figs. 66, 87, 90, 91, 93, the Answer) — 14 units with the plates of Fig. 66 and the feigned cupola. The Rome original of 1693 (IA gri_33125009760485, Getty) is named, not carried; named next step: the Ad Lectorem of the second volume (1700).",
+  "datei": "pozzo",
+  "zk": "Pozzo",
+  "kurz": "Pozzo"
  },
  {
   "id": "cenodoxus",

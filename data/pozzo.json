@@ -1,0 +1,141 @@
+{
+ "id": "pozzo",
+ "autor": "Andrea Pozzo",
+ "titel": "Perspectiva pictorum et architectorum — the apotheosis, explained by its painter (Rome 1693 / London 1707)",
+ "jahr": 1693,
+ "lang": "la",
+ "zitierweise": "Pozzo Lect./Fig. 1/S. Ign. [k]",
+ "quelle": "Latin AND English: Rules and Examples of Perspective proper for Painters and Architects, &c. In English and Latin (London: Benjamin Motte, 1707; engraved by John Sturt), Internet Archive rulesexamplesof00pozz (Clark Art Institute copy), public domain — the 1707 print is itself bilingual, so both languages here are the print's own; the English is the 1707 translation, not this site's. Straight pages emended from the OCR against the page images; the sideways and inverted pages (Figs. 90, 91, 93) transcribed by eye. The Rome original of 1693 (IA gri_33125009760485, Getty scan) is named, not carried.",
+ "hinweis": "The second program's architecture module, and the sixth reading path's keystone: the Jesuit lay brother who threw the Apotheosis of Ignatius onto the flat vault of Sant'Ignazio explains how it is done. Carried deliberately narrow: the preface that ends by drawing every line to 'that true Point, the Glory of GOD', with the Approbation signed by Wren, Vanbrugh and Hawksmoor; the first lesson of the method; and the Sant'Ignazio dossier — the Holy Week apparatus, the horizontal perspective for ceilings, the feigned dome of 1685 with its plate, the plan of the church whose nave vault Pozzo was 'at present employ'd in painting', and the Answer on the single point of sight. Kircher's Musurgia theorised at the Collegio Romano; Pozzo painted its church. The paragraph numbering is this site's own; the figure numbers are the book's. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only.",
+ "sections": [
+  {
+   "id": "lectori",
+   "zk": "Pozzo Lect.",
+   "titel": "To the Reader — and the Approbation of 1707",
+   "blurb": "The preface of 1693 in the London print of 1707: perspective as the art that deceives the most subtle of the senses, the want of masters and books, the promise of a second volume — and the close that turns a drawing manual into a spiritual exercise: every line drawn to the true point of the eye, that is, to the glory of God. Approved for England by Christopher Wren, John Vanbrugh and Nicholas Hawksmoor.",
+   "units": [
+    {
+     "n": 1,
+     "k": 1,
+     "orig": "Ars Perspectiva, oculum, licet sagacissimum inter sensus nostros exteriores, mirabili cum voluptate decipit; eademque necessaria est iis, quibus in pingendo, tum singulis figuris positionem ac deformationem suam congrue tribuere, tum colores et umbras magis vel minus intendere aut remittere, prout oportet, curae est. Ad id autem sensim sine sensu illi perveniunt, qui solo studio Graphidis non contenti, singulis Architecturae Ordinibus exacte deformandis assueverint. Nihilominus, inter multos qui opus hujusmodi magno impetu aggressi hucusque fuerunt, paucos numeramus, qui animum ipso statim initio non desponderint, ob magistrorum librorumque penuriam, ordinate ac perspicue docentium opticas projectiones, a principiis hujus artis usque ad omnimodam perfectionis consummationem.",
+     "en": "The Art of PERSPECTIVE does, with wonderful Pleasure, deceive the Eye, the most subtle of all our outward Senses; and is very necessary to be known of all, who in Painting would give a due Place and Proportion to their Figures, and more or less Strength requisite to the Lights and Shades of the Picture. This might be insensibly attain'd, if Persons, not content with the Study of Drawing only, would accustom themselves exactly to delineate the several Orders of Architecture. Nevertheless, among many who have hitherto vigorously undertaken this Work, there have been but very few, who have not been in a manner quite discourag'd, through want of Masters and Books to teach them clearly and methodically the Rules of Perspective-Projections, from the first Principles of the Art, to the entire Perfection thereof.",
+     "label": "Ad Lectorem · the art that deceives the eye"
+    },
+    {
+     "n": 2,
+     "k": 2,
+     "orig": "Quum autem sentiam, longa multorum annorum exercitatione, me non minimam facilitatem in hac disciplina mihi parasse: censeo Studiosorum voluntati me satisfacturum, eorumque profectui consulturum, si methodos expeditissimas in lucem proferam, ad singulorum Architecturae Ordinum opticas delineationes perficiendas, adhibita communi regula, ex qua omnia linearum occultarum offendicula sustulimus. Deinde, si tempus et vires ad aliud Opus conscribendum Bonitas Divina dederit, projectiones quascunque absolvemus regula qua in praesentia uti soleo, ac multo facilior et universalior est regula communi et vulgata, quamvis haec sit fundamentum alterius. Itaque, Lector studiose, constanti animo negotium tuum suscipe; ac lineas omnes tuarum operationum ad verum oculi punctum ducere, ad gloriam scilicet DEI Optimi Maximi, tecum omnino decerne. Sic votis honestissimis, ut auguror tibi ac spondeo, feliciter potieris.",
+     "en": "Wherefore, apprehending that by long and constant Practice in Works of this kind, I had made this Art familiar and easy to me; I judg'd it might be for the Satisfaction and Advantage of the Studious, to publish the shortest way for designing in Perspective the several Orders of Architecture, by a common and easy Rule, free from the Incumbrances of occult Lines. But if it please God to give me Life and Strength to compose another Book, I shall therein shew the Method of putting whatever you please in Perspective by the Rule I make use of at present, which is more easy and general than the common way, though this be the Foundation of the other. Therefore, Reader, my Advice is, that you cheerfully begin your Work, with a Resolution to draw all the Lines thereof to that true Point, the Glory of GOD; and I durst presage and promise you good Success in so laudable an Undertaking.",
+     "label": "Ad Lectorem · every line to the glory of God",
+     "note": "The most quoted sentence Pozzo wrote — 'lineas omnes tuarum operationum ad verum oculi punctum ducere, ad gloriam scilicet DEI' — the punctum oculi of the method made a figure of the Ignatian end. The promised second volume appeared at Rome in 1700."
+    },
+    {
+     "n": 3,
+     "k": 3,
+     "en": "THE Approbation of this Edition. — At the Request of the Engraver, We have perus'd this Volume of PERSPECTIVE; and judge it a WORK that deserves Encouragement, and very proper for Instruction in that ART. Chr. Wren. J. Vanbrugh. N. Hawksmoor.",
+     "label": "The Approbation of this Edition",
+     "note": "English only — the 1707 edition's own document: the Surveyor of St Paul's, the architect of Blenheim and the architect of the London churches jointly approving the Jesuit brother's book, at the request of the engraver John Sturt."
+    }
+   ]
+  },
+  {
+   "id": "figura1",
+   "zk": "Pozzo Fig. 1",
+   "titel": "The First Figure — the whole method in one lesson",
+   "blurb": "Plan, horizon, point of the eye, point of the distance: the temple wall to be painted, the same man viewing it in three schemes, and the veil — velum, vitrum diaphanum, tela — through which all painting in perspective is conceived.",
+   "units": [
+    {
+     "n": 4,
+     "k": 1,
+     "orig": "Ut principia Perspectivae facilius intelligas, pono tibi ob oculos Templum, in cujus interiori facie, praeter caetera, pingendum sit aliquid ad Perspectivam pertinens. Templi hujus vestigium geometricum est A, elevatio geometrica in longum est B, in latum est C. In A est locus Hominis aspicientis lineam DE, cui paries fingendus incumbit. In B idem Homo ex eadem distantia intuetur lineam FG, quae refert elevationem parietis. In figura C supponimus Hominem consistere e regione ipsius parietis: easdemque proportiones mensurarum translatas esse ex vero pariete in figuram C, quae ipsum in parvo repraesentat. Prima ergo linea HI dicitur linea terrae vel plani, ex qua incipit, eidemque incumbit aedificium. Secunda linea NON priori parallela, dicitur horizontalis, in qua ponitur O punctum oculi, et N punctum distantiae. Duo autem puncta distantiae a nobis posita sunt, ut unum adhibeas ex qua parte volueris; nam ad figuras optice contrahendas sufficit unum punctum distantiae: nec fieri potest ulla optica delineatio, quin primo loco designentur duae parallelae, una plani seu terrae, altera horizontis, notando in linea horizontis punctum oculi, seu opticum, et punctum distantiae.",
+     "en": "That you may the better understand the Principles of Perspective, here is presented to your View a Temple, on the inner Wall of which, amongst other things, one would paint something in Perspective. The Geometrical Plan of this Church is A; the Geometrical Elevation, or Upright, lengthwise is B, breadthwise is C. In A is the Place from whence a Man beholds the Line DE, which is the Plan of the Wall that is to be painted: In B the same Man, from the same Distance, looks upon the Line FG, that is the Elevation of the said Wall. In Fig. C, the Man is suppos'd to stand opposite to the said Wall; and this Figure contains, in Little, the very same Proportions of Measures transferred from the real Wall. The first Line therefore HI is call'd the Ground-line, or Line of the Plan, at which the Edifice begins, and on which it stands. The second Line NON, parallel to the former, is call'd the Horizontal Line, in which O is the Point of Sight, and N the Point of the Distance. Two Points of Distance are here given, that you may use which you please; for that on one Side only is sufficient for the foreshortnings: Nor can any Optick Delineation, or Perspective, be describ'd, without first making two Parallels; one of the Plan, or Ground-line, the other of the Horizon; marking, in the Line of the Horizon, the Point of Sight, and the Point of Distance.",
+     "label": "The temple, the ground-line, the two points"
+    },
+    {
+     "n": 5,
+     "k": 2,
+     "orig": "In picturis multum spatii occupantibus, punctum oculi poni solet in medio lineae horizontalis: atque ubi altitudo picturae sit major latitudine, distantia NO fiet aequalis altitudini. Si latitudo picturae sit major altitudine, distantia NO fiet aequalis latitudini; ita enim unico intuitu totum picturae spatium comprehendi poterit. Jam si velimus ut spectatori in A et B paries depictus videatur distare a lineis DE et GF, quanta est longitudo quadrati P cujus elevatio est Q; ex punctis A et B fiant visuales ad puncta extrema quadrati, notando sectiones visualium cum pariete DE et GF, qui ab aliis vocatur velum, vitrum diaphanum, sectio, tela, vel tabula. Invenies autem lineas RS ac TV esse aequales, ac similiter lineas XZ et YK; et sic de aliis.",
+     "en": "In Pictures that take up much Space, the Point of Sight is commonly plac'd in the middle of the Horizontal Line: and where the Height of the Picture exceeds the Breadth, the Distance NO must be made equal to the Height. If the Breadth of the Picture exceed the Height, the Distance NO must be made equal to the Breadth: For so will the Extent of the Picture be the better comprehended in one View. Now if we would have the painted Wall appear to the Spectator in A and B, as far distant from the Lines DE and GF, as is the Length of the Square P, whose Elevation is Q; from the Points A and B draw visual Lines to the extreme Points of the Square, marking the Sections of those Visuals with the Wall DE and GF, which by some is call'd the Veil, transparent Glass, Section, Cloth, or Table: and you'll find RS equal to TV, XZ equal to YK, and so of the rest.",
+     "label": "The point in the middle, the distance, the veil"
+    }
+   ]
+  },
+  {
+   "id": "ignatii",
+   "zk": "Pozzo S. Ign.",
+   "titel": "Sant'Ignazio — the illusion, executed and defended",
+   "blurb": "The book's own church: the Holy Week apparatus of 1685 (Fig. 66), the horizontal perspective for flat and vaulted ceilings (Fig. 87), the cupola in projection (Fig. 90), the feigned dome painted on canvas (Fig. 91, with the plate and the painter's surety for the corbels), the plan of the church whose nave Pozzo was then painting (Fig. 93), and the Answer on the single point of sight.",
+   "units": [
+    {
+     "n": 6,
+     "k": 1,
+     "orig": "Difficile oculis imponunt imagines rerum rotundarum, si omnibus resectis quae ad rem non pertinent, exacte delineatae ac depictae fuerint. Hanc figuram ex vestigio eruere oportebit methodo consueta, eamque in Templo S. Ignatii Collegii Romani construxi pro feria V et VI Hebdomadae Sanctae. Intra arcum, super altari, locus erat urnae sepulcrali, cum Venerabili Sacramento. Sub altari visebatur simulacrum Christi Domini e Cruce depositi: in medio columnarum, imago Beatae Virginis dolentis; super balaustiis Angeli lugentes, cum instrumentis cruciatuum Salvatoris.",
+     "en": "The Appearance of round things, if well design'd, masterly painted, and the Frame cut away to the Out-line of the Work, do wonderfully deceive the Eye. This Figure is drawn from the Plan, as usual; and was put in execution by me, in the Church of S. Ignatius of the Roman College, for the Thursday and Friday of the Holy Week. Within the Arch, on the Altar, was plac'd a sepulchral Urn containing the Holy Sacrament. Beneath the Altar was laid a Figure of our Saviour Christ taken down from the Cross. In the midst of the Tambour, was a Picture of the Blessed Virgin in extreme Sorrow; and on the Balustrade, Angels mourning, bearing the Instruments of the Passion.",
+     "label": "Fig. 66 · the Holy Week apparatus in S. Ignazio"
+    },
+    {
+     "n": 7,
+     "k": 2,
+     "en": "The Sixty-sixth Figure's plate: the circular Design in Perspective as executed for the Thursday and Friday of Holy Week in the church of Sant'Ignazio — the sepulchral urn with the Sacrament within the arch, the mourning angels on the balustrade, the whole a painted architecture whose frame is cut away to the outline of the work.",
+     "label": "The plate of Fig. 66",
+     "img": "assets/pozzo/fig66.jpg",
+     "alt": "Plate of the Sixty-sixth Figure of the 1707 London Pozzo: a circular Holy Week apparatus in perspective — a domed tempietto on columns over an altar, angels on the balustrade, engraved by John Sturt after Pozzo."
+    },
+    {
+     "n": 8,
+     "k": 3,
+     "orig": "Exhibet haec figura in AA unum ex quatuor parietibus aulae, cujus altitudinem veram IH velim attollere apparenter usque in L, pingendo in laqueari, vel in testudine, seriem balaustiorum. In B est vestigium geometricum quartae partis laquearis. In C habetur elevatio medietatis latitudinis. In D est sectio coronicis et mutulorum. In E posita est elevatio medietatis longitudinis. In F est punctum oculi, in G punctum distantiae: adeoque tota distantia est GF.",
+     "en": "The Figure AA represents one of the four Walls of a Hall, whose true Height IH you would have appear rais'd to L, by painting a Balustrade in the Ceiling thereof. B is the Geometrical Plan of the fourth part of the said Ceiling; C is the Elevation of half the Breadth; D is the Section of the Cornice and Corbels; E is the Elevation of half the Length. In F is the Point of Sight, in G the Point of Distance; so that the Distance itself is FG.",
+     "label": "Fig. 87 · horizontal perspective for ceilings, flat or vaulted"
+    },
+    {
+     "n": 9,
+     "k": 4,
+     "orig": "Initium hujus rei fiet a vestigio geometrico, in quo duae series circulorum designant columnas; aliae lineae designant stylobatas, ac projecturas et ungues basium et coronicum. Linea plani est AB, horizontalis CD, perpendicularis AD. Punctum oculi est O, distantiae D; adeoque figura haec debet habere supra oculum altitudinem DO. Punctum oculi positum fuit extra ipsum tholum, ut qui eum aspiciunt, minus defatigentur, ac plus appareat de architectura et de artificio; secus vero contingeret si punctum oculi esset in medio. His positis, aggredieris delineationem opticam ipsius tholi, translatis in perpendicularem EO centris ope parallelarum. Ex his patet necessitas faciendi vestigium geometricum totius tholi, ac non sufficere vestigium unius columnae; quum singulae peculiares exigant deformationes. Quum autem Opus ipsum delineandum ac pingendum fuerit, ipsum desumere non poteris ex parvo exemplari, ope reticulationis; quinimo suis locis ducere oportebit lineas visuales, et invenire centra omnium circulorum. Figendo autem funiculum in singulis centris, ipsius adjumento facillime absolves omnes circumferentias.",
+     "en": "In the Execution of this Work, you are to begin with the Geometrical Plan; in which the two Ranges of Circles denote the Columns, the other Lines shew the Pedestals, with the Projectures and Breaks of the Bases and Cornices. The Line of the Plan is AB, that of the Horizon CD, the perpendicular Line is AD. The Point of Sight is O, that of Distance D; wherefore this Figure ought to be plac'd as much above the Eye, as the Height DO. I have set the Point of Sight something without the Cupola, that the Eye might be less weary'd in viewing the Work, and embrace more of the Architecture, than it could have done, had the Point of Sight been in the midst. This done, you proceed to the Delineation of the Cupola itself in Perspective, by transferring into the Perpendicular EO the several Centers, by Parallels. Hence appears the Necessity of making the Geometrical Plan of the whole Cupola, the Plan of a single Column not being sufficient; by reason each requires its particular Delineation. And when the Work itself is to be drawn for painting, you can't well take it from a small Draught by way of Net-work or Squares; but the visual Lines should be drawn in their proper places, and the several Centers found: in which, by fixing Strings, you may readily describe the Circumferences of all the Circles.",
+     "label": "Fig. 90 · a cupola in horizontal projection",
+     "note": "Carried with the linework abridged to its argument; the full construction stands in the print. The deliberate off-centre point — 'that the Eye might be less weary'd, and embrace more of the Architecture' — is the aesthetic decision the Answer will defend in principle."
+    },
+    {
+     "n": 10,
+     "k": 5,
+     "en": "The plate of the feigned cupola: the dome of the Ninetieth Figure with its lights and shades — the design that, painted on canvas, stood in for the dome Sant'Ignazio never received.",
+     "label": "The plate of the cupola (Fig. 91)",
+     "img": "assets/pozzo/cupola.jpg",
+     "alt": "Plate of the Ninety-first Figure of the 1707 London Pozzo: the feigned cupola seen from below, sotto in sù — a coffered dome on paired columns rendered wholly in perspective on a flat circle, with lights and shades."
+    },
+    {
+     "n": 11,
+     "k": 6,
+     "orig": "Tholus quem vides in hac pagina, pollicetur sibi vitam diuturniorem illo, quem super telario plano insignis amplitudinis depinxi anno 1685, in Templo S. Ignatii Collegii Romani. Proinde si casus aliquis illum absumat, non deerunt qui ex isto eundem in melius reficiant. Mirati fuerunt Architecti nonnulli, quod columnas anteriores mutulis imposuerim; id enim in solidis aedificiis ipsi non facerent. Verum eos metu omni liberavit amicissimus mihi Pictor, ac pro me spopondit, damnum omne se statim reparaturum, si fatiscentibus mutulis, columnas in praeceps ruere contingat.",
+     "en": "The Cupola in this Plate will in all Likelihood be of longer Duration, than that which I painted on a very large Table, for the flat Ceiling of the Church of S. Ignatius of the Roman College, anno 1685. For if that suffer by any Accident, with the help of this its place may be supply'd by a better. Some Architects dislik'd my setting the advanc'd Columns upon Corbels, as being a thing not practis'd in solid Structures; but a certain Painter, a Friend of mine, remov'd all their Scruples, by answering for me, That if at any time the Corbels should be so much surcharg'd with the Weight of the Columns, as to endanger their Fall, he was ready to repair the Damage at his own Cost.",
+     "label": "Fig. 91 · the dome painted on canvas, 1685",
+     "note": "The lawsuit over the never-built dome lies behind the first sentence; the painter-friend who 'answered for' the corbels — promising to repair at his own cost whatever fell — is Pozzo's own joke on the difference between painted and solid architecture."
+    },
+    {
+     "n": 12,
+     "k": 7,
+     "orig": "Constitueram huic Libro finem imponere figura nonagesimasecunda; nihilominus ut satisfaciam precibus amicorum, cupientium addiscere modum reticulationis opticae, quae adhibetur in superficiebus irregularibus, ejusque memini figura octogesima octava, publici juris facere decrevi ejus construendae methodum. Ipsiusmet retis ope delineavi non solum aedificium mox repraesentandum, sed etiam figuras omnes testudinis templi Ludovisiani, in qua pingenda nunc occupor. Eademque reticulatione, quae erit ultima figura hujus Libri, dabimus Operi nostro suum complementum; quum nulla sit superficies, in qua suas delineationes juxta Perspectivae regulas, earum rerum Studiosi absolvere nequeant. Exhibet haec figura vestigium totius templi. Quamvis enim non indigeam nisi testudine inter januam maximam et tholum; proderit nihilominus Architecturae Studiosis, universi Operis elegantiam ac symmetriam per otium contemplari.",
+     "en": "I Had once determin'd to end this Book with the Ninety-second Figure; but at the Request of some Friends, who were desirous to learn the Making of Perspective Net-work for irregular Surfaces, as was hinted in the Eighty-eighth Figure; I resolv'd to publish the Manner of performing the same. By the Help of this Net-work, I delineated not only the Architecture now to be treated of; but also each Figure in the Vault of the Church of S. Ignatius, which I am at present employ'd in painting. The Method is laid down in the last Figure of this Book, and entirely completes the same; there being no Superficies, how irregular soever, but the Studious may thereon describe, by these Rules, whatever Perspective he has occasion for. This Figure contains the Plan of the whole Church; for though my present Design requir'd no more than the Vault of the Nave, between the great Door and the Cupola; I thought it might be nevertheless acceptable to the Curious in Architecture, to have a View of the whole Design, so celebrated for the Elegancy and Proportion of its Parts.",
+     "label": "Fig. 93 · the plan of the church, the vault in hand",
+     "note": "'In qua pingenda nunc occupor' — the treatise catches the Apotheosis of St Ignatius in the act of being painted (the nave fresco was unveiled in 1694, the year after this volume appeared)."
+    },
+    {
+     "n": 13,
+     "k": 8,
+     "orig": "Respondetur objectioni factae circa punctum oculi opticum. — Non omnium sensus est, uni optico operi unicum tantum punctum assignare; e.g. toti spatio fornicis, tholi, et tribunae, quam vocant, expressae in figura nonagesimatertia, nolunt concedi unicum punctum, volunt concedi plura. Respondeo, objectionem hanc dupliciter intelligi posse: vel enim intelligi posset, non esse assignandum unicum punctum toti illi spatio; atque in hoc sensu vera est; cum enim spatium illud valde oblongum sit, dividi debuit in partes, atque assignanda tribunae, quam dicunt, tholo, et fornici, propria puncta; cum hoc communiter doceant, ubi situs nimium est longus, et parum altus. Vel potest intelligi de qualibet ex dictis partibus, et sic intellecta penitus falsa est.",
+     "en": "An Answer to the Objection made about the Point of Sight in Perspective. — Every one does not approve, that in a Perspective of great Extent one Point of Sight only should be assign'd the whole Work; as for Example, In the whole Length of the Nave, Cupola, and Tribune, express'd in the Ninety-third Figure, they will by no means allow of one single Point, but insist upon several. ANSWER: This Objection may be understood two ways; either that one Point alone is not sufficient for that whole Length, and in this sense 'tis true; for that Space being very long, it ought to be divided into Parts, and proper Points assign'd to the Tribune, Cupola, and Vault of the Nave; as is commonly taught, where the Situation is of a great Length, and not very high. Or it may be understood of any One of the said Parts, and so is altogether false.",
+     "label": "The Answer on the point of sight · the objection stated"
+    },
+    {
+     "n": 14,
+     "k": 9,
+     "orig": "Primo, quia praestantiores fornices aularum et templorum, qui optico artificio ornati sint, si unicum opus reddunt, a suismet authoribus determinatum idemque unicum punctum accepisse compertum est. Secundo, quia cum ars optica sit mera veri fictio, non id pictor facere potest, ut a qualibet parte simulet veritatem, verum ab uno determinato puncto id ostendit. Tertio, quia si, e.g. fornici, qui uno integroque optico opere ornetur, plura puncta assignaveris, nullum reperies locum, unde integrum opus spectare possis, et ad summum ex quolibet puncto tantum partem illius spectabis, nusquam vero totum opus. Ex dictis igitur rationibus concludo, ab inducentibus plura puncta in eodem opere induci malum majus eo, quod unicum punctum inducit; quare hoc omnino necessarium est situi in quo unicum opus formandum sit, ad quod collimare debeant ex omni operis parte figurae simul et architectura. Quo posito, negari rationabiliter nequit, a me etiam concedi unicum punctum spectando fornici amplo, aptoque ad repraesentandum unicum opus, qualis est fornix in D. Ignatii templo. Si vero propter situm irregularem, ut dicimus, architectura extra punctum aliquantulum deformetur, et figurae pariter operi optico intermixtae extra commune punctum aliqualem patientur deformitatem, praeterquam quod a supradictis rationibus excusatur, nequaquam id vitio arti est, sed laudi; quandoquidem ars a suo puncto exhibet, proportione posita, ut rectum, ut planum, ut concavum, id quod tale non est.",
+     "en": "First, Because in the Vaults of Halls or Churches painted by the greatest Masters, if they consist of one Piece only, we find but one Point of Sight assign'd. Secondly, Since Perspective is but a Counterfeiting of the Truth, the Painter is not oblig'd to make it appear real when seen from Any part, but from One determinate Point only. Thirdly, Because, if in a Vault, for Example, where you would paint one entire Design of Architecture and Figures, you assign several Points of Sight, you will find no place whence you may take a perfect View of the Whole, and at best you can only view each Part from its proper Point. From all which Reasons I conclude, that the Introduction of many Points into the same Piece, is more injurious to the Work, than making use of one only: Wherefore 'tis absolutely necessary in a regular Situation, and where the Work is all of a piece, so to place the same, as that the Figures and Architecture may from every part of the Design have respect thereto. This suppos'd, I confess that I myself make use of one Point of Sight only, in very large Vaults that consist of one Design, such as that of the Nave of the Church of S. Ignatius. If therefore through the Irregularity of the Place, the Architecture appear with some Deformity, and the Figures intermix'd therewith seem any thing lame and imperfect when view'd out of the proper Point, besides the Reasons just now given, it's so far from being a Fault, that I look upon it as an Excellency in the Work; that when view'd from the Point determin'd, it appear, with due Proportion, streight, flat, or concave; when in reality it is not so.",
+     "label": "The Answer · the three reasons, and the confession",
+     "note": "The closing sentence is the whole aesthetic of the Jesuit ceiling in one clause: from its one determined point the art exhibits 'as upright, as flat, as concave, that which is not so' — the marble disc in the pavement of Sant'Ignazio still marks that point."
+    }
+   ]
+  }
+ ]
+}

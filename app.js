@@ -38,7 +38,7 @@ const PROGCOLOR = { formula: "#a3873c", paraguay: "#5f8a62", pascal: "#b0687a", 
   xavier: "#5a8a8a", imago: "#a08a50", spee_cautio: "#6a8a5f", spee_trutz: "#86a06a",
   nadal: "#6f7fae", rodriguez: "#8a6f5a", caussade: "#7d6a92", acosta: "#4f7f74",
   ricci: "#a3584e", relations: "#5f7a99", ratio: "#7a7f5a", conimbricenses: "#6a5f7f",
-  suarez_anima: "#8a527a", musurgia: "#a3703c" };
+  suarez_anima: "#8a527a", musurgia: "#a3703c", pozzo: "#b08968" };
 
 /* --------------------------------------------------------------- boot */
 async function boot() {
@@ -208,7 +208,7 @@ function viewOverview() {
       migrates between them, and lets you put questions to the corpus with the evidence attached.</p>
       <p class="fine">New here? The <a href="#/introduction">introductory essay</a> walks through the
       whole apparatus in a named author's voice, or take one of the <a href="#/paths">reading paths</a> —
-      five guided routes with a guiding question per station. The corpus is organised in
+      six guided routes with a guiding question per station. The corpus is organised in
       <a href="#/works">five lines</a> and confines itself to the old Society (1540–1773); its
       boundaries, and the way it was made, are owned in the <a href="#/coda">coda</a>.</p>
     </div>
@@ -1666,17 +1666,43 @@ const PATHS = [
         leitfrage: "Read the coda after this: what does the centenary volume not know?" },
     ],
   },
+  {
+    id: "culture", level: "Intermediate", titel: "The Society as culture",
+    frage: "The second program's path: the old Society not as a doctrine but as a culture — a school system, a music, an architecture of illusion, a social experiment, a self-portrait, and a method of adaptation. Six stations from the classroom to the court of China.",
+    stationen: [
+      { href: "#/text/ratio", cite: "Ratio", autor: "The Ratio Studiorum of 1599",
+        warum: "The infrastructure everything else stands on: one curriculum for hundreds of colleges — the rules that bound the schools to Thomas and Aristotle and made a teaching order the schoolmaster of Europe.",
+        leitfrage: "What kind of culture does a rule-book produce that a canon of texts would not?" },
+      { href: "#/text/musurgia", cite: "Musurg.", autor: "Kircher's Musurgia universalis (1650)",
+        warum: "The school's sound, theorised at the Collegio Romano: universal music from the nightingale's glottisms to God's concert with nature — and the doctrine of the affects, with the hearer's disposition as the fourth condition.",
+        leitfrage: "Kircher wants to move souls by matching mode to temperament; where have you met that ambition before in this corpus — and what does SpEx [1] call it?" },
+      { href: "#/text/pozzo", cite: "Pozzo", autor: "Pozzo's Perspectiva (1693/1707)",
+        warum: "The school's eye: the lay brother who painted the Apotheosis of Ignatius explains the feigned dome, the single point of sight, and the resolve to draw every line 'to that true Point, the Glory of GOD'.",
+        leitfrage: "The Answer defends one determined viewpoint against many; is that an aesthetic doctrine only, or the Exercises' method of election in paint?" },
+      { href: "#/text/paraguay", cite: "Mur. IX", autor: "The music of the Reductions",
+        warum: "The same culture at the other end of the world: Muratori's chapter on the Guaraní orchestras — the Musurgia's theory become mission practice on the Paraná.",
+        leitfrage: "Read Mur. IX after Kircher: what survives the crossing, and what changes its meaning?" },
+      { href: "#/text/imago/title", cite: "Imago T", autor: "The Imago primi saeculi (1640)",
+        warum: "The culture portraying itself at one hundred: engraving, epigram and boast from the same Plantin press culture the colleges trained.",
+        leitfrage: "After Kircher and Pozzo, does the Imago's splendour read as achievement or as advertisement?" },
+      { href: "#/text/ricci", cite: "RT", autor: "Ricci at the court of China",
+        warum: "The culture's furthest reach: the change of habit from bonze to literatus — adaptation as the same art Pozzo practised on ceilings, applied to civilisations.",
+        leitfrage: "Is Ricci's accommodation the Ratio's culture translated, or abandoned?" },
+    ],
+  },
 ];
 
 function viewPaths() {
   view.append(el(`<div>
     <div class="viewhead"><span class="tag">Guided routes</span>
       <h1>Reading paths</h1>
-      <p class="lede">Five curated ways through the shipped corpus — each with a stated order, a
+      <p class="lede">Six curated ways through the shipped corpus — each with a stated order, a
       reason for every station, and a guiding question to carry into the text. Every station opens
       a reader; the <a href="#/concordance">concordance</a> and the <a href="#/dialogue">dialogue</a>
       are the companions to take along. The fifth is the iconographic path: the emblems of the
-      <em>Imago primi saeculi</em> of 1640, read with the rest of the corpus beside them.</p></div>
+      <em>Imago primi saeculi</em> of 1640, read with the rest of the corpus beside them. The
+      sixth is the second program's path: the Society as culture, from the Ratio's classrooms
+      through Kircher's music and Pozzo's ceilings to the Reductions and the court of China.</p></div>
     <div id="plist"></div>
   </div>`));
   const list = view.querySelector("#plist");
