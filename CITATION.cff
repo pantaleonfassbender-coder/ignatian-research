@@ -28,6 +28,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.22900908
     description: "Version DOI for v1.6.0"
+  - type: doi
+    value: 10.5281/zenodo.22904923
+    description: "Version DOI for v1.7.0"
 repository-code: "https://github.com/pantaleonfassbender-coder/ignatian-research"
 url: "https://ignatian-research.netlify.app/"
 abstract: >-
