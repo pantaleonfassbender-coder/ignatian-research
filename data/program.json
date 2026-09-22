@@ -195,6 +195,19 @@
   "kurz": "De genere"
  },
  {
+  "id": "servitus",
+  "linie": "spee",
+  "status": "shipped",
+  "autor": "Luis de Molina",
+  "jahr": "1593",
+  "titel": "De iustitia et iure — the slave trade before the conscience",
+  "warum": "The conscience line's third front: the Society's own theologian examining the slave trade of the kingdom the Society served. Molina questioned the returning merchants himself — 'cum quibus locutus sum' — and concluded that the trade as practised is unjust and its practitioners in mortal sin, from the merchants up to the King's councillors and the bishops, 'singulos in suo gradu et ordine'. Carried with his ambivalence intact — the pricing logic, the traders' 'vices', the evangelization argument weighed and refused — and with the Society's own slaveholding stated as failure beside the voice.",
+  "quelle": "Latin: De Iustitia, Tomus Primus (Cuenca 1593; carried from the Venice printing of 1594, IA bub_gb_wcZhc3OG5VsC), tract. II, disp. 34–35 — seven passages transcribed and emended by eye from the page images (leaves 204, 213, 215–217; the OCR served for navigation). English: this site's working translation (CC0). Named next steps: Sandoval's De instauranda Aethiopum salute (Seville 1627; no PD scan yet located) and Vieira's sermons to and about the enslaved (original printings on the IA; Portuguese would be a new corpus language). Modern references in copyright, not quoted.",
+  "datei": "servitus",
+  "zk": "Mol.",
+  "kurz": "Molina"
+ },
+ {
   "id": "monita",
   "linie": "kritik",
   "status": "shipped",

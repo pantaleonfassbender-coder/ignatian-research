@@ -25,8 +25,8 @@ in Muratori's *Relation* of 1759 with Montoya's own voice beside it, Kircher's *
 universalis* of 1650 with the birdsong plate, Pozzo's *Perspectiva* of 1693 in the bilingual
 London printing of 1707, the emblems of the *Imago primi saeculi* of 1640
 with their Dutch mirror, the conscience line — Friedrich Spee's *Cautio Criminalis* and
-*Trutznachtigall*, and the limpieza dossier: the decree *De genere* of 1593 with Ribadeneira's
-thirteen reasons against it — and the
+*Trutznachtigall*, the limpieza dossier: the decree *De genere* of 1593 with Ribadeneira's
+thirteen reasons against it, and Molina's examination of the slave trade — and the
 counter-voices — the forged *Monita secreta*, Pascal's *Provinciales*, and the brief *Dominus ac
 Redemptor* of 1773 with which the corpus closes. The apparatus indexes them by their canonical numbering,
 traces the vocabulary that migrates between them, and lets you put a question to the corpus with the
@@ -112,7 +112,10 @@ primi saeculi* (Antwerp 1640) with the Dutch *Af-Beeldinghe* of the same year an
 Friedrich Spee — the *Cautio Criminalis* (two dubia, Rinteln 1631) and the *Trutznachtigall* (two poems,
 Cologne 1654); the limpieza de sangre dossier (the decrees of 1593 and 1608 from the Florence
 *Institutum* of 1893, and Ribadeneira's memorial of 1593 complete in all thirteen razones, from the
-MHSI printing of 1923, bilingual with working translations); Nadal's *In Examen annotationes* (Latin of the 1919 Monumenta, with a working
+MHSI printing of 1923, bilingual with working translations); Molina on the slave trade (seven
+passages of *De iustitia et iure*, disp. 34–35, transcribed by eye from the Venice printing of
+1594, bilingual — the merchants questioned, the verdict of mortal sin, and the evangelization
+argument refused); Nadal's *In Examen annotationes* (Latin of the 1919 Monumenta, with a working
 translation); the Ratio Studiorum of 1599 in its rules for the professors of theology and philosophy
 (bilingual, with a working translation); the Prooemium of the Coimbra *De anima* commentary,
 transcribed by eye from the 1617 printing (bilingual); three chapters of Suárez's *Commentaria in

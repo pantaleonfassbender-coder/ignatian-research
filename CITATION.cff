@@ -66,7 +66,12 @@ abstract: >-
   decree De genere of 1593 with the three recorded intercessions,
   Ribadeneira's memorial against it complete in all thirteen razones
   (with his eyewitness testimony of Ignatius calling Jewish lineage a
-  grace), and the mitigation of 1608, bilingual; and the
+  grace), and the mitigation of 1608, bilingual; and Molina's
+  examination of the slave trade (De iustitia et iure, disp. 34-35,
+  eye-transcribed from the Venice printing of 1594, bilingual - the
+  merchants questioned, the verdict of mortal sin, the evangelization
+  argument refused - with the Society's own slaveholding stated as
+  failure beside the voice); and the
   counter-voices, from the Monita secreta and
   Pascal to the brief of 1773 carried complete. The first program is
   editorially complete; a second, cultural program - the Reductions of
@@ -99,5 +104,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.9.0
+version: 1.10.0
 date-released: 2026-09-22

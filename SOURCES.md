@@ -190,6 +190,31 @@ and therefore have no source entry here; their editions are named on the method 
   only. The impediment of origin was abrogated by the 29th General Congregation in 1946
   (decree 8), whose text is not carried here (post-1930).
 
+### Molina on the slave trade · `data/servitus.json`
+
+- Latin: Luis de Molina, *De Iustitia, Tomus Primus* (first published Cuenca, 1593;
+  carried from the Venice printing of 1594, 'apud Minimam Societatem') —
+  <https://archive.org/details/bub_gb_wcZhc3OG5VsC> — public domain; tract. II,
+  disputations 34–35. Seven passages carried: the title of the trade (purchase, not
+  war) and the merchants' answers when questioned; the pricing logic with its omission
+  of 'the value of the man as man'; the fourth conclusion — the verdict; the night raid
+  and 'rather robberies than wars'; the cruelties told as a praeteritio; and the fifth
+  conclusion, which refuses the evangelization argument. The passages were located
+  through the Archive OCR and then **transcribed and emended by eye from the page
+  images** (leaves 204, 213, 215–217) — the OCR of the 1594 type served for navigation
+  only, and had, among much else, turned the fourth conclusion's number into 'a.';
+  contractions silently expanded, u/v classicised, the print's spellings (Aethyopes)
+  kept.
+- English: unofficial working translation made for this site directly from the Latin
+  (CC0). Named next steps: Alonso de Sandoval, *De instauranda Aethiopum salute*
+  (Seville, 1627) — no public-domain scan located on the Internet Archive at the time
+  of shipping (only the Bogotá edition of 2020, which is in copyright); the hunt
+  continues in other repositories; and António Vieira's sermons to and about the
+  enslaved, whose original Lisbon printings are on the Archive (Portuguese would be a
+  new corpus language). The letters of Miguel García and Gonçalo Leite, who in Brazil
+  in the 1580s refused absolution to slaveholders, exist only in the Monumenta
+  Brasiliae (1956 ff.), which is in copyright and was not consulted.
+
 ## The counter-voices
 
 ### Pascal, Lettres provinciales — Letters V, VII, X · `data/pascal.json`
@@ -213,7 +238,7 @@ and therefore have no source entry here; their editions are named on the method 
 `assets/plates/` carries one public-domain image per work or module where a suitable one
 exists (fourteen in the first tranche, joined module by module by the second program's
 plates — Muratori's 1759 title, the Musurgia's 1650 title, the engraved London Pozzo
-title of 1707) — title pages, frontispieces
+title of 1707, Molina's Venice title of 1594) — title pages, frontispieces
 and facsimile pages, mostly
 from the very digitisations cited above, fetched page by page over IIIF; no full scans are
 downloaded or redistributed. Each plate's caption and credit line (source, digitisation,
