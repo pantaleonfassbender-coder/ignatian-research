@@ -182,6 +182,19 @@
   "kurz": "Trutz"
  },
  {
+  "id": "limpieza",
+  "linie": "spee",
+  "status": "shipped",
+  "autor": "The Fifth and Sixth General Congregations · Pedro de Ribadeneira",
+  "jahr": "1593–1608",
+  "titel": "Limpieza de sangre — the decree De genere of 1593, and the conscience against it",
+  "warum": "The conscience line's second front: not an outside attack but the Society against itself. The early Society had refused the distinction of blood — Laínez and Polanco were of converso descent, and Ignatius called Jewish lineage a grace, kin to Christ according to the flesh. The Fifth General Congregation decreed the exclusion anyway in 1593, quoting Ignatius for the purpose; Ribadeneira answered with thirteen reasons; 1608 softened the bar to five generations and commanded silence; the impediment fell only in 1946.",
+  "quelle": "Latin: decrees 52–53 of the Fifth General Congregation (1593–94) and decree 28 of the Sixth (1608), after Institutum Societatis Iesu, vol. II (Florence 1893; IA Institutum2), OCR emended against the page images. Spanish: Ribadeneira, 'De prognatis genere Hebraeorum Societatis aditu non excludendis' (Madrid 1593), complete in all thirteen razones, after Monumenta Ribadeneirae, vol. II (MHSI 1923; IA patrispetriderib6402riba; pre-1930, US public domain), from the autograph of cod. Instit. 184; the razón segunda carries the eyewitness testimony of Ignatius's word, with tears, that he would have counted Jewish birth a special grace. English: this site's working translations (CC0). Named, not carried: Ribadeneira's covering letters to Aquaviva of 1597 and 1608 (same volume). Modern reference: R. A. Maryks, The Jesuit Order as a Synagogue of Jews (2010), in copyright, not quoted.",
+  "datei": "limpieza",
+  "zk": "De gen.",
+  "kurz": "De genere"
+ },
+ {
   "id": "monita",
   "linie": "kritik",
   "status": "shipped",

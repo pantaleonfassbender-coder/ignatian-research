@@ -58,8 +58,13 @@ abstract: >-
   China in Purchas's digest of 1625, the Jesuit Relations from New France
   in Thwaites's translation with his page numbers on every paragraph, and
   the Imago primi saeculi with its Dutch mirror, emblem by emblem;
-  Friedrich Spee (the Cautio Criminalis and the
-  Trutznachtigall); and the counter-voices, from the Monita secreta and
+  the conscience of the Society - Friedrich Spee (the Cautio Criminalis
+  and the Trutznachtigall), and the limpieza de sangre dossier: the
+  decree De genere of 1593 with the three recorded intercessions,
+  Ribadeneira's memorial against it complete in all thirteen razones
+  (with his eyewitness testimony of Ignatius calling Jewish lineage a
+  grace), and the mitigation of 1608, bilingual; and the
+  counter-voices, from the Monita secreta and
   Pascal to the brief of 1773 carried complete. The first program is
   editorially complete; a second, cultural program - the Reductions of
   Paraguay, Kircher's Musurgia, Pozzo's Perspectiva, the Jesuit stage -
@@ -91,5 +96,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.8.0
+version: 1.9.0
 date-released: 2026-09-22

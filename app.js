@@ -38,7 +38,7 @@ const PROGCOLOR = { formula: "#a3873c", paraguay: "#5f8a62", pascal: "#b0687a", 
   xavier: "#5a8a8a", imago: "#a08a50", spee_cautio: "#6a8a5f", spee_trutz: "#86a06a",
   nadal: "#6f7fae", rodriguez: "#8a6f5a", caussade: "#7d6a92", acosta: "#4f7f74",
   ricci: "#a3584e", relations: "#5f7a99", ratio: "#7a7f5a", conimbricenses: "#6a5f7f",
-  suarez_anima: "#8a527a", musurgia: "#a3703c", pozzo: "#b08968" };
+  suarez_anima: "#8a527a", musurgia: "#a3703c", pozzo: "#b08968", limpieza: "#8a5f45" };
 
 /* --------------------------------------------------------------- boot */
 async function boot() {
@@ -86,7 +86,7 @@ const LINIEN = [
   ["kern", "The founder", "Ignatius's own hand and dictation: the retreat manual, the body of law, the dictated memoir, the private journal of discernment, the letters."],
   ["schule", "The school of discernment", "How the Exercises became the practice of an order: the official Directory, Favre's journal — and, in the program, Nadal's exhortations, Rodríguez's curriculum, and the Abandon attributed to Caussade."],
   ["welt", "The Society in the world", "Mission, observation and self-presentation before 1773: Xavier's letters, the Relations from New France, Ricci at the court of China, Acosta's New World, and the centenary emblem book of 1640."],
-  ["spee", "Friedrich Spee", "A line of one voice: conscience from inside the order — the Cautio Criminalis against the witch trials, and the same conscience singing in the Trutznachtigall."],
+  ["spee", "The conscience of the Society", "Conscience from inside the order, against the order where it failed: Friedrich Spee's Cautio Criminalis against the witch trials and the same conscience singing in the Trutznachtigall — and the limpieza dossier, the decree De genere of 1593 with Ribadeneira's thirteen reasons against it."],
   ["kritik", "The counter-voices", "Forgery, polemic, suppression: the Monita secreta, Pascal's Provinciales, and the brief of 1773 with which the corpus closes."],
 ];
 function route() {
@@ -1741,6 +1741,7 @@ const TIMELINE = [
   { id: "auto", linie: "kern", y: 1553, jahr: "1553–1555", kurz: "Testament", href: "#/works" },
   { id: "nadal", linie: "schule", y: 1557, jahr: "1557", kurz: "Nadal", href: "#/text/nadal" },
   { id: "acosta", linie: "welt", y: 1590, jahr: "1590/1604", kurz: "Acosta", href: "#/text/acosta" },
+  { id: "limpieza", linie: "spee", y: 1593, jahr: "1593–1608", kurz: "De genere", href: "#/text/limpieza" },
   { id: "conimbricenses", linie: "schule", y: 1598, jahr: "1598/1617", kurz: "Coimbra", href: "#/text/conimbricenses" },
   { id: "dir", linie: "schule", y: 1599, jahr: "1599", kurz: "Directory", href: "#/directorium" },
   { id: "ratio", linie: "schule", y: 1599.5, jahr: "1599", kurz: "Ratio", href: "#/text/ratio" },

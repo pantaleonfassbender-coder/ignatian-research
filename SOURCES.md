@@ -151,7 +151,7 @@ and therefore have no source entry here; their editions are named on the method 
   the Latin, not carried. Named next step: the Ad Lectorem of the second volume (Rome,
   1700).
 
-## Friedrich Spee
+## The conscience of the Society (the Spee line)
 
 ### Cautio Criminalis (selections) · `data/spee.json`
 
@@ -162,6 +162,33 @@ and therefore have no source entry here; their editions are named on the method 
 
 - German: Friedrich Spee, *Trutz-Nachtigall oder Geistlichs-Poetisch Lust-Waldlein* (Cologne, 1654; first published posthumously 1649), Internet Archive scan — <https://archive.org/details/trutz-nachtigall-oder-geistlichs-poetisc>. Two poems carried complete — the Ölberg lament (printed p. 170) and the "Liebgesang der Gesponß Jesu" (p. 26) — transcribed by eye from the page images (the Fraktur OCR served only for navigation); the long s is normalised and the print's virgule kept as the poet's comma. A facsimile page of each poem's opening is carried beside the text.
 - English: unofficial working prose translation made for this site directly from the German (CC0).
+
+### Limpieza de sangre — the decree De genere and Ribadeneira's memorial · `data/limpieza.json`
+
+- Latin: the decrees of the Fifth General Congregation (1593–94), nn. 52–53 — the
+  exclusion of candidates 'of Hebrew or Saracen stock', with the three intercessions
+  recorded and voted down — and of the Sixth (1608), n. 28, the mitigation to five
+  generations with its commanded silence; after the *Institutum Societatis Iesu*, vol. II
+  (Florence, 1893) — <https://archive.org/details/Institutum2> — the sister volume of the
+  apparatus's Formula and Ratio sources, US public domain; OCR emended against the page
+  images.
+- Spanish: Pedro de Ribadeneira, 'De prognatis genere Hebraeorum Societatis aditu non
+  excludendis' (Madrid, 1593), carried complete in all thirteen razones, after
+  *Monumenta Ribadeneirae*, vol. II (MHSI; Madrid, 1923) —
+  <https://archive.org/details/patrispetriderib6402riba> — published before 1930 and in
+  the US public domain, printing the autograph of cod. Instit. 184, ff. 292–295v. The
+  MHSI's sixteenth-century orthography is kept (uezes, hazer, nouedad, spíritu); the
+  scan's systematic OCR damage (í rendered as f, ñ as n, ç as c) is restored; the MHSI
+  editors' apparatus of variants and references is not carried. The razón segunda
+  preserves the eyewitness testimony of Ignatius's word — 'con lágrimas en los ojos … que
+  huuiera tenido por gran merced de Dios el auer nascido de judíos'. Ribadeneira's
+  covering letters to Aquaviva (1597 and 1608, epist. 377 and 406 of the same volume)
+  are named, not carried.
+- English: unofficial working translations made for this site directly from the Latin
+  and the Spanish (CC0). The modern study — R. A. Maryks, *The Jesuit Order as a
+  Synagogue of Jews* (Leiden, 2010) — remains in copyright and is cited as reference
+  only. The impediment of origin was abrogated by the 29th General Congregation in 1946
+  (decree 8), whose text is not carried here (post-1930).
 
 ## The counter-voices
 
