@@ -288,11 +288,14 @@
  {
   "id": "cenodoxus",
   "linie": "schule",
-  "status": "planned",
+  "status": "shipped",
   "autor": "Jacob Bidermann",
   "jahr": "1602 / 1666",
-  "titel": "Cenodoxus — the Jesuit stage",
-  "warum": "College theatre as the schools' own art: the doctor of Paris damned before the audience that laughed at him. Named as a candidate; carried only if a public-domain printing can be secured.",
-  "quelle": "SOURCE HUNT REQUIRED: the Ludi theatrales printing of 1666 (or Meichel's German of 1635, Fraktur risk) must be located in a usable scan — the modern editions of 1963/65 are in copyright and will not be consulted. If no printing is found, this entry is withdrawn, and it says so here."
+  "titel": "Cenodoxus — the Jesuit stage (1602; printed 1666)",
+  "warum": "College theatre as the schools' own art, at its darkest and greatest: the comico-tragoedia of the Paris doctor damned for vainglory, played by and for the colleges the Ratio built — the audience laughed for four acts and left shaken; the Munich performance of 1609 is reported to have sent fourteen courtiers into the Exercises. Carried: the preface separating history from fable, the devil's harvest monologue with Philautia and Hypocrisis, the three cries of the corpse with the sentence of Christ the Judge, and Bruno's resolve — the founding of the Carthusians as the play's exit into history.",
+  "quelle": "The source hunt the registry demanded has succeeded: Latin after the Ludi theatrales sacri sive opera comica posthuma, Pars prima (Munich: Wagner, 1666; Cenodoxus second in the volume, printed pp. 78–160), digitisation of the Regensburg copy at the MDZ (bsb11103594) with page OCR; located via the OCR, emended against the sense, crux pages verified by eye against the page images ('piceata flammarum volumina' settled at the print). The modern editions of 1963/65 are in copyright and were not consulted, exactly as this entry's condition required. English: this site's working translation (CC0). 10 units in four sections.",
+  "datei": "cenodoxus",
+  "zk": "Cen.",
+  "kurz": "Cenodoxus"
  }
 ]

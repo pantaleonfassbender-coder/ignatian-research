@@ -23,7 +23,8 @@ Indies* in Grimston's English of 1604, Ricci and Trigault's China in Purchas's d
 the *Jesuit Relations* from New France in Thwaites's translation, the Reductions of Paraguay
 in Muratori's *Relation* of 1759 with Montoya's own voice beside it, Kircher's *Musurgia
 universalis* of 1650 with the birdsong plate, Pozzo's *Perspectiva* of 1693 in the bilingual
-London printing of 1707, the emblems of the *Imago primi saeculi* of 1640
+London printing of 1707, Bidermann's *Cenodoxus* from the Munich printing of 1666, the emblems
+of the *Imago primi saeculi* of 1640
 with their Dutch mirror, the conscience line — Friedrich Spee's *Cautio Criminalis* and
 *Trutznachtigall*, the limpieza dossier: the decree *De genere* of 1593 with Ribadeneira's
 thirteen reasons against it, and Molina's examination of the slave trade — and the
@@ -106,7 +107,10 @@ books, the voices of the birds with Iconismus III as a page image, and the doctr
 affects); selections of Pozzo's *Perspectiva* in the bilingual London printing of 1707 (the
 preface that draws every line 'to that true Point, the Glory of GOD', the first lesson of the
 method, and the Sant'Ignazio dossier with the plates of the Holy Week apparatus and the feigned
-cupola — the 1707 English is the print's own, approved by Wren, Vanbrugh and Hawksmoor); eleven
+cupola — the 1707 English is the print's own, approved by Wren, Vanbrugh and Hawksmoor);
+Bidermann's *Cenodoxus* for the Jesuit stage (ten passages from the Munich *Ludi theatrales* of
+1666, bilingual — the preface separating history from fable, Philautia and Hypocrisis, the three
+cries of the corpse with the sentence of Christ the Judge, and Bruno's resolve); eleven
 emblems of the *Imago
 primi saeculi* (Antwerp 1640) with the Dutch *Af-Beeldinghe* of the same year and page images;
 Friedrich Spee — the *Cautio Criminalis* (two dubia, Rinteln 1631) and the *Trutznachtigall* (two poems,

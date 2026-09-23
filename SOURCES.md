@@ -62,6 +62,30 @@ and therefore have no source entry here; their editions are named on the method 
 - Latin: transcribed by eye from the page images of the 1617 printing, *Commentarii Collegii Conimbricensis Societatis Iesu, in tres libros De anima Aristotelis* — <https://archive.org/details/commentariicolle00col> (the printing's columns 2–7; the OCR of the early-modern type served only for navigation). First printed at Coimbra in 1598; the modern editions are in copyright and were not used. Long s and ligatures normalised, printer's abbreviations silently expanded, u/v kept as printed; the marginal captions and source references are not carried.
 - English: unofficial working translation made for this site directly from the Latin (CC0). Named next steps: the Prooemium's Quaestio unica and the internal-senses questions of book III.
 
+### Bidermann, Cenodoxus — the Jesuit stage · `data/cenodoxus.json`
+
+- Latin: Jacob Bidermann, *Ludi theatrales sacri sive opera comica posthuma*, Pars prima
+  (Munich: Johann Wagner, printed by Johann Wilhelm Schell, 1666) — the posthumous
+  collected printing of the plays, in which Cenodoxus stands second (printed pp.
+  78–160); written for the Augsburg stage in 1602. Digitisation of the Regensburg copy
+  (Staatliche Bibliothek, 999/Lat.rec.224) at the MDZ, Münchener
+  DigitalisierungsZentrum — <https://www.digitale-sammlungen.de/de/view/bsb11103594> —
+  with page-level OCR. Ten passages carried in four sections: the preface *Lectori,
+  Spectatori*; the devil's harvest monologue of Act I (Philautia and Hypocrisis); the
+  three cries of the corpse in Act V with the sentence of Christ the Judge and Bruno's
+  'hic ure' prayer; and Bruno's resolve. Located through the OCR, emended against the
+  sense (long s and ligatures resolved, u/v and i/j classicised, æ written out, the
+  print's speaker sigla kept); the crux pages — the DAMNATUS page (printed p. 153) and
+  the closing page (p. 158) — verified by eye against the page images, which settled
+  the reading 'piceata flammarum volumina' at the print. The 1666 print is public
+  domain; the MDZ asserts NoC-NC on its digitisation, noted for transparency. **The
+  modern editions of 1963/65 (Tarot) are in copyright and were not consulted** — the
+  registry's condition for carrying this play at all, now discharged. The Internet
+  Archive's copies of the 1967 facsimile are lending-restricted and were likewise not
+  used.
+- English: unofficial working translation made for this site directly from the Latin
+  (CC0). Named, not carried: Joachim Meichel's German translation (Munich 1635).
+
 ### Suárez, Commentaria in libros De anima — three chapters · `data/suarez_anima.json`
 
 - Latin: after the *Opera omnia* edition of Vivès, vol. III (Paris, 1856; US public domain) — <https://archive.org/details/tomus-19-francisci-suarez> — which prints the posthumous text of the De anima commentary completed and published by Baltasar Álvares (Lyon, 1621). The OCR of the Archive scan was corrected against sense and context; æ/œ written out as ae/oe, the edition's j and u/v kept as printed; the italic point-captions carried inline; doubtful readings emended and disclosed in `tools/build-suarez.py`. The critical edition (S. Castellote, 1978–1991) is in copyright and was not used. Carried complete and bilingual: book II, chapter 3; book III, chapter 30; book IV, chapter 7.
@@ -238,7 +262,8 @@ and therefore have no source entry here; their editions are named on the method 
 `assets/plates/` carries one public-domain image per work or module where a suitable one
 exists (fourteen in the first tranche, joined module by module by the second program's
 plates — Muratori's 1759 title, the Musurgia's 1650 title, the engraved London Pozzo
-title of 1707, Molina's Venice title of 1594) — title pages, frontispieces
+title of 1707, Molina's Venice title of 1594, the 1666 Ludi theatrales title) — title
+pages, frontispieces
 and facsimile pages, mostly
 from the very digitisations cited above, fetched page by page over IIIF; no full scans are
 downloaded or redistributed. Each plate's caption and credit line (source, digitisation,
@@ -253,14 +278,14 @@ public-domain two-dimensional work adds nothing licensable.
 
 ---
 
-Every entry of the first program has shipped, and its sources stand above. A **second,
-cultural program** has opened, and its three named modules have shipped: the Reductions
-of Paraguay (Muratori's *Relation* in the London English of 1759, with Montoya's
-*Conquista espiritual* of 1639 bilingual), Kircher's *Musurgia universalis* (Rome 1650),
-and Pozzo's *Perspectiva* (in the bilingual London printing of 1707) — their sources
-stand above, and the sixth reading path, "The Society as culture", runs through them.
-Still pinned in the registry, conditionally: Bidermann's *Cenodoxus* for the Jesuit
-stage, carried only if a public-domain printing can be secured. Named next steps within
-shipped modules — the Coimbra Prooemium's Quaestio unica and the internal-senses
-questions of book III, further chapters of Suárez's *De anima*, the Cautio's torture
-dubia — would draw on the same printings already cited.
+Every entry of the first program has shipped, and its sources stand above. The
+**second, cultural program is now complete**: the Reductions of Paraguay (Muratori's
+*Relation* in the London English of 1759, with Montoya's *Conquista espiritual* of
+1639 bilingual), Kircher's *Musurgia universalis* (Rome 1650), Pozzo's *Perspectiva*
+(in the bilingual London printing of 1707), and — its condition of a public-domain
+printing discharged by the Munich *Ludi theatrales* of 1666 — Bidermann's *Cenodoxus*
+for the Jesuit stage. Their sources stand above, and the sixth reading path, "The
+Society as culture", runs through all four. Named next steps within shipped modules —
+the Coimbra Prooemium's Quaestio unica and the internal-senses questions of book III,
+further chapters of Suárez's *De anima*, the Cautio's torture dubia — would draw on
+the same printings already cited.

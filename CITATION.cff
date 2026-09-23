@@ -85,13 +85,15 @@ abstract: >-
   espiritual; Kircher's Musurgia universalis of 1650 - the Synopsis of
   the ten books, the voices of the birds with Iconismus III carried as
   a page image, and the doctrine of the affects of Book VII, bilingual;
-  and Pozzo's Perspectiva in the bilingual London printing of 1707 -
+  Pozzo's Perspectiva in the bilingual London printing of 1707 -
   the preface that draws every line to the glory of God, the first
   lesson of the method, and the Sant'Ignazio dossier with the plates of
   the Holy Week apparatus and the feigned cupola, approved by Wren,
   Vanbrugh and Hawksmoor. A sixth reading path, the Society as culture,
   binds the second program from the Ratio's classrooms to the court of
-  China. With a canonical
+  China; with Bidermann's Cenodoxus, carried from the Munich Ludi
+  theatrales of 1666 after its public-domain condition was discharged,
+  the cultural program is complete. With a canonical
   paragraph-level citation index, a cross-corpus concordance over the whole
   apparatus, a concept atlas, curated reading paths, a discernment lexicon,
   registers of persons and places, and a citation-bound dialogue with the
@@ -107,5 +109,5 @@ keywords:
   - concordance
   - citation index
 license: MIT
-version: 1.10.0
-date-released: 2026-09-22
+version: 1.11.0
+date-released: 2026-09-23

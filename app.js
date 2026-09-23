@@ -39,7 +39,7 @@ const PROGCOLOR = { formula: "#a3873c", paraguay: "#5f8a62", pascal: "#b0687a", 
   nadal: "#6f7fae", rodriguez: "#8a6f5a", caussade: "#7d6a92", acosta: "#4f7f74",
   ricci: "#a3584e", relations: "#5f7a99", ratio: "#7a7f5a", conimbricenses: "#6a5f7f",
   suarez_anima: "#8a527a", musurgia: "#a3703c", pozzo: "#b08968", limpieza: "#8a5f45",
-  servitus: "#6b5340" };
+  servitus: "#6b5340", cenodoxus: "#5a4a6e" };
 
 /* --------------------------------------------------------------- boot */
 async function boot() {
@@ -1708,6 +1708,9 @@ const PATHS = [
       { href: "#/text/pozzo", cite: "Pozzo", autor: "Pozzo's Perspectiva (1693/1707)",
         warum: "The school's eye: the lay brother who painted the Apotheosis of Ignatius explains the feigned dome, the single point of sight, and the resolve to draw every line 'to that true Point, the Glory of GOD'.",
         leitfrage: "The Answer defends one determined viewpoint against many; is that an aesthetic doctrine only, or the Exercises' method of election in paint?" },
+      { href: "#/text/cenodoxus", cite: "Cen.", autor: "Bidermann's Cenodoxus (1602/1666)",
+        warum: "The school's stage: the comico-tragoedia of the doctor damned for vainglory — the corpse's three cries at its own funeral, and Bruno walking off the stage into the Grande Chartreuse.",
+        leitfrage: "The play makes an audience laugh for four acts and then damns its hero for self-love; what does that do that a sermon cannot — and what did the Exercises' composition of place teach the playwright?" },
       { href: "#/text/paraguay", cite: "Mur. IX", autor: "The music of the Reductions",
         warum: "The same culture at the other end of the world: Muratori's chapter on the Guaraní orchestras — the Musurgia's theory become mission practice on the Paraná.",
         leitfrage: "Read Mur. IX after Kircher: what survives the crossing, and what changes its meaning?" },
@@ -1775,6 +1778,7 @@ const TIMELINE = [
   { id: "conimbricenses", linie: "schule", y: 1598, jahr: "1598/1617", kurz: "Coimbra", href: "#/text/conimbricenses" },
   { id: "dir", linie: "schule", y: 1599, jahr: "1599", kurz: "Directory", href: "#/directorium" },
   { id: "ratio", linie: "schule", y: 1599.5, jahr: "1599", kurz: "Ratio", href: "#/text/ratio" },
+  { id: "cenodoxus", linie: "schule", y: 1602, jahr: "1602/1666", kurz: "Cenodoxus", href: "#/text/cenodoxus" },
   { id: "rodriguez", linie: "schule", y: 1609, jahr: "1609", kurz: "Rodríguez", href: "#/text/rodriguez" },
   { id: "monita", linie: "kritik", y: 1614, jahr: "1614", kurz: "Monita", href: "#/text/monita" },
   { id: "ricci", linie: "welt", y: 1615, jahr: "1615/1625", kurz: "Ricci", href: "#/text/ricci" },
@@ -1872,7 +1876,7 @@ function viewTimeline() {
     <div class="viewhead"><span class="tag">Chronology</span>
       <h1>Timeline — five lines, 1522–1773</h1>
       <p class="lede">The corpus in time: from the notes begun at Manresa to the brief of
-      suppression — twenty-nine stations across two and a half centuries. The founder's
+      suppression — thirty stations across two and a half centuries. The founder's
       generation writes everything at once; the school then codifies (Directory, Ratio, the De
       anima course) and theorises its culture (Kircher's Musurgia); the mission observes, builds
       and paints (the Reductions, Pozzo's feigned dome); the conscience answers — Spee against
