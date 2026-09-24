@@ -407,6 +407,43 @@ function viewWorks(args) {
   }
 }
 
+/* The four core works whose full text ships with the site, with their readers. */
+const READERS = {
+  spex: ["#/exercitia", "Read the full text — trilingual reader"],
+  dir: ["#/directorium", "Read the full text — bilingual reader"],
+  fabri: ["#/memoriale", "Read the full text — bilingual reader"],
+  letters: ["#/letters", "Read the letters in full"],
+};
+
+/* Deep link from a work id + citation string into the shipped reader; null
+   when no text of the work is distributed (translation in copyright). */
+function citeHref(id, cite) {
+  const num = s => { const m = String(s).match(/(\d+)/); return m ? +m[1] : null; };
+  if (id === "spex") {
+    const n = num(cite);
+    const s = n != null && D.exercitia.sections.find(x => n >= x.von && n <= x.bis);
+    return s ? `#/exercitia/${s.id}` : "#/exercitia";
+  }
+  if (id === "dir") {
+    if (/Prooem/i.test(cite)) return "#/directorium/prooem";
+    if (/Praef/i.test(cite)) return "#/directorium/praef";
+    const m = String(cite).match(/c\.\s*([IVXL]+)/);
+    const p = m && dirParts().find(x => x.zk === `c. ${m[1]}`);
+    return p ? `#/directorium/${p.id}` : "#/directorium";
+  }
+  if (id === "fabri") {
+    const app = /App/.test(cite), n = num(cite);
+    const p = n != null && memParts().find(x => x.teil === (app ? "app" : "mem") &&
+      n >= x.units[0].n && n <= x.units[x.units.length - 1].n);
+    return p ? `#/memoriale/${p.id}` : "#/memoriale";
+  }
+  if (id === "letters") {
+    const n = num(cite);
+    return n != null && D.letters.some(l => l.n === n) ? `#/letters/${n}` : "#/letters";
+  }
+  return null;
+}
+
 function workDetail(id) {
   const w = workOf(id), intro = D.introOf[id] || {};
   if (!w.id) { location.hash = "#/works"; return; }
@@ -429,6 +466,9 @@ function workDetail(id) {
            unofficial machine-generated working translation`
         : `Translated by ${esc(w.uebersetzer)} · ${esc(w.verlag)}, ${w.jahr}`} ·
         cited as <span class="mono">${esc(w.zitierweise)}</span> · ${rightsBadge(w)}</p>
+      ${READERS[id] ? `<p style="margin:.7rem 0 0"><a class="btn" href="${READERS[id][0]}">${READERS[id][1]} →</a></p>` : `<p class="fine" style="margin:.7rem 0 0">No text of this translation is distributed — it remains in copyright.
+        The apparatus below is derived data; the full-text functions open on a copy you load yourself,
+        under “Full text” at the foot of this page.</p>`}
     </div>
 
     <div class="panel"><span class="tag">Orientation</span>
@@ -443,10 +483,13 @@ function workDetail(id) {
 
     <div class="panel"><span class="tag">Passages that carry weight</span>
       <div class="grid g2" style="margin-top:.7rem">
-        ${(intro.key_passages || []).map(p => `<div class="card">
-          <span class="cite">${esc(p.cite)}</span>
+        ${(intro.key_passages || []).map(p => {
+          const h = citeHref(id, p.cite);
+          return `<div class="card">
+          ${h ? `<a class="cite" href="${h}" title="Open this passage in the reader">${esc(p.cite)} →</a>`
+              : `<span class="cite">${esc(p.cite)}</span>`}
           <h4 style="margin:.4rem 0 .3rem;font-size:1rem">${esc(p.label)}</h4>
-          <p style="font-size:.87rem;color:var(--fg2);margin:0">${esc(p.why)}</p></div>`).join("")}
+          <p style="font-size:.87rem;color:var(--fg2);margin:0">${esc(p.why)}</p></div>`; }).join("")}
       </div></div>
 
     ${secs.length ? `<div class="panel"><span class="tag">Internal divisions</span>
@@ -469,10 +512,12 @@ function workDetail(id) {
   if (secs.length) {
     const box = view.querySelector("#secs");
     for (const s of secs) {
+      const h = citeHref(id, String(s.von));
       box.append(el(`<div style="border-left:2px solid ${wc(id)};padding-left:.9rem;margin-bottom:1rem">
         <div style="display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap">
           <strong style="font-family:var(--serif);font-size:1.03rem">${esc(s.name)}</strong>
-          <span class="cite">${esc(w.zk)} [${s.von}–${s.bis}]</span></div>
+          ${h ? `<a class="cite" href="${h}" title="Open this division in the reader">${esc(w.zk)} [${s.von}–${s.bis}] →</a>`
+              : `<span class="cite">${esc(w.zk)} [${s.von}–${s.bis}]</span>`}</div>
         <p style="font-size:.9rem;color:var(--fg2);margin:.3rem 0 .2rem">${esc(s.summary)}</p>
         <p class="fine"><strong style="color:var(--acc2)">Watch for:</strong> ${esc(s.watch_for)}</p></div>`));
     }
