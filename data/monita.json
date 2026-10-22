@@ -6,67 +6,67 @@
  "lang": "la",
  "zitierweise": "MS c. N [k]",
  "quelle": "The Monita secreta first appeared in Kraków in 1614, the work of the dismissed Jesuit Hieronim Zahorowski; text here after W. C. Brownlee's edition (New York, 1857; Internet Archive scan), which prints the Latin and an English translation on facing pages with numbered articles. Both sides public domain.",
- "hinweis": "Carried as the debate it forced, not as truth: the Monita are a forgery, condemned as such by the Church in 1616 and refuted from Gretser (1618) onward, yet reprinted for three centuries as the Society's 'secret instructions' — the apparatus's counterpart to the chess-playing Turk. The chapter and article numbering of the 1857 printing is kept as the citation grid; running heads are removed, hyphenation joined, and the systematic ligature losses of the OCR (ae) repaired, residual errors emended against the sense. Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only.",
+ "hinweis": "Carried as the debate it forced, not as truth: the Monita are a forgery, condemned as such by the Church in 1616 and refuted from Gretser (1618) onward, yet reprinted for three centuries as the Society's 'secret instructions' — the apparatus's counterpart to the chess-playing Turk. The chapter and article numbering of the 1857 printing is kept as the citation grid; running heads are removed, hyphenation joined, and the systematic ligature losses of the OCR (ae) repaired, residual errors emended against the sense. Chapter I (arts. 1–9, Latin and English, with its Latin title) has been collated against the page images of the 1857 printing, pp. 32–37 (October 2026); chapters II–XVII rest on the OCR as described and still carry residual errors (running heads, ligature losses). Part of the concordance and the citation-bound dialogue; not part of the linguistic statistics, which describe the core corpus only.",
  "sections": [
   {
    "id": "c1",
    "zk": "MS c. I",
    "titel": "How the Society must behave themselves when they begin any new foundation.",
-   "blurb": "Qualem societas praestare sese debeat cum incipit de novo alicujus loci fundationem.",
+   "blurb": "Qualem societas praestare sese debeat, cum incipit de novo alicujus loci fundationem.",
    "units": [
     {
      "n": 1,
      "k": 1,
-     "orig": "Ut se gratam reddat incolis loci, multum conducet explicatio finis societatis praescripti in regulls, ubi dicitur societatem summo conatu in salutem proximi incumbere, aeque atque in suam. Quare humilia obsequia obeunda in Xenodochiis, pauperes et afflicti, et incarcerati invisendi, confessiones prompte et generatim excipiendae, ut insolita in omnes charitatese, et rei novitate eminentiores incolae nostros admirentur et ament.",
-     "en": "It will be of great importance for the rendering our members agreeable to the inhabitants of the place where they design their settlement, to set forth the end of the Society in the manner prescribed by our statutes, which lay down, that the society ought as diligently to seek occasions of doing good to their neighbors as to themselves ; wherefore let them with humility discharge the meanest offices in the hospitals j frequently visit the sick, the poor, and the prisoners, and readily and indifferently take the confessions of all, that the novelty of such uncommon and diffusive charity may excite in the principal inhabitants an admiration of our conduct, and forcibly draw them into an affection for us."
+     "orig": "Ut se gratam reddat incolis loci, multum conducet explicatio finis societatis praescripti in regulis, ubi dicitur societatem summo conatu in salutem proximi incumbere, aeque atque in suam. Quare humilia obsequia obeunda in Xenodochiis, pauperes et afflicti, et incarcerati invisendi, confessiones prompte et generatim excipiendae, ut insolitâ in omnes charitateae, et rei novitate eminentiores incolae nostros admirentur et ament.",
+     "en": "It will be of great importance for the rendering our members agreeable to the inhabitants of the place where they design their settlement, to set forth the end of the Society in the manner prescribed by our statutes, which lay down, that the society ought as diligently to seek occasions of doing good to their neighbors as to themselves; wherefore, let them with humility discharge the meanest offices in the hospitals; frequently visit the sick, the poor, and the prisoners, and readily and indifferently take the confessions of all, that the novelty of such uncommon and diffusive charity may excite in the principal inhabitants an admiration of our conduct, and forcibly draw them into an affection for us."
     },
     {
      "n": 2,
      "k": 2,
-     "orig": "Meminerint omnes facultatem ad exercenda societatis ministeria modeste ac religiose petendam ; et omnes turn ecclesiasticos praesertim turn saeculares quorum auctoritate indigemus, benevolos sibi facere studeant.",
-     "en": "Let it be remembered by all, that the priviOl 8ECRET INSTRUCTIONS OF THE JESUITS. 35 lege to exercise the ministry of this Society, must be requested in a modest and religious manner, and that they must use their best endeavors to gain chiefly the favor of such ecclesiastics and secular persons of whose authority they may stand in need."
+     "orig": "Meminerint omnes facultatem ad exercenda societatis ministeria modeste ac religiose petendam; et omnes tum ecclesiasticos praesertim tum saeculares quorum auctoritate indigemus, benevolos sibi facere studeant.",
+     "en": "Let it be remembered by all, that the privilege to exercise the ministry of this Society, must be requested in a modest and religious manner, and that they must use their best endeavors to gain chiefly the favor of such ecclesiastics and secular persons of whose authority they may stand in need."
     },
     {
      "n": 3,
      "k": 3,
-     "orig": "Ad ]oca distantia etiam eundum, ubi elemo synje, quantumvis parvae recipiendae, exposita necessitate nostrorum ; eadem deinde dandae aliis pauperibus, ut sic sedificentur ii, qui nondum societateni noverunt, et sint in nos tanto liberiores.",
+     "orig": "Ad loca distantia etiam eundum, ubi elemosynae, quantumvis parvae recipiendae, expositâ necessitate nostrorum; eadem deinde dandae aliis pauperibus, ut sic aedificentur ii, qui nondum societatem noverunt, et sint in nos tanto liberiores.",
      "en": "Let them also remember to visit distant places, where, having demonstrated the necessities of the Society, they shall readily receive the most inconsiderable alms, which afterwards being bestowed on other objects, may edify those which are as yet unacquainted with our Society, and stir them up to a greater liberality to us."
     },
     {
      "n": 4,
      "k": 4,
-     "orig": "Omnes eimdem videantur spirare spiritum, ideoque eumdem modum exteriorem addiscant, ut uniformitas in tant& diversitate personarum unumquemque sedificet, qui secus fecerint, tanquam nocui, dimittantur.",
-     "en": "Let all seem as though they breathed the same spirit, and consequently learn the same exterior behavior, that by such an uniformity in so great a diversity of men. all may be edified. But if any obstinately persist in a contrary deportment, let them be immediately dismissed, as dangerous persons, and hurtful to the Society."
+     "orig": "Omnes eundem videantur spirare spiritum, ideoque eumdem modum exteriorem addiscant, ut uniformitas in tantâ diversitate personarum unumquemque aedificet, qui secus fecerint, tanquam nocui, dimittantur.",
+     "en": "Let all seem as though they breathed the same spirit, and consequently learn the same exterior behavior, that by such an uniformity in so great a diversity of men, all may be edified. But if any obstinately persist in a contrary deportment, let them be immediately dismissed, as dangerous persons, and hurtful to the Society."
     },
     {
      "n": 5,
      "k": 5,
-     "orig": "Caveant nostri emere fundos in initio ; sed si quos emerint nobis bene sitos, fiat hoc mutato nomine aliquorum amicorum fidelium et secretorum ; et ut melius luceat paupertas nostra, bona quee sunt vicina locis, in quibus collegia habeamus, per provincialem assignentur collegiis remotis, quo fiet ut nunquam principes vel magistratus habeant certam notitiam redituum societatis.",
-     "en": "At their first settlement, let our members be cautious of purchasing lands ; but if they happen to buy such as are well situated, let this be done in the name of some faithful and trusty friend. And that our poverty may have the more colorable gloss of reality, let the purchases, adjacent to the places wherein our colleges are founded, be assigned by the provincial to colleges at a distance ; by which means it will be impossible that princes and magistrates 36 SECRET INSTRUCTIONS 7. Summum pretium a viduis semper extorquendum, inculcata illis summa nostra necessitate. OF THE JESUITS. 3? can ever attain to a certain knowledge what the revenues of the Society amount to."
+     "orig": "Caveant nostri emere fundos in initio; sed si quos emerint nobis bene sitos, fiat hoc mutato nomine aliquorum amicorum fidelium et secretorum; et ut melius luceat paupertas nostra, bona quae sunt vicina locis, in quibus collegia habeamus, per provincialem assignentur collegiis remotis, quo fiet ut nunquam principes vel magistratus habeant certam notitiam redituum societatis.",
+     "en": "At their first settlement, let our members be cautious of purchasing lands; but if they happen to buy such as are well situated, let this be done in the name of some faithful and trusty friend. And that our poverty may have the more colorable gloss of reality, let the purchases, adjacent to the places wherein our colleges are founded, be assigned by the provincial to colleges at a distance; by which means it will be impossible that princes and magistrates can ever attain to a certain knowledge what the revenues of the Society amount to."
     },
     {
      "n": 6,
      "k": 6,
-     "orig": "Non divertant nostri cum intentione residendi per modum collegii nisi ad urbes opulentas ; finis enim societatis est imitare Christum salvatorem nostrum, qui Hierosolymis maxime morabatur, alia autem loca minus praecipua tantum pertransibat.",
-     "en": "Let no places be pitched upon by any of our members for founding a college but opulent cities ; the end of the Society being the imitation of our blessed Saviour, who made his principal resi dence in the metropolis of Judea, and only transiently visited the less remarkable places."
+     "orig": "Non divertant nostri cum intentione residendi per modum collegii nisi ad urbes opulentas; finis enim societatis est imitare Christum salvatorem nostrum, qui Hierosolymis maxime morabatur, alia autem loca minus praecipua tantum pertransibat.",
+     "en": "Let no places be pitched upon by any of our members for founding a college but opulent cities; the end of the Society being the imitation of our blessed Saviour, who made his principal residence in the metropolis of Judea, and only transiently visited the less remarkable places."
     },
     {
      "n": 7,
      "k": 7,
-     "orig": "Summum pretium a viduis semper extorquendum, inculcata illis summa nostra necessitate.",
-     "en": "Let the greatest sums be always extorted from widows, by frequent remonstrances of our extreme necessities. Vin."
+     "orig": "Summum pretium a viduis semper extorquendum, inculcatâ illis summâ nostrà necessitate.",
+     "en": "Let the greatest sums be always extorted from widows, by frequent remonstrances of our extreme necessities."
     },
     {
      "n": 8,
      "k": 8,
-     "orig": "In unaquaque provincia, nemo nisi provincialis noverit prascise valorem redituum. Sacrum autem esto quantum corbona romana contineat.",
-     "en": "In every province, let none but the principal be fully apprised of the real value of our revenues ; and let what is contained in the treasury of Rome be always kept as an inviolable secret."
+     "orig": "In unâquâque provinciâ, nemo nisi provincialis noverit praecise valorem redituum. Sacrum autem esto quantum corbona romana contineat.",
+     "en": "In every province, let none but the principal be fully apprised of the real value of our revenues; and let what is contained in the treasury of Rome be always kept as an inviolable secret."
     },
     {
      "n": 9,
      "k": 9,
-     "orig": "Concionentur nostri, et ubique in colloquiis propalent, se adpuerorum instructionem et populi subsidium venisse, ac omnia gratis, et sine personarum acceptione prasstare, nec esse in gravamen communitatis, ut caeteri ordines religiosi.",
-     "en": "Let it be publicly demonstrated, and every- / where declared by our members in their private \\ conversation, that the only end of their coming there f was for the instruction of youth, and the good and welfare of the inhabitants ; that they do all this without the least view of reward, or respect of persons, and that they are not an incumbrance upon the people, as other religious societies are. 88 SECRET INSTRUCTIONS vabunt. OF THE JESUITS. 39"
+     "orig": "Concionentur nostri, et ubique in colloquiis propalent, se adpuerorum instructionem et populi subsidium venisse, ac omnia gratis, et sine personarum acceptione praestare, nec esse in gravamen communitatis, ut caeteri ordines religiosi.",
+     "en": "Let it be publicly demonstrated, and everywhere declared by our members in their private conversation, that the only end of their coming there was for the instruction of youth, and the good and welfare of the inhabitants; that they do all this without the least view of reward, or respect of persons, and that they are not an incumbrance upon the people, as other religious societies are."
     }
    ]
   },

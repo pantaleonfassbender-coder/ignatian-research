@@ -22,7 +22,7 @@ and therefore have no source entry here; their editions are named on the method 
 
 ### Letters and Instructions, vol. I (1524–1547) · `data/letters.json`
 
-- English: *Letters and Instructions of St. Ignatius Loyola*, vol. I, trans. D. F. O'Leary (1914), public domain; text as scanned from the 1914 edition (occasional OCR artefacts are left uncorrected rather than silently emended — see the method page).
+- English: *Letters and Instructions of St. Ignatius Loyola*, vol. I, trans. D. F. O'Leary (1914), public domain; text as scanned from the 1914 edition (occasional OCR artefacts are left uncorrected rather than silently emended — see the method page); letters 5 (to Teresa Rejadella) and 20 (instructions for Trent) collated against the page images in October 2026.
 
 ## The school of discernment
 
@@ -34,7 +34,7 @@ and therefore have no source entry here; their editions are named on the method 
 
 ### The Memoriale of Blessed Peter Faber · `data/memoriale.json`
 
-- Latin: *Memoriale Beati Petri Fabri*, ed. M. Bouix (Paris, 1873) — the editio princeps — Internet Archive scan — <https://archive.org/details/memorialebeatipe0000sign>
+- Latin: *Memoriale Beati Petri Fabri*, ed. M. Bouix (Paris, 1873) — the editio princeps — Internet Archive scan — <https://archive.org/details/memorialebeatipe0000sign>. Reconstructed from the OCR; nos. 1–7 (Prooemium, pp. 1–6) collated against the page images (October 2026).
 - English: working translation made for this site (CC0).
 
 ### Nadal, In Examen annotationes (selections) · `data/nadal.json`
@@ -125,7 +125,7 @@ and therefore have no source entry here; their editions are named on the method 
 
 ### Ricci/Trigault, De Christiana expeditione — in Purchas his Pilgrimes (selections) · `data/ricci.json`
 
-- English: Samuel Purchas's digest of 1625 — "A Discourse of the Kingdome of China, taken out of Ricius and Trigautius", with the mission narrative (ch. V) and the death of Ricci (ch. VIII) — as reprinted by James MacLehose and Sons, *Hakluytus Posthumus, or Purchas his Pilgrimes*, vol. XII (Glasgow, 1906) — <https://archive.org/details/hakluytusposthum12purc>. A 1625 translation-digest in a 1906 printing, public domain twice over; Purchas abridges and reworks Trigault, and that reception is carried as it stands, in its own orthography. Eight sections (V §§ 3–5; VII §§ 1, 2, 5, 6; VIII, the death of Ricci); the reprint's marginal glosses and page furniture are not carried, and the drop-cap letters the OCR loses at section openings are restored.
+- English: Samuel Purchas's digest of 1625 — "A Discourse of the Kingdome of China, taken out of Ricius and Trigautius", with the mission narrative (ch. V) and the death of Ricci (ch. VIII) — as reprinted by James MacLehose and Sons, *Hakluytus Posthumus, or Purchas his Pilgrimes*, vol. XII (Glasgow, 1906) — <https://archive.org/details/hakluytusposthum12purc>. A 1625 translation-digest in a 1906 printing, public domain twice over; Purchas abridges and reworks Trigault, and that reception is carried as it stands, in its own orthography. Eight sections (V §§ 3–5; VII §§ 1, 2, 5, 6; VIII, the death of Ricci); the reprint's marginal glosses and page furniture are not meant to be carried, and the drop-cap letters the OCR loses at section openings are restored. Only V § 4, ¶¶ 1–3 (pp. 283–286) have been transcribed anew from the page images (October 2026); elsewhere fragments of the marginal glosses and running heads still stand in the OCR text.
 - Latin original (named, not yet carried): [Ricci/]Trigault, *De Christiana expeditione apud Sinas suscepta ab Societate Jesu* (Augsburg: Christoph Mang, 1615), Internet Archive scan — <https://archive.org/details/dechristianaexpe00ricc>. Louis J. Gallagher's translation of 1953 remains in copyright and was not consulted.
 
 ### The Jesuit Relations from New France (selections) · `data/relations.json`
@@ -248,13 +248,13 @@ and therefore have no source entry here; their editions are named on the method 
 
 ### The Monita secreta — the forgery, bilingual · `data/monita.json`
 
-- Latin and English: W. C. Brownlee, *Secret Instructions of the Jesuits* (New York: American and Foreign Christian Union, 1857), printed with Latin and English on facing pages; Internet Archive scan — <https://archive.org/details/instructiosecret00browrich>. The chapter and article numbering of that printing is carried as the alignment grid; the OCR was repaired article by article against the page images.
+- Latin and English: W. C. Brownlee, *Secret Instructions of the Jesuits* (New York: American and Foreign Christian Union, 1857), printed with Latin and English on facing pages; Internet Archive scan — <https://archive.org/details/instructiosecret00browrich>. The chapter and article numbering of that printing is carried as the alignment grid; the OCR was repaired for the systematic ligature losses and emended against the sense; chapter I (arts. 1–9, Latin and English, pp. 32–37) has been collated against the page images (October 2026), chapters II–XVII not yet, and residual OCR errors (running heads, ligature losses) remain there.
 
 ## The threshold of 1773
 
 ### Dominus ac Redemptor — the brief of suppression · `data/dominus.json`
 
-- Latin: Augustin Theiner, *Clementis XIV. Pont. Max. Epistolae et Brevia* (Paris: Firmin Didot, 1852), doc. CCCXVII, whose paragraph numbering (1–41) is carried as the citation grid; Internet Archive scan — <https://archive.org/details/clementisxivpon00clemgoog>. OCR emended against the page images.
+- Latin: Augustin Theiner, *Clementis XIV. Pont. Max. Epistolae et Brevia* (Paris: Firmin Didot, 1852), doc. CCCXVII, whose paragraph numbering (1–41) is carried as the citation grid; Internet Archive scan — <https://archive.org/details/clementisxivpon00clemgoog>. The Latin of all 41 paragraphs collated against the page images (pp. 385–403, October 2026), Theiner's misprints kept as printed; three sentences of the working translation corrected where the OCR had misled it (¶¶ 26, 37, 40).
 - English: unofficial working translation made for this site directly from the Latin (CC0) — no full public-domain English translation of the 1773 brief was located, and none was consulted. Cite the Latin.
 
 ## The plates

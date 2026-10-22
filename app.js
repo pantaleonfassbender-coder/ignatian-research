@@ -635,6 +635,9 @@ function bodyOf(l) {
   return lines.slice(i).join(" ").replace(/\s+/g, " ").trim();
 }
 
+/** Letters whose text has been read against the page images (the rest is raw OCR). */
+const COLLATED_LETTERS = new Set([5, 20]);
+
 function letterDetail(n) {
   const l = D.letters.find(x => x.n === n);
   if (!l) { location.hash = "#/letters"; return; }
@@ -651,8 +654,11 @@ function letterDetail(n) {
         trans. D. F. O'Leary, 1914 · public domain · ${nf(l.tokens)} words</p>
     </div>
     <div class="panel"><div class="lettertext">${esc(l.text)}</div></div>
-    <p class="fine">Text as scanned from the 1914 edition; occasional artefacts of the optical character
-    recognition remain and are left uncorrected rather than silently emended.</p>
+    <p class="fine">${COLLATED_LETTERS.has(l.n)
+      ? `Text collated against the page images of the 1914 edition (October 2026): hyphenation joined,
+    running heads and footnote numbers removed, O'Leary's footnotes gathered at the end.`
+      : `Text as scanned from the 1914 edition; occasional artefacts of the optical character
+    recognition remain and are left uncorrected rather than silently emended.`}</p>
   </div>`));
 }
 
