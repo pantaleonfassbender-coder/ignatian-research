@@ -114,11 +114,27 @@ function route() {
 }
 
 /* ------------------------------------------------------------- pieces */
+/* The sister site Annotationes continues the apparatus into the twentieth-century
+   reception of the Exercises, on the same [1]–[370] grid: every Exx paragraph has
+   its own view there. */
+const ANN = "https://annotationes.netlify.app/#/spex/";
+const annN = n => Number.isInteger(+n) && +n >= 1 && +n <= 370;
+function annLink(n, long = false) {
+  if (!annN(n)) return "";
+  return long
+    ? `<a class="fine" href="${ANN}${+n}" target="_blank" rel="noopener"
+        title="SpEx [${+n}] in Annotationes, the sister site for the twentieth-century commentaries"
+        >Reception in the 20th century ↗</a>`
+    : `<a class="fine" href="${ANN}${+n}" target="_blank" rel="noopener"
+        title="Reception in the 20th century: SpEx [${+n}] in Annotationes" style="margin-left:.25rem">↗</a>`;
+}
+
 export function citeChip(cite, work) {
   if (!cite) return "";
   const prog = (D.program || []).some(p => p.id === work && p.status === "shipped");
   const href = prog ? `#/text/${work}` : `#/works/${work}`;
-  return `<a class="cite" href="${href}" title="${esc(workOf(work).titel || "")}">${esc(cite.label)}${cite.seite ? `, p. ${cite.seite}` : ""}</a>`;
+  const chip = `<a class="cite" href="${href}" title="${esc(workOf(work).titel || "")}">${esc(cite.label)}${cite.seite ? `, p. ${cite.seite}` : ""}</a>`;
+  return work === "spex" && cite.exact ? chip + annLink(cite.n) : chip;
 }
 function rightsBadge(w) {
   if (w.rechte === "public-domain") return `<span class="rights pd">public domain</span>`;
@@ -228,7 +244,10 @@ function viewOverview() {
       whole apparatus in a named author's voice, or take one of the <a href="#/paths">reading paths</a> —
       six guided routes with a guiding question per station. The corpus is organised in
       <a href="#/works">five lines</a> and confines itself to the old Society (1540–1773); its
-      boundaries, and the way it was made, are owned in the <a href="#/coda">coda</a>.</p>
+      boundaries, and the way it was made, are owned in the <a href="#/coda">coda</a>. Its continuation
+      is the sister site <a href="https://annotationes.netlify.app/" target="_blank" rel="noopener"><em>Annotationes</em></a>,
+      which sets the twentieth-century commentaries on the Exercises beside each paragraph [1]–[370];
+      every paragraph of the <a href="#/exercitia">reader</a> here links to its reception there.</p>
     </div>
 
     <div class="grid g4" style="margin-bottom:1.6rem">
@@ -487,7 +506,8 @@ function workDetail(id) {
           const h = citeHref(id, p.cite);
           return `<div class="card">
           ${h ? `<a class="cite" href="${h}" title="Open this passage in the reader">${esc(p.cite)} →</a>`
-              : `<span class="cite">${esc(p.cite)}</span>`}
+              : `<span class="cite">${esc(p.cite)}</span>`}${id === "spex"
+            ? annLink((String(p.cite).match(/(\d+)/) || [])[1]) : ""}
           <h4 style="margin:.4rem 0 .3rem;font-size:1rem">${esc(p.label)}</h4>
           <p style="font-size:.87rem;color:var(--fg2);margin:0">${esc(p.why)}</p></div>`; }).join("")}
       </div></div>
@@ -932,7 +952,8 @@ function exxSection(id) {
       : one(lang);
     const after = (byBis[u.n] || []).map(b => lgBlock(b, false)).join("");
     return `<div style="border-left:2px solid ${wc("spex")};padding-left:.9rem;margin-bottom:1.3rem">
-      <div style="display:flex;gap:.6rem;align-items:baseline"><span class="cite">SpEx [${u.n}]</span></div>
+      <div style="display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap"><span class="cite">SpEx [${u.n}]</span>
+        <span style="margin-left:auto">${annLink(u.n, true)}</span></div>
       ${label}${body}${note}</div>${after}`;
   };
   view.append(el(`<div>
@@ -2053,8 +2074,8 @@ function viewLudus() {
       pope and never lobbied for (<a href="#/text/formula">Reg. mil. [8]</a>), colleges as the only
       economy (<a href="#/text/formula">Reg. mil. [11]–[12]</a>). The rules for the discernment of
       spirits govern the tempo: a generalate that opens in desolation may not change its standing
-      assignments (<a href="#/exercitia">SpEx [318]</a>), and acting against the desolation has a
-      price (<a href="#/exercitia">SpEx [319]</a>). And the endgame is played from the suppression
+      assignments (<a href="${citeHref("spex", "318")}">SpEx [318]</a>${annLink(318)}), and acting
+      against the desolation has a price (<a href="${citeHref("spex", "319")}">SpEx [319]</a>${annLink(319)}). And the endgame is played from the suppression
       document itself: the late cards are the grievances that the brief's own recital lists —
       the quarrels with the ordinaries, the rites, the proscribed maxims, the ban on novices
       (<a href="#/text/dominus">DaR [18]–[25]</a>). A player who wants to check a card checks it
